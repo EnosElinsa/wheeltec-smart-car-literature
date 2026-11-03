@@ -6,13 +6,13 @@
   "local_markdown_exports": 20,
   "manual_publisher_pairs": 7,
   "downloads_originals_unchanged": true,
-  "targeted_source_readings": 13,
+  "targeted_source_readings": 20,
   "whole_paper_verification_claimed": false,
   "pending_pairs": 0,
   "pdf_pages": 166,
   "referenced_images": 299,
-  "page_bound_excerpts_checked": 15,
-  "local_links_checked": 39,
+  "page_bound_excerpts_checked": 27,
+  "local_links_checked": 41,
   "reviewed_index_rows": 127,
   "reviewed_index_sha256": "ea21dd0ce7d2a80f704a8fa5ad4e25c9066713ea063cabb7510a0ac56ca283ce",
   "numeric_tables_or_equations_fully_verified": false,
@@ -31,7 +31,7 @@
       "images": 11,
       "publisher_pair_and_hashes": "pass",
       "local_export": "pass",
-      "reading_excerpts": "not-recorded"
+      "reading_excerpts": "pass"
     },
     {
       "id": "N03",
@@ -39,7 +39,7 @@
       "images": 27,
       "publisher_pair_and_hashes": "pass",
       "local_export": "pass",
-      "reading_excerpts": "not-recorded"
+      "reading_excerpts": "pass"
     },
     {
       "id": "N04",
@@ -47,7 +47,7 @@
       "images": 13,
       "publisher_pair_and_hashes": "pass",
       "local_export": "pass",
-      "reading_excerpts": "not-recorded"
+      "reading_excerpts": "pass"
     },
     {
       "id": "N05",
@@ -111,7 +111,7 @@
       "images": 4,
       "publisher_pair_and_hashes": "pass",
       "local_export": "pass",
-      "reading_excerpts": "not-recorded"
+      "reading_excerpts": "pass"
     },
     {
       "id": "N13",
@@ -127,7 +127,7 @@
       "images": 19,
       "publisher_pair_and_hashes": "pass",
       "local_export": "pass",
-      "reading_excerpts": "not-recorded"
+      "reading_excerpts": "pass"
     },
     {
       "id": "N15",
@@ -151,7 +151,7 @@
       "images": 11,
       "publisher_pair_and_hashes": "pass",
       "local_export": "pass",
-      "reading_excerpts": "not-recorded"
+      "reading_excerpts": "pass"
     },
     {
       "id": "N18",
@@ -175,7 +175,7 @@
       "images": 19,
       "publisher_pair_and_hashes": "pass",
       "local_export": "pass",
-      "reading_excerpts": "not-recorded"
+      "reading_excerpts": "pass"
     }
   ],
   "title_comparison_normalization": "Unicode/punctuation/case and native IEEE roman markup normalized for comparison only; original source metadata and BibTeX retained."

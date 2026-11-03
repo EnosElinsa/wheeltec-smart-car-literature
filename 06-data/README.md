@@ -14,7 +14,8 @@ Public documentation and review cards are in English after the November 2, 2026 
 | [followup-assessment.md](followup-assessment.md) | Selected-page findings against the four follow-up questions, with evidence and access limits kept separate |
 | [search-coverage.md](search-coverage.md) | Historical search coverage and evidence boundaries |
 | [source-policy.md](source-policy.md) | Source, naming, version, and inclusion rules |
-| [ieee-supplement-2026-11-03/README.md](ieee-supplement-2026-11-03/README.md) | Separate IEEE batch: all 20 PDF/BibTeX pairs and local full-text exports complete; 13 targeted source readings; excluded from the 127-paper reviewed statistics |
+| [ieee-supplement-2026-11-03/README.md](ieee-supplement-2026-11-03/README.md) | Separate IEEE batch: all 20 PDF/BibTeX pairs, local full-text exports and targeted source readings complete; excluded from the 127-paper reviewed statistics |
+| [ieee-supplement-2026-11-03/utilization-matrix.csv](ieee-supplement-2026-11-03/utilization-matrix.csv) | One row per supplementary paper: target sections, current comparators, supported use, evidence limits and remaining checks |
 | [ieee-supplement-2026-11-03/manual-import.md](ieee-supplement-2026-11-03/manual-import.md) | Seven user-downloaded IEEE pairs matched by DOI and archived with original bytes; source-to-library file map and hashes |
 
 The index, comparison, and follow-up CSV files use UTF-8 with a BOM; `review-corrections.csv` uses UTF-8. The `pdf`, `bibtex`, `markdown`, and `review` fields in `paper-index.csv` are relative to the library root; legacy fields retain historical source paths. PDFs and source Markdown are local, gitignored artifacts, for example `01-papers/<theme>/<folder>/paper.pdf` and `02-fulltext/<theme>/<folder>/paper.md`. PDF pages remain the publication reference for formulas, tables, and layout. E50/E60 and F07/F08 have no DOI and are distinguished using their official PMLR sources and selection IDs.

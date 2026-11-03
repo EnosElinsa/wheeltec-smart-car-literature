@@ -20,6 +20,84 @@
     "pdf_sha256": "eab292299b8910a66ccd02b30f48aff578b561a5e512d6d8cc9cc76ef3bf54ce",
     "markdown_sha256": "4dee513f25d374e8bbb6512db9edc406eb28ef002a89747049df73b37a5a8008"
   },
+  "N02": {
+    "pages": [
+      1,
+      3,
+      4,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, SE(2) perturbation model, indoor/outdoor protocols and conclusion; full Jacobian derivation, ablations and numerical table cells not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 8,
+        "excerpt": "fail when the slope of the ground varies significantly"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "b85e9eb923e6c433afa7f54e6000280761ad7c7f0df727c0318d37a6d458566d",
+    "markdown_sha256": "dccc01828a22fcaf77561552acbab9b1108d59b078c545d9ab954beea4cb3f11"
+  },
+  "N03": {
+    "pages": [
+      1,
+      3,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, trace formation, image processing, rover testbed, failure boundary and conclusion; full soil-interaction derivation and numerical result tables not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 7,
+        "excerpt": "when the wheel slip ratio exceeded 0.6 on sandy terrain"
+      },
+      {
+        "pdf_page": 8,
+        "excerpt": "not applicabletocrushedstone floors or muddy terrain"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "f0c5d04de49af79312984876859051934775f0ba84cf2bf8d301e7573001fbcb",
+    "markdown_sha256": "c6f8dad111c6243ccc0c1d45719a4770e5f588f3f9fd92b4e271f67a7e3c87d4"
+  },
+  "N04": {
+    "pages": [
+      1,
+      5,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, repeatability protocol, implementation ablations, hardware-dependent arithmetic experiment and conclusion; full implementation audit and numerical tables not independently reproduced.",
+    "excerpts": [
+      {
+        "pdf_page": 5,
+        "excerpt": "each experiment was repeated 30 times"
+      },
+      {
+        "pdf_page": 8,
+        "excerpt": "a rigorous mathematical explanation of this causal relationship has yet to be established"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "faccdeab6b8c64fb6b68a63bebc0838c666f976c2039399e34ff9b898653089b",
+    "markdown_sha256": "ab42395151f455bdf0c3b51de553926ca602727d9537d96ca418848036a966c2"
+  },
   "N05": {
     "pages": [
       1,
@@ -179,6 +257,29 @@
     "pdf_sha256": "caa00e69640ce65fc0f174a5446cbbc9dc32c6bc805d16f8bf36eeefd91febce",
     "markdown_sha256": "ff2939a346b93f9837d47ba691f46d3a810e66475603bd1e7fd6eac545c9b103"
   },
+  "N12": {
+    "pages": [
+      2,
+      3,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected system/tube assumptions, case studies, comparison protocol and limitations; complete safety/convergence proofs and numerical tables not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 8,
+        "excerpt": "explicit input constraints"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "889574c84f584f7826d29f13053bce1be762292d05c0bd98843fed9ae791f365",
+    "markdown_sha256": "160c0d091ed13ad4a860b360365450997ef09a785c92027977189651bf69174b"
+  },
   "N13": {
     "pages": [
       1,
@@ -208,6 +309,33 @@
     "whole_paper_verified": false,
     "pdf_sha256": "951572526c85a6c6cc78077d1368a0d91313dbdca547f44737828865489776c4",
     "markdown_sha256": "8d0e9b08de44d670dd810f41c508ad44d94e9aaccdad3fbb5a421af73ccc73f6"
+  },
+  "N14": {
+    "pages": [
+      1,
+      2,
+      7,
+      8,
+      9
+    ],
+    "scope": "Selected contribution, no-slip vehicle assumptions, event-update trade-off, HIL architecture and conclusion; complete recursive-feasibility proof and numeric performance plots not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 7,
+        "excerpt": "hosts the control algorithms"
+      },
+      {
+        "pdf_page": 8,
+        "excerpt": "sampling period of _T_ = 1 s is adopted"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "862b054b85c0b24cb87b85f68f8e973553f59cfa6b628c7ef4dc39e8e05ae73b",
+    "markdown_sha256": "e8f97ffd026372671e72952452a8e4888dcd99fa17b44cc50093c6a9c9682244"
   },
   "N15": {
     "pages": [
@@ -262,6 +390,34 @@
     "pdf_sha256": "acfbda4234a40c0aa16e5d3e1c6ee2e53324559f73f0579e9098189cb0c84859",
     "markdown_sha256": "f636d0e59190f0aaf57ec0705803f9688cde7cce759493cd58368ebacd90b081"
   },
+  "N17": {
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "scope": "Selected architecture, four recovery triggers/actions, simulated-scene exclusions, hardware protocol and human-intervention boundary; numeric result tables and whole-system safety not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 6,
+        "excerpt": "were discarded from the results presented in this section"
+      },
+      {
+        "pdf_page": 5,
+        "excerpt": "require human intervention to release it"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "4dd525aa16da353607b710ed03c8e1f4474a9136b0233d5ca44d9a93e16335e9",
+    "markdown_sha256": "a63f4979b045eaf72e5906fdfa7089c1b8328592aeeb402d3dd528d17396268f"
+  },
   "N18": {
     "pages": [
       1,
@@ -307,5 +463,31 @@
     "whole_paper_verified": false,
     "pdf_sha256": "cf304496f5ebd91ad17b1fbd895f3a50fc5df906b229a117ec2351f13b6c5038",
     "markdown_sha256": "2728bfaccb7a96d114a611192474e193b864966a2fdb987bcb8d02a4f839ad60"
+  },
+  "N20": {
+    "pages": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "scope": "Selected dense-registration mechanism, sensor-platform description, benchmark/reference setup, runtime and conclusion; full optimization derivation and numerical error table cells not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 6,
+        "excerpt": "between 1.5 and 4 times the recording time"
+      },
+      {
+        "pdf_page": 6,
+        "excerpt": "we used the default settings"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "bc0713fe8998c94bf96e3eb97415d39d2b29abe09921eaa172d07f1036d150f6",
+    "markdown_sha256": "de68497bef34d62d5fe39f76c255781c969745ffb8b6e89e737c45c2c510267f"
   }
 }

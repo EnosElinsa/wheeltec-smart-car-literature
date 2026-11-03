@@ -135,3 +135,75 @@ The method turns detected contact into a map-conditioned observation, incorporat
 The experimental settings must remain distinct. In the hardware localization experiment the operator remotely drives the robot into obstacles and returns it to its starting position (p. 5). The prior map is built with LiDAR; online localization uses IMU and wheel odometry, with motion capture for reference. The active bounce planner is evaluated separately in simulation (p. 6, Sec. V-D). These results do not establish autonomous contact-planned recovery on physical hardware after an actual sensor failure.
 
 Survey use: include a contact-based information-gathering alternative alongside modality switching and geometry-seeking exploration. Preserve the known-map requirement, contact/detection assumptions, and the separation between a teleoperated hardware localization experiment and simulated active planning. A covariance threshold is not itself a calibrated integrity guarantee.
+
+## N02 — SE(2)-constrained LiDAR-inertial odometry
+
+Read: abstract on p. 1; selected IMU/model passages on pp. 3–4; experimental protocol and conclusion on pp. 6–8. Numerical result tables and the full derivation were not audited; no comparative accuracy values are retained.
+
+The estimator parameterizes the ground-vehicle pose on SE(2) and incorporates departures in height, roll and pitch as stochastic perturbations of the LiDAR residuals (p. 4). This is a motion-prior/noise-model response, rather than an independently observed correction for arbitrary nonplanar motion. The indoor AGV uses a VLP-16 and Intel NUC i5-10210U; Vicon provides the reference, and the robot is remotely controlled (p. 6). Outdoor sequences use an IMU and GPS reference (p. 7).
+
+The conclusion explicitly states that the method may fail when ground slope varies significantly (p. 8). Thus the model is a useful comparator for wheel/contact priors and local ground manifolds, with a stated boundary on terrain variation. The reviewed experiments establish estimation behavior, not improved closed-loop mission completion.
+
+Survey use: Section IV, motion priors/contact/adaptation, alongside M24, M43 and M39. Compare fixed planar reduction, stochastic departures, locally estimated terrain and slip-dependent wheel information. Check result cells and reference quality before adding numerical comparisons.
+
+## N03 — Trace-imprint estimation of wheel slip and sideslip
+
+Read: abstract and scope on p. 1; selected trace-formation model on p. 3; image processing/testbed on p. 6; operating limits and conclusion on pp. 7–8. Numerical result tables and the full lug/soil derivation were not audited.
+
+The method estimates longitudinal slip and lateral sideslip from the geometry of lug imprints in deformable soil. The rover testbed uses rigid lugged wheels, a camera/IMU and laptop processing; the image scale assumes that trace width matches wheel width during straight travel, an approximation the authors acknowledge (p. 6).
+
+The method relies on distinct, preserved imprints. The experimental discussion reports failure above slip ratio 0.6 on sand when the required feature becomes indistinguishable (p. 7). The applicability discussion excludes crushed-stone floors and muddy terrain (p. 8). Integration with visual/inertial navigation and vehicle motion control is future work. Estimating slip is consequently separate from correcting odometry or demonstrating slip-aware control.
+
+Survey use: Section IV, motion priors/contact/adaptation, and terrain transfer in Section X. Compare this contact/terrain observation with M39's wheel/IMU fusion and learned wheel models. Retain soil and wheel requirements; do not generalize it to ordinary wheels on warehouse floors.
+
+## N04 — Non-reproducibility in LiDAR-inertial odometry
+
+Read: abstract on p. 1; protocol on p. 5; implementation ablations and arithmetic-order experiment on pp. 6–7; conclusion on p. 8. Code changes were not executed independently and numerical table cells were not audited.
+
+The study separates nondeterministic implementations from changing experimental conditions. Its protocol initializes subscribers before playback, buffers data to control frame loss and repeats each system/sequence experiment 30 times; parameters are empirically tuned rather than left at defaults (p. 5). It compares original implementations with deterministic variants. The observed variability becomes more pronounced on low-channel LiDAR recordings or geometrically degenerate scenes (p. 6).
+
+The arithmetic experiment changes matrix-addition order while preserving the exact-arithmetic expression; observed pose results still vary (pp. 6–8). The authors leave a rigorous mathematical explanation and additional nondeterministic mechanisms for future work. The result does not show that all apparent LIO improvements are invalid, nor that deterministic execution guarantees greater accuracy.
+
+Survey use: Section IX, timing/placement/comparisons and trial-unit interpretation, with M2UD (F11) and existing estimator comparisons. Repeated runs of one recording assess implementation variability; they are not independent physical missions. Record configurations, frame handling, numerical libraries and execution variability before interpreting a small single-run improvement.
+
+## N12 — Real-time spatiotemporal tubes
+
+Read: system and task assumptions on pp. 2–3; case studies and comparison protocol on p. 6; discussion and conclusion on pp. 7–8. Complete proofs and numerical result tables were not audited.
+
+The controller adapts a spherical tube's center and radius from current obstacle information for a prescribed-time reach/avoid task. The considered pure-feedback system assumes locally Lipschitz dynamics, known sign-definite input coupling and bounded disturbances (p. 2). Assumption 3 requires separation between the unsafe set and tube center at the target time (p. 3); feasibility cannot be inferred solely from online obstacle sensing.
+
+Case studies distinguish an omnidirectional mobile-robot hardware example from the quadrotor simulation (p. 6). Baseline comparisons and scalability experiments are separate randomized computational studies. The discussion says paths need not be shortest and identifies global planning as future work (p. 7). Explicit input constraints are also listed as future work (p. 8).
+
+Survey use: Section V, safety filters/explicit risk conditions, and Section IX, guarantees/empirical rates. Compare with E25/E26/E55, retaining their different assumptions and guaranteed events. Transfer to nonholonomic or saturated wheeled systems requires a compatible model and feasible inputs; this source does not establish arbitrary-embodiment safety.
+
+## N14 — Resilient memory-event-triggered MPC
+
+Read: abstract and vehicle assumptions on pp. 1–2; event-update discussion/HIL setup on p. 7; platform and sampling configuration on p. 8; experimental discussion and conclusion on p. 9. Full proofs and numerical performance plots were not audited.
+
+The controller uses historical triggering information and a maximum interval without an update to reduce repeated MPC solves while retaining the specified tracking properties. Its low-speed Ackermann model assumes no wheel slip and ignores height/tilt effects (p. 2). These conditions matter when comparing resilience to sensing, terrain or actuator degradation.
+
+The validation is explicitly described as hardware-in-the-loop. An industrial Intel i7 computer hosts the control algorithms; Jetson Nano/STM32 components belong to the vehicle/low-level architecture (pp. 7–8). The HIL sampling period is one second (p. 8). Experimental differences with and without triggering are discussed on p. 9; an upper bound on silent events is interpreted as protection against event-generator faults/attacks, but the inspected protocol does not establish performance over a separately specified set of physical cyberattack trials.
+
+Survey use: Section V, tracking/mission costs/network support, and Section VIII, resources. Compare with F02's observer/tolerant tracking architecture. Separate trigger frequency, actual computation time, control-loop age and bounded-silence protection. Do not attribute all control computation to the Jetson Nano or equate fewer solves with the same percentage of energy savings.
+
+## N17 — Behavior-tree navigation and recovery on a wheeled-legged robot
+
+Read: architecture/planner roles on pp. 2–3; recovery triggers/actions on pp. 4–5; simulation selection and real-robot protocol on pp. 5–7. Numerical result tables were not audited.
+
+CENTAURO combines global/local elevation maps, hierarchical planning, a plan evaluator and behavior-tree supervision. Four failures trigger distinct actions: invalid wheel contact, local-plan failure, being stuck and stepping failure. Actions include stopping, moving wheel contacts, replanning, reversing the last action and reshaping the support polygon (pp. 4–5). Thus integrated monitoring and executed recovery already exist, with motion primitives tied to the hybrid embodiment.
+
+The simulation study excludes infeasible obstacle arrangements and generated scenarios where the global planner fails or takes too long (pp. 5–6). Reported retained-scenario results therefore do not estimate success over all generated requests. Persistent local/global planning failures can still require human intervention (p. 5). Physical CENTAURO trials use slower motion and a lower local-map update rate than simulation (p. 7).
+
+Survey use: Section VIII, diagnosis-to-response, alongside E59 and N10, plus Section IX's treatment of excluded/no-plan requests. Compare failure definitions, available trustworthy state, recovery actions and continuation of the original task. Wheel repositioning and stepping cannot be assumed available on a conventional differential-drive or Ackermann chassis.
+
+## N20 — Dense multi-scan adjustment
+
+Read: abstract/registration mechanism on p. 1; sensor-platform description on p. 2; benchmark/reference setup on p. 5; comparison configuration, speed and conclusion on p. 6. Full optimization derivations and numerical error-table cells were not audited.
+
+DMSA models points from multiple scans jointly using grid-cell distributions, with iterative reduction of their scatter. It supports continuous-trajectory optimization with IMU data and keyframe optimization (p. 1). Its own Bicycle Street recording uses a sensor platform on a bicycle trailer (p. 2); other evaluated recordings include construction and campus environments.
+
+Comparison sequences use aligned absolute pose errors, with dataset references for public sequences and GNSS/inertial reference for the authors' recording (p. 5). Baselines use default functional settings, with a preprocessing modification for LiLi-OM; failure to adapt its sensor setup is marked N/A, distinct from a run that starts and then fails (p. 6).
+
+Reported processing time is 1.5–4 times sequence recording duration on an Intel i9-12900K, with numerical Jacobians identified as the bottleneck (p. 6). This implementation does not establish real-time closed-loop deployment. No individual error-table values are retained here.
+
+Survey use: Section IV, dynamic geometry/persistent maps, and Section IX, timing and comparable inputs. Compare dense multi-scan estimation with feature selection and selective updates (E01/E08/E15). Distinguish estimation continuity, error, failure/N/A and compute budget; do not collapse them into a single real-time robustness ranking.

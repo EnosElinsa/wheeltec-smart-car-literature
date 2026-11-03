@@ -1,12 +1,12 @@
 # Supplementary IEEE sources — November 3, 2026
 
-This batch contains 20 publications outside the reviewed 127-paper corpus. All 20 official PDF/raw-BibTeX pairs and local Markdown exports are registered. Thirteen have targeted source readings; seven have acquisition and extraction checks only. These are separate statuses, and no additional review card or manuscript inclusion is implied.
+This batch contains 20 publications outside the reviewed 127-paper corpus. All 20 official PDF/raw-BibTeX pairs and local Markdown exports are registered. All 20 now have targeted source readings with physical-page locators. These are separate statuses, and no additional review card or manuscript inclusion is implied.
 
 Seven pairs were supplied as manual IEEE Xplore downloads. The PDF and native BibTeX bytes are preserved, with DOI, title, authors, year and venue checked. Download originals remain in place. Formal publication years are recorded independently of the year embedded in a DOI.
 
 The public repository contains citation exports, provenance, hashes and reading notes. Publisher PDFs, full-text transcriptions and extracted images remain local. Paths below are relative to the library root. Local exports use PyMuPDF4LLM 0.2.9 with physical-page markers; formulas and numerical table cells require checks against the PDF. No MinerU precision output was delivered for this batch.
 
-[Manifest](manifest.json) · [Reading list](reading-list.csv) · [Raw BibTeX collection](ieee-additions.bib) · [Evidence notes](evidence-notes.md) · [Manual import receipt](manual-import.md) · [Coverage assessment](../../04-analysis/ieee-coverage-assessment-2026-11-03.md)
+[Manifest](manifest.json) · [Reading list](reading-list.csv) · [Raw BibTeX collection](ieee-additions.bib) · [Evidence notes](evidence-notes.md) · [Utilization matrix](utilization-matrix.csv) · [Manual import receipt](manual-import.md) · [Coverage assessment](../../04-analysis/ieee-coverage-assessment-2026-11-03.md)
 
 | ID | Year | Official paper | Public citation | Local PDF | Local transcription |
 |---|---:|---|---|---|---|
