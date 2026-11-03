@@ -3,15 +3,14 @@
   "host": "codex",
   "batch": "ieee-supplement-2026-11-03",
   "selection_sha256": "72ef6143cba05735d52a00433c4443745c4f6a8447fea5d842f3c63f59e9cf03",
-  "reviewed_corpus_count": 127,
-  "reviewed_corpus_index_sha256": "ea21dd0ce7d2a80f704a8fa5ad4e25c9066713ea063cabb7510a0ac56ca283ce",
+  "reviewed_corpus_count": 147,
   "candidate_count": 20,
   "official_pairs": 20,
   "markdown_exports": 20,
   "targeted_readings": 20,
   "pending_pairs": 0,
   "manual_publisher_pairs": 7,
-  "scope": "Supplementary source batch; not added to the 127-paper reviewed index or manuscript counts.",
+  "scope": "Acquisition and extraction provenance for 20 sources subsequently assessed as targeted light reviews and included in the unified survey selection.",
   "records": [
     {
       "id": "N01",
@@ -47,7 +46,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T1-perception-localization/2026-AESF-LIO-N01/paper.pdf",
@@ -61,7 +60,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T1-perception-localization/2026-AESF-LIO-N01/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N02",
@@ -97,7 +98,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "manual_publisher_download",
       "acquisition_method": "manual_publisher_download",
       "pdf": "01-papers/T1-perception-localization/2023-SE2-LIO-N02/paper.pdf",
@@ -111,7 +112,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T1-perception-localization/2023-SE2-LIO-N02/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N03",
@@ -147,7 +150,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "manual_publisher_download",
       "acquisition_method": "manual_publisher_download",
       "pdf": "01-papers/T1-perception-localization/2025-Trace-Slip-N03/paper.pdf",
@@ -161,7 +164,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T1-perception-localization/2025-Trace-Slip-N03/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N04",
@@ -197,7 +202,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "manual_publisher_download",
       "acquisition_method": "manual_publisher_download",
       "pdf": "01-papers/T6-reliability-deployment/2026-LIO-Reproducibility-N04/paper.pdf",
@@ -211,7 +216,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T6-reliability-deployment/2026-LIO-Reproducibility-N04/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N05",
@@ -247,7 +254,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T2-slam-mapping-exploration/2024-SLAM-Aware-Exploration-N05/paper.pdf",
@@ -261,7 +268,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T2-slam-mapping-exploration/2024-SLAM-Aware-Exploration-N05/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N06",
@@ -297,7 +306,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T6-reliability-deployment/2024-Predictive-Data-N06/paper.pdf",
@@ -311,7 +320,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T6-reliability-deployment/2024-Predictive-Data-N06/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N07",
@@ -350,7 +361,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T4-multi-robot-coordination/2024-Active-Graph-Exploration-N07/paper.pdf",
@@ -364,7 +375,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T4-multi-robot-coordination/2024-Active-Graph-Exploration-N07/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N08",
@@ -400,7 +413,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T2-slam-mapping-exploration/2026-Anisotropic-Exploration-N08/paper.pdf",
@@ -414,7 +427,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T2-slam-mapping-exploration/2026-Anisotropic-Exploration-N08/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N09",
@@ -450,7 +465,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T5-semantic-embodied-navigation/2026-Co-NavGPT-N09/paper.pdf",
@@ -464,7 +479,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T5-semantic-embodied-navigation/2026-Co-NavGPT-N09/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N10",
@@ -500,7 +517,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T3-planning-control/2026-NMPC-Safe-Learning-N10/paper.pdf",
@@ -514,7 +531,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T3-planning-control/2026-NMPC-Safe-Learning-N10/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N11",
@@ -550,7 +569,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T4-multi-robot-coordination/2025-Range-Integrity-N11/paper.pdf",
@@ -564,7 +583,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T4-multi-robot-coordination/2025-Range-Integrity-N11/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N12",
@@ -600,7 +621,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "manual_publisher_download",
       "acquisition_method": "manual_publisher_download",
       "pdf": "01-papers/T3-planning-control/2026-Spatiotemporal-Tubes-N12/paper.pdf",
@@ -614,7 +635,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T3-planning-control/2026-Spatiotemporal-Tubes-N12/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N13",
@@ -650,7 +673,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T6-reliability-deployment/2025-Predictive-Swarm-Faults-N13/paper.pdf",
@@ -664,7 +687,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T6-reliability-deployment/2025-Predictive-Swarm-Faults-N13/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N14",
@@ -700,7 +725,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "manual_publisher_download",
       "acquisition_method": "manual_publisher_download",
       "pdf": "01-papers/T3-planning-control/2026-Resilient-Event-MPC-N14/paper.pdf",
@@ -714,7 +739,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 11,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T3-planning-control/2026-Resilient-Event-MPC-N14/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N15",
@@ -750,7 +777,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T3-planning-control/2025-Resilient-STL-N15/paper.pdf",
@@ -764,7 +791,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T3-planning-control/2025-Resilient-STL-N15/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N16",
@@ -800,7 +829,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T6-reliability-deployment/2024-LPV-Fault-Diagnosis-N16/paper.pdf",
@@ -814,7 +843,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 13,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T6-reliability-deployment/2024-LPV-Fault-Diagnosis-N16/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N17",
@@ -853,7 +884,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "manual_publisher_download",
       "acquisition_method": "manual_publisher_download",
       "pdf": "01-papers/T6-reliability-deployment/2023-BT-Recovery-N17/paper.pdf",
@@ -867,7 +898,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T6-reliability-deployment/2023-BT-Recovery-N17/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N18",
@@ -906,7 +939,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T6-reliability-deployment/2022-PAAD-N18/paper.pdf",
@@ -920,7 +953,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 8,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T6-reliability-deployment/2022-PAAD-N18/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N19",
@@ -963,7 +998,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "publisher_export_api",
       "acquisition_method": "automated_publisher_retrieval",
       "pdf": "01-papers/T1-perception-localization/2024-Active-Collision-N19/paper.pdf",
@@ -977,7 +1012,9 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 7,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T1-perception-localization/2024-Active-Collision-N19/review.md",
+      "verification_level": "light"
     },
     {
       "id": "N20",
@@ -1016,7 +1053,7 @@
       "markdown_status": "exported-local",
       "read_scope": "targeted-source-reading",
       "observed_obstacle": "",
-      "survey_corpus_member": false,
+      "survey_corpus_member": true,
       "citation_source": "manual_publisher_download",
       "acquisition_method": "manual_publisher_download",
       "pdf": "01-papers/T1-perception-localization/2024-DMSA-N20/paper.pdf",
@@ -1030,8 +1067,14 @@
       "extraction_mode": "local-pymupdf4llm",
       "pdf_pages": 7,
       "low_text_pages": [],
-      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed.",
+      "review": "03-reviews/T1-perception-localization/2024-DMSA-N20/review.md",
+      "verification_level": "light"
     }
   ],
-  "combined_raw_bibtex_sha256": "ee3d5a7578e89a2a08a2215a51d82ba71dfce26c998ac2d62663160ad7db9b14"
+  "combined_raw_bibtex_sha256": "ee3d5a7578e89a2a08a2215a51d82ba71dfce26c998ac2d62663160ad7db9b14",
+  "baseline_reviewed_corpus_count": 127,
+  "baseline_reviewed_corpus_index_sha256": "ea21dd0ce7d2a80f704a8fa5ad4e25c9066713ea063cabb7510a0ac56ca283ce",
+  "inclusion_record": "../survey-inclusion.json",
+  "reviewed_corpus_index_sha256": "b43d4383fa786314d28287c3c64c359d12f0c1ed5c48f68351f893fcbbd9dc39"
 }

@@ -26,9 +26,9 @@ Publisher PDFs, transcriptions and extracted images remain local. Public indexes
 
 ## Assessment and survey coverage
 
-Of the 147 registered publications, **127 have review cards**: 23 full-verification cards and 104 light cards. The light cards comprise 89 historical extract-based assessments and 15 targeted readings. The other **20 have targeted source notes**, with physical-page locators and explicit limits, and appear alongside all other papers in the theme indexes.
+All **147 publications have review cards**: 23 full assessments and 124 light assessments. The light cards comprise 89 historical extract-based assessments and 35 targeted readings with physical-page locators and explicit limits.
 
-The current survey uses the 127-paper reviewed selection, comprising 124 technical publications and three context works. Library registration and manuscript inclusion are different statuses. Targeted reading does not imply whole-paper verification; numerical claims need checks against the original PDF. The [review workflow](03-reviews/WORKFLOW.md) defines assessment depth, and the [unified catalog](06-data/library-catalog.csv) records each paper's status.
+The current survey uses 144 technical publications and three context works. The [selection record](06-data/survey-inclusion.json) retains the historical baseline and current membership. Targeted reading does not imply whole-paper verification; numerical claims need checks against the original PDF. The [review workflow](03-reviews/WORKFLOW.md) defines assessment depth, and the [unified catalog](06-data/library-catalog.csv) records each paper's status.
 
 ## Maintenance
 

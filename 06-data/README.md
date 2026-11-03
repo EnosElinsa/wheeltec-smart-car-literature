@@ -1,13 +1,14 @@
 # Data and provenance
 
-The unified catalog lists **147 publications** in the shared theme directories. Of these, 127 have review cards and are included in the current survey selection; 20 have targeted source notes and await survey coding. The review-card set contains 23 full assessments and 104 light assessments, comprising 89 historical extract-based assessments and 15 targeted readings. The [workflow](../03-reviews/WORKFLOW.md) and [vocabulary](vocabulary.md) define their evidence limits. Source files retain their original bytes; acquisition and extraction details are recorded in the provenance ledgers below.
+The unified catalog lists **147 publications** in the shared theme directories. All have review cards and are included in the current survey selection. The review-card set contains 23 full assessments and 124 light assessments, comprising 89 historical extract-based assessments and 35 targeted readings. The [workflow](../03-reviews/WORKFLOW.md) and [vocabulary](vocabulary.md) define their evidence limits. Source files retain their original bytes; acquisition and extraction details are recorded in the provenance ledgers below.
 
 | File | Purpose |
 |---|---|
 | [library-catalog.csv](library-catalog.csv) | Unified catalog of all 147 registered publications, including source paths, assessment status and current survey selection |
-| [paper-index.csv](paper-index.csv) | Current 127-paper survey selection: IDs, themes, titles, years, DOIs, source/review paths, hashes and comparison coding |
-| [corpus-comparison.csv](corpus-comparison.csv) | 127-paper comparison derived from review cards, including `verification_level` |
-| [fulltext-manifest.json](fulltext-manifest.json) | Source-text provenance: restoration or parsing source, mode, Markdown SHA-256, and image hashes for the 127-paper library; original source bytes preserved |
+| [survey-inclusion.json](survey-inclusion.json) | Current membership, selection date, and historical baseline hashes/commit |
+| [paper-index.csv](paper-index.csv) | Current 147-paper survey selection: IDs, themes, titles, years, DOIs, source/review paths, hashes and comparison coding |
+| [corpus-comparison.csv](corpus-comparison.csv) | 147-paper comparison derived from review cards, including `verification_level` |
+| [fulltext-manifest.json](fulltext-manifest.json) | Source-text provenance: restoration or parsing source, mode, Markdown SHA-256, and image hashes for the historical 127-paper selection; the IEEE manifest covers the other 20 sources; original source bytes preserved |
 | [followup-candidates.csv](followup-candidates.csv) | 79 historical title/abstract-screened rows; identities may repeat or overlap the formal corpus; reasons translated into English |
 | [candidate-screening.csv](candidate-screening.csv) | Identity-level follow-up screening and corpus-overlap decisions; does not establish acquisition |
 | [followup-shortlist.md](followup-shortlist.md) | User-confirmed fixed selection F01–F15 and original title/abstract screening questions |
@@ -23,7 +24,7 @@ The index, comparison, and follow-up CSV files use UTF-8 with a BOM; `review-cor
 
 `corpus-comparison.csv` and the individual review cards replace the old expansion comparison and evidence tables. Historical files are retained locally at `99-archive/superseded/expansion-comparison.csv`, `99-archive/superseded/expansion-evidence.csv`, `99-archive/superseded/baseline-evidence.jsonl`, and `99-archive/superseded/expansion-summary.json`. These legacy snapshots do not describe the current verification levels. The exact pre-translation candidate CSV is retained at `99-archive/superseded/followup-candidates.original.csv`.
 
-A full card reflects whole-paper verification, including numeric checks against rendered tables. The 89 historical light conversions preserve legacy extractions with mechanical metadata, abstract, and quotation checks; numerical claims were not re-verified. The 15 new targeted light cards have no legacy extraction: they log the selected source passages read and check retained excerpts and numbers within that scope. Their transcription-bound validation is separate from whole-paper verification; any survey citation still requires a targeted numerical recheck. A passing checker does not imply whole-paper reading. Neither level proves transfer to the R680. The 79 historical candidate rows and 18 historical key-paper selection remain distinct from the new acquisition and assessment records.
+A full card reflects whole-paper verification, including numeric checks against rendered tables. The 89 historical light conversions preserve legacy extractions with mechanical metadata, abstract, and quotation checks; numerical claims were not re-verified. The 35 targeted light cards have no legacy extraction: they log the selected source passages read and check retained excerpts and numbers within that scope. Their transcription-bound validation is separate from whole-paper verification; any survey citation still requires a targeted numerical recheck. A passing checker does not imply whole-paper reading. Neither level proves transfer to the R680. The 79 historical candidate rows and 18 historical key-paper selection remain distinct from the new acquisition and assessment records.
 
 ## Claim IDs
 

@@ -10,7 +10,7 @@ A worked example is
 | Source | Role |
 |---|---|
 | `01-papers/<theme>/<folder>/paper.pdf` | Publisher PDF. Authority for numbers, tables, figures, and page numbers. Local only. |
-| `02-fulltext/<theme>/<folder>/paper.md` | MinerU transcription of the PDF. Used for reading and excerpt matching. Local only. |
+| `02-fulltext/<theme>/<folder>/paper.md` | Source transcription of the PDF; extraction mode is recorded in provenance. Used for reading and excerpt matching. Local only. |
 | `01-papers/<theme>/<folder>/citation.bib` | Publisher BibTeX export. Authority for authors, venue, volume, and pages. |
 | Earlier review text (Git history, and the archive `99-archive/history-2026-10-25.zip`) | Legacy extraction by an automated reviewer. Treated as a set of claims to check, never as evidence. |
 
@@ -93,7 +93,7 @@ whole-paper verification or a legacy conversion when neither occurred.
 
 Use the same template and vocabulary. Mark uninspected details as unknown
 or not verified. Check each retained excerpt on its physical PDF page and
-against the bound MinerU transcription. Check any retained numeric claim in
+against the bound source transcription (MinerU or the explicitly recorded local extraction). Check any retained numeric claim in
 the selected source passage; table/figure values require a rendered-page
 check. A number omitted from this limited reading stays unverified. Keep
 author-stated limitations separate from reviewer transfer conditions.

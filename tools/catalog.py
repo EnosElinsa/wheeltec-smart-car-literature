@@ -24,7 +24,8 @@ CATALOG_FIELDS = (
 
 def load_catalog(root: Path = REPO_ROOT, strict: bool = False) -> list[Entry]:
     entries = load_corpus(root, strict)
-    ids = {e.code for e in entries}
+    reviewed = {e.code: e for e in entries}
+    ids = set(reviewed)
     dois = {e.row["doi"].strip().casefold() for e in entries if e.row.get("doi")}
     for entry in entries:
         entry.row["assessment"] = (
@@ -43,6 +44,18 @@ def load_catalog(root: Path = REPO_ROOT, strict: bool = False) -> list[Entry]:
                 continue
             code = source["id"]
             doi = source.get("doi", "").strip().casefold()
+            if code in reviewed:
+                # Acquisition and subsequent assessment describe the same work.
+                # Accept that overlap only when identity and source bytes agree.
+                row = reviewed[code].row
+                fields = ("pdf", "bibtex", "markdown", "pdf_sha256", "bibtex_sha256", "markdown_sha256")
+                if doi != row.get("doi", "").strip().casefold() or any(
+                    source.get(field, "") != row.get(field, "") for field in fields
+                ):
+                    raise CorpusError([f"duplicate library identity with conflicting sources in {manifest.relative_to(root)}: {code}"])
+                row["source_notes"] = notes.relative_to(root).as_posix() if notes.is_file() else ""
+                row["extraction_mode"] = source.get("extraction_mode", "")
+                continue
             if code in ids or (doi and doi in dois):
                 raise CorpusError([f"duplicate library identity in {manifest.relative_to(root)}: {code}"])
             pdf = Path(source["pdf"])

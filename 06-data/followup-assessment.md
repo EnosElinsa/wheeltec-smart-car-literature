@@ -77,8 +77,10 @@ All fixed IDs remain unchanged. Earlier access failures remain provenance histor
 
 F07 and F08 are CoRL **2024** conference papers in PMLR proceedings published in **2025**. Conference, online, formal volume, and DOI-string years describe different events; they do not justify duplicate work counts.
 
-## Validation snapshot
+## Historical validation snapshot for F01–F15
 
 The completed library contains **127 cards: 23 full and 104 light** (89 historical conversions plus 15 targeted readings). All 127 passed the PDF-inclusive review checker; 74 tool tests passed. The preceding 124 index rows, provenance records, and review/source artifacts remain unchanged, including the historical 112-paper corpus and its 18 key papers. All 2,699 referenced images resolve and match the recorded hashes; the fifteen follow-up Markdown exports match the original provider outputs byte for byte. Indexes and the comparison table were regenerated in strict mode. Relative-link and public-tree checks passed.
 
 Passing these checks establishes source, format, and excerpt consistency within the recorded reading scope. It does not upgrade a light card to whole-paper verification. Three follow-up abstracts retain approximate-match warnings caused by transcription differences (F05, F10, F14); publisher abstract wording and original MinerU bytes are preserved.
+
+The subsequent 20-paper IEEE incorporation is recorded in [survey-inclusion.json](survey-inclusion.json) and the [integration analysis](../04-analysis/ieee-evidence-utilization-2026-11-03.md); its review scope remains targeted light assessment.

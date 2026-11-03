@@ -57,3 +57,26 @@ def test_reject_duplicate_library_identities(corpus_root, changes):
 def test_pending_downloads_do_not_appear_as_registered_sources(corpus_root):
     add_source(corpus_root, acquisition_status="pending")
     assert "| N01 |" not in build(corpus_root)["01-papers/INDEX.md"]
+
+
+def test_acquired_source_can_be_reviewed_without_duplicate_catalog_row(corpus_root):
+    index = corpus_root / "06-data/paper-index.csv"
+    row = next(r for r in csv.DictReader(index.open(encoding="utf-8-sig")) if r["code"] == "M39")
+    fields = ("pdf", "bibtex", "markdown", "pdf_sha256", "bibtex_sha256", "markdown_sha256")
+    add_source(corpus_root, id=row["code"], doi=row["doi"], **{f: row[f] for f in fields})
+    pages = build(corpus_root)
+    catalog = list(csv.DictReader(io.StringIO(pages[CATALOG_REL])))
+    matched = [r for r in catalog if r["code"] == "M39"]
+    assert len(matched) == 1
+    assert matched[0]["survey_selected"] == "yes" and matched[0]["review"] == row["review"]
+    assert matched[0]["source_notes"].endswith("evidence-notes.md")
+
+
+def test_reviewed_overlap_rejects_changed_source_hash(corpus_root):
+    row = next(r for r in csv.DictReader((corpus_root / "06-data/paper-index.csv").open(encoding="utf-8-sig")) if r["code"] == "M39")
+    fields = ("pdf", "bibtex", "markdown", "pdf_sha256", "bibtex_sha256", "markdown_sha256")
+    source = {f: row[f] for f in fields}
+    source["pdf_sha256"] = "0" * 64
+    add_source(corpus_root, id=row["code"], doi=row["doi"], **source)
+    with pytest.raises(CorpusError, match="conflicting sources"):
+        build(corpus_root)

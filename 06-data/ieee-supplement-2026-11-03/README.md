@@ -1,6 +1,6 @@
 # Supplementary IEEE sources — November 3, 2026
 
-This batch contains 20 publications outside the reviewed 127-paper corpus. All 20 official PDF/raw-BibTeX pairs and local Markdown exports are registered. All 20 now have targeted source readings with physical-page locators. These are separate statuses, and no additional review card or manuscript inclusion is implied.
+These 20 publications are included in the unified 147-paper survey selection. Each has a targeted light review card with comparison coding and physical-page evidence. The acquisition and reading records below preserve source provenance and assessment scope; the papers themselves use the shared theme directories.
 
 Seven pairs were supplied as manual IEEE Xplore downloads. The PDF and native BibTeX bytes are preserved, with DOI, title, authors, year and venue checked. Download originals remain in place. Formal publication years are recorded independently of the year embedded in a DOI.
 

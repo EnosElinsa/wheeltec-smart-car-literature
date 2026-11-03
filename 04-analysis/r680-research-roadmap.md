@@ -1,6 +1,6 @@
 # R680 research roadmap
 
-Historical organization date: October 25, 2026. This page combines the original direction priorities and expansion evidence to organize reading and experiments; it is not a demonstrated novelty claim. The detailed historical basis is in the [six-theme evidence synthesis](evidence-synthesis.md). For the current library of 127 works, with 23 full and 104 light cards, and the completed targeted follow-up, see the [integrated evidence analysis](integrated-evidence.md). The priority table below preserves the historical roadmap rather than claiming a new experimental ranking.
+Historical organization date: October 25, 2026. This page combines the original direction priorities and expansion evidence to organize reading and experiments; it is not a demonstrated novelty claim. The detailed historical basis is in the [six-theme evidence synthesis](evidence-synthesis.md). For the current library of 147 works, with 23 full and 124 light cards, and the completed targeted follow-up, see the [integrated evidence analysis](integrated-evidence.md). The priority table below preserves the historical roadmap rather than claiming a new experimental ranking.
 
 ## Priority order
 

@@ -1,6 +1,6 @@
 # Using the supplementary IEEE evidence
 
-Analysis date: November 3, 2026. All 20 sources now have targeted source readings, including the seven manually supplied papers. These are selected-passage assessments, not new full-verification cards. The reviewed index and current manuscript remain at 127 publications.
+Analysis date: November 3, 2026. All 20 sources have targeted light review cards, comparison coding and substantive use in the manuscript. The selection contains 147 publications (144 technical and three context works). The cards preserve selected-passage scope rather than claiming full assessment.
 
 [20-paper utilization matrix](../06-data/ieee-supplement-2026-11-03/utilization-matrix.csv) · [Page-bound source notes](../06-data/ieee-supplement-2026-11-03/evidence-notes.md) · [Reading ledger](../06-data/ieee-supplement-2026-11-03/source-reading.json) · [Current survey](https://github.com/EnosElinsa/wheeltec-navigation-survey)
 
@@ -26,8 +26,8 @@ The strongest contribution is more precise comparison and better-supported limit
 - N17 (pp. 4–7) implements failure-specific recovery on CENTAURO, while excluding some generated no-plan/slow-plan scenarios and retaining a human-rescue boundary. Its results require the denominator and hybrid motion primitives.
 - N20 (pp. 1–2, 5–6) is a dense-estimation comparator with processing time longer than sequence recording duration on the reported desktop. N/A sensor adaptation, run failure and estimation accuracy should be reported separately.
 
-## Revision order
+## Integration completed
 
-First strengthen Section IX's reproducibility, runtime and denominator discussion using N04, N17 and N20. Then revise Section VIII's detection/response comparison using N10, N13, N15, N17 and N18; this should sharpen the first open question rather than introduce another broad absence claim. Add mechanism comparisons in Sections IV–VII using the remaining rows, retaining N05/N07's relationship and each platform's requirements. Update Section X after those technical comparisons are in place.
+Sections VIII and IX now compare detection, executed response, mission continuation, exclusions, implementation repeatability and runtime using these sources. Sections IV–VII add mechanism-specific comparisons, and Section X narrows the remaining research interfaces around existing integrations. Five representative tables were refreshed while retaining 52 rows; counts, bibliography and supplement were regenerated together.
 
-Before formal corpus expansion, create consistently scoped review cards and code the new studies using the same vocabulary. Recompute counts, bibliography, tables and supplement together. Current acquisition and selected readings alone do not establish 147 equivalently assessed publications, 20 independent replications or 20 additional hardware validations. No new performance-table values were taken from the seven newly read papers; any later numerical comparison needs a direct PDF table/plot check.
+The [selection record](../06-data/survey-inclusion.json) preserves baseline hashes and current membership. The comparison remains heterogeneous: 23 full assessments and 124 light assessments, including 89 historical conversions and 35 targeted readings. N05/N07 are a related method family, not independent experimental corroboration. Numerical result-table values from the seven manually supplied papers were not introduced; any later use requires a rendered-source check.
