@@ -1,10 +1,11 @@
 # Data and provenance
 
-Public documentation and review cards are in English after the November 2, 2026 maintenance. Source texts and historical records retain their original bytes and language. The reviewed library has **127 papers**, with a review-card total of **23 full verification and 104 light**, comprising 89 historical conversions and 15 targeted readings. All 15 follow-up papers have registered official PDF/raw-BibTeX pairs. The user manually supplied the previously inaccessible F03/F09/F11 PDFs; their identities, authors, DOIs, and volume/issue details were checked before registration. No selected paper lacks a PDF. All 15 additions have MinerU precision transcriptions and targeted light cards; all 127 cards passed `review_check --pdf`. The historical corpus remains 112 papers (45 baseline + 7 neighboring + 60 expansion). The [workflow](../03-reviews/WORKFLOW.md) and [vocabulary](vocabulary.md) define the evidence limits of each level.
+The unified catalog lists **147 publications** in the shared theme directories. Of these, 127 have review cards and are included in the current survey selection; 20 have targeted source notes and await survey coding. The review-card set contains 23 full assessments and 104 light assessments, comprising 89 historical extract-based assessments and 15 targeted readings. The [workflow](../03-reviews/WORKFLOW.md) and [vocabulary](vocabulary.md) define their evidence limits. Source files retain their original bytes; acquisition and extraction details are recorded in the provenance ledgers below.
 
 | File | Purpose |
 |---|---|
-| [paper-index.csv](paper-index.csv) | 127 registered papers: IDs, themes, titles, years, DOIs, batches, source/review paths, and hashes |
+| [library-catalog.csv](library-catalog.csv) | Unified catalog of all 147 registered publications, including source paths, assessment status and current survey selection |
+| [paper-index.csv](paper-index.csv) | Current 127-paper survey selection: IDs, themes, titles, years, DOIs, source/review paths, hashes and comparison coding |
 | [corpus-comparison.csv](corpus-comparison.csv) | 127-paper comparison derived from review cards, including `verification_level` |
 | [fulltext-manifest.json](fulltext-manifest.json) | Source-text provenance: restoration or parsing source, mode, Markdown SHA-256, and image hashes for the 127-paper library; original source bytes preserved |
 | [followup-candidates.csv](followup-candidates.csv) | 79 historical title/abstract-screened rows; identities may repeat or overlap the formal corpus; reasons translated into English |
@@ -14,7 +15,7 @@ Public documentation and review cards are in English after the November 2, 2026 
 | [followup-assessment.md](followup-assessment.md) | Selected-page findings against the four follow-up questions, with evidence and access limits kept separate |
 | [search-coverage.md](search-coverage.md) | Historical search coverage and evidence boundaries |
 | [source-policy.md](source-policy.md) | Source, naming, version, and inclusion rules |
-| [ieee-supplement-2026-11-03/README.md](ieee-supplement-2026-11-03/README.md) | Separate IEEE batch: all 20 PDF/BibTeX pairs, local full-text exports and targeted source readings complete; excluded from the 127-paper reviewed statistics |
+| [ieee-supplement-2026-11-03/README.md](ieee-supplement-2026-11-03/README.md) | Acquisition and reading provenance for 20 publications included in the unified catalog and theme directories |
 | [ieee-supplement-2026-11-03/utilization-matrix.csv](ieee-supplement-2026-11-03/utilization-matrix.csv) | One row per supplementary paper: target sections, current comparators, supported use, evidence limits and remaining checks |
 | [ieee-supplement-2026-11-03/manual-import.md](ieee-supplement-2026-11-03/manual-import.md) | Seven user-downloaded IEEE pairs matched by DOI and archived with original bytes; source-to-library file map and hashes |
 

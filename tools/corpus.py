@@ -46,7 +46,7 @@ class CorpusError(Exception):
 class Entry:
     row: dict[str, str]
     theme: str
-    review: Path
+    review: Path | None
     key: bool
     coding: dict[str, str] = field(default_factory=dict)
 

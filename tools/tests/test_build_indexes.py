@@ -11,6 +11,7 @@ from tools.check_public_tree import CJK_PATTERN
 from tools.corpus import STAR
 
 EXPECTED = {
+    "06-data/library-catalog.csv",
     "01-papers/INDEX.md",
     "02-fulltext/INDEX.md",
     "03-reviews/INDEX.md",

@@ -1,14 +1,17 @@
-"""Regenerate the library index pages from paper-index.csv and the reviews.
+"""Regenerate a unified source catalog and the library index pages.
 
 Writes ``01-papers/INDEX.md``, ``02-fulltext/INDEX.md``, and
-``03-reviews/INDEX.md``, plus every per-theme ``README.md`` that already
+``03-reviews/INDEX.md``, ``06-data/library-catalog.csv``, and every per-theme ``README.md`` that already
 exists under ``01-papers/<theme>/``, ``02-fulltext/<theme>/`` (local only),
 and ``03-reviews/<theme>/``. Each entry shows ID, year (bibliographic year),
 title, venue, type, survey module, evidence type, and platform class, with a
 star for the key papers of ``READING_GUIDE.md`` (see ``tools.corpus``).
+Source indexes include acquired papers with their assessment status; the
+review index lists existing review cards. Acquisition registers are provenance
+inputs, while every paper remains in the shared theme directories.
 
 PDFs and ``paper.md`` files are excluded from the public tree, so entries link
-only to ``review.md`` and ``citation.bib``, link the DOI or official URL
+to review cards, source notes and ``citation.bib``, link the DOI or official URL
 externally, and show the local PDF and Markdown paths as code. Output is
 deterministic: themes in name order, entries by year (newest first) and ID,
 no timestamps.
@@ -29,12 +32,12 @@ from collections import defaultdict
 from pathlib import Path
 
 from tools.common import REPO_ROOT
-from tools.corpus import STAR, CorpusError, Entry, load_corpus
+from tools.corpus import STAR, CorpusError, Entry
+from tools.catalog import CATALOG_REL, catalog_csv, load_catalog
 
 SECTIONS = {
     "01-papers": "Publisher PDFs and BibTeX exports",
-    "02-fulltext": "Full-text Markdown transcriptions of the publisher PDFs, made with MinerU, "
-                   "with the figures they reference",
+    "02-fulltext": "Full-text Markdown transcriptions and referenced figures",
     "03-reviews": "Full-text reviews",
 }
 SECTION_NOTES = {
@@ -63,9 +66,14 @@ def _year(entry: Entry) -> int:
         return 0
 
 
-def _row(entry: Entry, page_dir: str) -> str:
+def _row(entry: Entry, page_dir: str, assessment: bool = False) -> str:
     row = entry.row
-    links = [f"[Review]({_link(page_dir, row['review'])})", f"[BibTeX]({_link(page_dir, row['bibtex'])})"]
+    links = []
+    if row.get("review"):
+        links.append(f"[Review]({_link(page_dir, row['review'])})")
+    elif row.get("source_notes"):
+        links.append(f"[Source notes]({_link(page_dir, row['source_notes'])})")
+    links.append(f"[BibTeX]({_link(page_dir, row['bibtex'])})")
     doi = row.get("doi", "").strip()
     url = row.get("official_url", "").strip()
     if doi:
@@ -79,12 +87,20 @@ def _row(entry: Entry, page_dir: str) -> str:
         row.get("publication_type", ""), entry.value("survey_module"), entry.value("evidence_type"),
         entry.value("platform_class"), " · ".join(links), local,
     ]
+    if assessment:
+        cells.insert(8, row["assessment"])
     return "| " + " | ".join(cells) + " |\n"
 
 
-def _table(entries: list[Entry], page_dir: str) -> str:
+def _table(entries: list[Entry], page_dir: str, assessment: bool = False) -> str:
     ordered = sorted(entries, key=lambda e: (-_year(e), e.code))
-    return HEADER + "".join(_row(e, page_dir) for e in ordered)
+    header = HEADER
+    if assessment:
+        header = HEADER.replace("| Links |", "| Assessment | Links |")
+        lines = header.splitlines()
+        lines[1] += "---|"
+        header = "\n".join(lines) + "\n"
+    return header + "".join(_row(e, page_dir, assessment) for e in ordered)
 
 
 def _legend(entries: list[Entry], to_root: str) -> str:
@@ -98,7 +114,9 @@ def _legend(entries: list[Entry], to_root: str) -> str:
         f"([vocabulary]({to_root}06-data/vocabulary.md))."
     )
     if any(not e.coding for e in entries):
-        text += " An empty cell means that the review has no survey coding yet."
+        text += " Empty coding cells indicate that survey classification is pending."
+    if any(e.review is None for e in entries):
+        text += " Targeted source notes are distinguished from review cards in the Assessment column."
     return text + "\n"
 
 
@@ -116,7 +134,7 @@ def section_index(section: str, entries: list[Entry]) -> str:
     ]
     for theme in sorted(by_theme):
         parts.append(f"\n## {theme} · {len(by_theme[theme])}\n\n")
-        parts.append(_table(by_theme[theme], section))
+        parts.append(_table(by_theme[theme], section, assessment=section != "03-reviews"))
     return "".join(parts)
 
 
@@ -128,21 +146,22 @@ def theme_readme(section: str, theme: str, entries: list[Entry]) -> str:
         f"{SECTIONS[section]}: {len(entries)} papers.\n\n",
         _legend(entries, "../../"),
         "\n",
-        _table(entries, page_dir),
+        _table(entries, page_dir, assessment=section != "03-reviews"),
     ])
 
 
 def build(root: Path = REPO_ROOT, strict: bool = False) -> dict[str, str]:
     """Return the generated pages as {path relative to the root: text}."""
-    entries = load_corpus(root, strict)
+    entries = load_catalog(root, strict)
     themes = sorted({e.theme for e in entries})
-    pages = {}
+    pages = {CATALOG_REL: catalog_csv(entries)}
     for section in SECTIONS:
-        pages[f"{section}/INDEX.md"] = section_index(section, entries)
+        selected = [e for e in entries if e.review is not None] if section == "03-reviews" else entries
+        pages[f"{section}/INDEX.md"] = section_index(section, selected)
         for theme in themes:
             rel = f"{section}/{theme}/README.md"
             if (root / rel).is_file():
-                pages[rel] = theme_readme(section, theme, [e for e in entries if e.theme == theme])
+                pages[rel] = theme_readme(section, theme, [e for e in selected if e.theme == theme])
     return pages
 
 

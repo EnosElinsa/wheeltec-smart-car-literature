@@ -19,7 +19,7 @@ import re
 import sys
 
 from tools.common import REPO_ROOT, read_text
-from tools.library import load_index
+from tools.catalog import load_catalog
 from tools.textnorm import NormalizedText, coverage, ngrams, normalize
 from tools.pdftext import read_pdf_pages
 
@@ -42,7 +42,7 @@ def main(argv: list[str] | None = None) -> int:
 
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
-    row = load_index().get(args.code)
+    row = next((entry.row for entry in load_catalog() if entry.code == args.code), None)
     if row is None:
         print(f"unknown code {args.code}")
         return 2
