@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-03",
+  "status": "passed",
+  "evidence_commit": "a2eb04837a4881bb4ed1b91d5eab2212301edd8a",
+  "manuscript_commit": "e233dbc38845e6ec927dcacc1843191977749c43",
+  "review_cards": 147,
+  "full_cards": 23,
+  "light_cards": 124,
+  "historical_light_conversions": 89,
+  "targeted_light_readings": 35,
+  "review_check_pdf": {
+    "passed": 147,
+    "failed": 0
+  },
+  "tool_tests": {
+    "passed": 80,
+    "failed": 0
+  },
+  "relative_links": {
+    "checked": 2180,
+    "broken": 0
+  },
+  "public_tree": "passed strict size/path/secret/CJK checks",
+  "baseline_rows_preserved": 127,
+  "local_source_artifacts_checked": 441,
+  "publisher_source_hash_mismatches": 0,
+  "public_clone_build": "passed main and supplement; no publisher full texts present",
+  "selection_record": "survey-inclusion.json",
+  "scope": "Structural/source consistency within the recorded assessment depth; no uniform whole-paper verification, independent reproduction or new robot experiment implied."
+}

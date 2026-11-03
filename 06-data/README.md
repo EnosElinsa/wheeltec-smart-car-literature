@@ -5,6 +5,7 @@ The unified catalog lists **147 publications** in the shared theme directories. 
 | File | Purpose |
 |---|---|
 | [library-catalog.csv](library-catalog.csv) | Unified catalog of all 147 registered publications, including source paths, assessment status and current survey selection |
+| [integration-verification.json](integration-verification.json) | Review, source preservation, tool/link and public-clone checks for the incorporation |
 | [survey-inclusion.json](survey-inclusion.json) | Current membership, selection date, and historical baseline hashes/commit |
 | [paper-index.csv](paper-index.csv) | Current 147-paper survey selection: IDs, themes, titles, years, DOIs, source/review paths, hashes and comparison coding |
 | [corpus-comparison.csv](corpus-comparison.csv) | 147-paper comparison derived from review cards, including `verification_level` |
