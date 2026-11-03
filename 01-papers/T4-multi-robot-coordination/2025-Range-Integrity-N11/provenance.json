@@ -1,0 +1,29 @@
+{
+  "paper_id": "0d3a8e44c5de4443a04c786319b1d05e",
+  "metadata": {
+    "title": "Range-Based Multi-Robot Integrity Monitoring For Cyberattacks and Faults: An Anchor-Free Approach",
+    "authors": [
+      "Vishnu Vijay",
+      "Kartik A. Pant",
+      "Minhyun Cho",
+      "Yifan Guo",
+      "James M. Goppert",
+      "Inseok Hwang"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3534068",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10854616",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10854616",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10854616&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "caa00e69640ce65fc0f174a5446cbbc9dc32c6bc805d16f8bf36eeefd91febce",
+  "bibtex_sha256": "2ae04b3583be8172f7888746b515fcd0fae51ef9fff64bbb48d4e04f8a1c0be2",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:15:07.797174+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "175bfbef8b6e4df3ae28c656e41f141e",
+  "metadata": {
+    "title": "AESF-LIO: Adaptive Error-State Fusion LiDAR-Inertial Odometry for Ground Vehicles in Structured Environments",
+    "authors": [
+      "Zhishuai Huang",
+      "Chao Sun",
+      "Jianghao Leng",
+      "Bo Wang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3685919",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11488584",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11488584",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11488584&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "eab292299b8910a66ccd02b30f48aff578b561a5e512d6d8cc9cc76ef3bf54ce",
+  "bibtex_sha256": "b5284e170faf7152a6db4d5e0e7b993249df5f51755e548969410b6e4009d9b3",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:27:50.084990+00:00"
+}

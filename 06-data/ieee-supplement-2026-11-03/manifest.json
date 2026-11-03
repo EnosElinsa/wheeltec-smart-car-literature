@@ -1,0 +1,1037 @@
+{
+  "date": "2026-11-03",
+  "host": "codex",
+  "batch": "ieee-supplement-2026-11-03",
+  "selection_sha256": "72ef6143cba05735d52a00433c4443745c4f6a8447fea5d842f3c63f59e9cf03",
+  "reviewed_corpus_count": 127,
+  "reviewed_corpus_index_sha256": "ea21dd0ce7d2a80f704a8fa5ad4e25c9066713ea063cabb7510a0ac56ca283ce",
+  "candidate_count": 20,
+  "official_pairs": 20,
+  "markdown_exports": 20,
+  "targeted_readings": 13,
+  "pending_pairs": 0,
+  "manual_publisher_pairs": 7,
+  "scope": "Supplementary source batch; not added to the 127-paper reviewed index or manuscript counts.",
+  "records": [
+    {
+      "id": "N01",
+      "title": "AESF-LIO: Adaptive Error-State Fusion LiDAR-Inertial Odometry for Ground Vehicles in Structured Environments",
+      "doi": "10.1109/lra.2026.3685919",
+      "year": 2026,
+      "theme": "T1",
+      "short_name": "AESF-LIO",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11488584/",
+      "reason": "Ground/non-ground error-state fusion adds a ground-vehicle-specific response to structured geometric imbalance.",
+      "publication_dates": {
+        "published": [
+          2026,
+          6
+        ],
+        "published-print": [
+          2026,
+          6
+        ],
+        "issued": [
+          2026,
+          6
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T1/semantic-review.jsonl",
+      "abstract_sha256": "1dfda707037b4a7b2cb6ea0817e4f3d7b028a8e7f98a226f047432d4a1553ae2",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T1-perception-localization/2026-AESF-LIO-N01/paper.pdf",
+      "pdf_sha256": "eab292299b8910a66ccd02b30f48aff578b561a5e512d6d8cc9cc76ef3bf54ce",
+      "bibtex": "01-papers/T1-perception-localization/2026-AESF-LIO-N01/citation.bib",
+      "bibtex_sha256": "b5284e170faf7152a6db4d5e0e7b993249df5f51755e548969410b6e4009d9b3",
+      "provenance": "01-papers/T1-perception-localization/2026-AESF-LIO-N01/provenance.json",
+      "provenance_sha256": "621e77fd7507e673a693219ecfda9a10dda300261321c0f1b7b48eedca246bd5",
+      "markdown": "02-fulltext/T1-perception-localization/2026-AESF-LIO-N01/paper.md",
+      "markdown_sha256": "4dee513f25d374e8bbb6512db9edc406eb28ef002a89747049df73b37a5a8008",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N02",
+      "title": "Versatile LiDAR-Inertial Odometry With SE(2) Constraints for Ground Vehicles",
+      "doi": "10.1109/lra.2023.3268584",
+      "year": 2023,
+      "theme": "T1",
+      "short_name": "SE2-LIO",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10105944/",
+      "reason": "Explicit near-planar pose parameterization helps compare wheel/ground priors with unconstrained LIO.",
+      "publication_dates": {
+        "published": [
+          2023,
+          6
+        ],
+        "published-print": [
+          2023,
+          6
+        ],
+        "issued": [
+          2023,
+          6
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T1/semantic-review.jsonl",
+      "abstract_sha256": "7b967d11974ec2e71c6b0308dc1f9041238de739a26438db702c6b1b68693c9d",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "not-full-text-reviewed",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "manual_publisher_download",
+      "acquisition_method": "manual_publisher_download",
+      "pdf": "01-papers/T1-perception-localization/2023-SE2-LIO-N02/paper.pdf",
+      "pdf_sha256": "b85e9eb923e6c433afa7f54e6000280761ad7c7f0df727c0318d37a6d458566d",
+      "bibtex": "01-papers/T1-perception-localization/2023-SE2-LIO-N02/citation.bib",
+      "bibtex_sha256": "99f84217855253de6c0d78fab4c17e53dc2e5758b7d2dd8d5e0487990abaa385",
+      "provenance": "01-papers/T1-perception-localization/2023-SE2-LIO-N02/provenance.json",
+      "provenance_sha256": "03b737f1754abb245ffc4a019be53e5a42607e7a116556732d757f5e47c0aa48",
+      "markdown": "02-fulltext/T1-perception-localization/2023-SE2-LIO-N02/paper.md",
+      "markdown_sha256": "dccc01828a22fcaf77561552acbab9b1108d59b078c545d9ab954beea4cb3f11",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N03",
+      "title": "Estimation of Slip Ratio and Side Slip Angle of Wheeled Planetary Rovers Based on Trace Imprint",
+      "doi": "10.1109/lra.2025.3581084",
+      "year": 2025,
+      "theme": "T1",
+      "short_name": "Trace-Slip",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11044427/",
+      "reason": "Trace-image estimation adds physical longitudinal and lateral slip evidence beyond inertial/wheel-only estimation.",
+      "publication_dates": {
+        "published": [
+          2025,
+          8
+        ],
+        "published-print": [
+          2025,
+          8
+        ],
+        "issued": [
+          2025,
+          8
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T1/semantic-review.jsonl",
+      "abstract_sha256": "5105bbc80e4d9a825d9ea0e0b8e87c23721c986c7230dbdf1a07e37ffd1ad7c5",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "not-full-text-reviewed",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "manual_publisher_download",
+      "acquisition_method": "manual_publisher_download",
+      "pdf": "01-papers/T1-perception-localization/2025-Trace-Slip-N03/paper.pdf",
+      "pdf_sha256": "f0c5d04de49af79312984876859051934775f0ba84cf2bf8d301e7573001fbcb",
+      "bibtex": "01-papers/T1-perception-localization/2025-Trace-Slip-N03/citation.bib",
+      "bibtex_sha256": "a3d8669796dbde7d7d2d458722ca29fff33101b47c1db92de25e3daeb3620b89",
+      "provenance": "01-papers/T1-perception-localization/2025-Trace-Slip-N03/provenance.json",
+      "provenance_sha256": "dd8e1297f8e76bbc7895ac2680ba5b32fe8e5d86d7a1904a1f6ebc2ef4f4ebdb",
+      "markdown": "02-fulltext/T1-perception-localization/2025-Trace-Slip-N03/paper.md",
+      "markdown_sha256": "c6f8dad111c6243ccc0c1d45719a4770e5f588f3f9fd92b4e271f67a7e3c87d4",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N04",
+      "title": "Unveiling Non-Reproducibility in LiDAR-Inertial Odometry",
+      "doi": "10.1109/lra.2025.3636030",
+      "year": 2026,
+      "theme": "T6",
+      "short_name": "LIO-Reproducibility",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11266943/",
+      "reason": "Non-deterministic LIO implementations directly qualify benchmark comparisons under degeneration.",
+      "publication_dates": {
+        "published": [
+          2026,
+          1
+        ],
+        "published-print": [
+          2026,
+          1
+        ],
+        "issued": [
+          2026,
+          1
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T1/semantic-review.jsonl",
+      "abstract_sha256": "ee1e7fa13cd1720fbacab05154cea6e6640d069fbcd3d1e21028b2035464eb4e",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "not-full-text-reviewed",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "manual_publisher_download",
+      "acquisition_method": "manual_publisher_download",
+      "pdf": "01-papers/T6-reliability-deployment/2026-LIO-Reproducibility-N04/paper.pdf",
+      "pdf_sha256": "faccdeab6b8c64fb6b68a63bebc0838c666f976c2039399e34ff9b898653089b",
+      "bibtex": "01-papers/T6-reliability-deployment/2026-LIO-Reproducibility-N04/citation.bib",
+      "bibtex_sha256": "1a3e79b64a9a6b4f5ac33009503679e074660e7800190db55b04eca617069d44",
+      "provenance": "01-papers/T6-reliability-deployment/2026-LIO-Reproducibility-N04/provenance.json",
+      "provenance_sha256": "6bfc992ea7319909b57c5d9810c7f51e09c21771a6fc813e242e6c122d9bcf23",
+      "markdown": "02-fulltext/T6-reliability-deployment/2026-LIO-Reproducibility-N04/paper.md",
+      "markdown_sha256": "ab42395151f455bdf0c3b51de553926ca602727d9537d96ca418848036a966c2",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N05",
+      "title": "Graph-Based SLAM-Aware Exploration With Prior Topo-Metric Information",
+      "doi": "10.1109/lra.2024.3420817",
+      "year": 2024,
+      "theme": "T2",
+      "short_name": "SLAM-Aware-Exploration",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10577228/",
+      "reason": "Prior topo-metric information and deliberate loop closure provide an integrated estimation/planning comparator.",
+      "publication_dates": {
+        "published": [
+          2024,
+          9
+        ],
+        "published-print": [
+          2024,
+          9
+        ],
+        "issued": [
+          2024,
+          9
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T2/semantic-review.jsonl",
+      "abstract_sha256": "002dbf17f9d12c3b20239c341de8ea43f934c9b52bbcf57f49b47a868ffc7262",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2024-SLAM-Aware-Exploration-N05/paper.pdf",
+      "pdf_sha256": "dd471ef1b067e7cd9a608bf2aad732a31ae7ff6b3888fad4651e4ea1336fc800",
+      "bibtex": "01-papers/T2-slam-mapping-exploration/2024-SLAM-Aware-Exploration-N05/citation.bib",
+      "bibtex_sha256": "0732f6b0efbfe3277e9bee48c6043bf3dc64a7efa1985108c8a66b497a1e3e3f",
+      "provenance": "01-papers/T2-slam-mapping-exploration/2024-SLAM-Aware-Exploration-N05/provenance.json",
+      "provenance_sha256": "6c03c5af8db1589c25de14cfa9d9104c9fcacc3726224f97ab1bae99afc13737",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2024-SLAM-Aware-Exploration-N05/paper.md",
+      "markdown_sha256": "f43d904318f744fc10b24f617f9974f88a85973ec0b17d085d05df7237e142d3",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N06",
+      "title": "Predictive Data Acquisition for Lifelong Visual Teach, Repeat and Learn",
+      "doi": "10.1109/lra.2024.3421193",
+      "year": 2024,
+      "theme": "T6",
+      "short_name": "Predictive-Data",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10578334/",
+      "reason": "Data acquisition during service and idle time connects changing appearance to long-term visual navigation.",
+      "publication_dates": {
+        "published": [
+          2024,
+          11
+        ],
+        "published-print": [
+          2024,
+          11
+        ],
+        "issued": [
+          2024,
+          11
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T2/semantic-review.jsonl",
+      "abstract_sha256": "9ae8e49c553831beaf1a6deb47d3fe6209d7a3303281f255117e0e22bba8ae89",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T6-reliability-deployment/2024-Predictive-Data-N06/paper.pdf",
+      "pdf_sha256": "1eec1b11d537adac4721538150f0a8f87829fdfd84aea401120c83dde156e0cc",
+      "bibtex": "01-papers/T6-reliability-deployment/2024-Predictive-Data-N06/citation.bib",
+      "bibtex_sha256": "ab0a71a00bb65490ede91a1452f30970142ee0d3274cdcd993e78ff61f2596ce",
+      "provenance": "01-papers/T6-reliability-deployment/2024-Predictive-Data-N06/provenance.json",
+      "provenance_sha256": "c85730db49e8995be0f74dc434194523be560c75195ad7acbed55135597d7ff9",
+      "markdown": "02-fulltext/T6-reliability-deployment/2024-Predictive-Data-N06/paper.md",
+      "markdown_sha256": "9b6047d8005d0dee09dadf91d5cd3468465a631fd688cb1c9e33f0e36b5bbd66",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N07",
+      "title": "Multi-Robot Active Graph Exploration with Reduced Pose-SLAM Uncertainty via Submodular Optimization",
+      "doi": "10.1109/iros58592.2024.10802691",
+      "year": 2024,
+      "theme": "T4",
+      "short_name": "Active-Graph-Exploration",
+      "venue": "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+      "publication_type": "proceedings-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10802691/",
+      "reason": "Joint coverage and informative loop closure qualify broad claims about missing localization-aware team planning.",
+      "publication_dates": {
+        "published": [
+          2024,
+          10,
+          14
+        ],
+        "published-print": [
+          2024,
+          10,
+          14
+        ],
+        "issued": [
+          2024,
+          10,
+          14
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T2/semantic-review.jsonl",
+      "abstract_sha256": "22dec0496723caa2182899297282a24b9261a6e3c0f3655fd7e88c32c93b99ea",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T4-multi-robot-coordination/2024-Active-Graph-Exploration-N07/paper.pdf",
+      "pdf_sha256": "77445b8e74c9abd90b8a61e53fb107e4faeb9c6fcfd078aba1bab827d1c42cda",
+      "bibtex": "01-papers/T4-multi-robot-coordination/2024-Active-Graph-Exploration-N07/citation.bib",
+      "bibtex_sha256": "b0fb784eb402e7b298723073c266826b07e8b589a8eb0f7ad16eb6486a8b45de",
+      "provenance": "01-papers/T4-multi-robot-coordination/2024-Active-Graph-Exploration-N07/provenance.json",
+      "provenance_sha256": "99520964007be9de71d8de2bb2aeecb7f219cc04df12d807631aa46bed754027",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2024-Active-Graph-Exploration-N07/paper.md",
+      "markdown_sha256": "68bc2e6081b001a84e365c073a80b81201f905787ed4d6a43e833f4abf84712f",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N08",
+      "title": "Anisotropic Terrain-Aware Autonomous Exploration via Image-Domain Perception and Sparse Routing",
+      "doi": "10.1109/lra.2026.3723311",
+      "year": 2026,
+      "theme": "T2",
+      "short_name": "Anisotropic-Exploration",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11652930/",
+      "reason": "Direction-dependent cross-slope cost and kinematic frontier selection strengthen wheeled terrain synthesis.",
+      "publication_dates": {
+        "published": [
+          2026,
+          10
+        ],
+        "published-print": [
+          2026,
+          10
+        ],
+        "issued": [
+          2026,
+          10
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T2/semantic-review.jsonl",
+      "abstract_sha256": "688d5138a5c057346abf5cef5d39e400255ba3d334d1d6f59d25e441735d14cb",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2026-Anisotropic-Exploration-N08/paper.pdf",
+      "pdf_sha256": "267d2a6694d25ee230936c78e276ab35c1c9bd6a4e5fc69a737924646555def1",
+      "bibtex": "01-papers/T2-slam-mapping-exploration/2026-Anisotropic-Exploration-N08/citation.bib",
+      "bibtex_sha256": "e7250e40289b01f3d4d65b9e1ecfc90ea08cd12d1f64e37c4d7de3fc65a661a6",
+      "provenance": "01-papers/T2-slam-mapping-exploration/2026-Anisotropic-Exploration-N08/provenance.json",
+      "provenance_sha256": "d60d33502d4d3d336566e5371d92aebdbff4d5491a8bad44a81033f33858b0bb",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2026-Anisotropic-Exploration-N08/paper.md",
+      "markdown_sha256": "098f09c662752664463d308f6a5efa301b5d825f5e1c1e648c213e203fe0f684",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N09",
+      "title": "Co-NavGPT: Multirobot Cooperative Visual Semantic Navigation Using Vision Language Models",
+      "doi": "10.1109/lra.2025.3645650",
+      "year": 2026,
+      "theme": "T5",
+      "short_name": "Co-NavGPT",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11302789/",
+      "reason": "VLM frontier allocation adds a multirobot semantic integration comparator, with embodiment and simulator limits to check.",
+      "publication_dates": {
+        "published": [
+          2026,
+          2
+        ],
+        "published-print": [
+          2026,
+          2
+        ],
+        "issued": [
+          2026,
+          2
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T2/semantic-review.jsonl",
+      "abstract_sha256": "ba107e01e1154a7cfc513763b6ded9e0e610fab6943e742345924dfed00b8dfd",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2026-Co-NavGPT-N09/paper.pdf",
+      "pdf_sha256": "ccb9bdcc96454ff5693d846dc49395729d96dd6df3b5890f4ffa839b2da8cfa6",
+      "bibtex": "01-papers/T5-semantic-embodied-navigation/2026-Co-NavGPT-N09/citation.bib",
+      "bibtex_sha256": "a4af427c9ee586f6bd83edbbb345760adbc8d0a2e6d7506dd47394cd5ad0df8d",
+      "provenance": "01-papers/T5-semantic-embodied-navigation/2026-Co-NavGPT-N09/provenance.json",
+      "provenance_sha256": "dad201220ef1bf90abe12de6426856f89afe9e0b4924c4ed0edc6f0f01da9d5f",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2026-Co-NavGPT-N09/paper.md",
+      "markdown_sha256": "a312a0ece6b609cd7ce69a9fa78dda1904f98bb8331f676a28cea82786d7b4dd",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N10",
+      "title": "NMPC-Augmented Visual Navigation and Safe Learning Control for Large-Scale Mobile Robots",
+      "doi": "10.1109/lra.2026.3669802",
+      "year": 2026,
+      "theme": "T3",
+      "short_name": "NMPC-Safe-Learning",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11419776/",
+      "reason": "A large wheeled platform integrates visual estimation, predictive control, actuator learning, and safety monitoring.",
+      "publication_dates": {
+        "published": [
+          2026,
+          4
+        ],
+        "published-print": [
+          2026,
+          4
+        ],
+        "issued": [
+          2026,
+          4
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T3/semantic-review.jsonl",
+      "abstract_sha256": "b3db21985a395f215a0c69925740dd78a10ac119ca2113ea6442910ac9fdc782",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T3-planning-control/2026-NMPC-Safe-Learning-N10/paper.pdf",
+      "pdf_sha256": "6724b1e3cb1d05055791796379d042704301f0dc79a6974dd2333fcccc331909",
+      "bibtex": "01-papers/T3-planning-control/2026-NMPC-Safe-Learning-N10/citation.bib",
+      "bibtex_sha256": "6d39e01d2de603bc4365c6f79e78677c040bced13e1417675e5b23b424ac94f2",
+      "provenance": "01-papers/T3-planning-control/2026-NMPC-Safe-Learning-N10/provenance.json",
+      "provenance_sha256": "556ac9246e764498651b1d10da93b4f7e09eb1554ad856ab6a3fb6b112799f50",
+      "markdown": "02-fulltext/T3-planning-control/2026-NMPC-Safe-Learning-N10/paper.md",
+      "markdown_sha256": "2007f1b4f9e2da1270161c940fdf66c7bfd5ac52345a2d195b50fd1e2eafbb9a",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N11",
+      "title": "Range-Based Multi-Robot Integrity Monitoring For Cyberattacks and Faults: An Anchor-Free Approach",
+      "doi": "10.1109/lra.2025.3534068",
+      "year": 2025,
+      "theme": "T4",
+      "short_name": "Range-Integrity",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10854616/",
+      "reason": "Anchor-free range diagnosis and reconstruction add shared-state fault evidence; aerial validation remains a transfer boundary.",
+      "publication_dates": {
+        "published": [
+          2025,
+          3
+        ],
+        "published-print": [
+          2025,
+          3
+        ],
+        "issued": [
+          2025,
+          3
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T1/semantic-review.jsonl",
+      "abstract_sha256": "738258046bfb1314e9477e58c50598c0b8c3e50b46a553f92320fced392d4321",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Range-Integrity-N11/paper.pdf",
+      "pdf_sha256": "caa00e69640ce65fc0f174a5446cbbc9dc32c6bc805d16f8bf36eeefd91febce",
+      "bibtex": "01-papers/T4-multi-robot-coordination/2025-Range-Integrity-N11/citation.bib",
+      "bibtex_sha256": "2ae04b3583be8172f7888746b515fcd0fae51ef9fff64bbb48d4e04f8a1c0be2",
+      "provenance": "01-papers/T4-multi-robot-coordination/2025-Range-Integrity-N11/provenance.json",
+      "provenance_sha256": "ec0f36adaedf19082bfee72d86a14b784e9228f7863e6a2370da04fce4fea118",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Range-Integrity-N11/paper.md",
+      "markdown_sha256": "ff2939a346b93f9837d47ba691f46d3a810e66475603bd1e7fd6eac545c9b103",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N12",
+      "title": "Real-Time Spatiotemporal Tubes for Dynamic Unsafe Sets",
+      "doi": "10.1109/lra.2025.3645667",
+      "year": 2026,
+      "theme": "T3",
+      "short_name": "Spatiotemporal-Tubes",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11302778/",
+      "reason": "Reach-avoid-stay control with unknown dynamics provides an alternative explicit safety formulation with mobile hardware.",
+      "publication_dates": {
+        "published": [
+          2026,
+          2
+        ],
+        "published-print": [
+          2026,
+          2
+        ],
+        "issued": [
+          2026,
+          2
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T6/semantic-review.jsonl",
+      "abstract_sha256": "4fde7624420762d39a4cb685ce8bfac2632f82277f062e6b5b5fff6a088a42b7",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "not-full-text-reviewed",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "manual_publisher_download",
+      "acquisition_method": "manual_publisher_download",
+      "pdf": "01-papers/T3-planning-control/2026-Spatiotemporal-Tubes-N12/paper.pdf",
+      "pdf_sha256": "889574c84f584f7826d29f13053bce1be762292d05c0bd98843fed9ae791f365",
+      "bibtex": "01-papers/T3-planning-control/2026-Spatiotemporal-Tubes-N12/citation.bib",
+      "bibtex_sha256": "f03a20624a9abdb4962355245e77b25b19379b61847a58037e696a0de0f64a22",
+      "provenance": "01-papers/T3-planning-control/2026-Spatiotemporal-Tubes-N12/provenance.json",
+      "provenance_sha256": "eb437ca8c4c1c0b711364a6f2fc1ea391c6c9dee05fed7d919c2abef98bb5e12",
+      "markdown": "02-fulltext/T3-planning-control/2026-Spatiotemporal-Tubes-N12/paper.md",
+      "markdown_sha256": "160c0d091ed13ad4a860b360365450997ef09a785c92027977189651bf69174b",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N13",
+      "title": "Anticipating Degradation: A Predictive Approach to Fault Tolerance in Robot Swarms",
+      "doi": "10.1109/lra.2025.3592063",
+      "year": 2025,
+      "theme": "T6",
+      "short_name": "Predictive-Swarm-Faults",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11091407/",
+      "reason": "Gradual-fault prediction adds a predictive-maintenance comparison to predominantly reactive fault responses.",
+      "publication_dates": {
+        "published": [
+          2025,
+          9
+        ],
+        "published-print": [
+          2025,
+          9
+        ],
+        "issued": [
+          2025,
+          9
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T6/semantic-review.jsonl",
+      "abstract_sha256": "9896e7826ab02c34e616d9ed7ea333e5be52213d1d1ff45f6f7cbb951dcbf79f",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T6-reliability-deployment/2025-Predictive-Swarm-Faults-N13/paper.pdf",
+      "pdf_sha256": "951572526c85a6c6cc78077d1368a0d91313dbdca547f44737828865489776c4",
+      "bibtex": "01-papers/T6-reliability-deployment/2025-Predictive-Swarm-Faults-N13/citation.bib",
+      "bibtex_sha256": "04d4174ad0e5b3fb972c41b71dc1719102cdb1f22afd69907685f5b715ab6d74",
+      "provenance": "01-papers/T6-reliability-deployment/2025-Predictive-Swarm-Faults-N13/provenance.json",
+      "provenance_sha256": "cab524d11a00955344b7a0868b12d1bd3612eed6fd65e5e55b73a80f372bac59",
+      "markdown": "02-fulltext/T6-reliability-deployment/2025-Predictive-Swarm-Faults-N13/paper.md",
+      "markdown_sha256": "8d0e9b08de44d670dd810f41c508ad44d94e9aaccdad3fbb5a421af73ccc73f6",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N14",
+      "title": "Resilient Memory-Event-Triggered Predictive Tracking Control for Unmanned Ground Vehicle",
+      "doi": "10.1109/tiv.2026.3662786",
+      "year": 2026,
+      "theme": "T3",
+      "short_name": "Resilient-Event-MPC",
+      "venue": "IEEE Transactions on Intelligent Vehicles",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/11386870/",
+      "reason": "Ackermann hardware links event-triggered transmission and tracking, with fault and network assumptions to verify.",
+      "publication_dates": {
+        "published": [
+          2026,
+          4
+        ],
+        "published-print": [
+          2026,
+          4
+        ],
+        "issued": [
+          2026,
+          4
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T6/semantic-review.jsonl",
+      "abstract_sha256": "776e7b5e3e2575766600d9f9b481d3eef85273349a685facee489bd549108668",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "not-full-text-reviewed",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "manual_publisher_download",
+      "acquisition_method": "manual_publisher_download",
+      "pdf": "01-papers/T3-planning-control/2026-Resilient-Event-MPC-N14/paper.pdf",
+      "pdf_sha256": "862b054b85c0b24cb87b85f68f8e973553f59cfa6b628c7ef4dc39e8e05ae73b",
+      "bibtex": "01-papers/T3-planning-control/2026-Resilient-Event-MPC-N14/citation.bib",
+      "bibtex_sha256": "1334c7e4fc742a9eb431acac460cfa4188e2616ece0e53d50893cae7e1e4ffdd",
+      "provenance": "01-papers/T3-planning-control/2026-Resilient-Event-MPC-N14/provenance.json",
+      "provenance_sha256": "670a038af0269fe139b26e50d91ecb201cc6b5fcf5d72ba82a3ee4e02924d3fd",
+      "markdown": "02-fulltext/T3-planning-control/2026-Resilient-Event-MPC-N14/paper.md",
+      "markdown_sha256": "e8f97ffd026372671e72952452a8e4888dcd99fa17b44cc50093c6a9c9682244",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 11,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N15",
+      "title": "Resilient Online Planning for Mobile Robots With Minimal Relaxation of Signal Temporal Logic Specifications",
+      "doi": "10.1109/lra.2025.3563119",
+      "year": 2025,
+      "theme": "T3",
+      "short_name": "Resilient-STL",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10972058/",
+      "reason": "Minimal task relaxation distinguishes recovering feasibility from preserving the original mission specification.",
+      "publication_dates": {
+        "published": [
+          2025,
+          6
+        ],
+        "published-print": [
+          2025,
+          6
+        ],
+        "issued": [
+          2025,
+          6
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T6/semantic-review.jsonl",
+      "abstract_sha256": "e24be2f23f8907fb8ef08b9abb27579431328b819eadb4c933937af3451cc353",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T3-planning-control/2025-Resilient-STL-N15/paper.pdf",
+      "pdf_sha256": "bae499adbae94fd844c20399bc6d8dcac7f200995f8f2ca3f236a3b2aaf8475e",
+      "bibtex": "01-papers/T3-planning-control/2025-Resilient-STL-N15/citation.bib",
+      "bibtex_sha256": "0d1f4161c0edf0d1b4218c2cdc40e7dda3de89a53a98cf527e188f463d1ec8c9",
+      "provenance": "01-papers/T3-planning-control/2025-Resilient-STL-N15/provenance.json",
+      "provenance_sha256": "b7072c7ca4c51a8459b2992f852e24fe00548e541d6b161ebc52231701d9f937",
+      "markdown": "02-fulltext/T3-planning-control/2025-Resilient-STL-N15/paper.md",
+      "markdown_sha256": "181b8773744842c6586b1a4ef94077e9084e408cf77793acc8d1aa3298afca4a",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N16",
+      "title": "Robust LPV Fault Diagnosis Using the Set-Based Approach for Autonomous Ground Vehicles",
+      "doi": "10.1109/tits.2024.3394518",
+      "year": 2024,
+      "theme": "T6",
+      "short_name": "LPV-Fault-Diagnosis",
+      "venue": "IEEE Transactions on Intelligent Transportation Systems",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10528263/",
+      "reason": "Set-based minimum detectable/isolable faults and prototype validation strengthen diagnosis comparison.",
+      "publication_dates": {
+        "published": [
+          2024,
+          8
+        ],
+        "published-print": [
+          2024,
+          8
+        ],
+        "issued": [
+          2024,
+          8
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T6/semantic-review.jsonl",
+      "abstract_sha256": "d25f14f254ff8e61748a75c538e1118b3251613a251a37c51276914dd5d77539",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T6-reliability-deployment/2024-LPV-Fault-Diagnosis-N16/paper.pdf",
+      "pdf_sha256": "acfbda4234a40c0aa16e5d3e1c6ee2e53324559f73f0579e9098189cb0c84859",
+      "bibtex": "01-papers/T6-reliability-deployment/2024-LPV-Fault-Diagnosis-N16/citation.bib",
+      "bibtex_sha256": "b3bd07aa73f66c5d8f48aa5c572643665948da62bcc1d139d5851f902a36af90",
+      "provenance": "01-papers/T6-reliability-deployment/2024-LPV-Fault-Diagnosis-N16/provenance.json",
+      "provenance_sha256": "696edd5fa75d2d5801396bd138d5c80a93b17418c7073991cd83f40ade679ed7",
+      "markdown": "02-fulltext/T6-reliability-deployment/2024-LPV-Fault-Diagnosis-N16/paper.md",
+      "markdown_sha256": "f636d0e59190f0aaf57ec0705803f9688cde7cce759493cd58368ebacd90b081",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 13,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N17",
+      "title": "Autonomous Navigation With Online Replanning and Recovery Behaviors for Wheeled-Legged Robots Using Behavior Trees",
+      "doi": "10.1109/lra.2023.3313052",
+      "year": 2023,
+      "theme": "T6",
+      "short_name": "BT-Recovery",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10243138/",
+      "reason": "A behavior-tree supervisor executes recovery after collision or planner failure; wheeled-legged embodiment must remain explicit.",
+      "publication_dates": {
+        "published": [
+          2023,
+          10
+        ],
+        "published-print": [
+          2023,
+          10
+        ],
+        "issued": [
+          2023,
+          10
+        ]
+      },
+      "abstract_source": {
+        "query_url": "https://api.openalex.org/works",
+        "source": "openalex"
+      },
+      "abstract_sha256": "7c674d7d5f080c8f89a1ecadc65a79e8493c7cd463c4881503dcb93af485da33",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "not-full-text-reviewed",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "manual_publisher_download",
+      "acquisition_method": "manual_publisher_download",
+      "pdf": "01-papers/T6-reliability-deployment/2023-BT-Recovery-N17/paper.pdf",
+      "pdf_sha256": "4dd525aa16da353607b710ed03c8e1f4474a9136b0233d5ca44d9a93e16335e9",
+      "bibtex": "01-papers/T6-reliability-deployment/2023-BT-Recovery-N17/citation.bib",
+      "bibtex_sha256": "c54dd3e52ee8909f5fde308e45cd1436158287e4caa4ac78cc37329ad99dfbb7",
+      "provenance": "01-papers/T6-reliability-deployment/2023-BT-Recovery-N17/provenance.json",
+      "provenance_sha256": "6e1a52b6ef83ef3ce09120b1c25133140045936da6c2c2f6a6609fac7c71f59f",
+      "markdown": "02-fulltext/T6-reliability-deployment/2023-BT-Recovery-N17/paper.md",
+      "markdown_sha256": "a63f4979b045eaf72e5906fdfa7089c1b8328592aeeb402d3dd528d17396268f",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N18",
+      "title": "Proactive Anomaly Detection for Robot Navigation With Multi-Sensor Fusion",
+      "doi": "10.1109/lra.2022.3153989",
+      "year": 2022,
+      "theme": "T6",
+      "short_name": "PAAD",
+      "venue": "IEEE Robotics and Automation Letters",
+      "publication_type": "journal-article",
+      "official_url": "https://ieeexplore.ieee.org/document/9720937/",
+      "reason": "Prediction from planned motion and multisensor observation adds proactive navigation-failure monitoring.",
+      "publication_dates": {
+        "published": [
+          2022,
+          4
+        ],
+        "published-print": [
+          2022,
+          4
+        ],
+        "issued": [
+          2022,
+          4
+        ]
+      },
+      "abstract_source": {
+        "query_url": "https://api.openalex.org/works",
+        "source": "openalex"
+      },
+      "abstract_sha256": "a4194956c0e8d100bf83cbe3620111da6cb82acafb9c25823e1d3743658f0aab",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T6-reliability-deployment/2022-PAAD-N18/paper.pdf",
+      "pdf_sha256": "b8f484b724e48887562c01d372e0b3f553a8ddc5dcbf5e7e1a29558c06e9e973",
+      "bibtex": "01-papers/T6-reliability-deployment/2022-PAAD-N18/citation.bib",
+      "bibtex_sha256": "7e37d3b2ded52aa82b46ac34d22ef1ce32d3c56eda3b0fae55d4944ed8b1fc3d",
+      "provenance": "01-papers/T6-reliability-deployment/2022-PAAD-N18/provenance.json",
+      "provenance_sha256": "df53950d00c28d571cece240e4b5f9d5db9a938ed8faa06672ef94929ecf210f",
+      "markdown": "02-fulltext/T6-reliability-deployment/2022-PAAD-N18/paper.md",
+      "markdown_sha256": "847650cf1cee089afb6dae5b14a2d21090c1768a551f98a668fa89dd36c67ea9",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 8,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N19",
+      "title": "Active Collision-Based Navigation for Wheeled Robots",
+      "doi": "10.1109/icra57147.2024.10610726",
+      "year": 2024,
+      "theme": "T1",
+      "short_name": "Active-Collision",
+      "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+      "publication_type": "proceedings-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10610726/",
+      "reason": "Active contact for localization under exteroceptive loss provides a concrete alternative recovery mechanism.",
+      "publication_dates": {
+        "published": [
+          2024,
+          5,
+          13
+        ],
+        "published-print": [
+          2024,
+          5,
+          13
+        ],
+        "issued": [
+          2024,
+          5,
+          13
+        ]
+      },
+      "abstract_source": {
+        "query_url": "https://api.semanticscholar.org/graph/v1/paper/search?query=wheeled+robot+localization+navigation+recovery&limit=30&fields=paperId%2Ctitle%2Cabstract%2Cvenue%2Cyear%2CpublicationDate%2CpublicationTypes%2Cauthors%2CexternalIds%2Curl%2CcitationCount",
+        "record_url": "https://www.semanticscholar.org/paper/ec7ae3afcce01fe07d81729344461ebd34f735d8",
+        "source": "semantic-scholar"
+      },
+      "abstract_sha256": "a6e774893aa2186b92e022468d9f329e0ee5e4792c66e078ec303377bb164310",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "targeted-source-reading",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "publisher_export_api",
+      "acquisition_method": "automated_publisher_retrieval",
+      "pdf": "01-papers/T1-perception-localization/2024-Active-Collision-N19/paper.pdf",
+      "pdf_sha256": "cf304496f5ebd91ad17b1fbd895f3a50fc5df906b229a117ec2351f13b6c5038",
+      "bibtex": "01-papers/T1-perception-localization/2024-Active-Collision-N19/citation.bib",
+      "bibtex_sha256": "bd9fc087d238ceec13d945e4590c48cbd036a0e00420a9481566e6c8d86ab8e9",
+      "provenance": "01-papers/T1-perception-localization/2024-Active-Collision-N19/provenance.json",
+      "provenance_sha256": "1a5e1205b6b9553d35553357dca52e4657f673307d9266c0397203270a2151e6",
+      "markdown": "02-fulltext/T1-perception-localization/2024-Active-Collision-N19/paper.md",
+      "markdown_sha256": "2728bfaccb7a96d114a611192474e193b864966a2fdb987bcb8d02a4f839ad60",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 7,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    },
+    {
+      "id": "N20",
+      "title": "DMSA - Dense Multi Scan Adjustment for LiDAR Inertial Odometry and Global Optimization",
+      "doi": "10.1109/icra57147.2024.10610818",
+      "year": 2024,
+      "theme": "T1",
+      "short_name": "DMSA",
+      "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+      "publication_type": "proceedings-article",
+      "official_url": "https://ieeexplore.ieee.org/document/10610818/",
+      "reason": "Dense multi-scan alignment adds a main-conference comparator for small overlap, dynamic objects, and global optimization.",
+      "publication_dates": {
+        "published": [
+          2024,
+          5,
+          13
+        ],
+        "published-print": [
+          2024,
+          5,
+          13
+        ],
+        "issued": [
+          2024,
+          5,
+          13
+        ]
+      },
+      "abstract_source": "expansions/2026-10-24/reviews/T1/semantic-review.jsonl",
+      "abstract_sha256": "412a0c2d6ebdc5c57e18c5c8ee5473db8eb84c1f58d044d72337466e75f5b143",
+      "screening_scope": "title-and-abstract",
+      "reviewer": "codex",
+      "acquisition_status": "delivered",
+      "acquisition_phase": "",
+      "markdown_status": "exported-local",
+      "read_scope": "not-full-text-reviewed",
+      "observed_obstacle": "",
+      "survey_corpus_member": false,
+      "citation_source": "manual_publisher_download",
+      "acquisition_method": "manual_publisher_download",
+      "pdf": "01-papers/T1-perception-localization/2024-DMSA-N20/paper.pdf",
+      "pdf_sha256": "bc0713fe8998c94bf96e3eb97415d39d2b29abe09921eaa172d07f1036d150f6",
+      "bibtex": "01-papers/T1-perception-localization/2024-DMSA-N20/citation.bib",
+      "bibtex_sha256": "c35dfd2ddf1021cd3af2ee1e1ebc626da07a89e317aab73e2a1152e194b3119a",
+      "provenance": "01-papers/T1-perception-localization/2024-DMSA-N20/provenance.json",
+      "provenance_sha256": "ec5a4f44be7587947c4d70dc72f8e0fc84c381ea9d495ca3c1bbaf97082931ef",
+      "markdown": "02-fulltext/T1-perception-localization/2024-DMSA-N20/paper.md",
+      "markdown_sha256": "de68497bef34d62d5fe39f76c255781c969745ffb8b6e89e737c45c2c510267f",
+      "extraction_mode": "local-pymupdf4llm",
+      "pdf_pages": 7,
+      "low_text_pages": [],
+      "source_quality_scope": "Layout-aware local transcription with physical-page markers and extracted images. Equations and numeric table cells require PDF checks; no OCR or full-paper review claimed."
+    }
+  ],
+  "combined_raw_bibtex_sha256": "ee3d5a7578e89a2a08a2215a51d82ba71dfce26c998ac2d62663160ad7db9b14"
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "2c95da314aec4bb4a3c0a466c687a2f3",
+  "metadata": {
+    "title": "Anisotropic Terrain-Aware Autonomous Exploration via Image-Domain Perception and Sparse Routing",
+    "authors": [
+      "Yang Zhao",
+      "Lelai Zhou",
+      "Chen Zhang",
+      "Yibin Li"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3723311",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11652930",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11652930",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11652930&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "267d2a6694d25ee230936c78e276ab35c1c9bd6a4e5fc69a737924646555def1",
+  "bibtex_sha256": "e7250e40289b01f3d4d65b9e1ecfc90ea08cd12d1f64e37c4d7de3fc65a661a6",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:37:18.792211+00:00"
+}

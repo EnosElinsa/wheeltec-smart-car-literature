@@ -1,0 +1,29 @@
+{
+  "paper_id": "08af8ca0e4a14686902a7ce7fdc1a066",
+  "metadata": {
+    "title": "Active Collision-Based Navigation for Wheeled Robots",
+    "authors": [
+      "Jingjing Li",
+      "Jialin Ji",
+      "Qianhao Wang",
+      "Huan Yu",
+      "Yu Pan",
+      "Fei Gao"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57147.2024.10610726",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10610726",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10610726",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10610726&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "cf304496f5ebd91ad17b1fbd895f3a50fc5df906b229a117ec2351f13b6c5038",
+  "bibtex_sha256": "bd9fc087d238ceec13d945e4590c48cbd036a0e00420a9481566e6c8d86ab8e9",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:24:54.032129+00:00"
+}

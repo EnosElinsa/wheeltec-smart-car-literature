@@ -1,0 +1,34 @@
+{
+  "paper_id": "8472d518e45c48b9a36904e7df08b054",
+  "metadata": {
+    "title": "Versatile LiDAR-Inertial Odometry With SE(2) Constraints for Ground Vehicles",
+    "authors": [
+      "Jiaying Chen",
+      "Han Wang",
+      "Minghui Hu",
+      "Ponnuthurai Nagaratnam Suganthan"
+    ],
+    "year": 2023,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2023.3268584",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10105944",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10105944",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10105944",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10105944",
+  "pdf_sha256": "b85e9eb923e6c433afa7f54e6000280761ad7c7f0df727c0318d37a6d458566d",
+  "bibtex_sha256": "99f84217855253de6c0d78fab4c17e53dc2e5758b7d2dd8d5e0487990abaa385",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T09:09:53.003778+00:00",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Versatile_LiDAR-Inertial_Odometry_With_SE2_Constraints_for_Ground_Vehicles.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.1.2.26.bib",
+  "source_origin": "User stated these files were downloaded from IEEE Xplore.",
+  "download_url_scope": "Exact artifact URLs not recorded; official article landing page retained.",
+  "identity_verification": "Frozen selected title/DOI/year/venue and complete authors checked against PDF/native BibTeX; Crossref used only as independent identity evidence.",
+  "crossref_record_sha256": "2fe4a5799cc45cea6b7f1272e44b979ad29f6c5b2811b181966fcafc4f4e7f26"
+}

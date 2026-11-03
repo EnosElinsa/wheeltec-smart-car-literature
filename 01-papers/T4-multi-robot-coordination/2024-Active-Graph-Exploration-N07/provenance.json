@@ -1,0 +1,29 @@
+{
+  "paper_id": "0e6c801be862402cb0615b4f8b0416f5",
+  "metadata": {
+    "title": "Multi-Robot Active Graph Exploration with Reduced Pose-SLAM Uncertainty via Submodular Optimization",
+    "authors": [
+      "Ruofei Bai",
+      "Shenghai Yuan",
+      "Hongliang Guo",
+      "Pengyu Yin",
+      "Wei-Yun Yau",
+      "Lihua Xie"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros58592.2024.10802691",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10802691",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10802691",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10802691&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "77445b8e74c9abd90b8a61e53fb107e4faeb9c6fcfd078aba1bab827d1c42cda",
+  "bibtex_sha256": "b0fb784eb402e7b298723073c266826b07e8b589a8eb0f7ad16eb6486a8b45de",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:36:21.972408+00:00"
+}

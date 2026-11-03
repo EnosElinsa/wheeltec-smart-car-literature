@@ -1,0 +1,28 @@
+{
+  "paper_id": "9773259e9b2746038468cf6ae51ead98",
+  "metadata": {
+    "title": "Co-NavGPT: Multi<roman>r</roman>obot Cooperative Visual Semantic Navigation Using Vision Language Models",
+    "authors": [
+      "Bangguo Yu",
+      "Qihao Yuan",
+      "Kailai Li",
+      "Hamidreza Kasaei",
+      "Ming Cao"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3645650",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11302789",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11302789",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11302789&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "ccb9bdcc96454ff5693d846dc49395729d96dd6df3b5890f4ffa839b2da8cfa6",
+  "bibtex_sha256": "a4af427c9ee586f6bd83edbbb345760adbc8d0a2e6d7506dd47394cd5ad0df8d",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:13:25.117065+00:00"
+}

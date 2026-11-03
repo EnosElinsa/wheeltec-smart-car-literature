@@ -1,0 +1,26 @@
+{
+  "paper_id": "014a8b5098d54a54898161b2465d68d5",
+  "metadata": {
+    "title": "Robust LPV Fault Diagnosis Using the Set-Based Approach for Autonomous Ground Vehicles",
+    "authors": [
+      "Shuang Zhang",
+      "Vicenç Puig",
+      "Sara Ifqir"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/tits.2024.3394518",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10528263",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10528263",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10528263&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "acfbda4234a40c0aa16e5d3e1c6ee2e53324559f73f0579e9098189cb0c84859",
+  "bibtex_sha256": "b3bd07aa73f66c5d8f48aa5c572643665948da62bcc1d139d5851f902a36af90",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:43:50.318900+00:00"
+}

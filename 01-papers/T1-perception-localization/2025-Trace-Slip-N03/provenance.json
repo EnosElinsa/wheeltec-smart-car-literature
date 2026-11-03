@@ -1,0 +1,36 @@
+{
+  "paper_id": "90544d6b029c40e68c66020c7b542a83",
+  "metadata": {
+    "title": "Estimation of Slip Ratio and Side Slip Angle of Wheeled Planetary Rovers Based on Trace Imprint",
+    "authors": [
+      "Nan Li",
+      "Junlong Guo",
+      "Liang Ding",
+      "Chenghua Tian",
+      "Chuan Zhou",
+      "Haibo Gao"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3581084",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11044427",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11044427",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11044427",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11044427",
+  "pdf_sha256": "f0c5d04de49af79312984876859051934775f0ba84cf2bf8d301e7573001fbcb",
+  "bibtex_sha256": "a3d8669796dbde7d7d2d458722ca29fff33101b47c1db92de25e3daeb3620b89",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T09:09:53.055551+00:00",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Estimation_of_Slip_Ratio_and_Side_Slip_Angle_of_Wheeled_Planetary_Rovers_Based_on_Trace_Imprint.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.1.3.21.bib",
+  "source_origin": "User stated these files were downloaded from IEEE Xplore.",
+  "download_url_scope": "Exact artifact URLs not recorded; official article landing page retained.",
+  "identity_verification": "Frozen selected title/DOI/year/venue and complete authors checked against PDF/native BibTeX; Crossref used only as independent identity evidence.",
+  "crossref_record_sha256": "5ca5f8b29b3518176ea03d595d2133fcfb50a2638c1d03ec89fbd1910cb2467d"
+}

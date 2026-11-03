@@ -1,0 +1,8 @@
+# Publisher BibTeX exports must keep their original bytes (hashes are
+# recorded in 06-data/paper-index.csv), so Git must not normalize them.
+*.bib -text
+# Data tables keep their byte layout (UTF-8 BOM, line endings).
+*.csv -text whitespace=cr-at-eol
+*.jsonl -text
+# Supplementary provenance hashes refer to the exact registered bytes.
+**/provenance.json -text

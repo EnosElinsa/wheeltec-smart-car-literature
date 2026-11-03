@@ -1,0 +1,25 @@
+{
+  "paper_id": "e687f6cb33054f88b9a2407c8ee894ba",
+  "metadata": {
+    "title": "Resilient Online Planning for Mobile Robots With Minimal Relaxation of Signal Temporal Logic Specifications",
+    "authors": [
+      "Ali Tevfik Buyukkocak",
+      "Derya Aksaray"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3563119",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10972058",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10972058",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10972058&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "bae499adbae94fd844c20399bc6d8dcac7f200995f8f2ca3f236a3b2aaf8475e",
+  "bibtex_sha256": "0d1f4161c0edf0d1b4218c2cdc40e7dda3de89a53a98cf527e188f463d1ec8c9",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:42:48.440269+00:00"
+}

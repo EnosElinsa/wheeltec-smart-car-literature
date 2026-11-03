@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# Copyrighted publisher artifacts. They stay on the local machine only.
+# Each paper keeps its DOI, official URL, and raw BibTeX in the public tree.
+# ---------------------------------------------------------------------------
+*.pdf
+
+# Full-text Markdown transcriptions and figures extracted from publisher PDFs.
+02-fulltext/*
+!02-fulltext/INDEX.md
+
+# Historical archive (contains run logs, local paths, and full texts).
+99-archive/*.zip
+99-archive/superseded/
+99-archive/local/
+
+# Manuscript is maintained and published as a separate Git repository.
+# Avoid embedding that repository in the evidence library.
+05-survey/manuscript/
+
+# Acquisition state, credentials, and temporary extraction folders.
+.env
+.env.*
+.arp/
+arp-state/
+arp-deliveries/
+tmp/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+
+# LaTeX build products (in case a build runs outside the manuscript folder)
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Editors and OS
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store

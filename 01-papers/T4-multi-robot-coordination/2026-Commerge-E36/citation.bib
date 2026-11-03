@@ -1,0 +1,28 @@
+@article{doi:10.1177/02783649261464202,
+author = {Hogyun Kim and Jiwon Choi and Juwon Kim and Geonmo Yang and Seokhwan Jeong and Hyungtae Lim and Younggun Cho},
+title ={Commerge: Communication-efficient, robust, and fast LiDAR map merging framework for multi-robot coordination in resource-constrained scenarios},
+
+journal = {The International Journal of Robotics Research},
+volume = {0},
+number = {0},
+pages = {02783649261464202},
+year = {2026},
+doi = {10.1177/02783649261464202},
+
+URL = { 
+    
+        https://doi.org/10.1177/02783649261464202
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1177/02783649261464202
+    
+    
+
+}
+,
+    abstract = { By maintaining global consistency across robot teams, multi-robot light detection and ranging (LiDAR) map merging enables faster exploration and efficient area coverage. However, map merging requires exchanging massive sensor data between the server and robots, making communication the bottleneck, especially in communication-constrained environments. Therefore, we present Commerge, a communication-efficient map merging framework that achieves bandwidth reduction through graph-theoretic selective data exchange. By doing so, our Commerge reduces inter-robot communication by up to 5000× while maintaining alignment accuracy. Our key insight is that only a small subset of carefully selected scans is sufficient for robust map merging. We formulate this as a three-stage cascaded optimization problem on an exchange graph, where vertices represent robot keyframes and edges denote candidate inter-robot loops. Through three cascade stages, we select a sequentially overlapped, balanced-transmission-cost, and geometrically-perceptually optimal scan subset that preserves alignment quality while reducing communication. Unlike existing approaches that either transmit whole scans, which require GB-scale data exchange, or employ naïve downsampling, our approach exchanges only MB-scale data while achieving comparable alignment accuracy. Extensive evaluation on five public datasets and four in-house datasets covering cave, planetary-analog, indoor, and outdoor campus environments shows up to 99.98\% reduction in data exchange (e.g., from 7000 MB to 1.3 MB on the HeLiPR dataset), while maintaining alignment performance across embedded to desktop platforms. Furthermore, we demonstrate that our proposed framework operates on resource-constrained hardware where existing methods fail, enabling real-world multi-robot deployment in bandwidth-limited field operations. Finally, we validate system robustness under a real-world non-line-of-sight (NLOS) communication environment with up to 73.3\% dropout rate, as well as under emulated network degradation scenarios including delay, bandwidth limitation, and packet loss, confirming reliable map merging even under severely degraded connectivity. }
+}

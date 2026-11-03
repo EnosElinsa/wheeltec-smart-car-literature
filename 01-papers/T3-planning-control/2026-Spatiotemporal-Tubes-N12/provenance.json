@@ -1,0 +1,33 @@
+{
+  "paper_id": "2a4fdb8e382143f79e9e823a706f00cf",
+  "metadata": {
+    "title": "Real-Time Spatiotemporal Tubes for Dynamic Unsafe Sets",
+    "authors": [
+      "Ratnangshu Das",
+      "Siddhartha Upadhyay",
+      "Pushpak Jagtap"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3645667",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11302778",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11302778",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11302778",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11302778",
+  "pdf_sha256": "889574c84f584f7826d29f13053bce1be762292d05c0bd98843fed9ae791f365",
+  "bibtex_sha256": "f03a20624a9abdb4962355245e77b25b19379b61847a58037e696a0de0f64a22",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T09:09:53.155526+00:00",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Real-Time_Spatiotemporal_Tubes_for_Dynamic_Unsafe_Sets.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.1.4.27.bib",
+  "source_origin": "User stated these files were downloaded from IEEE Xplore.",
+  "download_url_scope": "Exact artifact URLs not recorded; official article landing page retained.",
+  "identity_verification": "Frozen selected title/DOI/year/venue and complete authors checked against PDF/native BibTeX; Crossref used only as independent identity evidence.",
+  "crossref_record_sha256": "5d563c0f00f0a6ff33cba392c034e2babf65259c15220ce18b828671903a42cc"
+}

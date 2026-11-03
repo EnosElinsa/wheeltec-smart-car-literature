@@ -1,0 +1,27 @@
+{
+  "paper_id": "bc34a44741d243a6ac307cbcc6b491cc",
+  "metadata": {
+    "title": "Graph-Based SLAM-Aware Exploration With Prior Topo-Metric Information",
+    "authors": [
+      "Ruofei Bai",
+      "Hongliang Guo",
+      "Wei-Yun Yau",
+      "Lihua Xie"
+    ],
+    "year": 2024,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2024.3420817",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10577228",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10577228",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10577228&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "dd471ef1b067e7cd9a608bf2aad732a31ae7ff6b3888fad4651e4ea1336fc800",
+  "bibtex_sha256": "0732f6b0efbfe3277e9bee48c6043bf3dc64a7efa1985108c8a66b497a1e3e3f",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:33:51.328642+00:00"
+}

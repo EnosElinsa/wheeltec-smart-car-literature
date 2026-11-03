@@ -1,0 +1,311 @@
+{
+  "N01": {
+    "pages": [
+      1,
+      5,
+      8
+    ],
+    "scope": "Selected abstract, adaptive weighting, evaluation setup, runtime discussion and conclusion; complete derivation, ablations and numerical tables not audited. No performance numbers retained.",
+    "excerpts": [
+      {
+        "pdf_page": 8,
+        "excerpt": "mainly validated in relatively flat urban environments"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "eab292299b8910a66ccd02b30f48aff578b561a5e512d6d8cc9cc76ef3bf54ce",
+    "markdown_sha256": "4dee513f25d374e8bbb6512db9edc406eb28ef002a89747049df73b37a5a8008"
+  },
+  "N05": {
+    "pages": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, comparison protocol, exploration evaluation discussion, hardware demonstration and conclusion; complete pruning proof and result tables not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 7,
+        "excerpt": "All methods run the same SLAM method called"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "dd471ef1b067e7cd9a608bf2aad732a31ae7ff6b3888fad4651e4ea1336fc800",
+    "markdown_sha256": "f43d904318f744fc10b24f617f9974f88a85973ec0b17d085d05df7237e142d3"
+  },
+  "N06": {
+    "pages": [
+      1,
+      5,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, dataset/comparison protocol, deployment discussion and conclusion; complete training pipeline, result tables and significance tests not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 8,
+        "excerpt": "pipeline is presented using datasets collected by real robots"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "1eec1b11d537adac4721538150f0a8f87829fdfd84aea401120c83dde156e0cc",
+    "markdown_sha256": "9b6047d8005d0dee09dadf91d5cd3468465a631fd688cb1c9e33f0e36b5bbd66"
+  },
+  "N07": {
+    "pages": [
+      1,
+      2,
+      6,
+      8
+    ],
+    "scope": "Selected abstract, relationship to previous work, simulation setup and conclusion. Complete approximation proofs and numerical tables not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 8,
+        "excerpt": "with simulated graph exploration experiments"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "77445b8e74c9abd90b8a61e53fb107e4faeb9c6fcfd078aba1bab827d1c42cda",
+    "markdown_sha256": "68bc2e6081b001a84e365c073a80b81201f905787ed4d6a43e833f4abf84712f"
+  },
+  "N08": {
+    "pages": [
+      4,
+      5,
+      7,
+      8
+    ],
+    "scope": "Selected cost-model scope, evaluation setup, deployment/platform discussion and conclusion. Complete derivation and numerical result tables not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 4,
+        "excerpt": "not a full robot dynamics model"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "267d2a6694d25ee230936c78e276ab35c1c9bd6a4e5fc69a737924646555def1",
+    "markdown_sha256": "098f09c662752664463d308f6a5efa301b5d825f5e1c1e648c213e203fe0f684"
+  },
+  "N09": {
+    "pages": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, task/architecture passage, global/local policy, evaluation, deployment and conclusion; Table I visually checked on p. 6. Complete derivation not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 7,
+        "excerpt": "are deployed on a workstation equipped with an NVIDIA RTX"
+      }
+    ],
+    "tables_checked": [
+      "Table I, physical PDF p. 6"
+    ],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "ccb9bdcc96454ff5693d846dc49395729d96dd6df3b5890f4ffa839b2da8cfa6",
+    "markdown_sha256": "a312a0ece6b609cd7ce69a9fa78dda1904f98bb8331f676a28cea82786d7b4dd"
+  },
+  "N10": {
+    "pages": [
+      1,
+      5,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, safety/configuration, recovery handling, evaluation and conclusion. Rendered configuration/recovery pp. 5-6 checked; no table-performance numbers retained.",
+    "excerpts": [
+      {
+        "pdf_page": 6,
+        "excerpt": "any tracking loss triggered a safety stop and relocalization attempt"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "6724b1e3cb1d05055791796379d042704301f0dc79a6974dd2333fcccc331909",
+    "markdown_sha256": "2007f1b4f9e2da1270161c940fdf66c7bfd5ac52345a2d195b50fd1e2eafbb9a"
+  },
+  "N11": {
+    "pages": [
+      1,
+      2,
+      6,
+      7
+    ],
+    "scope": "Abstract/contributions and selected simulation, emulated sensing and hardware implementation passages. Complete algorithm/proof not audited; no performance numbers retained.",
+    "excerpts": [
+      {
+        "pdf_page": 7,
+        "excerpt": "is implemented centrally"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "caa00e69640ce65fc0f174a5446cbbc9dc32c6bc805d16f8bf36eeefd91febce",
+    "markdown_sha256": "ff2939a346b93f9837d47ba691f46d3a810e66475603bd1e7fd6eac545c9b103"
+  },
+  "N13": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, simulation setup, fault model/detection/resolution passages, experimental discussion and conclusion. Complete equations and numerical tables not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 2,
+        "excerpt": "All experiments were conducted with Robot Operating System (ROS) 2 and Gazebo Classic"
+      },
+      {
+        "pdf_page": 5,
+        "excerpt": "having been assumed to receive any necessary maintenance work"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "951572526c85a6c6cc78077d1368a0d91313dbdca547f44737828865489776c4",
+    "markdown_sha256": "8d0e9b08de44d670dd810f41c508ad44d94e9aaccdad3fbb5a421af73ccc73f6"
+  },
+  "N15": {
+    "pages": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, runtime correction/replanning, simulation setup, comparison/scalability discussion and conclusion. Complete proofs and numerical tables not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 6,
+        "excerpt": "We present numerical simulations to validate our approach"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "bae499adbae94fd844c20399bc6d8dcac7f200995f8f2ca3f236a3b2aaf8475e",
+    "markdown_sha256": "181b8773744842c6586b1a4ef94077e9084e408cf77793acc8d1aa3298afca4a"
+  },
+  "N16": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "scope": "Selected abstract, lateral model and bounded uncertainty, prototype-data validation setup, injected faults and computation setting, detection/isolation discussion and conclusion. Complete derivations and numerical tables not audited.",
+    "excerpts": [
+      {
+        "pdf_page": 8,
+        "excerpt": "The real data used in the validation process are acquired using a prototype vehicle"
+      },
+      {
+        "pdf_page": 12,
+        "excerpt": "authors plan to extend the proposed method for fault estimation and fault tolerant control problems"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "acfbda4234a40c0aa16e5d3e1c6ee2e53324559f73f0579e9098189cb0c84859",
+    "markdown_sha256": "f636d0e59190f0aaf57ec0705803f9688cde7cce759493cd58368ebacd90b081"
+  },
+  "N18": {
+    "pages": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      8
+    ],
+    "scope": "Selected abstract, method/input and data collection, experimental setup, real-time replay test including footnote 3, limitations and conclusion. Rendered p. 7 checked; no table numbers retained.",
+    "excerpts": [
+      {
+        "pdf_page": 7,
+        "excerpt": "was performed on streaming data from rosbags"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "b8f484b724e48887562c01d372e0b3f553a8ddc5dcbf5e7e1a29558c06e9e973",
+    "markdown_sha256": "847650cf1cee089afb6dae5b14a2d21090c1768a551f98a668fa89dd36c67ea9"
+  },
+  "N19": {
+    "pages": [
+      1,
+      4,
+      5,
+      6
+    ],
+    "scope": "Selected abstract, active planning, implementation, hardware localization protocol, simulation planner test and conclusion; complete filter derivation not audited. No table numbers retained.",
+    "excerpts": [
+      {
+        "pdf_page": 5,
+        "excerpt": "we manually remote the robot to randomly collide with"
+      }
+    ],
+    "tables_checked": [],
+    "host": "codex",
+    "date": "2026-11-03",
+    "read_scope": "targeted-source-reading",
+    "whole_paper_verified": false,
+    "pdf_sha256": "cf304496f5ebd91ad17b1fbd895f3a50fc5df906b229a117ec2351f13b6c5038",
+    "markdown_sha256": "2728bfaccb7a96d114a611192474e193b864966a2fdb987bcb8d02a4f839ad60"
+  }
+}

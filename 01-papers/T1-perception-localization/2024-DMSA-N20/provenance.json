@@ -1,0 +1,32 @@
+{
+  "paper_id": "997ab895917346c2a451708dda17ecdd",
+  "metadata": {
+    "title": "DMSA - Dense Multi Scan Adjustment for LiDAR Inertial Odometry and Global Optimization",
+    "authors": [
+      "David Skuddis",
+      "Norbert Haala"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57147.2024.10610818",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10610818",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10610818",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10610818",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10610818",
+  "pdf_sha256": "bc0713fe8998c94bf96e3eb97415d39d2b29abe09921eaa172d07f1036d150f6",
+  "bibtex_sha256": "c35dfd2ddf1021cd3af2ee1e1ebc626da07a89e317aab73e2a1152e194b3119a",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T09:09:53.386177+00:00",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "DMSA_-_Dense_Multi_Scan_Adjustment_for_LiDAR_Inertial_Odometry_and_Global_Optimization.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.1.6.9.bib",
+  "source_origin": "User stated these files were downloaded from IEEE Xplore.",
+  "download_url_scope": "Exact artifact URLs not recorded; official article landing page retained.",
+  "identity_verification": "Frozen selected title/DOI/year/venue and complete authors checked against PDF/native BibTeX; Crossref used only as independent identity evidence.",
+  "crossref_record_sha256": "35c3250ab033f39011febc85f6b66f2d4affd76003f0e58e007eb621ef7801bb"
+}

@@ -1,0 +1,13 @@
+@article{OKAWARA2025104929,
+title = {Tightly-coupled LiDAR-IMU-wheel odometry with an online neural kinematic model learning via factor graph optimization},
+journal = {Robotics and Autonomous Systems},
+volume = {187},
+pages = {104929},
+year = {2025},
+issn = {0921-8890},
+doi = {https://doi.org/10.1016/j.robot.2025.104929},
+url = {https://www.sciencedirect.com/science/article/pii/S0921889025000156},
+author = {Taku Okawara and Kenji Koide and Shuji Oishi and Masashi Yokozuka and Atsuhiko Banno and Kentaro Uno and Kazuya Yoshida},
+keywords = {Training neural network on factor graph, Odometry, Sensor fusion, Machine learning, Factor graph optimization, Calibration, Skid-steered robot},
+abstract = {Environments lacking geometric features (e.g., tunnels and long straight corridors) are challenging for LiDAR-based odometry algorithms because LiDAR point clouds degenerate in such environments. For wheeled robots, a wheel kinematic model (i.e., wheel odometry) can improve the reliability of the odometry estimation. However, the kinematic model suffers from complex motions (e.g., wheel slippage, lateral movement) in the case of skid-steering robots particularly because this robot model rotates by skidding its wheels. Furthermore, these errors change nonlinearly when the wheel slippage is large (e.g., drifting) and are subject to terrain-dependent parameters. To simultaneously tackle point cloud degeneration and the kinematic model errors, we developed a LiDAR-IMU-wheel odometry algorithm incorporating online training of a neural network that learns the kinematic model of wheeled robots with nonlinearity. We propose to train the neural network online on a factor graph along with robot states, allowing the learning-based kinematic model to adapt to the current terrain condition. The proposed method jointly solves online training of the neural network and LiDAR-IMU-wheel odometry on a unified factor graph to retain the consistency of all those constraints. Through experiments, we first verified that the proposed network adapted to a changing environment, resulting in an accurate odometry estimation across different environments. We then confirmed that the proposed odometry estimation algorithm was robust against point cloud degeneration and nonlinearity (e.g., large wheel slippage by drifting) of the kinematic model. The summary video is available at: https://www.youtube.com/watch?v=CvRVhdda7Cw}
+}

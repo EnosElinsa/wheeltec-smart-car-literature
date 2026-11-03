@@ -1,0 +1,33 @@
+{
+  "paper_id": "cb426cd02da5407a8b4661f2b493a004",
+  "metadata": {
+    "title": "Autonomous Navigation With Online Replanning and Recovery Behaviors for Wheeled-Legged Robots Using Behavior Trees",
+    "authors": [
+      "Alessio De Luca",
+      "Luca Muratore",
+      "Nikos G. Tsagarakis"
+    ],
+    "year": 2023,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2023.3313052",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10243138",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10243138",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10243138",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10243138",
+  "pdf_sha256": "4dd525aa16da353607b710ed03c8e1f4474a9136b0233d5ca44d9a93e16335e9",
+  "bibtex_sha256": "c54dd3e52ee8909f5fde308e45cd1436158287e4caa4ac78cc37329ad99dfbb7",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T09:09:53.279572+00:00",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Autonomous_Navigation_With_Online_Replanning_and_Recovery_Behaviors_for_Wheeled-Legged_Robots_Using_Behavior_Trees.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.1.5.27.bib",
+  "source_origin": "User stated these files were downloaded from IEEE Xplore.",
+  "download_url_scope": "Exact artifact URLs not recorded; official article landing page retained.",
+  "identity_verification": "Frozen selected title/DOI/year/venue and complete authors checked against PDF/native BibTeX; Crossref used only as independent identity evidence.",
+  "crossref_record_sha256": "55875127e82a58cde3588708f45992f2e5e719f16f358f61b990d3c59e14f05f"
+}

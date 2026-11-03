@@ -1,0 +1,26 @@
+{
+  "paper_id": "d1072628bb5f4ecda8e727fc40cb716b",
+  "metadata": {
+    "title": "NMPC-Augmented Visual Navigation and Safe Learning Control for Large-Scale Mobile Robots",
+    "authors": [
+      "Mehdi Heydari Shahna",
+      "Pauli Mustalahti",
+      "Jouni Mattila"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3669802",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11419776",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11419776",
+  "official_pdf_url": "https://ieeexplore.ieee.org/ielx8/7083369/11400564/11419776.pdf?tp=&arnumber=11419776&isnumber=11400564&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "6724b1e3cb1d05055791796379d042704301f0dc79a6974dd2333fcccc331909",
+  "bibtex_sha256": "6d39e01d2de603bc4365c6f79e78677c040bced13e1417675e5b23b424ac94f2",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:14:20.449160+00:00"
+}

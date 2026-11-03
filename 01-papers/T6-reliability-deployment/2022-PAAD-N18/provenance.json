@@ -1,0 +1,27 @@
+{
+  "paper_id": "577db5be5cd2412c97e89d145e934558",
+  "metadata": {
+    "title": "Proactive Anomaly Detection for Robot Navigation With Multi-Sensor Fusion",
+    "authors": [
+      "Tianchen Ji",
+      "Arun Narenthiran Sivakumar",
+      "Girish Chowdhary",
+      "Katherine Driggs-Campbell"
+    ],
+    "year": 2022,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2022.3153989",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/9720937",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/9720937",
+  "official_pdf_url": "https://ieeexplore.ieee.org/ielx7/7083369/9647862/09720937.pdf?tp=&arnumber=9720937&isnumber=9647862&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b8f484b724e48887562c01d372e0b3f553a8ddc5dcbf5e7e1a29558c06e9e973",
+  "bibtex_sha256": "7e37d3b2ded52aa82b46ac34d22ef1ce32d3c56eda3b0fae55d4944ed8b1fc3d",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:23:25.993303+00:00"
+}

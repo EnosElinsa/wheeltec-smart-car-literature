@@ -1,0 +1,36 @@
+{
+  "paper_id": "0fdf5953019d4b8a88e1582b73645825",
+  "metadata": {
+    "title": "Resilient Memory-Event-Triggered Predictive Tracking Control for Unmanned Ground Vehicle",
+    "authors": [
+      "Zhijian Hu",
+      "Renjie Ma",
+      "Su Zhang",
+      "Hao Wang",
+      "Xinxin Liu",
+      "Dong Zhao"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/tiv.2026.3662786",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11386870",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11386870",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11386870",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11386870",
+  "pdf_sha256": "862b054b85c0b24cb87b85f68f8e973553f59cfa6b628c7ef4dc39e8e05ae73b",
+  "bibtex_sha256": "1334c7e4fc742a9eb431acac460cfa4188e2616ece0e53d50893cae7e1e4ffdd",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T09:09:53.194981+00:00",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Resilient_Memory-Event-Triggered_Predictive_Tracking_Control_for_Unmanned_Ground_Vehicle.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.1.5.0.bib",
+  "source_origin": "User stated these files were downloaded from IEEE Xplore.",
+  "download_url_scope": "Exact artifact URLs not recorded; official article landing page retained.",
+  "identity_verification": "Frozen selected title/DOI/year/venue and complete authors checked against PDF/native BibTeX; Crossref used only as independent identity evidence.",
+  "crossref_record_sha256": "eb1dd33e62a98ad3b95550c2b203af44fea3645450fccf17b2df485120ac7314"
+}

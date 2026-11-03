@@ -1,0 +1,24 @@
+{
+  "paper_id": "980fd1e440bb435ebf2ab4ecdf20d370",
+  "metadata": {
+    "title": "Anticipating Degradation: A Predictive Approach to Fault Tolerance in Robot Swarms",
+    "authors": [
+      "James O'Keeffe"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3592063",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11091407",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11091407",
+  "official_pdf_url": "https://ieeexplore.ieee.org/ielx8/7083369/11082640/11091407.pdf?tp=&arnumber=11091407&isnumber=11082640&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "951572526c85a6c6cc78077d1368a0d91313dbdca547f44737828865489776c4",
+  "bibtex_sha256": "04d4174ad0e5b3fb972c41b71dc1719102cdb1f22afd69907685f5b715ab6d74",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:37:39.262084+00:00"
+}

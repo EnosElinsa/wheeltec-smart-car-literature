@@ -1,0 +1,28 @@
+{
+  "paper_id": "f83c44c9ab2447e9a3b0be50dde65520",
+  "metadata": {
+    "title": "Predictive Data Acquisition for Lifelong Visual Teach, Repeat and Learn",
+    "authors": [
+      "Tomáš Rouček",
+      "Zdeněk Rozsypálek",
+      "Jan Blaha",
+      "Jiří Ulrich",
+      "Tomáš Krajník"
+    ],
+    "year": 2024,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2024.3421193",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10578334",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10578334",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10578334&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "1eec1b11d537adac4721538150f0a8f87829fdfd84aea401120c83dde156e0cc",
+  "bibtex_sha256": "ab0a71a00bb65490ede91a1452f30970142ee0d3274cdcd993e78ff61f2596ce",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T08:34:31.772374+00:00"
+}
