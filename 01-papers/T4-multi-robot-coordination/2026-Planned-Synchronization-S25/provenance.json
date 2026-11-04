@@ -1,0 +1,48 @@
+{
+  "selection_id": "aeb8130b55027091fbb6e239",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "official_landing_url": "https://link.springer.com/10.1007/s10514-025-10225-4",
+  "verification_host": "codex",
+  "acquisition_method": "user_manual_publisher_pdf_with_authorized_derived_citation",
+  "citation_status": "derived",
+  "citation_source": "publisher RIS converted to BibTeX, with Crossref and PDF issue metadata",
+  "native_pair_verified": false,
+  "original_citation": "citation.ris",
+  "original_citation_sha256": "e221db0ba28d14b96b648efc335c1d974409c4853bfb44295c95e39e4eb451ac",
+  "original_citation_year": 2025,
+  "bibliographic_year": 2026,
+  "publication_dates": {
+    "published-online": [
+      2025,
+      12,
+      24
+    ],
+    "published-print": [
+      2026,
+      3
+    ]
+  },
+  "changes": [
+    "Converted publisher RIS fields to BibTeX.",
+    "Represented RIS SP as an article identifier (eid), confirmed by Crossref and the PDF first-page citation.",
+    "Also included the article identifier in note so IEEEtran BibTeX displays it; eid alone is ignored by that style.",
+    "Used the 2026 issue year from Crossref published-print and PDF header, preserving RIS PY=2025 and online date 2025-12-24 in provenance."
+  ],
+  "metadata_evidence": "metadata-evidence.json",
+  "metadata_evidence_sha256": "1baf487fe9c79701a72521f4dd1fe2bad9cb3d12c862b6b593eccd689d225a67",
+  "authorization": "User explicitly requested RIS conversion and Crossref supplementation on 2026-11-03.",
+  "metadata": {
+    "title": "Planned synchronization for multi-robot systems with active observations",
+    "authors": [
+      "Zhong, Patrick",
+      "Rossi, Federico",
+      "Shell, Dylan A."
+    ],
+    "doi": "10.1007/s10514-025-10225-4",
+    "venue": "Autonomous Robots",
+    "year": 2026
+  },
+  "pdf_sha256": "f4efba9a20cc2236d2b84f650740a2cc6501841ac07f71175ed5a6ffbe3c8b22",
+  "bibtex_sha256": "eb633fb64d3cbbd0beb4779a3f4ef5b1d864d2cf21f60c95f4a6cf8594b64be4"
+}

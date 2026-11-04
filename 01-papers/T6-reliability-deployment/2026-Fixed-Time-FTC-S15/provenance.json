@@ -1,0 +1,32 @@
+{
+  "paper_id": "766704ce568b4162aa4840f5686bf48b",
+  "metadata": {
+    "title": "Fixed-Time Fault-Tolerant Trajectory Tracking Control for a Wheeled Mobile Robot",
+    "authors": [
+      "Wengang Ao",
+      "Hao Yin",
+      "Shaoxin Sun",
+      "Pengda Liu",
+      "Peng Shi"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2025.3641387",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11284721/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11284721/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11284721/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11284721/",
+  "pdf_sha256": "56640ee7edfa09942ad9f75c41cdb31655cd5d1b161e1cb13c1c523f4d451246",
+  "bibtex_sha256": "ffb5d348487e90ae8949da0367b2d6adb0802de20f4fb5c35b9b29e7de35b161",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:38.638202+00:00",
+  "selection_id": "f58918b6d211f276071b2662",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Fixed-Time_Fault-Tolerant_Trajectory_Tracking_Control_for_a_Wheeled_Mobile_Robot.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.34.48.bib"
+}

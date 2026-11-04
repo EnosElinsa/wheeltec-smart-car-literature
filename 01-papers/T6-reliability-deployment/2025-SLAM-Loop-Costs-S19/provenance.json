@@ -1,0 +1,31 @@
+{
+  "paper_id": "02a241c0f9644588b91cfec9bdfc6a39",
+  "metadata": {
+    "title": "Visual‐Inertial SLAM for Unstructured Outdoor Environments: Benchmarking the Benefits and Computational Costs of Loop Closing",
+    "authors": [
+      "Fabian Schmidt",
+      "Constantin Blessing",
+      "Markus Enzweiler",
+      "Abhinav Valada"
+    ],
+    "year": 2025,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.22581",
+    "publisher": "onlinelibrary.wiley.com",
+    "landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22581",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22581",
+  "official_pdf_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22581",
+  "official_bibtex_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22581",
+  "pdf_sha256": "4d1091a3fc4c63a9615b4e688d4f58cacb5c34bc3a29c8c37d708a3c87d71aa2",
+  "bibtex_sha256": "81c5bcb46e852e65964eaf95802114dbc599de63b8f63c55aa69a03c8050d162",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:39.437841+00:00",
+  "selection_id": "335cbbdc178663b33a64058e",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2025 - Schmidt - Visual‐Inertial SLAM for Unstructured Outdoor Environments  Benchmarking the.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (1).bibtex"
+}

@@ -1,0 +1,49 @@
+{
+  "paper_id": "87ca581518764159bf8a5352d720a1f6",
+  "metadata": {
+    "title": "CARE: Enhancing Safety of Visual Navigation through Collision Avoidance via Repulsive Estimation",
+    "authors": [
+      "Joonkyung Kim",
+      "Joonyeol Sim",
+      "Woojun Kim",
+      "Katia P. Sycara",
+      "Changjoo Nam"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v305/kim25c.html",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v305/kim25c.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/kim25c/kim25c.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v305/kim25c.html#bibtex",
+  "pdf_sha256": "ee5c9fa35a17d89345b736ffdea206d2aa2435688456a3df4e171a167b48294c",
+  "bibtex_sha256": "f85a31128689d394a9b7c610d5e4f428a66bfb2e92bd3ce3abf6a44bd7b36114",
+  "bibtex_source": "publisher_DownloadTexToFile_innerHTML",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T10:44:05.724792+00:00",
+  "selection_id": "44594294865b7390fe5dd347",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "acquisition_method": "official_pmlr_batch_adapter",
+  "source_contract": "wheeltec-survey-200plus-pmlr-raw-innerHTML-2",
+  "publisher_export_contract": {
+    "download_filename": "pmlr-v305-kim25c.bib",
+    "download_function": "DownloadTexToFile",
+    "download_expression": "document.getElementById('bibtex').innerHTML",
+    "element_selector": "code#bibtex",
+    "source_character_span": [
+      9523,
+      11787
+    ],
+    "innerHTML_equals_literal_source": true,
+    "encoding": "UTF-8",
+    "transformation": "none; no stripping, entity decoding, or newline changes"
+  },
+  "publisher_landing_sha256": "0ee8eb55c82d399490b8295d3ae1f06b35c11914a05d17363f31b80ebef56327",
+  "publisher_download_script_sha256": "fe6c20e70206100128c8971681a268565d070e3b21a5430325b19c44eed82471",
+  "verification_host": "codex"
+}

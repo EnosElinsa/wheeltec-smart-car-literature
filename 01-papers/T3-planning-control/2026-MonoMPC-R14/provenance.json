@@ -1,0 +1,32 @@
+{
+  "paper_id": "dd3b7b38c2ca4b49a9f29548e100073e",
+  "metadata": {
+    "title": "MonoMPC: Monocular Vision Based Navigation With Learned Collision Model and Risk-Aware Model Predictive Control",
+    "authors": [
+      "Basant Sharma",
+      "Prajyot Jadhav",
+      "Pranjal Paul",
+      "K.Madhava Krishna",
+      "Arun Kumar Singh"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3641112",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11283048/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11283048/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11283048/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11283048/",
+  "pdf_sha256": "b84b56cd8486bf03bafeeb3cd9d03d181c1afdbd8da238f59c1a2dfd8c5319c1",
+  "bibtex_sha256": "e85092afffab5b0060bd512f6a148ec91608a5fb773a301bb748bbb613b42466",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:04.843827+00:00",
+  "selection_id": "5425f2d7683675a7876c82ff",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "MonoMPC_Monocular_Vision_Based_Navigation_With_Learned_Collision_Model_and_Risk-Aware_Model_Predictive_Control.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.42.36.bib"
+}

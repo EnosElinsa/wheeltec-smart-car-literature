@@ -1,0 +1,26 @@
+{
+  "paper_id": "6e93f718adf04419909251402c8a1ffd",
+  "metadata": {
+    "title": "HEIGHT: Heterogeneous Interaction Graph Transformer for Robot Navigation in Crowded and Constrained Environments",
+    "authors": [],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2025.3646588",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11305122/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11305122/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11305122/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11305122/",
+  "pdf_sha256": "b17504440d478bcf538e88346c39a153df8626bb1926c6def32fcd10bc8e0873",
+  "bibtex_sha256": "c2d0183129698d5770dac9aefc6542fb694beb1b678d5dd9d9e241c533ccf08c",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:05.596435+00:00",
+  "selection_id": "4c7f1259186afe6394285bee",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "HEIGHT_Heterogeneous_Interaction_Graph_Transformer_for_Robot_Navigation_in_Crowded_and_Constrained_Environments.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.42.51.bib"
+}

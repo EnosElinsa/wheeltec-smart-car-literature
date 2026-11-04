@@ -1,0 +1,26 @@
+{
+  "paper_id": "003c1543a8534461ac1c82dcfc78d76c",
+  "metadata": {
+    "title": "Swarm-SLAM: Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
+    "authors": [
+      "Pierre-Yves Lajoie",
+      "Giovanni Beltrame"
+    ],
+    "year": 2024,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2023.3333742",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10321649/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10321649/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10321649&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "422884ab5f6ecf29e77bbe186f36ba1f828d0553cb9949151a166c97b66d9dbf",
+  "bibtex_sha256": "cd050ba701401f57a7778483bb428f876f52d9f920266260fdedbca33903df4a",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:03:37.739763+00:00",
+  "selection_id": "16bd176f14d0fc65c27be31b"
+}

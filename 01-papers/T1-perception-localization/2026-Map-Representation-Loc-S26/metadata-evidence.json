@@ -1,0 +1,44 @@
+{
+  "id": "S26",
+  "doi": "10.1007/s10514-025-10232-5",
+  "title": "Visual localization in 3D maps: comparing point cloud, mesh, and NeRF representations",
+  "authors": [
+    "Zhang, Lintong",
+    "Tao, Yifu",
+    "Lin, Jiarong",
+    "Zhang, Fu",
+    "Fallon, Maurice"
+  ],
+  "venue": "Autonomous Robots",
+  "dates": {
+    "published-online": [
+      2026,
+      3,
+      10
+    ],
+    "published-print": [
+      2026,
+      3
+    ]
+  },
+  "volume": "50",
+  "issue": "1",
+  "article_number": "14",
+  "retrieval": {
+    "requested_url": "https://api.crossref.org/works/10.1007%2Fs10514-025-10232-5",
+    "final_url": "https://api.crossref.org/works/10.1007%2Fs10514-025-10232-5",
+    "status": 200,
+    "content_type": "application/json",
+    "retrieved_at": "2026-11-03T12:12:17.946028+00:00",
+    "sha256": "9a6f500b2d3066c93f38d547f2437ade3178c5e7dc330c687e294ef41930fa6a"
+  },
+  "original_citation_sha256": "6dbc697f31a05342502b07008832753650ce410d8305ea15a35c701096262805",
+  "original_citation_year": 2026,
+  "working_citation_year": 2026,
+  "changes": [
+    "Converted publisher RIS fields to BibTeX.",
+    "Represented RIS SP as an article identifier (eid), confirmed by Crossref and the PDF first-page citation.",
+    "Also included the article identifier in note so IEEEtran BibTeX displays it; eid alone is ignored by that style."
+  ],
+  "pdf_publication_check": "First-page DOI, title, author scope and publication/issue year checked."
+}

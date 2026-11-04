@@ -1,0 +1,28 @@
+@article{doi:10.1177/02783649261465040,
+author = {Xiangcheng Hu and Xieyuanli Chen and Mingkai Jia and Jin Wu and Ping Tan and Steven L. Waslander},
+title ={DCReg: Decoupled characterization for efficient degenerate LiDAR registration},
+
+journal = {The International Journal of Robotics Research},
+volume = {0},
+number = {0},
+pages = {02783649261465040},
+year = {2026},
+doi = {10.1177/02783649261465040},
+
+URL = { 
+    
+        https://doi.org/10.1177/02783649261465040
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1177/02783649261465040
+    
+    
+
+}
+,
+    abstract = { LiDAR point cloud registration is fundamental to robotic perception and navigation. However, in geometrically degenerate or narrow environments (e.g., corridors), registration problems become ill-conditioned: certain motion directions are weakly constrained, leading to unstable solutions and degraded accuracy. Existing methods adopt a detect-then-mitigate paradigm but fail to reliably detect, physically interpret, and stabilize such ill-conditioning without corrupting the optimization problem. In this study, we introduce DCReg (Decoupled Characterization for Ill-conditioned Registration), which establishes a principled detect–characterize–mitigate paradigm that systematically addresses ill-conditioned registration through three integrated innovations. First, DCReg achieves reliable ill-conditioning detection by employing a Schur complement decomposition to the hessian matrix. This structure-aware technique decouples the 6-DoF registration problem into 3-DoF clean rotational and translational subspaces, eliminating coupling effects that mask degeneracy patterns in conventional full-Hessian analyses. Second, within these decoupled subspaces, we develop physically interpretable characterization techniques that resolve eigenbasis ambiguities through principled basis alignment. This establishes stable and quantitative mappings between mathematical eigenspaces and physical motion directions, providing actionable insights about which specific motions lack constraints and to what extent. Third, leveraging this directional spectral information, we design a targeted mitigation strategy via a structured preconditioner. While guided by MAP regularization principles for spectral shaping, our approach implements eigenvalue clamping exclusively within the preconditioner rather than modifying the origin problem. This preserves the original least-squares objective and its minimizer while enabling efficient and stable optimization via Preconditioned Conjugate Gradient with a single physically interpretable parameter. Extensive experiments demonstrate DCReg achieves at least 20\%–50\% improvement in long-duration localization accuracy and typical speedups of 5 − 30× (up to 116× in certain scenarios) over comparable degeneracy-aware baseline methods across diverse environments. Our implementation will be available at https://github.com/JokerJohn/DCReg. }
+}

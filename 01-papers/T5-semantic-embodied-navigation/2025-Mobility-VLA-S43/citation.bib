@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v270-xu25b,
+  title = 	 {Mobility VLA: Multimodal Instruction Navigation with Long-Context VLMs and Topological Graphs},
+  author =       {Xu, Zhuo and Chiang, Hao-Tien Lewis and Fu, Zipeng and Jacob, Mithun George and Zhang, Tingnan and Lee, Tsang-Wei Edward and Yu, Wenhao and Schenck, Connor and Rendleman, David and Shah, Dhruv and Xia, Fei and Hsu, Jasmine and Hoech, Jonathan and Florence, Pete and Kirmani, Sean and Singh, Sumeet and Sindhwani, Vikas and Parada, Carolina and Finn, Chelsea and Xu, Peng and Levine, Sergey and Tan, Jie},
+  booktitle = 	 {Proceedings of The 8th Conference on Robot Learning},
+  pages = 	 {3866--3887},
+  year = 	 {2025},
+  editor = 	 {Agrawal, Pulkit and Kroemer, Oliver and Burgard, Wolfram},
+  volume = 	 {270},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--09 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v270/main/assets/xu25b/xu25b.pdf},
+  url = 	 {https://proceedings.mlr.press/v270/xu25b.html},
+  abstract = 	 {An elusive goal in navigation research is to build an intelligent agent that can understand multimodal instructions including natural language and image, and perform useful navigation. To achieve this, we study a widely useful category of navigation tasks we call Multimodal Instruction Navigation with demonstration Tours (MINT), in which the environment prior is provided through a previously recorded demonstration video. Recent advances in Vision Language Models (VLMs) have shown a promising path in achieving this goal as it demonstrates capabilities in perceiving and reasoning about multimodal inputs. However, VLMs are typically trained to predict textual output and it is an open research question about how to best utilize them in navigation. To solve MINT, we present Mobility VLA, a hierarchical Vision-Language-Action (VLA) navigation policy that combines the environment understanding and common sense reasoning power of long-context VLMs and a robust low-level navigation policy based on topological graphs. The high-level policy consists of a long-context VLM that takes the demonstration tour video and the multimodal user instruction as input to find the goal frame in the tour video. Next, a low-level policy uses the goal frame and an offline constructed topological graph to generate robot actions at every timestep. We evaluated Mobility VLA in a 836$m^2$ real world environment and show that Mobility VLA has a high end-to-end success rates on previously unsolved multimodal instructions such as “Where should I return this?” while holding a plastic bin.}
+}

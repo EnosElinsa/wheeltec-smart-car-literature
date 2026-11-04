@@ -1,0 +1,33 @@
+{
+  "paper_id": "c63747ea7a214b91ae5f0e8c91b14830",
+  "metadata": {
+    "title": "VLN-Game: Vision-Language Equilibrium Search for Zero-Shot Semantic Navigation",
+    "authors": [
+      "Bangguo Yu",
+      "Yuzhen Liu",
+      "Lei Han",
+      "Hamidreza Kasaei",
+      "Tingguang Li",
+      "Ming Cao"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2026.3677047",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11455365/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11455365/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11455365/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11455365/",
+  "pdf_sha256": "b70bb76eea93924600ad27694a25e7b29b34b2254f353bd05cf96ce646f3f6bf",
+  "bibtex_sha256": "a59872987e1bcc28d41be68119b018b1d1394781a5d0527ca4122cf48f4e4617",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:10.962108+00:00",
+  "selection_id": "ba510a0eeaa84e2d0304ca4d",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "VLN-Game_Vision-Language_Equilibrium_Search_for_Zero-Shot_Semantic_Navigation.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.45.32.bib"
+}

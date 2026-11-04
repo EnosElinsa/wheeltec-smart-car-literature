@@ -1,0 +1,30 @@
+{
+  "paper_id": "5534965f85e342b3b05757d70e190e18",
+  "metadata": {
+    "title": "Multirobot Persistent Monitoring: Minimizing Latency and Number of Robots With Recharging Constraints",
+    "authors": [
+      "Ahmad Bilal Asghar",
+      "Shreyas Sundaram",
+      "Stephen L. Smith"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2024.3502497",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10757438/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10757438/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10757438/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10757438/",
+  "pdf_sha256": "65773011d22084d3af35a7c0cab7ee9491ad1f82c0693a77dd6a383a9340e61c",
+  "bibtex_sha256": "55c435b7f0e908bb4cb9b6118ed350e93ea503c7ddd2c58e1aa66e2e5ab7b461",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:13.149526+00:00",
+  "selection_id": "c961c927f967da13fb507f9e",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Multirobot_Persistent_Monitoring_Minimizing_Latency_and_Number_of_Robots_With_Recharging_Constraints.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.46.53.bib"
+}

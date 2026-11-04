@@ -199,7 +199,11 @@ source (p. 9); no URL is given in the text.
 iMESA builds on MESA by the same group, cited as an arXiv preprint
 (arXiv:2310.12320, reference [6]); MESA is not in the library. iDFGO
 (Matsuka and Chung, reference [51]) is concurrent independent work, not a
-version (p. 3). No other version of iMESA is in the library.
+version (p. 3). No other version of iMESA is in the library. The later
+riMESA article by the same authors
+([R23](../2026-riMESA-R23/review.md)) describes itself as a direct extension
+of iMESA that adds outlier handling and nonblocking communication; both are
+kept as separate method entries.
 
 ## Claim relations
 
@@ -263,6 +267,7 @@ version (p. 3). No other version of iMESA is in the library.
 ## Verification log
 
 - 2026-10-27 | host: Kiro | scope: full text read (pp. 1-9 and reference list entries [6], [27], [51]); Table I and Figs. 3-8 read from rendered page images (pp. 7-9); all numbers and excerpts located with tools.locate | corrections: English template rebuild; Table I counterexamples to "best on every dataset" added; long-term experiment corrected from replay to synthetic data; reviewer observations moved out of stated limitations; coding added (details in tmp/corrections/E40.csv)
+- 2026-11-03 | host: Kiro | scope: version-family note only; riMESA (R23) p. 11 states that it directly extends iMESA | corrections: Version family section extended; no other content changed
 - Legacy extraction: automated reviewer (codex), expansion batch 2026-10-24. Legacy evidence files: 99-archive/history-2026-10-25.zip::expansions/2026-10-24/evidence/T4-T5/4a697e2a2c3c950d44b62ba2/
 
 ## Original abstract

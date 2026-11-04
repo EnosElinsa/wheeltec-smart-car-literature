@@ -1,0 +1,27 @@
+{
+  "paper_id": "c75f8e90cc99413499c7edec9012979d",
+  "metadata": {
+    "title": "A Set-Theoretic Control Strategy for a Platoon of Constrained Differential-Drive Robots With Inter-Vehicle Collision Avoidance",
+    "authors": [
+      "Suryaprakash Rajkumar",
+      "Cristian Tiriolo",
+      "Walter Lucia"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3656805",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11359586/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11359586/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11359586&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "0c90d8d2e35091407371232bad64d13913ae9bd1c97cd386f0b6d780d3452301",
+  "bibtex_sha256": "061f87d5591b637b83d210f2948ccfcd85df295afcc1ea3a1d644c3c822bd1d1",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:06:51.871435+00:00",
+  "selection_id": "42a9c8a49b714757122e12f5"
+}

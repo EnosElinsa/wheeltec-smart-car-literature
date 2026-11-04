@@ -1,0 +1,31 @@
+{
+  "paper_id": "b1ef25dc90ee49e9b3cfb963986671f3",
+  "metadata": {
+    "title": "3D Foundation Model-Based Loop Closing for Decentralized Collaborative SLAM",
+    "authors": [
+      "Pierre-Yves Lajoie",
+      "Benjamin Ramtoula",
+      "Daniele De Martini",
+      "Giovanni Beltrame"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3609204",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11159173/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11159173/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11159173/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11159173/",
+  "pdf_sha256": "23b8bcf354e2449fe572f9671dcd38facb02e69e152e856f35fff35b1085b917",
+  "bibtex_sha256": "8689639728a90a1aa5edf4c51a886f44eec5608ce7e636fb0b1847e18cf67f63",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:37.951894+00:00",
+  "selection_id": "e5ea1017c5597933ec6f5e5f",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "3D_Foundation_Model-Based_Loop_Closing_for_Decentralized_Collaborative_SLAM.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.34.37.bib"
+}

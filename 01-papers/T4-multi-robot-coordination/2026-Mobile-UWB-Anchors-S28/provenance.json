@@ -1,0 +1,29 @@
+{
+  "paper_id": "1b8401635dd64e62a8094653b8dda090",
+  "metadata": {
+    "title": "Extended Range of Localization Services via Formation-Controlled Mobile Ultra-Wideband Anchors",
+    "authors": [
+      "Jinxin Liu",
+      "Guoqiang Hu"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2025.3630274",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11237184/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11237184/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11237184/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11237184/",
+  "pdf_sha256": "c1fe69b3ce993eb16b58529d64d9af3d62422865af0024bd7f0097ddd1d5aa86",
+  "bibtex_sha256": "fbd1a2ed3fc7ec5fb1b271cc06d89a5036d47a8087dc9b35c875d3947bc28f1a",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:42.043691+00:00",
+  "selection_id": "d3b124c2a29b36d2bf7bbfd7",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Extended_Range_of_Localization_Services_via_Formation-Controlled_Mobile_Ultra-Wideband_Anchors.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.34.59.bib"
+}

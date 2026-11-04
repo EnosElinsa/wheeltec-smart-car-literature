@@ -1,0 +1,33 @@
+{
+  "paper_id": "ee42ff998c3d4ccbae997443523698fa",
+  "metadata": {
+    "title": "Active visual SLAM using potential fields and model predictive control",
+    "authors": [
+      "Alice Hierholz",
+      "Vincent Reß",
+      "Nils Hentschel",
+      "Andreas Gienger",
+      "Norbert Haala",
+      "Oliver Sawodny"
+    ],
+    "year": 2026,
+    "venue": "Control Engineering Practice",
+    "doi": "10.1016/j.conengprac.2026.106897",
+    "publisher": "www.sciencedirect.com",
+    "landing_url": "https://www.sciencedirect.com/science/article/pii/S0967066126001413",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://www.sciencedirect.com/science/article/pii/S0967066126001413",
+  "official_pdf_url": "https://www.sciencedirect.com/science/article/pii/S0967066126001413",
+  "official_bibtex_url": "https://www.sciencedirect.com/science/article/pii/S0967066126001413",
+  "pdf_sha256": "b06630f2a70fdfd51b36c29787eda85ed9f1a9b7f60e813ca51077c94a493632",
+  "bibtex_sha256": "d3820863b1c9b2505cc8be0f92eeb500af462afd23e2f57cd0b9372efd03c7de",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:37.254553+00:00",
+  "selection_id": "c92afb93696071941035dc5c",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Active visual SLAM using potential fields and model predictive control.pdf",
+  "source_bibtex_filename": "S0967066126001413.bib"
+}

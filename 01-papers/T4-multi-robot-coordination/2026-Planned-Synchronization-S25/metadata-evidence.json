@@ -1,0 +1,43 @@
+{
+  "id": "S25",
+  "doi": "10.1007/s10514-025-10225-4",
+  "title": "Planned synchronization for multi-robot systems with active observations",
+  "authors": [
+    "Zhong, Patrick",
+    "Rossi, Federico",
+    "Shell, Dylan A."
+  ],
+  "venue": "Autonomous Robots",
+  "dates": {
+    "published-online": [
+      2025,
+      12,
+      24
+    ],
+    "published-print": [
+      2026,
+      3
+    ]
+  },
+  "volume": "50",
+  "issue": "1",
+  "article_number": "5",
+  "retrieval": {
+    "requested_url": "https://api.crossref.org/works/10.1007%2Fs10514-025-10225-4",
+    "final_url": "https://api.crossref.org/works/10.1007%2Fs10514-025-10225-4",
+    "status": 200,
+    "content_type": "application/json",
+    "retrieved_at": "2026-11-03T12:12:17.470468+00:00",
+    "sha256": "5dac8d447a082b8ed12aa2fa687be4e341d060cdf68023be2e8da61f9661567e"
+  },
+  "original_citation_sha256": "e221db0ba28d14b96b648efc335c1d974409c4853bfb44295c95e39e4eb451ac",
+  "original_citation_year": 2025,
+  "working_citation_year": 2026,
+  "changes": [
+    "Converted publisher RIS fields to BibTeX.",
+    "Represented RIS SP as an article identifier (eid), confirmed by Crossref and the PDF first-page citation.",
+    "Also included the article identifier in note so IEEEtran BibTeX displays it; eid alone is ignored by that style.",
+    "Used the 2026 issue year from Crossref published-print and PDF header, preserving RIS PY=2025 and online date 2025-12-24 in provenance."
+  ],
+  "pdf_publication_check": "First-page DOI, title, author scope and publication/issue year checked."
+}

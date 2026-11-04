@@ -1,0 +1,31 @@
+{
+  "paper_id": "8ec54e2181464df4968839502e9cf26d",
+  "metadata": {
+    "title": "Geometrically-Constrained Radar-Inertial Odometry via Continuous Point-Pose Uncertainty Modeling",
+    "authors": [
+      "Wooseong Yang",
+      "Dongjae Lee",
+      "Minwoo Jung",
+      "Ayoung Kim"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3677708",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11455624/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11455624/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11455624/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11455624/",
+  "pdf_sha256": "eaafbb36bb5e26bfc1ed1f195000f675f9b96bc1e6f6e60af76b61b551942ae4",
+  "bibtex_sha256": "e98bb32ac6452491e8f2762fd70eb01fb26422d81171b6ebac086997e8b69162",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:00.523781+00:00",
+  "selection_id": "e21655458438bfe104c34ad4",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Geometrically-Constrained_Radar-Inertial_Odometry_via_Continuous_Point-Pose_Uncertainty_Modeling.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.40.22.bib"
+}

@@ -1,0 +1,32 @@
+{
+  "paper_id": "68568a59aca345c09c6435ff561707ae",
+  "metadata": {
+    "title": "NeuSE: Neural SE(3)-equivariant embedding for long-term object-based simultaneous localization and mapping",
+    "authors": [
+      "Jiahui Fu",
+      "Yilun Du",
+      "Kurran Singh",
+      "Joshua B Tenenbaum",
+      "John J Leonard"
+    ],
+    "year": 2026,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649251355966",
+    "publisher": "journals.sagepub.com",
+    "landing_url": "https://journals.sagepub.com/doi/10.1177/02783649251355966",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://journals.sagepub.com/doi/10.1177/02783649251355966",
+  "official_pdf_url": "https://journals.sagepub.com/doi/10.1177/02783649251355966",
+  "official_bibtex_url": "https://journals.sagepub.com/doi/10.1177/02783649251355966",
+  "pdf_sha256": "59ebb3e505d7b8d1c6eb9792ed81203a3a45172fbc80e1e045909471ca697b1e",
+  "bibtex_sha256": "ae7c24feca772b8d7c51e291a9fe898ad8caffbd545f2bdc24f0147657bc5b39",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:44.217343+00:00",
+  "selection_id": "8660c0eeedba775302f263d3",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "fu-et-al-2025-neuse-neural-se(3)-equivariant-embedding-for-long-term-object-based-simultaneous-localization-and-mapping.pdf",
+  "source_bibtex_filename": "csp_45_ (1).bib"
+}

@@ -1,0 +1,35 @@
+{
+  "paper_id": "8cc573209b80474b87af9b44e297f308",
+  "metadata": {
+    "title": "VLM-GroNav: Robot Navigation Using Physically Grounded Vision-Language Models in Outdoor Environments",
+    "authors": [
+      "Mohamed Bashir Elnoor",
+      "Kasun Weerakoon",
+      "Gershom Seneviratne",
+      "Ruiqi Xian",
+      "Tian-Rui Guan",
+      "Mohamed Khalid M. Jaffar",
+      "Vignesh Rajagopal",
+      "Dinesh Manocha"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra55743.2025.11128264",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11128264/",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11128264/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11128264/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11128264/",
+  "pdf_sha256": "e346035fbac49c4da171645a742a2704578da089f253dd17e5bc92cb1f87b80a",
+  "bibtex_sha256": "eb01c5fb42aa244b746f5fcaab2a75e1bc64d4603f83efd741180ff2d569589d",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:46.306234+00:00",
+  "selection_id": "863a375959627cccc8edb9a9",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "VLM-GroNav_Robot_Navigation_Using_Physically_Grounded_Vision-Language_Models_in_Outdoor_Environments.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.35.32.bib"
+}

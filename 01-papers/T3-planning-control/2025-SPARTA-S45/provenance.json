@@ -1,0 +1,51 @@
+{
+  "paper_id": "b77c6cdabe2b4c88a7807030df6b126a",
+  "metadata": {
+    "title": "Learning Smooth State-Dependent Traversability from Dense Point Clouds",
+    "authors": [
+      "Zihao Dong",
+      "Alan Papalia",
+      "Leonard Jung",
+      "Alenna Spiro",
+      "Philip R Osteen",
+      "Christa S. Robison",
+      "Michael Everett"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v305/dong25a.html",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v305/dong25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/dong25a/dong25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v305/dong25a.html#bibtex",
+  "pdf_sha256": "7af579e1b077a294863e9d1c824c8dad4a028e4f7d1197c295a4bcf5f61ac6e2",
+  "bibtex_sha256": "c1e082d29431e94c0a98cde27fec7fb24ca2aeedbd3381cc71d84a2d092629fe",
+  "bibtex_source": "publisher_DownloadTexToFile_innerHTML",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T10:43:57.810098+00:00",
+  "selection_id": "3209b3b4e8932f34ff516dc2",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "acquisition_method": "official_pmlr_batch_adapter",
+  "source_contract": "wheeltec-survey-200plus-pmlr-raw-innerHTML-2",
+  "publisher_export_contract": {
+    "download_filename": "pmlr-v305-dong25a.bib",
+    "download_function": "DownloadTexToFile",
+    "download_expression": "document.getElementById('bibtex').innerHTML",
+    "element_selector": "code#bibtex",
+    "source_character_span": [
+      9228,
+      11185
+    ],
+    "innerHTML_equals_literal_source": true,
+    "encoding": "UTF-8",
+    "transformation": "none; no stripping, entity decoding, or newline changes"
+  },
+  "publisher_landing_sha256": "1786f97e77314b7724f7803d23a66848aea1a868d3b973a1a81569569879b72e",
+  "publisher_download_script_sha256": "fe6c20e70206100128c8971681a268565d070e3b21a5430325b19c44eed82471",
+  "verification_host": "codex"
+}

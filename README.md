@@ -1,23 +1,25 @@
 # WHEELTEC Smart Car Literature Library
 
-A theme-organized library of **147 publications** on wheeled mobile robot autonomy. Every paper uses the same ID and theme directory for its source files, transcription and assessment.
+A theme-organized library of **231 acquired and assessed publications** on wheeled mobile robot autonomy. The current survey manuscript selects 229 of them. All 231 papers have source Markdown. The 84 most recent additions (S01-S48 and R01-R36) were transcribed with OXR-1.0 through self-hosted vLLM; the original 147 transcriptions remain unchanged. Source files, transcriptions and assessments use matching IDs and theme directories.
 
 | Find | Entry point |
 |---|---|
 | All papers, citations and local PDF paths | [Paper index](01-papers/INDEX.md) |
 | Full-text transcriptions and local paths | [Full-text index](02-fulltext/INDEX.md) |
-| Existing review cards | [Review index](03-reviews/INDEX.md) |
+| Review cards | [Review index](03-reviews/INDEX.md) |
 | Key papers and reading routes | [Reading guide](READING_GUIDE.md) |
 | Cross-paper synthesis | [Evidence synthesis](04-analysis/evidence-synthesis.md) |
-| Use of newly assessed evidence | [Integration analysis](04-analysis/ieee-evidence-utilization-2026-11-03.md) |
+| Latest survey review and 36-paper integration | [IEEE refresh integration](04-analysis/ieee-refresh-integration-2026-11-03.md) |
+| 36-paper IEEE refresh: selection, acquisition and readings | [Batch guide](06-data/ieee-refresh-2026-11-03/README.md) |
+| Earlier 48-paper expansion | [Expansion toward 200 references](06-data/survey-200plus-2026-11-03/README.md) |
 | Survey manuscript | [Manuscript guide](05-survey/README.md) |
 | Complete catalog, survey coding and source records | [Data guide](06-data/README.md) |
 
 ## Organization
 
-- `01-papers/<theme>/<year>-<short-name>-<ID>/`: PDF and original publisher BibTeX.
+- `01-papers/<theme>/<year>-<short-name>-<ID>/`: PDF and a citation, with original publisher exports retained beside any explicitly derived version.
 - `02-fulltext/<theme>/<year>-<short-name>-<ID>/`: source transcription and referenced images.
-- `03-reviews/<theme>/<year>-<short-name>-<ID>/`: review card, where completed.
+- `03-reviews/<theme>/<year>-<short-name>-<ID>/`: review card.
 - `04-analysis/`: comparisons, evidence synthesis and research plans.
 - `05-survey/`: guide to the separately maintained manuscript repository.
 - `06-data/`: the unified catalog, survey coding, reading ledgers and provenance.
@@ -26,9 +28,9 @@ Publisher PDFs, transcriptions and extracted images remain local. Public indexes
 
 ## Assessment and survey coverage
 
-All **147 publications have review cards**: 23 full assessments and 124 light assessments. The light cards comprise 89 historical extract-based assessments and 35 targeted readings with physical-page locators and explicit limits.
+All **231 publications have review cards**: 23 full assessments and 208 light assessments. The light cards comprise 89 historical extract-based assessments and 119 targeted readings with physical-page locators and explicit limits. Targeted reading does not imply whole-paper verification; the [review workflow](03-reviews/WORKFLOW.md) defines assessment depth, and numbers cited in the survey are rechecked against the PDF.
 
-The current survey uses 144 technical publications and three context works. The [selection record](06-data/survey-inclusion.json) retains the historical baseline and current membership. Targeted reading does not imply whole-paper verification; numerical claims need checks against the original PDF. The [review workflow](03-reviews/WORKFLOW.md) defines assessment depth, and the [unified catalog](06-data/library-catalog.csv) records each paper's status.
+The manuscript cites 229 selected works (228 technical studies and one context review) and 5 background references, for **234 references, all from 2021-2026**. X01 (1999) and X15 (2016) remain internal references, as do the pre-2021 background sources removed from the bibliography. The [selection record](06-data/survey-inclusion.json) holds the current membership and the historical baseline; the [unified catalog](06-data/library-catalog.csv) records each paper's status.
 
 ## Maintenance
 

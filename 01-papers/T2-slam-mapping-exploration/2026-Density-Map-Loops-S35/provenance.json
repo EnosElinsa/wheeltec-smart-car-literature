@@ -1,0 +1,33 @@
+{
+  "paper_id": "c0c0b7c28ee54274b1edc703780f420f",
+  "metadata": {
+    "title": "Efficiently closing loops in LiDAR-based SLAM using point cloud density maps",
+    "authors": [
+      "Saurabh Gupta",
+      "Tiziano Guadagnino",
+      "Benedikt Mersch",
+      "Niklas Trekel",
+      "Meher V. R. Malladi",
+      "Cyrill Stachniss"
+    ],
+    "year": 2026,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649261449269",
+    "publisher": "journals.sagepub.com",
+    "landing_url": "https://journals.sagepub.com/doi/10.1177/02783649261449269",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://journals.sagepub.com/doi/10.1177/02783649261449269",
+  "official_pdf_url": "https://journals.sagepub.com/doi/10.1177/02783649261449269",
+  "official_bibtex_url": "https://journals.sagepub.com/doi/10.1177/02783649261449269",
+  "pdf_sha256": "95404f2e37cc34703b80bc4a768c7f528f0dfb35f8e656fc15222ff1897ebaf6",
+  "bibtex_sha256": "d0ae4eb9b2d468543d99ec167b8b4ff766a3da24b06588b195110a245d859c89",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:44.610030+00:00",
+  "selection_id": "ebc49e74176b09d202f8301c",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "gupta-et-al-2026-efficiently-closing-loops-in-lidar-based-slam-using-point-cloud-density-maps.pdf",
+  "source_bibtex_filename": "csp__ (3).bib"
+}

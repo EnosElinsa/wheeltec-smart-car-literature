@@ -1,0 +1,30 @@
+{
+  "paper_id": "d8b472bf98e3478b87a8c38fc7a5f8f0",
+  "metadata": {
+    "title": "osmAG-LLM: Zero-Shot Open-Vocabulary Object Navigation via Semantic Maps and Large Language Models Reasoning",
+    "authors": [
+      "Fujing Xie",
+      "Sören Schwertfeger",
+      "Hermann Blum"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3653280",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11346008/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11346008/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11346008/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11346008/",
+  "pdf_sha256": "571535023f4ef5155734821a1253e34a1bcdef2546c26d833103c4175e0b2ad6",
+  "bibtex_sha256": "adb45d45c9030bcb616124ba8450536dfd0e4d5dee98590cf97451c6acfe4b4f",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:10.672313+00:00",
+  "selection_id": "f1f1d4a610c96604680922ba",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "osmAG-LLM_Zero-Shot_Open-Vocabulary_Object_Navigation_via_Semantic_Maps_and_Large_Language_Models_Reasoning.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.45.20.bib"
+}

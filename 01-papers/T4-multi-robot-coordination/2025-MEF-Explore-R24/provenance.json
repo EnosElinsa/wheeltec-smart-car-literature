@@ -1,0 +1,26 @@
+{
+  "paper_id": "58a661bb158441deade0e80bfc164571",
+  "metadata": {
+    "title": "MEF-Explore: Communication-Constrained Multi-Robot Entropy-Field-Based Exploration",
+    "authors": [],
+    "year": 2025,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2025.3575237",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11018365/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11018365/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11018365/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11018365/",
+  "pdf_sha256": "9e38bcef4a42251527e45423585c2afcc97813fef2c0555c8a5a300e6cf62f8b",
+  "bibtex_sha256": "a9a33de8b732e09a1d53725229d50af4afe76dc813781090d2465ea4bbbfcc39",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:09.172732+00:00",
+  "selection_id": "0b549009235657b6392771f7",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "MEF-Explore_Communication-Constrained_Multi-Robot_Entropy-Field-Based_Exploration.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.44.19.bib"
+}

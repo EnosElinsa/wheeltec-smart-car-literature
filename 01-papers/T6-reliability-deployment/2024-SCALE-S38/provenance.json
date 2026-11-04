@@ -1,0 +1,33 @@
+{
+  "paper_id": "72ac70368aa9497faff9f75d155872b4",
+  "metadata": {
+    "title": "SCALE: Self-Correcting Visual Navigation for Mobile Robots via Anti-Novelty Estimation",
+    "authors": [
+      "Chang Chen",
+      "Yuecheng Liu",
+      "Yu-Zheng Zhuang",
+      "Si-Tong Mao",
+      "Kaiwen Xue",
+      "Shunbo Zhou"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57147.2024.10610847",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10610847/",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10610847/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10610847/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10610847/",
+  "pdf_sha256": "9f5ea6c2fb6319647e3ca745d258e4d395dd4c1280f2dbade8dbd798154ad549",
+  "bibtex_sha256": "5e12694adeb478d4c113ed5581212e55fa98732af9c5ccd75bacbb4bc1b3edc5",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:45.692910+00:00",
+  "selection_id": "282626659846794010d46a5e",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "SCALE_Self-Correcting_Visual_Navigation_for_Mobile_Robots_via_Anti-Novelty_Estimation.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.35.23.bib"
+}

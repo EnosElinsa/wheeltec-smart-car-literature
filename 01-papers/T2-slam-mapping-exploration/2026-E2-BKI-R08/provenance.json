@@ -1,0 +1,32 @@
+{
+  "paper_id": "0d1b744eb6c644af9e6eb58f6254f1c0",
+  "metadata": {
+    "title": "E2-BKI: Evidential Ellipsoidal Bayesian Kernel Inference for Uncertainty-Aware Gaussian Semantic Mapping",
+    "authors": [
+      "Junyoung Kim",
+      "Minsik Jeon",
+      "Jihong Min",
+      "Kiho Kwak",
+      "Junwon Seo"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3653367",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11352513/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11352513/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11352513/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11352513/",
+  "pdf_sha256": "b043456bffc632d663a648431f219225c6d7fee4401b4240f3b3df185efe9709",
+  "bibtex_sha256": "e34e23ece4fc18a3bc57a77d9f57ce124b0e5a7d46ce2d8797e85d49b733dcfe",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:02.984040+00:00",
+  "selection_id": "696b98c7a4645d23175fba6a",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "E2-BKI_Evidential_Ellipsoidal_Bayesian_Kernel_Inference_for_Uncertainty-Aware_Gaussian_Semantic_Mapping.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.41.49.bib"
+}

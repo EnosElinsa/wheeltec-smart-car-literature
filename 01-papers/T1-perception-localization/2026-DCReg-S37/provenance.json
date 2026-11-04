@@ -1,0 +1,33 @@
+{
+  "paper_id": "063cb35570d44ce682d87681adcf36ac",
+  "metadata": {
+    "title": "DCReg: Decoupled characterization for efficient degenerate LiDAR registration",
+    "authors": [
+      "Xiangcheng Hu",
+      "Xieyuanli Chen",
+      "Mingkai Jia",
+      "Jin Wu",
+      "Ping Tan",
+      "Steven L. Waslander"
+    ],
+    "year": 2026,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649261465040",
+    "publisher": "journals.sagepub.com",
+    "landing_url": "https://journals.sagepub.com/doi/10.1177/02783649261465040",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://journals.sagepub.com/doi/10.1177/02783649261465040",
+  "official_pdf_url": "https://journals.sagepub.com/doi/10.1177/02783649261465040",
+  "official_bibtex_url": "https://journals.sagepub.com/doi/10.1177/02783649261465040",
+  "pdf_sha256": "ca69a514fdff60192e722a4d1d852621d5f76b6b1bb5d12c729f037157144d03",
+  "bibtex_sha256": "406177cbd113f76ec8061fde65823a37a72dea7d41f9d87180dcb72f66e662b4",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:45.377554+00:00",
+  "selection_id": "02b31ea012dccf953cb59598",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "hu-et-al-2026-dcreg-decoupled-characterization-for-efficient-degenerate-lidar-registration.pdf",
+  "source_bibtex_filename": "csp__ (5).bib"
+}

@@ -1,0 +1,33 @@
+{
+  "paper_id": "99d46dc579a94ca49d6e2e9ff3e042b4",
+  "metadata": {
+    "title": "Bandwidth-Efficient Collaborative SLAM: Mutual Information for Data Selection and Finite-State Entropy for Lossless Compression",
+    "authors": [
+      "Weiqiang Zhang",
+      "Lan Cheng",
+      "Jiangxia Wei",
+      "Xinying Xu",
+      "Zhe Zhang",
+      "Bin Xin"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3666939",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11406164/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11406164/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11406164/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11406164/",
+  "pdf_sha256": "3017fd0e6f0c0506e12c86367885d97b62bff17b94969b1619ac34961c2704f9",
+  "bibtex_sha256": "1ef2526dfffe3ad6ff3971a63ccecdc006da8389248032e1021ce5de65a2d93e",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:42.220514+00:00",
+  "selection_id": "9b19211affeafa21f72d90a2",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Bandwidth-Efficient_Collaborative_SLAM_Mutual_Information_for_Data_Selection_and_Finite-State_Entropy_for_Lossless_Compression.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.35.4.bib"
+}

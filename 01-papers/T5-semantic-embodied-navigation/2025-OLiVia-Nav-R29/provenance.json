@@ -1,0 +1,31 @@
+{
+  "paper_id": "ca39942cfabb49bd98c618ef10178c6b",
+  "metadata": {
+    "title": "OLiVia-Nav: An Online Lifelong Vision Language Approach for Mobile Robot Social Navigation",
+    "authors": [
+      "Siddarth Narasimhan",
+      "Aaron Hao Tan",
+      "Daniel Choi",
+      "Goldie Nejat"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra55743.2025.11128004",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11128004/",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11128004/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11128004/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11128004/",
+  "pdf_sha256": "bf7d902e99b0ab1911e67865344108f51fbc716952d109b3b504921ac2ff6daa",
+  "bibtex_sha256": "58877a2ae45e07fa3478bd8f5479babd1f3b173eeb67175c140077a4b78bb7bd",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:11.434986+00:00",
+  "selection_id": "3b207a5b76eafefe335d1897",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "OLiVia-Nav_An_Online_Lifelong_Vision_Language_Approach_for_Mobile_Robot_Social_Navigation.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.45.41.bib"
+}

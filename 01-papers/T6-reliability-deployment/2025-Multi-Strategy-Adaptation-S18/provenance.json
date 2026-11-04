@@ -1,0 +1,47 @@
+{
+  "paper_id": "5987f6a8aca348b7bf0fa18b7e518160",
+  "metadata": {
+    "title": "Multi-Strategy Deployment-Time Learning and Adaptation for Navigation under Uncertainty",
+    "authors": [
+      "Abhishek Paudel",
+      "Xuesu Xiao",
+      "Gregory J. Stein"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v270/paudel25a.html",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v270/paudel25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/paudel25a/paudel25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v270/paudel25a.html#bibtex",
+  "pdf_sha256": "361e17e0db2962dc3c1740e6413dea5eaedb7fd5dbee3162816a838873fecada",
+  "bibtex_sha256": "b78a6bea7d0546ed3d264ce1386cf1cb59d46493508ad4ca041d0621cb026a5d",
+  "bibtex_source": "publisher_DownloadTexToFile_innerHTML",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T10:43:29.177538+00:00",
+  "selection_id": "eb6aaadd26a39815479ff1cc",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "acquisition_method": "official_pmlr_batch_adapter",
+  "source_contract": "wheeltec-survey-200plus-pmlr-raw-innerHTML-2",
+  "publisher_export_contract": {
+    "download_filename": "pmlr-v270-paudel25a.bib",
+    "download_function": "DownloadTexToFile",
+    "download_expression": "document.getElementById('bibtex').innerHTML",
+    "element_selector": "code#bibtex",
+    "source_character_span": [
+      8831,
+      10546
+    ],
+    "innerHTML_equals_literal_source": true,
+    "encoding": "UTF-8",
+    "transformation": "none; no stripping, entity decoding, or newline changes"
+  },
+  "publisher_landing_sha256": "540e41fc16851fbaeedbdbf2f678ac53bc94c6d65ce5f6bf1c1d645088440541",
+  "publisher_download_script_sha256": "fe6c20e70206100128c8971681a268565d070e3b21a5430325b19c44eed82471",
+  "verification_host": "codex"
+}

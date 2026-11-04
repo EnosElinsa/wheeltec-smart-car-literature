@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v305-kim25c,
+  title = 	 {CARE: Enhancing Safety of Visual Navigation through Collision Avoidance via Repulsive Estimation},
+  author =       {Kim, Joonkyung and Sim, Joonyeol and Kim, Woojun and Sycara, Katia P. and Nam, Changjoo},
+  booktitle = 	 {Proceedings of The 9th Conference on Robot Learning},
+  pages = 	 {3704--3719},
+  year = 	 {2025},
+  editor = 	 {Lim, Joseph and Song, Shuran and Park, Hae-Won},
+  volume = 	 {305},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {27--30 Sep},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v305/main/assets/kim25c/kim25c.pdf},
+  url = 	 {https://proceedings.mlr.press/v305/kim25c.html},
+  abstract = 	 {We propose CARE (Collision Avoidance via Repulsive Estimation) for improving the robustness of learning-based visual navigation methods. Recently, visual navigation models, particularly foundation models, have demonstrated promising performance by generating viable trajectories using only RGB images. However, these policies can generalize poorly to environments containing out-of-distribution (OOD) scenes characterized by unseen objects or different camera setups (e.g., variations in field of view, camera pose, or focal length). Without fine-tuning, such models could produce trajectories that lead to collisions, necessitating substantial efforts in data collection and additional training. To address this limitation, we introduce CARE, an attachable module that enhances the safety of visual navigation without requiring additional range sensors or fine-tuning of pretrained models. CARE can be integrated seamlessly into any RGB-based navigation model that generates local robot trajectories. It dynamically adjusts trajectories produced by a pretrained model using repulsive force vectors computed from depth images estimated directly from RGB inputs.  We evaluate CARE by integrating it with state-of-the-art visual navigation models across diverse robot platforms. Real-world experiments show that CARE significantly reduces collisions (up to 100%) without compromising navigation performance in goal-conditioned navigation, and further improves collision-free travel distance (up to 10.7$\times$) in exploration tasks.}
+}

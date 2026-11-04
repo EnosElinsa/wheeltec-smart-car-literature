@@ -1,0 +1,50 @@
+{
+  "paper_id": "2a09636aa7564516a7b20ec76c11c258",
+  "metadata": {
+    "title": "Velociraptor: Leveraging Visual Foundation Models for Label-Free, Risk-Aware Off-Road Navigation",
+    "authors": [
+      "Samuel Triest",
+      "Matthew Sivaprakasam",
+      "Shubhra Aich",
+      "David Fan",
+      "Wenshan Wang",
+      "Sebastian Scherer"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v270/triest25a.html",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v270/triest25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/triest25a/triest25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v270/triest25a.html#bibtex",
+  "pdf_sha256": "9a13b1efe40d4a17e8f02a1f5d16d41e8cfe27337550b66b615bc8551d543cea",
+  "bibtex_sha256": "7938e6c97815ae9e0dba6e2b53894a90f466e7a73107ba4f39f13b6577544733",
+  "bibtex_source": "publisher_DownloadTexToFile_innerHTML",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T10:43:37.772739+00:00",
+  "selection_id": "7b47157ccad10d0ad32188ca",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "acquisition_method": "official_pmlr_batch_adapter",
+  "source_contract": "wheeltec-survey-200plus-pmlr-raw-innerHTML-2",
+  "publisher_export_contract": {
+    "download_filename": "pmlr-v270-triest25a.bib",
+    "download_function": "DownloadTexToFile",
+    "download_expression": "document.getElementById('bibtex').innerHTML",
+    "element_selector": "code#bibtex",
+    "source_character_span": [
+      9435,
+      11553
+    ],
+    "innerHTML_equals_literal_source": true,
+    "encoding": "UTF-8",
+    "transformation": "none; no stripping, entity decoding, or newline changes"
+  },
+  "publisher_landing_sha256": "456454815bcbd90ad2c9c4727deed1bebd741397ad11baff60a21f80750ea06e",
+  "publisher_download_script_sha256": "fe6c20e70206100128c8971681a268565d070e3b21a5430325b19c44eed82471",
+  "verification_host": "codex"
+}

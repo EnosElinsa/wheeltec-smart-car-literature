@@ -1,0 +1,32 @@
+{
+  "paper_id": "96a76610f4d84446b33eace4bd82fb51",
+  "metadata": {
+    "title": "CoCoPlan: Adaptive Coordination and Communication for Multi-Robot Systems in Dynamic and Unknown Environments",
+    "authors": [
+      "Xintong Zhang",
+      "Junfeng Chen",
+      "Yuxiao Zhu",
+      "Bing Luo",
+      "Meng Guo"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3656769",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11361077/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11361077/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11361077/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11361077/",
+  "pdf_sha256": "cfecec7d23f0002166af0ef22b527e5685f570db989c1906d67d5b856ac4e0f1",
+  "bibtex_sha256": "8cec64a683bc4a9577ad672cbcfaf122d949e94c5ec9099f514f8f65adaaa8bf",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:06.593401+00:00",
+  "selection_id": "52f982fec86cb17b09c5ccd0",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "CoCoPlan_Adaptive_Coordination_and_Communication_for_Multi-Robot_Systems_in_Dynamic_and_Unknown_Environments.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.43.22.bib"
+}

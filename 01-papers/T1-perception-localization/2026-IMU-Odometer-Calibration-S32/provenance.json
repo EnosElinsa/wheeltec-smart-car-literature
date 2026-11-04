@@ -1,0 +1,33 @@
+{
+  "paper_id": "471becfeee53492fb98b69663342ccc7",
+  "metadata": {
+    "title": "Online IMU-Odometer Calibration Using GNSS Measurements for Autonomous Ground Vehicle Localization",
+    "authors": [
+      "Baoshan Song",
+      "Xiao Xia",
+      "Penggao Yan",
+      "Yihan Zhong",
+      "Weisong Wen",
+      "Li-Ta Hsu"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/tits.2026.3706684",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11595203/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11595203/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11595203/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11595203/",
+  "pdf_sha256": "1caf7f4869732052c304f951e5ae0f268d52d967628f5ae2a53c8ba4819e54d5",
+  "bibtex_sha256": "9bc017e54839fe4eff2159366876425b7a1de74cb89fe86546ae395670bde389",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:43.342042+00:00",
+  "selection_id": "94eb5a8931af9a47c74e76ef",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Online_IMU-Odometer_Calibration_Using_GNSS_Measurements_for_Autonomous_Ground_Vehicle_Localization.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.35.18.bib"
+}

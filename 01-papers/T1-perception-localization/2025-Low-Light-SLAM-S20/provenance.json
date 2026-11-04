@@ -1,0 +1,33 @@
+{
+  "paper_id": "eb1f9aa2d8de4fd787aa394dbc06abde",
+  "metadata": {
+    "title": "Comparison of DSO and ORB‐SLAM3 in Low‐Light Environments With Auxiliary Lighting and Deep Learning Based Image Enhancing",
+    "authors": [
+      "Francesco Crocetti",
+      "Raffaele Brilli",
+      "Alberto Dionigi",
+      "Mario L. Fravolini",
+      "Gabriele Costante",
+      "Paolo Valigi"
+    ],
+    "year": 2025,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.22595",
+    "publisher": "onlinelibrary.wiley.com",
+    "landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22595",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22595",
+  "official_pdf_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22595",
+  "official_bibtex_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22595",
+  "pdf_sha256": "2e0b8752174833d5de023b5d7f44b550f5f838a44b81af1124e22545637cc8dc",
+  "bibtex_sha256": "23a39f2dceef1ea30217c4bcb1063f536ce80fc8e54807459806d8b60bcc262d",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:39.631870+00:00",
+  "selection_id": "f519f918d71dde5a42bf6375",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2025 - Crocetti - Comparison of DSO and ORB‐SLAM3 in Low‐Light Environments With Auxiliary.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (2).bibtex"
+}

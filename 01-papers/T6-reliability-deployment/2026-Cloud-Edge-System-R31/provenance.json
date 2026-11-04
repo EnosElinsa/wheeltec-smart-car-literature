@@ -1,0 +1,26 @@
+{
+  "paper_id": "218a3012af67475e9dfc0ed6f8434594",
+  "metadata": {
+    "title": "Design and Implementation of Cloud–Edge Collaborative Mapping and Control System for Mobile Robots",
+    "authors": [],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3699533",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11550187/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11550187/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11550187/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11550187/",
+  "pdf_sha256": "8dbfe48d7ad61877d5c43f3f434931610c73a68b23d151e4289f5a204d465f44",
+  "bibtex_sha256": "5c95e35144e885be5e445f397a20eb4131e0596c1a684184d1e8ae3a203f9513",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:12.179183+00:00",
+  "selection_id": "f7347718433370d79216c762",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Design_and_Implementation_of_CloudEdge_Collaborative_Mapping_and_Control_System_for_Mobile_Robots.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.46.7.bib"
+}

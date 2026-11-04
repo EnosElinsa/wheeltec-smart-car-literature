@@ -1,0 +1,35 @@
+{
+  "paper_id": "d8120eae54e146f5a1e45925df5227a5",
+  "metadata": {
+    "title": "LiDAR Teach, Radar Repeat: Robust Cross-Modal Navigation in Degenerate and Varying Environments",
+    "authors": [
+      "Renxiang Xiao",
+      "Yichen Chen",
+      "Yuanfan Zhang",
+      "Qianyi Shao",
+      "Yushuai Chen",
+      "Yuxuan Han",
+      "Yunjiang Lou",
+      "Liang Hu"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2026.3699433",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11543515/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11543515/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11543515/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11543515/",
+  "pdf_sha256": "2c36bac49a02ea3cb26197a6ca07c5e51a3ed59703a50291c4d22b3ef43600f3",
+  "bibtex_sha256": "c24e75b20e0390e31837c9543e0df751d9dbfd824a2f953f60092a7c5703a7ac",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:03.933431+00:00",
+  "selection_id": "33fe0b582d68617704b1dc94",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "LiDAR_Teach_Radar_Repeat_Robust_Cross-Modal_Navigation_in_Degenerate_and_Varying_Environments.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.42.16.bib"
+}

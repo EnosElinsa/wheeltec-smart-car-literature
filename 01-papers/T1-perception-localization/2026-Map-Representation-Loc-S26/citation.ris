@@ -1,0 +1,19 @@
+TY  - JOUR
+AU  - Zhang, Lintong
+AU  - Tao, Yifu
+AU  - Lin, Jiarong
+AU  - Zhang, Fu
+AU  - Fallon, Maurice
+PY  - 2026
+DA  - 2026/03/10
+TI  - Visual localization in 3D maps: comparing point cloud, mesh, and NeRF representations
+JO  - Autonomous Robots
+SP  - 14
+VL  - 50
+IS  - 1
+AB  - Recent advances in mapping techniques have enabled the creation of highly accurate dense 3D maps during robotic missions, such as point clouds, meshes, or NeRF-based representations. These developments present new opportunities for reusing these maps for localization. However, there remains a lack of a unified approach that can operate seamlessly across different map representations. This paper presents and evaluates a global visual localization system capable of localizing a single camera image across various 3D map representations built using both visual and lidar sensing. Our system generates a database by synthesizing novel views of the scene, creating RGB and depth image pairs. Leveraging the precise 3D geometric map, our method automatically defines rendering poses, reducing the number of database images while preserving retrieval performance. To bridge the domain gap between real query camera images and synthetic database images, our approach utilizes learning-based descriptors and feature detectors. We evaluate the system’s performance through extensive real-world experiments conducted in both indoor and outdoor settings, assessing the effectiveness of each map representation and demonstrating its advantages over traditional structure-from-motion (SfM) localization approaches. The results show that all three map representations can achieve consistent localization success rates of 55% and higher across various environments. NeRF synthesized images show superior performance, localizing query images at an average success rate of 72%. Furthermore, we demonstrate an advantage over SfM-based approaches that our synthesized database enables localization in the reverse travel direction which is unseen during the mapping process. Our system, operating in real-time on a mobile laptop equipped with a GPU, achieves a processing rate of 1 Hz.
+SN  - 1573-7527
+UR  - https://doi.org/10.1007/s10514-025-10232-5
+DO  - 10.1007/s10514-025-10232-5
+ID  - Zhang2026
+ER  - 

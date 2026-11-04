@@ -1,0 +1,36 @@
+{
+  "paper_id": "6bba2245120a4784a39ae5f37b25668d",
+  "metadata": {
+    "title": "Resilient Timed Elastic Band Planner for Collision‐Free Navigation in Unknown Environments",
+    "authors": [
+      "Geesara Kulathunga",
+      "Abdurrahman Yilmaz",
+      "Zhuoling Huang",
+      "Ibrahim Hroob",
+      "Hariharan Arunachalam",
+      "Leonardo Guevara",
+      "Alexandr Klimchik",
+      "Grzegorz Cielniak",
+      "Marc Hanheide"
+    ],
+    "year": 2025,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.22602",
+    "publisher": "onlinelibrary.wiley.com",
+    "landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22602",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22602",
+  "official_pdf_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22602",
+  "official_bibtex_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.22602",
+  "pdf_sha256": "c65160b782f4313781c816c1119d289c94c34139b32c3977628af5d116d2f8bb",
+  "bibtex_sha256": "19d055e8c7cfde63f3986190fc8409998bb28256e91445fac66243c49bfda438",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:39.054433+00:00",
+  "selection_id": "011cf6c45332ac1d224dd52f",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2025 - Kulathunga - Resilient Timed Elastic Band Planner for Collision‐Free Navigation in.pdf",
+  "source_bibtex_filename": "pericles_exported_citations.bibtex"
+}

@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v305-dong25a,
+  title = 	 {Learning Smooth State-Dependent Traversability from Dense Point Clouds},
+  author =       {Dong, Zihao and Papalia, Alan and Jung, Leonard and Spiro, Alenna and Osteen, Philip R and Robison, Christa S. and Everett, Michael},
+  booktitle = 	 {Proceedings of The 9th Conference on Robot Learning},
+  pages = 	 {1654--1671},
+  year = 	 {2025},
+  editor = 	 {Lim, Joseph and Song, Shuran and Park, Hae-Won},
+  volume = 	 {305},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {27--30 Sep},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v305/main/assets/dong25a/dong25a.pdf},
+  url = 	 {https://proceedings.mlr.press/v305/dong25a.html},
+  abstract = 	 {A key open challenge in off-road autonomy is that the traversability of terrain often depends on the vehicle’s state. In particular, some obstacles are only traversable from some orientations. However, learning this interaction by encoding the angle of approach as a model input demands a large and diverse training dataset and is computationally inefficient during planning due to repeated model inference. To address these challenges, we present SPARTA, a method for estimating approach angle conditioned traversability from point clouds. Specifically, we impose geometric structure into our network by outputting a smooth analytical function over the 1-Sphere that predicts risk distribution for any angle of approach with minimal overhead and can be reused for subsequent queries. The function is composed of Fourier basis functions, which has important advantages for generalization due to their periodic nature and smoothness. We demonstrate SPARTA both in a high-fidelity simulation platform, where our model achieves a 91% success rate crossing a 40m boulder field (compared to 73% for the baseline), and on hardware, illustrating the generalization ability of the model to real-world settings.}
+}

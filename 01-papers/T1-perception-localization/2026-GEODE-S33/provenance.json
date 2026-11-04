@@ -1,0 +1,36 @@
+{
+  "paper_id": "61d38b025fd0413691cd0cf636be422f",
+  "metadata": {
+    "title": "Heterogeneous LiDAR dataset for benchmarking robust localization in diverse degenerate scenarios",
+    "authors": [
+      "Zhiqiang Chen",
+      "Yuhua Qi",
+      "Dapeng Feng",
+      "Xuebin Zhuang",
+      "Hongbo Chen",
+      "Xiangcheng Hu",
+      "Jin Wu",
+      "Kelin Peng",
+      "Peng Lu"
+    ],
+    "year": 2026,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649251344967",
+    "publisher": "journals.sagepub.com",
+    "landing_url": "https://journals.sagepub.com/doi/10.1177/02783649251344967",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://journals.sagepub.com/doi/10.1177/02783649251344967",
+  "official_pdf_url": "https://journals.sagepub.com/doi/10.1177/02783649251344967",
+  "official_bibtex_url": "https://journals.sagepub.com/doi/10.1177/02783649251344967",
+  "pdf_sha256": "f06f98d679946987d8062467ee2cf5517c3b32e28ac3ef9f99ca9bdaa7551aaa",
+  "bibtex_sha256": "58fd11160c8a400473b3821eceb5e4e7def8576b290d6cee63781e54ec0b31bc",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:43.751542+00:00",
+  "selection_id": "f53c3c5a4433b538795d58a9",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "chen-et-al-2025-heterogeneous-lidar-dataset-for-benchmarking-robust-localization-in-diverse-degenerate-scenarios.pdf",
+  "source_bibtex_filename": "csp_45_.bib"
+}

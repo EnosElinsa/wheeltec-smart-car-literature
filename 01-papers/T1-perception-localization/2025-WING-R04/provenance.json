@@ -1,0 +1,26 @@
+{
+  "paper_id": "92f2c27476fc47e99f5cd178cf6b5bb7",
+  "metadata": {
+    "title": "WING: Wheel-Inertial Neural Odometry With Ground Manifold Constraints",
+    "authors": [],
+    "year": 2025,
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/tiv.2024.3429167",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10599809/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10599809/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10599809/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10599809/",
+  "pdf_sha256": "e240b048cbb79de45e3fa53347890d9c49d5161d76983f0cd5342f9fa491369a",
+  "bibtex_sha256": "8cc62e31b2953df95b947d5afb7ae55d54d726fef7ed7ee943d159981986a54d",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:01.463022+00:00",
+  "selection_id": "80afb7b5d96332c68d79ccae",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "WING_Wheel-Inertial_Neural_Odometry_With_Ground_Manifold_Constraints.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.41.11.bib"
+}

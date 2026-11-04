@@ -1,0 +1,1092 @@
+{
+ "date": "2026-11-03",
+ "host": "Kiro",
+ "scope": "Targeted source reading of R01-R36: identity, abstract and selected method, setup, evaluation and limitation passages; excerpts checked against the OXR Markdown and PDF text; no rendered-table audit; not whole-paper verification.",
+ "records": [
+  {
+   "id": "R01",
+   "review": "03-reviews/T1-perception-localization/2026-Radar-Uncertainty-R01/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "pdf_sha256": "eaafbb36bb5e26bfc1ed1f195000f675f9b96bc1e6f6e60af76b61b551942ae4",
+   "markdown_sha256": "57288fe6edd8a733b7f973f762c32ee2a13563b5fca74329a6bf3ec28711e752",
+   "survey_module": "localization-mapping",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 7,
+     "text": "Preserving only low-uncertainty returns and combining them with a geometric residual yields substantial odometry gains, whereas applying a planarity residual directly to an unfiltered map degrades performance because the local planarity assumption is frequently violated."
+    },
+    {
+     "page": 8,
+     "text": "The impact of the constrained update becomes evident in Bridge and 20240123_2, which contain repetitive geometrical features on the bridge and tunnel."
+    }
+   ]
+  },
+  {
+   "id": "R02",
+   "review": "03-reviews/T1-perception-localization/2026-RaLI-Multi-R02/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    3,
+    6,
+    7,
+    8,
+    10,
+    11,
+    13
+   ],
+   "pdf_sha256": "b6107069bc44366359c16c2afabba1a404a885f3a5c848ffd05b29825c4f0e31",
+   "markdown_sha256": "e0881bc0001001cde9d45c14b5ab754b55b4fc967af68181ae86959473842ad9",
+   "survey_module": "localization-mapping",
+   "evidence_type": "recorded-robot-data",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 7,
+     "text": "We assume that LiDAR odometry remains non-degenerate in at least one direction of the horizontal plane."
+    },
+    {
+     "page": 8,
+     "text": "Specifically, our experimental vehicles equipped with differential steering and spring-damped suspension, and there is high friction between rubber tires and tiled floors."
+    }
+   ]
+  },
+  {
+   "id": "R03",
+   "review": "03-reviews/T1-perception-localization/2025-Ground-Constrained-SLAM-R03/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    7,
+    8,
+    10,
+    11
+   ],
+   "pdf_sha256": "1866e5cb6b4dfe0caac7ac4d384f320d2940060cf9d206059b07f7233d8317d6",
+   "markdown_sha256": "9328cb757e3410a797a0f1ec782699798cb0de8032d7eed61c101e4eb2573ace",
+   "survey_module": "localization-mapping",
+   "evidence_type": "recorded-robot-data",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 10,
+     "text": "Therefore, our method has limited performance in such scenarios with small and continuous ground changes."
+    },
+    {
+     "page": 7,
+     "text": "For RTK-denied indoor sequences, the groundtruth are collected by the wheel odom combine point cloud offline registration."
+    }
+   ]
+  },
+  {
+   "id": "R04",
+   "review": "03-reviews/T1-perception-localization/2025-WING-R04/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    9,
+    10,
+    11,
+    12
+   ],
+   "pdf_sha256": "e240b048cbb79de45e3fa53347890d9c49d5161d76983f0cd5342f9fa491369a",
+   "markdown_sha256": "66e4833da1a42b33fd2d6d41a9bf11e0435b2184d8b89a15816f8442aec3c7fb",
+   "survey_module": "localization-mapping",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 11,
+     "text": "Compared to the segmented manifold, The variation in improvement obtained from using the continuous manifold arises from the extent to which the actual ground adheres to our assumption."
+    },
+    {
+     "page": 10,
+     "text": "This is because vehicles are more likely to skid during turning, whereas vertical bouncing is relatively rare on smooth urban roads."
+    }
+   ]
+  },
+  {
+   "id": "R05",
+   "review": "03-reviews/T1-perception-localization/2025-AirSLAM-R05/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    10,
+    13,
+    16,
+    17
+   ],
+   "pdf_sha256": "2676476adfa21e0442822b715809c0319b78ba9458f24a78e7b913ada32d82a4",
+   "markdown_sha256": "a3650a43521b115431f17bd085496ca26c0e30e91cc16414a7a99dd0a77edb78",
+   "survey_module": "localization-mapping",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 13,
+     "text": "The onboard illumination has almost no impact on our AirSLAM and ORB-SLAM3, however, it reduces the accuracy of OKVIS, Basalt, and PL-SLAM."
+    },
+    {
+     "page": 17,
+     "text": "In unstructured environments, the system degrades into a point-only system."
+    }
+   ]
+  },
+  {
+   "id": "R06",
+   "review": "03-reviews/T1-perception-localization/2025-CMRNext-R06/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    7,
+    8,
+    10,
+    15,
+    17
+   ],
+   "pdf_sha256": "c94135e5fae50cfaf51433f2905d014cf2bda09cc52c0bd0a409a9c47b5aa377",
+   "markdown_sha256": "539cce56005efdba715296587bf5245bd3dd1fd31f5cd8485093b6a84bb81e5b",
+   "survey_module": "localization-mapping",
+   "evidence_type": "recorded-robot-data",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 10,
+     "text": "However, in real-world scenarios, this initial pose might not always be available, such as in GNSS-denied environments."
+    },
+    {
+     "page": 17,
+     "text": "Second, while our method is faster than existing camera-agnostic approaches, it is not yet capable of real-time performance."
+    }
+   ]
+  },
+  {
+   "id": "R07",
+   "review": "03-reviews/T2-slam-mapping-exploration/2026-Chamelion-R07/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "pdf_sha256": "52326240469662c86e57b5136f7cd0c20d16d359d981adafb4f45d3ed388bfb2",
+   "markdown_sha256": "2578b0edaa48c8e88f7847de9679a1cf5551aceea42bd971c517082d1a20630f",
+   "survey_module": "localization-mapping",
+   "evidence_type": "recorded-robot-data",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 8,
+     "text": "As future work, we plan to dynamically compute cross-visibility to enhance robustness under varying registration errors and voxel resolutions."
+    },
+    {
+     "page": 7,
+     "text": "As shown in Table IV, the network runs at 14.8 Hz on the RTX 3060 and 2.74 Hz on the Orin NX."
+    }
+   ]
+  },
+  {
+   "id": "R08",
+   "review": "03-reviews/T2-slam-mapping-exploration/2026-E2-BKI-R08/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "pdf_sha256": "b043456bffc632d663a648431f219225c6d7fee4401b4240f3b3df185efe9709",
+   "markdown_sha256": "7200bd637c68f352a8dc628b13ef8f731414409057cf91959df3fc249d2a4c42",
+   "survey_module": "localization-mapping",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 8,
+     "text": "While S-BKI produces incorrect semantics with uncalibrated uncertainty estimates, E2-BKI recovers the correct semantic labels and explicitly flags these challenging regions with higher uncertainty."
+    }
+   ]
+  },
+  {
+   "id": "R09",
+   "review": "03-reviews/T2-slam-mapping-exploration/2026-Radar-Long-Term-R09/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7
+   ],
+   "pdf_sha256": "33526980458e7294a493309a78b996332a9dad46815505d2c7ace8cbd709379f",
+   "markdown_sha256": "91c3ec294bce55570cbf5fd231a0748fe64e0d815b3679a0de4109071e8a2666",
+   "survey_module": "localization-mapping",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 5,
+     "text": "During map generation, we assume a planar vehicle trajectory."
+    },
+    {
+     "page": 6,
+     "text": "In our evaluation, we omit the results of methods with failed runs."
+    }
+   ]
+  },
+  {
+   "id": "R10",
+   "review": "03-reviews/T2-slam-mapping-exploration/2026-OMCL-R10/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7
+   ],
+   "pdf_sha256": "98c5e8dc3ae9918cf4e712576d76a879c4531fd785afcc198287326746eb3cec",
+   "markdown_sha256": "1f29414ef68d446e1a14b951b0c07eb24ea908a9be1fc5a7736c6586805d0b71",
+   "survey_module": "localization-mapping",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 7,
+     "text": "OMCL lacks online map updates and requires map-scaled odometry."
+    }
+   ]
+  },
+  {
+   "id": "R11",
+   "review": "03-reviews/T2-slam-mapping-exploration/2026-LiDAR-Teach-Radar-Repeat-R11/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "pdf_sha256": "2c36bac49a02ea3cb26197a6ca07c5e51a3ed59703a50291c4d22b3ef43600f3",
+   "markdown_sha256": "da18661888fe9df88dec094659920de81ebddcb346f41bc0e2f05becf39920a2",
+   "survey_module": "localization-mapping",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 15,
+     "text": "As shown in Table VI, all single-modal radar T&R methods fail to maintain stable registration during long-range navigation."
+    },
+    {
+     "page": 19,
+     "text": "Future work will investigate how to enhance 4-D mmWave radar occupancy mapping to support reliable planning and obstacle avoidance, thereby increasing the safety of cross-modal T&R navigation system."
+    }
+   ]
+  },
+  {
+   "id": "R12",
+   "review": "03-reviews/T2-slam-mapping-exploration/2026-Super4DR-R12/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    9,
+    10,
+    13,
+    16,
+    19
+   ],
+   "pdf_sha256": "a375143eedf3c922d82fcdd1641be0e184bfd9d957ad42bc7aa4c672d3ffbf53",
+   "markdown_sha256": "008cbc023e7516f1c8f944f7016760155b495c511f6f5deb5fad189c6336cc6a",
+   "survey_module": "localization-mapping",
+   "evidence_type": "recorded-robot-data",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 19,
+     "text": "Therefore, in future work, we will extend Super4DR with radar-based loop closure detection and pose-graph optimization to correct large-scale accumulated drift."
+    }
+   ]
+  },
+  {
+   "id": "R13",
+   "review": "03-reviews/T3-planning-control/2026-Terrain-Adaptive-MPC-R13/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    8
+   ],
+   "pdf_sha256": "4238a369e2fbccc356641a5e358f43ecb96471f95c6f3a40fa2e8f5a9927c051",
+   "markdown_sha256": "171291e1c86985b924c39469459feb2087838b00389835caf07454ce03cac7f8",
+   "survey_module": "traversability-planning-control",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 7,
+     "text": "Real-world results follow the simulation trends: success rate drops from 94% to 80% due to unmodelled effects such as wheel slip and sensor noise, while path-length deviation rises from 8.5 m to 10.8 m as the planner takes more conservative routes under uncertainty."
+    },
+    {
+     "page": 2,
+     "text": "The above assumes a static, offline-constructed mesh."
+    }
+   ]
+  },
+  {
+   "id": "R14",
+   "review": "03-reviews/T3-planning-control/2026-MonoMPC-R14/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "pdf_sha256": "b84b56cd8486bf03bafeeb3cd9d03d181c1afdbd8da238f59c1a2dfd8c5319c1",
+   "markdown_sha256": "6548fa32153005ca1155439998d818639746c4333a6c8b03d9c761e5111d383f",
+   "survey_module": "traversability-planning-control",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 8,
+     "text": "A limitation of our approach is the lack of temporal memory, as it ignores past images or point-clouds."
+    },
+    {
+     "page": 6,
+     "text": "The system ran on ROS Noetic with an NVIDIA RTX 3080 GPU laptop connected to the Jackal over a local network."
+    }
+   ]
+  },
+  {
+   "id": "R15",
+   "review": "03-reviews/T3-planning-control/2026-TRAIL-R15/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    6,
+    7
+   ],
+   "pdf_sha256": "0a6773f04100136fee815e358a4c59c803c6d10c709df762f321e452fc11a5b8",
+   "markdown_sha256": "c2bbd82eafd0cb0a832ce53e65bec5cb4e8a7761d6ee1e8d6dacafe929efd572",
+   "survey_module": "traversability-planning-control",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 6,
+     "text": "Training on Husky data and deploying on Scout Mini thus introduces a platform distribution shift (e.g., mass and vibration scale), providing an additional generalizability test."
+    },
+    {
+     "page": 7,
+     "text": "After conducting more tests in the area, we observed that sensor occlusion and field-of-view limitations are a main failure mode of TRAIL."
+    }
+   ]
+  },
+  {
+   "id": "R16",
+   "review": "03-reviews/T3-planning-control/2026-HEIGHT-R16/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    4,
+    5,
+    9,
+    12,
+    13,
+    15,
+    18
+   ],
+   "pdf_sha256": "b17504440d478bcf538e88346c39a153df8626bb1926c6def32fcd10bc8e0873",
+   "markdown_sha256": "d26ec96b71529d899da7a3d03fe7e246bbb0f0b86966a229b2f2db5113a98071",
+   "survey_module": "traversability-planning-control",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 5,
+     "text": "The second variant is more robust to occlusions, imperfect human models, and sensor noise, but assumes the availability of a map and reliable localization."
+    },
+    {
+     "page": 12,
+     "text": "In these cases, due to its speed limit, the robot sometimes cannot switch to an alternative path in time to prevent collisions."
+    }
+   ]
+  },
+  {
+   "id": "R17",
+   "review": "03-reviews/T3-planning-control/2025-Compensation-MPC-R17/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    8,
+    10,
+    11
+   ],
+   "pdf_sha256": "d8d6169c232fe2cf49ad027a132598002277be4611e253f3f93030ed475e2570",
+   "markdown_sha256": "db1b33b66ed2570e6170f830750ccec9b3733474c4a0780a75a622a82f6e1ad7",
+   "survey_module": "multi-robot",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 10,
+     "text": "Experiment: The platform consists of a motion capture system, a host computer, and four Qbot2 robots."
+    },
+    {
+     "page": 11,
+     "text": "Future work will address the deadlock problem that can arise during obstacle avoidance in collaborative multi-robot trajectory generation."
+    }
+   ]
+  },
+  {
+   "id": "R18",
+   "review": "03-reviews/T3-planning-control/2025-SCOPE-R18/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    4,
+    6,
+    9,
+    12,
+    15,
+    17
+   ],
+   "pdf_sha256": "729da3bee8b6a432cb4be9311fd6c0ce461bcd74cabbadc016a1ffac35d96b7f",
+   "markdown_sha256": "40dad9e8d642134e292ffd435bb92d6e8cc6c18e055ce43e7747a83e8dc1b3e5",
+   "survey_module": "traversability-planning-control",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 4,
+     "text": "As the robot moves, we assume that it can obtain accurate estimates of its relative pose and velocity from odometry sensors or other localization algorithms in a short period of time (on the order of 1 s)."
+    },
+    {
+     "page": 12,
+     "text": "The first failure case is when the robot moves erratically or rotates rapidly and the robot motion compensation is inaccurate, as shown in Fig. 6(a)."
+    }
+   ]
+  },
+  {
+   "id": "R19",
+   "review": "03-reviews/T4-multi-robot-coordination/2026-CoCoPlan-R19/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    3,
+    6,
+    8
+   ],
+   "pdf_sha256": "cfecec7d23f0002166af0ef22b527e5685f570db989c1906d67d5b856ac4e0f1",
+   "markdown_sha256": "8c5f93e14f3c12fb0e2a06f465db21208296ea5e596528325aaf20d862010483",
+   "survey_module": "multi-robot",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 3,
+     "text": "Agents cannot maintain the continuous real-time communication due to physical limitations."
+    },
+    {
+     "page": 6,
+     "text": "Theorem 2: Assume that communication events recur indefinitely and that at every communication time Algorithm 1 is solved to optimality for the adaptive objective (4)."
+    }
+   ]
+  },
+  {
+   "id": "R20",
+   "review": "03-reviews/T4-multi-robot-coordination/2026-Multi-Proxy-R20/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    8
+   ],
+   "pdf_sha256": "9a784dea5794e034a8a38deceea9eae3e8b1ec96122d851514dc2d2fb311c7ae",
+   "markdown_sha256": "3e3afb1bb0babae4df1bee10c7d465dd5f2769a5f00e2d0993792e0852290400",
+   "survey_module": "multi-robot",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 7,
+     "text": "High packet-loss and latency disrupts the two-stage distributed Gauss-Seidel solver, causing DCL to fail to converge."
+    },
+    {
+     "page": 8,
+     "text": "During evaluation in highly degenerate environments, our method relies on a reasonably stable front-end odometry, such that individual robots do not suffer from severe degeneracy-induced drift."
+    }
+   ]
+  },
+  {
+   "id": "R21",
+   "review": "03-reviews/T4-multi-robot-coordination/2026-Hierarchical-Transmission-R21/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    5,
+    6,
+    8
+   ],
+   "pdf_sha256": "5e6f770ca957e83cf8dbbcbd189f7b089a2766395b317b003401febcf57316b0",
+   "markdown_sha256": "a510e2c0abeedfa8275e2edcfbb2ecc70cc2907f929fd9e3f1ceb7621a6316e3",
+   "survey_module": "multi-robot",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 5,
+     "text": "Under higher-latency or asynchronous networks, these guidance signals may become stale relative to robot motion and queued transmissions, which is a limitation of the current round-wise feedback design."
+    },
+    {
+     "page": 8,
+     "text": "Future work will investigate larger and more heterogeneous robot teams, real-world deployments, and distributed architectures."
+    }
+   ]
+  },
+  {
+   "id": "R22",
+   "review": "03-reviews/T4-multi-robot-coordination/2026-URGE-R22/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    11,
+    14,
+    15,
+    18
+   ],
+   "pdf_sha256": "cc100764b924cf8894bea98b23b4574a4b9d7711492cdf8e21bfaa17b3fbcc13",
+   "markdown_sha256": "3a0a60cc52501b1e8f0afb7d8047832456c7d2b20a09c4bcffbb335b3cd62999",
+   "survey_module": "multi-robot",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 11,
+     "text": "In the simulation, the inter-robot communication is assumed to be ideally connected at all times."
+    },
+    {
+     "page": 4,
+     "text": "At the start of exploration, the relative positions of all robots are assumed to be known."
+    }
+   ]
+  },
+  {
+   "id": "R23",
+   "review": "03-reviews/T4-multi-robot-coordination/2026-riMESA-R23/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    3,
+    9,
+    11,
+    16,
+    18
+   ],
+   "pdf_sha256": "efac357539cadfa147ac0d42fcf538bf80bb059520c2f7b821921898f19f2cc2",
+   "markdown_sha256": "3aa960e11d7e7479e892aacda68377b654e139e3587ebb4212b13b6430ef3a7e",
+   "survey_module": "multi-robot",
+   "evidence_type": "dataset-playback",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 16,
+     "text": "In our final experiment, we seek to evaluate the performance of riMESA on data that (as closely as possible) resembles real-world data."
+    },
+    {
+     "page": 9,
+     "text": "We assume that inter-robot measurement front-ends are responsible for identifying this shared state."
+    }
+   ]
+  },
+  {
+   "id": "R24",
+   "review": "03-reviews/T4-multi-robot-coordination/2025-MEF-Explore-R24/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    3,
+    7,
+    13,
+    14,
+    15
+   ],
+   "pdf_sha256": "9e38bcef4a42251527e45423585c2afcc97813fef2c0555c8a5a300e6cf62f8b",
+   "markdown_sha256": "b5405930e3bbac722c780132c6c52e5a7933f6c56647576801fb5832000eac6f",
+   "survey_module": "multi-robot",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 13,
+     "text": "As shown in Fig. 11(a), we utilize three TurtleBot2 run on a Kobuki base, each equipped with an Intel NUC i5 as the computing unit and a Velodyne LiDAR sensor (scanning range restricted to 7m)."
+    },
+    {
+     "page": 15,
+     "text": "For mathematical convenience, we assume that there is no error from merging."
+    }
+   ]
+  },
+  {
+   "id": "R25",
+   "review": "03-reviews/T5-semantic-embodied-navigation/2026-Sem-NaVAE-R25/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    8
+   ],
+   "pdf_sha256": "08865947de7c843683f24f948ad93ac68cbff7fa0ca47e9bfba935cf04a06db2",
+   "markdown_sha256": "7989c2b3f6aef1e87f34db3a699d1c0deeade0d7de9f36be7d7bb4dfb8548aba",
+   "survey_module": "semantic-language-navigation",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 8,
+     "text": "First, while our real-world evaluation covers extensive routes, it is geographically limited to campus and park-like environments."
+    },
+    {
+     "page": 5,
+     "text": "To train the generative model, we collected a real-world dataset using a Husarion Panther UGV equipped with a 64-channel Ouster LiDAR, a generic RGB camera, IMU, GPS-RTK and a NVIDIA RTX4060 laptop."
+    }
+   ]
+  },
+  {
+   "id": "R26",
+   "review": "03-reviews/T5-semantic-embodied-navigation/2026-VAMOS-R26/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    8
+   ],
+   "pdf_sha256": "34e8275d0160552974ae945d03a49d198d511a223591e2bc890ec3e20ca6d4ee",
+   "markdown_sha256": "40554be1de689521e15892e71cbf5fbfc56d612ef6b158f8afeab0b6008f48dd",
+   "survey_module": "semantic-language-navigation",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 6,
+     "text": "We use the same high-level planner for both Spot and Hound robots, and we swap only the embodiment-specific affordance module."
+    },
+    {
+     "page": 8,
+     "text": "While our affordance model currently only reasons in geometric space, future work could focus on adding embodiment-specific semantic reasoning about traversability."
+    }
+   ]
+  },
+  {
+   "id": "R27",
+   "review": "03-reviews/T5-semantic-embodied-navigation/2026-osmAG-LLM-R27/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "pdf_sha256": "571535023f4ef5155734821a1253e34a1bcdef2546c26d833103c4175e0b2ad6",
+   "markdown_sha256": "421221931f388067edfe0528f605de6ee9b341a9c1ff383a46dc3496125e30be",
+   "survey_module": "semantic-language-navigation",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 7,
+     "text": "5) Failure Analysis: Our experiments resulted in 9 failed cases out of 30 trials, as shown in Fig. 7."
+    },
+    {
+     "page": 8,
+     "text": "Therefore, the system achieved 90% correct robot positioning (27/30), with detection errors accounting for most failures."
+    }
+   ]
+  },
+  {
+   "id": "R28",
+   "review": "03-reviews/T5-semantic-embodied-navigation/2026-VLN-Game-R28/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    9,
+    11,
+    13
+   ],
+   "pdf_sha256": "b70bb76eea93924600ad27694a25e7b29b34b2254f353bd05cf96ce646f3f6bf",
+   "markdown_sha256": "6cbc84ad38163b06c90091a6a318c6b971b8efb563d7c4ac60a62a62acc91787",
+   "survey_module": "semantic-language-navigation",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 13,
+     "text": "We deployed the agents in the real world and evaluated them on the Jackal Robot platform, which is equipped with a RealSense D455 RGB-D camera and an Ouster lidar, using ROS [80]."
+    },
+    {
+     "page": 11,
+     "text": "Second, the CLIP model has limitations in detecting all open-vocabulary targets in our tasks, which constrains the overall navigation performance of the robot."
+    }
+   ]
+  },
+  {
+   "id": "R29",
+   "review": "03-reviews/T5-semantic-embodied-navigation/2025-OLiVia-Nav-R29/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    5,
+    6
+   ],
+   "pdf_sha256": "bf7d902e99b0ab1911e67865344108f51fbc716952d109b3b504921ac2ff6daa",
+   "markdown_sha256": "00e636b27abaf003f3fa600eeb37e65440a21af8508b38c56579a2bdf1a5defd",
+   "survey_module": "semantic-language-navigation",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 2,
+     "text": "LLM and VLM methods [23], [24] are limited by their slow response times resulting in poor social navigation performance, as they cannot adapt to fast human movements leading to collisions [32]."
+    },
+    {
+     "page": 6,
+     "text": "Future work will investigate the performance of the OLiVia-Nav in larger environments with crowds."
+    }
+   ]
+  },
+  {
+   "id": "R30",
+   "review": "03-reviews/T5-semantic-embodied-navigation/2026-NORM-Nav-R30/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "pdf_sha256": "264a5a9f8d46d84a1a33d4871a9a162e3af28615b70d00f22ec29cd066c3658b",
+   "markdown_sha256": "ffeadc87220343b4b9e2f562473473f80f0a7cec6fdb2befc58a5c72dd26725d",
+   "survey_module": "semantic-language-navigation",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 6,
+     "text": "2) Real-world Platform: For physical validation, we employ a SCOUT 2.0 differential-drive mobile robot (Fig. 5)."
+    },
+    {
+     "page": 6,
+     "text": "In the traversable-obstacle task, BehAV and InstructNav fail to traverse regions misclassified as obstacles."
+    }
+   ]
+  },
+  {
+   "id": "R31",
+   "review": "03-reviews/T6-reliability-deployment/2026-Cloud-Edge-System-R31/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    9,
+    10,
+    11,
+    15,
+    17,
+    19
+   ],
+   "pdf_sha256": "8dbfe48d7ad61877d5c43f3f434931610c73a68b23d151e4289f5a204d465f44",
+   "markdown_sha256": "02c9faa15fa20d71014e2017e62a3ade59959f1a5e3124262b9796513dad5780",
+   "survey_module": "fault-recovery-deployment",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 11,
+     "text": "The robot base for the experiment is AgileX Hunter SE, an Ackermann mobile robot equipped with a battery pack."
+    },
+    {
+     "page": 9,
+     "text": "If the discovery module fails to establish connections within a specified timeout, the system falls back to forming an edge LAN led by the designated edge leader."
+    }
+   ]
+  },
+  {
+   "id": "R32",
+   "review": "03-reviews/T6-reliability-deployment/2025-Mechanical-Compute-Energy-R32/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    11,
+    12
+   ],
+   "pdf_sha256": "1a080c71d002cbe5b784c1c8cdf294e62c3cdff46ef73caf744df5f1e93a5bbd",
+   "markdown_sha256": "7b84a9047a2362123aa74d722c0c3e6363a1d2a03cf69d2bbdaa2e45536a180e",
+   "survey_module": "fault-recovery-deployment",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 7,
+     "text": "Therefore, here the communication energy is not considered at present since it does not represent the main contribution to the overall energy consumption."
+    },
+    {
+     "page": 12,
+     "text": "Notably, the SO strategy does not reach to minimum energy consumption level, since it tunes the mechanical and computational parts separately."
+    }
+   ]
+  },
+  {
+   "id": "R33",
+   "review": "03-reviews/T6-reliability-deployment/2025-Help-Me-Through-R33/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    4,
+    5,
+    13,
+    14,
+    15
+   ],
+   "pdf_sha256": "aa51ba476be021627b9b45ea79643e11a61698ea7c20b214f2a54e3659c00734",
+   "markdown_sha256": "59ff5371a7a948d9c83edb336b3160417a97b9c639d923e462ccde52163f1585",
+   "survey_module": "fault-recovery-deployment",
+   "evidence_type": "online-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 14,
+     "text": "The robot is tele-operated for path planning and obstacle avoidance."
+    },
+    {
+     "page": 4,
+     "text": "However, failures across transitions have largely eluded attention."
+    }
+   ]
+  },
+  {
+   "id": "R34",
+   "review": "03-reviews/T6-reliability-deployment/2025-Recharge-Monitoring-R34/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    3,
+    4,
+    12,
+    15,
+    16
+   ],
+   "pdf_sha256": "65773011d22084d3af35a7c0cab7ee9491ad1f82c0693a77dd6a383a9340e61c",
+   "markdown_sha256": "7ba2584870d44a5bda9e8405db4646d285d6084ba0e695e04cf2f77234b11b5f",
+   "survey_module": "fault-recovery-deployment",
+   "evidence_type": "numerical",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 4,
+     "text": "Similarly, the recharging time can also be assumed to be zero."
+    },
+    {
+     "page": 16,
+     "text": "In practical scenarios, battery consumption by the robots may be stochastic."
+    }
+   ]
+  },
+  {
+   "id": "R35",
+   "review": "03-reviews/T6-reliability-deployment/2025-R-FAC-R35/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    5,
+    10,
+    13,
+    15
+   ],
+   "pdf_sha256": "c3042796688b517f2a012a36ab2065a7353e5e6db54cb86f372029767d2efc80",
+   "markdown_sha256": "7bb1d26521628aa9673ca04084e276a810c04e2aa200dcd011cec4fd1b5071b6",
+   "survey_module": "fault-recovery-deployment",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 13,
+     "text": "In practice, when one or several robots fail and quit the team, other robots might not know the information in real time, and they are still following the previously calculated search plan."
+    },
+    {
+     "page": 15,
+     "text": "the robot team is deployed to search for the adversarial moving target, where the target adapts its motion dynamics based on the robot team"
+    }
+   ]
+  },
+  {
+   "id": "R36",
+   "review": "03-reviews/T6-reliability-deployment/2025-RADIUM-R36/review.md",
+   "verification_level": "light",
+   "scope": "targeted-source-reading",
+   "physical_pages": [
+    1,
+    2,
+    3,
+    7,
+    8,
+    11,
+    12,
+    13
+   ],
+   "pdf_sha256": "0fc58d98e14dae95f621777fbdd32ac61990384eb12f3d9a3696c0ba31d1bfc0",
+   "markdown_sha256": "31fb459c03e5273d6fc1fabe6dcaf1b1450beb447cf4c2a52b7f13e82b1adeef",
+   "survey_module": "fault-recovery-deployment",
+   "evidence_type": "closed-loop-hardware",
+   "retained_text_numbers": true,
+   "retained_table_values_rendered": false,
+   "excerpts": [
+    {
+     "page": 13,
+     "text": "The main limitation of our approach is that it requires a simulator with enough fidelity to predict the failures of interest."
+    },
+    {
+     "page": 13,
+     "text": "This means that our method cannot predict any failures not modeled by the simulator."
+    }
+   ]
+  }
+ ]
+}

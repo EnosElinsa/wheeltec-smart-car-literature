@@ -1,0 +1,31 @@
+{
+  "paper_id": "5ef9047ec42e4e8ab30d753cd2f49bf2",
+  "metadata": {
+    "title": "Multimodal spatial language maps for robot navigation and manipulation",
+    "authors": [
+      "Chenguang Huang",
+      "Oier Mees",
+      "Andy Zeng",
+      "Wolfram Burgard"
+    ],
+    "year": 2025,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649251351658",
+    "publisher": "journals.sagepub.com",
+    "landing_url": "https://journals.sagepub.com/doi/10.1177/02783649251351658",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://journals.sagepub.com/doi/10.1177/02783649251351658",
+  "official_pdf_url": "https://journals.sagepub.com/doi/10.1177/02783649251351658",
+  "official_bibtex_url": "https://journals.sagepub.com/doi/10.1177/02783649251351658",
+  "pdf_sha256": "e57710e0ab3194e5102b6104e94533af5094e45e8d0766867c6d0a74ac38bc11",
+  "bibtex_sha256": "ca2fb7c75862caf24f46cb011523e8a210f05c8f8143fa28bad6afd415a3cfc2",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:38.103165+00:00",
+  "selection_id": "b331bfd717224a16d0f32a1c",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "huang-et-al-2025-multimodal-spatial-language-maps-for-robot-navigation-and-manipulation.pdf",
+  "source_bibtex_filename": "csp__ (2).bib"
+}

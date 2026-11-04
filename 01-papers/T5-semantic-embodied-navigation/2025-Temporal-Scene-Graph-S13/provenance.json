@@ -1,0 +1,32 @@
+{
+  "paper_id": "0a9074a7cd6d4c10ba6d66168b9fb0b9",
+  "metadata": {
+    "title": "Temporal Scene-Object Graph Learning for Object Navigation",
+    "authors": [
+      "Lu Chen",
+      "Zongtao He",
+      "Liuyi Wang",
+      "Chengju Liu",
+      "Qijun Chen"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3553055",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10933547/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10933547/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10933547/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10933547/",
+  "pdf_sha256": "21f96b363ad9cb936f0a19b24abfa3fd02f1c1d3038a3f7ea889877a1dd206e1",
+  "bibtex_sha256": "d04cf9a783ff5446ff5f1a616a9dc15dd43d338803f111d42d84999b5b7f2343",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:38.468707+00:00",
+  "selection_id": "ba90204105845ed493a7e7ca",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Temporal_Scene-Object_Graph_Learning_for_Object_Navigation.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.34.42.bib"
+}

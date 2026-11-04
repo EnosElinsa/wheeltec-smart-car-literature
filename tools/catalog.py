@@ -18,21 +18,35 @@ CATALOG_FIELDS = (
     "code", "theme", "title", "bibliographic_year", "venue", "publication_type",
     "doi", "official_url", "assessment", "survey_selected", "pdf", "bibtex",
     "markdown", "review", "source_notes", "extraction_mode", "pdf_sha256",
-    "bibtex_sha256", "markdown_sha256",
+    "bibtex_sha256", "markdown_sha256", "citation_status", "identity_status",
 )
+
+REGISTERED_SOURCE_STATES = frozenset({
+    "delivered", "registered_with_derived_citation", "registered_with_title_variant",
+})
 
 
 def load_catalog(root: Path = REPO_ROOT, strict: bool = False) -> list[Entry]:
     entries = load_corpus(root, strict)
     reviewed = {e.code: e for e in entries}
     ids = set(reviewed)
+    inclusion_path = root / '06-data/survey-inclusion.json'
+    selected = ids
+    if inclusion_path.is_file():
+        inclusion = json.loads(inclusion_path.read_text(encoding='utf-8'))
+        selected = set(inclusion['selected_ids'])
+        internal = set(inclusion.get('internal_reference_ids', []))
+        if not selected <= ids or ids - selected != internal or selected & internal:
+            raise CorpusError(['survey selection does not account for reviewed internal references'])
     dois = {e.row["doi"].strip().casefold() for e in entries if e.row.get("doi")}
     for entry in entries:
         entry.row["assessment"] = (
             f"{entry.row['verification_level'].capitalize()} review card"
             if entry.row.get("verification_level") else "Review card"
         )
-        entry.row["survey_selected"] = "yes"
+        entry.row["survey_selected"] = "yes" if entry.code in selected else "no"
+        if entry.code not in selected:
+            entry.row["assessment"] += "; internal reference"
     for manifest in sorted((root / "06-data").glob("*/manifest.json")):
         payload = json.loads(manifest.read_text(encoding="utf-8"))
         # This schema describes acquired papers; other manifests are unrelated.
@@ -40,9 +54,16 @@ def load_catalog(root: Path = REPO_ROOT, strict: bool = False) -> list[Entry]:
             continue
         notes = manifest.with_name("evidence-notes.md")
         for source in payload["records"]:
-            if source.get("acquisition_status") != "delivered":
+            state = source.get("acquisition_status")
+            if state not in REGISTERED_SOURCE_STATES:
                 continue
             code = source["id"]
+            derived = state == "registered_with_derived_citation"
+            title_variant = state == "registered_with_title_variant"
+            if derived and (source.get("citation_status") != "derived" or not source.get("citation_source")):
+                raise CorpusError([f"derived citation lacks source attribution: {code}"])
+            if title_variant and source.get("identity_status") != "publisher-title-variant-reviewed":
+                raise CorpusError([f"publisher title variant lacks identity review: {code}"])
             doi = source.get("doi", "").strip().casefold()
             if code in reviewed:
                 # Acquisition and subsequent assessment describe the same work.
@@ -55,6 +76,12 @@ def load_catalog(root: Path = REPO_ROOT, strict: bool = False) -> list[Entry]:
                     raise CorpusError([f"duplicate library identity with conflicting sources in {manifest.relative_to(root)}: {code}"])
                 row["source_notes"] = notes.relative_to(root).as_posix() if notes.is_file() else ""
                 row["extraction_mode"] = source.get("extraction_mode", "")
+                row["citation_status"] = source.get("citation_status", "")
+                row["identity_status"] = source.get("identity_status", "")
+                if derived:
+                    row["assessment"] += "; derived citation"
+                elif title_variant:
+                    row["assessment"] += "; publisher title variant"
                 continue
             if code in ids or (doi and doi in dois):
                 raise CorpusError([f"duplicate library identity in {manifest.relative_to(root)}: {code}"])
@@ -62,15 +89,22 @@ def load_catalog(root: Path = REPO_ROOT, strict: bool = False) -> list[Entry]:
             if len(pdf.parts) != 4 or pdf.parts[0] != "01-papers":
                 raise CorpusError([f"source outside the shared paper layout: {code}"])
             targeted = source.get("read_scope") == "targeted-source-reading"
+            assessment = "Targeted source notes" if targeted else "Source registered"
+            if derived:
+                assessment += "; derived citation"
+            elif title_variant:
+                assessment += "; publisher title variant"
             row = {
                 "code": code, "theme": source["theme"], "title": source["title"],
                 "bibliographic_year": str(source["year"]), "venue": source["venue"],
                 "publication_type": "conference" if source["publication_type"] == "proceedings-article" else "journal",
                 "doi": source.get("doi", ""), "official_url": source.get("official_url", ""),
-                "assessment": "Targeted source notes" if targeted else "Source registered",
+                "assessment": assessment,
                 "survey_selected": "no", "review": "",
-                "source_notes": notes.relative_to(root).as_posix() if targeted and notes.is_file() else "",
+                "source_notes": notes.relative_to(root).as_posix() if (targeted or derived or title_variant) and notes.is_file() else "",
                 "extraction_mode": source.get("extraction_mode", ""),
+                "citation_status": source.get("citation_status", ""),
+                "identity_status": source.get("identity_status", ""),
             }
             row.update({field: source[field] for field in (
                 "pdf", "bibtex", "markdown", "pdf_sha256", "bibtex_sha256", "markdown_sha256"

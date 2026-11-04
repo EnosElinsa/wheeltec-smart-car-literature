@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-03",
+  "scope": "Working-draft integration, not whole-paper or human-final verification.",
+  "new_targeted_cards": 48,
+  "all_review_cards_checked": 195,
+  "review_check": "passed, including PDF excerpts",
+  "baseline_index_rows_preserved": 147,
+  "frozen_selection_hashes_preserved": {
+    "selection/selected-papers.jsonl": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+    "selection/selection-manifest.json": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+    "review-decisions.jsonl": "282cc24006290d84f18979d7a30b3b2d2a15934fa870486f0e69f8a267b6c860"
+  },
+  "new_excerpt_physical_page_matches": 48,
+  "new_performance_table_values": 0,
+  "catalog_regression_tests": 12,
+  "catalog_tests": "passed",
+  "citation_exceptions_preserved": [
+    "S24",
+    "S25",
+    "S26",
+    "S41"
+  ],
+  "relative_links": "passed",
+  "public_tree": "passed; strict CJK and path checks",
+  "delivery": {
+    "pages": 33,
+    "corpus_prose_citations": 195,
+    "bibliography_entries": 211,
+    "resolved_bibliography_entries": 211,
+    "unique_labels": 30,
+    "figures": 3,
+    "tables": 8,
+    "unresolved_references": [],
+    "source_artifacts_checked": 585,
+    "local_fulltext_verification": "passed",
+    "source_hash_mismatches": 0,
+    "evaluation_denominator": 192,
+    "evaluation_attribute_counts": {
+      "residual": 140,
+      "designed-degradation": 107,
+      "integrity-reliability": 14,
+      "closed-loop-task": 106
+    },
+    "source_checked_numerical_cases": 7,
+    "displayed_equations_unchanged": 6,
+    "overfull_boxes": 0,
+    "underfull_horizontal_boxes": 12,
+    "underfull_vertical_boxes": 0,
+    "pdf_sha256": "8b5d60abfa0d9ad35f7887e7bf664b6844b6beda0cb2c89971596a94d1dd3894",
+    "supplement": {
+      "pages": 3,
+      "unique_labels": 7,
+      "figures": 1,
+      "tables": 2,
+      "resolved_bibliography_entries": 10,
+      "unresolved_references": [],
+      "overfull_boxes": 0,
+      "underfull_horizontal_boxes": 1,
+      "underfull_vertical_boxes": 0,
+      "pdf_sha256": "1029404a593eb4b5ef37669c468589a041df2ca14eaf3863a0f4398424f4055c"
+    },
+    "source_commits": {
+      "manuscript": "fc7cf006d245ef96947d782cb446136c9ee72890",
+      "evidence": "9e12bdd413137b90dc1e4b7c408fa87f77724f50"
+    }
+  },
+  "public_data_verifier": "passed; retained separately in manuscript revision/public-data-verification.json",
+  "public_links_checked": 2864,
+  "public_links_broken": 0,
+  "public_files_scanned": 576
+}

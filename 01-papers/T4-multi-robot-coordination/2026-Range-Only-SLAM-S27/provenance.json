@@ -1,0 +1,29 @@
+{
+  "paper_id": "81a6d8549e484bd7a68ff0f524c7458d",
+  "metadata": {
+    "title": "A cooperative approach to Range-Only SLAM with undelayed initialization",
+    "authors": [
+      "Lorenzo Bianchi",
+      "Francesco Martinelli"
+    ],
+    "year": 2026,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2025.105230",
+    "publisher": "www.sciencedirect.com",
+    "landing_url": "https://www.sciencedirect.com/science/article/pii/S0921889025003276",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://www.sciencedirect.com/science/article/pii/S0921889025003276",
+  "official_pdf_url": "https://www.sciencedirect.com/science/article/pii/S0921889025003276",
+  "official_bibtex_url": "https://www.sciencedirect.com/science/article/pii/S0921889025003276",
+  "pdf_sha256": "f666ff30926226f28c70a3d0dec7cd77361fca885e13b85950e30785ddb27a44",
+  "bibtex_sha256": "b53244dcdaf95a9d5957fe35f34ee8b20739689631453517907512483d670683",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:41.469562+00:00",
+  "selection_id": "7a16b164390b8fd7354941af",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "A cooperative approach to Range-Only SLAM with undelayed initialization.pdf",
+  "source_bibtex_filename": "S0921889025003276.bib"
+}

@@ -1,0 +1,33 @@
+{
+  "paper_id": "f08b08d3e1644b80ba7d5790e902960a",
+  "metadata": {
+    "title": "Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots",
+    "authors": [
+      "Yike Qiao",
+      "Xiaodong He",
+      "An Zhuo",
+      "Zhiyong Sun",
+      "Weimin Bao",
+      "Zhongkui Li"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3644358",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11300826/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11300826/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11300826/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11300826/",
+  "pdf_sha256": "a2974b60067e6a3fd2057dac4d6aedc8c9284f24c9bebf2f2cfca779c294053b",
+  "bibtex_sha256": "d6a2553e5a50263e86c227605c43f885a6dc8ce4f4185a338497802ce07060d6",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:37.588196+00:00",
+  "selection_id": "a86e472d20dea8d7f412d681",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Curvature-Constrained_Vector_Field_for_Motion_Planning_of_Nonholonomic_Robots.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.32.10.bib"
+}

@@ -1,0 +1,33 @@
+{
+  "paper_id": "37b0f2caf51b47bebd6336ac6423409e",
+  "metadata": {
+    "title": "Universal Low-Complexity Safe Tracking Control and Its Application to Time-Independent Path Following of Nonholonomic Mobile Robots",
+    "authors": [
+      "Dianrui Mu",
+      "Changchun Hua",
+      "Jiannan Chen",
+      "Yafeng Li",
+      "Lingchen Zhu",
+      "Fucai Liu"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2025.3586138",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11075828/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11075828/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11075828/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11075828/",
+  "pdf_sha256": "651bdfd2d3be6eaccbc7ca0407b0ee59b1159e5088d2f6f61bcdf07bfcc3463a",
+  "bibtex_sha256": "8e14acd5962a0a37ae1660e54fb449b67b103e88a5aa08aa904849aa7c3f94d0",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T12:15:13.472321+00:00",
+  "selection_id": "896005f615966ff0657e199c",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "paper.pdf",
+  "source_bibtex_filename": "citation.bib"
+}

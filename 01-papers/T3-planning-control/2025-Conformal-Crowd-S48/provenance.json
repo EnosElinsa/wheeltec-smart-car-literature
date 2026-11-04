@@ -1,0 +1,50 @@
+{
+  "paper_id": "399ced83a94044958df83aab63b48128",
+  "metadata": {
+    "title": "Towards Generalizable Safety in Crowd Navigation via Conformal Uncertainty Handling",
+    "authors": [
+      "Jianpeng Yao",
+      "Xiaopan Zhang",
+      "Yu Xia",
+      "Zejin Wang",
+      "Amit Roy-Chowdhury",
+      "Jiachen Li"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v305/yao25a.html",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v305/yao25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/yao25a/yao25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v305/yao25a.html#bibtex",
+  "pdf_sha256": "5521b669c771965d2e13ee5fc429e7ee782e3b5d555dbb6dcf64a7846e61319d",
+  "bibtex_sha256": "2915e2ddb600fd17205643158f0ab639020a4ec51e4a4a3bbf819ffcadb07fa6",
+  "bibtex_source": "publisher_DownloadTexToFile_innerHTML",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T10:44:12.654616+00:00",
+  "selection_id": "c84092e93caae5fbec2ebec1",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "acquisition_method": "official_pmlr_batch_adapter",
+  "source_contract": "wheeltec-survey-200plus-pmlr-raw-innerHTML-2",
+  "publisher_export_contract": {
+    "download_filename": "pmlr-v305-yao25a.bib",
+    "download_function": "DownloadTexToFile",
+    "download_expression": "document.getElementById('bibtex').innerHTML",
+    "element_selector": "code#bibtex",
+    "source_character_span": [
+      9253,
+      11251
+    ],
+    "innerHTML_equals_literal_source": true,
+    "encoding": "UTF-8",
+    "transformation": "none; no stripping, entity decoding, or newline changes"
+  },
+  "publisher_landing_sha256": "4b47e8f7e80c92fc8508ea6cf4b6ecbc964ac0830d3b0a9c5a7cdeeeb273cc67",
+  "publisher_download_script_sha256": "fe6c20e70206100128c8971681a268565d070e3b21a5430325b19c44eed82471",
+  "verification_host": "codex"
+}

@@ -1,0 +1,13 @@
+# IEEE acquisition repair and access status
+
+This report records the automatic-download stage before the later user import. See the [manual import receipt](manual-import.md) and [current batch state](README.md) for updated counts and remaining actions.
+
+The dedicated headful Chrome browser did not inherit the existing HTTP(S) proxy environment. Direct IEEE navigation failed with ERR_CONNECTION_TIMED_OUT. Passing the configured proxy to the isolated browser restored official page access and the configured institutional return flow. The repair preserves proxy exclusions, keeps proxy credentials out of URLs and diagnostics, and leaves the hash-pinned 0.6.0 release unchanged through an explicit local browser overlay.
+
+Connection-close and connection-timeout failures now receive one bounded pre-credential navigation retry. A page titled Request Rejected is classified as a publisher access block instead of missing title metadata. The relevant browser and institution suites pass 67 tests. The existing credential host, institutional route, one-submission limit, same-context PDF/citation requests and exact publisher hosts remain enforced.
+
+Five additional official pairs were verified: S01 NVMS-SLAM, S03 AGLoc, S04 Set-Theoretic-Platoon, S05 Risk-Zone-CBF and S10 Swarm-SLAM. Their DOI, title, year, venue and author scope agree with the frozen selection; the PDF identity and native raw BibTeX were checked without modifying the citations. The batch now has 14 verified pairs, bringing the acquired library to 161. The reviewed corpus remains 147 and the manuscript has 163 references.
+
+Later IEEE requests repeatedly returned Request Rejected. This confirms a publisher access block; the page alone does not identify its exact rule or prove a credential or subscription failure. Shared proxy egress, request frequency or session checks are possible causes, not established facts. Further IEEE requests are paused. Preserve the dedicated profile, allow the site restriction to clear, and use the institution's normal authorized entry. Complete any displayed human verification in the visible dedicated browser. If the restriction persists, report the page's support identifier to the institution or IEEE. Resume the unchanged selection only after ordinary authorized access works; verified files will be reused by hash.
+
+S06 separately returned no PDF after institutional return; entitlement is unconfirmed for that item. S15 did not return a valid native BibTeX export and is listed in [citation failures](contract-errors.csv). Its partial files are not counted as a delivered pair. See the [selection](selection.csv), [manual queue](manual-download.csv), and [batch guide](README.md) for individual states.

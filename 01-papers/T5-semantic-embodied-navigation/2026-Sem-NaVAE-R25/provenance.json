@@ -1,0 +1,29 @@
+{
+  "paper_id": "975c2d99429746b9bae684922ed26142",
+  "metadata": {
+    "title": "Sem-NaVAE: Semantically-Guided Outdoor Mapless Navigation via Generative Trajectory Priors",
+    "authors": [
+      "Gonzalo Olguín",
+      "Javier Ruiz-del-Solar"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3703234",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11560929/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11560929/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11560929/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11560929/",
+  "pdf_sha256": "08865947de7c843683f24f948ad93ac68cbff7fa0ca47e9bfba935cf04a06db2",
+  "bibtex_sha256": "c3b77f2210fd9615493be949f83ff26a517a1a4f51a8f71760ba9d6a46a67964",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:09.385209+00:00",
+  "selection_id": "eed9da844a46090818440962",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Sem-NaVAE_Semantically-Guided_Outdoor_Mapless_Navigation_via_Generative_Trajectory_Priors.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.44.30.bib"
+}

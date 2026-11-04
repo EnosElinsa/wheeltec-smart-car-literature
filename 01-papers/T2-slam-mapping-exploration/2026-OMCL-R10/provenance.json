@@ -1,0 +1,30 @@
+{
+  "paper_id": "96783be1469e4a138b141d247899781a",
+  "metadata": {
+    "title": "OMCL: Open-Vocabulary Monte Carlo Localization",
+    "authors": [
+      "Evgenii Kruzhkov",
+      "Raphael Memmesheimer",
+      "Sven Behnke"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3653333",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11347000/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11347000/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11347000/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11347000/",
+  "pdf_sha256": "98c5e8dc3ae9918cf4e712576d76a879c4531fd785afcc198287326746eb3cec",
+  "bibtex_sha256": "40d647c5188f9825029a4d3de890659642d4bb01ef0948118e7f5ec7de461473",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:03.499259+00:00",
+  "selection_id": "c761d2950c76d20f19af8300",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "OMCL_Open-Vocabulary_Monte_Carlo_Localization.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.42.10.bib"
+}

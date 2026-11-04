@@ -1,0 +1,30 @@
+{
+  "paper_id": "a02a206c393946ce8780d181da4a42af",
+  "metadata": {
+    "title": "RADIUM: Predicting and Repairing End-to-End Robot Failures Using Gradient-Accelerated Sampling",
+    "authors": [
+      "Charles Dawson",
+      "Anjali Parashar",
+      "Chuchu Fan"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3551198",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10925872/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10925872/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10925872/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10925872/",
+  "pdf_sha256": "0fc58d98e14dae95f621777fbdd32ac61990384eb12f3d9a3696c0ba31d1bfc0",
+  "bibtex_sha256": "b34f2afee4bc47008e2382ba4b54edbf3bbc0c1b39042d9fbee94ee8293ffb9e",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:13.675771+00:00",
+  "selection_id": "d56d58bc6c7ebc741477719c",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "RADIUM_Predicting_and_Repairing_End-to-End_Robot_Failures_Using_Gradient-Accelerated_Sampling.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.47.19.bib"
+}

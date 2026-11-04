@@ -3,6 +3,7 @@ import csv
 import hashlib
 import io
 import json
+import re
 
 import pytest
 
@@ -59,6 +60,50 @@ def test_pending_downloads_do_not_appear_as_registered_sources(corpus_root):
     assert "| N01 |" not in build(corpus_root)["01-papers/INDEX.md"]
 
 
+def test_internal_reference_keeps_review_and_sources_without_manuscript_membership(corpus_root):
+    index = corpus_root / '06-data/paper-index.csv'
+    before = index.read_bytes()
+    rows = list(csv.DictReader(index.open(encoding='utf-8-sig')))
+    internal = next(r for r in rows if r['code'] == 'M39')
+    (corpus_root / '06-data/survey-inclusion.json').write_text(json.dumps({
+        'selected_ids': [r['code'] for r in rows if r['code'] != 'M39'],
+        'internal_reference_ids': ['M39'],
+    }), encoding='utf-8')
+    pages = build(corpus_root)
+    catalog = list(csv.DictReader(io.StringIO(pages[CATALOG_REL])))
+    retained = next(r for r in catalog if r['code'] == 'M39')
+    assert retained['survey_selected'] == 'no'
+    assert retained['review'] == internal['review'] and retained['pdf'] == internal['pdf']
+    assert 'internal reference' in retained['assessment']
+    assert 'M39' in pages['03-reviews/INDEX.md']
+    assert index.read_bytes() == before
+
+
+@pytest.mark.parametrize("state,fields,label", [
+    ("registered_with_derived_citation", {"citation_status": "derived", "citation_source": "publisher RIS, confirmed against Crossref"}, "derived citation"),
+    ("registered_with_title_variant", {"citation_status": "publisher-raw", "identity_status": "publisher-title-variant-reviewed"}, "publisher title variant"),
+])
+def test_documented_citation_exceptions_are_visible_without_review_status(corpus_root, state, fields, label):
+    add_source(corpus_root, acquisition_status=state, read_scope="not-read", **fields)
+    pages = build(corpus_root)
+    row = next(line for line in pages["01-papers/INDEX.md"].splitlines() if line.startswith("| N01 |"))
+    assert label in row and "[Source notes]" in row
+    assert "| N01 |" not in pages["03-reviews/INDEX.md"]
+    source = next(r for r in csv.DictReader(io.StringIO(pages[CATALOG_REL])) if r["code"] == "N01")
+    assert source["survey_selected"] == "no" and source["review"] == ""
+    assert all(source[key] == value for key, value in fields.items() if key in {"citation_status", "identity_status"})
+
+
+@pytest.mark.parametrize("state,error", [
+    ("registered_with_derived_citation", "lacks source attribution"),
+    ("registered_with_title_variant", "lacks identity review"),
+])
+def test_citation_exception_requires_its_evidence_classification(corpus_root, state, error):
+    add_source(corpus_root, acquisition_status=state)
+    with pytest.raises(CorpusError, match=error):
+        build(corpus_root)
+
+
 def test_acquired_source_can_be_reviewed_without_duplicate_catalog_row(corpus_root):
     index = corpus_root / "06-data/paper-index.csv"
     row = next(r for r in csv.DictReader(index.open(encoding="utf-8-sig")) if r["code"] == "M39")
@@ -80,3 +125,22 @@ def test_reviewed_overlap_rejects_changed_source_hash(corpus_root):
     add_source(corpus_root, id=row["code"], doi=row["doi"], **source)
     with pytest.raises(CorpusError, match="conflicting sources"):
         build(corpus_root)
+
+
+@pytest.mark.parametrize("state,fields,label", [
+    ("registered_with_derived_citation", {"citation_status": "derived", "citation_source": "publisher RIS and Crossref"}, "derived citation"),
+    ("registered_with_title_variant", {"citation_status": "publisher-raw", "identity_status": "publisher-title-variant-reviewed"}, "publisher title variant"),
+])
+def test_review_promotion_preserves_citation_exceptions(corpus_root, state, fields, label):
+    row = next(r for r in csv.DictReader((corpus_root / "06-data/paper-index.csv").open(encoding="utf-8-sig")) if r["code"] == "M39")
+    sources = {f: row[f] for f in ("pdf", "bibtex", "markdown", "pdf_sha256", "bibtex_sha256", "markdown_sha256")}
+    add_source(corpus_root, id=row["code"], doi=row["doi"], acquisition_status=state, **sources, **fields)
+    pages = build(corpus_root)
+    catalog = list(csv.DictReader(io.StringIO(pages[CATALOG_REL])))
+    promoted = next(r for r in catalog if r["code"] == "M39")
+    assert len([r for r in catalog if r["code"] == "M39"]) == 1
+    assert promoted["survey_selected"] == "yes" and promoted["review"] == row["review"]
+    assert label in promoted["assessment"]
+    assert all(promoted[k] == v for k, v in fields.items() if k in {"citation_status", "identity_status"})
+    index_row = next(line for line in pages["01-papers/INDEX.md"].splitlines() if re.search(r"\| (?:\S+ )?M39 \|", line))
+    assert label in index_row and "[Review]" in index_row

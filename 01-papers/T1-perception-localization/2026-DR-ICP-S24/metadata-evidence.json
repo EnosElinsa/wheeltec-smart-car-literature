@@ -1,0 +1,41 @@
+{
+  "id": "S24",
+  "doi": "10.1002/rob.70362",
+  "title": "DR‐ICP: Robust LiDAR SLAM Registration for Degenerate Tunnels",
+  "authors": [
+    "Qian, Guanyu",
+    "Chen, Xuemei",
+    "Lu, Chao",
+    "Tian, Yihong",
+    "Liu, Yueze",
+    "Zhao, Xiaoxuan",
+    "Yao, Chengda"
+  ],
+  "venue": "Journal of Field Robotics",
+  "dates": {
+    "published-online": [
+      2026,
+      10,
+      12
+    ]
+  },
+  "volume": null,
+  "issue": null,
+  "article_number": "rob.70362",
+  "retrieval": {
+    "requested_url": "https://api.crossref.org/works/10.1002%2Frob.70362",
+    "final_url": "https://api.crossref.org/works/10.1002%2Frob.70362",
+    "status": 200,
+    "content_type": "application/json",
+    "retrieved_at": "2026-11-03T12:12:18.273588+00:00",
+    "sha256": "cc7f0ea5d77a828a43bda66e31d245c76559d79b2cfc09fa06ce3072b0fb28dd"
+  },
+  "original_citation_sha256": "e6ef45a2b25929b4d29197a768dc8130ac3bbfa0e7473a1dc4ddf628ff53d61c",
+  "original_citation_year": null,
+  "working_citation_year": 2026,
+  "changes": [
+    "Added year 2026 and online date from the Crossref publisher deposit; PDF p.1 independently states 2026.",
+    "Omitted empty pages and unassigned n/a volume/number placeholders; normalized DOI to its identifier."
+  ],
+  "pdf_publication_check": "First-page DOI, title, author scope and publication/issue year checked."
+}

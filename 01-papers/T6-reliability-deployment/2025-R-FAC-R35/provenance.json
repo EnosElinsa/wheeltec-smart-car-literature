@@ -1,0 +1,32 @@
+{
+  "paper_id": "178fcb1b0d1443499b24f0be25cbf94f",
+  "metadata": {
+    "title": "R-FAC: Resilient Value Function Factorization for Multirobot Efficient Search With Individual Failure Probabilities",
+    "authors": [
+      "Hongliang Guo",
+      "Qi Kang",
+      "Wei-Yun Yau",
+      "Chee-Meng Chew",
+      "Daniela Rus"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3567478",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10989574/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10989574/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10989574/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10989574/",
+  "pdf_sha256": "c3042796688b517f2a012a36ab2065a7353e5e6db54cb86f372029767d2efc80",
+  "bibtex_sha256": "ea600a9d94513128f4e2736aaf78c52a493122fec32274bb586a27c7265f7bab",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:13.458406+00:00",
+  "selection_id": "ead59a96a58e8519390035c5",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "R-FAC_Resilient_Value_Function_Factorization_for_Multirobot_Efficient_Search_With_Individual_Failure_Probabilities.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.47.5.bib"
+}

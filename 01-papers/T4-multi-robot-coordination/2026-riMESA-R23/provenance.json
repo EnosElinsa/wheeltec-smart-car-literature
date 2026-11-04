@@ -1,0 +1,29 @@
+{
+  "paper_id": "94b20e9408d946a0ba82e40fdaaa79b5",
+  "metadata": {
+    "title": "riMESA: Consensus ADMM for Real-World Collaborative SLAM",
+    "authors": [
+      "Daniel McGann",
+      "Michael Kaess"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2026.3706569",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11575119/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11575119/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11575119/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11575119/",
+  "pdf_sha256": "efac357539cadfa147ac0d42fcf538bf80bb059520c2f7b821921898f19f2cc2",
+  "bibtex_sha256": "56dd35e7a5a57257f8552432bab11871cce8d474f2c6aed321267141a1ad020d",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:08.549410+00:00",
+  "selection_id": "6f3be86bcea0022c4220cf13",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "riMESA_Consensus_ADMM_for_Real-World_Collaborative_SLAM.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.44.7.bib"
+}

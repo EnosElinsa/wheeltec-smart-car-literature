@@ -1,0 +1,33 @@
+{
+  "paper_id": "b264bd09d0e740e6979899650240757d",
+  "metadata": {
+    "title": "Feedback-Guided Hierarchical Transmission for Multi-Robot Mapping Under Bandwidth Constraints",
+    "authors": [
+      "Guanchong Niu",
+      "Shuwake Nuerdaolieti",
+      "Jinglei Li",
+      "Zewei Jing",
+      "Lanxiang Hou",
+      "Jiayi Sun"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3699241",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11543311/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11543311/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11543311/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11543311/",
+  "pdf_sha256": "5e6f770ca957e83cf8dbbcbd189f7b089a2766395b317b003401febcf57316b0",
+  "bibtex_sha256": "cc88a8ed55ebd99e05aad9658c5e8a5a74abe1c524075c38732de9d7102bf7c5",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:07.936753+00:00",
+  "selection_id": "ff629ccf48b45c0c43aacc19",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Feedback-Guided_Hierarchical_Transmission_for_Multi-Robot_Mapping_Under_Bandwidth_Constraints.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.43.46.bib"
+}

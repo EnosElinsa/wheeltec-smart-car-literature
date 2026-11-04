@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Zhong, Patrick
+AU  - Rossi, Federico
+AU  - Shell, Dylan A.
+PY  - 2025
+DA  - 2025/12/24
+TI  - Planned synchronization for multi-robot systems with active observations
+JO  - Autonomous Robots
+SP  - 5
+VL  - 50
+IS  - 1
+AB  - An important class of robotic applications involves multiple agents cooperating to provide state observations to plan joint actions. We study planning under uncertainty when more than one participant must proactively plan perception and/or communication acts, and decide whether the cost to obtain a state estimate is justified by the benefits accrued by the information thus obtained. The approach we introduce is suitable for settings where observations are of high quality and they—either alone or along with communication—recover the system’s joint state, but the costs incurred mean this happens only infrequently. We formulate the problem as a type of Markov decision process (mdp) to be solved over macro-actions, sidestepping the construction of the full joint belief space, a well-known source of intractability. We then give a suitable Bellman-like recurrence that immediately suggests a means of solution. In their most general form, policies for these problems simultaneously describe (1) low-level actions to be taken, (2) stages when system-wide state is recovered, and (3) commitments to future rescheduling acts. The formulation expresses multi-agency in a variety of distinct practical forms, including: one party assisting by providing observations of, or reference points for, another; several agents communicating sensor information to fuse data and recover joint state; multiple agents coordinating activities to arrive at states that make joint state simultaneously observable to all individuals. Though solved in centralized form over joint states, the mdp is structured to allow decentralized execution, under some assumptions of synchrony in activities. After providing small-scale simulation studies of the general formulation, we discuss a specific scenario motivated by underwater gliders. We report on a physical robot implementation mocked-up to respect these same constraints, showing that joint plans are found and executed effectively by individual robots after appropriate projection. On the basis of our experience with hardware, we examine enhancements to the model that address nonidealities we have identified in practice, including the assumptions regarding synchrony.
+SN  - 1573-7527
+UR  - https://doi.org/10.1007/s10514-025-10225-4
+DO  - 10.1007/s10514-025-10225-4
+ID  - Zhong2025
+ER  - 

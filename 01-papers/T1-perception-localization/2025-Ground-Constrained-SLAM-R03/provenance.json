@@ -1,0 +1,26 @@
+{
+  "paper_id": "cdb5841e4ddc4b02bb5be8a809b4b414",
+  "metadata": {
+    "title": "Robust Ground Constrained SLAM for Mobile Robot With Sparse-Channel LiDAR",
+    "authors": [],
+    "year": 2025,
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/tiv.2024.3451137",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10654559/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10654559/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10654559/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10654559/",
+  "pdf_sha256": "1866e5cb6b4dfe0caac7ac4d384f320d2940060cf9d206059b07f7233d8317d6",
+  "bibtex_sha256": "76b784fcbaae692aa7cd7aa602f79a02176cc07d6a57d11fbe5450a3350db2bf",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:01.100323+00:00",
+  "selection_id": "1306efe2d33bb18768966463",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Robust_Ground_Constrained_SLAM_for_Mobile_Robot_With_Sparse-Channel_LiDAR.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.40.38.bib"
+}

@@ -1,0 +1,32 @@
+{
+  "paper_id": "45db3cc03be64b369c2f43616e697aa3",
+  "metadata": {
+    "title": "Help Me Through: Imitation Learning Based Active View Planning to Avoid SLAM Tracking Failures",
+    "authors": [
+      "Kanwal Naveed",
+      "Wajahat Hussain",
+      "Irfan Hussain",
+      "Donghwan Lee",
+      "Muhammad Latif Anjum"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3582817",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11049022/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11049022/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11049022/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11049022/",
+  "pdf_sha256": "aa51ba476be021627b9b45ea79643e11a61698ea7c20b214f2a54e3659c00734",
+  "bibtex_sha256": "95bfa257d724791a3156def113424a5e30ad534f8e6e068bab503f7c7b4f741d",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:12.834673+00:00",
+  "selection_id": "15713fe9dffa721b44d4799d",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Help_Me_Through_Imitation_Learning_Based_Active_View_Planning_to_Avoid_SLAM_Tracking_Failures.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.46.32.bib"
+}

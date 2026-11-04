@@ -1,0 +1,30 @@
+{
+  "paper_id": "b2fe396cf96e4f7daac72229c8e42c6b",
+  "metadata": {
+    "title": "Off-Road Navigation via Implicit Neural Representation of Terrain Traversability",
+    "authors": [
+      "Yixuan Jia",
+      "Qingyuan Li",
+      "Jonathan P. How"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3685928",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11488492/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11488492/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11488492/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11488492/",
+  "pdf_sha256": "0a6773f04100136fee815e358a4c59c803c6d10c709df762f321e452fc11a5b8",
+  "bibtex_sha256": "5c497ff9e560f390236f715ea96562be839f685747fb00b2b9c1372e18cfbf41",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:05.245849+00:00",
+  "selection_id": "f05b8bdbfc77115c3196bb15",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Off-Road_Navigation_via_Implicit_Neural_Representation_of_Terrain_Traversability.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.42.44.bib"
+}

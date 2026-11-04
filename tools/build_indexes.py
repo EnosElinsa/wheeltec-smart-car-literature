@@ -36,7 +36,7 @@ from tools.corpus import STAR, CorpusError, Entry
 from tools.catalog import CATALOG_REL, catalog_csv, load_catalog
 
 SECTIONS = {
-    "01-papers": "Publisher PDFs and BibTeX exports",
+    "01-papers": "Publisher PDFs and citations",
     "02-fulltext": "Full-text Markdown transcriptions and referenced figures",
     "03-reviews": "Full-text reviews",
 }
@@ -80,7 +80,7 @@ def _row(entry: Entry, page_dir: str, assessment: bool = False) -> str:
         links.append(f"[DOI](https://doi.org/{doi})")
     if url and (not doi or url.rstrip("/").lower() != f"https://doi.org/{doi}".lower()):
         links.append(f"[Official page]({url})")
-    local = f"`{row['pdf']}` · `{row['markdown']}`"
+    local = " · ".join(f"`{row[field]}`" for field in ("pdf", "markdown") if row.get(field))
     code = f"{STAR} {entry.code}" if entry.key else entry.code
     cells = [
         code, row.get("bibliographic_year", ""), _cell(row.get("title", "")), _cell(row.get("venue", "")),
@@ -156,7 +156,12 @@ def build(root: Path = REPO_ROOT, strict: bool = False) -> dict[str, str]:
     themes = sorted({e.theme for e in entries})
     pages = {CATALOG_REL: catalog_csv(entries)}
     for section in SECTIONS:
-        selected = [e for e in entries if e.review is not None] if section == "03-reviews" else entries
+        if section == "03-reviews":
+            selected = [e for e in entries if e.review is not None]
+        elif section == "02-fulltext":
+            selected = [e for e in entries if e.row.get("markdown")]
+        else:
+            selected = entries
         pages[f"{section}/INDEX.md"] = section_index(section, selected)
         for theme in themes:
             rel = f"{section}/{theme}/README.md"

@@ -1,0 +1,31 @@
+{
+  "paper_id": "7548d3deed6e436aacab02d74a07a80c",
+  "metadata": {
+    "title": "Distributed Safe Navigation for Multi-Robot Systems With Fixed-Time Convergence and Deadlock Resolution",
+    "authors": [
+      "Jia-Yuan Yin",
+      "Guang-Hong Yang",
+      "Huimin Wang",
+      "Jun-Sheng Wang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3671566",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11425779/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11425779/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11425779/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11425779/",
+  "pdf_sha256": "8b810645b3f60ba5351bc13cd15a40926651d0a541c04e7838db359a3a33e0b5",
+  "bibtex_sha256": "8463993a7c3e96905af8e9665002e6f9f6db731240142620ae8d5e163af3737a",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:37.420104+00:00",
+  "selection_id": "b021aa9c8036ac503d7faa97",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Distributed_Safe_Navigation_for_Multi-Robot_Systems_With_Fixed-Time_Convergence_and_Deadlock_Resolution.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.25.49.bib"
+}

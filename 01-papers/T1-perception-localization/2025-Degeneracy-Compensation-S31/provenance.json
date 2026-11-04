@@ -1,0 +1,34 @@
+{
+  "paper_id": "a98a03d8e0cf40e39bf1ccd25423b4d4",
+  "metadata": {
+    "title": "A Real-Time Degeneracy Sensing and Compensation Method for Enhanced LiDAR SLAM",
+    "authors": [
+      "Zongbo Liao",
+      "Xuanxuan Zhang",
+      "Tianxiang Zhang",
+      "Zhi Li",
+      "Zhenqi Zheng",
+      "Zhichao Wen",
+      "You Li"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/tits.2024.3524394",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10892345/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10892345/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10892345/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10892345/",
+  "pdf_sha256": "3dbdad7ace25ca1867fbdb4f1c393cb612137b0a4ee4b0ae58ccc68029f4827f",
+  "bibtex_sha256": "8b178f569cbcaf764f99d1b2000b3c4816f9d7e1c4547998bc859f643e093338",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:43.073533+00:00",
+  "selection_id": "da11bc7b9c8f06a654a21aca",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "A_Real-Time_Degeneracy_Sensing_and_Compensation_Method_for_Enhanced_LiDAR_SLAM.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.35.13.bib"
+}

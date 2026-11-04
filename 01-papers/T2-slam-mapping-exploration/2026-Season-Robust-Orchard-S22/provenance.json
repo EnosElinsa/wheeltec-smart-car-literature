@@ -1,0 +1,32 @@
+{
+  "paper_id": "5b1845d4133f46b6993507147b73a610",
+  "metadata": {
+    "title": "A Season‐Robust Long‐Term Localization Method Using Trunk Semantic Features in Dynamic Orchard Environments",
+    "authors": [
+      "Enbo Liu",
+      "Wei Tang",
+      "Anmin Huang",
+      "Zeyu Zhou",
+      "Renyuan Zhang"
+    ],
+    "year": 2026,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.70159",
+    "publisher": "onlinelibrary.wiley.com",
+    "landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70159",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70159",
+  "official_pdf_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70159",
+  "official_bibtex_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70159",
+  "pdf_sha256": "cceb96879e6070c614575f1f2b8554bd2e1ca7d22f93402e2d2c985343f56ffa",
+  "bibtex_sha256": "1a8538a185ac7daea1abc344c2f1f9e4115d1c5c955c4fc1ff3713fea218b8bb",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:40.319185+00:00",
+  "selection_id": "7cc9cdc57aa63713147a64e1",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2026 - Liu - A Season‐Robust Long‐Term Localization Method Using Trunk Semantic Features in.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (4).bibtex"
+}

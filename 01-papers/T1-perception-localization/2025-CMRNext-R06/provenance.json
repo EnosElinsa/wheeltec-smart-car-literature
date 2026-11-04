@@ -1,0 +1,29 @@
+{
+  "paper_id": "d1c598b4d6394ce9af766f5c2fe72927",
+  "metadata": {
+    "title": "CMRNext: Camera to LiDAR Matching in the Wild for Localization and Extrinsic Calibration",
+    "authors": [
+      "Daniele Cattaneo",
+      "Abhinav Valada"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3546784",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10908048/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10908048/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10908048/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10908048/",
+  "pdf_sha256": "c94135e5fae50cfaf51433f2905d014cf2bda09cc52c0bd0a409a9c47b5aa377",
+  "bibtex_sha256": "239f7216b43d11f0ea6a9ffa35ee5e14639896ae323e9f6161755d3d4f4439e9",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:02.210650+00:00",
+  "selection_id": "6d6379ad885801daa67de3c3",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "CMRNext_Camera_to_LiDAR_Matching_in_the_Wild_for_Localization_and_Extrinsic_Calibration.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.41.33.bib"
+}

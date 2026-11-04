@@ -1,0 +1,32 @@
+{
+  "paper_id": "6dc17b55d25e4984848f17635ced70f0",
+  "metadata": {
+    "title": "URGE: Efficient Decentralized Multirobot Exploration Guided by Unknown Regions Under Limited Communication",
+    "authors": [
+      "Qingchen Bi",
+      "Xuebo Zhang",
+      "Shiyong Zhang",
+      "Qianli Dong",
+      "Jing Yuan"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2026.3714659",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11613101/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11613101/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11613101/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11613101/",
+  "pdf_sha256": "cc100764b924cf8894bea98b23b4574a4b9d7711492cdf8e21bfaa17b3fbcc13",
+  "bibtex_sha256": "1118c0efbb49fb7ad34927f087be0b1d6212e2d30e9fe146d39c7734b23596f6",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:08.199367+00:00",
+  "selection_id": "6b361052795e27a295b06d8d",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "URGE_Efficient_Decentralized_Multirobot_Exploration_Guided_by_Unknown_Regions_Under_Limited_Communication.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.43.57.bib"
+}

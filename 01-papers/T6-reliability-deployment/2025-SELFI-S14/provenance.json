@@ -1,0 +1,49 @@
+{
+  "paper_id": "7e0c5c33825241f0b6b7cbb1cc8c7c2b",
+  "metadata": {
+    "title": "SELFI: Autonomous Self-Improvement with RL for Vision-Based Navigation around People",
+    "authors": [
+      "Noriaki Hirose",
+      "Dhruv Shah",
+      "Kyle Stachowicz",
+      "Ajay Sridhar",
+      "Sergey Levine"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v270/hirose25a.html",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v270/hirose25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/hirose25a/hirose25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v270/hirose25a.html#bibtex",
+  "pdf_sha256": "8b833f838cfd6117cd4ece1ab7e47e8edc9aae7f5a71685d2fa79cf8dcfce094",
+  "bibtex_sha256": "40d9fdb7431caa714f7816db319658ae8306d59b7d915d6a68bc749f73147407",
+  "bibtex_source": "publisher_DownloadTexToFile_innerHTML",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T10:43:23.033305+00:00",
+  "selection_id": "f11f9971903ec4a6d2588c73",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "acquisition_method": "official_pmlr_batch_adapter",
+  "source_contract": "wheeltec-survey-200plus-pmlr-raw-innerHTML-2",
+  "publisher_export_contract": {
+    "download_filename": "pmlr-v270-hirose25a.bib",
+    "download_function": "DownloadTexToFile",
+    "download_expression": "document.getElementById('bibtex').innerHTML",
+    "element_selector": "code#bibtex",
+    "source_character_span": [
+      9123,
+      11040
+    ],
+    "innerHTML_equals_literal_source": true,
+    "encoding": "UTF-8",
+    "transformation": "none; no stripping, entity decoding, or newline changes"
+  },
+  "publisher_landing_sha256": "4fa819c1f0613c0e580cb28104d235947eeb7f1cc09aaec46dfec41d809db79e",
+  "publisher_download_script_sha256": "fe6c20e70206100128c8971681a268565d070e3b21a5430325b19c44eed82471",
+  "verification_host": "codex"
+}

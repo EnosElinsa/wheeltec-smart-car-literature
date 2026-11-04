@@ -1,0 +1,33 @@
+{
+  "paper_id": "d62aaf9be7a746649d09b659a29c43af",
+  "metadata": {
+    "title": "Implicit Point-to-Voxel LiDAR-IMU SLAM",
+    "authors": [
+      "Yan Dong",
+      "Enci Xu",
+      "Junyu Yang",
+      "Shaoqiang Qiu",
+      "Jiong Wang",
+      "Bin Han"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3683446",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11480788/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11480788/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11480788/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11480788/",
+  "pdf_sha256": "ad797d54f8383e0f6a302fa80124cc21b2cde387a4281f93e5761c41bfb2a115",
+  "bibtex_sha256": "128c77703b8a099d458bbd40709b3d7dc74ae474ab149d1a5d5d983169909697",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:42.693063+00:00",
+  "selection_id": "944b01b6d073449b00d930ee",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Implicit_Point-to-Voxel_LiDAR-IMU_SLAM.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.35.9.bib"
+}

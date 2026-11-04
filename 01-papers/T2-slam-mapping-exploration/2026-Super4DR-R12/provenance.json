@@ -1,0 +1,32 @@
+{
+  "paper_id": "e065c7fec33f44f4b0cf949c8470ca20",
+  "metadata": {
+    "title": "Super4DR: 4-D Radar-Centric Self-Supervised Odometry and Gaussian-Based Map Optimization",
+    "authors": [
+      "Zhiheng Li",
+      "Weihua Wang",
+      "Qiang Shen",
+      "Yichen Zhao",
+      "Zheng Fang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2026.3714573",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11613536/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11613536/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11613536/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11613536/",
+  "pdf_sha256": "a375143eedf3c922d82fcdd1641be0e184bfd9d957ad42bc7aa4c672d3ffbf53",
+  "bibtex_sha256": "75fd19aaa16509d99559c250b1ddc72d0acc9456f052ab1b0c19f0b182df1c42",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:04.263660+00:00",
+  "selection_id": "9e309ac726ffe89a6767d7eb",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Super4DR_4-D_Radar-Centric_Self-Supervised_Odometry_and_Gaussian-Based_Map_Optimization.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.42.23.bib"
+}

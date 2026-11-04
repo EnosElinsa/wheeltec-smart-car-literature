@@ -1,0 +1,31 @@
+{
+  "paper_id": "cdf5c344976f4b77acbd22dbd12906ca",
+  "metadata": {
+    "title": "Chamelion: Reliable Change Detection for Long-Term LiDAR Mapping in Transient Environments",
+    "authors": [
+      "Seoyeon Jang",
+      "Alex Junho Lee",
+      "I Made Aswin Nahrendra",
+      "Hyun Myung"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3665079",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11397150/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11397150/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11397150/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11397150/",
+  "pdf_sha256": "52326240469662c86e57b5136f7cd0c20d16d359d981adafb4f45d3ed388bfb2",
+  "bibtex_sha256": "52771333bfd41bf7433c678ec14159b94f55d8d36c8841de5895beae6d70894c",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:02.494673+00:00",
+  "selection_id": "b63b723f97c265479351f250",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Chamelion_Reliable_Change_Detection_for_Long-Term_LiDAR_Mapping_in_Transient_Environments.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.41.40.bib"
+}

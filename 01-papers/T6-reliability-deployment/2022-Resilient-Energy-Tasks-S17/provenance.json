@@ -1,0 +1,34 @@
+{
+  "paper_id": "7c620d5261524c5a9efe6a83aea66411",
+  "metadata": {
+    "title": "A Resilient and Energy-Aware Task Allocation Framework for Heterogeneous Multirobot Systems",
+    "authors": [
+      "Gennaro Notomista",
+      "Siddharth Mayya",
+      "Yousef Emam",
+      "Christopher Kroninger",
+      "Addison Bohannon",
+      "Seth Hutchinson",
+      "Magnus Egerstedt"
+    ],
+    "year": 2022,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2021.3102379",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/9531464/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/9531464/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/9531464/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/9531464/",
+  "pdf_sha256": "7238c316fd68aa67e8fb19ef54a0b638e2f33000d16f9dfe89dd7995b6168fa4",
+  "bibtex_sha256": "1cc047e59fadc930d8ae03b85a4814bb9b0dc80d0903ce2a9d9ad342e23ea470",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:39.249592+00:00",
+  "selection_id": "35c6795b14e84a5bb2574a28",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "A_Resilient_and_Energy-Aware_Task_Allocation_Framework_for_Heterogeneous_Multirobot_Systems.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.34.54.bib"
+}

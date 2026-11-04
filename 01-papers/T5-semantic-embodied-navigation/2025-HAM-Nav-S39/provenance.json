@@ -1,0 +1,31 @@
+{
+  "paper_id": "b56fccc6bb504d1c93ac0ed632e45734",
+  "metadata": {
+    "title": "Mobile Robot Navigation Using Hand-Drawn Maps: A Vision Language Model Approach",
+    "authors": [
+      "Aaron Hao Tan",
+      "Angus Fung",
+      "Haitong Wang",
+      "Goldie Nejat"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3577456",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11027320/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11027320/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11027320/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11027320/",
+  "pdf_sha256": "cbca9ecaeb7851d3a085588dd66a8c0abfac7b029c62b2b22a866889c2111c7f",
+  "bibtex_sha256": "318f213c0095e93f0ce55bb0c76639b73a45cd9cc6cdfdfa619ebe6544e05ccb",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:46.155280+00:00",
+  "selection_id": "afc420eebf8ef4438051afb1",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Mobile_Robot_Navigation_Using_Hand-Drawn_Maps_A_Vision_Language_Model_Approach.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.35.27.bib"
+}

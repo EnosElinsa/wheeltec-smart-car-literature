@@ -1,0 +1,32 @@
+{
+  "paper_id": "91aa21d6a35a4ae8ba8a3df49526a107",
+  "metadata": {
+    "title": "AirSLAM: An Efficient and Illumination-Robust Point-Line Visual SLAM System",
+    "authors": [
+      "Kuan Xu",
+      "Yuefan Hao",
+      "Shenghai Yuan",
+      "Chen Wang",
+      "Lihua Xie"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3539171",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10874215/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10874215/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10874215/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10874215/",
+  "pdf_sha256": "2676476adfa21e0442822b715809c0319b78ba9458f24a78e7b913ada32d82a4",
+  "bibtex_sha256": "53a36259cc85f74cc3deab3eda68d77915a63906bf13a8b8926d1edb66b49b4e",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:01.907888+00:00",
+  "selection_id": "4ea37aec59c7828696ff5ef2",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "AirSLAM_An_Efficient_and_Illumination-Robust_Point-Line_Visual_SLAM_System.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.41.24.bib"
+}

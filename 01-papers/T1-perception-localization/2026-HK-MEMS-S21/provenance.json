@@ -1,0 +1,29 @@
+{
+  "paper_id": "b88fc65fab864a2aa8706f285857b9f8",
+  "metadata": {
+    "title": "HK‐MEMS, a Multi‐Sensor Data Set With MEMS LiDAR on Degenerate and Dynamic Urban Scenarios",
+    "authors": [
+      "Jianyuan Ruan",
+      "Dan Zhang"
+    ],
+    "year": 2026,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.70136",
+    "publisher": "onlinelibrary.wiley.com",
+    "landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70136",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70136",
+  "official_pdf_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70136",
+  "official_bibtex_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70136",
+  "pdf_sha256": "43b3d6b0d53dee8c1b1dad982051ed4330989d833aa6c0c828c4024bc1d17af4",
+  "bibtex_sha256": "95c115aa713421fd2c2656a4645a7cd5df9189a68ab4733d7078cb7e98fea449",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:39.904698+00:00",
+  "selection_id": "419dcd94b9a813922fcf488b",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2025 - Ruan - HK‐MEMS  a Multi‐Sensor Data Set With MEMS LiDAR on Degenerate and Dynamic Urban.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (3).bibtex"
+}

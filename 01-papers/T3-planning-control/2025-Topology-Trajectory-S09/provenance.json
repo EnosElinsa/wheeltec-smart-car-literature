@@ -1,0 +1,31 @@
+{
+  "paper_id": "8e47a4e55f1b4e0bae14b8771ba83e9b",
+  "metadata": {
+    "title": "Topology-Driven Parallel Trajectory Optimization in Dynamic Environments",
+    "authors": [
+      "Oscar de Groot",
+      "Laura Ferranti",
+      "Dariu M. Gavrila",
+      "Javier Alonso-Mora"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2024.3475047",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10706022/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10706022/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10706022/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10706022/",
+  "pdf_sha256": "a9d91f6a6a09a0bba84ada4a792d379fae129c9b7efec670bfc540430894c6e1",
+  "bibtex_sha256": "83ab6e69698becbbfedd974ade55e177e99d184c1c95c8f635d539c9e2666e6e",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:37.766890+00:00",
+  "selection_id": "dda0e8eca02e06e1a358a321",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Topology-Driven_Parallel_Trajectory_Optimization_in_Dynamic_Environments.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.3.34.31.bib"
+}

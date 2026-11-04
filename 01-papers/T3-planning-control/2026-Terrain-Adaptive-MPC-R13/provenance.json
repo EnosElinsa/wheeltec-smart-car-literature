@@ -1,0 +1,30 @@
+{
+  "paper_id": "bbad922a0fa84c739b91c8de3c80a14c",
+  "metadata": {
+    "title": "A Terrain-Adaptive $\\epsilon$-Constraint MPC for Uneven Terrain Kinodynamic Planning",
+    "authors": [
+      "Otobong Jerome",
+      "Geesara Kulathunga",
+      "Tiago Nascimento"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3728313",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11668628/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11668628/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11668628/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11668628/",
+  "pdf_sha256": "4238a369e2fbccc356641a5e358f43ecb96471f95c6f3a40fa2e8f5a9927c051",
+  "bibtex_sha256": "2486033357b8adff840ef35063d2a290a1800353f10434635445c3a3c4c129ca",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:04.515230+00:00",
+  "selection_id": "c76bfb1ba7faaed2ca1c9248",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "A_Terrain-Adaptive_epsilon-Constraint_MPC_for_Uneven_Terrain_Kinodynamic_Planning.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.42.30.bib"
+}

@@ -1,0 +1,33 @@
+{
+  "paper_id": "c2257589a40b490ea7bac62bede796ff",
+  "metadata": {
+    "title": "NORM-Nav: Zero-Shot Mobile Robot Navigation with Natural Language Behavioral Constraints",
+    "authors": [
+      "Dongjie Huo",
+      "Junhui Wang",
+      "Chao Gao",
+      "Yan Qiao",
+      "Dong Zhang",
+      "Guyue Zhou"
+    ],
+    "year": 2026,
+    "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57385.2026.11696526",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11696526/",
+    "publication_type": "proceedings-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11696526/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11696526/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11696526/",
+  "pdf_sha256": "264a5a9f8d46d84a1a33d4871a9a162e3af28615b70d00f22ec29cd066c3658b",
+  "bibtex_sha256": "dc04b30f2e744343c39e9a6e379c8a0b4019d7866fb851bb204756570fb7ac6f",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:11.760492+00:00",
+  "selection_id": "feb02e04b276f8727c9823c8",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "NORM-Nav_Zero-Shot_Mobile_Robot_Navigation_with_Natural_Language_Behavioral_Constraints.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.45.56.bib"
+}

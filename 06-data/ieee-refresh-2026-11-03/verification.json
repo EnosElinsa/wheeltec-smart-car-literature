@@ -1,0 +1,125 @@
+{
+  "status": "verified-acquired-transcribed",
+  "library_acquired": 231,
+  "library_markdown": 231,
+  "library_assessed": 195,
+  "new_selected": 36,
+  "new_delivered": 36,
+  "new_pending": 0,
+  "new_markdown": 36,
+  "new_pdf_pages": 482,
+  "new_archived_images": 907,
+  "manuscript_selected": 193,
+  "references": 203,
+  "source_artifacts_checked": 693,
+  "source_hash_mismatches": 0,
+  "existing_source_artifacts_unchanged": 585,
+  "original_download_files_preserved": 72,
+  "broken_local_markdown_image_references": 0,
+  "local_markdown_image_references_checked": 4901,
+  "new_page_json_files": 482,
+  "new_assessments": 0,
+  "new_manuscript_citations": 0,
+  "frozen_selection_hashes_unchanged": true,
+  "indexes_current": true,
+  "task_services_stopped": true,
+  "quality_warning_count": 5,
+  "quality_notes": "quality-notes.md",
+  "assessment_counts": {
+    "Full review card": 23,
+    "Light review card": 166,
+    "Light review card; internal reference": 2,
+    "Light review card; derived citation": 3,
+    "Light review card; publisher title variant": 1,
+    "Source registered": 36
+  },
+  "previous_manuscript_revision": {
+    "status": "manuscript-revision-verified; new-acquisition-blocked",
+    "library_assessed": 195,
+    "manuscript_selected": 193,
+    "references": 203,
+    "internal_reference_ids": [
+      "X01",
+      "X15"
+    ],
+    "removed_background_keys": [
+      "B_Cadena2016",
+      "B_LOAM2014",
+      "B_KITTI2012",
+      "B_TUM2012",
+      "B_Habitat2019",
+      "B_HumanAware2013"
+    ],
+    "new_selected": 36,
+    "new_delivered": 0,
+    "new_pending": 36,
+    "preserved_library_hashes": {
+      "06-data/paper-index.csv": "fd5f80cb23cbed9048fa102d2f7921b283799952f8408b8aba8c260ab3ee5765",
+      "06-data/corpus-comparison.csv": "aab57bd49baad9bdef43a6bf66bde7c2bd905652c09d5e498aa4ffa735713c3c"
+    },
+    "delivery": {
+      "pages": 33,
+      "corpus_prose_citations": 193,
+      "indexed_library_count": 195,
+      "internal_reference_ids": [
+        "X01",
+        "X15"
+      ],
+      "foundational_exception_count": 5,
+      "citation_scope_sha256": "e8e0466f5dcb48e4dd05285ce613789c17d5c1086de9f156366181f4ea98b24d",
+      "bibliography_entries": 203,
+      "resolved_bibliography_entries": 203,
+      "unique_labels": 30,
+      "figures": 3,
+      "tables": 8,
+      "unresolved_references": [],
+      "source_artifacts_checked": 585,
+      "local_fulltext_verification": "passed",
+      "source_hash_mismatches": 0,
+      "evaluation_denominator": 192,
+      "evaluation_attribute_counts": {
+        "residual": 140,
+        "designed-degradation": 107,
+        "integrity-reliability": 14,
+        "closed-loop-task": 106
+      },
+      "source_checked_numerical_cases": 7,
+      "displayed_equations_unchanged": 6,
+      "overfull_boxes": 0,
+      "underfull_horizontal_boxes": 12,
+      "underfull_vertical_boxes": 0,
+      "pdf_sha256": "7407f10b834fc4fc26524015cb8292e4fa39d5990a795b84ea4885c4c1b4662b",
+      "supplement": {
+        "pages": 3,
+        "unique_labels": 7,
+        "figures": 1,
+        "tables": 2,
+        "resolved_bibliography_entries": 8,
+        "unresolved_references": [],
+        "overfull_boxes": 0,
+        "underfull_horizontal_boxes": 1,
+        "underfull_vertical_boxes": 0,
+        "pdf_sha256": "e92e4cda08c38a3639bebbb44809b91b689d6d87e2127a3dfcb7ce53fd2e6629"
+      },
+      "source_commits": {
+        "manuscript": "fc7cf006d245ef96947d782cb446136c9ee72890",
+        "evidence": "9e12bdd413137b90dc1e4b7c408fa87f77724f50"
+      }
+    },
+    "selection_sha256": "05bf1a7a15ccda7c7c3c9d9d78714972b4505249ebdc1aa5cf0d9f96a64be4b1",
+    "institution_login_check": {
+      "error_code": "access_required",
+      "message": "Institutional login requires user action.",
+      "phase": "manual-login-timeout",
+      "status": "error"
+    }
+  },
+  "scope": "Acquisition, transcription, source hashes and local asset checks. Prior manuscript verification is retained as historical evidence; no new manuscript build or scientific assessment is claimed.",
+  "validation_checks": {
+    "catalog_regression_tests_passed": 13,
+    "relative_links_checked": 2998,
+    "broken_relative_links": 0,
+    "public_tree": "passed",
+    "public_tree_files_scanned": 659
+  }
+}

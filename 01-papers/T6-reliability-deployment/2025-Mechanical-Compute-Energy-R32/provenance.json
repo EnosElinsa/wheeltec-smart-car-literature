@@ -1,0 +1,32 @@
+{
+  "paper_id": "ef9e4f2990b148a3bdc50c2421cdbdde",
+  "metadata": {
+    "title": "A Coordinated Approach to Control Mechanical and Computing Resources in Mobile Robots",
+    "authors": [
+      "Sajad Shahsavari",
+      "Hashem Haghbayan",
+      "Antonio Miele",
+      "Eero Immonen",
+      "Juha Plosila"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2024.3492345",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/10746315/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10746315/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/10746315/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/10746315/",
+  "pdf_sha256": "1a080c71d002cbe5b784c1c8cdf294e62c3cdff46ef73caf744df5f1e93a5bbd",
+  "bibtex_sha256": "0ce079d6e4f738c093e88bb4ff9fab5e6f7975240a529d3734fba2a0f5b92381",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:12.531231+00:00",
+  "selection_id": "b8249c766892e737f1442ff2",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "A_Coordinated_Approach_to_Control_Mechanical_and_Computing_Resources_in_Mobile_Robots.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.46.19.bib"
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "3eaf998cf41d493899c92fcb41e45ede",
+  "metadata": {
+    "title": "SCOPE: Stochastic Cartographic Occupancy Prediction Engine for Uncertainty-Aware Dynamic Navigation",
+    "authors": [
+      "Zhanteng Xie",
+      "Philip Dames"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3578234",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11029153/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11029153/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11029153/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11029153/",
+  "pdf_sha256": "729da3bee8b6a432cb4be9311fd6c0ce461bcd74cabbadc016a1ffac35d96b7f",
+  "bibtex_sha256": "c3d1a8bfe5504df1aeb569ae7389806b5a58d5cb605ee93c6e423023efd584f8",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:06.246739+00:00",
+  "selection_id": "0c3893acfc2fb06934853cd8",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "SCOPE_Stochastic_Cartographic_Occupancy_Prediction_Engine_for_Uncertainty-Aware_Dynamic_Navigation.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.43.10.bib"
+}

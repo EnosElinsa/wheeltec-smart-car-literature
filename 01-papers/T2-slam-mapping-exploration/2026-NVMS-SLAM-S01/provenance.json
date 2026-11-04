@@ -1,0 +1,31 @@
+{
+  "paper_id": "8ec3ed6cc1fc48e2a8ffce8bafbf22d3",
+  "metadata": {
+    "title": "NVMS-SLAM: Normal Vector-Based Multi-Session LiDAR SLAM in Indoor Environments",
+    "authors": [
+      "Yongxin Ma",
+      "Chengwei Zhao",
+      "Jie Xu",
+      "Yixuan Li",
+      "Xuanxuan Zhang",
+      "Shenghai Yuan",
+      "Lihua Xie"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3682733",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11479301/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11479301/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11479301&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "c28a57299d2ee9e006cd6ffb5eb09bc10e9717177291156d04bc4c7ff1426342",
+  "bibtex_sha256": "e173db07aee6ed4ed917f38c7f552584eb27fdc740c4ee426c56a4e3a939b016",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:05:15.500229+00:00",
+  "selection_id": "950aade5134c493e0836296d"
+}

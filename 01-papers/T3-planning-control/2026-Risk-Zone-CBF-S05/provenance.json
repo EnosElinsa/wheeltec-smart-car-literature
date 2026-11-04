@@ -1,0 +1,32 @@
+{
+  "paper_id": "d3d2600982ae4175be7b4237c29f98a1",
+  "metadata": {
+    "title": "Safety-Critical Control of Nonholonomic Vehicle Trajectory Tracking via Risk-Aware Zone Control Barrier Functions",
+    "authors": [
+      "Yulu Ma",
+      "Qiang Zeng",
+      "Yan-Jun Liu",
+      "Quan Quan",
+      "Lei Liu",
+      "Shu Li",
+      "Changqi Zhu",
+      "Sai Zhang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3715807",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11618532/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11618532/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11618532&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "ca10b55bde2a160bc2d2439d5e8fc79009e24f3b2412590d109ccb34fa6d6dfa",
+  "bibtex_sha256": "1473bf6a53171ffed7f7cb3ced470c6d0b53c7e767a72701e6315756a38c715e",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:07:26.653654+00:00",
+  "selection_id": "6a3d68aafa5b346056f5ca18"
+}

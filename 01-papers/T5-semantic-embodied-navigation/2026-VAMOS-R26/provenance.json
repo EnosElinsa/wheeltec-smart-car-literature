@@ -1,0 +1,39 @@
+{
+  "paper_id": "b6dc935bfad049e58804eff471389ed6",
+  "metadata": {
+    "title": "VAMOS: A Hierarchical Vision-Language-Action Model for Capability-Modulated and Steerable Navigation",
+    "authors": [
+      "Mateo Guaman Castro",
+      "Sidharth Rajagopal",
+      "Daniel Gorbatov",
+      "Matt Schmittle",
+      "Rohan Baijal",
+      "Octi Zhang",
+      "Rosario Scalise",
+      "Sidharth Talia",
+      "Emma Romig",
+      "Celso de Melo",
+      "Byron Boots",
+      "Abhishek Gupta"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3734870",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11692608/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11692608/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11692608/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11692608/",
+  "pdf_sha256": "34e8275d0160552974ae945d03a49d198d511a223591e2bc890ec3e20ca6d4ee",
+  "bibtex_sha256": "232f63c6fd93fcdf26c8a3107ad1160faa9540d407ca7447d2522916e38812ea",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:09.599947+00:00",
+  "selection_id": "c76592b3b3092fd736bac460",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "VAMOS_A_Hierarchical_Vision-Language-Action_Model_for_Capability-Modulated_and_Steerable_Navigation.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.45.2.bib"
+}

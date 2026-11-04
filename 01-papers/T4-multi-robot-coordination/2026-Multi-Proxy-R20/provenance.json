@@ -1,0 +1,31 @@
+{
+  "paper_id": "4911dafa93ec48999fd6dfc429d2c22c",
+  "metadata": {
+    "title": "Communication-Robust Asynchronous Distributed LiDAR Collaborative Smoothing and Mapping",
+    "authors": [
+      "Jiancheng Wang",
+      "Chenyuan Cai",
+      "JinQian Tan",
+      "Haoyao Chen"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3655282",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11358654/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11358654/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11358654/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11358654/",
+  "pdf_sha256": "9a784dea5794e034a8a38deceea9eae3e8b1ec96122d851514dc2d2fb311c7ae",
+  "bibtex_sha256": "109bc3cf419f3c080b87757308c97cf679a3dd3464a2d206e68d9612ba125dde",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:07.307339+00:00",
+  "selection_id": "9a03f900463a494f1cd6b27c",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Communication-Robust_Asynchronous_Distributed_LiDAR_Collaborative_Smoothing_and_Mapping.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.43.33.bib"
+}

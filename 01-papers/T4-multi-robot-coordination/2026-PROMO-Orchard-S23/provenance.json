@@ -1,0 +1,34 @@
+{
+  "paper_id": "9d0e610b05874003a0c5574350849421",
+  "metadata": {
+    "title": "PROMO‐Orchard: A Robust Semantic‐Enhanced Framework for Dual‐Robot Simultaneous Localization and Mapping Merging in Orchard",
+    "authors": [
+      "Yefeng Sun",
+      "Jialing Dai",
+      "Liang Gong",
+      "Bishu Gao",
+      "Jinghan Cai",
+      "Yanming Li",
+      "Chengliang Liu"
+    ],
+    "year": 2026,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.70323",
+    "publisher": "onlinelibrary.wiley.com",
+    "landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70323",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70323",
+  "official_pdf_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70323",
+  "official_bibtex_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70323",
+  "pdf_sha256": "71c1b766a0b5be719c3df73ccc380a66173fb4a1a079ed3631148c0dda3bedbb",
+  "bibtex_sha256": "86097e94cf2f1894a793688da2e49e6dd0a199d2dcd325a1601407ae4b216868",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:40.941280+00:00",
+  "selection_id": "327d8661928afda19f395b82",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2026 - Sun - PROMO‐Orchard  A Robust Semantic‐Enhanced Framework for Dual‐Robot Simultaneous.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (5).bibtex"
+}

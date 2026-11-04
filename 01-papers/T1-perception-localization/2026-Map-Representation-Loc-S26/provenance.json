@@ -1,0 +1,49 @@
+{
+  "selection_id": "952a8375b4c4345c5e906c8d",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "official_landing_url": "https://link.springer.com/10.1007/s10514-025-10232-5",
+  "verification_host": "codex",
+  "acquisition_method": "user_manual_publisher_pdf_with_authorized_derived_citation",
+  "citation_status": "derived",
+  "citation_source": "publisher RIS converted to BibTeX, with Crossref and PDF issue metadata",
+  "native_pair_verified": false,
+  "original_citation": "citation.ris",
+  "original_citation_sha256": "6dbc697f31a05342502b07008832753650ce410d8305ea15a35c701096262805",
+  "original_citation_year": 2026,
+  "bibliographic_year": 2026,
+  "publication_dates": {
+    "published-online": [
+      2026,
+      3,
+      10
+    ],
+    "published-print": [
+      2026,
+      3
+    ]
+  },
+  "changes": [
+    "Converted publisher RIS fields to BibTeX.",
+    "Represented RIS SP as an article identifier (eid), confirmed by Crossref and the PDF first-page citation.",
+    "Also included the article identifier in note so IEEEtran BibTeX displays it; eid alone is ignored by that style."
+  ],
+  "metadata_evidence": "metadata-evidence.json",
+  "metadata_evidence_sha256": "7acb1a13f720d1fdde7e25cfb83841498bcf72611158f136d5d8be11f4bc3e62",
+  "authorization": "User explicitly requested RIS conversion and Crossref supplementation on 2026-11-03.",
+  "metadata": {
+    "title": "Visual localization in 3D maps: comparing point cloud, mesh, and NeRF representations",
+    "authors": [
+      "Zhang, Lintong",
+      "Tao, Yifu",
+      "Lin, Jiarong",
+      "Zhang, Fu",
+      "Fallon, Maurice"
+    ],
+    "doi": "10.1007/s10514-025-10232-5",
+    "venue": "Autonomous Robots",
+    "year": 2026
+  },
+  "pdf_sha256": "9f2c68be4a4fff5dfaa33d906de9dbd85c966bbdb548f7e3063344a0af5652b7",
+  "bibtex_sha256": "2ef2c05619e6ce265a80c7ccba0bc690201cbc8288be56b9effc282b9fdd22c4"
+}

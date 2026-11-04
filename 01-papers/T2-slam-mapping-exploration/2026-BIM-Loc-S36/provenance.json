@@ -1,0 +1,35 @@
+{
+  "paper_id": "5e1487bbc57d4349a712b01ed230a469",
+  "metadata": {
+    "title": "BIM-Loc: BIM-integrated discrepancy-aware LiDAR-based indoor localization",
+    "authors": [
+      "Yinqiang Zhang",
+      "Liang Lu",
+      "Yipeng Pan",
+      "Maolin Lei",
+      "Yuhan Xie",
+      "Zhanteng Xie",
+      "Xiaowei Luo",
+      "Jia Pan"
+    ],
+    "year": 2026,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649261462593",
+    "publisher": "journals.sagepub.com",
+    "landing_url": "https://journals.sagepub.com/doi/10.1177/02783649261462593",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://journals.sagepub.com/doi/10.1177/02783649261462593",
+  "official_pdf_url": "https://journals.sagepub.com/doi/10.1177/02783649261462593",
+  "official_bibtex_url": "https://journals.sagepub.com/doi/10.1177/02783649261462593",
+  "pdf_sha256": "97fb71ad688bf84095f9276a6cfa2dce49a387abcafa2fedc2c2ba85e7db13ee",
+  "bibtex_sha256": "3ee71c2e017b9c97a844150ade3bedf5660b26bcf022a50d9b2ddef9807392ef",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:55:44.973553+00:00",
+  "selection_id": "98f27678dcf2417202d64f61",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "zhang-et-al-2026-bim-loc-bim-integrated-discrepancy-aware-lidar-based-indoor-localization.pdf",
+  "source_bibtex_filename": "csp__ (4).bib"
+}

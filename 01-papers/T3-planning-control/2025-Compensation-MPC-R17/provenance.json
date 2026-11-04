@@ -1,0 +1,26 @@
+{
+  "paper_id": "7f4d07b0223d487d9c8372b6935db961",
+  "metadata": {
+    "title": "Safe Trajectory Generation for Nonholonomic Multi-Robot Systems: A Compensation-Based MPC Approach",
+    "authors": [],
+    "year": 2025,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2025.3613403",
+    "publisher": "ieeexplore.ieee.org",
+    "landing_url": "https://ieeexplore.ieee.org/document/11176148/",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11176148/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/document/11176148/",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/document/11176148/",
+  "pdf_sha256": "d8d6169c232fe2cf49ad027a132598002277be4611e253f3f93030ed475e2570",
+  "bibtex_sha256": "c0333d27d868fd79221f5f2730f800fc7515079ef35a6df8ea2ea49fe0d2b221",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T06:41:05.952589+00:00",
+  "selection_id": "7089b8befdf787ded797e08e",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Safe_Trajectory_Generation_for_Nonholonomic_Multi-Robot_Systems_A_Compensation-Based_MPC_Approach.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.3.21.42.57.bib"
+}

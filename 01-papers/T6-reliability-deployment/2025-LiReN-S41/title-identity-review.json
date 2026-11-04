@@ -1,0 +1,86 @@
+{
+  "id": "S41",
+  "status": "publisher-title-variant-reviewed",
+  "citation_title": "Lifelong Autonomous Improvement of Navigation Foundation Models in the Wild",
+  "pdf_title": "Lifelong Autonomous Fine-Tuning of Navigation Foundation Models in the Wild",
+  "citation_title_policy": "Preserve the native PMLR proceedings title.",
+  "official_url": "https://proceedings.mlr.press/v270/stachowicz25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/stachowicz25a/stachowicz25a.pdf",
+  "page_receipt": {
+    "requested_url": "https://proceedings.mlr.press/v270/stachowicz25a.html",
+    "final_url": "https://proceedings.mlr.press/v270/stachowicz25a.html",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "retrieved_at": "2026-11-03T12:12:26.354165+00:00",
+    "sha256": "c2b00c592cdbca347591689b550503b9f22df0ba8acbb8a8bc5f7d12679e8d00"
+  },
+  "pdf_receipt": {
+    "requested_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/stachowicz25a/stachowicz25a.pdf",
+    "final_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/stachowicz25a/stachowicz25a.pdf",
+    "status": 200,
+    "retrieved_at": "2026-11-03T12:15:59.538535+00:00",
+    "sha256": "4baa2113b851e4a4efe674fec76b5ad0d46ae22eefaf1d52b3069068feda8173"
+  },
+  "identity_evidence": [
+    "The current PMLR page and native BibTeX link exactly this PDF; freshly downloaded bytes match the retained PDF.",
+    "All three authors match in order: Kyle Stachowicz, Lydia Ignatova, Sergey Levine.",
+    "PDF p.1 names the 8th Conference on Robot Learning (CoRL 2024); the native citation is its PMLR v270 proceedings published in 2025.",
+    "The 13-page PDF agrees with the cited 1035-1047 span; both abstracts describe LiReN, offline RL pretraining and autonomous online improvement."
+  ],
+  "crossref_searches": [
+    {
+      "query": "S41-crossref-improvement",
+      "receipt": {
+        "requested_url": "https://api.crossref.org/works?query.title=Lifelong+Autonomous+Improvement+of+Navigation+Foundation+Models+in+the+Wild&query.author=Kyle+Stachowicz&rows=8",
+        "final_url": "https://api.crossref.org/works?query.title=Lifelong+Autonomous+Improvement+of+Navigation+Foundation+Models+in+the+Wild&query.author=Kyle+Stachowicz&rows=8",
+        "status": 200,
+        "content_type": "application/json",
+        "retrieved_at": "2026-11-03T12:12:21.830340+00:00",
+        "sha256": "349d4a4332fe5f51e5dab63c1ce4d1c45cf4949cad606b6839f6a2c5901c7eda"
+      },
+      "returned_items": 8,
+      "matched": false
+    },
+    {
+      "query": "S41-crossref-fine-tuning",
+      "receipt": {
+        "requested_url": "https://api.crossref.org/works?query.title=Lifelong+Autonomous+Fine-Tuning+of+Navigation+Foundation+Models+in+the+Wild&query.author=Kyle+Stachowicz&rows=8",
+        "final_url": "https://api.crossref.org/works?query.title=Lifelong+Autonomous+Fine-Tuning+of+Navigation+Foundation+Models+in+the+Wild&query.author=Kyle+Stachowicz&rows=8",
+        "status": 200,
+        "content_type": "application/json",
+        "retrieved_at": "2026-11-03T12:12:21.150365+00:00",
+        "sha256": "b94f16075bb8cff46abef999936b03ed516be1494632c49c708caade9c35e57f"
+      },
+      "returned_items": 8,
+      "matched": false
+    },
+    {
+      "query": "S41-crossref-title-only-improvement",
+      "receipt": {
+        "requested_url": "https://api.crossref.org/works?query.title=Lifelong+Autonomous+Improvement+of+Navigation+Foundation+Models+in+the+Wild&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2026-11-03&rows=20",
+        "final_url": "https://api.crossref.org/works?query.title=Lifelong+Autonomous+Improvement+of+Navigation+Foundation+Models+in+the+Wild&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2026-11-03&rows=20",
+        "status": 200,
+        "content_type": "application/json",
+        "retrieved_at": "2026-11-03T12:13:18.673668+00:00",
+        "sha256": "22d8af27d0b5a5e50d6f1d08286bd873675680adcda4b1eee7f9746cd026b36f"
+      },
+      "returned_items": 20,
+      "matched": false
+    },
+    {
+      "query": "S41-crossref-title-only-fine-tuning",
+      "receipt": {
+        "requested_url": "https://api.crossref.org/works?query.title=Lifelong+Autonomous+Fine-Tuning+of+Navigation+Foundation+Models+in+the+Wild&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2026-11-03&rows=20",
+        "final_url": "https://api.crossref.org/works?query.title=Lifelong+Autonomous+Fine-Tuning+of+Navigation+Foundation+Models+in+the+Wild&filter=from-pub-date%3A2024-01-01%2Cuntil-pub-date%3A2026-11-03&rows=20",
+        "status": 200,
+        "content_type": "application/json",
+        "retrieved_at": "2026-11-03T12:15:38.528389+00:00",
+        "sha256": "ee0ed9c90a343a4e09c7c2cf8a44a7e801e900cdb1d09804bee3b5d88417d7a9"
+      },
+      "returned_items": 20,
+      "matched": false
+    }
+  ],
+  "crossref_result": "No matching record in four successful queries; no DOI added. Search absence is not proof of no deposit.",
+  "limit": "Official titles still differ. This is a documented publisher-linked same-work variant, not a strict automatic title-match pass."
+}

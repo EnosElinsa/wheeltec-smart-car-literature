@@ -1,0 +1,32 @@
+{
+  "selection_id": "8bfa908fca9b56e2564d0d19",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "acquisition_method": "official_pmlr_download_with_documented_title_variant",
+  "official_landing_url": "https://proceedings.mlr.press/v270/stachowicz25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/stachowicz25a/stachowicz25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v270/stachowicz25a.html#bibtex",
+  "verification_host": "codex",
+  "citation_status": "publisher-raw",
+  "citation_source": "PMLR native DownloadTexToFile export; original bytes unchanged",
+  "native_pair_verified": false,
+  "identity_status": "publisher-title-variant-reviewed",
+  "identity_review": "title-identity-review.json",
+  "identity_review_sha256": "2ac28435015d97a6379525155f0aca0d542917d7537e225afeb22e7f6fee26c6",
+  "pdf_title": "Lifelong Autonomous Fine-Tuning of Navigation Foundation Models in the Wild",
+  "citation_title": "Lifelong Autonomous Improvement of Navigation Foundation Models in the Wild",
+  "crossref_doi_match": false,
+  "metadata": {
+    "title": "Lifelong Autonomous Improvement of Navigation Foundation Models in the Wild",
+    "authors": [
+      "Kyle Stachowicz",
+      "Lydia Ignatova",
+      "Sergey Levine"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null
+  },
+  "pdf_sha256": "4baa2113b851e4a4efe674fec76b5ad0d46ae22eefaf1d52b3069068feda8173",
+  "bibtex_sha256": "e4c03e95d537460723ed54d68e47e661bbb6e3fe1d3c4a825f09c1f25beb493b"
+}

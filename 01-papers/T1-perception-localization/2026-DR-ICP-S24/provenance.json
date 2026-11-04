@@ -1,0 +1,46 @@
+{
+  "selection_id": "be377726493f01daae8b8fd0",
+  "selection_sha256": "796076d9efa97048fe6df67280ebd1e97f33d44c6a49ed5bb48da8459da28162",
+  "selection_manifest_sha256": "63a0ba4ba84f548124a4f526f1bd2ef3e09c877583604b33e96912e661cf8c4a",
+  "official_landing_url": "https://onlinelibrary.wiley.com/doi/10.1002/rob.70362",
+  "verification_host": "codex",
+  "acquisition_method": "user_manual_publisher_pdf_with_authorized_derived_citation",
+  "citation_status": "derived",
+  "citation_source": "publisher BibTeX supplemented from Crossref and PDF publication evidence",
+  "native_pair_verified": false,
+  "original_citation": "citation-original.bib",
+  "original_citation_sha256": "e6ef45a2b25929b4d29197a768dc8130ac3bbfa0e7473a1dc4ddf628ff53d61c",
+  "original_citation_year": null,
+  "bibliographic_year": 2026,
+  "publication_dates": {
+    "published-online": [
+      2026,
+      10,
+      12
+    ]
+  },
+  "changes": [
+    "Added year 2026 and online date from the Crossref publisher deposit; PDF p.1 independently states 2026.",
+    "Omitted empty pages and unassigned n/a volume/number placeholders; normalized DOI to its identifier."
+  ],
+  "metadata_evidence": "metadata-evidence.json",
+  "metadata_evidence_sha256": "02c0657fe4da7c92dcf840abba516c87d1e42924529d38ba651145409ffcf1a9",
+  "authorization": "User explicitly requested RIS conversion and Crossref supplementation on 2026-11-03.",
+  "metadata": {
+    "title": "DR‐ICP: Robust LiDAR SLAM Registration for Degenerate Tunnels",
+    "authors": [
+      "Qian, Guanyu",
+      "Chen, Xuemei",
+      "Lu, Chao",
+      "Tian, Yihong",
+      "Liu, Yueze",
+      "Zhao, Xiaoxuan",
+      "Yao, Chengda"
+    ],
+    "doi": "10.1002/rob.70362",
+    "venue": "Journal of Field Robotics",
+    "year": 2026
+  },
+  "pdf_sha256": "8e998155f06dfc625cc3a9b86b23f59b3cb99707a053e4dd7e8aa9226749ca3d",
+  "bibtex_sha256": "7e881c827583c8677524de28cc65c5efcf1815372a7bc1a006ed793dca4bdac5"
+}

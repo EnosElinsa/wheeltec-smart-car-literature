@@ -1,0 +1,26 @@
+{
+  "paper_id": "41643022993c4c77bd59982d9937533f",
+  "metadata": {
+    "title": "Robust Lifelong Indoor LiDAR Localization Using the Area Graph",
+    "authors": [
+      "Fujing Xie",
+      "Sören Schwertfeger"
+    ],
+    "year": 2024,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2023.3334158",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10321673/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10321673/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10321673&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "ad10a6abd090620a02cc303d35ed126fb1f543b314c6dc54720b82ef3bc529c5",
+  "bibtex_sha256": "30384e7ac13282b74b5c02a5565fbf12222c82ad3dcabe27a1d8d6bc24a76e04",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-03T11:05:47.760344+00:00",
+  "selection_id": "dabb23e5991d596011c9435e"
+}
