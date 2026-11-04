@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\centering
+\caption{Semantic and language-guided navigation: representative mechanisms, sensing, and evaluation settings.}
+\label{tab:semantic}
+\surveytableformat
+\begin{tabularx}{\linewidth}{@{}L{2.7cm}YL{3.35cm}L{3.45cm}@{}}
+\toprule
+\textbf{Work} & \textbf{Mechanism and inputs} & \textbf{Evaluation setting}\par\textit{Evaluated quantities} & \textbf{Platform}\par\textit{Computation} \\
+\midrule
+\textbf{VLM-Social-Nav}~\cite{P_M07} & \surveytableinputs{Cue-triggered VLM judgments used as social DWA costs.}{RGB images, LiDAR} & \surveytablepair{Hardware}{Task success, collisions, and social behavior} & \surveytablepair{differential drive}{Mixed placement} \\
+\addlinespace[3pt]
+\textbf{Co-NavGPT}~\cite{P_N09}\textsuperscript{\(\dagger\)} & \surveytableinputs{VLM frontier allocation with geometric goal execution.}{RGB-D, shared map, robot states} & \surveytablepair{Hardware, Sim.}{HM3D search; separate hardware demos} & \surveytablepair{legged}{Onboard pose; offboard perception/planning} \\
+\addlinespace[3pt]
+\textbf{OpenIN}~\cite{P_E44} & \surveytableinputs{Carrier--object memory with visibility-dependent updates.}{RGB-D, language/image queries, SLAM pose} & \surveytablepair{Hardware, Sim.}{Success across sequential object queries} & \surveytablepair{wheeled (drive unspecified)}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{VLFM}~\cite{P_E47}\textsuperscript{\(\dagger\)} & \surveytableinputs{Image--language similarity projected into a frontier value map.}{RGB-D, odometry} & \surveytablepair{Hardware, Sim.}{Goal success and path efficiency} & \surveytablepair{legged}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{HOV-SG}~\cite{P_E48}\textsuperscript{\(\dagger\)} & \surveytableinputs{Hierarchical retrieval over floor, room, and object graphs.}{RGB-D, LiDAR-derived poses} & \surveytablepair{Hardware, Sim., Replay}{Object retrieval and navigation success} & \surveytablepair{legged}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{Uni-NaVid}~\cite{P_E49}\textsuperscript{\(\dagger\)} & \surveytableinputs{Multiscale video memory and discrete action prediction.}{monocular RGB video, instruction} & \surveytablepair{Hardware, Sim.}{Goal success and path efficiency} & \surveytablepair{legged}{Local offboard} \\
+\addlinespace[3pt]
+\textbf{LeLaN}~\cite{P_E50} & \surveytableinputs{Receding-horizon language-conditioned velocity prediction.}{RGB image, text instruction} & \surveytablepair{Hardware, Replay}{Target arrival and action-generation time} & \surveytablepair{differential drive}{Onboard} \\
+\addlinespace[3pt]
+\textbf{VL-TGS}~\cite{P_F05} & \surveytableinputs{VLM selection among generated trajectories with local DWA control.}{LiDAR, RGB, velocity, GPS} & \surveytablepair{Hardware, Acquired data}{Outdoor traversal and model-response time} & \surveytablepair{wheeled (drive unspecified)}{Mixed placement} \\
+\addlinespace[3pt]
+\textbf{GSON}~\cite{P_F06} & \surveytableinputs{Group-aware routing with predictive barrier-constrained control.}{2D LiDAR, RGB images} & \surveytablepair{Hardware, Replay}{Social disturbance, travel time, and jerk} & \surveytablepair{differential drive}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{AVLMaps}~\cite{P_S12} & \surveytableinputs{Multimodal spatial retrieval and goal APIs.}{offline RGB-D/pose/audio map, instructions} & \surveytablepair{Hardware, Sim.}{Multimodal goals; prepared-map validity} & \surveytablepair{wheeled (drive unspecified)}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{VLM-GroNav}~\cite{P_S40} & \surveytableinputs{Interaction-grounded terrain costs and DWA.}{RGB, LiDAR, proprioception, GPS, aerial images} & \surveytablepair{Hardware}{Outdoor task outcomes; GPS/cloud dependencies} & \surveytablepair{skid steer}{Mixed placement} \\
+\addlinespace[3pt]
+\textbf{SocialNav-SUB}~\cite{P_S44} & \surveytableinputs{Social scene-understanding VQA benchmark.}{recorded images, pedestrian annotations} & \surveytablepair{Dataset}{Human/rule agreement; no closed-loop control} & \surveytablepair{wheeled (drive unspecified)}{Mixed placement} \\
+\bottomrule
+\end{tabularx}
+\surveyplatformnote
+\end{table*}

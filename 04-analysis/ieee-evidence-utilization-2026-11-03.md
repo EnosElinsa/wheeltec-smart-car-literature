@@ -2,7 +2,7 @@
 
 Analysis date: November 3, 2026. All 20 sources have targeted light review cards, comparison coding and substantive use in the manuscript. The selection contains 147 publications (144 technical and three context works). The cards preserve selected-passage scope rather than claiming full assessment.
 
-[20-paper utilization matrix](../06-data/ieee-supplement-2026-11-03/utilization-matrix.csv) · [Page-bound source notes](../06-data/ieee-supplement-2026-11-03/evidence-notes.md) · [Reading ledger](../06-data/ieee-supplement-2026-11-03/source-reading.json) · [Current survey](https://github.com/EnosElinsa/wheeltec-navigation-survey)
+[20-paper utilization matrix](../06-data/ieee-supplement-2026-11-03/utilization-matrix.csv) · [Page-bound source notes](../06-data/ieee-supplement-2026-11-03/evidence-notes.md) · [Reading ledger](../06-data/ieee-supplement-2026-11-03/source-reading.json) · [Current survey](../05-survey/manuscript/README.md)
 
 ## Main value
 

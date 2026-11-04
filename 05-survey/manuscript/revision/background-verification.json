@@ -1,0 +1,130 @@
+[
+  {
+    "key": "B_Cadena2016",
+    "doi": "10.1109/tro.2016.2624754",
+    "title": "Past, Present, and Future of Simultaneous Localization and Mapping: Toward the Robust-Perception Age",
+    "raw_record": "revision/background-sources/B_Cadena2016.json",
+    "verified_utc": "2026-11-02T13:08:32.017211+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_Campion1996",
+    "doi": "10.1109/70.481750",
+    "title": "Structural properties and classification of kinematic and dynamic models of wheeled mobile robots",
+    "raw_record": "revision/background-sources/B_Campion1996.json",
+    "verified_utc": "2026-11-02T13:08:33.524532+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_DWA1997",
+    "doi": "10.1109/100.580977",
+    "title": "The dynamic window approach to collision avoidance",
+    "raw_record": "revision/background-sources/B_DWA1997.json",
+    "verified_utc": "2026-11-02T13:08:35.723484+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_TEB2013",
+    "doi": "10.1109/ecmr.2013.6698833",
+    "title": "Efficient trajectory optimization using a sparse model",
+    "raw_record": "revision/background-sources/B_TEB2013.json",
+    "verified_utc": "2026-11-02T13:08:37.237405+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_Nav22020",
+    "doi": "10.1109/iros45743.2020.9341207",
+    "title": "The Marathon 2: A Navigation System",
+    "raw_record": "revision/background-sources/B_Nav22020-corrected.json",
+    "verified_utc": "2026-11-02T13:08:39.663539+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_LOAM2014",
+    "doi": "10.15607/rss.2014.x.007",
+    "title": "LOAM: Lidar Odometry and Mapping in Real-time",
+    "raw_record": "revision/background-sources/B_LOAM2014.json",
+    "verified_utc": "2026-11-02T13:08:41.178073+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_ORBSLAM32021",
+    "doi": "10.1109/tro.2021.3075644",
+    "title": "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual–Inertial, and Multimap SLAM",
+    "raw_record": "revision/background-sources/B_ORBSLAM32021.json",
+    "verified_utc": "2026-11-02T13:08:42.700734+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_FASTLIO22022",
+    "doi": "10.1109/tro.2022.3141876",
+    "title": "FAST-LIO2: Fast Direct LiDAR-Inertial Odometry",
+    "raw_record": "revision/background-sources/B_FASTLIO22022.json",
+    "verified_utc": "2026-11-02T13:08:44.215484+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_CBF2017",
+    "doi": "10.1109/tac.2016.2638961",
+    "title": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
+    "raw_record": "revision/background-sources/B_CBF2017.json",
+    "verified_utc": "2026-11-02T13:08:45.735292+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_KITTI2012",
+    "doi": "10.1109/cvpr.2012.6248074",
+    "title": "Are we ready for autonomous driving? The KITTI vision benchmark suite",
+    "raw_record": "revision/background-sources/B_KITTI2012.json",
+    "verified_utc": "2026-11-02T13:08:47.252023+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_TUM2012",
+    "doi": "10.1109/iros.2012.6385773",
+    "title": "A benchmark for the evaluation of RGB-D SLAM systems",
+    "raw_record": "revision/background-sources/B_TUM2012.json",
+    "verified_utc": "2026-11-02T13:08:48.763572+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_Habitat2019",
+    "doi": "10.1109/iccv.2019.00943",
+    "title": "Habitat: A Platform for Embodied AI Research",
+    "raw_record": "revision/background-sources/B_Habitat2019.json",
+    "verified_utc": "2026-11-02T13:08:50.278912+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_Traversability2022",
+    "doi": "10.1109/access.2022.3202545",
+    "title": "A Survey of Traversability Estimation for Mobile Robots",
+    "raw_record": "revision/background-sources/B_Traversability2022.json",
+    "verified_utc": "2026-11-02T13:08:52.653710+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_CSLAM2022",
+    "doi": "10.55417/fr.2022032",
+    "title": "Towards Collaborative Simultaneous Localization and Mapping: A Survey of the Current Research Landscape",
+    "raw_record": "revision/background-sources/B_CSLAM2022.json",
+    "verified_utc": "2026-11-02T13:08:55.378285+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_Foundation2024",
+    "doi": "10.1177/02783649241281508",
+    "title": "Foundation models in robotics: Applications, challenges, and the future",
+    "raw_record": "revision/background-sources/B_Foundation2024.json",
+    "verified_utc": "2026-11-02T13:08:58.158727+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "key": "B_HumanAware2013",
+    "doi": "10.1016/j.robot.2013.05.007",
+    "title": "Human-aware robot navigation: A survey",
+    "raw_record": "revision/background-sources/B_HumanAware2013.json",
+    "verified_utc": "2026-11-02T13:09:00.586625+00:00",
+    "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  }
+]

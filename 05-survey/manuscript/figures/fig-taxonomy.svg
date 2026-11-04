@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="516.0pt" height="312.9pt" viewBox="0 0 516.0 312.9">
+<rect x="133.00" y="4.00" width="250.00" height="17.00" rx="3" fill="#222222" stroke="none" stroke-width="0.6"/>
+<text x="258.00" y="15.60" font-family="Helvetica" font-size="8.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">Responses to degradation in wheeled navigation</text>
+<polyline points="258.00,21.00 258.00,28.00" fill="none" stroke="#9AA3AD" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="50.80,28.00 465.20,28.00" fill="none" stroke="#9AA3AD" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="50.80,35.00 49.37,31.60 52.23,31.60" fill="#9AA3AD" stroke="none" stroke-width="0.6"/>
+<polyline points="50.80,28.00 50.80,31.60" fill="none" stroke="#9AA3AD" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2.00" y="35.00" width="97.60" height="33.80" rx="2.5" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<text x="7.00" y="46.00" font-family="Helvetica" font-size="7.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">IV</text>
+<text x="23.00" y="45.60" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Localization and</text>
+<text x="23.00" y="54.20" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">mapping</text>
+<rect x="2.00" y="72.80" width="97.60" height="43.30" rx="2" fill="#E7EFF9" stroke="#2E6DB4" stroke-width="0.5"/>
+<rect x="2.30" y="73.10" width="2.20" height="42.70" rx="0" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<text x="7.00" y="82.00" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Selective updates and</text>
+<text x="7.00" y="90.00" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">conditioning</text>
+<text x="7.00" y="98.40" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">LODESTAR, Switch-SLAM,</text>
+<text x="7.00" y="105.50" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">DR-ICP, DCReg</text>
+<rect x="2.00" y="119.10" width="97.60" height="43.30" rx="2" fill="#E7EFF9" stroke="#2E6DB4" stroke-width="0.5"/>
+<rect x="2.30" y="119.40" width="2.20" height="42.70" rx="0" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<text x="7.00" y="128.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Complementary sensing</text>
+<text x="7.00" y="136.70" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">LiDAR-radar-inertial fusion,</text>
+<text x="7.00" y="143.80" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">Super4DR, RaLI-Multi,</text>
+<text x="7.00" y="150.90" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">LiDAR-teach/radar-repeat</text>
+<rect x="2.00" y="165.40" width="97.60" height="36.20" rx="2" fill="#E7EFF9" stroke="#2E6DB4" stroke-width="0.5"/>
+<rect x="2.30" y="165.70" width="2.20" height="35.60" rx="0" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<text x="7.00" y="174.60" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Motion priors and contact</text>
+<text x="7.00" y="183.00" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">SE2-LIO, WING, ToF-wheel</text>
+<text x="7.00" y="190.10" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">odometry, DURAL</text>
+<rect x="2.00" y="204.60" width="97.60" height="43.30" rx="2" fill="#E7EFF9" stroke="#2E6DB4" stroke-width="0.5"/>
+<rect x="2.30" y="204.90" width="2.20" height="42.70" rx="0" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<text x="7.00" y="213.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Map revision and</text>
+<text x="7.00" y="221.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">relocalization</text>
+<text x="7.00" y="230.20" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">ELite, Chamelion, NeuSE,</text>
+<text x="7.00" y="237.30" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">CMRNext, OMCL</text>
+<polygon points="154.40,35.00 152.97,31.60 155.83,31.60" fill="#9AA3AD" stroke="none" stroke-width="0.6"/>
+<polyline points="154.40,28.00 154.40,31.60" fill="none" stroke="#9AA3AD" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="105.60" y="35.00" width="97.60" height="33.80" rx="2.5" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<text x="110.60" y="46.00" font-family="Helvetica" font-size="7.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">V</text>
+<text x="126.60" y="45.60" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Traversability,</text>
+<text x="126.60" y="54.20" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">planning, and control</text>
+<rect x="105.60" y="72.80" width="97.60" height="43.30" rx="2" fill="#E2F3F0" stroke="#1B8A7A" stroke-width="0.5"/>
+<rect x="105.90" y="73.10" width="2.20" height="42.70" rx="0" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<text x="110.60" y="82.00" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Terrain cost and risk</text>
+<text x="110.60" y="90.40" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">CADNet, SPARTA,</text>
+<text x="110.60" y="97.50" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">terrain-adaptive MPC, TRAIL</text>
+<rect x="105.60" y="119.10" width="97.60" height="43.30" rx="2" fill="#E2F3F0" stroke="#1B8A7A" stroke-width="0.5"/>
+<rect x="105.90" y="119.40" width="2.20" height="42.70" rx="0" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<text x="110.60" y="128.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Information-aware</text>
+<text x="110.60" y="136.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">exploration</text>
+<text x="110.60" y="144.70" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">FIT-SLAM 2, LRAE, SLAM-aware</text>
+<text x="110.60" y="151.80" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">graph planning</text>
+<rect x="105.60" y="165.40" width="97.60" height="36.20" rx="2" fill="#E2F3F0" stroke="#1B8A7A" stroke-width="0.5"/>
+<rect x="105.90" y="165.70" width="2.20" height="35.60" rx="0" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<text x="110.60" y="174.60" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Prediction and learned</text>
+<text x="110.60" y="182.60" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">policies</text>
+<text x="110.60" y="191.00" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">SCOPE, HEIGHT, prescient</text>
+<text x="110.60" y="198.10" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">MPC, homotopy MPC</text>
+<rect x="105.60" y="204.60" width="97.60" height="43.30" rx="2" fill="#E2F3F0" stroke="#1B8A7A" stroke-width="0.5"/>
+<rect x="105.90" y="204.90" width="2.20" height="42.70" rx="0" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<text x="110.60" y="213.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Safety constraints and risk</text>
+<text x="110.60" y="221.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">bounds</text>
+<text x="110.60" y="230.20" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">Safe Horizon MPC, MonoMPC,</text>
+<text x="110.60" y="237.30" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">Perceive With Confidence</text>
+<polygon points="258.00,35.00 256.57,31.60 259.43,31.60" fill="#9AA3AD" stroke="none" stroke-width="0.6"/>
+<polyline points="258.00,28.00 258.00,31.60" fill="none" stroke="#9AA3AD" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="209.20" y="35.00" width="97.60" height="33.80" rx="2.5" fill="#7A4FA0" stroke="none" stroke-width="0.6"/>
+<text x="214.20" y="46.00" font-family="Helvetica" font-size="7.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">VI</text>
+<text x="230.20" y="45.60" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Semantic and</text>
+<text x="230.20" y="54.20" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">language-guided</text>
+<text x="230.20" y="62.80" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">navigation</text>
+<rect x="209.20" y="72.80" width="97.60" height="43.30" rx="2" fill="#F0E8F6" stroke="#7A4FA0" stroke-width="0.5"/>
+<rect x="209.50" y="73.10" width="2.20" height="42.70" rx="0" fill="#7A4FA0" stroke="none" stroke-width="0.6"/>
+<text x="214.20" y="82.00" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Semantic scene memory</text>
+<text x="214.20" y="90.40" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">HOV-SG, OpenIN, osmAG-LLM,</text>
+<text x="214.20" y="97.50" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">VLN-Game</text>
+<rect x="209.20" y="119.10" width="97.60" height="43.30" rx="2" fill="#F0E8F6" stroke="#7A4FA0" stroke-width="0.5"/>
+<rect x="209.50" y="119.40" width="2.20" height="42.70" rx="0" fill="#7A4FA0" stroke="none" stroke-width="0.6"/>
+<text x="214.20" y="128.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Geographic grounding and</text>
+<text x="214.20" y="136.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">learned actions</text>
+<text x="214.20" y="144.70" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">OPEN, CAUSALNAV, LeLaN,</text>
+<text x="214.20" y="151.80" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">Uni-NaVid</text>
+<rect x="209.20" y="165.40" width="97.60" height="36.20" rx="2" fill="#F0E8F6" stroke="#7A4FA0" stroke-width="0.5"/>
+<rect x="209.50" y="165.70" width="2.20" height="35.60" rx="0" fill="#7A4FA0" stroke="none" stroke-width="0.6"/>
+<text x="214.20" y="174.60" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Candidate selection and</text>
+<text x="214.20" y="182.60" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">embodiment filters</text>
+<text x="214.20" y="191.00" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">VL-TGS, Sem-NaVAE, VAMOS</text>
+<rect x="209.20" y="204.60" width="97.60" height="43.30" rx="2" fill="#F0E8F6" stroke="#7A4FA0" stroke-width="0.5"/>
+<rect x="209.50" y="204.90" width="2.20" height="42.70" rx="0" fill="#7A4FA0" stroke="none" stroke-width="0.6"/>
+<text x="214.20" y="213.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Social and behavioral</text>
+<text x="214.20" y="221.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">constraints</text>
+<text x="214.20" y="230.20" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">GSON, NORM-Nav, OLiVia-Nav,</text>
+<text x="214.20" y="237.30" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">SocialNav-SUB</text>
+<polygon points="361.60,35.00 360.17,31.60 363.03,31.60" fill="#9AA3AD" stroke="none" stroke-width="0.6"/>
+<polyline points="361.60,28.00 361.60,31.60" fill="none" stroke="#9AA3AD" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="312.80" y="35.00" width="97.60" height="33.80" rx="2.5" fill="#B9770E" stroke="none" stroke-width="0.6"/>
+<text x="317.80" y="46.00" font-family="Helvetica" font-size="7.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">VII</text>
+<text x="333.80" y="45.60" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Multi-robot</text>
+<text x="333.80" y="54.20" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">coordination</text>
+<rect x="312.80" y="72.80" width="97.60" height="43.30" rx="2" fill="#FBF1DF" stroke="#B9770E" stroke-width="0.5"/>
+<rect x="313.10" y="73.10" width="2.20" height="42.70" rx="0" fill="#B9770E" stroke="none" stroke-width="0.6"/>
+<text x="317.80" y="82.00" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Allocation and spatial</text>
+<text x="317.80" y="90.00" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">responsibility</text>
+<text x="317.80" y="98.40" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">CURE, URGE, TAPM-IVP</text>
+<rect x="312.80" y="119.10" width="97.60" height="43.30" rx="2" fill="#FBF1DF" stroke="#B9770E" stroke-width="0.5"/>
+<rect x="313.10" y="119.40" width="2.20" height="42.70" rx="0" fill="#B9770E" stroke="none" stroke-width="0.6"/>
+<text x="317.80" y="128.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Compact sharing under</text>
+<text x="317.80" y="136.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">bandwidth limits</text>
+<text x="317.80" y="144.70" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">MR-TopoMap,</text>
+<text x="317.80" y="151.80" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">bandwidth-efficient C-SLAM,</text>
+<text x="317.80" y="158.90" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">layered transmission</text>
+<rect x="312.80" y="165.40" width="97.60" height="36.20" rx="2" fill="#FBF1DF" stroke="#B9770E" stroke-width="0.5"/>
+<rect x="313.10" y="165.70" width="2.20" height="35.60" rx="0" fill="#B9770E" stroke="none" stroke-width="0.6"/>
+<text x="317.80" y="174.60" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Distributed estimation</text>
+<text x="317.80" y="183.00" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">iMESA, riMESA, Multi-Proxy,</text>
+<text x="317.80" y="190.10" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">Swarm-SLAM</text>
+<rect x="312.80" y="204.60" width="97.60" height="43.30" rx="2" fill="#FBF1DF" stroke="#B9770E" stroke-width="0.5"/>
+<rect x="313.10" y="204.90" width="2.20" height="42.70" rx="0" fill="#B9770E" stroke="none" stroke-width="0.6"/>
+<text x="317.80" y="213.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Rendezvous and</text>
+<text x="317.80" y="221.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">reconnection</text>
+<text x="317.80" y="230.20" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">CoCoPlan, MEF-Explore,</text>
+<text x="317.80" y="237.30" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">correlation-aware map repair</text>
+<polygon points="465.20,35.00 463.77,31.60 466.63,31.60" fill="#9AA3AD" stroke="none" stroke-width="0.6"/>
+<polyline points="465.20,28.00 465.20,31.60" fill="none" stroke="#9AA3AD" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="416.40" y="35.00" width="97.60" height="33.80" rx="2.5" fill="#B23A48" stroke="none" stroke-width="0.6"/>
+<text x="421.40" y="46.00" font-family="Helvetica" font-size="7.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">VIII</text>
+<text x="437.40" y="45.60" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Fault tolerance,</text>
+<text x="437.40" y="54.20" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">recovery, and</text>
+<text x="437.40" y="62.80" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">deployment</text>
+<rect x="416.40" y="72.80" width="97.60" height="43.30" rx="2" fill="#F8E6E8" stroke="#B23A48" stroke-width="0.5"/>
+<rect x="416.70" y="73.10" width="2.20" height="42.70" rx="0" fill="#B23A48" stroke="none" stroke-width="0.6"/>
+<text x="421.40" y="82.00" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Diagnosis and tolerant</text>
+<text x="421.40" y="90.00" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">control</text>
+<text x="421.40" y="98.40" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">Set-based LPV diagnosis,</text>
+<text x="421.40" y="105.50" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">kinematic residuals,</text>
+<text x="421.40" y="112.60" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">prescribed-performance control</text>
+<rect x="416.40" y="119.10" width="97.60" height="43.30" rx="2" fill="#F8E6E8" stroke="#B23A48" stroke-width="0.5"/>
+<rect x="416.70" y="119.40" width="2.20" height="42.70" rx="0" fill="#B23A48" stroke="none" stroke-width="0.6"/>
+<text x="421.40" y="128.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Integrity and runtime</text>
+<text x="421.40" y="136.30" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">monitoring</text>
+<text x="421.40" y="144.70" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">Reliable MCL, EKF-SLAM</text>
+<text x="421.40" y="151.80" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">integrity, Sentinel, RADIUM</text>
+<rect x="416.40" y="165.40" width="97.60" height="36.20" rx="2" fill="#F8E6E8" stroke="#B23A48" stroke-width="0.5"/>
+<rect x="416.70" y="165.70" width="2.20" height="35.60" rx="0" fill="#B23A48" stroke="none" stroke-width="0.6"/>
+<text x="421.40" y="174.60" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Executed recovery</text>
+<text x="421.40" y="183.00" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">GP-based recovery, RTEB,</text>
+<text x="421.40" y="190.10" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">CARE, active view planning</text>
+<rect x="416.40" y="204.60" width="97.60" height="43.30" rx="2" fill="#F8E6E8" stroke="#B23A48" stroke-width="0.5"/>
+<rect x="416.70" y="204.90" width="2.20" height="42.70" rx="0" fill="#B23A48" stroke="none" stroke-width="0.6"/>
+<text x="421.40" y="213.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Resources and sustained</text>
+<text x="421.40" y="221.80" font-family="Helvetica" font-size="6.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">service</text>
+<text x="421.40" y="230.20" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">Energy co-management,</text>
+<text x="421.40" y="237.30" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">persistent charging, cloud-edge</text>
+<text x="421.40" y="244.40" font-family="Helvetica" font-size="6.0" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">offloading, LiReN</text>
+<polyline points="2.00,254.90 514.00,254.90" fill="none" stroke="#9AA3AD" stroke-width="0.5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2.00" y="257.90" width="214.00" height="53.00" rx="2" fill="#EEF0F2" stroke="#4A5560" stroke-width="0.5"/>
+<text x="7.00" y="267.90" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">IX  Evaluation practice</text>
+<rect x="7.00" y="272.90" width="65.33" height="34.00" rx="2" fill="#FFFFFF" stroke="#9AA3AD" stroke-width="0.5"/>
+<text x="10.50" y="280.90" font-family="Helvetica" font-size="6.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Measurement level</text>
+<text x="10.50" y="288.30" font-family="Helvetica" font-size="5.9" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">component vs. task</text>
+<text x="10.50" y="295.10" font-family="Helvetica" font-size="5.9" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">outcome</text>
+<rect x="76.33" y="272.90" width="65.33" height="34.00" rx="2" fill="#FFFFFF" stroke="#9AA3AD" stroke-width="0.5"/>
+<text x="79.83" y="280.90" font-family="Helvetica" font-size="6.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Test conditions</text>
+<text x="79.83" y="288.30" font-family="Helvetica" font-size="5.9" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">onset, severity,</text>
+<text x="79.83" y="295.10" font-family="Helvetica" font-size="5.9" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">duration</text>
+<rect x="145.67" y="272.90" width="65.33" height="34.00" rx="2" fill="#FFFFFF" stroke="#9AA3AD" stroke-width="0.5"/>
+<text x="149.17" y="280.90" font-family="Helvetica" font-size="6.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Risk and</text>
+<text x="149.17" y="288.30" font-family="Helvetica" font-size="6.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">diagnostic claims</text>
+<text x="149.17" y="295.70" font-family="Helvetica" font-size="5.9" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">event, calibration,</text>
+<text x="149.17" y="302.50" font-family="Helvetica" font-size="5.9" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">assumptions</text>
+<rect x="222.00" y="257.90" width="292.00" height="53.00" rx="2" fill="#FFFFFF" stroke="#C0392B" stroke-width="0.6"/>
+<text x="227.00" y="267.90" font-family="Helvetica" font-size="7.2" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">X  Open interfaces between functions</text>
+<circle cx="232.00" cy="280.50" r="5.2" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="232.00" y="282.90" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">1</text>
+<text x="241.00" y="282.90" font-family="Helvetica" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Localization-triggered recovery</text>
+<circle cx="373.00" cy="280.50" r="5.2" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="373.00" y="282.90" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">2</text>
+<text x="382.00" y="282.90" font-family="Helvetica" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Semantic reasoning with fallback</text>
+<circle cx="232.00" cy="296.50" r="5.2" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="232.00" y="298.90" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">3</text>
+<text x="241.00" y="298.90" font-family="Helvetica" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Pose uncertainty in terrain decisions</text>
+<circle cx="373.00" cy="296.50" r="5.2" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="373.00" y="298.90" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">4</text>
+<text x="382.00" y="298.90" font-family="Helvetica" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Reconnection and shared-state acceptance</text>
+</svg>

@@ -4,8 +4,9 @@ The check scans every file that is tracked or would be added by
 ``git add -A`` and reports five classes of problems:
 
 * ``size``: a file larger than the size limit (default 50 MB);
-* ``forbidden-path``: copyrighted or local-only material (PDFs, full-text
-  transcriptions, the manuscript under submission, archives, ``.env``);
+* ``forbidden-path``: copyrighted or local-only material (publisher PDFs,
+  full-text transcriptions, archives, ``.env``); the compiled manuscript and
+  its figure PDFs are self-authored and allowed;
 * ``absolute-path``: a local absolute path inside a user profile folder
   (Windows drive paths, ``/home/<name>/``, or ``/Users/<name>/``);
 * ``secret``: a string that looks like a credential;
@@ -37,11 +38,13 @@ from tools.common import REPO_ROOT, git_candidate_files, is_text_path, read_text
 SIZE_LIMIT_BYTES = 50 * 1024 * 1024
 
 FORBIDDEN_PREFIXES = (
-    "05-survey/manuscript/",
     "99-archive/superseded/",
     "99-archive/local/",
 )
 ALLOWED_IN_FULLTEXT = {"02-fulltext/INDEX.md"}
+# The manuscript is self-authored: its compiled PDFs and figure PDFs may be published.
+SELF_AUTHORED_PDFS = {"05-survey/manuscript/survey.pdf", "05-survey/manuscript/supplement.pdf"}
+MANUSCRIPT_FIGURES = "05-survey/manuscript/figures/"
 
 ABSOLUTE_PATH_PATTERNS = [
     re.compile(r"(?i)\b[a-z]:(?:\\\\|\\|/)+users(?:\\\\|\\|/)+"),
@@ -105,7 +108,9 @@ class Report:
 def is_forbidden_path(rel: str) -> str | None:
     """Return a reason when the relative POSIX path must not be published."""
     name = rel.rsplit("/", 1)[-1]
-    if rel.lower().endswith(".pdf"):
+    if rel.lower().endswith(".pdf") and rel not in SELF_AUTHORED_PDFS and not (
+        rel.startswith(MANUSCRIPT_FIGURES) and rel.count("/") == MANUSCRIPT_FIGURES.count("/")
+    ):
         return "publisher PDF"
     if rel.startswith("02-fulltext/") and rel not in ALLOWED_IN_FULLTEXT:
         return "full-text transcription or figure"

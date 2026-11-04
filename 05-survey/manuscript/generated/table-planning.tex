@@ -1,0 +1,38 @@
+\begin{table*}[t]
+\centering
+\caption{Traversability, planning, and control: representative mechanisms, sensing, and evaluation settings.}
+\label{tab:planning}
+\surveytableformat
+\begin{tabularx}{\linewidth}{@{}L{2.7cm}YL{3.35cm}L{3.45cm}@{}}
+\toprule
+\textbf{Work} & \textbf{Mechanism and inputs} & \textbf{Evaluation setting}\par\textit{Evaluated quantities} & \textbf{Platform}\par\textit{Computation} \\
+\midrule
+\textbf{LRAE}~\cite{P_M14} & \surveytableinputs{Unknown-region safety classification and route optimization.}{3D LiDAR} & \surveytablepair{Hardware, Sim.}{Exploration time and travel cost} & \surveytablepair{skid steer}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{CADNet}~\cite{P_M29} & \surveytableinputs{Heading-dependent accessible-range prediction for TEB planning.}{LiDAR history} & \surveytablepair{Hardware, Replay, Sim.}{Traversability prediction and navigation} & \surveytablepair{wheeled (drive unspecified)}{Onboard} \\
+\addlinespace[3pt]
+\textbf{GA-Nav}~\cite{P_M40} & \surveytableinputs{Semantic terrain segmentation combined with elevation costs.}{RGB images, 3D LiDAR} & \surveytablepair{Hardware, Replay}{Terrain segmentation and navigation success} & \surveytablepair{wheeled (drive unspecified)}{Onboard} \\
+\addlinespace[3pt]
+\textbf{Anisotropic exploration}~\cite{P_N08} & \surveytableinputs{Direction-dependent quasi-static terrain costs.}{LiDAR terrain map, FAST-LIO pose} & \surveytablepair{Hardware, Sim.}{Exploration, travel cost, body roll} & \surveytablepair{differential drive}{Onboard} \\
+\addlinespace[3pt]
+\textbf{FIT-SLAM2}~\cite{P_E13} & \surveytableinputs{Keyframe-linked frontiers and information-aware adaptive roadmaps.}{RGB-D/LiDAR (simulation); stereo depth (hardware)} & \surveytablepair{Hardware, Sim.}{Exploration time, pose error, and runtime} & \surveytablepair{skid steer}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{Vehicle--cloud MPC}~\cite{P_E21} & \surveytableinputs{Switching between onboard linear and cloud nonlinear MPC.}{externally measured poses} & \surveytablepair{Hardware, Sim., Theory}{Tracking and collision outcomes} & \surveytablepair{Ackermann}{Mixed placement} \\
+\addlinespace[3pt]
+\textbf{CECBF}~\cite{P_E22} & \surveytableinputs{CBF constraints with circulation and hold logic.}{2D LiDAR, external robot pose} & \surveytablepair{Hardware}{Obstacle avoidance and escape from equilibria} & \surveytablepair{differential drive}{Local offboard} \\
+\addlinespace[3pt]
+\textbf{Safe Horizon MPC}~\cite{P_E25} & \surveytableinputs{Scenario constraints on joint collision risk with deceleration fallback.}{robot/pedestrian poses and velocity estimates} & \surveytablepair{Hardware, Sim.}{Task duration and planned collision risk} & \surveytablepair{skid steer}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{Spatiotemporal-Tubes}~\cite{P_N12} & \surveytableinputs{Adaptive spherical tubes for prescribed-time reach-avoid.}{robot state, online unsafe-set geometry} & \surveytablepair{Hardware, Sim., Numerical}{Reach-avoid and prescribed-time behavior} & \surveytablepair{omnidirectional}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{Perceive With Confidence}~\cite{P_F08}\textsuperscript{\(\dagger\)} & \surveytableinputs{Environment-level calibration of obstacle inflation for constrained planning.}{RGB-D point clouds, VIO} & \surveytablepair{Hardware, Sim.}{Collision-free outcomes and calibration} & \surveytablepair{legged}{Onboard} \\
+\addlinespace[3pt]
+\textbf{Homotopy MPC}~\cite{P_S09} & \surveytableinputs{Parallel optimization of homotopy alternatives.}{externally tracked robot/pedestrian states} & \surveytablepair{Hardware, Sim.}{Dynamic avoidance; external pose} & \surveytablepair{wheeled (drive unspecified)}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{Visual-geometric MPPI}~\cite{P_S42} & \surveytableinputs{Expert-trained cost, speed, and novelty maps for MPPI.}{RGB features, LiDAR geometry} & \surveytablepair{Hardware, Acquired data}{Interventions, speed, and terrain response} & \surveytablepair{wheeled (drive unspecified)}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{SPARTA}~\cite{P_S45} & \surveytableinputs{Angle-conditioned risk queried during planning.}{prepared point cloud, LiDAR/IMU pose} & \surveytablepair{Hardware, Sim.}{Simulated tire risk; virtual risky hardware branch} & \surveytablepair{skid steer}{Onboard} \\
+\bottomrule
+\end{tabularx}
+\surveyplatformnote
+\end{table*}

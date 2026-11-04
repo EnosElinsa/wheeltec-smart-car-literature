@@ -21,7 +21,7 @@ A theme-organized library of **231 acquired and assessed publications** on wheel
 - `02-fulltext/<theme>/<year>-<short-name>-<ID>/`: source transcription and referenced images.
 - `03-reviews/<theme>/<year>-<short-name>-<ID>/`: review card.
 - `04-analysis/`: comparisons, evidence synthesis and research plans.
-- `05-survey/`: guide to the separately maintained manuscript repository.
+- `05-survey/manuscript/`: the survey manuscript (LaTeX sources, SVG/PDF figures, generated tables, bibliography, built PDFs and verification records).
 - `06-data/`: the unified catalog, survey coding, reading ledgers and provenance.
 
 Publisher PDFs, transcriptions and extracted images remain local. Public indexes show their paths and link to citation exports, assessments and official sources.
@@ -40,5 +40,7 @@ python -m tools.locate N02 --info
 python -m tools.check_links
 python -m tools.check_public_tree --cjk strict
 ```
+
+The manuscript has its own build and verification steps in [05-survey/manuscript/README.md](05-survey/manuscript/README.md).
 
 [Source policy](06-data/source-policy.md) · [Coding vocabulary](06-data/vocabulary.md) · [Historical archive guide](99-archive/README.md)

@@ -1,0 +1,46 @@
+{
+  "pages": 26,
+  "corpus_prose_citations": 229,
+  "indexed_library_count": 231,
+  "internal_reference_ids": [
+    "X01",
+    "X15"
+  ],
+  "foundational_exception_count": 0,
+  "citation_scope_sha256": "3011e9c458add2a306b8c7cf7ffacdd0c44f5a79ee01db9964f5df684d88c513",
+  "bibliography_entries": 234,
+  "resolved_bibliography_entries": 234,
+  "unique_labels": 30,
+  "figures": 3,
+  "tables": 8,
+  "unresolved_references": [],
+  "source_artifacts_checked": 231,
+  "local_fulltext_verification": "not-run; use --sources with local PDFs/transcriptions",
+  "source_hash_mismatches": 0,
+  "evaluation_denominator": 228,
+  "evaluation_attribute_counts": {
+    "residual": 160,
+    "designed-degradation": 130,
+    "integrity-reliability": 14,
+    "closed-loop-task": 128
+  },
+  "source_checked_numerical_cases": 7,
+  "displayed_equations_unchanged": 6,
+  "overfull_boxes": 0,
+  "underfull_horizontal_boxes": 7,
+  "underfull_vertical_boxes": 0,
+  "pdf_sha256": "51399454555238b2f83db7125137aebf92e18c067b49686b85ba52ce4cc376c3",
+  "supplement": {
+    "pages": 3,
+    "unique_labels": 7,
+    "figures": 1,
+    "tables": 2,
+    "resolved_bibliography_entries": 8,
+    "unresolved_references": [],
+    "overfull_boxes": 0,
+    "underfull_horizontal_boxes": 1,
+    "underfull_vertical_boxes": 0,
+    "pdf_sha256": "f6b8aa0f1e92c07dd3f0c245da9377876faf85e972d0b68fea51985bfb3b313e"
+  },
+  "base_commit": "7e49cb4bc26db6a2aa1e57ee5b0f81c205a5614c"
+}

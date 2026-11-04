@@ -1,6 +1,6 @@
 # Source and naming policy
 
-Historical organization date: October 25, 2026. English maintenance date: November 2, 2026. File and directory names use English ASCII. Public review cards, analysis and navigation documents are in English. The revised manuscript is maintained in a separate public repository. Original historical records retain their audit conclusions and journal-ranking classifications.
+Historical organization date: October 25, 2026. English maintenance date: November 2, 2026. File and directory names use English ASCII. Public review cards, analysis and navigation documents are in English. The manuscript is maintained in this repository under `05-survey/manuscript/`; only its self-authored sources, figures, generated data and built PDFs are public. Original historical records retain their audit conclusions and journal-ranking classifications.
 
 ## Storage layout
 

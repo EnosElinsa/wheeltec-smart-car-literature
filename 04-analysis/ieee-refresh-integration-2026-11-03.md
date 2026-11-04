@@ -1,6 +1,8 @@
 # Integration of the 36-paper IEEE refresh
 
-The working survey now cites **229 selected works** (228 technical studies and one context review) and **5 background references**, for **234 resolved references**. Every cited work dates from 2021-2026. All R01-R36 received targeted light cards and appear in substantive section prose. The main paper compiles to 36 pages and the supplement to three.
+The working survey now cites **229 selected works** (228 technical studies and one context review) and **5 background references**, for **234 resolved references**. Every cited work dates from 2021-2026. All R01-R36 received targeted light cards and appear in substantive section prose. The main paper compiled to 36 pages and the supplement to three at the time of this record.
+
+Follow-up, November 4, 2026: the [figures and condensation revision](../05-survey/manuscript/revision/FIGURES-AND-CONDENSATION.md) reduced the main paper to 26 pages with all 229 works still cited, brought the sentence rhythm into the team band (mean 23.0 words, 13% under 12 words) and moved the manuscript into this repository. The length decision remains open at two pages over the T-IV maximum.
 
 ## Survey review findings and responses
 

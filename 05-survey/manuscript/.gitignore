@@ -1,0 +1,22 @@
+# LaTeX build products
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Local diagnostics, source captures, renderings and Python caches
+revision/*.png
+revision/*.txt
+revision/local/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+Thumbs.db
+Desktop.ini
+.DS_Store

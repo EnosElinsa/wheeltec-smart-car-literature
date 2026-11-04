@@ -1,0 +1,38 @@
+\begin{table*}[t]
+\centering
+\caption{Localization and mapping: representative mechanisms, sensing, and evaluation settings.}
+\label{tab:localization}
+\surveytableformat
+\begin{tabularx}{\linewidth}{@{}L{2.7cm}YL{3.35cm}L{3.45cm}@{}}
+\toprule
+\textbf{Work} & \textbf{Mechanism and inputs} & \textbf{Evaluation setting}\par\textit{Evaluated quantities} & \textbf{Platform}\par\textit{Computation} \\
+\midrule
+\textbf{Uncertainty-aware localization}~\cite{P_M16} & \surveytableinputs{Uncertainty-weighted prior-map matching with LIO and gated GNSS.}{3D LiDAR, IMU, GNSS} & \surveytablepair{Acquired data}{Pose error and covariance estimates} & \surveytablepair{wheeled (drive unspecified)}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{LODESTAR}~\cite{P_E01}\textsuperscript{\(\dagger\)} & \surveytableinputs{Selective historical anchoring and point selection under degeneracy.}{3D LiDAR, IMU} & \surveytablepair{Replay}{Absolute pose error and runtime} & \surveytablepair{mixed}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{ToF-Wheel}~\cite{P_E02} & \surveytableinputs{Directional process-covariance inflation from geometric corrections.}{time-of-flight camera and wheels; LiDAR replaces depth in replay} & \surveytablepair{Acquired data, Replay}{Trajectory error across covariance variants} & \surveytablepair{differential drive}{Onboard} \\
+\addlinespace[3pt]
+\textbf{DURAL}~\cite{P_E03} & \surveytableinputs{Region- and degeneracy-dependent sensor fusion.}{LiDAR, IMU, UWB, wheel encoders} & \surveytablepair{Acquired data, Sim.}{Localization error across fusion modes} & \surveytablepair{wheeled (drive unspecified)}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{MM-LINS}~\cite{P_E08}\textsuperscript{\(\dagger\)} & \surveytableinputs{Map hibernation, reinitialization, and pose-graph registration.}{LiDAR/IMU from handheld and vehicle rigs} & \surveytablepair{Acquired data, Replay}{Trajectory error and map registration} & \surveytablepair{road vehicle}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{SE2-LIO}~\cite{P_N02} & \surveytableinputs{Near-planar pose with stochastic out-of-plane perturbations.}{3D LiDAR, IMU} & \surveytablepair{Online estimate, Acquired data}{Pose error; slope-model boundary} & \surveytablepair{wheeled (drive unspecified)}{Onboard} \\
+\addlinespace[3pt]
+\textbf{ProbPer-LiLo}~\cite{P_E16}\textsuperscript{\(\dagger\)} & \surveytableinputs{Semantic-cluster persistence estimation and map filtering.}{3D LiDAR, semantic labels} & \surveytablepair{Acquired data, Replay}{Registration and map persistence} & \surveytablepair{mixed}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{DMSA}~\cite{P_N20}\textsuperscript{\(\dagger\)} & \surveytableinputs{Joint grid-distribution fitting over multiple scans.}{3D LiDAR, IMU} & \surveytablepair{Acquired data, Replay}{Pose error, runtime, sensor compatibility} & \surveytablepair{mixed}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{Switch-SLAM}~\cite{P_F04}\textsuperscript{\(\dagger\)} & \surveytableinputs{Degeneracy-triggered introduction of visual constraints.}{LiDAR, camera, IMU} & \surveytablepair{Replay, Sim.}{Trajectory error under modality failure} & \surveytablepair{mixed}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{M2UD}~\cite{P_F11} & \surveytableinputs{Uneven-terrain localization and mapping benchmark.}{LiDAR, RGB-D, IMU, GNSS; mixed reference systems} & \surveytablepair{Dataset, Acquired data}{Localization/mapping error and runtime} & \surveytablepair{wheeled (drive unspecified)}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{DR-ICP}~\cite{P_S24}\textsuperscript{\(\dagger\)} & \surveytableinputs{Directional feature selection and weighting.}{LiDAR; capture IMU not integrated} & \surveytablepair{Acquired data, Replay, Sim.}{Tunnel pose error; pure-LiDAR scope} & \surveytablepair{mixed}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{Decoupled registration}~\cite{P_S37}\textsuperscript{\(\dagger\)} & \surveytableinputs{Subspace decoupling and directional preconditioning.}{LiDAR registration constraints} & \surveytablepair{Acquired data, Replay, Numerical}{Registration; missing-information boundary} & \surveytablepair{mixed}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{Semantic neural processes}~\cite{P_S46}\textsuperscript{\(\dagger\)} & \surveytableinputs{Semantic neural-process elevation and uncertainty.}{LiDAR, image semantics, poses} & \surveytablepair{Acquired data}{Elevation error and uncertainty; calibration needed} & \surveytablepair{road vehicle}{Desktop evaluation} \\
+\bottomrule
+\end{tabularx}
+\surveyplatformnote
+\end{table*}

@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-03",
+  "status": "passed",
+  "checkout_source": "Fresh public GitHub clones in sibling directories; publisher PDFs/transcriptions absent",
+  "evidence_commit": "a2eb04837a4881bb4ed1b91d5eab2212301edd8a",
+  "manuscript_commit": "e233dbc38845e6ec927dcacc1843191977749c43",
+  "data_regeneration": "passed; generated files and bibliography match committed content",
+  "main_build": "passed",
+  "supplement_build": "passed",
+  "delivery_verification": {
+    "pages": 27,
+    "corpus_prose_citations": 147,
+    "bibliography_entries": 163,
+    "resolved_bibliography_entries": 163,
+    "unique_labels": 30,
+    "figures": 3,
+    "tables": 8,
+    "unresolved_references": [],
+    "source_artifacts_checked": 147,
+    "local_fulltext_verification": "not-run; use --sources with local PDFs/transcriptions",
+    "source_hash_mismatches": 0,
+    "evaluation_denominator": 144,
+    "evaluation_attribute_counts": {
+      "residual": 106,
+      "designed-degradation": 65,
+      "integrity-reliability": 14,
+      "closed-loop-task": 82
+    },
+    "source_checked_numerical_cases": 7,
+    "displayed_equations_unchanged": 6,
+    "overfull_boxes": 0,
+    "underfull_horizontal_boxes": 10,
+    "underfull_vertical_boxes": 0,
+    "pdf_sha256": "63fcad2dff73e73ceccc8421c3aa5432d2b1467ca44289a3d4a6490e4132a623",
+    "supplement": {
+      "pages": 3,
+      "unique_labels": 7,
+      "figures": 1,
+      "tables": 2,
+      "resolved_bibliography_entries": 10,
+      "unresolved_references": [],
+      "overfull_boxes": 0,
+      "underfull_horizontal_boxes": 1,
+      "underfull_vertical_boxes": 0,
+      "pdf_sha256": "2341c4aef419ac468e8c7f651134579d3b3ea8fba23f9f4d8b931c60aebf6191"
+    },
+    "source_commits": {
+      "manuscript": "e233dbc38845e6ec927dcacc1843191977749c43",
+      "evidence": "a2eb04837a4881bb4ed1b91d5eab2212301edd8a"
+    }
+  },
+  "scope": "Rebuild and public-citation checks; no local publisher-fulltext verification claimed for the public clone."
+}

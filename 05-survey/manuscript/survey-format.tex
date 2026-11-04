@@ -1,0 +1,28 @@
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{cite,amsmath,amssymb,booktabs,array,tabularx,url,textcomp}
+\usepackage{graphicx}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\surveytableformat}{%
+  \footnotesize
+  \setlength{\tabcolsep}{5pt}%
+  \renewcommand{\arraystretch}{1.12}%
+}
+\newcommand{\surveytablepair}[2]{#1\par\textit{#2}}
+\newcommand{\surveytableinputs}[2]{#1\par\textit{Inputs:} #2}
+\newcommand{\surveyplatformnote}{%
+  \par\vspace{3pt}%
+  \parbox{\linewidth}{\footnotesize\raggedright
+    $\dagger$ Road-vehicle, non-wheeled, handheld, or mixed-platform evaluations.}%
+}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{12pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+\setlength{\dblfloatsep}{10pt plus 2pt minus 2pt}
+\DeclareUnicodeCharacter{2010}{-}
+\DeclareUnicodeCharacter{2011}{-}
+\DeclareUnicodeCharacter{2013}{--}
+\DeclareUnicodeCharacter{2014}{---}
+\DeclareUnicodeCharacter{2212}{-}
+\hyphenation{local-iza-tion re-local-iza-tion tra-vers-a-bil-ity multi-robot}

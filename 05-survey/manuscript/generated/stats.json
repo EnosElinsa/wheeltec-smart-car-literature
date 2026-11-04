@@ -1,0 +1,101 @@
+{
+  "source_batch": {
+    "baseline-2026-09-18": 45,
+    "expansion-2026-10-24": 60,
+    "followup-2026-11-02": 15,
+    "ieee-refresh-2026-11-03": 36,
+    "ieee-supplement-2026-11-03": 20,
+    "supplemental": 5,
+    "survey-200plus-2026-11-03": 48
+  },
+  "publication_type": {
+    "conference": 34,
+    "journal": 195
+  },
+  "bibliographic_year": {
+    "2021": 5,
+    "2022": 8,
+    "2023": 9,
+    "2024": 34,
+    "2025": 87,
+    "2026": 86
+  },
+  "survey_module": {
+    "fault-recovery-deployment": 40,
+    "localization-mapping": 66,
+    "multi-robot": 40,
+    "semantic-language-navigation": 30,
+    "traversability-planning-control": 53
+  },
+  "evidence_type": {
+    "closed-loop-hardware": 113,
+    "dataset-playback": 23,
+    "dataset-resource": 5,
+    "numerical": 11,
+    "online-hardware": 12,
+    "recorded-robot-data": 52,
+    "simulation": 12,
+    "survey": 1
+  },
+  "platform_class": {
+    "ackermann": 9,
+    "aerial": 7,
+    "aquatic": 1,
+    "differential-drive": 39,
+    "handheld": 4,
+    "legged": 9,
+    "mixed": 29,
+    "none": 5,
+    "omnidirectional": 5,
+    "road-vehicle": 11,
+    "skid-steer": 29,
+    "tracked": 2,
+    "wheeled-unspecified": 79
+  },
+  "boundary_platform": {
+    "no": 161,
+    "yes": 68
+  },
+  "verification_level": {
+    "full": 23,
+    "light": 206
+  },
+  "evaluation_primary": {
+    "closed-loop-task": 113,
+    "designed-degradation": 3,
+    "integrity-reliability": 8,
+    "residual": 105
+  },
+  "compute_location": {
+    "desktop-offline": 66,
+    "mixed": 28,
+    "not-applicable": 1,
+    "not-reported": 79,
+    "offboard-local": 15,
+    "onboard": 40
+  },
+  "survey_included": {
+    "context": 1,
+    "yes": 228
+  },
+  "evaluation_all": {
+    "closed-loop-task": 129,
+    "designed-degradation": 130,
+    "integrity-reliability": 14,
+    "residual": 160
+  },
+  "evaluation_technical": {
+    "closed-loop-task": 128,
+    "designed-degradation": 130,
+    "integrity-reliability": 14,
+    "residual": 160
+  },
+  "evaluation_denominator": 228,
+  "corpus_count": 229,
+  "indexed_library_count": 231,
+  "internal_reference_count": 2,
+  "citation_scope_sha256": "3011e9c458add2a306b8c7cf7ffacdd0c44f5a79ee01db9964f5df684d88c513",
+  "inclusion_sha256": "c8fe293ccf58fc1acae8b0e80001018e58f0c7a3e0d05fd2bf4154996a521699",
+  "source_index_sha256": "ac235137e34c27a13108dcc205dc93e01046a7b612da95161c594cf6ba9d6afb",
+  "comparison_sha256": "ac7cd92019684365edd98cef1064a08a3c26d01bfaaa0c37e2f433d49359012d"
+}

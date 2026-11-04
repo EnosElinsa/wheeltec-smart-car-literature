@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-03",
+  "user_instruction": "Cite only 2021-2026 work in the manuscript; older works remain internal library references (instruction of 2026-11-03, superseding the earlier five foundational exceptions).",
+  "primary_years": [
+    2021,
+    2026
+  ],
+  "internal_reference_ids": [
+    "X01",
+    "X15"
+  ],
+  "internal_reference_decisions": [
+    {
+      "code": "X01",
+      "year": 1999,
+      "reason": "Historical sliding-mode trajectory-tracking example; recent GP/MPC and uncertainty-aware tracking studies already support the comparison."
+    },
+    {
+      "code": "X15",
+      "year": 2016,
+      "reason": "Historical social inverse-reinforcement-learning example; recent interaction prediction and social/semantic navigation studies support the current comparison."
+    }
+  ],
+  "excluded_background_keys": [
+    "B_Cadena2016",
+    "B_LOAM2014",
+    "B_KITTI2012",
+    "B_TUM2012",
+    "B_Habitat2019",
+    "B_HumanAware2013",
+    "B_Campion1996",
+    "B_DWA1997",
+    "B_TEB2013",
+    "B_Nav22020",
+    "B_CBF2017"
+  ],
+  "excluded_background_reasons": {
+    "B_Cadena2016": "Historical SLAM review; current collaborative and method-specific comparisons suffice for the manuscript scope.",
+    "B_LOAM2014": "Historical estimator example; retain ORB-SLAM3 (2021) and FAST-LIO2 (2022) as recent representative baselines.",
+    "B_KITTI2012": "Historical generic driving benchmark; use recent ground-robot datasets in the evaluation-resource comparison.",
+    "B_TUM2012": "Historical generic RGB-D benchmark; use recent robot-specific dataset resources in the current comparison.",
+    "B_Habitat2019": "Historical simulator citation; discuss simulation requirements through recent evaluated systems.",
+    "B_HumanAware2013": "Historical human-aware navigation survey; current learned-navigation/foundation-model reviews and recent social-navigation studies cover the chosen scope.",
+    "B_Campion1996": "Pre-2021 kinematic classification; the background states the standard rolling-contact models without a historical citation.",
+    "B_DWA1997": "Pre-2021 planner definition; recent studies that use DWA as a comparator are cited instead.",
+    "B_TEB2013": "Pre-2021 planner definition; recent studies that use TEB as a comparator or recovery basis are cited instead.",
+    "B_Nav22020": "Pre-2021 system paper; recent ROS 2 and behavior-tree deployments illustrate the navigation-stack architecture.",
+    "B_CBF2017": "Pre-2021 barrier-function source; recent CBF controllers that state the same condition are cited instead."
+  },
+  "foundational_exceptions": {},
+  "preservation": "All indexed PDFs, publisher citations, transcriptions, review cards and historical acquisition selections remain unchanged; excluded background records stay in revision/background-sources/.",
+  "new_ieee_batch": "36 selected 2025-2026 IEEE papers (R01-R36), acquired, transcribed, read at targeted light level and cited in the manuscript (2026-11-03)."
+}

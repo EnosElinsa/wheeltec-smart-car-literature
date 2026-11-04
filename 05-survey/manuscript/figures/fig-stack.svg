@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="516.0pt" height="224.0pt" viewBox="0 0 516.0 224.0">
+<rect x="4.00" y="94.00" width="86.00" height="46.00" rx="2.5" fill="#EEF0F2" stroke="#4A5560" stroke-width="0.7"/>
+<rect x="4.00" y="94.00" width="86.00" height="12.50" rx="2.5" fill="#4A5560" stroke="none" stroke-width="0.6"/>
+<rect x="4.00" y="102.00" width="86.00" height="4.50" rx="0" fill="#4A5560" stroke="none" stroke-width="0.6"/>
+<text x="8.00" y="103.00" font-family="Helvetica" font-size="6.9" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Measurements</text>
+<text x="8.00" y="115.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Cameras, LiDAR, radar,</text>
+<text x="8.00" y="122.80" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">IMU, wheels, GNSS, UWB</text>
+<rect x="109.50" y="94.00" width="86.00" height="46.00" rx="2.5" fill="#E7EFF9" stroke="#2E6DB4" stroke-width="0.7"/>
+<rect x="109.50" y="94.00" width="86.00" height="12.50" rx="2.5" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<rect x="109.50" y="102.00" width="86.00" height="4.50" rx="0" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<text x="113.50" y="103.00" font-family="Helvetica" font-size="6.9" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">State estimation</text>
+<text x="113.50" y="115.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Pose, covariance,</text>
+<text x="113.50" y="122.80" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">validity, measurement age</text>
+<text x="191.50" y="136.50" font-family="Helvetica" font-size="5.6" font-weight="bold" font-style="normal" text-anchor="end" fill="#2E6DB4">Sec. IV</text>
+<rect x="215.00" y="94.00" width="86.00" height="46.00" rx="2.5" fill="#E7EFF9" stroke="#2E6DB4" stroke-width="0.7"/>
+<rect x="215.00" y="94.00" width="86.00" height="12.50" rx="2.5" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<rect x="215.00" y="102.00" width="86.00" height="4.50" rx="0" fill="#2E6DB4" stroke="none" stroke-width="0.6"/>
+<text x="219.00" y="103.00" font-family="Helvetica" font-size="6.9" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Representation</text>
+<text x="219.00" y="115.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Geometry, terrain,</text>
+<text x="219.00" y="122.80" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">semantics, persistence</text>
+<text x="297.00" y="136.50" font-family="Helvetica" font-size="5.6" font-weight="bold" font-style="normal" text-anchor="end" fill="#2E6DB4">Sec. IV</text>
+<rect x="320.50" y="94.00" width="86.00" height="46.00" rx="2.5" fill="#E2F3F0" stroke="#1B8A7A" stroke-width="0.7"/>
+<rect x="320.50" y="94.00" width="86.00" height="12.50" rx="2.5" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<rect x="320.50" y="102.00" width="86.00" height="4.50" rx="0" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<text x="324.50" y="103.00" font-family="Helvetica" font-size="6.9" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Planning</text>
+<text x="324.50" y="115.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Route, trajectory,</text>
+<text x="324.50" y="122.80" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">risk and feasibility</text>
+<text x="402.50" y="136.50" font-family="Helvetica" font-size="5.6" font-weight="bold" font-style="normal" text-anchor="end" fill="#1B8A7A">Sec. V</text>
+<rect x="426.00" y="94.00" width="86.00" height="46.00" rx="2.5" fill="#E2F3F0" stroke="#1B8A7A" stroke-width="0.7"/>
+<rect x="426.00" y="94.00" width="86.00" height="12.50" rx="2.5" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<rect x="426.00" y="102.00" width="86.00" height="4.50" rx="0" fill="#1B8A7A" stroke="none" stroke-width="0.6"/>
+<text x="430.00" y="103.00" font-family="Helvetica" font-size="6.9" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Control</text>
+<text x="430.00" y="115.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Feasible wheel commands</text>
+<text x="430.00" y="122.80" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">under actuator limits</text>
+<text x="508.00" y="136.50" font-family="Helvetica" font-size="5.6" font-weight="bold" font-style="normal" text-anchor="end" fill="#1B8A7A">Sec. V</text>
+<polygon points="109.50,121.00 104.90,122.93 104.90,119.07" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="90.00,121.00 104.90,121.00" fill="none" stroke="#222222" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="215.00,121.00 210.40,122.93 210.40,119.07" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="195.50,121.00 210.40,121.00" fill="none" stroke="#222222" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="320.50,121.00 315.90,122.93 315.90,119.07" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="301.00,121.00 315.90,121.00" fill="none" stroke="#222222" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="426.00,121.00 421.40,122.93 421.40,119.07" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="406.50,121.00 421.40,121.00" fill="none" stroke="#222222" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="215.00" y="28.00" width="86.00" height="42.00" rx="2.5" fill="#FBF1DF" stroke="#B9770E" stroke-width="0.7"/>
+<rect x="215.00" y="28.00" width="86.00" height="12.50" rx="2.5" fill="#B9770E" stroke="none" stroke-width="0.6"/>
+<rect x="215.00" y="36.00" width="86.00" height="4.50" rx="0" fill="#B9770E" stroke="none" stroke-width="0.6"/>
+<text x="219.00" y="37.00" font-family="Helvetica" font-size="6.9" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Teammates</text>
+<text x="219.00" y="49.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Shared maps, poses,</text>
+<text x="219.00" y="56.80" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">allocations</text>
+<text x="297.00" y="66.50" font-family="Helvetica" font-size="5.6" font-weight="bold" font-style="normal" text-anchor="end" fill="#B9770E">Sec. VII</text>
+<rect x="320.50" y="28.00" width="86.00" height="42.00" rx="2.5" fill="#F0E8F6" stroke="#7A4FA0" stroke-width="0.7"/>
+<rect x="320.50" y="28.00" width="86.00" height="12.50" rx="2.5" fill="#7A4FA0" stroke="none" stroke-width="0.6"/>
+<rect x="320.50" y="36.00" width="86.00" height="4.50" rx="0" fill="#7A4FA0" stroke="none" stroke-width="0.6"/>
+<text x="324.50" y="37.00" font-family="Helvetica" font-size="6.9" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Task interpretation</text>
+<text x="324.50" y="49.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Goals, language,</text>
+<text x="324.50" y="56.80" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">social preferences</text>
+<text x="402.50" y="66.50" font-family="Helvetica" font-size="5.6" font-weight="bold" font-style="normal" text-anchor="end" fill="#7A4FA0">Sec. VI</text>
+<polygon points="258.00,94.00 256.32,90.00 259.68,90.00" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polygon points="258.00,70.00 259.68,74.00 256.32,74.00" fill="#222222" stroke="none" stroke-width="0.6"/>
+<line x1="258.00" y1="74.00" x2="258.00" y2="76.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="258.00" y1="78.40" x2="258.00" y2="81.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="258.00" y1="82.80" x2="258.00" y2="85.40" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="258.00" y1="87.20" x2="258.00" y2="89.80" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<polygon points="363.50,94.00 361.82,90.00 365.18,90.00" fill="#222222" stroke="none" stroke-width="0.6"/>
+<line x1="363.50" y1="70.00" x2="363.50" y2="72.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="363.50" y1="74.40" x2="363.50" y2="77.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="363.50" y1="78.80" x2="363.50" y2="81.40" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="363.50" y1="83.20" x2="363.50" y2="85.80" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="363.50" y1="87.60" x2="363.50" y2="90.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<rect x="109.50" y="162.00" width="402.50" height="27.00" rx="2.5" fill="#F8E6E8" stroke="#B23A48" stroke-width="0.7"/>
+<rect x="109.50" y="162.00" width="118.00" height="27.00" rx="2.5" fill="#B23A48" stroke="none" stroke-width="0.6"/>
+<text x="114.50" y="173.00" font-family="Helvetica" font-size="6.9" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Supervision and recovery</text>
+<text x="114.50" y="183.00" font-family="Helvetica" font-size="5.8" font-weight="bold" font-style="normal" text-anchor="start" fill="#FFFFFF">Sec. VIII</text>
+<text x="235.50" y="173.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">Monitor assumptions and integrity; request information;</text>
+<text x="235.50" y="182.50" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#222222">slow, stop, reinitialize, replan, reassign, or escalate</text>
+<polygon points="152.50,162.00 150.82,158.00 154.18,158.00" fill="#222222" stroke="none" stroke-width="0.6"/>
+<line x1="152.50" y1="140.00" x2="152.50" y2="142.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="152.50" y1="144.40" x2="152.50" y2="147.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="152.50" y1="148.80" x2="152.50" y2="151.40" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="152.50" y1="153.20" x2="152.50" y2="155.80" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="152.50" y1="157.60" x2="152.50" y2="158.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<polygon points="363.50,140.00 365.18,144.00 361.82,144.00" fill="#222222" stroke="none" stroke-width="0.6"/>
+<line x1="363.50" y1="162.00" x2="363.50" y2="159.40" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="363.50" y1="157.60" x2="363.50" y2="155.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="363.50" y1="153.20" x2="363.50" y2="150.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="363.50" y1="148.80" x2="363.50" y2="146.20" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="363.50" y1="144.40" x2="363.50" y2="144.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<polygon points="469.00,140.00 470.68,144.00 467.32,144.00" fill="#222222" stroke="none" stroke-width="0.6"/>
+<line x1="469.00" y1="162.00" x2="469.00" y2="159.40" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="469.00" y1="157.60" x2="469.00" y2="155.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="469.00" y1="153.20" x2="469.00" y2="150.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="469.00" y1="148.80" x2="469.00" y2="146.20" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="469.00" y1="144.40" x2="469.00" y2="144.00" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<polygon points="47.00,140.00 48.93,144.60 45.07,144.60" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="512.00,121.00 514.50,121.00 514.50,200.00 47.00,200.00 47.00,144.60" fill="none" stroke="#222222" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="185.94" y="195.00" width="144.12" height="10.00" rx="0" fill="#FFFFFF" stroke="none" stroke-width="0.6"/>
+<text x="258.00" y="202.20" font-family="Helvetica" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="middle" fill="#5B6570">Executed motion changes the next observations</text>
+<rect x="4.00" y="58.00" width="116.23" height="21.00" rx="10.5" fill="#FFFFFF" stroke="#222222" stroke-width="0.6"/>
+<polygon points="13.50,64.54 9.54,71.74 17.46,71.74" fill="#222222" stroke="none" stroke-width="0.6"/>
+<text x="13.50" y="71.09" font-family="Helvetica" font-size="5.184" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">!</text>
+<text x="21.00" y="67.00" font-family="Helvetica" font-size="6.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Sensing and estimation</text>
+<text x="21.00" y="75.00" font-family="Helvetica" font-size="5.8" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">texture, geometry, bias, association</text>
+<polygon points="47.00,94.00 45.40,90.20 48.60,90.20" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="47.00,79.00 47.00,90.20" fill="none" stroke="#222222" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="131.50,94.00 129.90,90.20 133.10,90.20" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="120.23,68.50 131.50,68.50 131.50,90.20" fill="none" stroke="#222222" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="4.00" y="28.00" width="128.80" height="21.00" rx="10.5" fill="#FFFFFF" stroke="#222222" stroke-width="0.6"/>
+<polygon points="13.50,34.54 9.54,41.74 17.46,41.74" fill="#222222" stroke="none" stroke-width="0.6"/>
+<text x="13.50" y="41.09" font-family="Helvetica" font-size="5.184" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">!</text>
+<text x="21.00" y="37.00" font-family="Helvetica" font-size="6.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Environment and map change</text>
+<text x="21.00" y="45.00" font-family="Helvetica" font-size="5.8" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">moving agents, aged or moved structure</text>
+<polygon points="215.00,101.00 211.20,102.60 211.20,99.40" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="132.80,38.50 209.00,38.50 209.00,101.00 211.20,101.00" fill="none" stroke="#222222" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="397.04" y="2.00" width="114.96" height="21.00" rx="10.5" fill="#FFFFFF" stroke="#222222" stroke-width="0.6"/>
+<polygon points="406.54,8.54 402.58,15.74 410.50,15.74" fill="#222222" stroke="none" stroke-width="0.6"/>
+<text x="406.54" y="15.09" font-family="Helvetica" font-size="5.184" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">!</text>
+<text x="414.04" y="11.00" font-family="Helvetica" font-size="6.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Communication and compute</text>
+<text x="414.04" y="19.00" font-family="Helvetica" font-size="5.8" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">loss, delay, deadlines, memory</text>
+<polyline points="397.04,12.50 285.00,12.50" fill="none" stroke="#222222" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="390.50,28.00 388.90,24.20 392.10,24.20" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="390.50,12.50 390.50,24.20" fill="none" stroke="#222222" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="285.00,28.00 283.40,24.20 286.60,24.20" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="285.00,12.50 285.00,24.20" fill="none" stroke="#222222" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="410.60" y="56.00" width="101.40" height="21.00" rx="10.5" fill="#FFFFFF" stroke="#222222" stroke-width="0.6"/>
+<polygon points="420.10,62.54 416.14,69.74 424.06,69.74" fill="#222222" stroke="none" stroke-width="0.6"/>
+<text x="420.10" y="69.09" font-family="Helvetica" font-size="5.184" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">!</text>
+<text x="427.60" y="65.00" font-family="Helvetica" font-size="6.4" font-weight="bold" font-style="normal" text-anchor="start" fill="#222222">Terrain and mobility</text>
+<text x="427.60" y="73.00" font-family="Helvetica" font-size="5.8" font-weight="normal" font-style="italic" text-anchor="start" fill="#5B6570">slope, slip, material, actuation</text>
+<polygon points="469.00,94.00 467.40,90.20 470.60,90.20" fill="#222222" stroke="none" stroke-width="0.6"/>
+<polyline points="469.00,77.00 469.00,90.20" fill="none" stroke="#222222" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="162.50" cy="151.00" r="5.2" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="162.50" y="153.40" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">1</text>
+<circle cx="373.50" cy="82.00" r="5.2" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="373.50" y="84.40" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">2</text>
+<circle cx="310.75" cy="111.00" r="5.2" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="310.75" y="113.40" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">3</text>
+<circle cx="268.00" cy="82.00" r="5.2" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="268.00" y="84.40" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">4</text>
+<polyline points="4.00,217.60 22.00,217.60" fill="none" stroke="#222222" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="26.00,217.60 21.50,215.70 21.50,219.50" fill="#222222" stroke="none" stroke-width="0.6"/>
+<text x="30.00" y="220.00" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#5B6570">Main information flow</text>
+<line x1="102.57" y1="217.60" x2="105.17" y2="217.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="106.97" y1="217.60" x2="109.57" y2="217.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="111.37" y1="217.60" x2="113.97" y2="217.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="115.77" y1="217.60" x2="118.37" y2="217.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<line x1="120.17" y1="217.60" x2="122.77" y2="217.60" stroke="#222222" stroke-width="0.8" stroke-linecap="butt"/>
+<text x="128.57" y="220.00" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#5B6570">Exchange or supervision</text>
+<polygon points="214.46,213.55 210.61,220.55 218.31,220.55" fill="#222222" stroke="none" stroke-width="0.6"/>
+<text x="214.46" y="219.92" font-family="Helvetica" font-size="5.04" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">!</text>
+<text x="221.46" y="220.00" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#5B6570">Degradation source and entry point</text>
+<circle cx="336.29" cy="217.60" r="4.6" fill="#C0392B" stroke="#FFFFFF" stroke-width="0.8"/>
+<text x="336.29" y="220.00" font-family="Helvetica" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#FFFFFF">1</text>
+<text x="343.29" y="220.00" font-family="Helvetica" font-size="6.2" font-weight="normal" font-style="normal" text-anchor="start" fill="#5B6570">Open interface examined in Sec. X (numbering as in Fig. 1)</text>
+</svg>

@@ -1,0 +1,99 @@
+\documentclass[journal]{IEEEtran}
+\input{survey-format}
+\usepackage{balance}
+\input{generated/stats}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thepage}{S\arabic{page}}
+\begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
+\raggedbottom
+\title{Supplementary Material:\\Literature Selection and Comparative Evidence}
+\author{}
+\markboth{Wheeled Mobile Robot Autonomy Under Degradation}{Supplementary Material}
+\maketitle
+
+This supplement accompanies \emph{Wheeled Mobile Robot Autonomy Under Degradation: A Survey of Methods and Evaluation}. It provides the selection and assessment details summarized in Section~III and selected numerical comparisons discussed in the technical synthesis. Counts describe the selected literature and do not estimate research-topic prevalence across the field.
+
+\section{Search Coverage and Selection}
+\label{supp:selection}
+
+The initial search emphasized 2021--2026 publications across \LegacyJournals{} journals and \LegacySlices{} journal--year combinations. It yielded \LegacyRecords{} merged records, of which \LegacyReviewable{} had sufficient metadata for title/abstract screening. Language-model-assisted screening used preset topic allocations and stopped after \BaselineCount{} acceptances, leaving \LegacyUnreviewed{} metadata-complete records unassessed. Selection emphasized mechanisms relevant to compact wheeled platforms. The screening order and complete rejection history are unavailable. These missing records and the stopping rule limit the representativeness of the sample.
+
+Additional coverage comprised \SupplementCount{} complementary publications, a \ExpansionCount{}-work thematic sample, \FollowupCount{} studies selected for the four integration questions developed in the survey, \IEEECount{} IEEE publications concerning motion priors, recovery, shared-state diagnosis, and reproducibility, a further \SurveyExpansionCount{} targeted works, and \IEEERefreshCount{} recent IEEE publications. The \SurveyExpansionCount{}-work stage covers degeneracy and map validity, constrained motion and terrain risk, multimodal navigation, communication-aware collaboration, and recovery or online learning. The final stage selected six 2025--2026 IEEE journal or ICRA papers for each of the six themes after an exact-DOI check against the library. Table~\ref{tab:selection} summarizes these additions. The thematic sample contained 45 journal articles and 15 conference papers, with ten works under each of six themes: perception/localization, mapping/exploration, planning/control, multi-robot coordination, semantic navigation, and reliability/deployment. Searches combined technical, scenario, and mechanism terms with citation follow-up. Selection was completed by November 3, 2026, leaving coverage of the 2026 calendar year incomplete.
+
+\begin{table}[!ht]
+\centering
+\caption{Selection stages. Each row contains additional publications.}
+\label{tab:selection}
+\surveytableformat
+\begin{tabularx}{\linewidth}{@{}L{2.1cm}Yr@{}}
+\toprule
+\textbf{Selection} & \textbf{Basis} & \textbf{Works} \\
+\midrule
+Initial sample & Capped journal selection, 2021--2026 & \BaselineCount \\
+\addlinespace[3pt]
+Complementary publications & Four technical studies and one context review & \SupplementCount \\
+\addlinespace[3pt]
+Thematic sample & Ten works under each of six themes & \ExpansionCount \\
+\addlinespace[3pt]
+Integration questions & Four questions on combined navigation functions & \FollowupCount \\
+\addlinespace[3pt]
+Targeted IEEE coverage & Motion priors, recovery, shared-state diagnosis, and reproducibility & \IEEECount \\
+\addlinespace[3pt]
+Further targeted coverage & Map validity, terrain risk, multimodal navigation, collaboration, and adaptation & \SurveyExpansionCount \\
+\addlinespace[3pt]
+Recent IEEE coverage & Six 2025--2026 IEEE journal or ICRA papers per theme & \IEEERefreshCount \\
+\midrule
+\textbf{Total} & & \textbf{\CorpusCount} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\input{generated/table-selected-results}
+
+\subsection{Journal and Conference Sources}
+
+The journal searches covered Automatica, Autonomous Robots, Control Engineering Practice, IEEE Robotics and Automation Letters, IEEE Transactions on Automatic Control, IEEE Transactions on Automation Science and Engineering, IEEE Transactions on Cybernetics, IEEE Transactions on Image Processing, IEEE Transactions on Intelligent Transportation Systems, IEEE Transactions on Intelligent Vehicles, IEEE Transactions on Robotics, Information Fusion, Journal of Field Robotics, Pattern Recognition, Robotics and Autonomous Systems, Science Robotics, and The International Journal of Robotics Research. The 2025--2026 searches covered \QuerySlices{} journal--year combinations. Completion of a search provider's enumeration does not establish omission-free retrieval of the publisher's catalog.
+
+Formal CoRL volumes for 2024 and 2025 and RSS indexes for 2024--2026 were consulted. ICRA/IROS papers were assessed individually, without exhaustive enumeration of their proceedings. Complete enumeration of a formal CoRL 2026 volume was not established. Overlapping results from different search sources are not independent screening denominators.
+
+\section{Eligibility and Publication Scope}
+\label{supp:eligibility}
+
+Eligible publications include journal articles and main-conference papers concerning wheeled mobile robots or autonomy methods relevant to the navigation problems examined in the survey. Preprints and established conference-to-journal extensions are counted as one work, identified by title, authors, DOI or proceedings identifier, venue, and year. Publication-year statistics use formal volume years, whereas bibliography entries retain publishers' citation years, which can instead refer to online publication.
+
+The selected literature contains \JournalCount{} journal articles and \ConferenceCount{} conference papers: \CoreCount{} technical studies and one context review on learned navigation~\cite{P_X04}. All corpus works are from 2021--2026, and two older examples remain only in the internal library. The \BackgroundCount{} additional references are representative estimators and complementary reviews published from 2021 to 2025. Earlier foundational sources, including the original dynamic-window, timed-elastic-band, and barrier-function papers, are retained in the internal library and are not cited.
+
+The selected literature includes \BoundaryCount{} works involving road vehicles, other embodiments, handheld or mixed configurations, or no specified physical platform. These works inform mechanism comparisons, with platform differences considered when assessing transfer. The remaining \TargetCount{} works also vary in drivetrain, sensing, and computational resources.
+
+For the technical synthesis, publications are grouped by their principal contribution to localization/mapping, traversability/planning/control, semantic navigation, multi-robot coordination, or fault management. A publication may also inform other areas, although it appears only once in Fig.~\ref{fig:corpus}. These five functional groups differ from the six themes used to allocate the thematic sample.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig-corpus.pdf}
+\caption{Selected publications by year and principal navigation function. Each publication appears once. The distribution reflects purposive sampling and topic quotas.}
+\label{fig:corpus}
+\end{figure}
+
+\section{Assessment and Comparison}
+\label{supp:assessment}
+
+Comparison attributes include the technical mechanism, platform, sensing, computation, experimental setting, baselines, measured outputs, and limitations. For \FullCount{} publications, assessment covered the full paper and numerical tables, whereas for \LightCount{} it was limited to selected method, evaluation, and conclusion passages or existing extracts. Of these \LightCount{} publications, \LegacyLightCount{} assessments were based on earlier extractions and \TargetedLightCount{} on targeted readings. These assessment levels do not provide uniform whole-paper verification across the selected literature.
+
+The \SurveyExpansionCount{} and \IEEERefreshCount{} works of the last two stages received targeted readings with page-located excerpts matched to both the transcription and PDF text. Their evidence cards retain mechanism and protocol conditions. Numbers that the survey reports from these works were rechecked in the PDF text, without rendered-table audits. Three citation records are explicitly derived, including an early-access year correction. One further work has a documented official-title/PDF-title variant. These provenance exceptions remain visible separately from reading depth.
+
+Experimental settings distinguish hardware control, online estimation, recorded robot data, dataset replay, simulation, and numerical studies. Dataset and review publications are identified separately. The technical tables in the survey summarize mechanisms and inputs alongside experimental settings, evaluated quantities, and computation location. Interpretation accounts for external pose, remote computation, low speed, and staged scenes where applicable. Complete-pipeline timing and placement require information beyond processor identity.
+
+Quantitative comparisons retain the reported metrics, baselines, and evaluation conditions. Effect sizes are not pooled across heterogeneous datasets, platforms, or trial units. The main evaluation table summarizes \CoreCount{} technical publications, excluding the context review. It groups overlapping attributes by measurement level, test conditions, and risk or diagnostic assessment. A study may report component and task measures during a degradation test. Purposive selection, uneven assessment depth, and heterogeneous protocols limit the generality of comparative conclusions.
+
+\balance
+\section{Selected Results and Within-Study Comparisons}
+\label{supp:results}
+
+Table~\ref{tab:selected-results} retains the measures and experimental units of seven selected examples. Numerical results were checked against the cited tables or plots. Each comparison concerns the stated scene, baseline, and information available to the method. The rows therefore do not form a cross-study ranking. The examples include changes in performance ordering, added computation, combined-module ablations, and success denominators to clarify the scope of the conclusions drawn in the survey.
+
+\bibliographystyle{IEEEtran}
+\bibliography{ieee-bst-control,refs}
+\end{document}

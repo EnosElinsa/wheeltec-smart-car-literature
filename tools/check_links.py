@@ -1,8 +1,8 @@
 """Check relative Markdown links in the public tree.
 
 Scans every ``.md`` file that is tracked or committable
-(``git ls-files --cached --others --exclude-standard``), except files inside
-``05-survey/manuscript/`` (a separate nested repository). Inline links and
+(``git ls-files --cached --others --exclude-standard``), including the
+manuscript under ``05-survey/manuscript/``. Inline links and
 images (``[text](target)``, ``[text](<target>)``) and reference definitions
 (``[label]: target``) are checked; links in fenced code blocks, inline code,
 and HTML comments are ignored. ``http(s):`` and ``mailto:`` links and pure
@@ -14,7 +14,7 @@ A link is reported as
   the repository;
 * ``local-only`` when it resolves to a gitignored file (``git check-ignore``),
   which is missing from the public tree: PDFs, ``02-fulltext/`` except
-  ``INDEX.md``, the ``99-archive`` zip, ``05-survey/manuscript/``.
+  ``INDEX.md``, the ``99-archive`` zip, and LaTeX build products.
 
 The run prints each problem with file and line, a summary count, and exits
 non-zero when any problem exists.
@@ -37,7 +37,7 @@ from urllib.parse import unquote
 
 from tools.common import REPO_ROOT, git_candidate_files, read_text
 
-SKIP_PREFIXES = ("05-survey/manuscript/",)
+SKIP_PREFIXES: tuple[str, ...] = ()
 _SKIP_TARGET = re.compile(r"^(?:https?:|mailto:|#)", re.I)
 _INLINE = re.compile(r"\]\(\s*(?:<([^>\n]*)>|([^)\s]*))")
 _REFERENCE = re.compile(r"^ {0,3}\[([^\]]+)\]:\s*(?:<([^>\n]*)>|(\S+))")

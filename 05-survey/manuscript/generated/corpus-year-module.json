@@ -1,0 +1,66 @@
+{
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "modules": [
+    "localization-mapping",
+    "traversability-planning-control",
+    "semantic-language-navigation",
+    "multi-robot",
+    "fault-recovery-deployment"
+  ],
+  "labels": [
+    "Localization / mapping",
+    "Planning / control",
+    "Semantic navigation",
+    "Multi-robot",
+    "Reliability / recovery"
+  ],
+  "counts": {
+    "localization-mapping": [
+      2,
+      2,
+      2,
+      9,
+      18,
+      33
+    ],
+    "traversability-planning-control": [
+      3,
+      1,
+      4,
+      9,
+      22,
+      14
+    ],
+    "semantic-language-navigation": [
+      0,
+      0,
+      0,
+      4,
+      15,
+      11
+    ],
+    "multi-robot": [
+      0,
+      2,
+      1,
+      6,
+      8,
+      23
+    ],
+    "fault-recovery-deployment": [
+      0,
+      3,
+      2,
+      6,
+      24,
+      5
+    ]
+  }
+}

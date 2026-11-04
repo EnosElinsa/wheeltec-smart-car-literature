@@ -1,0 +1,2063 @@
+[
+  {
+    "code": "E01",
+    "key": "P_E01",
+    "raw_key": "11260635",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-LODESTAR-E01/citation.bib",
+    "raw_sha256": "19850b3c9eaaa4c34793ef9707230dc21c568efdf9882eab981071abce949f72",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E02",
+    "key": "P_E02",
+    "raw_key": "11661693",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-ToF-Wheel-E02/citation.bib",
+    "raw_sha256": "3a631592b650e2f286c5264ef9e0bdd0da39bd8b6044fac5d113b1ca60b88b5e",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E03",
+    "key": "P_E03",
+    "raw_key": "https://doi.org/10.1002/rob.70200",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-DURAL-E03/citation.bib",
+    "raw_sha256": "2a5897ad67dcccf7b81c7b31f0f24119e2da556c8f63b72673e688d57b921a5e",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E05",
+    "key": "P_E05",
+    "raw_key": "doi:10.1177/02783649261463720",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-Screw-Degeneracy-E05/citation.bib",
+    "raw_sha256": "695ed54291837de934e9e0af7e33520457b853b4623c6c730b5cd0e8b0f13f3b",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E06",
+    "key": "P_E06",
+    "raw_key": "11664132",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-Eq-LRIO-E06/citation.bib",
+    "raw_sha256": "acff7e0ffe933eecaad623f65de85b4bc847cb9dd8eefefda9b8522deed886e6",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E04",
+    "key": "P_E04",
+    "raw_key": "OKAWARA2025104929",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-Neural-Wheel-LIO-E04/citation.bib",
+    "raw_sha256": "3a59ed98bcebe0616af77c05107030ccf01c13d9b0d021a6e38b1271e44e72ac",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E07",
+    "key": "P_E07",
+    "raw_key": "doi:10.1126/scirobotics.adv1818",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-Resilient-Odometry-E07/citation.bib",
+    "raw_sha256": "09a46b8dc7c8ef641223a997dae05974bd1cd20ffb4ccbd749f9932b831563ba",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E08",
+    "key": "P_E08",
+    "raw_key": "10557776",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-MM-LINS-E08/citation.bib",
+    "raw_sha256": "d154baea04fa9d3c6fca8a4eb22b1aab17bddcbc8915142185a34f8a3f046fb8",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E10",
+    "key": "P_E10",
+    "raw_key": "11246999",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-PL-VIWO-E10/citation.bib",
+    "raw_sha256": "1eb2f9a498fc6a8d23d90a0d77c8eb278d579c02a9659404a8e080714673a636",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "X07",
+    "key": "P_X07",
+    "raw_key": "doi:10.1177/02783649241287797",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-EKF-SLAM-integrity-X07/citation.bib",
+    "raw_sha256": "0856c2ba57160deffa6e51030d361261f405be058a877d55c183920c439b7a36",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E09",
+    "key": "P_E09",
+    "raw_key": "10611444",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-DR-LRIO-E09/citation.bib",
+    "raw_sha256": "1e13a6167c453a1d62a7bcbfafab3364881ed32d169a7d90baaed9556747c6d3",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M16",
+    "key": "P_M16",
+    "raw_key": "https://doi.org/10.1002/rob.22392",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-UA-LiDAR-loc-M16/citation.bib",
+    "raw_sha256": "f583f3b84a89261b829326e3cee6a72a1fb37dae5804aa69ca64e0ff1f62542d",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M21",
+    "key": "P_M21",
+    "raw_key": "10457947",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-FusedNet-M21/citation.bib",
+    "raw_sha256": "748aee4447b1ec1afde167b4c23b7a64d4d06b2aa6ee1b1cac4fcce806ab34b2",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M24",
+    "key": "P_M24",
+    "raw_key": "10494859",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-VIWO-MAP-M24/citation.bib",
+    "raw_sha256": "64fac1f6d21353ef3f699d3b97c662b7d4abffc48cacb850d26a0a92bb46a5c9",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M28",
+    "key": "P_M28",
+    "raw_key": "10577499",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-PF-integrity-M28/citation.bib",
+    "raw_sha256": "0f9d89f85522c65b1607275ff399b4424c594f540770ed99a6bfd61d739e4a42",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M34",
+    "key": "P_M34",
+    "raw_key": "10003641",
+    "raw_bibtex": "01-papers/T1-perception-localization/2023-object-relocalization-M34/citation.bib",
+    "raw_sha256": "b372d4eb3859ab6df1e90d02964496125444acafce9db907caa4df837f710773",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M35",
+    "key": "P_M35",
+    "raw_key": "https://doi.org/10.1002/rob.22149",
+    "raw_bibtex": "01-papers/T1-perception-localization/2023-reliable-MCL-M35/citation.bib",
+    "raw_sha256": "bb95a5e9a7be9f08591a1b920027215407730cad5228949a8b402eec6f981a81",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M39",
+    "key": "P_M39",
+    "raw_key": "9801647",
+    "raw_bibtex": "01-papers/T1-perception-localization/2022-slip-aware-fusion-M39/citation.bib",
+    "raw_sha256": "c5de11aba34ed688e016398919841eb88011415834ae3e8e25392425b6958f82",
+    "formal_year": "2022",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M41",
+    "key": "P_M41",
+    "raw_key": "9664374",
+    "raw_bibtex": "01-papers/T1-perception-localization/2022-M2DGR-M41/citation.bib",
+    "raw_sha256": "6ed983ff74ad32a5e866e9202c168c9cd026c22aaaa9771473f2fdb868693a07",
+    "formal_year": "2022",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M43",
+    "key": "P_M43",
+    "raw_key": "9325926",
+    "raw_bibtex": "01-papers/T1-perception-localization/2021-pose-est-manifold-M43/citation.bib",
+    "raw_sha256": "7366b1a40d844d12e13771620671c79ccab7c17af6d1c604a7733f95151700a5",
+    "formal_year": "2021",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E15",
+    "key": "P_E15",
+    "raw_key": "11288097",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-DynoSAM-E15/citation.bib",
+    "raw_sha256": "4fa54cda3d01c198a7397777d8547475d639d6e9016089179e070d2e0a3d424a",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E16",
+    "key": "P_E16",
+    "raw_key": "11345986",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-ProbPer-LiLo-E16/citation.bib",
+    "raw_sha256": "fdfff0ad7c272d12562bbb71f8d24596760e760b8f5ed9382049560817c0d20e",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E12",
+    "key": "P_E12",
+    "raw_key": "SANSONI2025105059",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-Active-SLAM-Uncertainty-E12/citation.bib",
+    "raw_sha256": "1921d287f97828da17c85dc729cf47ea150ea3afa2ebdf64c98f7e9324a1f9f4",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E13",
+    "key": "P_E13",
+    "raw_key": "SARAVANAN2025105188",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-FIT-SLAM2-E13/citation.bib",
+    "raw_sha256": "891ebd2b632b18af7e7cde95114bb68aa77894e5c23cb9d112e50edfdec55fc2",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E14",
+    "key": "P_E14",
+    "raw_key": "10422987",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-Confidence-Rich-Exploration-E14/citation.bib",
+    "raw_sha256": "7e0a325c37d52dcb45545387c36eff94702db466253aa9d559af29f54f08f21e",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E17",
+    "key": "P_E17",
+    "raw_key": "11196012",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-PG-SLAM-E17/citation.bib",
+    "raw_sha256": "b5df78783716c4d135acd5584c71e8eb9a5cdf4958eabe53bc240f0640596a8b",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E18",
+    "key": "P_E18",
+    "raw_key": "11127618",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-Ephemerality-Mapping-E18/citation.bib",
+    "raw_sha256": "8ce2831c859431562f78baca833aef6aca3274166f4db688febffd68a6470b88",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E19",
+    "key": "P_E19",
+    "raw_key": "11246202",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-NGD-SLAM-E19/citation.bib",
+    "raw_sha256": "4456344b216d7dd928acfdffe6638260e98630e0af69e43118e8c87835cbe3a3",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E20",
+    "key": "P_E20",
+    "raw_key": "11127881",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-JPG-SLAM-E20/citation.bib",
+    "raw_sha256": "cc25fdcc8a07bf8b1ac75bdac17c35c9f5257ac7e2a0194c17e9f27eb8a771dc",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M03",
+    "key": "P_M03",
+    "raw_key": "doi:10.1177/02783649251352000",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-DR-safe-nav-M03/citation.bib",
+    "raw_sha256": "85c788f37f905477be838d79f1231a5f90bbc1d086a48b0db3359f61c12ff5d2",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M05",
+    "key": "P_M05",
+    "raw_key": "10897898",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-FRTree-Planner-M05/citation.bib",
+    "raw_sha256": "a3a55f78b76e671a8b1b943cc46696f4b1e944a98eeaa682059f858419f76480",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E11",
+    "key": "P_E11",
+    "raw_key": "10566021",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2024-Lifelong-3D-Mapping-E11/citation.bib",
+    "raw_sha256": "99f1b76088aedba496962a656a409cf1366f474ed7c2fbcd4642df3fdef9e3ea",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M14",
+    "key": "P_M14",
+    "raw_key": "10734213",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2024-LRAE-M14/citation.bib",
+    "raw_sha256": "fedf7ce3005c91c67ce7a720b33c3368d9d439967ba8ceffd0e50bd8be0aaace",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M22",
+    "key": "P_M22",
+    "raw_key": "10461009",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2024-ST-lidar-nav-M22/citation.bib",
+    "raw_sha256": "0f2fa2b988bd4e6c88f600f4b7899974c8238d8efe754714a9b4ed249ea92534",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M29",
+    "key": "P_M29",
+    "raw_key": "10242384",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2023-CAD-traversability-M29/citation.bib",
+    "raw_sha256": "656c7579ecd97105de1b21bf445f65ff5f8e7553bb265ee62bf722a58ebb7bab",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M30",
+    "key": "P_M30",
+    "raw_key": "10185133",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2023-prescient-nav-M30/citation.bib",
+    "raw_sha256": "8e361057bb2069a21331f6f2d8815847372a3d326a51686cb292e4650202ac6c",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M31",
+    "key": "P_M31",
+    "raw_key": "10057106",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2023-semantic-octree-M31/citation.bib",
+    "raw_sha256": "e77a41237b9e671cc8963e8abd02707978b35041f0970f2a5fcfd33fcba22702",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M40",
+    "key": "P_M40",
+    "raw_key": "9810192",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2022-GA-Nav-M40/citation.bib",
+    "raw_sha256": "59b2b79224a88816a595cd29803c24c6c65e4227890dba62c0e55cbeab681287",
+    "formal_year": "2022",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M42",
+    "key": "P_M42",
+    "raw_key": "9468918",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2021-sim-to-real-DRL-M42/citation.bib",
+    "raw_sha256": "517ea3a506554f16926ee88e82c4c710a9186aa74354b496c7e7d9a267ed6adf",
+    "formal_year": "2021",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M44",
+    "key": "P_M44",
+    "raw_key": "FANG2021107822",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2021-vislam-healthcare-M44/citation.bib",
+    "raw_sha256": "142dac01dcea2099e729661431e213a9c432beeeb86f511879e1b076b94a4979",
+    "formal_year": "2021",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M45",
+    "key": "P_M45",
+    "raw_key": "9345478",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2021-lifelong-nav-M45/citation.bib",
+    "raw_sha256": "6761173711a6a6dfdd0cd19d69e3f86e2d2e24a94689efae9cbb937e2242e1aa",
+    "formal_year": "2021",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E21",
+    "key": "P_E21",
+    "raw_key": "11480935",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-Cloud-MPC-UGV-E21/citation.bib",
+    "raw_sha256": "311f66f3919637b3fef3cf2e89677a8f086bdd75b4646071ea599c557c9a9c2b",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E28",
+    "key": "P_E28",
+    "raw_key": "IngleP-RSS-26",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-Env-Risk-Learning-E28/citation.bib",
+    "raw_sha256": "5c7e436691fb56753375a728d6943fddfc77e8f46310a58a77e065a2f5a91142",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "X12",
+    "key": "P_X12",
+    "raw_key": "11675829",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-mission-gain-planning-X12/citation.bib",
+    "raw_sha256": "1f065c10a534c3665a4b8d1951cd75c2b90ca092f591891adc7843c29b4b8ea9",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E22",
+    "key": "P_E22",
+    "raw_key": "KEYUMARSI2025105132",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-CECBF-E22/citation.bib",
+    "raw_sha256": "20fdcffe2661430769be2cf0f6287fffac5bd95966a4bb342ec84a034e2bd964",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E23",
+    "key": "P_E23",
+    "raw_key": "11112576",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-DMP-CBF-E23/citation.bib",
+    "raw_sha256": "68e7c067520c2e3e8b7190370d3d3d62d25b05cd0f257c555d173b8cfd36c98d",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E25",
+    "key": "P_E25",
+    "raw_key": "doi:10.1177/02783649251315203",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Scenario-Safe-Planning-E25/citation.bib",
+    "raw_sha256": "32e6fea1fc84f4a0c36ffc0e9653e1ac89e9375d5218ee2e0bfa3f5b68b5ec6b",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E27",
+    "key": "P_E27",
+    "raw_key": "11246134",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-CVaR-CBF-E27/citation.bib",
+    "raw_sha256": "01a275c63ba3c3358525c8b6fab5751493e6c06ffdfc92da574486688bbb182f",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E29",
+    "key": "P_E29",
+    "raw_key": "10872802",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Robust-CBF-Uncertainty-E29/citation.bib",
+    "raw_sha256": "b65e100b035091b039e1b2d48d4480ab08883b6e2d66dcc0ed2c837e50c53e6f",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E30",
+    "key": "P_E30",
+    "raw_key": "11018429",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-DHOCBF-Safe-RL-E30/citation.bib",
+    "raw_sha256": "95c8bc01670199641a723aa65a63729e669c42e5682011d9a48430e1ec2f3d03",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M04",
+    "key": "P_M04",
+    "raw_key": "SOUALHI2025104920",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-motion-perc-DRL-M04/citation.bib",
+    "raw_sha256": "808f20c75fbfa96a8cd3a915664bfe6d84e5b0886b9cc62bc5362eb318d8e6af",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M06",
+    "key": "P_M06",
+    "raw_key": "10638222",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-DRL-collision-avoid-M06/citation.bib",
+    "raw_sha256": "1145bfeee316f6abfcc705891a6f41719bdd5ce77700a30546d7b52ac2500598",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M08",
+    "key": "P_M08",
+    "raw_key": "10926876",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-NAMR-RRT-M08/citation.bib",
+    "raw_sha256": "3407a7554f86c1441802a975cabed5265702544ea7c0dd8d99f63154ea9ff275",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M09",
+    "key": "P_M09",
+    "raw_key": "11003108",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-CPLC-OWMR-M09/citation.bib",
+    "raw_sha256": "383711711a846baeea3162391e2e9a313a5b4b8aed6b7336daa3c8793cc23e7e",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M12",
+    "key": "P_M12",
+    "raw_key": "11027468",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-terrain-aware-plan-M12/citation.bib",
+    "raw_sha256": "10dbe5fa90e6ff5879f5d99bd13016e6722cb0f6e56668c6dd8f045182c4872d",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E24",
+    "key": "P_E24",
+    "raw_key": "10522835",
+    "raw_bibtex": "01-papers/T3-planning-control/2024-HOCBF-iLQR-E24/citation.bib",
+    "raw_sha256": "f3e1f59f0dfa277ce509c15dbbecd944bdc156f6467623356cb64a6b530aa84a",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E26",
+    "key": "P_E26",
+    "raw_key": "10339852",
+    "raw_bibtex": "01-papers/T3-planning-control/2024-LiDAR-CBF-E26/citation.bib",
+    "raw_sha256": "f8587f977511b11207f859c8a6c9b004779105684e15cb95670ff4401921bd39",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M19",
+    "key": "P_M19",
+    "raw_key": "10504974",
+    "raw_bibtex": "01-papers/T3-planning-control/2024-relaxed-ORCA-M19/citation.bib",
+    "raw_sha256": "53b3ebf42afa9f7c686f101faf4fb246f138f92a0848913fc2861fecb70b558c",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M26",
+    "key": "P_M26",
+    "raw_key": "10320444",
+    "raw_bibtex": "01-papers/T3-planning-control/2024-vegetated-path-gen-M26/citation.bib",
+    "raw_sha256": "0595b3bf660e508e00dda250d6debe852084390560381bf5d3b31908498b91f6",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M27",
+    "key": "P_M27",
+    "raw_key": "10702475",
+    "raw_bibtex": "01-papers/T3-planning-control/2024-remote-UGV-MPC-M27/citation.bib",
+    "raw_sha256": "989d1d45b765eada696acc975e3ab4cf2387c4017036484ba268bac838bde8ab",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M33",
+    "key": "P_M33",
+    "raw_key": "https://doi.org/10.1002/rob.22165",
+    "raw_bibtex": "01-papers/T3-planning-control/2023-LB-MPC-path-M33/citation.bib",
+    "raw_sha256": "7afee6be0d0a88871b381370c1b768c2c87ee1e9b40888a3d734d2792799a444",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "X04",
+    "key": "P_X04",
+    "raw_key": "9409758",
+    "raw_bibtex": "01-papers/T3-planning-control/2021-DRL-nav-review-X04/citation.bib",
+    "raw_sha256": "e48226eef7c979aa14f066fdc61d5c7cc6bcc668ee0ff227667a2b21dd05eef9",
+    "formal_year": "2021",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E32",
+    "key": "P_E32",
+    "raw_key": "11600992",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-WiSER-X-E32/citation.bib",
+    "raw_sha256": "7c20cd42a8700d1fd1a5e7fba6219811b977dd439adb3e7b6dfd7a1c7aec37da",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E33",
+    "key": "P_E33",
+    "raw_key": "11399635",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-4CNet-E33/citation.bib",
+    "raw_sha256": "3019db9adde314231222516f3768a7ceeb33490bd4dc78217f39dfb38ca41848",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E34",
+    "key": "P_E34",
+    "raw_key": "11303573",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Multi-SLAM-LPFE-E34/citation.bib",
+    "raw_sha256": "218badd2bc537e60c70ea90daf2c71da874353132fb5e71ad0375a0ca22de629",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E35",
+    "key": "P_E35",
+    "raw_key": "11543309",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-DMT-CPP-E35/citation.bib",
+    "raw_sha256": "47a6285a8eb4a5e7a6ce852b7ad39041b8e0d5a96a6a2b51261844448b20ac24",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E36",
+    "key": "P_E36",
+    "raw_key": "doi:10.1177/02783649261464202",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Commerge-E36/citation.bib",
+    "raw_sha256": "96a7b5078b5bfd6ea669232c2dfba2f139ae789074d8b7d18186faa74b98b07e",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E37",
+    "key": "P_E37",
+    "raw_key": "11673300",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Async-Graph-Localization-E37/citation.bib",
+    "raw_sha256": "e5ff1c03bb9e7e27ece9449b02cb62629e46328fb4123f62eb25a803e99c348f",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "X13",
+    "key": "P_X13",
+    "raw_key": "11597963",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-FT-formation-swarm-X13/citation.bib",
+    "raw_sha256": "70a29c0684edf8863b17572239414861c08c75729f010b3f777d71c10483c2d4",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E31",
+    "key": "P_E31",
+    "raw_key": "11230622",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2025-SlideSLAM-E31/citation.bib",
+    "raw_sha256": "3a23a3c2a28c3b25c836bac2d29148e4599aa2ad3daf59e402ae8cb28c275dc5",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E38",
+    "key": "P_E38",
+    "raw_key": "LUPERTO2025105137",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2025-Semantic-Rendezvous-E38/citation.bib",
+    "raw_sha256": "6453d221f39af5790939241c6519adfba9821d7278dbb7230798002746022011",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "X08",
+    "key": "P_X08",
+    "raw_key": "10829726",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2025-Riemannian-active-map-X08/citation.bib",
+    "raw_sha256": "f4bbc490f363b49b04eace652c593c03e0edac1434abbb0d861aa4e586dbb0b7",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E39",
+    "key": "P_E39",
+    "raw_key": "10802343",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2024-Intermittent-Rendezvous-E39/citation.bib",
+    "raw_sha256": "9ba50d89d7649f949206e0a3fe4ed2a96ec24a3bae40676a84376b8c7b872c5e",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E40",
+    "key": "P_E40",
+    "raw_key": "McGann-RSS-24",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2024-iMESA-E40/citation.bib",
+    "raw_sha256": "f1db292f3b98f71f5a27d546b13e590e31c7da9b25b0dd6a01b169b4993690f6",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M17",
+    "key": "P_M17",
+    "raw_key": "10155622",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2024-CURE-M17/citation.bib",
+    "raw_sha256": "a46ab23d743957fd203cb04e54d92a8ef5425481240ee5a9397eccd437ec8348",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M25",
+    "key": "P_M25",
+    "raw_key": "10413563",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2024-comm-efficient-explore-M25/citation.bib",
+    "raw_sha256": "043deba2cb6df3862b91f2a2d12c4e158b92687f49dbae3d5dec7537795be0b2",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M32",
+    "key": "P_M32",
+    "raw_key": "9942275",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2023-robust-task-sched-M32/citation.bib",
+    "raw_sha256": "9752537ef69a8d0df21cd54b4d18a4a52209ac8bc1b3a2d79c99b7fb205857ee",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M36",
+    "key": "P_M36",
+    "raw_key": "9834084",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2022-MR-TopoMap-M36/citation.bib",
+    "raw_sha256": "71eb0f390f490f26f9e797ec64936bfe760ab70d076dafde66ff4a6cb65a315d",
+    "formal_year": "2022",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M38",
+    "key": "P_M38",
+    "raw_key": "9740403",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2022-RL-distributed-nav-M38/citation.bib",
+    "raw_sha256": "b938dea24f6ea6fed8c498c9b9a4856406fbce8e5668028158e5f597b4af71f6",
+    "formal_year": "2022",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E41",
+    "key": "P_E41",
+    "raw_key": "11610867",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-SysNav-E41/citation.bib",
+    "raw_sha256": "7c9f5b054bcfe2ab8efe910db2ab9dfa34d5faf920eedcf97a8a6beeb6b59d13",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E42",
+    "key": "P_E42",
+    "raw_key": "11578332",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-TARIC-E42/citation.bib",
+    "raw_sha256": "ed079b010f0bafb59f1fa8b9880ec28d27708395a10cce3b586d08d144b5302e",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E43",
+    "key": "P_E43",
+    "raw_key": "11373887",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-VLM-Social-Path-E43/citation.bib",
+    "raw_sha256": "4efbb7b9e3999e8a088c1fdb755bdc1bae764ce5f3e3f0f45d46c85a2a91c7bb",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E45",
+    "key": "P_E45",
+    "raw_key": "11345948",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-CAUSALNAV-E45/citation.bib",
+    "raw_sha256": "a835cd44b612ec8ce364ea69bfdbd0643e866ddd6dfd2e9902cd79c09737d19d",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E46",
+    "key": "P_E46",
+    "raw_key": "11543204",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-G-DRAGON-E46/citation.bib",
+    "raw_sha256": "9ac03d100e042a827d1a387b37ef1bdb2dac7fd25ff008cef42ebe2f57e76a40",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E44",
+    "key": "P_E44",
+    "raw_key": "11091457",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-OpenIN-E44/citation.bib",
+    "raw_sha256": "176ba47fcb9f1a1fe66bb02897ee2d73d54856532713ceff93938ada5882fc3c",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E49",
+    "key": "P_E49",
+    "raw_key": "ZhangJ-RSS-25",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-Uni-NaVid-E49/citation.bib",
+    "raw_sha256": "16c36eeafe98f20ef62be4978b2720254a0cce0444bf6287121379bd77c0df5f",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E50",
+    "key": "P_E50",
+    "raw_key": "pmlr-v270-hirose25b",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-LeLaN-E50/citation.bib",
+    "raw_sha256": "6c772952f154a228dd725548c1d3f1c0fd8ebde966b1aea8eafffab72f067f6f",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M02",
+    "key": "P_M02",
+    "raw_key": "11204506",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-DualMap-M02/citation.bib",
+    "raw_sha256": "6ed859eb655531273affd6de95c9fcc60c77d52bb4a8d48d3730e5a5feebe38f",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M07",
+    "key": "P_M07",
+    "raw_key": "10777573",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-VLM-Social-Nav-M07/citation.bib",
+    "raw_sha256": "a98edfb1472f23d893bcd59ae0ea04fdfd6190502e72a9f85701109e321015ee",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M10",
+    "key": "P_M10",
+    "raw_key": "11146857",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-OPEN-M10/citation.bib",
+    "raw_sha256": "81106c45d2fa5cfc21334ff983934d6fc542938f570e57a452d90fe78f881a73",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E47",
+    "key": "P_E47",
+    "raw_key": "10610712",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2024-VLFM-E47/citation.bib",
+    "raw_sha256": "71da866e6b5156983ab1d822e9c45e386a9cc6ebc9b3aa38d058340d2bcdd247",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E48",
+    "key": "P_E48",
+    "raw_key": "Werby-RSS-24",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2024-HOV-SG-E48/citation.bib",
+    "raw_sha256": "28a98a8e69c2694f7887ea9a8e8fb81b9bb0b035a5f36361427545183f7100fa",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M18",
+    "key": "P_M18",
+    "raw_key": "10496163",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2024-Safe-VLN-M18/citation.bib",
+    "raw_sha256": "5f4d5ee265cb29bcf0bab1e653a69739aac2e045b13ccbe7665a77c94b82e2e9",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M20",
+    "key": "P_M20",
+    "raw_key": "10373065",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2024-LLM-zero-shot-nav-M20/citation.bib",
+    "raw_sha256": "11898bcce3444bbb9709c1e1b971804ccbcb81e078852ee4c727e4316143b7b6",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E53",
+    "key": "P_E53",
+    "raw_key": "11551518",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2026-Lie-Group-Fault-Localization-E53/citation.bib",
+    "raw_sha256": "418fe61c29546fc978b47c7cbe0c57bd6c6f3dbb2ea5046cb98f1f5833a9ecee",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E56",
+    "key": "P_E56",
+    "raw_key": "11373724",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2026-LiteFT-PR-E56/citation.bib",
+    "raw_sha256": "702d6cefff53ac0fd1f8625b9b938aac3b3d4e199f66a94321f5995a7039d604",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M01",
+    "key": "P_M01",
+    "raw_key": "11224769",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2026-FT-UGV-tracking-M01/citation.bib",
+    "raw_sha256": "9995b233bb75bb2430cfa917d9a2f8ba77075b29c9a4a258817d19064723bf9e",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E51",
+    "key": "P_E51",
+    "raw_key": "VERMA2025106304",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-KSFD-E51/citation.bib",
+    "raw_sha256": "3a0cfcf4c7bb3f43361bf088916c1a5dad88f1fbdbd483c5598edd15b12b7676",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E52",
+    "key": "P_E52",
+    "raw_key": "10910118",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Adaptive-Fault-Control-E52/citation.bib",
+    "raw_sha256": "6c5d7df5d726df41af89eed03685b7b76aaf3e090f235e894da0a3890dfd0686",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E54",
+    "key": "P_E54",
+    "raw_key": "10930535",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Conformal-Anomaly-E54/citation.bib",
+    "raw_sha256": "0e62a8e3ba2508553f9fd9268c609e6fd66d3c63717cffe72e416d62625c9c1e",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E55",
+    "key": "P_E55",
+    "raw_key": "11006510",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Fault-Attack-CBF-E55/citation.bib",
+    "raw_sha256": "a76f5fe64f6671af4e5b6225b68792bfb44a4f65a0246030a091bf8b5b55b747",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E57",
+    "key": "P_E57",
+    "raw_key": "Naveed2025",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-mEclares-E57/citation.bib",
+    "raw_sha256": "223900b7f176aba4e35e0abd0f2c66ddf53d179a873b5f5154148b66d7617d24",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E58",
+    "key": "P_E58",
+    "raw_key": "10819616",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Persistent-Charging-E58/citation.bib",
+    "raw_sha256": "b3a034e947273f1db01ef36f997b0b2e003fd874f95937600e0ce92fbdac09bc",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E60",
+    "key": "P_E60",
+    "raw_key": "pmlr-v305-ganai25a",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-FORTRESS-E60/citation.bib",
+    "raw_sha256": "8846be4e2c36a9efaf1974a72a6c7192f175dc2d918569571a5d17bc88844e1a",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M11",
+    "key": "P_M11",
+    "raw_key": "10930687",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-CODEI-M11/citation.bib",
+    "raw_sha256": "7bff23cb1445b5d7b8598dde254fa8ecd5cb5b2ed1e5947e8dd698557a446ca6",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M13",
+    "key": "P_M13",
+    "raw_key": "11024226",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-ERPoT-M13/citation.bib",
+    "raw_sha256": "468f49c23420c2827f676e0e00a52239088b0aa8df25c2ee861a5c4ac11d56c4",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "E59",
+    "key": "P_E59",
+    "raw_key": "10610382",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2024-GP-Navigation-Recovery-E59/citation.bib",
+    "raw_sha256": "794b9187d9f26d4bbe087aaead8b4660baf692d87b95899e971136a02fedf65e",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M15",
+    "key": "P_M15",
+    "raw_key": "10433674",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2024-FT-PPC-WMR-M15/citation.bib",
+    "raw_sha256": "7823847431b7e602dd4ea83fee4fa455c93c20230fbcec46eee5c3c0e4da2319",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M23",
+    "key": "P_M23",
+    "raw_key": "10468651",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2024-SS-traversability-M23/citation.bib",
+    "raw_sha256": "7a66285e3dd49d7b6dd8231a0edafe2db0f9feaaaff29bb9f97270be78ddefca",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "M37",
+    "key": "P_M37",
+    "raw_key": "LUPERTO2022104170",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2022-long-term-supervision-M37/citation.bib",
+    "raw_sha256": "e1223eb81c26b72813764d6576cd6eed0c956bb4741f761bf2b9bb2a87ab972e",
+    "formal_year": "2022",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F01",
+    "key": "P_F01",
+    "raw_key": "11021529",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-Line-Integrity-F01/citation.bib",
+    "raw_sha256": "99ee209e66094291df338024d2d03d398ce1f7953d5dff36d1a4fa38c0e3d8b4",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F06",
+    "key": "P_F06",
+    "raw_key": "11106758",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-GSON-F06/citation.bib",
+    "raw_sha256": "3e881532a06aec02f1101a019cfe29c6398177ab227b9e3c4a1cf4b69e4fd253",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F07",
+    "key": "P_F07",
+    "raw_key": "pmlr-v270-agia25a",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Sentinel-F07/citation.bib",
+    "raw_sha256": "d1792b4cc884b886273e0fa5a41d32f2c8e25e90407767c0f83230d59dd7ce82",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F08",
+    "key": "P_F08",
+    "raw_key": "pmlr-v270-dixit25a",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Perceive-Confidence-F08/citation.bib",
+    "raw_sha256": "7aa212e979aa58968da2d2879ac4f00257942eabfe6900784536400a2cf1b706",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F12",
+    "key": "P_F12",
+    "raw_key": "11313787",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Failure-Tracking-F12/citation.bib",
+    "raw_sha256": "dcc06f54dad779769cc785a2671405bfc95d2ab72642f86d79e2222b56b33f38",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F13",
+    "key": "P_F13",
+    "raw_key": "11417164",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-C-CBF-F13/citation.bib",
+    "raw_sha256": "6a6483f002fc2e778ef2d4182a3bd79dc00affc7f9acb3828820d070f4659e1b",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F15",
+    "key": "P_F15",
+    "raw_key": "11005631",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2025-CoVOR-SLAM-F15/citation.bib",
+    "raw_sha256": "e868c519350efe55a7fb91df20bf2067a2fcbb3eb4b0a2952f7edf52cec6d02d",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F02",
+    "key": "P_F02",
+    "raw_key": "10927615",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Event-FTC-F02/citation.bib",
+    "raw_sha256": "7c6317a7e36e239276c87dde401b7c19fbdf4f842ca387e5d15568a1b67f2015",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F04",
+    "key": "P_F04",
+    "raw_key": "10582434",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-Switch-SLAM-F04/citation.bib",
+    "raw_sha256": "29b8270faa289afdbdb94c95b45dbf0769fb1b624e529657d7472fd598cb1923",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F05",
+    "key": "P_F05",
+    "raw_key": "10960724",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-VL-TGS-F05/citation.bib",
+    "raw_sha256": "af21c35fbaa0322f1a42771b0e3a0b925831e922a1c1796f728c699c7816129e",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F10",
+    "key": "P_F10",
+    "raw_key": "Coleman2026",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-Multi-Fidelity-GP-F10/citation.bib",
+    "raw_sha256": "62869fae56a3c231157ac03776b191e24cb5c2da6fd57aa4968f1a28478df9fd",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F14",
+    "key": "P_F14",
+    "raw_key": "Bayer2025",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Cross-Rank-F14/citation.bib",
+    "raw_sha256": "ee7c8ef0b037227f4a325869bf4120aaaeb869326bbfaf5beb79732abfccbde5",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F03",
+    "key": "P_F03",
+    "raw_key": "ESCOURROU2026105402",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Fault-Map-Update-F03/citation.bib",
+    "raw_sha256": "affeae6113555762c8ed185223ea365628c477261d72e8a9762dbd69b5a252be",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F09",
+    "key": "P_F09",
+    "raw_key": "https://doi.org/10.1002/rob.70260",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Terrain-Voronoi-F09/citation.bib",
+    "raw_sha256": "e2cab8a756aee46451e244407f5544a1a1beb676ae227af3f3cb8225f4258def",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "F11",
+    "key": "P_F11",
+    "raw_key": "doi:10.1177/02783649251401224",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-M2UD-F11/citation.bib",
+    "raw_sha256": "b33c3f4d0c4dcc877c22c85dcf55c8cd737f0424fabf7671d14500dcb115e8fa",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N01",
+    "key": "P_N01",
+    "raw_key": "11488584",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-AESF-LIO-N01/citation.bib",
+    "raw_sha256": "b5284e170faf7152a6db4d5e0e7b993249df5f51755e548969410b6e4009d9b3",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N02",
+    "key": "P_N02",
+    "raw_key": "10105944",
+    "raw_bibtex": "01-papers/T1-perception-localization/2023-SE2-LIO-N02/citation.bib",
+    "raw_sha256": "99f84217855253de6c0d78fab4c17e53dc2e5758b7d2dd8d5e0487990abaa385",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N03",
+    "key": "P_N03",
+    "raw_key": "11044427",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-Trace-Slip-N03/citation.bib",
+    "raw_sha256": "a3d8669796dbde7d7d2d458722ca29fff33101b47c1db92de25e3daeb3620b89",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N04",
+    "key": "P_N04",
+    "raw_key": "11266943",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2026-LIO-Reproducibility-N04/citation.bib",
+    "raw_sha256": "1a3e79b64a9a6b4f5ac33009503679e074660e7800190db55b04eca617069d44",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N05",
+    "key": "P_N05",
+    "raw_key": "10577228",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2024-SLAM-Aware-Exploration-N05/citation.bib",
+    "raw_sha256": "0732f6b0efbfe3277e9bee48c6043bf3dc64a7efa1985108c8a66b497a1e3e3f",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N06",
+    "key": "P_N06",
+    "raw_key": "10578334",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2024-Predictive-Data-N06/citation.bib",
+    "raw_sha256": "ab0a71a00bb65490ede91a1452f30970142ee0d3274cdcd993e78ff61f2596ce",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N07",
+    "key": "P_N07",
+    "raw_key": "10802691",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2024-Active-Graph-Exploration-N07/citation.bib",
+    "raw_sha256": "b0fb784eb402e7b298723073c266826b07e8b589a8eb0f7ad16eb6486a8b45de",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N08",
+    "key": "P_N08",
+    "raw_key": "11652930",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-Anisotropic-Exploration-N08/citation.bib",
+    "raw_sha256": "e7250e40289b01f3d4d65b9e1ecfc90ea08cd12d1f64e37c4d7de3fc65a661a6",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N09",
+    "key": "P_N09",
+    "raw_key": "11302789",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-Co-NavGPT-N09/citation.bib",
+    "raw_sha256": "a4af427c9ee586f6bd83edbbb345760adbc8d0a2e6d7506dd47394cd5ad0df8d",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N10",
+    "key": "P_N10",
+    "raw_key": "11419776",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-NMPC-Safe-Learning-N10/citation.bib",
+    "raw_sha256": "6d39e01d2de603bc4365c6f79e78677c040bced13e1417675e5b23b424ac94f2",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N11",
+    "key": "P_N11",
+    "raw_key": "10854616",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2025-Range-Integrity-N11/citation.bib",
+    "raw_sha256": "2ae04b3583be8172f7888746b515fcd0fae51ef9fff64bbb48d4e04f8a1c0be2",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N12",
+    "key": "P_N12",
+    "raw_key": "11302778",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-Spatiotemporal-Tubes-N12/citation.bib",
+    "raw_sha256": "f03a20624a9abdb4962355245e77b25b19379b61847a58037e696a0de0f64a22",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N13",
+    "key": "P_N13",
+    "raw_key": "11091407",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Predictive-Swarm-Faults-N13/citation.bib",
+    "raw_sha256": "04d4174ad0e5b3fb972c41b71dc1719102cdb1f22afd69907685f5b715ab6d74",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N14",
+    "key": "P_N14",
+    "raw_key": "11386870",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-Resilient-Event-MPC-N14/citation.bib",
+    "raw_sha256": "1334c7e4fc742a9eb431acac460cfa4188e2616ece0e53d50893cae7e1e4ffdd",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N15",
+    "key": "P_N15",
+    "raw_key": "10972058",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Resilient-STL-N15/citation.bib",
+    "raw_sha256": "0d1f4161c0edf0d1b4218c2cdc40e7dda3de89a53a98cf527e188f463d1ec8c9",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N16",
+    "key": "P_N16",
+    "raw_key": "10528263",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2024-LPV-Fault-Diagnosis-N16/citation.bib",
+    "raw_sha256": "b3bd07aa73f66c5d8f48aa5c572643665948da62bcc1d139d5851f902a36af90",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N17",
+    "key": "P_N17",
+    "raw_key": "10243138",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2023-BT-Recovery-N17/citation.bib",
+    "raw_sha256": "c54dd3e52ee8909f5fde308e45cd1436158287e4caa4ac78cc37329ad99dfbb7",
+    "formal_year": "2023",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N18",
+    "key": "P_N18",
+    "raw_key": "9720937",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2022-PAAD-N18/citation.bib",
+    "raw_sha256": "7e37d3b2ded52aa82b46ac34d22ef1ce32d3c56eda3b0fae55d4944ed8b1fc3d",
+    "formal_year": "2022",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N19",
+    "key": "P_N19",
+    "raw_key": "10610726",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-Active-Collision-N19/citation.bib",
+    "raw_sha256": "bd9fc087d238ceec13d945e4590c48cbd036a0e00420a9481566e6c8d86ab8e9",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "N20",
+    "key": "P_N20",
+    "raw_key": "10610818",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-DMSA-N20/citation.bib",
+    "raw_sha256": "c35dfd2ddf1021cd3af2ee1e1ebc626da07a89e317aab73e2a1152e194b3119a",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S01",
+    "key": "P_S01",
+    "raw_key": "11479301",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-NVMS-SLAM-S01/citation.bib",
+    "raw_sha256": "e173db07aee6ed4ed917f38c7f552584eb27fdc740c4ee426c56a4e3a939b016",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S02",
+    "key": "P_S02",
+    "raw_key": "HIERHOLZ2026106897",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-Active-Visual-MPC-S02/citation.bib",
+    "raw_sha256": "d3820863b1c9b2505cc8be0f92eeb500af462afd23e2f57cd0b9372efd03c7de",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S03",
+    "key": "P_S03",
+    "raw_key": "10321673",
+    "raw_bibtex": "01-papers/T1-perception-localization/2024-AGLoc-S03/citation.bib",
+    "raw_sha256": "30384e7ac13282b74b5c02a5565fbf12222c82ad3dcabe27a1d8d6bc24a76e04",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S04",
+    "key": "P_S04",
+    "raw_key": "11359586",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Set-Theoretic-Platoon-S04/citation.bib",
+    "raw_sha256": "061f87d5591b637b83d210f2948ccfcd85df295afcc1ea3a1d644c3c822bd1d1",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S05",
+    "key": "P_S05",
+    "raw_key": "11618532",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-Risk-Zone-CBF-S05/citation.bib",
+    "raw_sha256": "1473bf6a53171ffed7f7cb3ced470c6d0b53c7e767a72701e6315756a38c715e",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S06",
+    "key": "P_S06",
+    "raw_key": "11425779",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Fixed-Time-Deadlock-S06/citation.bib",
+    "raw_sha256": "8463993a7c3e96905af8e9665002e6f9f6db731240142620ae8d5e163af3737a",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S07",
+    "key": "P_S07",
+    "raw_key": "11300826",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-Curvature-Vector-Field-S07/citation.bib",
+    "raw_sha256": "d6a2553e5a50263e86c227605c43f885a6dc8ce4f4185a338497802ce07060d6",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S08",
+    "key": "P_S08",
+    "raw_key": "11075828",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Low-Complexity-Tracking-S08/citation.bib",
+    "raw_sha256": "8e14acd5962a0a37ae1660e54fb449b67b103e88a5aa08aa904849aa7c3f94d0",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S09",
+    "key": "P_S09",
+    "raw_key": "10706022",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Topology-Trajectory-S09/citation.bib",
+    "raw_sha256": "83ab6e69698becbbfedd974ade55e177e99d184c1c95c8f635d539c9e2666e6e",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S10",
+    "key": "P_S10",
+    "raw_key": "10321649",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2024-Swarm-SLAM-S10/citation.bib",
+    "raw_sha256": "cd050ba701401f57a7778483bb428f876f52d9f920266260fdedbca33903df4a",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S11",
+    "key": "P_S11",
+    "raw_key": "11159173",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2025-Foundation-Loop-Closing-S11/citation.bib",
+    "raw_sha256": "8689639728a90a1aa5edf4c51a886f44eec5608ce7e636fb0b1847e18cf67f63",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S12",
+    "key": "P_S12",
+    "raw_key": "doi:10.1177/02783649251351658",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-Multimodal-Language-Maps-S12/citation.bib",
+    "raw_sha256": "ca2fb7c75862caf24f46cb011523e8a210f05c8f8143fa28bad6afd415a3cfc2",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S13",
+    "key": "P_S13",
+    "raw_key": "10933547",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-Temporal-Scene-Graph-S13/citation.bib",
+    "raw_sha256": "d04cf9a783ff5446ff5f1a616a9dc15dd43d338803f111d42d84999b5b7f2343",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S14",
+    "key": "P_S14",
+    "raw_key": "pmlr-v270-hirose25a",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-SELFI-S14/citation.bib",
+    "raw_sha256": "40d9fdb7431caa714f7816db319658ae8306d59b7d915d6a68bc749f73147407",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S15",
+    "key": "P_S15",
+    "raw_key": "11284721",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2026-Fixed-Time-FTC-S15/citation.bib",
+    "raw_sha256": "ffb5d348487e90ae8949da0367b2d6adb0802de20f4fb5c35b9b29e7de35b161",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S16",
+    "key": "P_S16",
+    "raw_key": "https://doi.org/10.1002/rob.22602",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Resilient-TEB-S16/citation.bib",
+    "raw_sha256": "19d055e8c7cfde63f3986190fc8409998bb28256e91445fac66243c49bfda438",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S17",
+    "key": "P_S17",
+    "raw_key": "9531464",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2022-Resilient-Energy-Tasks-S17/citation.bib",
+    "raw_sha256": "1cc047e59fadc930d8ae03b85a4814bb9b0dc80d0903ce2a9d9ad342e23ea470",
+    "formal_year": "2022",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S18",
+    "key": "P_S18",
+    "raw_key": "pmlr-v270-paudel25a",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Multi-Strategy-Adaptation-S18/citation.bib",
+    "raw_sha256": "b78a6bea7d0546ed3d264ce1386cf1cb59d46493508ad4ca041d0621cb026a5d",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S19",
+    "key": "P_S19",
+    "raw_key": "https://doi.org/10.1002/rob.22581",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-SLAM-Loop-Costs-S19/citation.bib",
+    "raw_sha256": "81c5bcb46e852e65964eaf95802114dbc599de63b8f63c55aa69a03c8050d162",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S20",
+    "key": "P_S20",
+    "raw_key": "https://doi.org/10.1002/rob.22595",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-Low-Light-SLAM-S20/citation.bib",
+    "raw_sha256": "23a39f2dceef1ea30217c4bcb1063f536ce80fc8e54807459806d8b60bcc262d",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S21",
+    "key": "P_S21",
+    "raw_key": "https://doi.org/10.1002/rob.70136",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-HK-MEMS-S21/citation.bib",
+    "raw_sha256": "95c115aa713421fd2c2656a4645a7cd5df9189a68ab4733d7078cb7e98fea449",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S22",
+    "key": "P_S22",
+    "raw_key": "https://doi.org/10.1002/rob.70159",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-Season-Robust-Orchard-S22/citation.bib",
+    "raw_sha256": "1a8538a185ac7daea1abc344c2f1f9e4115d1c5c955c4fc1ff3713fea218b8bb",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S23",
+    "key": "P_S23",
+    "raw_key": "https://doi.org/10.1002/rob.70323",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-PROMO-Orchard-S23/citation.bib",
+    "raw_sha256": "86097e94cf2f1894a793688da2e49e6dd0a199d2dcd325a1601407ae4b216868",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S24",
+    "key": "P_S24",
+    "raw_key": "wheeltec-S24-qian2026",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-DR-ICP-S24/citation.bib",
+    "raw_sha256": "7e881c827583c8677524de28cc65c5efcf1815372a7bc1a006ed793dca4bdac5",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S25",
+    "key": "P_S25",
+    "raw_key": "wheeltec-S25-zhong2026",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Planned-Synchronization-S25/citation.bib",
+    "raw_sha256": "eb633fb64d3cbbd0beb4779a3f4ef5b1d864d2cf21f60c95f4a6cf8594b64be4",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S26",
+    "key": "P_S26",
+    "raw_key": "wheeltec-S26-zhang2026",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-Map-Representation-Loc-S26/citation.bib",
+    "raw_sha256": "2ef2c05619e6ce265a80c7ccba0bc690201cbc8288be56b9effc282b9fdd22c4",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S27",
+    "key": "P_S27",
+    "raw_key": "BIANCHI2026105230",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Range-Only-SLAM-S27/citation.bib",
+    "raw_sha256": "b53244dcdaf95a9d5957fe35f34ee8b20739689631453517907512483d670683",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S28",
+    "key": "P_S28",
+    "raw_key": "11237184",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Mobile-UWB-Anchors-S28/citation.bib",
+    "raw_sha256": "fbd1a2ed3fc7ec5fb1b271cc06d89a5036d47a8087dc9b35c875d3947bc28f1a",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S29",
+    "key": "P_S29",
+    "raw_key": "11406164",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Bandwidth-SLAM-S29/citation.bib",
+    "raw_sha256": "1ef2526dfffe3ad6ff3971a63ccecdc006da8389248032e1021ce5de65a2d93e",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S30",
+    "key": "P_S30",
+    "raw_key": "11480788",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-Implicit-Voxel-SLAM-S30/citation.bib",
+    "raw_sha256": "128c77703b8a099d458bbd40709b3d7dc74ae474ab149d1a5d5d983169909697",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S31",
+    "key": "P_S31",
+    "raw_key": "10892345",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-Degeneracy-Compensation-S31/citation.bib",
+    "raw_sha256": "8b178f569cbcaf764f99d1b2000b3c4816f9d7e1c4547998bc859f643e093338",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S32",
+    "key": "P_S32",
+    "raw_key": "11595203",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-IMU-Odometer-Calibration-S32/citation.bib",
+    "raw_sha256": "9bc017e54839fe4eff2159366876425b7a1de74cb89fe86546ae395670bde389",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S33",
+    "key": "P_S33",
+    "raw_key": "doi:10.1177/02783649251344967",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-GEODE-S33/citation.bib",
+    "raw_sha256": "58fd11160c8a400473b3821eceb5e4e7def8576b290d6cee63781e54ec0b31bc",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S34",
+    "key": "P_S34",
+    "raw_key": "doi:10.1177/02783649251355966",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-NeuSE-S34/citation.bib",
+    "raw_sha256": "ae7c24feca772b8d7c51e291a9fe898ad8caffbd545f2bdc24f0147657bc5b39",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S35",
+    "key": "P_S35",
+    "raw_key": "doi:10.1177/02783649261449269",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-Density-Map-Loops-S35/citation.bib",
+    "raw_sha256": "d0ae4eb9b2d468543d99ec167b8b4ff766a3da24b06588b195110a245d859c89",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S36",
+    "key": "P_S36",
+    "raw_key": "doi:10.1177/02783649261462593",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-BIM-Loc-S36/citation.bib",
+    "raw_sha256": "3ee71c2e017b9c97a844150ade3bedf5660b26bcf022a50d9b2ddef9807392ef",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S37",
+    "key": "P_S37",
+    "raw_key": "doi:10.1177/02783649261465040",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-DCReg-S37/citation.bib",
+    "raw_sha256": "406177cbd113f76ec8061fde65823a37a72dea7d41f9d87180dcb72f66e662b4",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S38",
+    "key": "P_S38",
+    "raw_key": "10610847",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2024-SCALE-S38/citation.bib",
+    "raw_sha256": "5e12694adeb478d4c113ed5581212e55fa98732af9c5ccd75bacbb4bc1b3edc5",
+    "formal_year": "2024",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S39",
+    "key": "P_S39",
+    "raw_key": "11027320",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-HAM-Nav-S39/citation.bib",
+    "raw_sha256": "318f213c0095e93f0ce55bb0c76639b73a45cd9cc6cdfdfa619ebe6544e05ccb",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S40",
+    "key": "P_S40",
+    "raw_key": "11128264",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-VLM-GroNav-S40/citation.bib",
+    "raw_sha256": "eb01c5fb42aa244b746f5fcaab2a75e1bc64d4603f83efd741180ff2d569589d",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S41",
+    "key": "P_S41",
+    "raw_key": "pmlr-v270-stachowicz25a",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-LiReN-S41/citation.bib",
+    "raw_sha256": "e4c03e95d537460723ed54d68e47e661bbb6e3fe1d3c4a825f09c1f25beb493b",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S42",
+    "key": "P_S42",
+    "raw_key": "pmlr-v270-triest25a",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Velociraptor-S42/citation.bib",
+    "raw_sha256": "7938e6c97815ae9e0dba6e2b53894a90f466e7a73107ba4f39f13b6577544733",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S43",
+    "key": "P_S43",
+    "raw_key": "pmlr-v270-xu25b",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-Mobility-VLA-S43/citation.bib",
+    "raw_sha256": "8adb0188311e6d52250d5679dfa5cd9dce098c0866af8afa0e82615e59b6dca9",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S44",
+    "key": "P_S44",
+    "raw_key": "pmlr-v305-munje25a",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-SocialNav-SUB-S44/citation.bib",
+    "raw_sha256": "9009a4d6ace216144073ba65f612b9fc5b184f84ecbbf8740199dc8a2f391ca3",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S45",
+    "key": "P_S45",
+    "raw_key": "pmlr-v305-dong25a",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-SPARTA-S45/citation.bib",
+    "raw_sha256": "c1e082d29431e94c0a98cde27fec7fb24ca2aeedbd3381cc71d84a2d092629fe",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S46",
+    "key": "P_S46",
+    "raw_key": "pmlr-v305-jung25b",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2025-NP-Elevation-S46/citation.bib",
+    "raw_sha256": "b26af30572e4562584855b5211a42a488bfe1afb70ef01aa04f02268e768af59",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S47",
+    "key": "P_S47",
+    "raw_key": "pmlr-v305-kim25c",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-CARE-S47/citation.bib",
+    "raw_sha256": "f85a31128689d394a9b7c610d5e4f428a66bfb2e92bd3ce3abf6a44bd7b36114",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "S48",
+    "key": "P_S48",
+    "raw_key": "pmlr-v305-yao25a",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Conformal-Crowd-S48/citation.bib",
+    "raw_sha256": "2915e2ddb600fd17205643158f0ab639020a4ec51e4a4a3bbf819ffcadb07fa6",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R01",
+    "key": "P_R01",
+    "raw_key": "11455624",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-Radar-Uncertainty-R01/citation.bib",
+    "raw_sha256": "e98bb32ac6452491e8f2762fd70eb01fb26422d81171b6ebac086997e8b69162",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R02",
+    "key": "P_R02",
+    "raw_key": "10417045",
+    "raw_bibtex": "01-papers/T1-perception-localization/2026-RaLI-Multi-R02/citation.bib",
+    "raw_sha256": "d5157cd30357bef18f90ef36adde8bec3057c278b8697a89915e901473df29b4",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R03",
+    "key": "P_R03",
+    "raw_key": "10654559",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-Ground-Constrained-SLAM-R03/citation.bib",
+    "raw_sha256": "76b784fcbaae692aa7cd7aa602f79a02176cc07d6a57d11fbe5450a3350db2bf",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R04",
+    "key": "P_R04",
+    "raw_key": "10599809",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-WING-R04/citation.bib",
+    "raw_sha256": "8cc62e31b2953df95b947d5afb7ae55d54d726fef7ed7ee943d159981986a54d",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R05",
+    "key": "P_R05",
+    "raw_key": "10874215",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-AirSLAM-R05/citation.bib",
+    "raw_sha256": "53a36259cc85f74cc3deab3eda68d77915a63906bf13a8b8926d1edb66b49b4e",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R06",
+    "key": "P_R06",
+    "raw_key": "10908048",
+    "raw_bibtex": "01-papers/T1-perception-localization/2025-CMRNext-R06/citation.bib",
+    "raw_sha256": "239f7216b43d11f0ea6a9ffa35ee5e14639896ae323e9f6161755d3d4f4439e9",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R07",
+    "key": "P_R07",
+    "raw_key": "11397150",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-Chamelion-R07/citation.bib",
+    "raw_sha256": "52771333bfd41bf7433c678ec14159b94f55d8d36c8841de5895beae6d70894c",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R08",
+    "key": "P_R08",
+    "raw_key": "11352513",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-E2-BKI-R08/citation.bib",
+    "raw_sha256": "e34e23ece4fc18a3bc57a77d9f57ce124b0e5a7d46ce2d8797e85d49b733dcfe",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R09",
+    "key": "P_R09",
+    "raw_key": "11346986",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-Radar-Long-Term-R09/citation.bib",
+    "raw_sha256": "2cc83bcc7e0db2e6612df9526fc5d6ad4b28335b328d8fc3eff19c0248f462e7",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R10",
+    "key": "P_R10",
+    "raw_key": "11347000",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-OMCL-R10/citation.bib",
+    "raw_sha256": "40d647c5188f9825029a4d3de890659642d4bb01ef0948118e7f5ec7de461473",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R11",
+    "key": "P_R11",
+    "raw_key": "11543515",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-LiDAR-Teach-Radar-Repeat-R11/citation.bib",
+    "raw_sha256": "c24e75b20e0390e31837c9543e0df751d9dbfd824a2f953f60092a7c5703a7ac",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R12",
+    "key": "P_R12",
+    "raw_key": "11613536",
+    "raw_bibtex": "01-papers/T2-slam-mapping-exploration/2026-Super4DR-R12/citation.bib",
+    "raw_sha256": "75fd19aaa16509d99559c250b1ddc72d0acc9456f052ab1b0c19f0b182df1c42",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R13",
+    "key": "P_R13",
+    "raw_key": "11668628",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-Terrain-Adaptive-MPC-R13/citation.bib",
+    "raw_sha256": "2486033357b8adff840ef35063d2a290a1800353f10434635445c3a3c4c129ca",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R14",
+    "key": "P_R14",
+    "raw_key": "11283048",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-MonoMPC-R14/citation.bib",
+    "raw_sha256": "e85092afffab5b0060bd512f6a148ec91608a5fb773a301bb748bbb613b42466",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R15",
+    "key": "P_R15",
+    "raw_key": "11488492",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-TRAIL-R15/citation.bib",
+    "raw_sha256": "5c497ff9e560f390236f715ea96562be839f685747fb00b2b9c1372e18cfbf41",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R16",
+    "key": "P_R16",
+    "raw_key": "11305122",
+    "raw_bibtex": "01-papers/T3-planning-control/2026-HEIGHT-R16/citation.bib",
+    "raw_sha256": "c2d0183129698d5770dac9aefc6542fb694beb1b678d5dd9d9e241c533ccf08c",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R17",
+    "key": "P_R17",
+    "raw_key": "11176148",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-Compensation-MPC-R17/citation.bib",
+    "raw_sha256": "c0333d27d868fd79221f5f2730f800fc7515079ef35a6df8ea2ea49fe0d2b221",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R18",
+    "key": "P_R18",
+    "raw_key": "11029153",
+    "raw_bibtex": "01-papers/T3-planning-control/2025-SCOPE-R18/citation.bib",
+    "raw_sha256": "c3d1a8bfe5504df1aeb569ae7389806b5a58d5cb605ee93c6e423023efd584f8",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R19",
+    "key": "P_R19",
+    "raw_key": "11361077",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-CoCoPlan-R19/citation.bib",
+    "raw_sha256": "8cec64a683bc4a9577ad672cbcfaf122d949e94c5ec9099f514f8f65adaaa8bf",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R20",
+    "key": "P_R20",
+    "raw_key": "11358654",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Multi-Proxy-R20/citation.bib",
+    "raw_sha256": "109bc3cf419f3c080b87757308c97cf679a3dd3464a2d206e68d9612ba125dde",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R21",
+    "key": "P_R21",
+    "raw_key": "11543311",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-Hierarchical-Transmission-R21/citation.bib",
+    "raw_sha256": "cc88a8ed55ebd99e05aad9658c5e8a5a74abe1c524075c38732de9d7102bf7c5",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R22",
+    "key": "P_R22",
+    "raw_key": "11613101",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-URGE-R22/citation.bib",
+    "raw_sha256": "1118c0efbb49fb7ad34927f087be0b1d6212e2d30e9fe146d39c7734b23596f6",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R23",
+    "key": "P_R23",
+    "raw_key": "11575119",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2026-riMESA-R23/citation.bib",
+    "raw_sha256": "56dd35e7a5a57257f8552432bab11871cce8d474f2c6aed321267141a1ad020d",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R24",
+    "key": "P_R24",
+    "raw_key": "11018365",
+    "raw_bibtex": "01-papers/T4-multi-robot-coordination/2025-MEF-Explore-R24/citation.bib",
+    "raw_sha256": "a9a33de8b732e09a1d53725229d50af4afe76dc813781090d2465ea4bbbfcc39",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R25",
+    "key": "P_R25",
+    "raw_key": "11560929",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-Sem-NaVAE-R25/citation.bib",
+    "raw_sha256": "c3b77f2210fd9615493be949f83ff26a517a1a4f51a8f71760ba9d6a46a67964",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R26",
+    "key": "P_R26",
+    "raw_key": "11692608",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-VAMOS-R26/citation.bib",
+    "raw_sha256": "232f63c6fd93fcdf26c8a3107ad1160faa9540d407ca7447d2522916e38812ea",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R27",
+    "key": "P_R27",
+    "raw_key": "11346008",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-osmAG-LLM-R27/citation.bib",
+    "raw_sha256": "adb45d45c9030bcb616124ba8450536dfd0e4d5dee98590cf97451c6acfe4b4f",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R28",
+    "key": "P_R28",
+    "raw_key": "11455365",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-VLN-Game-R28/citation.bib",
+    "raw_sha256": "a59872987e1bcc28d41be68119b018b1d1394781a5d0527ca4122cf48f4e4617",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R29",
+    "key": "P_R29",
+    "raw_key": "11128004",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2025-OLiVia-Nav-R29/citation.bib",
+    "raw_sha256": "58877a2ae45e07fa3478bd8f5479babd1f3b173eeb67175c140077a4b78bb7bd",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R30",
+    "key": "P_R30",
+    "raw_key": "11696526",
+    "raw_bibtex": "01-papers/T5-semantic-embodied-navigation/2026-NORM-Nav-R30/citation.bib",
+    "raw_sha256": "dc04b30f2e744343c39e9a6e379c8a0b4019d7866fb851bb204756570fb7ac6f",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R31",
+    "key": "P_R31",
+    "raw_key": "11550187",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2026-Cloud-Edge-System-R31/citation.bib",
+    "raw_sha256": "5c95e35144e885be5e445f397a20eb4131e0596c1a684184d1e8ae3a203f9513",
+    "formal_year": "2026",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R32",
+    "key": "P_R32",
+    "raw_key": "10746315",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Mechanical-Compute-Energy-R32/citation.bib",
+    "raw_sha256": "0ce079d6e4f738c093e88bb4ff9fab5e6f7975240a529d3734fba2a0f5b92381",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R33",
+    "key": "P_R33",
+    "raw_key": "11049022",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Help-Me-Through-R33/citation.bib",
+    "raw_sha256": "95bfa257d724791a3156def113424a5e30ad534f8e6e068bab503f7c7b4f741d",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R34",
+    "key": "P_R34",
+    "raw_key": "10757438",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-Recharge-Monitoring-R34/citation.bib",
+    "raw_sha256": "55c435b7f0e908bb4cb9b6118ed350e93ea503c7ddd2c58e1aa66e2e5ab7b461",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R35",
+    "key": "P_R35",
+    "raw_key": "10989574",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-R-FAC-R35/citation.bib",
+    "raw_sha256": "ea600a9d94513128f4e2736aaf78c52a493122fec32274bb586a27c7265f7bab",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  },
+  {
+    "code": "R36",
+    "key": "P_R36",
+    "raw_key": "10925872",
+    "raw_bibtex": "01-papers/T6-reliability-deployment/2025-RADIUM-R36/citation.bib",
+    "raw_sha256": "b34f2afee4bc47008e2382ba4b54edbf3bbc0c1b39042d9fbee94ee8293ffb9e",
+    "formal_year": "2025",
+    "transformation": "unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained"
+  }
+]

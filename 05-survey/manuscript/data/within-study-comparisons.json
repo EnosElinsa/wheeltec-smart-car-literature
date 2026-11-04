@@ -1,0 +1,90 @@
+[
+  {
+    "code": "E01",
+    "name": "LODESTAR",
+    "source_artifact": "Tables III and V",
+    "physical_pdf_pages": [
+      6,
+      7
+    ],
+    "protocol_measure": "SubT-MRS Long Corridor replay: absolute pose error (APE). Desktop computation averaged across benchmark recordings.",
+    "result": "APE 1.386 m versus 3.113 m for FAST-LIO2; benchmark-average computation 28.69 versus 21.04 ms.",
+    "interpretation": "Selective anchoring and point selection improve this sequence at additional computation cost; no LiDAR-blackout or closed-loop test.",
+    "pdf_sha256": "d7273cc63d09c40322dac46ae4b688611ed70f2a67e20673eb4662b3704a7feb"
+  },
+  {
+    "code": "E13",
+    "name": "FIT-SLAM 2",
+    "source_artifact": "Tables 2 and 4",
+    "physical_pdf_pages": [
+      12,
+      17
+    ],
+    "protocol_measure": "Exploration with simulator poses and common control; completion time, plus Fisher-information timing analysis.",
+    "result": "Cave: 880 versus 1118 s for FAEL; Corridor: 1809 versus 1706 s. Planning: 20.8 ms without and 63.0 ms with Fisher information.",
+    "interpretation": "The ordering changes with the scene. Planner benchmarks and the SLAM/localizability ablation answer different questions.",
+    "pdf_sha256": "be3630d4df526e775f2fbee5945f8f74a8d693669405cd58e367428599074bf0"
+  },
+  {
+    "code": "E25",
+    "name": "Safe Horizon MPC",
+    "source_artifact": "Table 2",
+    "physical_pdf_pages": [
+      11
+    ],
+    "protocol_measure": "100 Gaussian eight-pedestrian simulations; common solver/cost and matched joint-risk specification 0.05; duration mean (SD).",
+    "result": "16.0 (1.9) s versus 18.4 (2.4) s for CC-MPC. Maximum estimated plan collision probabilities: 0.0092 versus 0.0019.",
+    "interpretation": "Faster traversal accompanies less conservative plan risk under a known motion distribution; these are not empirical mission collision rates.",
+    "pdf_sha256": "e63bf86a0c19640905322c7537af5616cafad40e52a09920f17064d0c415dc13"
+  },
+  {
+    "code": "E50",
+    "name": "LeLaN",
+    "source_artifact": "Tables 2 and 3",
+    "physical_pdf_pages": [
+      6,
+      7
+    ],
+    "protocol_measure": "Visible-target navigation: 150 trials, 28 objects, success within 0.2 m; separate 15-trial obstacle ablation.",
+    "result": "Goal success 0.89 versus 0.67 for OWL-v2 + ZoeDepth. With obstacles: arrival 0.60 with versus 0.13 without collision training.",
+    "interpretation": "Target arrival and obstacle handling are separate evaluations; visible-target success does not establish open-world search or a collision-risk bound.",
+    "pdf_sha256": "f05f0d5924a1ea7f790a017c775be439554b5173cd5ce7a29f0dee180dfbb943"
+  },
+  {
+    "code": "F09",
+    "name": "TAPM-IVP",
+    "source_artifact": "Table 2",
+    "physical_pdf_pages": [
+      11,
+      12
+    ],
+    "protocol_measure": "Scene 1 simulation; two robots, ten independent trials per method, common local planner/tracker.",
+    "result": "Success 90% for each robot versus 40% and 30% in the two-robot ablation without partitioning and greedy subgoal selection.",
+    "interpretation": "The ablation supports the combined design, not either module alone. Rates are per robot; hardware demonstrations use two Ackermann vehicles.",
+    "pdf_sha256": "0315f9dfa9eef2382182a91eb1f3be67ec4e5e192b9234b8bff7761dcbb5da7f"
+  },
+  {
+    "code": "E59",
+    "name": "GP-based recovery",
+    "source_artifact": "Fig. 6 and Section V",
+    "physical_pdf_pages": [
+      6
+    ],
+    "protocol_measure": "Ten simulated runs per goal/world; same planner with and without recovery. Counts read from the plotted rates.",
+    "result": "Dense 1 m doorways, goal 0: 8/10 versus 3/10 successes. Sparse 2 m doorways, goal 0: 10/10 for both.",
+    "interpretation": "Recovery benefit depends on the failure setting. The physical demonstrations do not provide a comparable success-rate estimate.",
+    "pdf_sha256": "6d8464fa4a6f69d0de87755d1277d557a2c10f8e7186708836e61d374e121461"
+  },
+  {
+    "code": "M37",
+    "name": "Home deployment",
+    "source_artifact": "Table 3",
+    "physical_pdf_pages": [
+      10
+    ],
+    "protocol_measure": "Ten-home field deployment; three assistive-service types, including requested but unperformed interventions.",
+    "result": "1130 successful, 177 failed, and 232 unperformed interventions out of 1539 requests. Reported success: 86.46% of 1307 attempts.",
+    "interpretation": "The success denominator excludes unperformed requests; availability and assistance conditions remain relevant to service-level interpretation.",
+    "pdf_sha256": "d1ed8bc7e23a8880fd07d1ada0ac8f11d18f23e15fde56878e64880c88128d6f"
+  }
+]

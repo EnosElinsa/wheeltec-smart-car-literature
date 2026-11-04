@@ -1,0 +1,25 @@
+\begin{table*}[!t]
+\centering
+\caption{Selected results and within-study comparisons. Table and figure numbers in the first column refer to the cited papers. Each row retains its own metric and protocol.}
+\label{tab:selected-results}
+\surveytableformat
+\begin{tabularx}{\linewidth}{@{}L{2.8cm}L{4.3cm}L{4.4cm}Y@{}}
+\toprule
+\textbf{Study / source} & \textbf{Protocol and measure} & \textbf{Reported result} & \textbf{Interpretation} \\
+\midrule
+LODESTAR~\cite{P_E01}\par Tables III and V & SubT-MRS Long Corridor replay: absolute pose error (APE). Desktop computation averaged across benchmark recordings. & APE 1.386 m versus 3.113 m for FAST-LIO2; benchmark-average computation 28.69 versus 21.04 ms. & Selective anchoring and point selection improve this sequence at additional computation cost; no LiDAR-blackout or closed-loop test. \\
+\addlinespace[3pt]
+FIT-SLAM 2~\cite{P_E13}\par Tables 2 and 4 & Exploration with simulator poses and common control; completion time, plus Fisher-information timing analysis. & Cave: 880 versus 1118 s for FAEL; Corridor: 1809 versus 1706 s. Planning: 20.8 ms without and 63.0 ms with Fisher information. & The ordering changes with the scene. Planner benchmarks and the SLAM/localizability ablation answer different questions. \\
+\addlinespace[3pt]
+Safe Horizon MPC~\cite{P_E25}\par Table 2 & 100 Gaussian eight-pedestrian simulations; common solver/cost and matched joint-risk specification 0.05; duration mean (SD). & 16.0 (1.9) s versus 18.4 (2.4) s for CC-MPC. Maximum estimated plan collision probabilities: 0.0092 versus 0.0019. & Faster traversal accompanies less conservative plan risk under a known motion distribution; these are not empirical mission collision rates. \\
+\addlinespace[3pt]
+LeLaN~\cite{P_E50}\par Tables 2 and 3 & Visible-target navigation: 150 trials, 28 objects, success within 0.2 m; separate 15-trial obstacle ablation. & Goal success 0.89 versus 0.67 for OWL-v2 + ZoeDepth. With obstacles: arrival 0.60 with versus 0.13 without collision training. & Target arrival and obstacle handling are separate evaluations; visible-target success does not establish open-world search or a collision-risk bound. \\
+\addlinespace[3pt]
+TAPM-IVP~\cite{P_F09}\par Table 2 & Scene 1 simulation; two robots, ten independent trials per method, common local planner/tracker. & Success 90\% for each robot versus 40\% and 30\% in the two-robot ablation without partitioning and greedy subgoal selection. & The ablation supports the combined design, not either module alone. Rates are per robot; hardware demonstrations use two Ackermann vehicles. \\
+\addlinespace[3pt]
+GP-based recovery~\cite{P_E59}\par Fig. 6 and Section V & Ten simulated runs per goal/world; same planner with and without recovery. Counts read from the plotted rates. & Dense 1 m doorways, goal 0: 8/10 versus 3/10 successes. Sparse 2 m doorways, goal 0: 10/10 for both. & Recovery benefit depends on the failure setting. The physical demonstrations do not provide a comparable success-rate estimate. \\
+\addlinespace[3pt]
+Home deployment~\cite{P_M37}\par Table 3 & Ten-home field deployment; three assistive-service types, including requested but unperformed interventions. & 1130 successful, 177 failed, and 232 unperformed interventions out of 1539 requests. Reported success: 86.46\% of 1307 attempts. & The success denominator excludes unperformed requests; availability and assistance conditions remain relevant to service-level interpretation. \\
+\bottomrule
+\end{tabularx}
+\end{table*}

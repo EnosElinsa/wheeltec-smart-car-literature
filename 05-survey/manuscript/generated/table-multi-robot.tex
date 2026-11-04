@@ -1,0 +1,38 @@
+\begin{table*}[t]
+\centering
+\caption{Multi-robot coordination: representative mechanisms, sensing, and evaluation settings.}
+\label{tab:multi-robot}
+\surveytableformat
+\begin{tabularx}{\linewidth}{@{}L{2.7cm}YL{3.35cm}L{3.45cm}@{}}
+\toprule
+\textbf{Work} & \textbf{Mechanism and inputs} & \textbf{Evaluation setting}\par\textit{Evaluated quantities} & \textbf{Platform}\par\textit{Computation} \\
+\midrule
+\textbf{ROAM}~\cite{P_X08} & \surveytableinputs{One-hop consensus for semantic mapping and viewpoint planning.}{RGB-D, LiDAR} & \surveytablepair{Hardware, Sim.}{Distributed mapping and exploration} & \surveytablepair{skid steer}{Onboard} \\
+\addlinespace[3pt]
+\textbf{Active graph exploration}~\cite{P_N07}\textsuperscript{\(\dagger\)} & \surveytableinputs{Submodular loop-edge selection after coverage planning.}{prior topo-metric graph} & \surveytablepair{Sim.}{Simulated coverage and graph objective} & \surveytablepair{none}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{Range integrity}~\cite{P_N11}\textsuperscript{\(\dagger\)} & \surveytableinputs{Range-consistency localization-error reconstruction.}{emulated ranges, reported poses} & \surveytablepair{Online monitor (mixed reality), Sim.}{Error reconstruction with emulated ranges} & \surveytablepair{aerial}{Central ground station; emulated ranges} \\
+\addlinespace[3pt]
+\textbf{Commerge}~\cite{P_E36} & \surveytableinputs{Descriptor matching and scan selection before submap registration.}{3D LiDAR, LIO poses} & \surveytablepair{Acquired data, Replay}{Map-merging error and transmitted data} & \surveytablepair{wheeled (drive unspecified)}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{iMESA}~\cite{P_E40}\textsuperscript{\(\dagger\)} & \surveytableinputs{Incremental local factor graphs with shared-variable consensus.}{odometry and inter-robot factors} & \surveytablepair{Replay, Numerical}{Estimation error with limited communication} & \surveytablepair{mixed}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{Collaborative map repair}~\cite{P_F03}\textsuperscript{\(\dagger\)} & \surveytableinputs{Residual-based fault isolation and correlation-aware map repair.}{LiDAR, wheel odometry; GNSS initialization} & \surveytablepair{Acquired data, Sim.}{Pose/map error and fault isolation} & \surveytablepair{road vehicle}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{TAPM-IVP}~\cite{P_F09} & \surveytableinputs{Terrain-aware 3D Voronoi allocation and subgoal selection.}{LiDAR, A-LOAM poses} & \surveytablepair{Hardware, Sim.}{Success, travel cost, and path duplication} & \surveytablepair{Ackermann}{Onboard} \\
+\addlinespace[3pt]
+\textbf{Failure-aware tracking}~\cite{P_F12}\textsuperscript{\(\dagger\)} & \surveytableinputs{Failure-dependent tracking modes and target-state fusion.}{target range/bearing and inter-robot messages} & \surveytablepair{Hardware, Sim.}{Target-state error during failures} & \surveytablepair{aerial}{Unspecified} \\
+\addlinespace[3pt]
+\textbf{Cross-rank}~\cite{P_F14}\textsuperscript{\(\dagger\)} & \surveytableinputs{Intersection allocation from shared position histories.}{LiDAR localization and low-bandwidth radio} & \surveytablepair{Hardware, Sim.}{Exploration under intermittent reception} & \surveytablepair{legged}{Mixed placement} \\
+\addlinespace[3pt]
+\textbf{CoVOR-SLAM}~\cite{P_F15} & \surveytableinputs{Similarity-pose-graph fusion for monocular scale correction.}{camera, inter-rover UWB ranges} & \surveytablepair{Acquired data, Replay, Sim.}{Pose error and monocular scale correction} & \surveytablepair{wheeled (drive unspecified)}{Desktop evaluation} \\
+\addlinespace[3pt]
+\textbf{Swarm-SLAM}~\cite{P_S10} & \surveytableinputs{Sparse loop prioritization and decentralized inference.}{local odometry, loop observations} & \surveytablepair{Online estimate, Replay}{Online collaborative estimation; team exchange} & \surveytablepair{skid steer}{Onboard} \\
+\addlinespace[3pt]
+\textbf{Planned synchronization}~\cite{P_S25} & \surveytableinputs{Joint motion and observation scheduling.}{relative marker observations, IMU} & \surveytablepair{Hardware, Numerical}{Formation and check-in cost; modeled non-idealities} & \surveytablepair{differential drive}{Onboard} \\
+\addlinespace[3pt]
+\textbf{Bandwidth-efficient SLAM}~\cite{P_S29} & \surveytableinputs{Lossy keyframe selection and lossless coding.}{visual/inertial keyframes} & \surveytablepair{Online estimate, Replay}{Bandwidth/accuracy tradeoff; central back end} & \surveytablepair{wheeled (drive unspecified)}{Mixed placement} \\
+\bottomrule
+\end{tabularx}
+\surveyplatformnote
+\end{table*}

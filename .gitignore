@@ -13,9 +13,10 @@
 99-archive/superseded/
 99-archive/local/
 
-# Manuscript is maintained and published as a separate Git repository.
-# Avoid embedding that repository in the evidence library.
-05-survey/manuscript/
+# Self-authored manuscript outputs and figures are published with the sources.
+!05-survey/manuscript/survey.pdf
+!05-survey/manuscript/supplement.pdf
+!05-survey/manuscript/figures/*.pdf
 
 # Acquisition state, credentials, and temporary extraction folders.
 .env

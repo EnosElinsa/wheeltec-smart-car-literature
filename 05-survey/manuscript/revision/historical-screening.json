@@ -1,0 +1,16 @@
+{
+  "baseline": {
+    "records": 58583,
+    "reviewable": 43086,
+    "selected": 45,
+    "ready_unreviewed": 43041,
+    "rejected_recorded": 0,
+    "completion": "target_satisfied_early_stop",
+    "journal_year_slices": 102,
+    "journal_count": 17,
+    "reviewed_records_available_in_current_archive": false,
+    "accept_reasons_mentioning_R680": 9,
+    "accept_reasons_note": "9 of45 per archived rewrite design, not a quantitative inclusion rule; use R680 as a relevance reference only"
+  },
+  "archive_sha256": "b317c902d7da372aa5585c3bcb5f6744670222f52d64eda4f9343a731061d82d"
+}

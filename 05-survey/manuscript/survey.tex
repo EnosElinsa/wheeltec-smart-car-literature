@@ -1,0 +1,31 @@
+\documentclass[journal]{IEEEtran}
+\input{survey-format}
+\input{generated/stats}
+\begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
+\raggedbottom
+\title{Wheeled Mobile Robot Autonomy Under Degradation: A Survey of Methods and Evaluation}
+\author{}
+\markboth{Wheeled Mobile Robot Autonomy Under Degradation}{Wheeled Mobile Robot Autonomy Under Degradation}
+\maketitle
+\begin{abstract}
+Wheeled mobile robots operate under changing sensing, terrain, map, communication, and computational conditions that violate the assumptions of individual navigation algorithms. Reliable navigation requires estimation, planning, and control to account for these changes jointly, since errors and delays in one component affect decisions elsewhere in the system. This survey compares \CorpusCount{} publications from 2021 to 2026 on localization and mapping, traversability and motion control, semantic navigation, multi-robot coordination, and fault management, organizing them by the navigation assumption that each degradation violates and the information or action that each response changes. Selective sensing and fusion, adaptive motion models, map revision, and constrained action selection provide complementary responses to degradation, whose effectiveness depends on the validity of state estimates, the freshness of information, and the availability of feasible actions. Evaluation practice is compared through the measurement level, the conditions of degradation tests, and the events and assumptions underlying risk or diagnostic claims. The comparison identifies four interfaces that require joint evaluation: localization-triggered recovery, semantic reasoning with fallback under resource limits, terrain decisions conditioned on pose uncertainty, and shared-state acceptance after communication loss and reconnection. Evaluating these interfaces requires linking degradation onset, detection, and executed responses to safety and task performance under matched operating conditions. Further challenges concern transfer across platforms, computational resources, sustained operation, and safety assurance under changing information quality.
+\end{abstract}
+\begin{IEEEkeywords}
+Wheeled mobile robots, robust navigation, sensor fusion, multi-robot systems.
+\end{IEEEkeywords}
+\input{sections/01-introduction}
+\input{sections/02-background}
+\input{sections/03-methodology}
+\input{sections/04-localization}
+\input{sections/05-planning}
+\input{sections/06-semantic}
+\input{sections/07-multi-robot}
+\input{sections/08-reliability}
+\input{sections/09-evaluation}
+\input{sections/10-challenges}
+\input{sections/11-conclusion}
+\IEEEtriggeratref{220}
+\bibliographystyle{IEEEtran}
+\bibliography{ieee-bst-control,refs}
+\end{document}

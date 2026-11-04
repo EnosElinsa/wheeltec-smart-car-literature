@@ -45,7 +45,7 @@ def test_clean_tree_passes(tmp_path):
         "01-papers/T1/x/paper.pdf",
         "02-fulltext/T1/x/paper.md",
         "02-fulltext/T1/x/images/a.jpg",
-        "05-survey/manuscript/survey.tex",
+        "05-survey/manuscript/figures/sub/copied.pdf",
         "99-archive/history.zip",
         "99-archive/superseded/old.csv",
         ".env",
@@ -58,7 +58,9 @@ def test_forbidden_paths_fail(tmp_path, rel):
     assert cpt.failed(report, "report")
 
 
-@pytest.mark.parametrize("rel", ["02-fulltext/INDEX.md", "05-survey/README.md", "99-archive/README.md"])
+@pytest.mark.parametrize("rel", ["02-fulltext/INDEX.md", "05-survey/README.md", "99-archive/README.md",
+                                 "05-survey/manuscript/survey.tex", "05-survey/manuscript/survey.pdf",
+                                 "05-survey/manuscript/figures/fig-taxonomy.pdf"])
 def test_allowed_index_paths(tmp_path, rel):
     write(tmp_path, rel)
     assert not scan(tmp_path, [rel]).by_check("forbidden-path")
@@ -119,12 +121,15 @@ def test_repository_gitignore_excludes_local_material(tmp_path):
         "01-papers/T1/x/citation.bib",
         "03-reviews/T1/x/review.md",
         "99-archive/README.md",
+        "05-survey/manuscript/survey.tex",
+        "05-survey/manuscript/survey.pdf",
+        "05-survey/manuscript/figures/fig-taxonomy.pdf",
     ]
     drop = [
         "01-papers/T1/x/paper.pdf",
         "02-fulltext/T1/x/paper.md",
         "02-fulltext/T1/x/images/a.jpg",
-        "05-survey/manuscript/survey.tex",
+        "05-survey/manuscript/survey.log",
         "99-archive/history-2026-10-25.zip",
         "99-archive/superseded/old.csv",
         ".env",
