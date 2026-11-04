@@ -158,5 +158,21 @@
     "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey cited in Table I, scope from its abstract",
     "title": "Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions",
     "verified_utc": "2026-11-04T12:47:51.057848+00:00"
+  },
+  {
+    "doi": "10.1109/tits.2017.2766768",
+    "key": "B_GNSSIntegrity2018",
+    "raw_record": "revision/background-sources/B_GNSSIntegrity2018.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); background attribution",
+    "title": "GNSS Position Integrity in Urban Environments: A Review of Literature",
+    "verified_utc": "2026-11-04T14:49:55.336397+00:00"
+  },
+  {
+    "doi": "10.1016/j.robot.2023.104493",
+    "key": "B_Nav2Survey2023",
+    "raw_record": "revision/background-sources/B_Nav2Survey2023.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); background attribution",
+    "title": "From the desks of ROS maintainers: A survey of modern &amp; capable mobile robotics algorithms in the robot operating system 2",
+    "verified_utc": "2026-11-04T14:49:55.336397+00:00"
   }
 ]

@@ -1,7 +1,7 @@
 \section{Background}
 \label{sec:background}
 \subsection{Wheeled Platforms and Motion Constraints}
-A wheeled mobile robot moves through driven or steered rolling contacts whose footprint, arrangement, and contact conditions constrain the paths it can execute. Differential-drive robots turn by varying the left and right wheel speeds, skid-steer robots use the same actuation with lateral slip at the contacts, Ackermann vehicles steer the front wheels with a finite minimum turning radius, and omnidirectional platforms generate lateral motion through their wheel arrangement. For a planar reference point with position $(x,y)$ and heading $\psi$, a common idealization is
+A wheeled mobile robot moves through driven or steered rolling contacts whose footprint, arrangement, and contact conditions constrain the paths it can execute. Differential-drive robots turn by varying the left and right wheel speeds, skid-steer robots use the same actuation with lateral slip at the contacts, Ackermann vehicles steer the front wheels with a finite minimum turning radius, and omnidirectional platforms generate lateral motion through their wheel arrangement~\cite{B_Campion1996}. For a planar reference point with position $(x,y)$ and heading $\psi$, a common idealization is
 \begin{equation}
 \dot{x}=v\cos\psi,\qquad \dot{y}=v\sin\psi,\qquad \dot{\psi}=\omega,
 \label{eq:unicycle}
@@ -20,7 +20,7 @@ An ideal bicycle approximation for Ackermann steering instead gives
 where $L$ is the wheelbase and $\delta$ is the steering angle. Slip violates the pure-rolling assumption, wheel calibration affects odometry, and steering and acceleration limits constrain tracking. On uneven ground, suspension, pitch, roll, clearance, traction, and payload further affect feasibility. A planar collision-free path may therefore be physically unsuitable even when localization is accurate.
 
 \subsection{The Navigation Stack and Its Degradation}
-Fig.~\ref{fig:stack} shows the principal functions of a navigation system, the points at which degradation enters, and the interfaces examined in Section~\ref{sec:challenges}. Cameras, color and depth (RGB-D) cameras, LiDAR, radar, inertial measurement units (IMUs), wheel encoders, global navigation satellite system (GNSS) receivers, and ultra-wideband (UWB) ranging supply measurements with calibration parameters and timestamps. The estimator infers robot state from these measurements and motion inputs, the mapping algorithm estimates spatial structure, the planner selects a route or trajectory, and the controller converts that reference into actuator commands. A supervisor can interrupt execution when measurements, models, or resources no longer support the current action. Deployed systems realize these functions through interacting maps, planners, controllers, and recovery behaviors, for example in a robot operating system (ROS) navigation stack with planner fallback~\cite{P_S16} or under behavior-tree supervision~\cite{P_N17}.
+Fig.~\ref{fig:stack} shows the principal functions of a navigation system, the points at which degradation enters, and the interfaces examined in Section~\ref{sec:challenges}. Cameras, color and depth (RGB-D) cameras, LiDAR, radar, inertial measurement units (IMUs), wheel encoders, global navigation satellite system (GNSS) receivers, and ultra-wideband (UWB) ranging supply measurements with calibration parameters and timestamps. The estimator infers robot state from these measurements and motion inputs, the mapping algorithm estimates spatial structure, the planner selects a route or trajectory, and the controller converts that reference into actuator commands. A supervisor can interrupt execution when measurements, models, or resources no longer support the current action. Deployed systems such as the Nav2 stack of the robot operating system (ROS)~\cite{B_Nav22020,B_Nav2Survey2023} realize these functions through interacting maps, planners, controllers, and recovery behaviors, as in planner fallback~\cite{P_S16} or behavior-tree supervision~\cite{P_N17}.
 
 \begin{figure*}[t]
 \centering
@@ -29,14 +29,14 @@ Fig.~\ref{fig:stack} shows the principal functions of a navigation system, the p
 \label{fig:stack}
 \end{figure*}
 
-An estimator can be described through the posterior
+An estimator can be described through the posterior~\cite{B_Cadena2016}
 \begin{equation}
 p(\mathbf{x}_t,\mathcal{M}\mid\mathbf{z}_{1:t},\mathbf{u}_{1:t}),
 \label{eq:belief}
 \end{equation}
 where $\mathbf{x}_t$ is the robot state, $\mathcal{M}$ is the map, and $\mathbf{z}_{1:t}$ and $\mathbf{u}_{1:t}$ denote observation and motion-input sequences available through time $t$. Localization estimates state relative to a given reference, whereas SLAM estimates state and map jointly, commonly through visual--inertial odometry (VIO) or LiDAR--inertial odometry (LIO). ORB-SLAM3~\cite{B_ORBSLAM32021} and FAST-LIO2~\cite{B_FASTLIO22022} are representative visual and LiDAR--inertial systems on which several reviewed methods build. Loop closures constrain revisited places, although an incorrect association can introduce correlated errors into many states. Downstream decisions may therefore require the covariance, association confidence, and age of an estimate as well as its mean. Since geometric, topological, and semantic representations retain different information, a representation sufficient for one decision can be insufficient for another. A place graph may support a long route while omitting a small obstacle. Similarly, a terrain label may describe appearance without establishing traction for a loaded vehicle.
 
-In local planning, the dynamic window approach (DWA) searches admissible velocity commands, timed-elastic-band (TEB) optimization adjusts a sequence of poses and timing variables, and model predictive control (MPC) repeatedly solves a finite-horizon control problem. DWA and TEB remain common comparators for the learned and predictive local planners evaluated in recent studies~\cite{P_M06,P_M30}. A controller using a control barrier function (CBF) constrains inputs to keep the state within an admissible set under stated assumptions~\cite{P_E24,P_E26}. For a control-affine model $\dot{\mathbf{x}}=f(\mathbf{x})+g(\mathbf{x})\mathbf{u}$, a common condition is
+In local planning, the dynamic window approach (DWA) searches admissible velocity commands~\cite{B_DWA1997}, timed-elastic-band (TEB) optimization adjusts a sequence of poses and timing variables~\cite{B_TEB2013}, and model predictive control (MPC) repeatedly solves a finite-horizon control problem. DWA and TEB remain common comparators for the learned and predictive local planners evaluated in recent studies~\cite{P_M06,P_M30}. A controller using a control barrier function (CBF) constrains inputs to keep the state within an admissible set under stated assumptions~\cite{B_CBF2017,P_E24,P_E26}. For a control-affine model $\dot{\mathbf{x}}=f(\mathbf{x})+g(\mathbf{x})\mathbf{u}$, a common condition is
 \begin{equation}
 \nabla h(\mathbf{x})^{\mathsf T}\bigl[f(\mathbf{x})+g(\mathbf{x})\mathbf{u}\bigr]
 +\alpha(h(\mathbf{x}))\geq 0,
@@ -49,7 +49,7 @@ Here, \emph{degradation} denotes an operating change that reduces the quality or
 \subsection{Accuracy, Task Performance, and Integrity}
 Absolute trajectory error (ATE) measures differences between estimated and reference poses after a declared alignment, whereas relative pose error (RPE) measures motion error over a declared interval. Both are commonly summarized by the root mean square error (RMSE), whose value depends on alignment freedoms, scale treatment, synchronization, aggregation, and the dependence of the reference on the evaluated sensors. Task measures include goal success, collisions, interventions, completion time, coverage, and energy, while success weighted by path length (SPL) combines goal success with path efficiency. Neither task success nor low ATE identifies the source of a failure or the ability to recover after an alarm.
 
-Integrity concerns the risk of an unacceptable estimation error without an adequate warning. A useful conceptual statement is
+Integrity concerns the risk of an unacceptable estimation error without an adequate warning~\cite{B_GNSSIntegrity2018}. A useful conceptual statement is
 \begin{equation}
 \Pr\!\left(E_t>A_t\ \land\ \text{no timely alert at }t\right),
 \label{eq:integrity}
@@ -57,7 +57,7 @@ Integrity concerns the risk of an unacceptable estimation error without an adequ
 where $E_t$ is an error magnitude and $A_t$ is an application-specific alert limit. A protection level is an error bound associated with a specified integrity model, whereas a covariance alone is not a calibrated protection level. Particle-filter and SLAM integrity analyses account for fault hypotheses and association errors when relating alarm conditions to hazardous error~\cite{P_M28,P_X07}. For navigation, the warning must also reach a response policy early enough for the motion and stopping constraints of the robot.
 
 \subsection{Datasets, Simulators, and Transfer}
-Table~\ref{tab:benchmarks} relates representative datasets and simulators to the kinds of evidence they can support. Recorded data support reproducible estimator comparisons, although replay does not change future measurements when a planner acts differently. A closed-loop simulator supplies that feedback under its model, whereas hardware adds physical interaction and execution timing. Recorded data, closed-loop simulation, and hardware trials therefore answer different causal questions.
+Table~\ref{tab:benchmarks} relates representative datasets and simulators to the kinds of evidence they can support.
 
 \begin{table*}[t]
 \centering

@@ -1,6 +1,36 @@
 \section{Scope and Literature Selection}
 \label{sec:methodology}
 
-This survey covers localization and mapping, traversability and motion control, semantic navigation, multi-robot coordination, and fault management for wheeled mobile robots operating under degraded sensing, terrain, maps, communication, or computation. It includes journal articles and main-conference papers published from 2021 to 2026 that propose, evaluate, or benchmark a mechanism relevant to these functions. Studies on legged, aerial, or road vehicles are included when their mechanism transfers to wheeled navigation and are marked as such in the supplementary implementation tables. Journal searches, consultation of RSS and CoRL proceedings, and citation follow-up yielded \CorpusCount{} publications by November 3, 2026. The selection is purposive rather than exhaustive, with screening assisted by a language model under preset topic allocations. Since coverage of 2026 and of conference proceedings is incomplete, the corpus supports technical comparisons rather than estimates of topic prevalence. Classical planners and controllers, such as dynamic-window planning, timed elastic bands, and barrier-function control, are discussed through the recent studies that apply them. The supplementary material documents the search sources, selection stages, and assessment depth.
+This survey covers localization and mapping, traversability and motion control, semantic navigation, multi-robot coordination, and fault management for wheeled mobile robots operating under degraded sensing, terrain, maps, communication, or computation. It includes journal articles and main-conference papers published from 2021 to 2026 that propose, evaluate, or benchmark a mechanism relevant to these functions, counting a preprint and its published version once. Studies on legged, aerial, or road vehicles are included when their mechanism transfers to wheeled navigation and are marked in Fig.~\ref{fig:taxonomy} and in the supplementary implementation tables.
+
+\begin{table}[!t]
+\centering
+\caption{Selection stages of the \CorpusCount{} publications. Each row adds publications to the earlier stages.}
+\label{tab:selection}
+\surveytableformat
+\begin{tabularx}{\linewidth}{@{}L{2.1cm}Yr@{}}
+\toprule
+\textbf{Selection} & \textbf{Basis} & \textbf{Works} \\
+\midrule
+Initial sample & Capped journal selection, 2021--2026 & \BaselineCount \\
+\addlinespace[3pt]
+Complementary publications & Four technical studies and one context review & \SupplementCount \\
+\addlinespace[3pt]
+Thematic sample & Ten works under each of six themes & \ExpansionCount \\
+\addlinespace[3pt]
+Integration questions & Four questions on combined navigation functions & \FollowupCount \\
+\addlinespace[3pt]
+Targeted IEEE coverage & Motion priors, recovery, shared-state diagnosis, and reproducibility & \IEEECount \\
+\addlinespace[3pt]
+Further targeted coverage & Map validity, terrain risk, multimodal navigation, collaboration, and adaptation & \SurveyExpansionCount \\
+\addlinespace[3pt]
+Recent IEEE coverage & Six 2025--2026 IEEE journal or ICRA papers per theme & \IEEERefreshCount \\
+\midrule
+\textbf{Total} & & \textbf{\CorpusCount} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Table~\ref{tab:selection} lists the selection stages. An initial search of \LegacyJournals{} journals over \LegacySlices{} journal--year combinations yielded \LegacyRecords{} merged records, of which \LegacyReviewable{} had complete metadata. Title and abstract screening assisted by a language model under preset topic allocations stopped after \BaselineCount{} acceptances and left \LegacyUnreviewed{} records unassessed. Its order and rejection history are unavailable. Six purposive stages then added works under theme quotas, for the four integration questions of Section~\ref{sec:challenges}, and through IEEE-only and citation-based coverage that included RSS and CoRL proceedings. Every included work was read and coded, by full reading for \FullCount{} works and by targeted or extract-based reading for the others. Selection ended on November 3, 2026. The corpus is therefore a purposive sample whose stage quotas and publisher restrictions shape the counts of Section~\ref{sec:evaluation}, and it supports technical comparisons rather than estimates of topic prevalence. Foundational methods and definitions from before 2021, such as dynamic-window planning, timed elastic bands, barrier-function control, and GNSS integrity, are cited as background references outside the coded corpus.
 
 Each method is compared through the navigation assumption that a degradation violates, the information or action that the response changes, and the evidence that links the response to navigation outcomes. Reported metrics are interpreted within the platform and protocol of each study, without pooling effect sizes across heterogeneous datasets or trial units.

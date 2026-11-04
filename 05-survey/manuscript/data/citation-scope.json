@@ -23,32 +23,29 @@
     }
   ],
   "excluded_background_keys": [
-    "B_Cadena2016",
     "B_LOAM2014",
     "B_KITTI2012",
     "B_TUM2012",
     "B_Habitat2019",
-    "B_HumanAware2013",
-    "B_Campion1996",
-    "B_DWA1997",
-    "B_TEB2013",
-    "B_Nav22020",
-    "B_CBF2017"
+    "B_HumanAware2013"
   ],
   "excluded_background_reasons": {
-    "B_Cadena2016": "Historical SLAM review; current collaborative and method-specific comparisons suffice for the manuscript scope.",
     "B_LOAM2014": "Historical estimator example; retain ORB-SLAM3 (2021) and FAST-LIO2 (2022) as recent representative baselines.",
     "B_KITTI2012": "Historical generic driving benchmark; use recent ground-robot datasets in the evaluation-resource comparison.",
     "B_TUM2012": "Historical generic RGB-D benchmark; use recent robot-specific dataset resources in the current comparison.",
     "B_Habitat2019": "Historical simulator citation; discuss simulation requirements through recent evaluated systems.",
-    "B_HumanAware2013": "Historical human-aware navigation survey; current learned-navigation/foundation-model reviews and recent social-navigation studies cover the chosen scope.",
-    "B_Campion1996": "Pre-2021 kinematic classification; the background states the standard rolling-contact models without a historical citation.",
-    "B_DWA1997": "Pre-2021 planner definition; recent studies that use DWA as a comparator are cited instead.",
-    "B_TEB2013": "Pre-2021 planner definition; recent studies that use TEB as a comparator or recovery basis are cited instead.",
-    "B_Nav22020": "Pre-2021 system paper; recent ROS 2 and behavior-tree deployments illustrate the navigation-stack architecture.",
-    "B_CBF2017": "Pre-2021 barrier-function source; recent CBF controllers that state the same condition are cited instead."
+    "B_HumanAware2013": "Historical human-aware navigation survey; current learned-navigation/foundation-model reviews and recent social-navigation studies cover the chosen scope."
   },
-  "foundational_exceptions": {},
+  "foundational_exceptions": {
+    "B_CBF2017": "Control barrier function quadratic programs; attributes the CBF condition, Eq. (5).",
+    "B_Cadena2016": "SLAM formulation and robust-perception survey; attributes the estimation posterior, Eq. (4).",
+    "B_Campion1996": "Original structural classification of wheeled-robot kinematic models; attributes Eqs. (1)-(3).",
+    "B_DWA1997": "Original dynamic window approach; attributes the DWA definition in Sections I-II.",
+    "B_GNSSIntegrity2018": "GNSS integrity review; attributes alert limit, protection level and integrity risk, Eq. (6).",
+    "B_Nav22020": "Nav2 navigation system; attributes the deployed navigation-stack description in Section II.",
+    "B_TEB2013": "Original timed-elastic-band formulation; attributes the TEB definition in Sections I-II."
+  },
   "preservation": "All indexed PDFs, publisher citations, transcriptions, review cards and historical acquisition selections remain unchanged; excluded background records stay in revision/background-sources/.",
-  "new_ieee_batch": "36 selected 2025-2026 IEEE papers (R01-R36), acquired, transcribed, read at targeted light level and cited in the manuscript (2026-11-03)."
+  "new_ieee_batch": "36 selected 2025-2026 IEEE papers (R01-R36), acquired, transcribed, read at targeted light level and cited in the manuscript (2026-11-03).",
+  "foundational_policy_2026_11_04": "Author decision of 2026-11-04 after a simulated review: foundational pre-2021 sources are cited as background references for attribution of definitions and equations. They are outside the coded 2021-2026 corpus and its counts."
 }

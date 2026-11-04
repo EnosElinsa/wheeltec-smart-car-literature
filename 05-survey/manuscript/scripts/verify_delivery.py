@@ -52,7 +52,7 @@ def main():
     background = load_background(MANUSCRIPT, citation_policy)
     assert len(bibkeys) == len(set(bibkeys)) == len(rows) + len(background)
     assert corpus_keys <= cited_keys <= set(bibkeys)
-    assert len(labels) == len(set(labels)) == 27
+    assert len(labels) == len(set(labels)) == 28
     assert resolved_keys == set(bibkeys)
     assert not ({'P_' + code for code in citation_policy['internal_reference_ids']} |
                 set(citation_policy['excluded_background_keys'])) & (cited_keys | resolved_keys)
@@ -83,8 +83,9 @@ def main():
     supplement_labels = re.findall(r"\\label\{([^}]+)\}", supplement_tex)
     supplement_refs = set(re.findall(r"\\(?:ref|eqref|pageref)\{([^}]+)\}", supplement_tex))
     supplement_tables = {"tab:" + m for m in ("localization", "planning", "semantic", "multi-robot", "reliability")}
-    assert len(supplement_labels) == len(set(supplement_labels)) == 13
-    assert {"tab:selection", "fig:corpus"} | supplement_tables <= set(supplement_labels)
+    assert len(supplement_labels) == len(set(supplement_labels)) == 12
+    assert {"fig:corpus"} | supplement_tables <= set(supplement_labels)
+    assert "tab:selection" in labels
     assert set(supplement_labels).isdisjoint(labels)
     assert supplement_refs <= set(supplement_labels)
     # The main text cites the supplement tables through xr (\externaldocument[S-]{supplement}).

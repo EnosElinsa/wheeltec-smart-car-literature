@@ -1,0 +1,346 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     4
+    ]
+   ],
+   "date-time": "2026-11-04T05:54:09Z",
+   "timestamp": 1793771649592,
+   "version": "4.6.1"
+  },
+  "reference-count": 66,
+  "publisher": "Elsevier BV",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       10,
+       1
+      ]
+     ],
+     "date-time": "2023-10-01T00:00:00Z",
+     "timestamp": 1696118400000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       10,
+       1
+      ]
+     ],
+     "date-time": "2023-10-01T00:00:00Z",
+     "timestamp": 1696118400000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.elsevier.com/legal/tdmrep-license"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       10,
+       1
+      ]
+     ],
+     "date-time": "2023-10-01T00:00:00Z",
+     "timestamp": 1696118400000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-017"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       10,
+       1
+      ]
+     ],
+     "date-time": "2023-10-01T00:00:00Z",
+     "timestamp": 1696118400000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-037"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       10,
+       1
+      ]
+     ],
+     "date-time": "2023-10-01T00:00:00Z",
+     "timestamp": 1696118400000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-012"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       10,
+       1
+      ]
+     ],
+     "date-time": "2023-10-01T00:00:00Z",
+     "timestamp": 1696118400000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-029"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2023,
+       10,
+       1
+      ]
+     ],
+     "date-time": "2023-10-01T00:00:00Z",
+     "timestamp": 1696118400000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-004"
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "elsevier.com",
+    "sciencedirect.com"
+   ],
+   "crossmark-restriction": true
+  },
+  "short-container-title": [
+   "Robotics and Autonomous Systems"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2023,
+     10
+    ]
+   ]
+  },
+  "DOI": "10.1016/j.robot.2023.104493",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2023,
+     7,
+     27
+    ]
+   ],
+   "date-time": "2023-07-27T13:43:23Z",
+   "timestamp": 1690465403000
+  },
+  "page": "104493",
+  "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 149,
+  "special_numbering": "C",
+  "title": [
+   "From the desks of ROS maintainers: A survey of modern &amp; capable mobile robotics algorithms in the robot operating system 2"
+  ],
+  "prefix": "10.1016",
+  "volume": "168",
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0003-1090-7733",
+    "authenticated-orcid": false,
+    "given": "Steve",
+    "family": "Macenski",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-8070-9578",
+    "authenticated-orcid": false,
+    "given": "Tom",
+    "family": "Moore",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "David V.",
+    "family": "Lu",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Alexey",
+    "family": "Merzlyakov",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Michael",
+    "family": "Ferguson",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "78",
+  "container-title": [
+   "Robotics and Autonomous Systems"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://api.elsevier.com/content/article/PII:S092188902300132X?httpAccept=text/xml",
+    "content-type": "text/xml",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://api.elsevier.com/content/article/PII:S092188902300132X?httpAccept=text/plain",
+    "content-type": "text/plain",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2025,
+     10,
+     13
+    ]
+   ],
+   "date-time": "2025-10-13T04:38:39Z",
+   "timestamp": 1760330319000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://linkinghub.elsevier.com/retrieve/pii/S092188902300132X"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2023,
+     10
+    ]
+   ]
+  },
+  "references-count": 66,
+  "alternative-id": [
+   "S092188902300132X"
+  ],
+  "URL": "https://doi.org/10.1016/j.robot.2023.104493",
+  "relation": {},
+  "ISSN": [
+   "0921-8890"
+  ],
+  "issn-type": [
+   {
+    "value": "0921-8890",
+    "type": "print"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2023,
+     10
+    ]
+   ]
+  },
+  "assertion": [
+   {
+    "value": "Elsevier",
+    "name": "publisher",
+    "label": "This article is maintained by"
+   },
+   {
+    "value": "From the desks of ROS maintainers: A survey of modern & capable mobile robotics algorithms in the robot operating system 2",
+    "name": "articletitle",
+    "label": "Article Title"
+   },
+   {
+    "value": "Robotics and Autonomous Systems",
+    "name": "journaltitle",
+    "label": "Journal Title"
+   },
+   {
+    "value": "https://doi.org/10.1016/j.robot.2023.104493",
+    "name": "articlelink",
+    "label": "CrossRef DOI link to publisher maintained version"
+   },
+   {
+    "value": "article",
+    "name": "content_type",
+    "label": "Content Type"
+   },
+   {
+    "value": "© 2023 Elsevier B.V. All rights reserved.",
+    "name": "copyright",
+    "label": "Copyright"
+   }
+  ],
+  "article-number": "104493"
+ }
+}
