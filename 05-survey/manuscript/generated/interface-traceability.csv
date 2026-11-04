@@ -13,7 +13,7 @@ interface,code,key,stage,principal_section,platform_group,level_degradation,deg_
 1,N11,P_N11,ieee-supplement-2026-11-03,VII,OTH,O,none,none,no,LOC-REL:SFA
 1,S19,P_S19,survey-200plus-2026-11-03,VIII,WHL,R,none,none,no,LOC-REL:PER
 1,R11,P_R11,ieee-refresh-2026-11-03,IV,WHL,P,D2,physical,yes,LOC-REL:PER
-1,R33,P_R33,ieee-refresh-2026-11-03,VIII,WHL,O,none,none,no,LOC-REL:PER
+1,R33,P_R33,ieee-refresh-2026-11-03,VIII,WHL,O,D2,simulation,no,LOC-REL:PER
 2,M31,P_M31,baseline-2026-09-18,V,WHL,none,none,none,no,PLN-SEM:MOD|PLN-SEM:RES
 2,E46,P_E46,expansion-2026-10-24,VI,WHL,none,none,none,no,PLN-SEM:MOD
 2,E50,P_E50,expansion-2026-10-24,VI,WHL,P,D1,physical,yes,PLN-SEM:RES

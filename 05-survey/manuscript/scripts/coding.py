@@ -359,6 +359,35 @@ def locator_path(codes_path):
     return path.with_name(path.name.replace('codes', 'locators'))
 
 
+CARD_LOCATOR = re.compile(r'^card: ([^,]+?)(?:,\s*(.*))?$')
+
+
+def cited_pages(text):
+    """Page numbers named by 'p. N' and 'pp. N-M, K' citations in a text."""
+    pages = set()
+    for m in re.finditer(r'\bpp?\.\s*(\d[\d,\s\-–]*(?:and\s+\d[\d,\s\-–]*)*)', text):
+        for part in re.split(r'[,\s]+|and', m.group(1)):
+            bounds = re.fullmatch(r'(\d+)[-–](\d+)', part)
+            if bounds:
+                pages.update(range(int(bounds.group(1)), int(bounds.group(2)) + 1))
+            elif part.isdigit():
+                pages.add(int(part))
+    return pages
+
+
+def card_blocks(path):
+    """The '## ' blocks of a review card, keyed by block name."""
+    text = Path(path).read_text(encoding='utf-8')
+    return {m.group(1).strip(): m.group(2)
+            for m in re.finditer(r'^##\s+(.+?)\s*$(.*?)(?=^##\s|\Z)', text, flags=re.S | re.M)}
+
+
+def card_locator_pages(loc):
+    """Pages that a card locator names, or None when it is not a card locator."""
+    m = CARD_LOCATOR.match(loc['locator']) if loc['source'] == 'card' else None
+    return cited_pages(m.group(2) or '') if m else None
+
+
 def required_locators(code, codebook):
     """(attribute, value) pairs of one coded work that need a locator row."""
     principal = section_function(codebook).get(code['principal_section'])
@@ -392,9 +421,10 @@ def validate_codes(codes, corpus_rows, codebook, kind, partial=False, locators=N
     errors += [f'{c}: not a corpus work' for c in sorted(unknown)]
     if not partial and kind == 'primary' and set(seen) != set(by_code):
         errors.append(f'missing works: {sorted(set(by_code) - set(seen))}')
-    index = {}
+    index, work_locators = {}, {}
     for loc in locators or []:
         index.setdefault((loc['code'], loc['attribute'], loc['value']), []).append(loc)
+        work_locators.setdefault(loc['code'], []).append(loc)
         allowed_sources = codebook['locator_rules']['second_coder_sources' if kind == 'second' else 'sources']
         if loc['source'] not in allowed_sources:
             soft.append(f"{loc['code']}: locator source {loc['source']} not allowed")
@@ -480,8 +510,19 @@ def validate_codes(codes, corpus_rows, codebook, kind, partial=False, locators=N
         for rule_id, ok in rules:
             if not ok:
                 soft.append(f'{cid}: rule {rule_id} broken')
-        # Locators.
+        # Locators. A light card's card locator names only pages that the named block cites (Section 15).
         depth = code['depth']
+        if depth != 'full':
+            blocks = card_blocks(R / by_code[cid]['review'])
+            for loc in work_locators.get(cid, []):
+                if loc['source'] != 'card':
+                    continue
+                m = CARD_LOCATOR.match(loc['locator'])
+                block = blocks.get(m.group(1).strip()) if m else None
+                if block is None:
+                    soft.append(f"{cid}: card locator {loc['locator']!r} names no block of the card (CR17)")
+                elif not card_locator_pages(loc) <= cited_pages(block):
+                    soft.append(f"{cid}: card locator {loc['locator']!r} names a page that the block does not cite (CR17)")
         for name, value in required_locators(code, codebook):
             if kind == 'second' and name not in checked:
                 continue
@@ -490,6 +531,8 @@ def validate_codes(codes, corpus_rows, codebook, kind, partial=False, locators=N
                 soft.append(f'{cid}: no locator for {name}={value} (CR17)')
             elif depth == 'light-legacy' and not any(r['source'] in ('pdf', 'transcription') for r in rows):
                 soft.append(f'{cid}: light-legacy value {name}={value} needs a pdf or transcription locator (CR17)')
+            elif depth == 'light-targeted' and not any(r['source'] != 'card' or card_locator_pages(r) for r in rows):
+                soft.append(f'{cid}: light-targeted value {name}={value} needs a page-located locator (CR17)')
     return errors, warnings
 
 
