@@ -43,4 +43,18 @@ The repository was cloned fresh from GitHub at `ad8328e`. In the clone, the data
 
 ## Simulated review
 
-The simulated two-reviewer T-IV review of this version is reported below once it completes.
+Two reviewers on different models reviewed commit `5249a0f` independently, and a third step merged their reports. All three reports are kept locally under `99-archive/local/reviews-2026-11-04/` and are not published. This is an internal simulated review, not an editorial decision.
+
+Both reviewers recommend major revision, and neither recommends rejection. Across 24 spot-checked works, no reported number contradicts its source. Both reviewers rate the treatment of denominators, censoring, reference dependence and timing in Section IX as a useful contribution. The merged report lists nine major items:
+
+- Selection reproducibility: the stage counts and the language-model screening appear only in the supplement, and inclusion criteria and an AI-use disclosure are missing.
+- Validity of the Table IV coding: there is no codebook and no agreement check. "Degradation testing" mixes manipulated, selected and incidental conditions, and the pooled 26% needs a sample qualifier.
+- Derivation of the four interfaces: part of the corpus was selected for them. Rejected candidates and protocol details for Table V are not given.
+- The degradation-based organization is claimed but only the function axis is used.
+- Wheeled versus non-wheeled evidence: non-wheeled anchors are not flagged, and drivetrain consequences are missing.
+- Positioning: Table I has no objective columns, and automated-driving concepts such as minimal risk maneuvers are not discussed.
+- Foundational references: these are withheld by the 2021-2026 citation rule.
+- Catalogue-style synthesis in Sections IV-VIII.
+- Coverage gaps and the 2025-2026 recency skew.
+
+The merged report also lists 21 minor items. They include framing corrections for four studies (the osmAG-LLM end-to-end denominator, the speed-matched MonoMPC comparison, the outdoor baselines of terrain-adaptive MPC, and context for LeLaN, VAMOS, mEclares and Help Me Through), as well as scoring definitions for Fig. 3, Table IV row definitions, index terms and figure type size. Which items to act on is an author decision. Several of them conflict with earlier decisions: the short Section III, the 2021-2026 citation rule, and the 24-page limit.
