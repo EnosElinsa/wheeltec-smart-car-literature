@@ -10,6 +10,7 @@ M = Path(__file__).resolve().parents[1]
 from project_paths import literature_root
 from citation_scope import load_background, load_corpus
 from bib_case import protect_entry, protect_title
+import coding
 R = literature_root(M)
 G = M / 'generated'
 G.mkdir(exist_ok=True)
@@ -78,6 +79,9 @@ stats['citation_scope_sha256'] = text_digest(M / 'data/citation-scope.json')
 stats['inclusion_sha256'] = text_digest(R / '06-data/survey-inclusion.json')
 stats['source_index_sha256'] = digest(R / '06-data/paper-index.csv')
 stats['comparison_sha256'] = digest(R / '06-data/corpus-comparison.csv')
+# Evidence coding layer (06-data/evidence-coding): final codes, matrices, interface ranking, sensitivity and
+# venue mix. These products do not change the card-based evidence map, macros or Table V of this revision.
+stats.update(coding.write_products(G, rows, decisions_path=M / 'data/interface-decisions.json'))
 (G / 'stats.json').write_text(json.dumps(stats, indent=2) + '\n', encoding='utf-8')
 batches = stats['source_batch']
 modules = stats['survey_module']
@@ -444,11 +448,13 @@ crosstab = {'years': years, 'modules': modules, 'labels': labels,
             'counts': {m: [sum(1 for r in rows if r['survey_module'] == m and int(r['bibliographic_year']) == y) for y in years] for m in modules}}
 (G / 'corpus-year-module.json').write_text(json.dumps(crosstab, indent=2) + '\n', encoding='utf-8')
 
+codebook = coding.load_codebook()
+inventory_extra = ['selection_stage','stage_label','principal_section','venue','publisher','publication_type','doi','platform_group']
 with (G / 'corpus-inventory.csv').open('w',encoding='utf-8',newline='') as f:
-    writer=csv.DictWriter(f,fieldnames=['code','key','title','formal_year','module','evidence','boundary','verification','source_pdf_sha256','source_bib_sha256','source_md_sha256'])
+    writer=csv.DictWriter(f,fieldnames=['code','key','title','formal_year','module','evidence','boundary','verification','source_pdf_sha256','source_bib_sha256','source_md_sha256']+inventory_extra)
     writer.writeheader()
     for r in rows:
-        writer.writerow(dict(code=r['code'],key='P_'+r['code'],title=r['title'],formal_year=r['bibliographic_year'],module=r['survey_module'],evidence=r['evidence_type'],boundary=r['boundary_platform'],verification=r['verification_level'],source_pdf_sha256=r['pdf_sha256'],source_bib_sha256=r['bibtex_sha256'],source_md_sha256=r['markdown_sha256']))
+        writer.writerow(dict(code=r['code'],key='P_'+r['code'],title=r['title'],formal_year=r['bibliographic_year'],module=r['survey_module'],evidence=r['evidence_type'],boundary=r['boundary_platform'],verification=r['verification_level'],source_pdf_sha256=r['pdf_sha256'],source_bib_sha256=r['bibtex_sha256'],source_md_sha256=r['markdown_sha256'],**coding.inventory_extra(r, codebook)))
 print(json.dumps({'corpus_entries':len(rows),'background_entries':len(verification),'generated_tables':7,'source_index_sha256':stats['source_index_sha256']}))
 
 gap_path = R / '06-data/gap-priority.csv'

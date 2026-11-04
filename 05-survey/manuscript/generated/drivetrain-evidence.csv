@@ -1,0 +1,7 @@
+drivetrain,works,LOC,PLN,SEM,MRC,REL,named,task_named_same,direct_wheeled_joint,drivetrain_effect,effect_codes,sources_addressed
+differential,40,2,12,6,11,9,29,18,7,2,E02|R33,ACT:10|COM:6|DYN:11|MAP:1|MOD:7|PER:6|RES:3|SFA:4|TER:4
+skid-steer,29,5,13,4,4,3,25,16,12,3,E04|M39|M33,COM:4|DYN:4|MAP:5|MOD:5|PER:5|RES:3|SFA:1|TER:13
+ackermann,10,1,4,0,1,4,7,4,1,1,S07,ACT:2|COM:3|DYN:2|MOD:2|RES:3|SFA:4|TER:3
+omnidirectional,5,0,3,1,0,1,4,2,0,0,none,ACT:1|DYN:2|MOD:2
+unspecified,88,22,18,19,16,13,66,28,13,0,none,ACT:5|COM:12|DYN:21|MAP:15|MOD:13|PER:20|RES:10|SFA:7|TER:18
+na,72,37,6,6,13,10,56,12,0,1,N17,ACT:1|COM:11|DYN:15|MAP:9|MOD:5|PER:24|RES:8|SFA:10|TER:9

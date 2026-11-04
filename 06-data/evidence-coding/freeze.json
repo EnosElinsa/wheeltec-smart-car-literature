@@ -1,0 +1,12 @@
+{
+  "note": "SHA-256 of the primary coding files at freeze. Later corrections go through adjudication-log.csv only.",
+  "codebook_version": "1.0",
+  "codebook_md_sha256": "e217554c33f2317a30b81b864a9626370ac354e1190de9561c8c613cd68af922",
+  "codebook_json_sha256": "dbbcf506a8a0a4c5ed8c518d7fa8d7e8470aab942bc22a36e766dcba50d1206d",
+  "rows": 245,
+  "locators": 1645,
+  "primary": {
+    "primary-codes.csv": "18cf631318504a9fff6c96a0dd570e65172e2528d8c04b22eff64f3bea69e2c4",
+    "primary-locators.csv": "16e1e57ac4f456bb992ba189d27db9cded52bb3654cee4ea6d5e8bf474cf0b41"
+  }
+}
