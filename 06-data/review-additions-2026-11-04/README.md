@@ -18,18 +18,18 @@ On November 4, 2026, each paper received a targeted reading of identity, abstrac
 
 Use the [source catalog](../library-catalog.csv), [selection and artifact paths](selection.csv) and [source manifest](manifest.json). PDFs, transcriptions, page JSON and figures remain local; public indexes show their paths as code.
 
-| ID | Theme | Year | Paper | Intended survey use |
+| ID | Theme | Year | Paper | Survey use |
 |---|---|---:|---|---|
-| K01 | T1 | 2024 | [SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments](https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_SubT-MRS_Dataset_Pushing_SLAM_Towards_All-weather_Environments_CVPR_2024_paper.html) | Source of the degraded sequences behind the LODESTAR result (Section IV-A) and a degraded-SLAM benchmark (Table II). |
+| K01 | T1 | 2024 | [SubT-MRS Dataset: Pushing SLAM Towards All-weather Environments](https://openaccess.thecvf.com/content/CVPR2024/html/Zhao_SubT-MRS_Dataset_Pushing_SLAM_Towards_All-weather_Environments_CVPR_2024_paper.html) | Source of the degraded sequences behind the LODESTAR result (Section IV-A), its fusion-challenge outcome (Section IV-B) and a degraded-SLAM benchmark (Table II). |
 | K02 | T2 | 2021 | [RELLIS-3D Dataset: Data, Benchmarks and Analysis](https://ieeexplore.ieee.org/document/9561251/) | Off-road terrain-segmentation data beside GA-Nav (Section V-A, Table II). |
-| K03 | T3 | 2021 | [STEP: Stochastic Traversability Evaluation and Planning for Risk-Aware Off-road Navigation](https://www.roboticsproceedings.org/rss17/p021.html) | Uncertainty-aware terrain risk that accounts for localization error; qualifies the pose-uncertainty gap claims. |
+| K03 | T3 | 2021 | [STEP: Stochastic Traversability Evaluation and Planning for Risk-Aware Off-road Navigation](https://www.roboticsproceedings.org/rss17/p021.html) | Uncertainty-aware terrain risk that accounts for localization error (Section V-A); qualifies the pose-uncertainty gap claim (Section X-C, Table IV). |
 | K04 | T3 | 2022 | [TartanDrive: A Large-Scale Dataset for Learning Off-Road Dynamics Models](https://ieeexplore.ieee.org/document/9811648/) | Off-road dynamics data beside the learned-dynamics discussion (Section V-A, Table II). |
-| K05 | T3 | 2024 | [EVORA: Deep Evidential Traversability Learning for Risk-Aware Off-Road Autonomy](https://ieeexplore.ieee.org/document/10606099/) | Uncertainty-aware terrain risk with OOD avoidance (Section V-A). |
-| K06 | T4 | 2022 | [Kimera-Multi: Robust, Distributed, Dense Metric-Semantic SLAM for Multi-Robot Systems](https://ieeexplore.ieee.org/document/9686955/) | Outlier-robust distributed multi-robot SLAM (Section VII-B). |
-| K07 | T4 | 2022 | [LAMP 2.0: A Robust Multi-Robot SLAM System for Operation in Challenging Large-Scale Underground Environments](https://ieeexplore.ieee.org/document/9830862/) | Outlier-resilient centralized multi-robot SLAM with batched data after link loss (Section VII-B). |
-| K08 | T4 | 2022 | [Heterogeneous Ground and Air Platforms, Homogeneous Sensing: Team CSIRO Data61's Approach to the DARPA Subterranean Challenge](https://ieeexplore.ieee.org/document/10876055/) | Communication-limited SubT team system on tracked, legged and aerial robots (Section VII-C). |
-| K09 | T4 | 2022 | [Resilient and Modular Subterranean Exploration with a Team of Roving and Flying Robots](https://ieeexplore.ieee.org/document/10876072/) | Communication-limited SubT team system with wheeled robots and drones (Section VII-C). |
-| K10 | T4 | 2022 | [CERBERUS in the DARPA Subterranean Challenge](https://www.science.org/doi/10.1126/scirobotics.abp9742) | Winning SubT team system of legged and aerial robots (Section VII-C). |
+| K05 | T3 | 2024 | [EVORA: Deep Evidential Traversability Learning for Risk-Aware Off-Road Autonomy](https://ieeexplore.ieee.org/document/10606099/) | Uncertainty-aware terrain risk with OOD avoidance (Sections V-A and X-C). |
+| K06 | T4 | 2022 | [Kimera-Multi: Robust, Distributed, Dense Metric-Semantic SLAM for Multi-Robot Systems](https://ieeexplore.ieee.org/document/9686955/) | Outlier-robust distributed multi-robot SLAM (Sections VII-B and X-D). |
+| K07 | T4 | 2022 | [LAMP 2.0: A Robust Multi-Robot SLAM System for Operation in Challenging Large-Scale Underground Environments](https://ieeexplore.ieee.org/document/9830862/) | Outlier-resilient centralized multi-robot SLAM with batched data after link loss (Sections VII-B and X-D). |
+| K08 | T4 | 2022 | [Heterogeneous Ground and Air Platforms, Homogeneous Sensing: Team CSIRO Data61's Approach to the DARPA Subterranean Challenge](https://ieeexplore.ieee.org/document/10876055/) | Communication-limited SubT team system on tracked, legged and aerial robots (Sections VII-C and X-D). |
+| K09 | T4 | 2022 | [Resilient and Modular Subterranean Exploration with a Team of Roving and Flying Robots](https://ieeexplore.ieee.org/document/10876072/) | Communication-limited SubT team system with wheeled robots and drones (Sections VII-C and X-D). |
+| K10 | T4 | 2022 | [CERBERUS in the DARPA Subterranean Challenge](https://www.science.org/doi/10.1126/scirobotics.abp9742) | Winning SubT team system of legged and aerial robots (Sections VII-C and X-D). |
 | K11 | T5 | 2021 | [Habitat-Matterport 3D Dataset (HM3D): 1000 Large-scale 3D Environments for Embodied AI](https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/34173cb38f07f89ddbebc2ac9128303f-Abstract-round2.html) | Scene source of the Habitat benchmarks used by semantic-navigation studies (Section VI-A, Table II). |
 | K12 | T5 | 2023 | [LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action](https://proceedings.mlr.press/v205/shah23b.html) | Foundation-model navigation lineage before LeLaN (Section VI-B). |
 | K13 | T5 | 2023 | [GNM: A General Navigation Model to Drive Any Robot](https://ieeexplore.ieee.org/document/10161227/) | Foundation-model navigation lineage (Section VI-B). |
@@ -45,4 +45,4 @@ The same review named further works that this stage did not add:
 - NeBula, the Team CoSTAR system paper, which exists only as an arXiv preprint;
 - learned risk-aware costmaps and learned speed-distribution maps, which the review named without a specific identity;
 - the ROS 2 and Nav2 survey and a review of traversability risk assessment, which are surveys rather than corpus works;
-- surveys on millimeter-wave radar, safe learning and adverse-weather perception, which are also surveys rather than corpus works.
+- surveys on millimeter-wave radar, safe learning and adverse-weather perception, which are also surveys rather than corpus works and are cited as background references in Table I of the survey.
