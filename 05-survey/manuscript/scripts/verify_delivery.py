@@ -47,8 +47,7 @@ def main():
     background = load_background(MANUSCRIPT, citation_policy)
     assert len(bibkeys) == len(set(bibkeys)) == len(rows) + len(background)
     assert corpus_keys <= cited_keys <= set(bibkeys)
-    assert len(labels) == len(set(labels)) == 30
-    assert ref_uses <= set(labels)
+    assert len(labels) == len(set(labels)) == 26
     assert resolved_keys == set(bibkeys)
     assert not ({'P_' + code for code in citation_policy['internal_reference_ids']} |
                 set(citation_policy['excluded_background_keys'])) & (cited_keys | resolved_keys)
@@ -67,9 +66,8 @@ def main():
 
     info = subprocess.check_output(["pdfinfo", str(MANUSCRIPT / "survey.pdf")], text=True, encoding="utf-8", errors="replace")
     pages = int(re.search(r"^Pages:\s+(\d+)", info, re.MULTILINE)[1])
-    # The expanded synthesis has no venue-imposed page cap. Retain the lower
-    # bound as a truncation check; complete citation/label checks remain above.
-    assert pages >= 22
+    # T-IV allows at most 24 pages; the lower bound is a truncation check.
+    assert 20 <= pages <= 24
 
     supplement = (MANUSCRIPT / "supplement.tex").read_text(encoding="utf-8")
     supplement_inputs = set(re.findall(r"\\input\{([^}]+)\}", supplement))
@@ -79,10 +77,15 @@ def main():
     )
     supplement_labels = re.findall(r"\\label\{([^}]+)\}", supplement_tex)
     supplement_refs = set(re.findall(r"\\(?:ref|eqref|pageref)\{([^}]+)\}", supplement_tex))
-    assert len(supplement_labels) == len(set(supplement_labels)) == 7
-    assert {"tab:selection", "fig:corpus"} <= set(supplement_labels)
-    assert {"tab:selection", "fig:corpus"}.isdisjoint(labels)
+    supplement_tables = {"tab:" + m for m in ("localization", "planning", "semantic", "multi-robot", "reliability")}
+    assert len(supplement_labels) == len(set(supplement_labels)) == 13
+    assert {"tab:selection", "fig:corpus"} | supplement_tables <= set(supplement_labels)
+    assert set(supplement_labels).isdisjoint(labels)
     assert supplement_refs <= set(supplement_labels)
+    # The main text cites the supplement tables through xr (\externaldocument[S-]{supplement}).
+    external_refs = {ref[2:] for ref in ref_uses if ref.startswith("S-")}
+    assert ref_uses - {"S-" + ref for ref in external_refs} <= set(labels)
+    assert external_refs == supplement_tables
     supplement_citations = {
         key.strip() for group in re.findall(r"\\cite\{([^}]+)\}", supplement_tex)
         for key in group.split(",")
@@ -137,7 +140,8 @@ def main():
         "unique_labels": len(labels),
         "figures": len(re.findall(r"\\begin\{figure\*?\}", all_tex)),
         "tables": len(re.findall(r"\\begin\{table\*?\}", all_tex)),
-        "unresolved_references": sorted(ref_uses - set(labels)),
+        "unresolved_references": sorted(ref_uses - set(labels) - {"S-" + ref for ref in external_refs}),
+        "supplement_references": sorted("S-" + ref for ref in external_refs),
         "source_artifacts_checked": source_artifacts_checked,
         "local_fulltext_verification": "passed" if args.sources else "not-run; use --sources with local PDFs/transcriptions",
         "source_hash_mismatches": 0,

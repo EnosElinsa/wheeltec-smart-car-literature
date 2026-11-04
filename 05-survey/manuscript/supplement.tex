@@ -1,6 +1,5 @@
 \documentclass[journal]{IEEEtran}
 \input{survey-format}
-\usepackage{balance}
 \input{generated/stats}
 \renewcommand{\thesection}{S\arabic{section}}
 \renewcommand{\thetable}{S\arabic{table}}
@@ -14,7 +13,7 @@
 \markboth{Wheeled Mobile Robot Autonomy Under Degradation}{Supplementary Material}
 \maketitle
 
-This supplement accompanies \emph{Wheeled Mobile Robot Autonomy Under Degradation: A Survey of Methods and Evaluation}. It provides the selection and assessment details summarized in Section~III and selected numerical comparisons discussed in the technical synthesis. Counts describe the selected literature and do not estimate research-topic prevalence across the field.
+This supplement accompanies \emph{Wheeled Mobile Robot Autonomy Under Degradation: A Survey of Methods and Evaluation}. It provides the selection and assessment details summarized in Section~III, selected numerical comparisons discussed in the technical synthesis, and the tables of representative implementations referenced in Sections~IV--VIII. Counts describe the selected literature and do not estimate research-topic prevalence across the field.
 
 \section{Search Coverage and Selection}
 \label{supp:selection}
@@ -84,15 +83,25 @@ Comparison attributes include the technical mechanism, platform, sensing, comput
 
 The \SurveyExpansionCount{} and \IEEERefreshCount{} works of the last two stages received targeted readings with page-located excerpts matched to both the transcription and PDF text. Their evidence cards retain mechanism and protocol conditions. Numbers that the survey reports from these works were rechecked in the PDF text, without rendered-table audits. Three citation records are explicitly derived, including an early-access year correction. One further work has a documented official-title/PDF-title variant. These provenance exceptions remain visible separately from reading depth.
 
-Experimental settings distinguish hardware control, online estimation, recorded robot data, dataset replay, simulation, and numerical studies. Dataset and review publications are identified separately. The technical tables in the survey summarize mechanisms and inputs alongside experimental settings, evaluated quantities, and computation location. Interpretation accounts for external pose, remote computation, low speed, and staged scenes where applicable. Complete-pipeline timing and placement require information beyond processor identity.
+Experimental settings distinguish hardware control, online estimation, recorded robot data, dataset replay, simulation, and numerical studies. Dataset and review publications are identified separately. Tables~\ref{tab:localization}--\ref{tab:reliability} summarize mechanisms and inputs alongside experimental settings, evaluated quantities, and computation location. Interpretation accounts for external pose, remote computation, low speed, and staged scenes where applicable. Complete-pipeline timing and placement require information beyond processor identity.
 
-Quantitative comparisons retain the reported metrics, baselines, and evaluation conditions. Effect sizes are not pooled across heterogeneous datasets, platforms, or trial units. The main evaluation table summarizes \CoreCount{} technical publications, excluding the context review. It groups overlapping attributes by measurement level, test conditions, and risk or diagnostic assessment. A study may report component and task measures during a degradation test. Purposive selection, uneven assessment depth, and heterogeneous protocols limit the generality of comparative conclusions.
+Quantitative comparisons retain the reported metrics, baselines, and evaluation conditions. Effect sizes are not pooled across heterogeneous datasets, platforms, or trial units. The evaluation table of the survey counts attributes over the \CoreCount{} technical publications, excluding the context review. It groups overlapping attributes by measurement level, test conditions, and risk or diagnostic assessment. A study may report component and task measures during a degradation test. Purposive selection, uneven assessment depth, and heterogeneous protocols limit the generality of comparative conclusions.
 
-\balance
 \section{Selected Results and Within-Study Comparisons}
 \label{supp:results}
 
 Table~\ref{tab:selected-results} retains the measures and experimental units of seven selected examples. Numerical results were checked against the cited tables or plots. Each comparison concerns the stated scene, baseline, and information available to the method. The rows therefore do not form a cross-study ranking. The examples include changes in performance ordering, added computation, combined-module ablations, and success denominators to clarify the scope of the conclusions drawn in the survey.
+
+\section{Representative Implementations by Navigation Function}
+\label{supp:implementations}
+
+Tables~\ref{tab:localization}--\ref{tab:reliability} list representative implementations for the five functional sections of the survey. Each row reports the mechanism and its inputs, the experimental setting with the evaluated quantities, and the platform with the computation placement stated by the authors. The rows were chosen to cover the response families discussed in each section, and they are not a ranking or a complete list of the selected works.
+
+\input{generated/table-localization}
+\input{generated/table-planning}
+\input{generated/table-semantic}
+\input{generated/table-multi-robot}
+\input{generated/table-reliability}
 
 \bibliographystyle{IEEEtran}
 \bibliography{ieee-bst-control,refs}

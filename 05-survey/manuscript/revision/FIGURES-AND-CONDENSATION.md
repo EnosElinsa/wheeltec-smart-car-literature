@@ -1,5 +1,7 @@
 # Figures, condensation and repository merge - November 4, 2026
 
+This record describes the state after this revision. [PAGE-LIMIT-AND-FIGURE-STYLE.md](PAGE-LIMIT-AND-FIGURE-STYLE.md) supersedes its length, table, label and figure-style statements.
+
 This revision follows the [IEEE refresh integration](IEEE-REFRESH-INTEGRATION.md). It redraws the figures as SVG, condenses the text, shortens Section III, corrects the reference formatting and moves the manuscript into the evidence-library repository. The selection is unchanged: 229 selected works and 5 background references, 234 references in total, all from 2021-2026.
 
 ## Figures

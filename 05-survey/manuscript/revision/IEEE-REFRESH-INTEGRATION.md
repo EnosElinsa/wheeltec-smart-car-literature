@@ -21,7 +21,7 @@ Sections I-XI were revised to remove semicolons, `, but` clause joins, `so`, `be
 
 ## Open issues
 
-Follow-up, November 4, 2026: [FIGURES-AND-CONDENSATION.md](FIGURES-AND-CONDENSATION.md) reduces the main paper to 26 pages and brings the rhythm into the team band. The items below describe the state on November 3.
+Follow-up, November 4, 2026: [FIGURES-AND-CONDENSATION.md](FIGURES-AND-CONDENSATION.md) reduces the main paper to 26 pages and brings the rhythm into the team band, and [PAGE-LIMIT-AND-FIGURE-STYLE.md](PAGE-LIMIT-AND-FIGURE-STYLE.md) brings it to 23 pages, within the T-IV maximum. The items below describe the state on November 3.
 
 - Length: IEEE T-IV surveys may run 18 pages plus at most 6 paid pages. The current 36 pages need a length decision before submission.
 - Rhythm: see above.

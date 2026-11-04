@@ -1,5 +1,8 @@
 \documentclass[journal]{IEEEtran}
 \input{survey-format}
+\usepackage{xr}
+% Tables S3--S7 live in the supplement. Build supplement.tex before survey.tex.
+\externaldocument[S-]{supplement}
 \input{generated/stats}
 \begin{document}
 \bstctlcite{IEEEexample:BSTcontrol}

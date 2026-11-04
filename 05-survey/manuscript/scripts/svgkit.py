@@ -1,9 +1,11 @@
 """Minimal SVG drawing kit for the manuscript figures.
 
 Coordinates are in points, so a figure of width 516 placed at \\textwidth in an
-IEEE two-column journal keeps its font sizes. MuPDF converts the SVG files to
-vector PDF; it ignores stroke-dasharray and markers, so dashes and arrowheads
-are drawn explicitly.
+IEEE two-column journal keeps its font sizes. Text uses Times to match the
+IEEEtran body font, lines are thin and black or gray, corners are square, and
+no color is needed to read a figure. MuPDF converts the SVG files to vector PDF;
+it ignores stroke-dasharray and markers, so dashes and arrowheads are drawn
+explicitly.
 """
 from __future__ import annotations
 
@@ -12,25 +14,20 @@ from html import escape
 
 import fitz
 
-FONT = 'Helvetica'
-_METRIC = {('normal', 'normal'): 'helv', ('bold', 'normal'): 'hebo',
-           ('normal', 'italic'): 'heit', ('bold', 'italic'): 'hebi'}
+FONT = 'Times'
+_METRIC = {('normal', 'normal'): 'tiro', ('bold', 'normal'): 'tibo',
+           ('normal', 'italic'): 'tiit', ('bold', 'italic'): 'tibi'}
 
-INK = '#222222'
-MUTED = '#5B6570'
-RULE = '#9AA3AD'
-PANEL = '#F3F5F7'
-ALERT = '#C0392B'
+INK = '#111111'
+MUTED = '#4A4A4A'
+RULE = '#7A7A7A'
+HAIR = '#B5B5B5'
+FILL = '#E6E6E6'
+FILL_LIGHT = '#F3F3F3'
+WHITE = '#FFFFFF'
 
-# One hue per survey function; the same hue is used in every figure.
-FUNCTION = {
-    'IV': ('#2E6DB4', '#E7EFF9'),
-    'V': ('#1B8A7A', '#E2F3F0'),
-    'VI': ('#7A4FA0', '#F0E8F6'),
-    'VII': ('#B9770E', '#FBF1DF'),
-    'VIII': ('#B23A48', '#F8E6E8'),
-    'N': ('#4A5560', '#EEF0F2'),
-}
+# Grayscale ramp for categorical data (dark to light), readable in print.
+GRAYS = ['#262626', '#5C5C5C', '#8E8E8E', '#BDBDBD', '#E4E4E4']
 
 
 def width(text: str, size: float, weight: str = 'normal', style: str = 'normal') -> float:
@@ -57,40 +54,64 @@ class Canvas:
         self.items: list[str] = []
 
     # Shapes ----------------------------------------------------------------
-    def rect(self, x, y, w, h, fill='none', stroke='none', sw=0.6, rx=2.0, opacity=None):
-        op = f' fill-opacity="{opacity}"' if opacity is not None else ''
-        self.items.append(f'<rect x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" height="{h:.2f}" rx="{rx}" '
-                          f'fill="{fill}" stroke="{stroke}" stroke-width="{sw}"{op}/>')
+    def rect(self, x, y, w, h, fill='none', stroke='none', sw=0.6, rx=0.0, dash=None):
+        if dash is None:
+            self.items.append(f'<rect x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" height="{h:.2f}" rx="{rx}" '
+                              f'fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>')
+            return
+        if fill != 'none':
+            self.items.append(f'<rect x="{x:.2f}" y="{y:.2f}" width="{w:.2f}" height="{h:.2f}" fill="{fill}"/>')
+        self.polyline([(x, y), (x + w, y), (x + w, y + h), (x, y + h), (x, y)], stroke=stroke, sw=sw, dash=dash)
 
     def circle(self, cx, cy, r, fill, stroke='none', sw=0.6):
-        self.items.append(f'<circle cx="{cx:.2f}" cy="{cy:.2f}" r="{r}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>')
+        self.items.append(f'<circle cx="{cx:.2f}" cy="{cy:.2f}" r="{r}" fill="{fill}" stroke="{stroke}" '
+                          f'stroke-width="{sw}"/>')
 
-    def polygon(self, points, fill, stroke='none', sw=0.6, opacity=None):
+    def polygon(self, points, fill, stroke='none', sw=0.6):
         pts = ' '.join(f'{x:.2f},{y:.2f}' for x, y in points)
-        op = f' fill-opacity="{opacity}"' if opacity is not None else ''
-        self.items.append(f'<polygon points="{pts}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"{op}/>')
+        self.items.append(f'<polygon points="{pts}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}" '
+                          f'stroke-linejoin="miter"/>')
 
-    def polyline(self, points, stroke=INK, sw=0.7, dash=None):
+    def polyline(self, points, stroke=INK, sw=0.6, dash=None):
         if dash is None:
             pts = ' '.join(f'{x:.2f},{y:.2f}' for x, y in points)
             self.items.append(f'<polyline points="{pts}" fill="none" stroke="{stroke}" stroke-width="{sw}" '
-                              f'stroke-linejoin="round" stroke-linecap="round"/>')
+                              f'stroke-linejoin="miter" stroke-linecap="butt"/>')
             return
         on, off = dash
+        period = on + off
+        phase = 0.0  # position within the dash pattern, continuous across segments
+        dashes, current = [], None
         for (x1, y1), (x2, y2) in zip(points, points[1:]):
             length = math.hypot(x2 - x1, y2 - y1)
             if length == 0:
                 continue
             ux, uy = (x2 - x1) / length, (y2 - y1) / length
-            s = 0.0
-            while s < length:
-                e = min(s + on, length)
-                self.items.append(f'<line x1="{x1 + ux * s:.2f}" y1="{y1 + uy * s:.2f}" x2="{x1 + ux * e:.2f}" '
-                                  f'y2="{y1 + uy * e:.2f}" stroke="{stroke}" stroke-width="{sw}" stroke-linecap="butt"/>')
-                s = e + off
+            u = 0.0
+            while u < length - 1e-9:
+                if phase < on:
+                    step = min(on - phase, length - u)
+                    a = (x1 + ux * u, y1 + uy * u)
+                    b = (x1 + ux * (u + step), y1 + uy * (u + step))
+                    if current is None:
+                        current = [a]
+                    current.append(b)
+                else:
+                    step = min(period - phase, length - u)
+                    if current is not None:
+                        dashes.append(current)
+                        current = None
+                u += step
+                phase = (phase + step) % period
+        if current is not None:
+            dashes.append(current)
+        for d in dashes:
+            pts = ' '.join(f'{x:.2f},{y:.2f}' for x, y in d)
+            self.items.append(f'<polyline points="{pts}" fill="none" stroke="{stroke}" stroke-width="{sw}" '
+                              f'stroke-linejoin="round" stroke-linecap="butt"/>')
 
-    def arrow(self, points, stroke=INK, sw=0.7, dash=None, head=4.2, both=False):
-        """Polyline ending in a filled arrowhead (and optionally starting with one)."""
+    def arrow(self, points, stroke=INK, sw=0.6, dash=None, head=3.6, both=False, open_head=False):
+        """Polyline ending in a slim arrowhead (and optionally starting with one)."""
         points = list(points)
 
         def tip(p_from, p_to):
@@ -98,9 +119,12 @@ class Canvas:
             length = math.hypot(x2 - x1, y2 - y1)
             ux, uy = (x2 - x1) / length, (y2 - y1) / length
             base = (x2 - ux * head, y2 - uy * head)
-            half = head * 0.42
-            self.polygon([(x2, y2), (base[0] - uy * half, base[1] + ux * half),
-                          (base[0] + uy * half, base[1] - ux * half)], fill=stroke)
+            half = head * 0.36
+            tri = [(x2, y2), (base[0] - uy * half, base[1] + ux * half), (base[0] + uy * half, base[1] - ux * half)]
+            if open_head:
+                self.polyline([tri[1], tri[0], tri[2]], stroke=stroke, sw=sw)
+                return (x2, y2)
+            self.polygon(tri, fill=stroke)
             return base
 
         body = points[:]
@@ -110,28 +134,26 @@ class Canvas:
         self.polyline(body, stroke=stroke, sw=sw, dash=dash)
 
     # Text ------------------------------------------------------------------
-    def text(self, x, y, s, size=7.0, weight='normal', style='normal', anchor='start', fill=INK):
+    def text(self, x, y, s, size=7.0, weight='normal', style='normal', anchor='start', fill=INK, rotate=None):
+        transform = ''
+        if rotate is not None:
+            transform = f' transform="rotate({rotate} {x:.2f} {y:.2f})"'
         self.items.append(f'<text x="{x:.2f}" y="{y:.2f}" font-family="{FONT}" font-size="{size}" '
                           f'font-weight="{weight}" font-style="{style}" text-anchor="{anchor}" '
-                          f'fill="{fill}">{escape(s)}</text>')
+                          f'fill="{fill}"{transform}>{escape(s)}</text>')
 
     def lines(self, x, y, rows, size=7.0, leading=None, **kw):
         """Draw consecutive lines starting at baseline y; return the next baseline."""
-        leading = leading or size * 1.22
+        leading = leading or size * 1.2
         for row in rows:
             self.text(x, y, row, size=size, **kw)
             y += leading
         return y
 
-    def marker(self, cx, cy, label, r=5.2, fill=ALERT):
-        self.circle(cx, cy, r, fill=fill, stroke='#FFFFFF', sw=0.8)
-        self.text(cx, cy + 2.4, label, size=6.6, weight='bold', anchor='middle', fill='#FFFFFF')
-
-    def hazard(self, cx, cy, s=6.0, fill=INK):
-        """Small warning triangle used to mark a degradation source."""
-        self.polygon([(cx, cy - s * 0.55), (cx - s * 0.55, cy + s * 0.45), (cx + s * 0.55, cy + s * 0.45)],
-                     fill=fill)
-        self.text(cx, cy + s * 0.36, '!', size=s * 0.72, weight='bold', anchor='middle', fill='#FFFFFF')
+    def marker(self, cx, cy, label, r=4.6):
+        """Circled numeral that identifies an open interface (Section X)."""
+        self.circle(cx, cy, r, fill=WHITE, stroke=INK, sw=0.6)
+        self.text(cx, cy + 2.35, label, size=6.6, weight='bold', anchor='middle', fill=INK)
 
     # Output ----------------------------------------------------------------
     def svg(self) -> str:
