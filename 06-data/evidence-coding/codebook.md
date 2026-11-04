@@ -464,7 +464,7 @@ The primary codes are frozen with a SHA-256 record before agreement is computed.
 4. Add a locator row for every value that Section 15 lists. Record the physical PDF page for every value that the card does not locate on a page. For a light-legacy card, give a `pdf` or `transcription` locator for every value.
 5. When the sources do not settle a value, apply the decision rules to the available evidence and record the uncertainty in `notes`. Code every listed work.
 
-**Output schema of `codes.json`.** One `works` entry per listed work, in the order of the list, with exactly the fields of the example. One `locators` entry per value that needs a locator. Z98 and Z99 are fictional codes and describe no corpus work. Z98 is a dust-tolerant LiDAR-inertial odometry method on a skid-steer robot that feeds its own local planner, driven on one course with no dust, light dust and dense dust, with trajectory error and course completion reported per level. Z99 is a LiDAR odometry method evaluated only on public tunnel and corridor sequences chosen for their degeneracy, against other methods, with trajectory error as its only measure.
+**Output schema of `codes.json`.** One `works` entry per listed work, in the order of the list, with exactly the fields of the example. One `locators` entry per value that needs a locator. Z98 and Z99 are fictional codes and describe no corpus work. Z98 is a dust-tolerant LiDAR-inertial odometry method on a skid-steer robot that feeds its own local planner, driven on one course with no dust, light dust and dense dust, with trajectory error and course completion reported per level. Z99 is a localization method that matches magnetometer readings against a prior magnetic-field map of an office floor and is designed to tolerate changes made after the map survey. It is evaluated only on public recordings chosen because desks and metal cabinets were moved after the survey, against other map-matching methods, with position error as its only measure.
 
 ```json
 {
@@ -475,7 +475,7 @@ The primary codes are frozen with a SHA-256 record before agreement is computed.
     {"code": "Z98", "functions": "LOC|PLN", "src_addressed": "PER", "response_family": "IV-A", "src_manipulated": "PER", "src_selected": "none", "src_incidental": "none",
      "nominal_control": "yes", "single_level_injection": "no", "task_setting": "physical", "deg_task_class": "D1",
      "deg_task_setting": "physical", "level_degradation": "P", "drivetrain_effect": "no", "notes": ""},
-    {"code": "Z99", "functions": "LOC", "src_addressed": "PER", "response_family": "IV-A", "src_manipulated": "none", "src_selected": "PER", "src_incidental": "none",
+    {"code": "Z99", "functions": "LOC", "src_addressed": "MAP", "response_family": "IV-E", "src_manipulated": "none", "src_selected": "MAP", "src_incidental": "none",
      "nominal_control": "na", "single_level_injection": "no", "task_setting": "none", "deg_task_class": "none",
      "deg_task_setting": "none", "level_degradation": "D", "drivetrain_effect": "no", "notes": ""}
   ],
@@ -489,9 +489,9 @@ The primary codes are frozen with a SHA-256 record before agreement is computed.
     {"code": "Z98", "attribute": "deg_task_class", "value": "D1", "source": "pdf", "locator": "PDF p. 6, Table III", "note": "completion per dust level"},
     {"code": "Z98", "attribute": "deg_task_setting", "value": "physical", "source": "pdf", "locator": "PDF p. 6, Table III", "note": ""},
     {"code": "Z98", "attribute": "level_degradation", "value": "P", "source": "pdf", "locator": "PDF p. 6, Table III", "note": ""},
-    {"code": "Z99", "attribute": "src_addressed", "value": "PER", "source": "card", "locator": "card: Problem, p. 1", "note": ""},
-    {"code": "Z99", "attribute": "response_family", "value": "IV-A", "source": "pdf", "locator": "PDF p. 3, Sec. III-B", "note": ""},
-    {"code": "Z99", "attribute": "src_selected", "value": "PER", "source": "pdf", "locator": "PDF p. 7, Table II", "note": "sequences chosen for geometric degeneracy"},
+    {"code": "Z99", "attribute": "src_addressed", "value": "MAP", "source": "card", "locator": "card: Problem, p. 1", "note": ""},
+    {"code": "Z99", "attribute": "response_family", "value": "IV-E", "source": "pdf", "locator": "PDF p. 3, Sec. III-B", "note": ""},
+    {"code": "Z99", "attribute": "src_selected", "value": "MAP", "source": "pdf", "locator": "PDF p. 7, Table II", "note": "recordings chosen because furniture was moved after the map survey"},
     {"code": "Z99", "attribute": "level_degradation", "value": "D", "source": "pdf", "locator": "PDF p. 7, Table II", "note": ""}
   ]
 }
