@@ -12,10 +12,10 @@
 \markboth{Wheeled Mobile Robot Autonomy Under Degradation}{Wheeled Mobile Robot Autonomy Under Degradation}
 \maketitle
 \begin{abstract}
-Wheeled mobile robots operate under changing sensing, terrain, map, communication, and computational conditions that violate the assumptions of individual navigation algorithms. Reliable navigation requires estimation, planning, and control to account for these changes jointly, since errors and delays in one component affect decisions elsewhere in the system. This survey compares \CorpusCount{} publications from 2021 to 2026 on localization and mapping, traversability and motion control, semantic navigation, multi-robot coordination, and fault management. It organizes them by the navigation assumption that each degradation violates and by the information or action that each response changes. Selective sensing and fusion, adaptive motion models, map revision, and constrained action selection are complementary responses whose effectiveness depends on valid state estimates, fresh information, and feasible actions. Evaluation practice is compared by measurement level, degradation test conditions, and the events underlying risk or diagnostic claims. Only \DegTaskShare\% of the \CoreCount{} technical publications report task outcomes under a designed degradation, with localization and mapping evidence rarely extending beyond estimation error. The comparison identifies four interfaces that require joint evaluation: localization-triggered recovery, semantic reasoning with fallback under resource limits, terrain decisions conditioned on pose uncertainty, and shared-state acceptance after communication loss and reconnection. Evaluating them requires linking degradation onset, detection, and executed response to safety and task performance under matched conditions. Further challenges concern transfer across platforms, computational resources, sustained operation, and assurance under changing information quality.
+Wheeled mobile robots operate under changing sensing, terrain, map, communication, and computational conditions that violate the assumptions of individual navigation algorithms. Reliable navigation requires estimation, planning, and control to account for these changes jointly, since errors and delays in one component affect decisions elsewhere in the system. This survey compares \CorpusCount{} publications from January 2021 to November 2026 on localization and mapping, traversability and motion control, semantic navigation, multi-robot coordination, and fault management. It organizes them by the navigation assumption that each degradation violates and by the information or action that each response changes. Selective sensing and fusion, adaptive motion models, map revision, and constrained action selection are complementary responses whose effectiveness depends on valid state estimates, fresh information, and feasible actions. Evaluation practice is compared by measurement level, degradation test conditions, and the events underlying risk or diagnostic claims. In this purposively selected sample, only \DegTaskCount{} of the \CoreCount{} technical publications (\DegTaskShare\%) report task outcomes under a named degradation condition, with localization and mapping evidence rarely extending beyond estimation error. The comparison identifies four interfaces that require joint evaluation: localization-triggered recovery, semantic reasoning with fallback under resource limits, terrain decisions conditioned on pose uncertainty, and shared-state acceptance after communication loss and reconnection. Evaluating them requires linking degradation onset, detection, and executed response to safety and task performance under matched conditions. Further challenges concern transfer across platforms, computational resources, sustained operation, and assurance under changing information quality.
 \end{abstract}
 \begin{IEEEkeywords}
-Wheeled mobile robots, robust navigation, sensor fusion, multi-robot systems.
+Wheeled mobile robots, robust navigation, localization, motion planning, multi-robot systems, fault tolerance, performance evaluation.
 \end{IEEEkeywords}
 \input{sections/01-introduction}
 \input{sections/02-background}
@@ -28,7 +28,10 @@ Wheeled mobile robots, robust navigation, sensor fusion, multi-robot systems.
 \input{sections/09-evaluation}
 \input{sections/10-challenges}
 \input{sections/11-conclusion}
-\IEEEtriggeratref{225}
+\section*{Acknowledgment}
+Large language model tools assisted the screening of candidate records, as described in Section~\ref{sec:methodology} and the supplementary material, and the drafting and language editing of this manuscript. The authors reviewed all such output and take full responsibility for the content.
+
+\IEEEtriggeratref{999}
 \bibliographystyle{IEEEtran}
 \bibliography{ieee-bst-control,refs}
 \end{document}

@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "scope": "Every sentence in Sections IV-X that reports a numerical result (percentages, times, rates, counts with units, or decimal values).",
   "method": "Numbers in comparison records were checked earlier against the PDFs (data/within-study-comparisons.json). For the other sentences, every number was searched in the review card and in the local full-text transcription, and the numbers of each sentence were required to occur together in one transcription passage. Source excerpts remain local.",
-  "sentences": 22,
+  "sentences": 23,
   "in_comparison_records": 10,
   "mismatches": 0,
   "entries": [
@@ -53,11 +53,13 @@
       ],
       "numbers": [
         "94",
-        "80"
+        "80",
+        "67",
+        "73"
       ],
       "status": "numbers found together in the local full-text transcription",
       "card_locator": "R13 p. 7",
-      "sentence": "Its success falls from 94\\% in simulation to 80\\% outdoors on a Scout Mini, a drop that the authors attribute to wheel slip and sensor noise."
+      "sentence": "Its success falls from 94\\% in simulation to 80\\% outdoors on a Scout Mini, which the authors attribute to wheel slip and sensor noise, although it still exceeds the 67\\% of MPPI and 73\\% of GAKD in the same outdoor comparison."
     },
     {
       "section": "05",
@@ -99,11 +101,26 @@
         "1.9",
         "18.4",
         "2.4",
-        "0.0092"
+        "0.0092",
+        "0.0019"
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
       "sentence": "In 100 Gaussian eight-pedestrian simulations with a joint-risk specification of 0.05, its mean traversal takes 16.0\\,s (standard deviation 1.9\\,s) versus 18.4\\,s (2.4\\,s) for chance-constrained MPC, with maximum estimated plan collision probabilities of 0.0092"
+    },
+    {
+      "section": "05",
+      "codes": [
+        "R14"
+      ],
+      "numbers": [
+        "6.6",
+        "25",
+        "48.3"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "",
+      "sentence": "In Jackal trials on the same estimated depth, its collision rate is 6.6\\% against 25\\% for a navigation stack at a similar mean speed and 48.3\\% for a faster setting, with planning on a networked laptop and no temporal memory."
     },
     {
       "section": "06",
@@ -111,12 +128,13 @@
         "R27"
       ],
       "numbers": [
-        "27",
-        "30"
+        "30",
+        "21",
+        "27"
       ],
-      "status": "numbers found together in the local full-text transcription",
-      "card_locator": "R27 pp. 7-8",
-      "sentence": "In 27 of 30 building trials it reaches a correct position, with detection errors causing most failures."
+      "status": "27 of 30 stated in the source; 21 of 30 derived from the 9 reported failures in 30 trials",
+      "card_locator": "R27 pp. 7-8 (failure analysis, Sec. IV-D)",
+      "sentence": "In 30 building trials it succeeds end to end in 21 and reaches a correct position in 27, with detection errors causing most failures."
     },
     {
       "section": "06",
@@ -129,13 +147,15 @@
         "0.2",
         "0.89",
         "0.67",
-        "15",
+        "0.13",
         "0.60",
-        "0.13"
+        "15",
+        "0.89",
+        "0.77"
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "In 150 trials with 28 initially visible objects, its success within 0.2\\,m is 0.89 versus 0.67 for OWL-v2 with ZoeDepth, while a separate 15-trial ablation reaches 0.60 arrival with collision training and 0.13 without it."
+      "sentence": "In 150 trials with 28 initially visible objects, its success within 0.2\\,m is 0.89 versus 0.67 for OWL-v2 with ZoeDepth, while in a separate ablation collision training raises arrival with obstacles from 0.13 to 0.60 in 15 trials but lowers success without obs"
     },
     {
       "section": "06",
@@ -157,12 +177,13 @@
         "R26"
       ],
       "numbers": [
-        "60",
-        "90"
+        "6",
+        "9",
+        "10"
       ],
       "status": "numbers found together in the local full-text transcription",
       "card_locator": "R26 p. 6, Table III",
-      "sentence": "With the planner unchanged, the affordance model of a wheeled robot raises its success on a ramp-or-stairs task from 60\\% to 90\\%, a gain indicating that semantic proposals need filtering by the capabilities of the executing chassis."
+      "sentence": "With the planner unchanged, the affordance model of a wheeled robot raises its success on a ramp-or-stairs task from 6 to 9 of 10 runs, a gain indicating that semantic proposals need filtering by the capabilities of the executing chassis."
     },
     {
       "section": "06",
@@ -242,11 +263,12 @@
         "R33"
       ],
       "numbers": [
-        "50"
+        "50",
+        "20"
       ],
       "status": "numbers found together in the local full-text transcription",
       "card_locator": "R33 p. 1",
-      "sentence": "Help Me Through learns viewpoint actions from about 50\\,h of human demonstrations to keep monocular SLAM tracking through texture-poor transitions, with a physical test that runs the policy on live images while a person teleoperates path planning~ ."
+      "sentence": "Help Me Through learns viewpoint actions from about 50\\,h of human demonstrations, or 20\\,h followed by online fine-tuning, to keep monocular SLAM tracking through texture-poor transitions, with a physical test that runs the policy on live images while a perso"
     },
     {
       "section": "08",

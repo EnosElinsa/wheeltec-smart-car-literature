@@ -11,6 +11,9 @@ import json
 import math
 from pathlib import Path
 
+import csv
+
+from project_paths import literature_root
 from svgkit import FILL, FILL_LIGHT, GRAYS, HAIR, INK, MUTED, RULE, WHITE, Canvas, svg_to_pdf, width, wrap
 
 M = Path(__file__).resolve().parents[1]
@@ -62,6 +65,37 @@ TAXONOMY = [
 ]
 
 
+# Corpus codes of the Fig. 1 examples; examples whose coding sets boundary_platform get a dagger.
+EXAMPLE_CODES = {
+ 'LODESTAR': 'E01', 'Switch-SLAM': 'F04', 'DR-ICP': 'S24', 'DCReg': 'S37', 'LiDAR-radar-inertial fusion': 'E09',
+ 'Super4DR': 'R12', 'RaLI-Multi': 'R02', 'LiDAR-teach/radar-repeat': 'R11', 'SE2-LIO': 'N02', 'WING': 'R04',
+ 'ToF-wheel odometry': 'E02', 'DURAL': 'E03', 'ELite': 'E18', 'Chamelion': 'R07', 'NeuSE': 'S34', 'CMRNext': 'R06',
+ 'OMCL': 'R10', 'CADNet': 'M29', 'SPARTA': 'S45', 'terrain-adaptive MPC': 'R13', 'TRAIL': 'R15', 'FIT-SLAM 2': 'E13',
+ 'LRAE': 'M14', 'SLAM-aware graph planning': 'N05', 'SCOPE': 'R18', 'HEIGHT': 'R16', 'prescient MPC': 'M30',
+ 'homotopy MPC': 'S09', 'Safe Horizon MPC': 'E25', 'MonoMPC': 'R14', 'Perceive With Confidence': 'F08',
+ 'HOV-SG': 'E48', 'OpenIN': 'E44', 'osmAG-LLM': 'R27', 'VLN-Game': 'R28', 'OPEN': 'M10', 'CAUSALNAV': 'E45',
+ 'LeLaN': 'E50', 'Uni-NaVid': 'E49', 'VL-TGS': 'F05', 'Sem-NaVAE': 'R25', 'VAMOS': 'R26', 'GSON': 'F06',
+ 'NORM-Nav': 'R30', 'OLiVia-Nav': 'R29', 'SocialNav-SUB': 'S44', 'CURE': 'M17', 'URGE': 'R22', 'TAPM-IVP': 'F09',
+ 'MR-TopoMap': 'M36', 'bandwidth-efficient C-SLAM': 'S29', 'layered transmission': 'R21', 'iMESA': 'E40',
+ 'riMESA': 'R23', 'Multi-Proxy': 'R20', 'Swarm-SLAM': 'S10', 'CoCoPlan': 'R19', 'MEF-Explore': 'R24',
+ 'correlation-aware map repair': 'F03', 'Set-based LPV diagnosis': 'N16', 'kinematic residuals': 'E51',
+ 'prescribed-performance control': 'M15', 'Reliable MCL': 'M35', 'EKF-SLAM integrity': 'X07', 'Sentinel': 'F07',
+ 'RADIUM': 'R36', 'GP-based recovery': 'E59', 'RTEB': 'S16', 'CARE': 'S47', 'active view planning': 'R33',
+ 'Energy co-management': 'R32', 'persistent charging': 'E58', 'cloud-edge offloading': 'R31', 'LiReN': 'S41',
+}
+
+
+def boundary_codes() -> set[str]:
+    path = literature_root(M) / '06-data/corpus-comparison.csv'
+    return {r['code'] for r in csv.DictReader(path.open(encoding='utf-8-sig')) if r['boundary_platform'] == 'yes'}
+
+
+def mark_boundary(methods: str, boundary: set[str]) -> str:
+    names = methods.split(', ')
+    assert all(n in EXAMPLE_CODES for n in names), [n for n in names if n not in EXAMPLE_CODES]
+    return ', '.join(n + ('\u2020' if EXAMPLE_CODES[n] in boundary else '') for n in names)
+
+
 def fig_taxonomy() -> Canvas:
     W, margin, gap = 516.0, 0.5, 6.0
     cw = (W - 2 * margin - 4 * gap) / 5
@@ -72,11 +106,12 @@ def fig_taxonomy() -> Canvas:
     heads = [wrap(f'{sec}. {title}', cw - 8, 7.4, 'bold') for sec, title, _ in TAXONOMY]
     head_h = max(len(h) for h in heads) * 8.8 + 6.5
     cells = []
+    boundary = boundary_codes()
     for _, _, mechs in TAXONOMY:
         col = []
         for name, methods in mechs:
             n = wrap(name, box_w - 2 * pad, 7.0)
-            m = wrap(methods, box_w - 2 * pad, 6.3, style='italic')
+            m = wrap(mark_boundary(methods, boundary), box_w - 2 * pad, 6.3, style='italic')
             col.append((n, m, len(n) * 8.2 + len(m) * 7.3 + 5.2))
         cells.append(col)
     row_h = [max(cells[k][r][2] for k in range(5)) for r in range(4)]

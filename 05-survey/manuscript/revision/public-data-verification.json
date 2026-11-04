@@ -86,9 +86,9 @@
   "source_checked_numerical_cases": 7,
   "displayed_equations_unchanged": 6,
   "overfull_boxes": 0,
-  "underfull_horizontal_boxes": 7,
+  "underfull_horizontal_boxes": 6,
   "underfull_vertical_boxes": 0,
-  "pdf_sha256": "05dd7765aed6f166d7a712d9a9ec557177d7d666fdccd803a4c67b25e1a3d9d1",
+  "pdf_sha256": "99561ace77cac80c06a27a1832b3ae9767c4f597deca1735a8c36f1e14aa6b8a",
   "supplement": {
     "pages": 8,
     "unique_labels": 13,
@@ -99,7 +99,7 @@
     "overfull_boxes": 0,
     "underfull_horizontal_boxes": 1,
     "underfull_vertical_boxes": 0,
-    "pdf_sha256": "81871b54b460a902286375bdd283a3b9d074780ebc35d7fe08592f3f8f65595a"
+    "pdf_sha256": "6c248f7c92732aa6486e519450af219d7f2c1332edfbd4710eaa6e0fd2c30c69"
   },
-  "base_commit": "ad8328e024baab8787057b9fe42a9d5f674b6e10"
+  "base_commit": "2738efbab0e7ade2bef32d2170201597be8d0ee5"
 }

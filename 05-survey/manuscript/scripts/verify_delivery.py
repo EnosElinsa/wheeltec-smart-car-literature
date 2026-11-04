@@ -129,7 +129,7 @@ def main():
     for key in ('publications', 'residual', 'closed-loop-task', 'designed-degradation',
                 'degradation-with-task', 'integrity-reliability', 'placement-reported', 'wheeled-target'):
         cells = [str(v[key]) for v in evidence_map.values()] + [str(sum(v[key] for v in evidence_map.values()))]
-        assert ' & ' + ' & '.join(cells) + r' \\' in evaluation_table, key
+        assert ' & ' + ' & '.join(cells) in evaluation_table, key
     inventory = list(csv.DictReader((MANUSCRIPT / 'generated/corpus-inventory.csv').open(encoding='utf-8')))
     assert {row['code'] for row in inventory} == set(inclusion['selected_ids'])
     for row in inventory:

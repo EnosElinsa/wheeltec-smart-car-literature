@@ -11,25 +11,25 @@
 <polyline points="4.50,64.10 8.50,64.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="11.90" y="66.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Selective updates and</text>
 <text x="11.90" y="74.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">conditioning</text>
-<text x="11.90" y="82.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">LODESTAR, Switch-SLAM,</text>
-<text x="11.90" y="89.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">DR-ICP, DCReg</text>
+<text x="11.90" y="82.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">LODESTAR†, Switch-SLAM†,</text>
+<text x="11.90" y="89.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">DR-ICP†, DCReg†</text>
 <rect x="8.50" y="104.60" width="90.20" height="43.50" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="4.50,111.10 8.50,111.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="11.90" y="113.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Complementary sensing</text>
-<text x="11.90" y="121.40" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">LiDAR-radar-inertial fusion,</text>
-<text x="11.90" y="128.70" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Super4DR, RaLI-Multi,</text>
+<text x="11.90" y="121.40" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">LiDAR-radar-inertial fusion†,</text>
+<text x="11.90" y="128.70" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Super4DR†, RaLI-Multi,</text>
 <text x="11.90" y="136.00" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">LiDAR-teach/radar-repeat</text>
 <rect x="8.50" y="151.60" width="90.20" height="36.20" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="4.50,158.10 8.50,158.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="11.90" y="160.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Motion priors and contact</text>
-<text x="11.90" y="168.40" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">SE2-LIO, WING, ToF-wheel</text>
+<text x="11.90" y="168.40" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">SE2-LIO, WING†, ToF-wheel</text>
 <text x="11.90" y="175.70" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">odometry, DURAL</text>
 <rect x="8.50" y="191.30" width="90.20" height="43.50" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="4.50,197.80 8.50,197.80" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="11.90" y="199.70" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Map revision and</text>
 <text x="11.90" y="207.90" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">relocalization</text>
-<text x="11.90" y="216.30" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">ELite, Chamelion, NeuSE,</text>
-<text x="11.90" y="223.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">CMRNext, OMCL</text>
+<text x="11.90" y="216.30" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">ELite†, Chamelion, NeuSE,</text>
+<text x="11.90" y="223.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">CMRNext†, OMCL†</text>
 <polyline points="4.50,52.60 4.50,197.80" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <polyline points="153.80,22.50 153.80,28.50" fill="none" stroke="#111111" stroke-width="0.6" stroke-linejoin="miter" stroke-linecap="butt"/>
 <rect x="104.70" y="28.50" width="98.20" height="24.10" rx="0.0" fill="#E6E6E6" stroke="#111111" stroke-width="0.7"/>
@@ -57,7 +57,7 @@
 <text x="116.10" y="199.70" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Safety constraints and risk</text>
 <text x="116.10" y="207.90" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">bounds</text>
 <text x="116.10" y="216.30" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Safe Horizon MPC, MonoMPC,</text>
-<text x="116.10" y="223.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Perceive With Confidence</text>
+<text x="116.10" y="223.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Perceive With Confidence†</text>
 <polyline points="108.70,52.60 108.70,197.80" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <polyline points="258.00,22.50 258.00,28.50" fill="none" stroke="#111111" stroke-width="0.6" stroke-linejoin="miter" stroke-linecap="butt"/>
 <rect x="208.90" y="28.50" width="98.20" height="24.10" rx="0.0" fill="#E6E6E6" stroke="#111111" stroke-width="0.7"/>
@@ -66,14 +66,14 @@
 <rect x="216.90" y="57.60" width="90.20" height="43.50" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="212.90,64.10 216.90,64.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="220.30" y="66.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Semantic scene memory</text>
-<text x="220.30" y="74.40" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">HOV-SG, OpenIN,</text>
-<text x="220.30" y="81.70" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">osmAG-LLM, VLN-Game</text>
+<text x="220.30" y="74.40" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">HOV-SG†, OpenIN, osmAG-LLM,</text>
+<text x="220.30" y="81.70" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">VLN-Game</text>
 <rect x="216.90" y="104.60" width="90.20" height="43.50" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="212.90,111.10 216.90,111.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="220.30" y="113.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Geographic grounding and</text>
 <text x="220.30" y="121.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">learned actions</text>
 <text x="220.30" y="129.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">OPEN, CAUSALNAV, LeLaN,</text>
-<text x="220.30" y="136.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Uni-NaVid</text>
+<text x="220.30" y="136.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Uni-NaVid†</text>
 <rect x="216.90" y="151.60" width="90.20" height="36.20" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="212.90,158.10 216.90,158.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="220.30" y="160.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Candidate selection and</text>
@@ -101,18 +101,18 @@
 <text x="324.50" y="121.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">bandwidth limits</text>
 <text x="324.50" y="129.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">MR-TopoMap,</text>
 <text x="324.50" y="136.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">bandwidth-efficient C-SLAM,</text>
-<text x="324.50" y="144.20" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">layered transmission</text>
+<text x="324.50" y="144.20" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">layered transmission†</text>
 <rect x="321.10" y="151.60" width="90.20" height="36.20" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="317.10,158.10 321.10,158.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="324.50" y="160.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Distributed estimation</text>
-<text x="324.50" y="168.40" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">iMESA, riMESA, Multi-Proxy,</text>
+<text x="324.50" y="168.40" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">iMESA†, riMESA†, Multi-Proxy†,</text>
 <text x="324.50" y="175.70" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Swarm-SLAM</text>
 <rect x="321.10" y="191.30" width="90.20" height="43.50" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="317.10,197.80 321.10,197.80" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="324.50" y="199.70" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Rendezvous and</text>
 <text x="324.50" y="207.90" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">reconnection</text>
 <text x="324.50" y="216.30" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">CoCoPlan, MEF-Explore,</text>
-<text x="324.50" y="223.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">correlation-aware map repair</text>
+<text x="324.50" y="223.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">correlation-aware map repair†</text>
 <polyline points="317.10,52.60 317.10,197.80" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <polyline points="466.40,22.50 466.40,28.50" fill="none" stroke="#111111" stroke-width="0.6" stroke-linejoin="miter" stroke-linecap="butt"/>
 <rect x="417.30" y="28.50" width="98.20" height="24.10" rx="0.0" fill="#E6E6E6" stroke="#111111" stroke-width="0.7"/>
@@ -122,7 +122,7 @@
 <polyline points="421.30,64.10 425.30,64.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="428.70" y="66.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Diagnosis and tolerant</text>
 <text x="428.70" y="74.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">control</text>
-<text x="428.70" y="82.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Set-based LPV diagnosis,</text>
+<text x="428.70" y="82.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Set-based LPV diagnosis†,</text>
 <text x="428.70" y="89.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">kinematic residuals,</text>
 <text x="428.70" y="97.20" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">prescribed-performance control</text>
 <rect x="425.30" y="104.60" width="90.20" height="43.50" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
@@ -130,7 +130,7 @@
 <text x="428.70" y="113.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Integrity and runtime</text>
 <text x="428.70" y="121.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">monitoring</text>
 <text x="428.70" y="129.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Reliable MCL, EKF-SLAM</text>
-<text x="428.70" y="136.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">integrity, Sentinel, RADIUM</text>
+<text x="428.70" y="136.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">integrity†, Sentinel, RADIUM</text>
 <rect x="425.30" y="151.60" width="90.20" height="36.20" rx="0.0" fill="#FFFFFF" stroke="#7A7A7A" stroke-width="0.5"/>
 <polyline points="421.30,158.10 425.30,158.10" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="428.70" y="160.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Executed recovery</text>
@@ -141,7 +141,7 @@
 <text x="428.70" y="199.70" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Resources and sustained</text>
 <text x="428.70" y="207.90" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">service</text>
 <text x="428.70" y="216.30" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">Energy co-management,</text>
-<text x="428.70" y="223.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">persistent charging, cloud-edge</text>
+<text x="428.70" y="223.60" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">persistent charging†, cloud-edge</text>
 <text x="428.70" y="230.90" font-family="Times" font-size="6.3" font-weight="normal" font-style="italic" text-anchor="start" fill="#4A4A4A">offloading, LiReN</text>
 <polyline points="421.30,52.60 421.30,197.80" fill="none" stroke="#7A7A7A" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <rect x="0.50" y="244.30" width="243.53" height="49.00" rx="0.0" fill="#FFFFFF" stroke="#111111" stroke-width="0.7"/>
