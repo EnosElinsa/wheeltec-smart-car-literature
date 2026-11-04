@@ -118,10 +118,11 @@ def main():
             'degradation-with-task': sum({'designed-degradation', 'closed-loop-task'} <= a for a in attrs),
             'integrity-reliability': sum('integrity-reliability' in a for a in attrs),
             'placement-reported': sum(row['compute_location'] != 'not-reported' for row in group),
+            'wheeled-target': sum(row['boundary_platform'] == 'no' for row in group),
         }, module
     assert sum(v['publications'] for v in evidence_map.values()) == len(technical_rows)
     for key in ('publications', 'residual', 'closed-loop-task', 'designed-degradation',
-                'degradation-with-task', 'integrity-reliability', 'placement-reported'):
+                'degradation-with-task', 'integrity-reliability', 'placement-reported', 'wheeled-target'):
         cells = [str(v[key]) for v in evidence_map.values()] + [str(sum(v[key] for v in evidence_map.values()))]
         assert ' & ' + ' & '.join(cells) + r' \\' in evaluation_table, key
     inventory = list(csv.DictReader((MANUSCRIPT / 'generated/corpus-inventory.csv').open(encoding='utf-8')))

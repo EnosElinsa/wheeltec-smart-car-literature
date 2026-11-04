@@ -99,7 +99,8 @@
       "designed-degradation": 45,
       "degradation-with-task": 2,
       "integrity-reliability": 3,
-      "placement-reported": 45
+      "placement-reported": 45,
+      "wheeled-target": 30
     },
     "traversability-planning-control": {
       "publications": 52,
@@ -108,7 +109,8 @@
       "designed-degradation": 21,
       "degradation-with-task": 19,
       "integrity-reliability": 1,
-      "placement-reported": 29
+      "placement-reported": 29,
+      "wheeled-target": 47
     },
     "semantic-language-navigation": {
       "publications": 30,
@@ -117,7 +119,8 @@
       "designed-degradation": 9,
       "degradation-with-task": 8,
       "integrity-reliability": 0,
-      "placement-reported": 17
+      "placement-reported": 17,
+      "wheeled-target": 25
     },
     "multi-robot": {
       "publications": 40,
@@ -126,7 +129,8 @@
       "designed-degradation": 24,
       "degradation-with-task": 13,
       "integrity-reliability": 1,
-      "placement-reported": 30
+      "placement-reported": 30,
+      "wheeled-target": 29
     },
     "fault-recovery-deployment": {
       "publications": 40,
@@ -135,7 +139,8 @@
       "designed-degradation": 31,
       "degradation-with-task": 17,
       "integrity-reliability": 9,
-      "placement-reported": 28
+      "placement-reported": 28,
+      "wheeled-target": 30
     }
   },
   "corpus_count": 229,

@@ -39,7 +39,8 @@
       "designed-degradation": 45,
       "degradation-with-task": 2,
       "integrity-reliability": 3,
-      "placement-reported": 45
+      "placement-reported": 45,
+      "wheeled-target": 30
     },
     "traversability-planning-control": {
       "publications": 52,
@@ -48,7 +49,8 @@
       "designed-degradation": 21,
       "degradation-with-task": 19,
       "integrity-reliability": 1,
-      "placement-reported": 29
+      "placement-reported": 29,
+      "wheeled-target": 47
     },
     "semantic-language-navigation": {
       "publications": 30,
@@ -57,7 +59,8 @@
       "designed-degradation": 9,
       "degradation-with-task": 8,
       "integrity-reliability": 0,
-      "placement-reported": 17
+      "placement-reported": 17,
+      "wheeled-target": 25
     },
     "multi-robot": {
       "publications": 40,
@@ -66,7 +69,8 @@
       "designed-degradation": 24,
       "degradation-with-task": 13,
       "integrity-reliability": 1,
-      "placement-reported": 30
+      "placement-reported": 30,
+      "wheeled-target": 29
     },
     "fault-recovery-deployment": {
       "publications": 40,
@@ -75,7 +79,8 @@
       "designed-degradation": 31,
       "degradation-with-task": 17,
       "integrity-reliability": 9,
-      "placement-reported": 28
+      "placement-reported": 28,
+      "wheeled-target": 30
     }
   },
   "source_checked_numerical_cases": 7,
@@ -83,7 +88,7 @@
   "overfull_boxes": 0,
   "underfull_horizontal_boxes": 7,
   "underfull_vertical_boxes": 0,
-  "pdf_sha256": "e2adcd3fad7cc6db8d8733423700d2299f18a026a734425f05b3b27623fb8bc3",
+  "pdf_sha256": "05dd7765aed6f166d7a712d9a9ec557177d7d666fdccd803a4c67b25e1a3d9d1",
   "supplement": {
     "pages": 8,
     "unique_labels": 13,
@@ -94,7 +99,7 @@
     "overfull_boxes": 0,
     "underfull_horizontal_boxes": 1,
     "underfull_vertical_boxes": 0,
-    "pdf_sha256": "a9e1c8307ec54e552a8685a3ee8801ce95d055563f6b52bafc247592c0aa136d"
+    "pdf_sha256": "81871b54b460a902286375bdd283a3b9d074780ebc35d7fe08592f3f8f65595a"
   },
-  "base_commit": "0bcc664880f479403457babc166ca030452a23b7"
+  "base_commit": "b9be55f158c8c162d73c00dbecb11de49c41d5ee"
 }

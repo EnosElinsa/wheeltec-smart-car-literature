@@ -1,0 +1,305 @@
+{
+  "date": "2026-11-04",
+  "scope": "Every sentence in Sections IV-X that reports a numerical result (percentages, times, rates, counts with units, or decimal values).",
+  "method": "Numbers in comparison records were checked earlier against the PDFs (data/within-study-comparisons.json). For the other sentences, every number was searched in the review card and in the local full-text transcription, and the numbers of each sentence were required to occur together in one transcription passage. Source excerpts remain local.",
+  "sentences": 22,
+  "in_comparison_records": 10,
+  "mismatches": 0,
+  "entries": [
+    {
+      "section": "04",
+      "codes": [
+        "E01"
+      ],
+      "numbers": [
+        "3.113",
+        "1.386",
+        "21.04",
+        "28.69"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "With a common FAST-LIO2 backbone, absolute pose error (APE) on the SubT-MRS Long Corridor recording falls from 3.113 to 1.386\\,m, at the cost of an increase in average desktop computation from 21.04 to 28.69\\,ms."
+    },
+    {
+      "section": "04",
+      "codes": [
+        "E01"
+      ],
+      "numbers": [
+        "0.429",
+        "0.412"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "However, the improvement is not uniform, since the APE on the Short exp recording is 0.429\\,m against 0.412\\,m for the baseline."
+    },
+    {
+      "section": "04",
+      "codes": [
+        "R05"
+      ],
+      "numbers": [
+        "40"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R05 p. 16",
+      "sentence": "AirSLAM combines learned point and line features with map reuse and reaches 40\\,Hz on an embedded GPU under illumination change, although it reduces to a point-feature system where structural lines are absent~ ."
+    },
+    {
+      "section": "05",
+      "codes": [
+        "R13"
+      ],
+      "numbers": [
+        "94",
+        "80"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R13 p. 7",
+      "sentence": "Its success falls from 94\\% in simulation to 80\\% outdoors on a Scout Mini, a drop that the authors attribute to wheel slip and sensor noise."
+    },
+    {
+      "section": "05",
+      "codes": [
+        "E13"
+      ],
+      "numbers": [
+        "880",
+        "1118",
+        "1809",
+        "1706"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "With a common controller and simulator pose, completion takes 880\\,s versus 1118\\,s for FAEL in Cave but 1809\\,s versus 1706\\,s in Corridor."
+    },
+    {
+      "section": "05",
+      "codes": [
+        "E13"
+      ],
+      "numbers": [
+        "20.8",
+        "63.0"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "Fisher-information evaluation also raises mean planning time from 20.8 to 63.0\\,ms."
+    },
+    {
+      "section": "05",
+      "codes": [
+        "E25"
+      ],
+      "numbers": [
+        "100",
+        "0.05",
+        "16.0",
+        "1.9",
+        "18.4",
+        "2.4",
+        "0.0092"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "In 100 Gaussian eight-pedestrian simulations with a joint-risk specification of 0.05, its mean traversal takes 16.0\\,s (standard deviation 1.9\\,s) versus 18.4\\,s (2.4\\,s) for chance-constrained MPC, with maximum estimated plan collision probabilities of 0.0092"
+    },
+    {
+      "section": "06",
+      "codes": [
+        "R27"
+      ],
+      "numbers": [
+        "27",
+        "30"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R27 pp. 7-8",
+      "sentence": "In 27 of 30 building trials it reaches a correct position, with detection errors causing most failures."
+    },
+    {
+      "section": "06",
+      "codes": [
+        "E50"
+      ],
+      "numbers": [
+        "150",
+        "28",
+        "0.2",
+        "0.89",
+        "0.67",
+        "15",
+        "0.60",
+        "0.13"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "In 150 trials with 28 initially visible objects, its success within 0.2\\,m is 0.89 versus 0.67 for OWL-v2 with ZoeDepth, while a separate 15-trial ablation reaches 0.60 arrival with collision training and 0.13 without it."
+    },
+    {
+      "section": "06",
+      "codes": [
+        "R25"
+      ],
+      "numbers": [
+        "90",
+        "120",
+        "240"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R25 p. 1",
+      "sentence": "Sem-NaVAE applies the same generate-and-select structure without a map, scoring conditional variational autoencoder (VAE) proposals with lightweight open-vocabulary segmentation and reporting 90\\% success on 120--240\\,m campus and park routes with few repetiti"
+    },
+    {
+      "section": "06",
+      "codes": [
+        "R26"
+      ],
+      "numbers": [
+        "60",
+        "90"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R26 p. 6, Table III",
+      "sentence": "With the planner unchanged, the affordance model of a wheeled robot raises its success on a ramp-or-stairs task from 60\\% to 90\\%, a gain indicating that semantic proposals need filtering by the capabilities of the executing chassis."
+    },
+    {
+      "section": "06",
+      "codes": [
+        "R26",
+        "R29"
+      ],
+      "numbers": [],
+      "status": "count or unit statement found in the local full-text transcription",
+      "card_locator": "R26 p. 4 (1 Hz inference)",
+      "sentence": "VAMOS plans at 1\\,Hz on a laptop GPU~ , while OLiVia-Nav moves reasoning into compact encoders~ ."
+    },
+    {
+      "section": "07",
+      "codes": [
+        "F09"
+      ],
+      "numbers": [
+        "90",
+        "40",
+        "30"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "In ten simulated trials of Scene~1, each robot succeeds in 90\\% of trials, compared with 40\\% and 30\\% for an ablation that removes both partitioning and greedy subgoal selection."
+    },
+    {
+      "section": "07",
+      "codes": [
+        "R19"
+      ],
+      "numbers": [
+        "100",
+        "22.4",
+        "58.6"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R19 p. 1",
+      "sentence": "In simulations with up to 100 robots, it reports a 22.4\\% higher task-completion rate and 58.6\\% lower communication overhead than the compared protocols."
+    },
+    {
+      "section": "07",
+      "codes": [
+        "R24"
+      ],
+      "numbers": [
+        "21.32",
+        "16.67"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R24 p. 1",
+      "sentence": "MEF-Explore derives rendezvous from entropy fields and assumes that low-rate position exchange is always available, exploring 21.32\\% faster with a 16.67\\% higher success rate than the baseline on three TurtleBot2 robots~ ."
+    },
+    {
+      "section": "08",
+      "codes": [
+        "E59"
+      ],
+      "numbers": [],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "With the same planner in simulation, recovery yields eight successes in ten runs against three in ten in a dense world with 1\\,m doorways."
+    },
+    {
+      "section": "08",
+      "codes": [
+        "E59"
+      ],
+      "numbers": [],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "Both variants succeed in all ten runs in a sparse world with 2\\,m doorways."
+    },
+    {
+      "section": "08",
+      "codes": [
+        "R33"
+      ],
+      "numbers": [
+        "50"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R33 p. 1",
+      "sentence": "Help Me Through learns viewpoint actions from about 50\\,h of human demonstrations to keep monocular SLAM tracking through texture-poor transitions, with a physical test that runs the policy on live images while a person teleoperates path planning~ ."
+    },
+    {
+      "section": "08",
+      "codes": [
+        "R32"
+      ],
+      "numbers": [
+        "36.34"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R32 p. 1",
+      "sentence": "Joint runtime control of motor speed and processor voltage and frequency on a wheeled rover reduces total energy by up to 36.34\\% relative to prior methods, with measurements showing that computation can dominate the energy of slow motion~ ."
+    },
+    {
+      "section": "09",
+      "codes": [
+        "M37"
+      ],
+      "numbers": [
+        "86.46",
+        "1307"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "Its 86.46\\% success rate uses the 1307 attempted interventions as denominator and is therefore not the fraction of requests served."
+    },
+    {
+      "section": "09",
+      "codes": [
+        "F07",
+        "E60",
+        "R26",
+        "R07"
+      ],
+      "numbers": [
+        "2.74"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R07 p. 7 (2.74 Hz on Jetson Orin NX); R26 p. 4 (1 Hz)",
+      "sentence": "Sentinel's fast and slow monitors have different intervention horizons~ , FORTRESS caches slow reasoning before runtime planning~ , and a 1\\,Hz VLM planner~ or a change detector at 2.74\\,Hz on an embedded GPU~ requires a local controller that stays valid betwe"
+    },
+    {
+      "section": "09",
+      "codes": [
+        "N20"
+      ],
+      "numbers": [
+        "1.5",
+        "4"
+      ],
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "N20 p. 6",
+      "sentence": "DMSA processes data at 1.5--4 times the recording duration and distinguishes unsupported sensor adaptations from failed runs~ ."
+    }
+  ]
+}
