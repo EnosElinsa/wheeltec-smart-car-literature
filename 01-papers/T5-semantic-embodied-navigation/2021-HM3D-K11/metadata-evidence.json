@@ -1,0 +1,29 @@
+{
+  "id": "K11",
+  "doi": null,
+  "title": "Habitat-Matterport 3D Dataset (HM3D): 1000 Large-scale 3D Environments for Embodied AI",
+  "authors": [
+    "Ramakrishnan, Santhosh Kumar",
+    "Gokaslan, Aaron",
+    "Wijmans, Erik",
+    "Maksymets, Oleksandr",
+    "Clegg, Alexander",
+    "Turner, John",
+    "Undersander, Eric",
+    "Galuba, Wojciech",
+    "Westbury, Andrew",
+    "Chang, Angel",
+    "Savva, Manolis",
+    "Zhao, Yili",
+    "Batra, Dhruv"
+  ],
+  "venue": "Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks",
+  "year": 2021,
+  "volume": "1",
+  "official_landing_url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/34173cb38f07f89ddbebc2ac9128303f-Abstract-round2.html",
+  "original_citation_sha256": "413d217c784bed0b8b763a1af58b0e25c5acc414f514ae6ce749cdc99f9e5571",
+  "changes": [
+    "Replaced the citation key, which contains spaces and does not parse, with wheeltec-K11-ramakrishnan2021; all other bytes are unchanged."
+  ],
+  "pdf_publication_check": "First-page title, first author and year checked against the official BibTeX export; the PDF and the export carry no DOI."
+}

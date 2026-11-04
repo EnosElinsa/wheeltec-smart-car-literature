@@ -1,0 +1,22 @@
+{
+  "source": "manual_publisher_download",
+  "official_landing_url": "https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/34173cb38f07f89ddbebc2ac9128303f-Abstract-round2.html",
+  "doi": null,
+  "pdf_sha256": "ec1559e9e5137f67ff16002d4442feaa64c6b55cad621803b9ceb2f6968fa390",
+  "bibtex_sha256": "5f13fdcce479dd2b0fb1e369781c3f431949e9d90781f7c8a9254c38eecffe84",
+  "arp_verify": "rejected (heuristic)",
+  "agent_identity_check": "arp verify could not parse the official NeurIPS Datasets and Benchmarks BibTeX export: its citation key contains spaces. The raw bytes are kept unchanged. The agent matched title, first author and year between the PDF first page and the BibTeX.",
+  "selection_id": "K11",
+  "acquisition_method": "manual_publisher_download",
+  "batch": "review-additions-2026-11-04",
+  "citation_status": "derived",
+  "citation_source": "official NeurIPS Datasets and Benchmarks BibTeX export with only the unparsable citation key replaced",
+  "original_citation": "citation-original.bib",
+  "original_citation_sha256": "413d217c784bed0b8b763a1af58b0e25c5acc414f514ae6ce749cdc99f9e5571",
+  "changes": [
+    "Replaced the citation key, which contains spaces and does not parse, with wheeltec-K11-ramakrishnan2021; all other bytes are unchanged."
+  ],
+  "authorization": "User explicitly authorized this derived citation on 2026-11-04 (fourth derived-citation exception, after S24-S26).",
+  "metadata_evidence": "metadata-evidence.json",
+  "metadata_evidence_sha256": "c1125910a43db1b5451bf8c1d9284c88d6f3b264d8f39ceab125a1aaefa0c2c9"
+}

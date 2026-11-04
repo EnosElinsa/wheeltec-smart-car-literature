@@ -1,0 +1,42 @@
+{
+  "paper_id": "f44e8d1fdca1488ea3e36f99c45ae169",
+  "metadata": {
+    "title": "ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning",
+    "authors": [
+      "Qiao Gu",
+      "Ali Kuwajerwala",
+      "Sacha Morin",
+      "Krishna Murthy Jatavallabhula",
+      "Bipasha Sen",
+      "Aditya Agarwal",
+      "Corban Rivera",
+      "William Paul",
+      "Kirsty Ellis",
+      "Rama Chellappa",
+      "Chuang Gan",
+      "Celso Miguel de Melo",
+      "Joshua B. Tenenbaum",
+      "Antonio Torralba",
+      "Florian Shkurti",
+      "Liam Paull"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57147.2024.10610243",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10610243/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10610243/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10610243&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "1e84c3bc2888c6c431e858f2efeadfeda6780ff6956b53d56ae6c9b5476c5c20",
+  "bibtex_sha256": "eeee93090de9b01875d1952d810dcfe50a31cb4892b20cc0f0c3e1193452de70",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:22:10.364564+00:00",
+  "selection_id": "K15",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}

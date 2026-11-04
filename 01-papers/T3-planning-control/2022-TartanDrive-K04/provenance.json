@@ -1,0 +1,32 @@
+{
+  "paper_id": "4b5a223f3a8c44498393166a4e83dd04",
+  "metadata": {
+    "title": "TartanDrive: A Large-Scale Dataset for Learning Off-Road Dynamics Models",
+    "authors": [
+      "Samuel Triest",
+      "Matthew Sivaprakasam",
+      "Sean J. Wang",
+      "Wenshan Wang",
+      "Aaron M. Johnson",
+      "Sebastian Scherer"
+    ],
+    "year": 2022,
+    "venue": "2022 International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra46639.2022.9811648",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/9811648/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/9811648/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9811648&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "54cb85e89436fc17b4457a39743522176562e872603d6d3121bf51f71b1d07d8",
+  "bibtex_sha256": "e234f2d1fe1f6071eb641be1675cae970778e41571c4f193d616cef25eb5bc7f",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:17:50.673564+00:00",
+  "selection_id": "K04",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}

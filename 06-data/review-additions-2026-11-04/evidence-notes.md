@@ -1,0 +1,15 @@
+# Identity and citation notes
+
+These notes record the identity checks and citation treatment of the 16 works K01–K16. Fifteen records keep the publisher's BibTeX bytes unchanged. One record (K11) uses a derived citation. Hashes for every file are in the [manifest](manifest.json).
+
+| ID | Check | Citation treatment |
+|---|---|---|
+| K01 | The registered PDF and BibTeX are the CVF open-access version of the CVPR 2024 paper. The PDF states that, apart from the watermark, it is identical to the accepted version, and that the final version is on IEEE Xplore. During planning, the Crossref record for DOI 10.1109/cvpr52733.2024.02137 was opened. It gives the same title, the same 21 authors in the same order and pages 22647–22657, matching the CVF BibTeX. The Crossref reference list was not copied. | CVF BibTeX imported with original bytes; the index records the IEEE DOI as the formal identifier. |
+| K03 | The automated identity check rejected the pair because the RSS PDF does not print its DOI and its title contains an ff ligature. Title, author list, the RSS 2021 venue header and year were matched by hand between the PDF first page and the BibTeX. | Official RSS BibTeX imported with original bytes. |
+| K06 | The PDF states a date of publication of 20 January 2022 and acceptance on 6 December 2021. The DOI suffix contains 2021, but no earlier online year is recorded. | IEEE BibTeX imported with original bytes. |
+| K10 | The automated identity check rejected the PDF because the DOI first appears after page 3. Title, embedded PDF title, first author, the journal line (Sci. Robot. 7, eabp9742, 2022) and the DOI on later pages were matched by hand. The article type is a Viewpoint, so the card records an abstract waiver for its lead summary. | Science BibTeX imported with original bytes. |
+| K11 | The official NeurIPS Datasets and Benchmarks BibTeX export does not parse because its citation key contains spaces. Title, first author and year were matched by hand between the PDF first page and the export, which the automated check could not parse. Neither the PDF nor the export carries a DOI. | Derived citation: `citation-original.bib` keeps the export byte for byte, and `citation.bib` replaces only the key with `wheeltec-K11-ramakrishnan2021`. The change, its authorization and both hashes are in `provenance.json` and `metadata-evidence.json`. The user explicitly authorized this fourth derived-citation exception, after S24–S26, on November 4, 2026. |
+| K12 | LM-Nav was presented at the 6th Conference on Robot Learning (CoRL 2022) and published in PMLR volume 205, whose year is 2023. | PMLR BibTeX imported with original bytes; the card gives "2023 (conference 2022)". |
+| K12, K14 | PMLR proceedings carry no DOI; the official PMLR pages identify the works. | PMLR BibTeX imported with original bytes. |
+
+K03, K10 and K11 came from manual publisher downloads by the user; the other 13 pairs came from automated publisher retrieval. Every PDF and native BibTeX matches the SHA-256 recorded at delivery.

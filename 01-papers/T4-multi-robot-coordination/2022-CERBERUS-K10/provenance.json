@@ -1,0 +1,12 @@
+{
+  "source": "manual_publisher_download",
+  "official_landing_url": "https://www.science.org/doi/10.1126/scirobotics.abp9742",
+  "doi": "10.1126/scirobotics.abp9742",
+  "pdf_sha256": "928cfa8a9d556ad92eac32ec3ebc9221750890e3a6d5c89c99d2aef62b093c1f",
+  "bibtex_sha256": "206a3b2193a201efe5de503f0a5b5e8ebadd212cc8162e08afdf8df58e3bc5d9",
+  "arp_verify": "rejected (heuristic)",
+  "agent_identity_check": "arp verify rejected the PDF because the DOI appears only after page 3. The agent matched title, embedded PDF title, first author, journal citation line (Sci. Robot. 7, eabp9742, 2022) and DOI (later pages) against the BibTeX. The article type is Viewpoint.",
+  "selection_id": "K10",
+  "acquisition_method": "manual_publisher_download",
+  "batch": "review-additions-2026-11-04"
+}

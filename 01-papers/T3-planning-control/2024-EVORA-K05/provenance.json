@@ -1,0 +1,36 @@
+{
+  "paper_id": "e90724f6964944109ef041ebaa3860dc",
+  "metadata": {
+    "title": "EVORA: Deep Evidential Traversability Learning for Risk-Aware Off-Road Autonomy",
+    "authors": [
+      "Xiaoyi Cai",
+      "Siddharth Ancha",
+      "Lakshay Sharma",
+      "Philip R. Osteen",
+      "Bernadette Bucher",
+      "Stephen Phillips",
+      "Jiuguang Wang",
+      "Michael Everett",
+      "Nicholas Roy",
+      "Jonathan P. How"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2024.3431828",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10606099/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10606099/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/ielx8/8860/10365208/10606099.pdf?tp=&arnumber=10606099&isnumber=10365208&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "7b2aad2612419385f6720a946e30448081e2610eff13dd11cd2faa1827aba2a8",
+  "bibtex_sha256": "fe621d7e2b8b398401ffbc19f3c8491ca6add8025b114a5e8a187872d52d9538",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:31:02.036763+00:00",
+  "selection_id": "K05",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}

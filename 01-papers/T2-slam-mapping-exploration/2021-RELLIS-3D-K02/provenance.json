@@ -1,0 +1,30 @@
+{
+  "paper_id": "6ef45e59466d40919aefbf397d751d34",
+  "metadata": {
+    "title": "RELLIS-3D Dataset: Data, Benchmarks and Analysis",
+    "authors": [
+      "Peng Jiang",
+      "Philip Osteen",
+      "Maggie Wigness",
+      "Srikanth Saripalli"
+    ],
+    "year": 2021,
+    "venue": "2021 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra48506.2021.9561251",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/9561251/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/9561251/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9561251&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "38f455c9d0e10b9e405c379399706ca675573255d8701aa35ad6de9cd0c70e7b",
+  "bibtex_sha256": "70e2b4a68db27d74e971a5383bbc2d3a456fd80c605508395fedad5ef0f272e4",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:16:19.489999+00:00",
+  "selection_id": "K02",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}

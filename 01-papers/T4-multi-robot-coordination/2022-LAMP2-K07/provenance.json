@@ -1,0 +1,38 @@
+{
+  "paper_id": "85cb272653ba4bbd8e3f959bff84fab2",
+  "metadata": {
+    "title": "LAMP 2.0: A Robust Multi-Robot SLAM System for Operation in Challenging Large-Scale Underground Environments",
+    "authors": [
+      "Yun Chang",
+      "Kamak Ebadi",
+      "Christopher E. Denniston",
+      "Muhammad Fadhil Ginting",
+      "Antoni Rosinol",
+      "Andrzej Reinke",
+      "Matteo Palieri",
+      "Jingnan Shi",
+      "Arghya Chatterjee",
+      "Benjamin Morrell",
+      "Ali-akbar Agha-mohammadi",
+      "Luca Carlone"
+    ],
+    "year": 2022,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2022.3191204",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/9830862/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/9830862/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9830862&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "4904428fdb5a2a8d1ec350fee1b7cfa2275f000b03aa111d4c55b125adafcc6f",
+  "bibtex_sha256": "5118040e2f3ad4305d6e57a580899768c74f657a34ff4391376e4be8d5191b25",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:14:51.424151+00:00",
+  "selection_id": "K07",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}

@@ -1,0 +1,30 @@
+{
+  "paper_id": "afd48c9e192b4a699891b4aa3b0eee1b",
+  "metadata": {
+    "title": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
+    "authors": [
+      "Ajay Sridhar",
+      "Dhruv Shah",
+      "Catherine Glossop",
+      "Sergey Levine"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57147.2024.10610665",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10610665/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10610665/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10610665&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "c2bbbbf104df5eae914596de5498473790cb3466ab448401d463345b5454be6b",
+  "bibtex_sha256": "b4376ccaa705bacfef4c5f06e3f99d31e355aa1d88345f9a47d4d16f1ab71602",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:10:55.403196+00:00",
+  "selection_id": "K16",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}

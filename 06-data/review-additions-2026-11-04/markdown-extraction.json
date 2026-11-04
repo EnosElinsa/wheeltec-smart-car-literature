@@ -1,0 +1,2687 @@
+{
+  "status": "verified",
+  "batch": "review-additions-2026-11-04",
+  "papers": 16,
+  "markdown_files": 16,
+  "pdf_pages": 262,
+  "archived_images": 470,
+  "missing_pages": 0,
+  "broken_image_references": 0,
+  "surrogate_code_units_replaced": 32,
+  "mode": "local-pymupdf4llm",
+  "engine_version": "0.2.9",
+  "pymupdf_version": "1.27.2.3",
+  "scope": "Local layout-aware transcription with physical-page markers and extracted images; equations and numeric table cells require PDF checks; no OCR and no source assessment. Lone UTF-16 surrogates emitted for broken math glyphs were replaced by U+FFFD and counted per record.",
+  "records": [
+    {
+      "id": "K01",
+      "pdf": "01-papers/T1-perception-localization/2024-SubT-MRS-K01/paper.pdf",
+      "pdf_sha256": "a517bbe35e55f5b22da5e4540bdcabb59e98c39f7ec0f4ab39f1b83b6e88b2bf",
+      "markdown": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/paper.md",
+      "markdown_sha256": "df08631530c756c89966a6ab295f73f9361f7e769573f07221b37a72f4d1599f",
+      "provenance": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/extraction.json",
+      "provenance_sha256": "641449c8cf99c7417019b2d31ba17ea54e1fc4dfb2129d7f2fde136f4494796f",
+      "pdf_pages": 11,
+      "archived_images": 47,
+      "referenced_images": 47,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 32,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-1-0.png",
+          "sha256": "cea01041cc6f25a9e439aba889c973aa0e715754d175cd68c6f2906364efeca2",
+          "bytes": 13820
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-1-1.png",
+          "sha256": "b7db85ab9ea62ec91232e92cba9b627cb14ad6fd94e113fb9dc4b386933455fd",
+          "bytes": 11885
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-1-2.png",
+          "sha256": "a5e28f427850485bcb8705dbab36da0cf06d440507e49beb6497849c30f59cae",
+          "bytes": 17420
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-1-3.png",
+          "sha256": "8555bf2073992361b77d794613533e58c04e8cca256957553db9c8e754df7562",
+          "bytes": 354050
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-1-4.png",
+          "sha256": "1ed52eca416bd08aa4b01d9d9ff870df9186307f6006c8aad5f4eea723ec5698",
+          "bytes": 13289
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-1-5.png",
+          "sha256": "c8b61cc4e410930d7086ec1688d0022f65d20f17e7eea04f081f74f6233a2c2f",
+          "bytes": 28372
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-1-6.png",
+          "sha256": "f13ca73a0abf1a3421f957c4f14e38e6be9c2c0c222fe4ff69eb4bf2e037dea5",
+          "bytes": 18142
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-3-0.png",
+          "sha256": "74d1161c1abedd1bbda094b0ea718bafd385e8ffaf3af2883f9459f3c4a86263",
+          "bytes": 11638
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-3-2.png",
+          "sha256": "525ff134970f54723d14d9e13509c1f1cc4141395b8869324106588e7618d7a4",
+          "bytes": 30954
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-3-3.png",
+          "sha256": "72b5ba7ac18ef82f4a604479776dc54d3d1e169dc6d51391785323ba6209a239",
+          "bytes": 6335
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-3-4.png",
+          "sha256": "be63acfebf130b8f42ff730a9dfe02854a844ccdd0f88a3b2f5fe23c22550210",
+          "bytes": 5780
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-0.png",
+          "sha256": "5f2bec02537c0333e73e08ba0461912d91335e860591aa7f94d205ac8e4c804d",
+          "bytes": 28071
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-1.png",
+          "sha256": "c270a2ec001aedab1bd9cad9b7b054deafe9b56fc8f8854887c608b9a32a84d8",
+          "bytes": 21514
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-10.png",
+          "sha256": "6f3c6d9ad8d2bd6405b60aa1a3966c3cdf8884b4e81964aa75b70939eeaffce3",
+          "bytes": 46618
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-11.png",
+          "sha256": "6d68457b1a1557e6ef70ba0af2a2ed98accff1ac7829b10212c96dcd9ec6d50f",
+          "bytes": 28834
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-12.png",
+          "sha256": "70f4d8a56c211027175b0bcf19f8818f098a7f884ea5703f1f16f835780cae8f",
+          "bytes": 36277
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-13.png",
+          "sha256": "ac2eaa0ed66b9800f527381e4f2ba0072be56170e790cd30685b2a4aef97e118",
+          "bytes": 31201
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-14.png",
+          "sha256": "37767c8060327ca9b006a7072d70179fc889b1ba2fa0ee01484525b0e484ce89",
+          "bytes": 34210
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-15.png",
+          "sha256": "96e93b1464804d3b773c4c1c3620c8be6b897865296d064b1cdf8034bb0015f1",
+          "bytes": 35351
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-16.png",
+          "sha256": "69641f3f12cebc52c430f4721c5ce453438b2513ae4e8b68ac75184c077a22e1",
+          "bytes": 95264
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-17.png",
+          "sha256": "79cfe9cea0575222eebb41c9baa32238770a01d9c26141dfdd623ee47d4b600c",
+          "bytes": 37854
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-18.png",
+          "sha256": "3f672f4a2945598668cf58c489eb56afbc760590bc7be19118db6a8d99a628d5",
+          "bytes": 43818
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-19.png",
+          "sha256": "b3eca1ee4a2aa6dc9c4fa525d8c5767528de8e779cd10fcb6af7977c852dbcec",
+          "bytes": 40149
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-2.png",
+          "sha256": "a519222b322e41f08991c649381a055240f0f1e06544024262cb3117b965dd12",
+          "bytes": 22261
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-20.png",
+          "sha256": "a76f9fa71f19430807b158bd6d72a8bf018852be496281c56f826cc69de6946e",
+          "bytes": 39005
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-22.png",
+          "sha256": "ee73cfa81a7a178d17ef7af159ce4a1b3ea67184e995d8961c4cd492d90a416f",
+          "bytes": 38354
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-24.png",
+          "sha256": "c912711cf51d53f0189d79033859cd2ee11b08493b5744caf8cf84137d384602",
+          "bytes": 35226
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-25.png",
+          "sha256": "8fd7d06e71d7cd733e5b03755eec6fe263f618cea486bc685096f9d4bbd623e3",
+          "bytes": 39972
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-26.png",
+          "sha256": "61b67dbee53f7e46dcc93b3ac658c89afa369685fa33d1e57c74b30c1f6f94a6",
+          "bytes": 15956
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-27.png",
+          "sha256": "88cb01f9b4623c37520390ae7bd5a7cb78f79ff77dc2ef8451c7ea1c3a91ef89",
+          "bytes": 36756
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-28.png",
+          "sha256": "ac8b991c004bbd2da2490c47049ca12937318eae7689b867a2a325b6b14f6039",
+          "bytes": 35492
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-3.png",
+          "sha256": "a1781fdfd8a4251529db65904f74e61822fb8675009d0853c8cd3f26262d11f9",
+          "bytes": 34502
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-32.png",
+          "sha256": "6a97adb706c6e7f9ebb84f635d60af1a4a9d51698b7c9a2abec55f442e832f47",
+          "bytes": 32410
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-34.png",
+          "sha256": "cb0b5efbea7acc06aa6c4760f52f429b15bf3b69a28d0258767d92cfdbc81e25",
+          "bytes": 23699
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-35.png",
+          "sha256": "e39b512e8054527a1ee18a79a007331c3d049a9c90063e494a83f40dae8c04b0",
+          "bytes": 16612
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-37.png",
+          "sha256": "90b99e285207d91d51d35e7b97f321257d29a2f29031b60e5cb998ab00397610",
+          "bytes": 146991
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-38.png",
+          "sha256": "5d37a424cc86d72f53d7c2c6d65e8c7bc994296c63d95bea59b1668694ab7ee3",
+          "bytes": 41122
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-39.png",
+          "sha256": "ccc379847c2d50b9aa7630dec9f7ee1e831450c76ef3553cbe429fb90e383494",
+          "bytes": 40329
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-4.png",
+          "sha256": "72195565f486e838bf1f9b01533b62ca8438ec64384a30fb87a5adb573bb531e",
+          "bytes": 30599
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-40.png",
+          "sha256": "10ac1190cb043b2677241978b78585de8190a72bc63e499c93e1422cba4ecd06",
+          "bytes": 67003
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-5.png",
+          "sha256": "218a1fc804efef83ad2dccf6d7e9fad5c4d895529d34d14698aa6a3a5aa94b1b",
+          "bytes": 23332
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-6.png",
+          "sha256": "af0211d00b4ab022c41818d8af37b48a3a257056a0e983b1ed7063068663d6f9",
+          "bytes": 36261
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-7.png",
+          "sha256": "397f82db832d3b02c826dc73d898b8b30a6fae137f6f0d679d2623f2587da7ef",
+          "bytes": 39608
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-8.png",
+          "sha256": "035b2a389f015b1cadad63592d7f1c21a0fb3f004e8e2138567b951591f2f2ad",
+          "bytes": 31572
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-4-9.png",
+          "sha256": "f1fb3f648b769b19c0a488742680b3dc9632185bbc44c941588b6efd6720f484",
+          "bytes": 32264
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-5-0.png",
+          "sha256": "9c5de94956a75d9de0b602b139729889110154bc93f20af9c242aa9bc2230b1c",
+          "bytes": 53355
+        },
+        {
+          "path": "02-fulltext/T1-perception-localization/2024-SubT-MRS-K01/images/paper.pdf-6-0.png",
+          "sha256": "b2414005284a2be17d5d518424184be10644b49683ffe6a1c65ce8dc3eb8d01b",
+          "bytes": 96843
+        }
+      ]
+    },
+    {
+      "id": "K02",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/paper.pdf",
+      "pdf_sha256": "38f455c9d0e10b9e405c379399706ca675573255d8701aa35ad6de9cd0c70e7b",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/paper.md",
+      "markdown_sha256": "67da1ea28125c782e8838b1a136cab7401083d29cb23f36adbe0f07f77d10210",
+      "provenance": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/extraction.json",
+      "provenance_sha256": "ee9e2bf5f571d575c2ccd498b0a5f3b2f820ba396ea2a5455e0dc62ea138417e",
+      "pdf_pages": 7,
+      "archived_images": 21,
+      "referenced_images": 21,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-0-1.png",
+          "sha256": "92690e2c09a87cd9685e94ab8cfe22753cd03ea282ba9da6f91e9d9cdfa7141f",
+          "bytes": 8189
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-0-2.png",
+          "sha256": "9779ad60cd02bdd5208e4de8cc4d0c66bdc5d0bc76bb2113873082743e20758d",
+          "bytes": 12160
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-0-4.png",
+          "sha256": "77118f9ed507bdef8e34fae96a98f11a90469c652c5111637fe66ced0dafe1ab",
+          "bytes": 14484
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-0-5.png",
+          "sha256": "6ddfab824033c31db718cac9aa7c82bd1893e873e3c9bdae16033d9d6109ead6",
+          "bytes": 52505
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-2-0.png",
+          "sha256": "378b86b7efca36c4ce5bebcf28faf48b9cfe669c6c40c9b859d8ad95283a7ad0",
+          "bytes": 42215
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-2-1.png",
+          "sha256": "3ac7447b679ee72eb4d3e391878ce8ef22e16df316001aac6060324c139b4ee1",
+          "bytes": 402106
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-3-0.png",
+          "sha256": "384f4d89f57c19fb76ad1f1a07c53af1aaca9444c190af6e6dc3a08068423946",
+          "bytes": 14946
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-3-1.png",
+          "sha256": "a22c14ba88dc5aadb4536240495f2834310334691b3947b5eae7c62e386455e7",
+          "bytes": 28155
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-3-2.png",
+          "sha256": "ad359d75ae9fdcf86b0d5ba5483c32f07e2abb6d6ccc7f729cbd24f17db42b1f",
+          "bytes": 25662
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-0.png",
+          "sha256": "ed06d0b48b24abc105968e097128acec4a07ac215a157de1b32aeb2ad637fa2c",
+          "bytes": 2614
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-1.png",
+          "sha256": "43f242a40f9c893d198e655eca7c387bb425b032d0a7d6080f994984af128167",
+          "bytes": 3163
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-10.png",
+          "sha256": "125a9320f650600784b81524837941807b4804ba05e39a6c4c5cb7a344e0a6e3",
+          "bytes": 12228
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-11.png",
+          "sha256": "733d58bf5057cd35f7bf6edb3df9bfcc0eea7d0e3b9aad34eb9cd00ebace286f",
+          "bytes": 21813
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-12.png",
+          "sha256": "7402daa5722dd26d6a3370c469325f214a88b49dd7b603c4dfb4b80c8bd3bb27",
+          "bytes": 30337
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-2.png",
+          "sha256": "0867ec708b24966f4ac830ee55690899ec2e9856bfe4fbf8a2676e0621afb238",
+          "bytes": 3289
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-3.png",
+          "sha256": "c958a9a2fdcd1f7f2187fa34f02863e96f495a08ab78d7774620c5f69698c86f",
+          "bytes": 2446
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-5.png",
+          "sha256": "50144f5578b2a6145e17778e0c5fae10a616247f3d36c97c3333374c1ab12dc9",
+          "bytes": 41290
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-6.png",
+          "sha256": "985053cd5e33ac47542be52f9f1795abd811080fec277ba374166a2df579a727",
+          "bytes": 3966
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-7.png",
+          "sha256": "fac301c9fc5d2988ed1cc89bc914a6b666dfd924704eb3f72e94935f8abf6fff",
+          "bytes": 43547
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-8.png",
+          "sha256": "7fdb3790a6c2973da42731f941f13b730a6a0d2a10d7d794d02875b0db0faad0",
+          "bytes": 6817
+        },
+        {
+          "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-5-9.png",
+          "sha256": "0d321bfc562d9ecd49573417bba586d36e26511b5807264ff0a8b9be10b0440e",
+          "bytes": 15129
+        }
+      ]
+    },
+    {
+      "id": "K03",
+      "pdf": "01-papers/T3-planning-control/2021-STEP-K03/paper.pdf",
+      "pdf_sha256": "e198794571c0680f6672c5abd896106f336e1e8c8045cebe8f3aeb5877e4ba3c",
+      "markdown": "02-fulltext/T3-planning-control/2021-STEP-K03/paper.md",
+      "markdown_sha256": "101001f89a8fa26fd8691f28f6bd2cadd4d738c579dd78a40918ebe786b2d86d",
+      "provenance": "02-fulltext/T3-planning-control/2021-STEP-K03/extraction.json",
+      "provenance_sha256": "9a95dcc872e081941cbf1e0865550356e32af13c0f901955fc723a19e1b53940",
+      "pdf_pages": 12,
+      "archived_images": 23,
+      "referenced_images": 23,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-0-0.png",
+          "sha256": "ec6e001853852b5f0025d7f7d0f4aff92b9c241e6292c9af55762c5d98672efb",
+          "bytes": 50269
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-0-1.png",
+          "sha256": "424e8513bc640a62198f12294d56fbe6be12de2d758bff226c3784b04c0bb3e4",
+          "bytes": 67372
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-0-2.png",
+          "sha256": "7d366ca1f5cf8e13939cd847b491241c69d25a86e81500519f022f9791387d27",
+          "bytes": 51290
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-0-3.png",
+          "sha256": "bf96b7c6ad921ee0cd0dd3be13c7d7b44bc095f8366e6fde5a3f41380870fb95",
+          "bytes": 57880
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-0-4.png",
+          "sha256": "128ca5f1d167adc21d6b038bd63d17fc532476bb4799e582fe78aad6a5077c02",
+          "bytes": 47060
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-10-0.png",
+          "sha256": "862da575813458f7ffe15a17ffa94843a20ab832a877f225829631924d7db0bd",
+          "bytes": 145875
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-3-0.png",
+          "sha256": "6319cbb136f67a2be8013c38fa6c6cb255e79477c441d1be30d7ca6df52b8b4b",
+          "bytes": 17244
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-3-1.png",
+          "sha256": "b0fd1a071b4d93f457bcafb3c8db7c172f8e4f068be5bcfa982e54505a61a7a6",
+          "bytes": 14368
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-4-11.png",
+          "sha256": "b844504d53ce9ea420f8072ea5eb5a686d4a38359bb797fe42f645ee84a13e28",
+          "bytes": 15245
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-4-12.png",
+          "sha256": "3f0f28fa6f7883ff41a91a1601ce74e8d0d88009dcab6fd0bce52a196796599e",
+          "bytes": 23925
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-4-13.png",
+          "sha256": "f528edb167376d9ff92775b1db2048a035ba5774445f3933571b0e451a4ab3a0",
+          "bytes": 22034
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-4-14.png",
+          "sha256": "12387a6d342d14ccc56083d9f1f78500657debcfd6099c1f39210a26befe9394",
+          "bytes": 20742
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-4-15.png",
+          "sha256": "3bbd363050a8039f9158d6f409f66f1fe5802ddfc4bd11e7f0a945705222e7be",
+          "bytes": 25114
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-4-16.png",
+          "sha256": "94cebbf0a1d284b73f217c8d6cf5790ad680a7c209004336daa801d7b6df69b0",
+          "bytes": 20274
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-4-6.png",
+          "sha256": "f860fd85026a3e04957c89aea3df2a302c8c0eee9f34fc745c68c77ed25a48f1",
+          "bytes": 27779
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-4-7.png",
+          "sha256": "79d8a0e85e4dcdc8c96ca2781e4cfcc39af2ed14a48cd85fc86eef8b6d632172",
+          "bytes": 138520
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-5-0.png",
+          "sha256": "690189a7eeaa0053b58a81fc2c22e93a33a7aa86fb34abca8f6748448e73b9a2",
+          "bytes": 24456
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-6-0.png",
+          "sha256": "b3579f04b589f69a1f0f99a8cf5a4973076a7107dd2a819ba494f6d44e08e90d",
+          "bytes": 18675
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-6-1.png",
+          "sha256": "0bc98984c403dbce955cd164d66fb10bc78197a5fecf61a8841cfc2a917948d9",
+          "bytes": 14198
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-6-2.png",
+          "sha256": "6b3483770fbf7c57f5fe71daf3fe877b47e072b36d7059563032f88251a4d9e9",
+          "bytes": 17785
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-6-3.png",
+          "sha256": "e90f1f1618b913be59119e888ad7e3e8ef394ff011ceb7d4d8466cf88d04b8c2",
+          "bytes": 16271
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-8-0.png",
+          "sha256": "2892e69e8ce8ed2492ca8b0dee23f3c98ada01f40978f4d3db92a5abecec7f66",
+          "bytes": 525844
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2021-STEP-K03/images/paper.pdf-9-0.png",
+          "sha256": "c86cf99f8bce01fabf6e3a42f2c0a443b73e07283c39ac71d18b0eec19f0ffcc",
+          "bytes": 870830
+        }
+      ]
+    },
+    {
+      "id": "K04",
+      "pdf": "01-papers/T3-planning-control/2022-TartanDrive-K04/paper.pdf",
+      "pdf_sha256": "54cb85e89436fc17b4457a39743522176562e872603d6d3121bf51f71b1d07d8",
+      "markdown": "02-fulltext/T3-planning-control/2022-TartanDrive-K04/paper.md",
+      "markdown_sha256": "139c402869ee35e8171c5874d68491d09222d65a0521fb553c9992dcce3053df",
+      "provenance": "02-fulltext/T3-planning-control/2022-TartanDrive-K04/extraction.json",
+      "provenance_sha256": "22f1b12ed5c74378bcd4370328e3bee863d5e658f79dcedc655ada5486223bd7",
+      "pdf_pages": 7,
+      "archived_images": 5,
+      "referenced_images": 5,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T3-planning-control/2022-TartanDrive-K04/images/paper.pdf-0-0.png",
+          "sha256": "3a5d09b3e27670ebd7a66b4f019003cf0ea9fe8ee682d77490430c7cf1c1f44c",
+          "bytes": 185000
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2022-TartanDrive-K04/images/paper.pdf-1-0.png",
+          "sha256": "841a5742f2c911a5c924d74496b132303a060cf8b66df153df1357fd4186faf8",
+          "bytes": 492660
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2022-TartanDrive-K04/images/paper.pdf-2-0.png",
+          "sha256": "7fbf8af3568d67dcd277387e2d009f2c4977a95aeab3db680509da6e07d76592",
+          "bytes": 19828
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2022-TartanDrive-K04/images/paper.pdf-3-0.png",
+          "sha256": "d7e897dff1b1b60e246f6e1e2288a0b9dba98c4cf34d0763e49e469a15401b8a",
+          "bytes": 57806
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2022-TartanDrive-K04/images/paper.pdf-4-0.png",
+          "sha256": "967cfbd0d2936d2aa4f7a0a887daf0d6bd21a80583841ec77af0e5d5e97b06de",
+          "bytes": 94203
+        }
+      ]
+    },
+    {
+      "id": "K05",
+      "pdf": "01-papers/T3-planning-control/2024-EVORA-K05/paper.pdf",
+      "pdf_sha256": "7b2aad2612419385f6720a946e30448081e2610eff13dd11cd2faa1827aba2a8",
+      "markdown": "02-fulltext/T3-planning-control/2024-EVORA-K05/paper.md",
+      "markdown_sha256": "36e6ae4bdb2c41091bf5fd51f5ae490e89291d6f9447be4f8145b4fdd34d08f2",
+      "provenance": "02-fulltext/T3-planning-control/2024-EVORA-K05/extraction.json",
+      "provenance_sha256": "1c1c090bd9d2834e6dcac7a39755ec94a7ba2180ece08ba9f3d7818287c0e83e",
+      "pdf_pages": 22,
+      "archived_images": 36,
+      "referenced_images": 36,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-0-0.png",
+          "sha256": "a8447fbb394a456bab7de5731c10f3a713a8a4b75699f0751a7dbe3c9b612cf5",
+          "bytes": 234259
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-1-0.png",
+          "sha256": "d3fa4ceec4794d6ba448154f5ce4a748eb14d316b8f1eed2fc42dd3082272a33",
+          "bytes": 392864
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-10-0.png",
+          "sha256": "c3a21b02bb8a447f555621d961fc9fc2b56efb2796eb1343e35d730ddaced8ea",
+          "bytes": 179157
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-10-1.png",
+          "sha256": "4968cda7271e0a6e727b40853df8332502937123f0e633644afce2f6c11b917c",
+          "bytes": 17162
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-11-0.png",
+          "sha256": "09bbca9253554b759902a8aa7b4acf295c8e833367752a2215129da1f82e7157",
+          "bytes": 63966
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-12-0.png",
+          "sha256": "e56190d5ac95f5f59ceda3daeb158ed4393dc1206135e96eac64751b64c63295",
+          "bytes": 210933
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-12-1.png",
+          "sha256": "caf1ec4c165739d15d38ee24e5f72391da390729b6a3232adacd58da5dd2faf4",
+          "bytes": 90959
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-12-2.png",
+          "sha256": "62a0318654d4d29d7243dbbe166f06343c92b1cce3e963323f1000188fa8a4ce",
+          "bytes": 81632
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-13-0.png",
+          "sha256": "f0d8fc2cea02a408305236f7b1661c6c2418c20300942899fc8771ef2eefc71e",
+          "bytes": 50806
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-13-1.png",
+          "sha256": "24a8634f5d535ae6e9a519952398f1edd506e3bf990b939eb47276374000dd48",
+          "bytes": 140211
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-14-0.png",
+          "sha256": "fea007fc8b13cf241f272786d383d66c0d6e96d321861d41d3382903b0a36f73",
+          "bytes": 300228
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-15-0.png",
+          "sha256": "42ce1061f98058bd36cc8712ed05f03bd94404389fd09bd6cbb7593b9a8eec68",
+          "bytes": 384079
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-15-1.png",
+          "sha256": "aecba399b1543049ca6cdbf0555f2c7337e47a52d65f843649b522bf4ee0525c",
+          "bytes": 51128
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-16-0.png",
+          "sha256": "70f5e53eb11b8a937612199d09cb9ccba8513f767addf50b51f515b8617fcfd4",
+          "bytes": 396652
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-16-1.png",
+          "sha256": "ef56a7985c4311e4b365f2b5e11df5f44c0b99dd993f59f9eb5b48f6b774896a",
+          "bytes": 537369
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-17-0.png",
+          "sha256": "6e6b61c2af5e0b1eb5aa127218be65e11b1649e3e3374c1082c8d32aece9b212",
+          "bytes": 27989
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-17-1.png",
+          "sha256": "177ef04a0c42d4c99197f3c4520c157bddac67572789b61eb1129dc6d149a97c",
+          "bytes": 36568
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-17-2.png",
+          "sha256": "6cc596e59137495b9c5211b1ef6de333f8b7a90ae3bace977bf24af92a836ff3",
+          "bytes": 322424
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-20-0.png",
+          "sha256": "0746c234eba920e0828674b44a926f1f0cee434dfd7e6784eaffab8ce72ed04e",
+          "bytes": 48425
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-20-1.png",
+          "sha256": "a96502cc571cb69620009168b69bf4cf2a9d3b1b3a2fe80b6944e0abc6e97dfb",
+          "bytes": 43519
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-20-2.png",
+          "sha256": "5f5168232ddbeee95866c17a1a30ba4c9b0cca68893fb0ba18b38c4321eec75f",
+          "bytes": 49886
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-20-3.png",
+          "sha256": "e36dce978bd7080e921bd7f97a6c44c5b7bb7c31695c1dc054073c2a5a4c56c8",
+          "bytes": 49849
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-20-4.png",
+          "sha256": "f7e51f9905f91ebcd2db6fee6b9444aee3c6067973a966f717aa25f29752c149",
+          "bytes": 37313
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-20-5.png",
+          "sha256": "c52a3879feb275c15a3d3e848cbd9fabe0ce235870e476c7698d71bff2e0598e",
+          "bytes": 42909
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-21-0.png",
+          "sha256": "01ec506a86a87118006f778cc546ab027e7b5904676890ca62ea9033732f36d1",
+          "bytes": 46209
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-21-1.png",
+          "sha256": "6088efcb3fcd4ff9199172681861553cb6434d14af0a946705b83a5094a5f14f",
+          "bytes": 46899
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-21-2.png",
+          "sha256": "5c5324047ca19559e35742cf1354a0986515fa363a62a9216995cba67bba86b0",
+          "bytes": 50869
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-21-3.png",
+          "sha256": "eecb1294520aec2952b8e54585b5ea7a5443a4f632b01d53c51349051905b614",
+          "bytes": 34379
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-3-0.png",
+          "sha256": "3719550618a243afbfba8caaf12209f67cd493e505f750f4dc6f6336f24df136",
+          "bytes": 104116
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-4-0.png",
+          "sha256": "cf850027518f4a70226d5f3a98668d3d65bdd2e85dc3675ba43b700b704913c8",
+          "bytes": 176344
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-5-0.png",
+          "sha256": "aa17ba0761ecff3db4f7671da6cc4ced593ea3dbd0ab260d2775576de4e22a8b",
+          "bytes": 224009
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-6-0.png",
+          "sha256": "595cf33d5f60f21bcc021be82909fe688957203fed53b690e0a817b16e12c893",
+          "bytes": 22728
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-7-0.png",
+          "sha256": "8981833104bd578ea8665d59c6bb36795cc69e1d1d41ddea4b077f659d43ae07",
+          "bytes": 140951
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-8-0.png",
+          "sha256": "a13ceae0911b6799c1cdc61b8acfea405b8fbe1eb7af0fff049489199ffff84a",
+          "bytes": 24394
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-9-0.png",
+          "sha256": "e61e84302d1bfdc24fdfc4f70bad75f0d7a3cb3fe43ed7ac295dc816bcd0873e",
+          "bytes": 111391
+        },
+        {
+          "path": "02-fulltext/T3-planning-control/2024-EVORA-K05/images/paper.pdf-9-1.png",
+          "sha256": "2561fbefbb94791015187b853fd6e78a165c2058370378e1e7600a88bbd44d62",
+          "bytes": 33529
+        }
+      ]
+    },
+    {
+      "id": "K06",
+      "pdf": "01-papers/T4-multi-robot-coordination/2022-Kimera-Multi-K06/paper.pdf",
+      "pdf_sha256": "aa264f88a46a557b3718ab5d5004add9ae96c10b8740835bdb9de005c171cd58",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/paper.md",
+      "markdown_sha256": "8edf4937aa41ba4e751f98c234e0ea2552eb3af4f62a073a06848db87da62c4b",
+      "provenance": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/extraction.json",
+      "provenance_sha256": "1cc8f69455c264476809c02a73ceeb2fa10bb45dda19bcdd813a3d9eb513ea2c",
+      "pdf_pages": 17,
+      "archived_images": 33,
+      "referenced_images": 33,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-1-0.png",
+          "sha256": "625985fedf7c6b1db4badade861bf899b87048ece97389f2c82aa896b7e698cf",
+          "bytes": 453114
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-12-0.png",
+          "sha256": "822024c792a697de19c875d16a1fb8b347715b247ae11700e0c592b2ba868dc7",
+          "bytes": 31269
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-12-1.png",
+          "sha256": "ab040239cf2e806e7ab42d8a61efef06df972b449a8f78a387d958b8a47c5a3c",
+          "bytes": 43911
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-12-2.png",
+          "sha256": "12cec4312bd7e0c010b496d4b924e629e456e21a7e13b4b07de81f80b85e8f09",
+          "bytes": 13320
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-13-0.png",
+          "sha256": "2d7bf1a645a318e2379bfd0d9f6a0024780da78ce98ef221ced2b346795da74d",
+          "bytes": 5525
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-13-1.png",
+          "sha256": "e9751466a6bad2c0ead634bd19f64bf9a66d8cdd897c84bf4d543de91ef30cb8",
+          "bytes": 5830
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-13-3.png",
+          "sha256": "dad748da4dc92c27dbfaabe05bda13f7264c848175b63ebf39bd8d536fb71cd6",
+          "bytes": 12694
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-13-4.png",
+          "sha256": "20a9f594ba0a4aabfdcc065ee4c80e9b6a728895ce5e50d3d1cb064dacb8ebee",
+          "bytes": 43010
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-16-0.png",
+          "sha256": "9c227d34835f3fd4478d750e5af8429fe04154f522ae0b6c8483ba0ab53cfcdd",
+          "bytes": 42939
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-16-1.png",
+          "sha256": "7685ca17117da21eb9301007c29d20612f83bd917d5518cc453ab05f5189253f",
+          "bytes": 51973
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-16-2.png",
+          "sha256": "4d3d7db63170922270b8fea850f623a6dc4b4747510a62339bea86fc96f133e8",
+          "bytes": 42443
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-16-3.png",
+          "sha256": "0dd2cfaad9d6651d7e442998e328237eee352f3ea318b0ffd652297c67619499",
+          "bytes": 38280
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-16-4.png",
+          "sha256": "d890f18c00eeeb0a3b6eea9a3c9305f6bcb84547a6a2571f81663e03a388af79",
+          "bytes": 33995
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-16-5.png",
+          "sha256": "724fd0b9bc7e82fa2e2a456f4b8881d6af86764c16188e9f38589bec5a958081",
+          "bytes": 48995
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-0.png",
+          "sha256": "a049af1c7162a1e8f6a9c3d67f3c047d08d83c899a047ed83e016773893dc126",
+          "bytes": 75141
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-1.png",
+          "sha256": "8996b10c99170f380e176212adc2a8fb3fef09100bfdf2808a669ae7261f9724",
+          "bytes": 29421
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-2.png",
+          "sha256": "e6706a0a54e3c137d39be9a385a7ffcfd306dbfe6700dce8445d9232e37c4242",
+          "bytes": 9147
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-3.png",
+          "sha256": "94018f7a0dd891241a0d6896564c05dec80c18a9fcd21f04844cb6999051fa4e",
+          "bytes": 9100
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-4.png",
+          "sha256": "6651718a461f4bedaf60921cf0d0b470302499144dc74d15c53aa20615ae49e2",
+          "bytes": 16447
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-5.png",
+          "sha256": "72db9e2b14b4ae52dc23d9db520afdf48d5646f80970556fa9c04b47aa020dbb",
+          "bytes": 11179
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-6.png",
+          "sha256": "a42bd3665987a6f3dde8c29a1dd0d315aecc3f7733c9b8eee170f7f564498943",
+          "bytes": 10929
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-7.png",
+          "sha256": "0e3d4442381c42d26776e1991551e8a601cb50add7e47e852912c54d1ff23ad6",
+          "bytes": 14186
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-2-8.png",
+          "sha256": "29d9ad5e7d13df15ce239985dbebe6495ae8f329bdef53893b7decef57132b26",
+          "bytes": 17732
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-3-0.png",
+          "sha256": "f891e4e8ca5004a30634938afb8e7d5205423cdcd802dc6e5e4b69a7cdc7477b",
+          "bytes": 13855
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-3-1.png",
+          "sha256": "a9a9aa016c64760161f85de16d48407ca70e5469d0981a4c62db0346232661a4",
+          "bytes": 13621
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-3-2.png",
+          "sha256": "fda3baa162bb2654a1c1287eb36dd43534c181e5438320cb0397df720131c760",
+          "bytes": 15659
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-3-3.png",
+          "sha256": "455dcd43b9935132fc2c3f4ed422091f36510334319ec6b429b0996b5c2f0346",
+          "bytes": 14601
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-3-4.png",
+          "sha256": "31193404a005a2f9d289730226bf2a6f9e1b75607164e30401b8bd26abc9fa83",
+          "bytes": 18355
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-3-5.png",
+          "sha256": "e6b68a007f2a96c11f26f9a38464ff296ec3a8b9506f190c3ec774b825bd7b52",
+          "bytes": 293011
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-3-6.png",
+          "sha256": "c093564c40542ac8391581398c5d1c7e0d52d15b72f4e11ce37475df45fb7ef7",
+          "bytes": 14020
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-4-0.png",
+          "sha256": "ef72eba865b82c50c44dfd82f732b213085ab28eca1cca8a0c4b5795b830f376",
+          "bytes": 374365
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-4-1.png",
+          "sha256": "287241fb9e5b4152dc504901a62717a6f4f6e07eea4db64108972e59b2c4b0d3",
+          "bytes": 270416
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Kimera-Multi-K06/images/paper.pdf-5-0.png",
+          "sha256": "f301f6ef942bd3a73eff8f7ab679fe649ce9101bc14dbcc20761b334489da8a7",
+          "bytes": 1120773
+        }
+      ]
+    },
+    {
+      "id": "K07",
+      "pdf": "01-papers/T4-multi-robot-coordination/2022-LAMP2-K07/paper.pdf",
+      "pdf_sha256": "4904428fdb5a2a8d1ec350fee1b7cfa2275f000b03aa111d4c55b125adafcc6f",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/paper.md",
+      "markdown_sha256": "3464c0a292b0f74693bf85b6cbffae4c02c56ee1f9d0a93a87db574828f895dc",
+      "provenance": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/extraction.json",
+      "provenance_sha256": "3f9a25481eb6efb132aaa8903555a678dc2d8fdd5e68842051fbea7cec5b9b63",
+      "pdf_pages": 8,
+      "archived_images": 7,
+      "referenced_images": 7,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/images/paper.pdf-1-0.png",
+          "sha256": "ee03577f68f273e7cc5a48a0fa046d3bf528f5c9f8a57e5df799e1e37f86855a",
+          "bytes": 178372
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/images/paper.pdf-2-0.png",
+          "sha256": "3b80846870019c985051af7f195e0152fcdc1a8f8c6db26fe025975a6c3368ec",
+          "bytes": 210723
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/images/paper.pdf-4-0.png",
+          "sha256": "e2b730f6215f4f68281c28393451141ce3d121808e85a20c5382c1293ed5d3cd",
+          "bytes": 27747
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/images/paper.pdf-5-0.png",
+          "sha256": "6f2ccc048a4f1c62177e84879cf78984dcc0e251e79abde078dee5b1b8d5c851",
+          "bytes": 14108
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/images/paper.pdf-6-0.png",
+          "sha256": "a81e000f9417c3712e71697401d5f5f1ba8c192dbde88ca962ec9ddf4f14a4a9",
+          "bytes": 167913
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/images/paper.pdf-6-1.png",
+          "sha256": "148e481e664d222a085354779ad29ce8acd24c82e082db72e8a106e7950beaf5",
+          "bytes": 68875
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-LAMP2-K07/images/paper.pdf-6-2.png",
+          "sha256": "42c1ca431eae0ab715f20b5359f3d5c4127d32d28f83ebd9b7f83662aa5a2ca2",
+          "bytes": 24952
+        }
+      ]
+    },
+    {
+      "id": "K08",
+      "pdf": "01-papers/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/paper.pdf",
+      "pdf_sha256": "627e31d896f4d7fb5f06bd19de507f565253ff7f9f691876965ab8af4d06630c",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/paper.md",
+      "markdown_sha256": "85cd8fc1a1846f8c56a5a4609abf87b37d9cd566988be4f160f30acf7bd61d9b",
+      "provenance": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/extraction.json",
+      "provenance_sha256": "5a6715d09ce5b7132c752b28ddf473f74ae3aab64d4773bb76edb1b8fc511a7f",
+      "pdf_pages": 42,
+      "archived_images": 70,
+      "referenced_images": 70,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-10-0.png",
+          "sha256": "88321abeaa56bf1afe6138e0392406b908ea3a4c4da7b123a78a1cfede570322",
+          "bytes": 31993
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-10-1.png",
+          "sha256": "aa247b0bcdb76849aa9960589f092076f7149612073e860f19a536a4077fdf43",
+          "bytes": 62071
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-10-2.png",
+          "sha256": "d1486bad9f1b0aa841d13e9a89e5a9340f19d231fa4f382637dcd36141223331",
+          "bytes": 64423
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-12-0.png",
+          "sha256": "5b553bd7a77c183a55a91fee750507d837c9b204c514e9b4fe9fbb667de5843d",
+          "bytes": 78488
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-12-1.png",
+          "sha256": "37b401f55f2bcc5534a6e307194d2146b58d60f98d0566b08cbc729089d497d6",
+          "bytes": 66432
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-12-2.png",
+          "sha256": "cdf69e2b53840efe7858517e69a7f8c3ec1d8fed364dbc224b6b1e33bb657b48",
+          "bytes": 32238
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-12-3.png",
+          "sha256": "95545d4d3ac72b7ea793fb873d9ea3e95daffa73723aecbc88ec1bd09b49031a",
+          "bytes": 62844
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-12-4.png",
+          "sha256": "f7bee996b058231b59f1b5eacf888e55dac108a002bf89b89f5987704e85460f",
+          "bytes": 39350
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-12-5.png",
+          "sha256": "dc0c06dc8b253cd1818304d4d6e21d211253d98cdd17d5176bb7012f14775f4e",
+          "bytes": 86926
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-12-6.png",
+          "sha256": "899ba3ca894f86dcf1ccacd73f9615526f72963de225b8e5d99efa3d663e4fa0",
+          "bytes": 29912
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-13-0.png",
+          "sha256": "84b91da4b0343e182dd6c2817d34f0a8df94457e21df6a230818f3d10f307ab9",
+          "bytes": 75387
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-13-1.png",
+          "sha256": "4f996661fdf4fe12cf899212e6764ecbed9cf174e24268b6b0f7fe6ddf8cd941",
+          "bytes": 46289
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-17-0.png",
+          "sha256": "2d3c968156d6e3ce930ec8095dc4e6043b34db37e083c235e55543b1095e7cad",
+          "bytes": 147913
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-18-0.png",
+          "sha256": "917ffc2e7839e7edf3520f78aed2d9b2e709e5e5936ef4c83479826a5d1ea11d",
+          "bytes": 21205
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-18-1.png",
+          "sha256": "b49d6ecc2e237b54af73a76972b45b591cd78544e95bc88e89304829c581bbc6",
+          "bytes": 38516
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-18-2.png",
+          "sha256": "13d8c60a2948f466e3fc13d4c1d42b48132c66d31abb9f54a01fb461681d3b48",
+          "bytes": 19846
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-18-3.png",
+          "sha256": "f9225424aa0caeff617aa75890ccb467aa8159ea371c66f08c2857120daeae41",
+          "bytes": 93373
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-18-5.png",
+          "sha256": "e1ed8699e5d1c1b448bfb624f725bb94685c5dfcef03e9d1fad6f72706eeea82",
+          "bytes": 274935
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-21-0.png",
+          "sha256": "ee7708b8a4c293ce724564eebe9086deb070a77d8960bfbdab56553cca9d5dd1",
+          "bytes": 11551
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-21-1.png",
+          "sha256": "1d4cc2aef5d877242121705b4efba7bb94fbb5fdeb6135ed015b679774f48710",
+          "bytes": 10913
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-21-2.png",
+          "sha256": "216188cbb19c60e44e167a031bc11686da96bf0d1815e4afbde3cd70e5a695fd",
+          "bytes": 12087
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-21-3.png",
+          "sha256": "69c118df4ca7a73718d74476bc457cb1a8fa1f0b6b4bd6500f1daaf68ecca386",
+          "bytes": 15277
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-21-4.png",
+          "sha256": "beded66f34e8aac6e5b3d4d3791739444b279f894453fe7b57ce063de021562d",
+          "bytes": 14864
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-21-5.png",
+          "sha256": "abce44395b54f2c9fb6760373641d077c655cf54fce3316918945450037f2c8e",
+          "bytes": 16592
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-21-6.png",
+          "sha256": "03a7c45b670321dedc27b1c1ee20faf276f6dae49ce91aa73b966ae6764d69bb",
+          "bytes": 87692
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-22-0.png",
+          "sha256": "90f6897e4a93a3320bd59accbe9052705b948733f02f09e14c1ef03f94dac517",
+          "bytes": 30664
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-22-1.png",
+          "sha256": "6c4990480b709be67667b597b979ddb392a11b82cf53951a006a5787ffaa8a73",
+          "bytes": 31501
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-22-2.png",
+          "sha256": "bb58b06bf0aa91273cfe051b260f22c73e0da80b729daf3874d99539885ae9fd",
+          "bytes": 27518
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-22-3.png",
+          "sha256": "fc7722c93eef6c83a56ab971c4d24a0c099578f05175b064c666b8072a295b27",
+          "bytes": 7709
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-22-4.png",
+          "sha256": "a5198b93c4c033c5a1f4aaa49af92db65bfcc33766d4fcff68e12295342c8038",
+          "bytes": 10694
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-22-5.png",
+          "sha256": "e3a3ce904cdbc4a201e830093edf81059e292b3c94cba9b5d188f451543694be",
+          "bytes": 10353
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-23-0.png",
+          "sha256": "d1ed159b368687cea7d181e74ce06b7834a061e513af249ce49690ea946ca613",
+          "bytes": 13043
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-23-1.png",
+          "sha256": "d5f59f8afb8b5d06685485c0979d52a44228ff541e6e7acf04bd580b6fe27e00",
+          "bytes": 16832
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-26-3.png",
+          "sha256": "ed5a9c24a7a5fb6e2eb2d5c7ea6fd96213a1cd137c9c631b802721b090319504",
+          "bytes": 12393
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-26-4.png",
+          "sha256": "e7252d8722b76fc41bbbd9e0db222acb9181b193bfb008ce94864f326673e2db",
+          "bytes": 10762
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-26-5.png",
+          "sha256": "decd05c8ac67854ef49c3f884defeff52662e69dd030182b868edc2d942862a6",
+          "bytes": 16525
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-26-6.png",
+          "sha256": "974e971cd530e3dd7d135de7285ab55784eafa6b38d3a1c2ba738cbdb6df02aa",
+          "bytes": 212129
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-27-0.png",
+          "sha256": "b6f3147f7e811084a60e3b28bff9c8fdcf0b95bee70a045137876b37b537f19e",
+          "bytes": 112796
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-29-0.png",
+          "sha256": "ae1e9390e8ce1b7709fb5de634f8761c72ac7a36e83622a6727610c8d1ad5e7a",
+          "bytes": 91044
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-29-1.png",
+          "sha256": "3b4478b860e0a3166a50ad8da977eee8b3266f43b856c7e7448f7bf3acb03f6a",
+          "bytes": 18384
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-29-2.png",
+          "sha256": "3166064db8a6dcac34a09ba627ddf646f60c529d63c67ff91385c897b2a8132b",
+          "bytes": 93863
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-29-3.png",
+          "sha256": "00da29e0ad41fabebb77f68c68531192e7a6885e3ad769d19bb2f2ce520d6b99",
+          "bytes": 178169
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-31-0.png",
+          "sha256": "06cbce35b785852328463b3b900c958762ead0cc3175d7a72d18691db0ef19f7",
+          "bytes": 68321
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-31-1.png",
+          "sha256": "449bdc446e3b29cbb2b5754b51d4e6be5f5f4d5af3f8b99a4aba52c82d86e320",
+          "bytes": 196150
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-33-0.png",
+          "sha256": "0e91d75a58fa5a70165c9bea8b0160c9deee05a7623630e36ce50dffcf5ab9d1",
+          "bytes": 172621
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-33-1.png",
+          "sha256": "8a6cb7119af32ff94c7f44279816f5867e7e3a265f1bbe89d04b87aabbc9134d",
+          "bytes": 215951
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-34-0.png",
+          "sha256": "843cdf348607fcf173b7b34ca6ce31a4467b2ccf14b09e5be242e15d2515edb6",
+          "bytes": 167579
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-34-1.png",
+          "sha256": "a5852fe6afb265372059d8852b53bb59fed8e758c184ea326657c4941175635e",
+          "bytes": 168187
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-34-2.png",
+          "sha256": "a4aa5eae5f648f4ab58c0fb39a3b7269fd0735d82d9601aed2ee1e719b670bc2",
+          "bytes": 302920
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-36-0.png",
+          "sha256": "c6a6e033ff0f2fd3505fb794704f4c3d84f562961af530ddc022e981c70ed740",
+          "bytes": 126807
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-36-1.png",
+          "sha256": "15d7d11b1835ae4f7ab4939a177ce3aeab99119540697618f9da1eaa5bc6eebf",
+          "bytes": 129072
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-36-2.png",
+          "sha256": "bb0756e7672eb9ac29dd6a4d7541de1ffdcc16eb27a1a56cd113b703f0aedcd4",
+          "bytes": 127820
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-36-3.png",
+          "sha256": "4d227d2eca8a04696585884abf4bf59f4a97919bb9c520585568f882e15c431a",
+          "bytes": 135477
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-37-0.png",
+          "sha256": "0705b5004b5977d1cd01884af618a8278c4ae7fe85d2b90218fd37f69397780a",
+          "bytes": 65892
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-37-1.png",
+          "sha256": "715af13020c4118481e187ba115b2b3976adf35a9af243bb67c3e3c169afc56a",
+          "bytes": 90699
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-37-2.png",
+          "sha256": "3939481522f27695c5050bb7edeb7b85cc91a1013936510520e253d275fb8f89",
+          "bytes": 32705
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-37-3.png",
+          "sha256": "f95dd16628804320ba56fe5a12f222610a366c970e04796f19ec6315628affd7",
+          "bytes": 114927
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-37-4.png",
+          "sha256": "d0e72fc7e0811f38d1d334a30bbacb43e5dd596b1c534015d9b39842c9907762",
+          "bytes": 135007
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-5-0.png",
+          "sha256": "42299138db97cf84ea276ab623f0d49d4cc0151dc42b4717316883e137c9af47",
+          "bytes": 206898
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-6-0.png",
+          "sha256": "f88dffa86ae34f1df324c9b4e77a1a7492384699d76d20b8c10c4a65f7fd7daf",
+          "bytes": 20483
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-6-1.png",
+          "sha256": "b473a8845d06e9a93e3a8130bfeac624323d4b2a4619ee0eac45fa4c74732083",
+          "bytes": 16976
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-6-2.png",
+          "sha256": "7a163c5635670d7ab6588672006c5547d4248bf43829113896dea0b65890a6b3",
+          "bytes": 13479
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-7-0.png",
+          "sha256": "4dd25538f739280b477aa559d4a77e6f35739a087a77421cf7907ff9ce7c6b7c",
+          "bytes": 49936
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-7-1.png",
+          "sha256": "da6d950ed9fadb076fadf2cec7d4f40a5cab3827aa85e40b29b52633e36ff645",
+          "bytes": 63949
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-8-0.png",
+          "sha256": "787e981fb1d7940ca1856c8d30544dc98372347310ef51f55e1ae173fde1fa32",
+          "bytes": 60576
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-8-1.png",
+          "sha256": "d99c4809ef6e18567a67f51b7ed93095af432dea38e6f96d4a1ffb7bbf595f96",
+          "bytes": 63266
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-8-2.png",
+          "sha256": "f20abcdc323a5afdb584c215dae556a17f97df1a35e487d7a6b0d5b81731e381",
+          "bytes": 68489
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-9-0.png",
+          "sha256": "46cbef75a527b5c132f9f6f79bcf9d0278e051f496047600d7adcfdd73e68f5f",
+          "bytes": 85161
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-9-1.png",
+          "sha256": "356885ddca7a91d018eea15ddae5368effd653354841669cbeb3c5bec40624d8",
+          "bytes": 94063
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/images/paper.pdf-9-2.png",
+          "sha256": "3504338c2bc87176038b24b8abcb9e5e3814c9e1351656ca428807a3fd88ceb0",
+          "bytes": 89257
+        }
+      ]
+    },
+    {
+      "id": "K09",
+      "pdf": "01-papers/T4-multi-robot-coordination/2022-Explorer-SubT-K09/paper.pdf",
+      "pdf_sha256": "f41e415698ba83500863c50e148a32531f932934e02fdae9f31699abab23e556",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/paper.md",
+      "markdown_sha256": "fec52e98d73fd83960a2a40fe400d306dbfde34d14ddf952ebb53a4981e91ae5",
+      "provenance": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/extraction.json",
+      "provenance_sha256": "abe76cba8cc5b668b8421f1f9a0d18c79124d8f2c6e91c9807cdf2ebd80055ce",
+      "pdf_pages": 57,
+      "archived_images": 72,
+      "referenced_images": 72,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-10-0.png",
+          "sha256": "2a56405f36a905f45b477e26fbc508d7ad59b3d963975de5fc89210b2368d3a5",
+          "bytes": 50990
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-11-0.png",
+          "sha256": "8130fdc188ed371f173bca1f1638a24f80964fee56ce509d13b6f20cf5ba9d26",
+          "bytes": 87611
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-11-1.png",
+          "sha256": "d81c9b60374d14aae54bd68f75b79bdf78b3d716c797a9166cad35c5115fe522",
+          "bytes": 95912
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-12-0.png",
+          "sha256": "1c68f1a7bc03a3c811725af7ed52b46efa408b97a25e609945344e1d65e17f9d",
+          "bytes": 85778
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-14-0.png",
+          "sha256": "2779c58f7dae997f1c6bd9d84e9c122906bb8863ad7e8416fcde76d58764fc4e",
+          "bytes": 202400
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-15-0.png",
+          "sha256": "ea84a417b277e67ccea24cf069f12f4912adf8508cb912a15d8b5b814410061f",
+          "bytes": 166215
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-16-0.png",
+          "sha256": "bd19636c314b897a8a9e4fca094dc9194d2087b0540ab7a07529ff551300be2a",
+          "bytes": 31143
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-16-1.png",
+          "sha256": "752040456b648e2c08801252d148297fd1a9a8f168abd76584baf4393d852b88",
+          "bytes": 10300
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-16-2.png",
+          "sha256": "d3cae3a27b9624e23b027966e19ca937bdb3238ca4dec109fbde139db07ed604",
+          "bytes": 9808
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-16-3.png",
+          "sha256": "73f5d051c1aa20cece92972a1e4364769a637b2b3097b25276a7c5dfbacf5b94",
+          "bytes": 9922
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-16-4.png",
+          "sha256": "c8aafa7b6db1e504329bf72d8dcaf8574bca7ed43d3c644a4432f25d2805704b",
+          "bytes": 9159
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-17-0.png",
+          "sha256": "181e57f220c6346412b94977b50ca97cf140385bff2b13b6725eb97729c4f091",
+          "bytes": 14892
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-17-1.png",
+          "sha256": "8e2cda400e6df7d6d9f9f1c199216bbb5b38c7af265299aeeb36453bf9f6d2e2",
+          "bytes": 19643
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-17-2.png",
+          "sha256": "5363fc355a6225753ffeb9ccd288c348578380965ba9f7b44b0e8c680934897a",
+          "bytes": 107330
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-19-0.png",
+          "sha256": "bf8a17dc669e278f666c96a2ad0949b5ca645504809fc7e5c8b6ec4d4c6b3731",
+          "bytes": 109259
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-19-1.png",
+          "sha256": "d64c80973c38501aa0ea5dff414a53c9193fea254595f9b615daaa5164d6d71f",
+          "bytes": 325117
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-20-0.png",
+          "sha256": "76f45eb7e1bf67460bf56fdf29f802669c1a01b056b5c11f575af4be77fadc1e",
+          "bytes": 161746
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-21-0.png",
+          "sha256": "e5ff5f917ae7e85d8616a5f308d59c7d8ecb7ce7ac22c34ffa5ae11ec6fecc28",
+          "bytes": 110246
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-22-0.png",
+          "sha256": "38f7e7c92f90485d36a5b85532e3dc2930336fca450d82d3b78d9b195eba6b71",
+          "bytes": 58175
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-22-1.png",
+          "sha256": "f3fe28060288cd6a4f12b3c7b1cbfe869dd121f6d52d59aa67e09dde59b638e0",
+          "bytes": 82056
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-22-2.png",
+          "sha256": "f8ca75a468b9de7fb10bf01cb03c85b841fe33438e5c27f38a11f1917716e309",
+          "bytes": 91590
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-22-3.png",
+          "sha256": "a82a265aa1dbac45c1857000ebd2c30e13987e2719ecdd85f4c34db43ec0dd63",
+          "bytes": 93141
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-23-0.png",
+          "sha256": "9b9556bc2b738358906a985daadc984b0298d61385263558a29aa71ab5973c28",
+          "bytes": 12133
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-23-1.png",
+          "sha256": "cfedccd862ff1842a9afd4f99736c95545be3c8ba256866b6ff8e7afef4264fc",
+          "bytes": 12112
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-23-2.png",
+          "sha256": "9b84821eb02abc6137138e3a19d21b691d84b420f2d68f01cc8d35fc9ba158e7",
+          "bytes": 13961
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-23-3.png",
+          "sha256": "b9d2449937cd156bfc54b7a9ee9379bc7a2faead2cff115180487d2c705a3251",
+          "bytes": 27884
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-23-4.png",
+          "sha256": "782f11268670e0b2600e5efc4416b21531fb54ebce10bb60f774f18653f97eb4",
+          "bytes": 150762
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-26-0.png",
+          "sha256": "3103bf244a7e2a44ce3956973eb8d9ab86e25ad6dd5fca1175f61ca580088df8",
+          "bytes": 51822
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-26-1.png",
+          "sha256": "a63f290a24280a17f592cbd6af44a9723fd32eb3d9012d44713c22ab55a83e6a",
+          "bytes": 20604
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-26-2.png",
+          "sha256": "f444e4d68b85898773e80af819e89b06e67aa9b9d916e86a9a9061f2cb175a88",
+          "bytes": 21573
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-27-0.png",
+          "sha256": "4b352ac66c3ebe0406f1356c38d3bcb6233cd2b887f67d1138dbbedbc93a36ad",
+          "bytes": 120676
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-31-0.png",
+          "sha256": "97a9f6f197560e78f24263a3d0b79311bd64a337d4fd626ec7ad147b5942ceeb",
+          "bytes": 9918
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-31-1.png",
+          "sha256": "441de24ca3fc180bf94957d18c507698d5b55604d6b44151cd1a84035e07c2a6",
+          "bytes": 88605
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-32-0.png",
+          "sha256": "3cf1338b80448baa4ddb6045f4eb30d5e11d671cfba56ba1b93eee471b00f597",
+          "bytes": 76395
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-32-1.png",
+          "sha256": "8f99ca45264f9c9c74843f07ffcf02bf75e92f89049fb1397c68bd3422a79c00",
+          "bytes": 65750
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-33-0.png",
+          "sha256": "374a1a8e0566267e0ccd9e1bbe335fdf9b2da654ca2700ffa52cd55f254717ca",
+          "bytes": 16740
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-33-1.png",
+          "sha256": "cf9bf08b56257333008e34e2f697b559ac464fb2217c18796bf91ae43c2678ef",
+          "bytes": 14724
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-33-2.png",
+          "sha256": "e1ee9ab86454e7621e16bd73304354ffe6bd6798eecac47993dfdc8f920b92c2",
+          "bytes": 98762
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-34-0.png",
+          "sha256": "1564b76eb41cdc6216175a0b24a25b64b2801bf294d52fe1d24336e06659eab5",
+          "bytes": 66111
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-35-0.png",
+          "sha256": "3357585a8bef34974d9027c4c5eeab8076a187385921d35fd37f06189d5fe967",
+          "bytes": 15800
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-35-1.png",
+          "sha256": "94a0c83aa6897bdc700938f9cbc0f04a33158ca5c397a6e8945dcefe8fb56b33",
+          "bytes": 75515
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-36-0.png",
+          "sha256": "780c1c3b507a6f5e60f23cdbb4efd364cdc01535df451720c095b8598f284556",
+          "bytes": 37386
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-37-0.png",
+          "sha256": "029f5fa3989d0ea56d0c5635ccdac76ec83c30b84c01ce748c76b8d52aa4ba79",
+          "bytes": 189017
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-38-0.png",
+          "sha256": "2335250e54fa3d0da72af5855a812a6628a539dd66256e382f465dd06b89363f",
+          "bytes": 155072
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-4-0.png",
+          "sha256": "a2b99205f92ab154b0fe41d99164c93e15d1b868a5e577421906f29f7f8a6563",
+          "bytes": 7622
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-4-1.png",
+          "sha256": "8483369dbb3c9112d1fa0688c8ff1988ad7e455a421ac74ad762129c8a716922",
+          "bytes": 12906
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-4-2.png",
+          "sha256": "b1bbbe7f760415d7e2459ff9e7b7cb2cd7f23afdc5b4ef3ae224af0271a992ba",
+          "bytes": 4076
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-4-3.png",
+          "sha256": "4b8be1a3b8c67a668c0aef2fc8dd9131fef5f8a85491e04a1d61f85727dadea9",
+          "bytes": 39397
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-4-4.png",
+          "sha256": "49b370f62a6a63474a70ca4e7ebbdc1bcaa787450b8ebf950907f96457fb63b9",
+          "bytes": 9633
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-40-0.png",
+          "sha256": "a3792f358a728a6b6630cd9ce0a0ceffeba33dd3a56114514600a513ccdbc5a7",
+          "bytes": 93114
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-40-1.png",
+          "sha256": "71b18aee82579c0a237cc0cecd30a724a20d9d2d1c967d143a7d76a16dcebd2c",
+          "bytes": 74268
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-41-0.png",
+          "sha256": "0fdf7be88213eaaf63f7ecb169ee3ae226fc8ce7b518487d60a652d011f1ac64",
+          "bytes": 79311
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-42-0.png",
+          "sha256": "84ca386c448afb8184a310f27ebb8f19317dcd1473e4f9d87db3570b0b549cbf",
+          "bytes": 78822
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-43-0.png",
+          "sha256": "bd6d21805bcfb2dba45b63da9d9ef7bfb4b0fd5a4a636e2f8ebe4037765532e7",
+          "bytes": 83335
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-44-0.png",
+          "sha256": "af1f986bb376e91ae0bfb3b2c0b8349d3e50bfab838d2b574c9607b90bf4307f",
+          "bytes": 79205
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-45-0.png",
+          "sha256": "9a1bd92cb5e0356d02959548b16fac1b1e0f582db32ee0f836c15c1e07754428",
+          "bytes": 168245
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-46-0.png",
+          "sha256": "6c0e523a7a654077981d4b8edaee69deb08eaa23d6439ec20634d530648377ba",
+          "bytes": 153300
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-47-0.png",
+          "sha256": "9239a615bfbe37a67ead7e8cdca4f209c1d57f9c8a163b67f7592e7adcaa1b70",
+          "bytes": 168303
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-48-0.png",
+          "sha256": "0f78c18f08a035af8d6c57186e88324fa68ddbb4aeec7ebe7995d253f15048e8",
+          "bytes": 168368
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-49-0.png",
+          "sha256": "8c3b1f4177f7c4150902a490dd83214ce529db47237be6cca2176d9164cc5d9c",
+          "bytes": 105504
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-49-1.png",
+          "sha256": "9b7208469e9f64f44eb3601bc89be5c81b34c49b8dd7c6abe299ff6450e0efae",
+          "bytes": 115024
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-5-0.png",
+          "sha256": "f6f29879e7d8cd528531b34971594b0f2c3eb3106ff1957e65de9799c2ed80b7",
+          "bytes": 141677
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-5-1.png",
+          "sha256": "5e3148b0bd36a758eccceeeda1c771dafe77ffb8ecf1e50bfeebcc92f783986b",
+          "bytes": 86632
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-5-2.png",
+          "sha256": "146fc54767f230d8f415c82f493a752c6818480473c263fca12ed2dc3a912286",
+          "bytes": 64481
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-5-3.png",
+          "sha256": "b2adde6c30a9537612b7392d58f958b0606d24e15f5126cabe69f18b90a683c5",
+          "bytes": 136831
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-50-0.png",
+          "sha256": "e0672629a59677f03b402837f50af4df68bb5810e57e2df4274de78f468dca15",
+          "bytes": 95669
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-50-1.png",
+          "sha256": "6e731f8c9c8db31e4ac1179a87b90ef2bac41f9b200a39963af594a51b6044e1",
+          "bytes": 83842
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-6-0.png",
+          "sha256": "270d4291f45fc854b114cbf73ea372faa2c187038f9a6cedaa2660eec1053bf1",
+          "bytes": 57913
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-6-1.png",
+          "sha256": "9a2763e79fac102a3ceee70510bb04e9e636fc1a625869ef7edef4195fd7ada5",
+          "bytes": 9610
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-6-2.png",
+          "sha256": "1259633d04a7eac9108b3053b258c93e0cccb5786f53de56fe180e467b7f4ad2",
+          "bytes": 8764
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-7-0.png",
+          "sha256": "809ff6264b6faae8151e6817362faa311e79cb85f97685aafa541115f069139e",
+          "bytes": 43893
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-Explorer-SubT-K09/images/paper.pdf-8-0.png",
+          "sha256": "ea3ae3af6f73d3ed74aa705db76ef69daaa8accb105e93ba0addab7678d7d3be",
+          "bytes": 439174
+        }
+      ]
+    },
+    {
+      "id": "K10",
+      "pdf": "01-papers/T4-multi-robot-coordination/2022-CERBERUS-K10/paper.pdf",
+      "pdf_sha256": "928cfa8a9d556ad92eac32ec3ebc9221750890e3a6d5c89c99d2aef62b093c1f",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2022-CERBERUS-K10/paper.md",
+      "markdown_sha256": "a37282a97e6938ab5eb5619242dce627b090a3a5d9c2afcff58af5e1213d84f5",
+      "provenance": "02-fulltext/T4-multi-robot-coordination/2022-CERBERUS-K10/extraction.json",
+      "provenance_sha256": "52b7d20487763af98c5ebaa8dd043cc6ae16cf035b589359276daab52a2bcef8",
+      "pdf_pages": 7,
+      "archived_images": 5,
+      "referenced_images": 5,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CERBERUS-K10/images/paper.pdf-1-0.png",
+          "sha256": "754eed23655daac8b1b83eecd79a33de280c4b81423dbf984bfe96002d6eb04f",
+          "bytes": 182316
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CERBERUS-K10/images/paper.pdf-1-1.png",
+          "sha256": "bc73c227acaa01031f5c86aa61a778e6c59ec927a0f47821bbfae7aed8ca61ae",
+          "bytes": 189927
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CERBERUS-K10/images/paper.pdf-1-2.png",
+          "sha256": "6b8166577f18776528c578b15f10f9920c7b8f8482388477f004561bb5b86f45",
+          "bytes": 87394
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CERBERUS-K10/images/paper.pdf-3-0.png",
+          "sha256": "615fe505e9c212d7a2d9c72077af59de43b555d2cf03d3b2a27fde08116f328b",
+          "bytes": 697337
+        },
+        {
+          "path": "02-fulltext/T4-multi-robot-coordination/2022-CERBERUS-K10/images/paper.pdf-6-0.png",
+          "sha256": "7fe4f84c9398f5564ebb3924bff868d0737133b78e205197e0185a0a9f6f0ebf",
+          "bytes": 16131
+        }
+      ]
+    },
+    {
+      "id": "K11",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2021-HM3D-K11/paper.pdf",
+      "pdf_sha256": "ec1559e9e5137f67ff16002d4442feaa64c6b55cad621803b9ceb2f6968fa390",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/paper.md",
+      "markdown_sha256": "29b40d3896afd3774bf806eefaf93e9ed42e331b444f53105919a4cd1a6badc2",
+      "provenance": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/extraction.json",
+      "provenance_sha256": "9d5e9e0d44b057c6a489ab8136610327e8ae0552cf7ba4ca65abfd291c111da3",
+      "pdf_pages": 12,
+      "archived_images": 41,
+      "referenced_images": 41,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-0-0.png",
+          "sha256": "3265dab0493b6954463c08ad2246fc58c6e8b5efdc1527c16fdbc02d9f06b959",
+          "bytes": 79315
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-0-1.png",
+          "sha256": "b6d93ce5580ecec550d4ba736b2ff595f0851350466df618c9aa6a10d7824854",
+          "bytes": 38903
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-0-2.png",
+          "sha256": "5834a060c889dd67b8c5248269db165ab262b45ccad8ceb2a372305d0c85f53b",
+          "bytes": 44233
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-0-3.png",
+          "sha256": "24596f3c60e7db430731b3a0182a807dbdb2bb8be70c53bae7940c45999fc116",
+          "bytes": 180937
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-0-4.png",
+          "sha256": "4bbad4e0682a32d23b5493cb408134e5e0e2985677864fa94e153f06b1363383",
+          "bytes": 137480
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-2-0.png",
+          "sha256": "6bc132534911fe68fc85a20459d566507e8a908bb7428d56177ec9bf6bb8fe01",
+          "bytes": 34711
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-2-1.png",
+          "sha256": "7744cc610bcee0d5ef77a4cd8254a25374ddc1d63b10223665a1a0d5320b5593",
+          "bytes": 38317
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-2-2.png",
+          "sha256": "0cc4ac4d82a833f4077732c93b8896a2a18288bf804523a5dba1c3aae6e82343",
+          "bytes": 40774
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-2-3.png",
+          "sha256": "322c00ffe168d428e43ac27840f11c88665f11920359f1e88bc9380841830be5",
+          "bytes": 59931
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-2-4.png",
+          "sha256": "513e1b46c3e09e9904759c105085d1e1da269c8e248320e56aff03f640dad4c3",
+          "bytes": 38424
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-2-5.png",
+          "sha256": "b05ea570e55e34622ed829aa9d7c5f2d02e652b64f24f5d9bee46fc1a8e745d1",
+          "bytes": 37149
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-2-6.png",
+          "sha256": "5f562d5bc1278956e0e816474b783231cbcd758c18b68fdc1d30946ae4434c9d",
+          "bytes": 34467
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-2-7.png",
+          "sha256": "ec08a58e2192c80aee72f147f591466c1351b7bf467d20d7e13bba65b2fbecd3",
+          "bytes": 73203
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-1.png",
+          "sha256": "f76f9e3f24f45cb3a2ba9e44cae48d899ba7c85585f713a469c40685ac8920f7",
+          "bytes": 19081
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-2.png",
+          "sha256": "2ce6ec8b1fbf3fb1e0dee344e6c0aff21b7056fd89fded3cd7d05794871842d2",
+          "bytes": 11868
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-3.png",
+          "sha256": "71dd64140bededb56b0a6c847d4b24a08af6302e57e1d4345cbfcd6838682c3f",
+          "bytes": 15542
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-4.png",
+          "sha256": "581c1e3de241bd591efd5ba70bc40b8bf094997232761ef54c8b55bb8e7cdd0f",
+          "bytes": 14700
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-5.png",
+          "sha256": "3f66c5a47e6a94d260ea77d38d6fa93c41b315606d9038d91a7e2c7f98cf1d49",
+          "bytes": 3776
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-6.png",
+          "sha256": "f00492dafece5398c28da3b9903003d458c9a1e86dc15e0c68f8372fd4397b5c",
+          "bytes": 3265
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-7.png",
+          "sha256": "265736be9f5c829e07ac83467bc5a6ca75407269325e20a0665c3a5e5b306014",
+          "bytes": 3248
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-8.png",
+          "sha256": "a4489ece5df9c7cfdb35aa4a60ef1b98e2d3636be74ff078da1e842f208d19c5",
+          "bytes": 2109
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-5-9.png",
+          "sha256": "379197b8079b7fe0e5e4d8bfcab69b522b12b82f55f45087cc8398988e3454ca",
+          "bytes": 26634
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-6-0.png",
+          "sha256": "f6c798daaf2fb81d3f954768c3a058d8d5413dbd9faf63f742a4bf4781d71e21",
+          "bytes": 32133
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-6-1.png",
+          "sha256": "2aaa11d3be35752981b6afd7796c849aea4d6ce10c67bd0c0ac43f5974ee1f87",
+          "bytes": 31663
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-6-2.png",
+          "sha256": "987cca52023793ee5fda2ade1fa5b55741471613e5ccc773fa6825db098c12da",
+          "bytes": 36253
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-6-3.png",
+          "sha256": "f42b33db3ad058186dd361bde2b1b086ad097dd4244d6a98cbcc1d639642b201",
+          "bytes": 36157
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-7-1.png",
+          "sha256": "2c9ac52e494410f444a78053fbdf46e1b38591fff941b32189ebb7ebe779b7fe",
+          "bytes": 13724
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-7-2.png",
+          "sha256": "240e56ccf554985cc924b6f2b34872289bda7e9ae9cdeb83b8bb072ddd798bc2",
+          "bytes": 14165
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-7-3.png",
+          "sha256": "b18bf1dc3e906f49bdee3f92128abe9c4fc423d59ef7f88ec42a012bbec99416",
+          "bytes": 16019
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-7-4.png",
+          "sha256": "141d5a375450ad7516ee275ad9d6df9865e6fab3b34f2a373b1a97a122314cf6",
+          "bytes": 14881
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-7-5.png",
+          "sha256": "7e2c62b204f464c4b6fa5556b1bdcd124d5b564b30d169aada345971bc8c0d61",
+          "bytes": 15491
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-7-6.png",
+          "sha256": "4162a35af62e6012db7c7315c5f3b3a8cd973e8bb8dd518c62377196e3a464fa",
+          "bytes": 17013
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-7-7.png",
+          "sha256": "442dab997248a86dae72ebf4c272009df50c1f70b850620a668ee4f0e762ac87",
+          "bytes": 13864
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-8-0.png",
+          "sha256": "91f87d2bb7f551a35922243958920d7e88f27154b97038fd73f73bb77a55d9c8",
+          "bytes": 39535
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-8-1.png",
+          "sha256": "cd065c4aacd45c5178747c2796e34061dcc5e66821c112cbab2c4b8043541b46",
+          "bytes": 47819
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-9-0.png",
+          "sha256": "f4b828b97a98415c083fa76cdb5978419df5909d4197ff34076e85f2a2df2cd3",
+          "bytes": 5477
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-9-1.png",
+          "sha256": "494ea068fa1bbb82eee36c7dcb0ce08df3763502606497b477c3fa1e84455c22",
+          "bytes": 5419
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-9-2.png",
+          "sha256": "9b4695f11c99f396d0c34b77f62a43eb53f8532626a8689a3fdeeca968c9f628",
+          "bytes": 5573
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-9-3.png",
+          "sha256": "55572681126de36c736c5a82faf1fd5dc2fb534461be0a2b56ae0680d24921cf",
+          "bytes": 4756
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-9-4.png",
+          "sha256": "f9563560aa2ffec08fce2f734e8c15fcd4ea70c5db899848a30b84c59c5c95b4",
+          "bytes": 4925
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2021-HM3D-K11/images/paper.pdf-9-5.png",
+          "sha256": "a99c22823620c0528fa0e221babe46c37b35a2fe5aa6f7498b4c53e5d7c175a8",
+          "bytes": 5025
+        }
+      ]
+    },
+    {
+      "id": "K12",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2023-LM-Nav-K12/paper.pdf",
+      "pdf_sha256": "464d4cf79d3028225fbd6a534e5b9971df1a690aed55eae951fd7c81882a167e",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/paper.md",
+      "markdown_sha256": "132bbb1efda65e0d5809e5226fcff034426dadb9bc6a6a381fa80ca51c9ecad9",
+      "provenance": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/extraction.json",
+      "provenance_sha256": "a136cce25dfa166a8ee129bc5e69c006d57aea886e7b78398b572e392d568492",
+      "pdf_pages": 13,
+      "archived_images": 8,
+      "referenced_images": 8,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/images/paper.pdf-1-0.png",
+          "sha256": "b3e290d803aa1fb26e9c2b771d0c1348624e5b6441fee8953a0551583252e1ff",
+          "bytes": 174509
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/images/paper.pdf-2-0.png",
+          "sha256": "7fb58876b2a80b0ffa760d1b4848f3ab452d5bf465db2b2b66ce04c5e29bc1fb",
+          "bytes": 14893
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/images/paper.pdf-3-0.png",
+          "sha256": "13edf564398920bcc34d217fa74df517ab2b053d4ccebfe015304c37dbe75950",
+          "bytes": 109280
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/images/paper.pdf-5-0.png",
+          "sha256": "e19ffc9a544d37c36903a7c15c0fc6343b34bd04f9c55f4ad17f9d76288a356b",
+          "bytes": 293651
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/images/paper.pdf-5-1.png",
+          "sha256": "8e113b753b6b0069a713fbaad3c1b8f89cb77e52415296e39db1810d45e9b7f6",
+          "bytes": 96766
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/images/paper.pdf-5-2.png",
+          "sha256": "a82c042b52090526d57c897a0309963a6077d3831a0b9a6626f554aa0032b69a",
+          "bytes": 112173
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/images/paper.pdf-7-0.png",
+          "sha256": "49682cb7f62e84a4dda15a7efc34b7b0c351e70b274c00e9e7cf58d3a34d9610",
+          "bytes": 66479
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-LM-Nav-K12/images/paper.pdf-7-1.png",
+          "sha256": "9645df795c72e72a501af704681bfb45a8298698a520d898a3e80ecebbc42403",
+          "bytes": 69277
+        }
+      ]
+    },
+    {
+      "id": "K13",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2023-GNM-K13/paper.pdf",
+      "pdf_sha256": "1587ea069993c6f660f63d7d2a5ba0272fec50a9b29ac7542170742ca1f35d18",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/paper.md",
+      "markdown_sha256": "818e7dbe8e7341d992060411b45b403ad785e84c2de4e463561cc29461a5a524",
+      "provenance": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/extraction.json",
+      "provenance_sha256": "2e936f9cc6d1ef83e435e4f562b6ad0391fe2caeb37bef7ccbbaab0591ecc8b1",
+      "pdf_pages": 8,
+      "archived_images": 10,
+      "referenced_images": 10,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-0-0.png",
+          "sha256": "253087e85cf789d69cd63ba6d518eefd51a9a120e6f1de2f2b1e8b20948d2198",
+          "bytes": 11729
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-0-1.png",
+          "sha256": "5faa834259a6fd541f25121fd8c0a3279a52e4b3363e3a2579b1065e51ee95c1",
+          "bytes": 23101
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-0-2.png",
+          "sha256": "139131b199b9592a6282a6ae80b5b04f2c925e2ae977fb451098ea0143e70a4f",
+          "bytes": 38497
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-0-3.png",
+          "sha256": "cda2cdcb6e00cc7652f9f61575cdc54693c82adb3a6af4ae2de355f7653e75c6",
+          "bytes": 49948
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-0-4.png",
+          "sha256": "2ef306532c97f99293e0e12fadc3f5b44c572133617aeeaf9f33310f35df3f81",
+          "bytes": 43731
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-2-0.png",
+          "sha256": "79b99be17e707720626b99d73d8fb4db5e9941b854dbb25e3ceaa9811b332b14",
+          "bytes": 62351
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-2-1.png",
+          "sha256": "057623ea0db531b8d4f9cb7cffc7ca22ed449e4a59f0286035fa612bd518161f",
+          "bytes": 17908
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-3-0.png",
+          "sha256": "e2dd7a92a7708957692825d3ff077fd90028ab0a5b5b3d2411c7102283e930ed",
+          "bytes": 253186
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-4-2.png",
+          "sha256": "932d878cd5a8836487b3d1175984496533fbc4d6dcc4c1817795e900884278b5",
+          "bytes": 390701
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-GNM-K13/images/paper.pdf-5-3.png",
+          "sha256": "aa6cdfddc5a343b2a1c810321dcf324991e509674f61f30afdf47acdcf246ca9",
+          "bytes": 265421
+        }
+      ]
+    },
+    {
+      "id": "K14",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2023-ViNT-K14/paper.pdf",
+      "pdf_sha256": "7298c0d3c5164f4e2b693766c4925a028a17c3e32aa0548827b417e28a5a8488",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/paper.md",
+      "markdown_sha256": "133d40a76c451214cb0573a7332521688dc177d5b6f6e42b3893b5bec44aa3e9",
+      "provenance": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/extraction.json",
+      "provenance_sha256": "d279892d14072253dddb4fa767ce86d4faf9f5e6a78391a7fb4669500c4f392b",
+      "pdf_pages": 23,
+      "archived_images": 41,
+      "referenced_images": 41,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-0-0.png",
+          "sha256": "eb21a0579630abf0cf60d3da8f531ad7d2ff498025b17575a949ed651e18259c",
+          "bytes": 109310
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-13-0.png",
+          "sha256": "b8e475cb741675670bccabdce31438f0b9378fbc1d52c7fec6f079e8e3243f4a",
+          "bytes": 48400
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-15-2.png",
+          "sha256": "6e0031367727f75c74cdc0f3a44f3e2eb97d60b192082449d97921b59b50617d",
+          "bytes": 9367
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-16-0.png",
+          "sha256": "db922700a96b5717d87b2df45098d1515f84e326b059ce703dcb1806eca9fb6b",
+          "bytes": 23687
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-2-0.png",
+          "sha256": "b94bd70712982e682512a9bd0cd9d3ad4eb395acd63635e0ef66fc5d3cd60eb1",
+          "bytes": 19536
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-2-1.png",
+          "sha256": "7a1425c8b7ac9c89bb4e8d4bbf4f1431b7bc5a45d00f6f8ae644c46d237f5b93",
+          "bytes": 64654
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-20-0.png",
+          "sha256": "6316e1db1b60d3c52a1314a185d60196b814e30049ca1037c7581c343f048f05",
+          "bytes": 40064
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-20-1.png",
+          "sha256": "94601fbf49d4e39dade19975d661d7933b41e71004d66d9547927026727a9192",
+          "bytes": 38879
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-20-2.png",
+          "sha256": "004d4185638cf7ec6fdd61337f3fae83e91e971aa690d4efbf885b9bc4899bbb",
+          "bytes": 31699
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-20-3.png",
+          "sha256": "360c4d72dad445951f736258c20f899b637aad4cfde51fe97afe7e35b0b3bc44",
+          "bytes": 25489
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-20-4.png",
+          "sha256": "c854f5f1e4e12372bc36ec96f22966a125b91d8d53f9dced7ca665d142a84076",
+          "bytes": 143924
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-0.png",
+          "sha256": "e8afbdb397533a6ceb54d4e541dfcad7895e2e70612e1c079ad02db52681b2c8",
+          "bytes": 33673
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-1.png",
+          "sha256": "30d72e85caea15ecd532a13d0dd968975f3f7601847a72eab787027212723298",
+          "bytes": 33151
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-10.png",
+          "sha256": "afea74bae05b84cd1d2bba4eb342ff1357bcb41abb459d1c3957232232c2c8b9",
+          "bytes": 111243
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-11.png",
+          "sha256": "376e01986d35ab11ab40570965a4669d9a28f51a51214e9d07d2377109f8e970",
+          "bytes": 101745
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-2.png",
+          "sha256": "d09d1908955f5d9981946247d5491c0ef9390352e42e82bdf8dd1b3c2a9c0401",
+          "bytes": 34070
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-3.png",
+          "sha256": "e0dce5686184bafa0c9a3aaf89a2319844cd40298f43067ba931689ecc6b2b21",
+          "bytes": 33869
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-4.png",
+          "sha256": "33bc5ee7eba71a629f379823f1e8fcb9f8be79a0e3bcbc61db893f6d9f644e78",
+          "bytes": 33933
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-5.png",
+          "sha256": "ef11f0c0eb072b20f1b240a3802e417b470ce50c4bbb929c3b4510436acaaaf0",
+          "bytes": 168219
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-6.png",
+          "sha256": "d0220d577ca716ab353bc809de58cb07a10fdc1fbd564ae109d3505d2268ff7e",
+          "bytes": 58293
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-7.png",
+          "sha256": "36b2557016c8d0eb5ce0993213eac59257196f5e64223479023efe455acc1c38",
+          "bytes": 7959
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-8.png",
+          "sha256": "93bac438e7e7ed39e6465fbe992197b03a7d7ca4236f0d2fd7fb7b09c2d68765",
+          "bytes": 14916
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-21-9.png",
+          "sha256": "a80b0cda5e1f6a622faf3384251a7140c640834fa347d2fa9c7edcddffd6e936",
+          "bytes": 24036
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-0.png",
+          "sha256": "9973b93d7e214bae33343fbb1cfea493e3879369ffe0de9f49d6338bb0b75309",
+          "bytes": 20951
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-1.png",
+          "sha256": "3b302dc12aa6fcbc15e658e81e9cd1fc09bc32ed2d68093f9532999fa80c1b4c",
+          "bytes": 23186
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-10.png",
+          "sha256": "dfe930784a59b6c3589e74e34c376d87b884e1d51f56e4dd45b41d4b8d20d180",
+          "bytes": 276238
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-2.png",
+          "sha256": "6457221777c27e18ffba432837d49c2bafc6e50da777e01a34b50a577e3c0b16",
+          "bytes": 23616
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-3.png",
+          "sha256": "ad43ad0ffc8e2700efdddd86321bdadef20d4b31bf1b786ea4f5d9cbcedfd552",
+          "bytes": 23117
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-4.png",
+          "sha256": "e274b6e5f85a49a3ce5c6c27269068264842f794b1e9052471dfcc6838d1bfe5",
+          "bytes": 23991
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-5.png",
+          "sha256": "05699324c6c05012f01977b0f477ab73f714a7060ba355c36373a3efd2f98274",
+          "bytes": 23278
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-6.png",
+          "sha256": "d21f58221288e71bec1c9eace73716b28c93b940d1e484a49bec708a59af1383",
+          "bytes": 141178
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-7.png",
+          "sha256": "76d1ab4ecdcdb5f78f9d31f89b31801beff7857f9a6221ec04c5eb4948ae2569",
+          "bytes": 141755
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-8.png",
+          "sha256": "e31c211a37350b73c515ed4c213ffc5b062d9825d0f23e10d68bc0233e188a2f",
+          "bytes": 134664
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-22-9.png",
+          "sha256": "b49f2c07edb590c7845d7353e5f9ea8e2514aaabb308100eb4127b0249efd59d",
+          "bytes": 141394
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-3-0.png",
+          "sha256": "6e401f9bb74f63924680d1c7701f1cd038ee6e3fa118788ba31ea433455adb9b",
+          "bytes": 21411
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-3-1.png",
+          "sha256": "0cdb604a5261b64ad0ce2a6b2c834faad7c99ce7bf6cbf4f656c054cc381a9aa",
+          "bytes": 21184
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-3-2.png",
+          "sha256": "946fc73ffb0319ac9b9ec69ec234c058cb21abf153cff6649189764ee78b99bd",
+          "bytes": 44279
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-4-0.png",
+          "sha256": "f29972780083fd024b8c9354362f928b13bde6320eda5e42a7eff4860b0c99cc",
+          "bytes": 16413
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-5-1.png",
+          "sha256": "477c1955b4512e4e8738bad3a4b90e63c3a6a8ec0567dbedc668bc956d239e60",
+          "bytes": 31915
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-5-2.png",
+          "sha256": "97a5fde5d5b3414409a7ad7f6b111f1af3310ca8a31c97a6a2b292f307e2b859",
+          "bytes": 36237
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2023-ViNT-K14/images/paper.pdf-7-1.png",
+          "sha256": "a4902440b2cde439d1d986bde6db14b5fbb462b42e36ed9e24a2fd5f72c300b4",
+          "bytes": 13459
+        }
+      ]
+    },
+    {
+      "id": "K15",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/paper.pdf",
+      "pdf_sha256": "1e84c3bc2888c6c431e858f2efeadfeda6780ff6956b53d56ae6c9b5476c5c20",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/paper.md",
+      "markdown_sha256": "d8536bde349a267ca6107071c08b041888fc5389cfded141148059232ea4fb90",
+      "provenance": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/extraction.json",
+      "provenance_sha256": "edb1ca43f6122b5ea314ceb418dab40ea87f1e57132ff993cf0d1abafbca9587",
+      "pdf_pages": 8,
+      "archived_images": 20,
+      "referenced_images": 20,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-1.png",
+          "sha256": "f756d9f66aa1268881e56d95eb5db42fe21373491afcd331542af13cca47deb2",
+          "bytes": 3657
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-10.png",
+          "sha256": "11e1725bbf6789962cdf8bf98fdf132a714b128d2ca1278beb51765c3bafe8c5",
+          "bytes": 11754
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-11.png",
+          "sha256": "c56d710d9f40e9c873a5fbf62ec3afee5f6be787f1a00a4b6675edf98a1c8a4d",
+          "bytes": 40874
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-12.png",
+          "sha256": "68f4f179773b3d91bd19b0940aebde2e657fb0ba04bbd4c5435b14e5c6fe9f90",
+          "bytes": 41431
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-2.png",
+          "sha256": "e1a2aa084d3938f3f81020b5670b9a16fa38ea4610df93a24482f860e3c69ffb",
+          "bytes": 14316
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-3.png",
+          "sha256": "563a040398b413131d4056c5918cc9aa27d18637b3b902e68dea94f42eed8702",
+          "bytes": 36478
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-4.png",
+          "sha256": "52eda79d10e6af63ac1d6faed6a44651a2b35b4c7e6f647afac5d92b0f278e4e",
+          "bytes": 13268
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-5.png",
+          "sha256": "0415376623446843c56c523c1da655d27b1f7ce8a68d9a829d443196b3292062",
+          "bytes": 133830
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-6.png",
+          "sha256": "bb9f982fa8ce879f07733118e2b7ea95a51a64e042ab023b3881547df874c8f4",
+          "bytes": 16783
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-7.png",
+          "sha256": "5851af3fb419a69df5ff8d2dd1a4411c814979a6128dbf395ba5d869ce385d9c",
+          "bytes": 15926
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-0-8.png",
+          "sha256": "8691b29588a2400fc0a12e69139729163bc6e3b821895c9987bfdd4673a2cdd0",
+          "bytes": 39727
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-2-1.png",
+          "sha256": "a58c7310921b7ad7a94276c0bd0cef02ce07eaf2512d0cce20b1363f269ef733",
+          "bytes": 26262
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-2-2.png",
+          "sha256": "4fc8c2bcdb3e8537e2aa510d73e6638381b77f1655d7834eba6522e18bae3899",
+          "bytes": 41932
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-2-3.png",
+          "sha256": "a6ec2dddd57448adc1cb29564d8cac42ca079987d34e9679bb7b04099b453ec3",
+          "bytes": 20852
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-2-4.png",
+          "sha256": "c32ef942fc8258c4d3031ef07802c28a32224a2c1e1063ba802ea7be820ba145",
+          "bytes": 113330
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-2-5.png",
+          "sha256": "3a874bd50ab171cfb8f879d3e013170fc0483d51114d8e171ce8140bc6d77ce4",
+          "bytes": 54156
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-2-6.png",
+          "sha256": "5bdd60d871ab052be9745bd6af187468453076389cf451e9265d011a38f95963",
+          "bytes": 24453
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-4-0.png",
+          "sha256": "5d1e96cd0d1eb1a8bfae8b7913271f78881e04f5a581c2380fe17044dcccaf27",
+          "bytes": 16379
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-5-0.png",
+          "sha256": "959e6310cb0dc2c6b91107aee1c07a5292ad9825154ba9bb15f7250685ba6717",
+          "bytes": 204652
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/images/paper.pdf-5-1.png",
+          "sha256": "4ce0f6c5ec95b6efaa34f0b7c061d3db6b6cc911ce8c54a95aabcfab75685e05",
+          "bytes": 20876
+        }
+      ]
+    },
+    {
+      "id": "K16",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2024-NoMaD-K16/paper.pdf",
+      "pdf_sha256": "c2bbbbf104df5eae914596de5498473790cb3466ab448401d463345b5454be6b",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/paper.md",
+      "markdown_sha256": "3e20dc38b27af18ef0f9223f85a5ccf0d4ac23ca348d99b1445d8946b059e363",
+      "provenance": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/extraction.json",
+      "provenance_sha256": "a9ff6d5614bed786de8ed86ddcb82b0cd01d0dba05f8289d84d5c085f14659bb",
+      "pdf_pages": 8,
+      "archived_images": 31,
+      "referenced_images": 31,
+      "low_text_pages": [],
+      "title_on_first_page": true,
+      "surrogate_code_units_replaced": 0,
+      "mode": "local-pymupdf4llm",
+      "engine_version": "0.2.9",
+      "pymupdf_version": "1.27.2.3",
+      "files": [
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-0-0.png",
+          "sha256": "1d44d81f4e322c5c73df16eb38e1993262034cd1ca4fd25eb8bebd1c8de6ee51",
+          "bytes": 40003
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-0-1.png",
+          "sha256": "e69d344d436e2db2beed3105e0de6bb20e36324fcbb81974300e813ddb4cc036",
+          "bytes": 43619
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-0-2.png",
+          "sha256": "998f0c8af7d9587ec14313b2faaafdf79d9ba706c1f98f53eeabbd4251833ed8",
+          "bytes": 122160
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-2-1.png",
+          "sha256": "102f70f4bf53d0cc35b45309d52527add5bf696ecf1bc7609d44f1854f947fea",
+          "bytes": 12936
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-3-0.png",
+          "sha256": "151d8d7c70637193799b444904f8cd3a32c73d436637ef48319cf6b19304a936",
+          "bytes": 82136
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-3-1.png",
+          "sha256": "bd63e9a72254f9ff1ba3f23e4b2f3667b87740daa38c7a06d4be74694b123aaa",
+          "bytes": 48485
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-3-2.png",
+          "sha256": "5ecc792c4b3cffe75e32f94c22c5761c96ee5c3e6631e3fece78084b0dd02267",
+          "bytes": 159236
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-0.png",
+          "sha256": "ba0dc8cd38fa335e95880de1a27b2e1902b85bf36329172ff8655bf4d985bdcf",
+          "bytes": 43229
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-1.png",
+          "sha256": "715d589dc7499ab5e48f2501d2bbccdbaba65e593ee63459ed805986762fd78f",
+          "bytes": 45291
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-10.png",
+          "sha256": "fcda3037e15baa7b6126be1b89c95548e3350f410d981ee2132a1827499f3d9d",
+          "bytes": 441587
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-2.png",
+          "sha256": "f75542f21552e1d9c9dec983644a823c8bd94c15a8a9eeedd7411b5ee880d94c",
+          "bytes": 46223
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-3.png",
+          "sha256": "4d7b2d85ce12f536ce1881c58eae2aa6b24b339a9f8eef70338e05af676b30c0",
+          "bytes": 44491
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-4.png",
+          "sha256": "56aeaf450d6bb527c66e1c54346921c4a3e50559f4cd8a77f540afb9eeeb9346",
+          "bytes": 53047
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-5.png",
+          "sha256": "11e0832d82e401d13801967df9483093c92092e9f9288b3604494c9ca2224ac9",
+          "bytes": 31589
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-6.png",
+          "sha256": "107e9a6aff6dee7c2c675df175f6ea646ac9f01842f0b3014421aad6fb0f6045",
+          "bytes": 46003
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-7.png",
+          "sha256": "75e156d0bbcc37fcb42e6429bd070d89fdf926ce135fb40003169839d31179f6",
+          "bytes": 46086
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-8.png",
+          "sha256": "44ecf7495b0ebc3cbc804f7bac219722e64343f1ced21355a071615bd08d6768",
+          "bytes": 41601
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-4-9.png",
+          "sha256": "5ab9dc8cc4c3067a5c888924d3a20f355d0f2bddbcba9628efc0cf3ac81e5ece",
+          "bytes": 39580
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-0.png",
+          "sha256": "82daf70aa414d8b573a958ed302575d25ab1069cfefd926f836686f0a199eeca",
+          "bytes": 21080
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-1.png",
+          "sha256": "8d1ef1098b03f71c939fe93410aa0925d76a7942dc7a4805761604124259ef9c",
+          "bytes": 20532
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-10.png",
+          "sha256": "43f1f235e00d02deec8ed8db1d98961fe8c38d8cc792bd50b0fa786dc819d75d",
+          "bytes": 35372
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-11.png",
+          "sha256": "10ef9306f93c04fa12f7662cdf19f331e918d45352d05db522f80d5fb495fb69",
+          "bytes": 34579
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-12.png",
+          "sha256": "960bfdda99118fefecb53ab9b157682c3c8e6f8a9a87fca8d8abba85b27a4bf0",
+          "bytes": 345593
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-2.png",
+          "sha256": "3933c893b7a4d2105d3ad940d4ace58d5521a7fd95523047fe1fd45dd16c0a69",
+          "bytes": 35869
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-3.png",
+          "sha256": "2c5e6ad4aca637da531d382cfee7c64aa9b1259720f3cece9d68e1b317410fe1",
+          "bytes": 35856
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-4.png",
+          "sha256": "e4938fa61a1a6328275600d6a0a2fcf6f5b182a82d004a2b5d18e3e92c84dcd1",
+          "bytes": 36533
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-5.png",
+          "sha256": "b067c225c3040d7e94587d92ff30e708aa50f265d835a817007c021ae63ea89e",
+          "bytes": 35702
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-6.png",
+          "sha256": "08fee77d94aecf3c4530f22cadc7b6d0199013dc2db03570704e77e7a874e214",
+          "bytes": 20486
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-7.png",
+          "sha256": "4c76379bd49b975734c509b1ba1de6e2372682c71f783c73252a418a988a4438",
+          "bytes": 20604
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-8.png",
+          "sha256": "4eae276779429cb6c12dbef672121b1cf8b603b7bd7a39747a687cbde2e822a6",
+          "bytes": 34324
+        },
+        {
+          "path": "02-fulltext/T5-semantic-embodied-navigation/2024-NoMaD-K16/images/paper.pdf-5-9.png",
+          "sha256": "9ef0917f8a3093a3b634a1185dc9a06e0bb83d546800fee0ce71af4e65a4ad5c",
+          "bytes": 34748
+        }
+      ]
+    }
+  ]
+}

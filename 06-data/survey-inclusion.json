@@ -236,7 +236,23 @@
     "R33",
     "R34",
     "R35",
-    "R36"
+    "R36",
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "K05",
+    "K06",
+    "K07",
+    "K08",
+    "K09",
+    "K10",
+    "K11",
+    "K12",
+    "K13",
+    "K14",
+    "K15",
+    "K16"
   ],
   "additional_ids": [
     "N01",
@@ -260,7 +276,7 @@
     "N19",
     "N20"
   ],
-  "assessment_scope": "Library: 23 full + 208 light cards (89 legacy conversions + 119 targeted readings). Manuscript selection: 23 full + 206 light cards (87 legacy conversions + 119 targeted readings); X01/X15 retained internally.",
+  "assessment_scope": "Library: 23 full + 224 light cards (89 legacy conversions + 135 targeted readings). Manuscript selection: 23 full + 222 light cards (87 legacy conversions + 135 targeted readings); X01/X15 retained internally.",
   "source_reading": "ieee-supplement-2026-11-03/source-reading.json",
   "expansion_200plus_ids": [
     "S01",
@@ -365,5 +381,26 @@
     "R35",
     "R36"
   ],
-  "ieee_refresh_source_reading": "ieee-refresh-2026-11-03/source-reading.json"
+  "ieee_refresh_source_reading": "ieee-refresh-2026-11-03/source-reading.json",
+  "review_additions_ids": [
+    "K01",
+    "K02",
+    "K03",
+    "K04",
+    "K05",
+    "K06",
+    "K07",
+    "K08",
+    "K09",
+    "K10",
+    "K11",
+    "K12",
+    "K13",
+    "K14",
+    "K15",
+    "K16"
+  ],
+  "review_additions_date": "2026-11-04",
+  "review_additions_source_reading": "review-additions-2026-11-04/source-reading.json",
+  "review_additions_basis": "Works named as missing by an internal simulated two-reviewer review of an earlier draft; the user confirmed the selection of 16 formally published 2021-2024 works."
 }

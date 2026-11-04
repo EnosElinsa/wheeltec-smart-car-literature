@@ -1,0 +1,33 @@
+{
+  "paper_id": "9bef50d87c664f5cab11d71928c54d34",
+  "metadata": {
+    "title": "ViNT: A Foundation Model for Visual Navigation",
+    "authors": [
+      "Dhruv Shah",
+      "Ajay Sridhar",
+      "Nitish Dashora",
+      "Kyle Stachowicz",
+      "Kevin Black",
+      "Noriaki Hirose",
+      "Sergey Levine"
+    ],
+    "year": 2023,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v229/shah23a.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v229/shah23a.html",
+  "official_pdf_url": "https://proceedings.mlr.press/v229/shah23a/shah23a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v229/shah23a.html",
+  "pdf_sha256": "7298c0d3c5164f4e2b693766c4925a028a17c3e32aa0548827b417e28a5a8488",
+  "bibtex_sha256": "7881dae2dd04c6656fbafa5dc4190872760ad63be9ac02613d32c0a83feda3f3",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:09:16.975584+00:00",
+  "selection_id": "K14",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}

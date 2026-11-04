@@ -1,0 +1,30 @@
+{
+  "paper_id": "c9ef20155f1a43998d5eadecac63510a",
+  "metadata": {
+    "title": "LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action",
+    "authors": [
+      "Dhruv Shah",
+      "Błażej Osiński",
+      "brian ichter",
+      "Sergey Levine"
+    ],
+    "year": 2023,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v205/shah23b.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v205/shah23b.html",
+  "official_pdf_url": "https://proceedings.mlr.press/v205/shah23b/shah23b.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v205/shah23b.html",
+  "pdf_sha256": "464d4cf79d3028225fbd6a534e5b9971df1a690aed55eae951fd7c81882a167e",
+  "bibtex_sha256": "f6aba6188834baf55727b15603c87dfdc5c666e3834298a7971d1c210db77773",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:09:11.766835+00:00",
+  "selection_id": "K12",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}

@@ -1,0 +1,642 @@
+{
+  "date": "2026-11-04",
+  "host": "Kiro",
+  "scope": "Targeted source reading of K01-K16: identity, abstract and selected method, setup, evaluation and limitation passages; excerpts checked against the local PyMuPDF4LLM Markdown and PDF text; no rendered-table audit; not whole-paper verification.",
+  "records": [
+    {
+      "id": "K01",
+      "review": "03-reviews/T1-perception-localization/2024-SubT-MRS-K01/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "pdf_sha256": "a517bbe35e55f5b22da5e4540bdcabb59e98c39f7ec0f4ab39f1b83b6e88b2bf",
+      "markdown_sha256": "df08631530c756c89966a6ab295f73f9361f7e769573f07221b37a72f4d1599f",
+      "survey_module": "localization-mapping",
+      "evidence_type": "dataset-resource",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 7,
+          "text": "These sequences involve alternating periods of LiDAR and Visual data loss, challenging algorithms to promptly detect sensor failures and switch to the other modality for SLAM."
+        },
+        {
+          "page": 6,
+          "text": "However, in the sensor fusion track, which addresses both visual and geometric degradation, no submissions met the criteria for success."
+        },
+        {
+          "page": 4,
+          "text": "To address this, we employed diverse robot platforms, including aerial, legged, and wheeled robots, navigating through various environments from urban campuses to medical facilities and natural terrains like caves."
+        }
+      ]
+    },
+    {
+      "id": "K02",
+      "review": "03-reviews/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "pdf_sha256": "38f455c9d0e10b9e405c379399706ca675573255d8701aa35ad6de9cd0c70e7b",
+      "markdown_sha256": "67da1ea28125c782e8838b1a136cab7401083d29cb23f36adbe0f07f77d10210",
+      "survey_module": "traversability-planning-control",
+      "evidence_type": "dataset-resource",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 6,
+          "text": "Since the data was collected all in a single outdoor facility, maintaining diversity across the train/test/val set is a challenge."
+        },
+        {
+          "page": 5,
+          "text": "From the experimental results, we see that extreme class imbalance in off-road environments presents challenges for current semantic segmentation algorithms."
+        },
+        {
+          "page": 1,
+          "text": "we present RELLIS-3D, a novel dataset captured from a Clearpath Robotics Warthog platform (shown in Fig. 1)."
+        }
+      ]
+    },
+    {
+      "id": "K03",
+      "review": "03-reviews/T3-planning-control/2021-STEP-K03/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8
+      ],
+      "pdf_sha256": "e198794571c0680f6672c5abd896106f336e1e8c8045cebe8f3aeb5877e4ba3c",
+      "markdown_sha256": "101001f89a8fa26fd8691f28f6bd2cadd4d738c579dd78a40918ebe786b2d86d",
+      "survey_module": "traversability-planning-control",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 2,
+          "text": "Uncertainty-aware 2.5D traversability evaluation which accounts for localization error, sensor noise, and occlusion, and combines multiple sources of traversability risk."
+        },
+        {
+          "page": 5,
+          "text": "collision risk is determined by checking for points above the elevation map, and the variance is derived from the elevation map variance, which is mainly a function of localization error."
+        },
+        {
+          "page": 7,
+          "text": "The following assumptions are made: 1) no localization error, 2) no tracking error, and 3) a simplified perception model with artificial noise."
+        },
+        {
+          "page": 8,
+          "text": "STEP navigates 420 meters over 24 minutes, covering 1205 square meters of rough terrain."
+        }
+      ]
+    },
+    {
+      "id": "K04",
+      "review": "03-reviews/T3-planning-control/2022-TartanDrive-K04/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "pdf_sha256": "54cb85e89436fc17b4457a39743522176562e872603d6d3121bf51f71b1d07d8",
+      "markdown_sha256": "139c402869ee35e8171c5874d68491d09222d65a0521fb553c9992dcce3053df",
+      "survey_module": "traversability-planning-control",
+      "evidence_type": "dataset-resource",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 3,
+          "text": "For safety reasons, the brakes were controlled directly by a human driver."
+        },
+        {
+          "page": 3,
+          "text": "In total, we collected 630 trajectories equivalent to five hours of data."
+        },
+        {
+          "page": 6,
+          "text": "An obvious direction for future work is the incorporation of these models into a navigation stack."
+        },
+        {
+          "page": 6,
+          "text": "Overall, we observe that the additional vision-based modalities are more beneficial in the more challenging scenarios."
+        }
+      ]
+    },
+    {
+      "id": "K05",
+      "review": "03-reviews/T3-planning-control/2024-EVORA-K05/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "pdf_sha256": "7b2aad2612419385f6720a946e30448081e2610eff13dd11cd2faa1827aba2a8",
+      "markdown_sha256": "36e6ae4bdb2c41091bf5fd51f5ae490e89291d6f9447be4f8145b4fdd34d08f2",
+      "survey_module": "traversability-planning-control",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 15,
+          "text": "The robot runs onboard traction prediction, motion planning, and online elevation mapping with 0.1 m resolution, but Vicon is used for pose and velocity estimation."
+        },
+        {
+          "page": 18,
+          "text": "Therefore, the risk due to the uncertainty in the perception modules needs to be addressed separately"
+        },
+        {
+          "page": 17,
+          "text": "In contrast, the planner that avoids OOD terrain achieves better time-to-goal without requiring human interventions."
+        },
+        {
+          "page": 15,
+          "text": "The unicycle model (2) is used for this experiment, and traction values are obtained by comparing the commanded velocities and Spot's built-in odometry."
+        }
+      ]
+    },
+    {
+      "id": "K06",
+      "review": "03-reviews/T4-multi-robot-coordination/2022-Kimera-Multi-K06/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13,
+        14,
+        15
+      ],
+      "pdf_sha256": "aa264f88a46a557b3718ab5d5004add9ae96c10b8740835bdb9de005c171cd58",
+      "markdown_sha256": "8edf4937aa41ba4e751f98c234e0ea2552eb3af4f62a073a06848db87da62c4b",
+      "survey_module": "multi-robot",
+      "evidence_type": "recorded-robot-data",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 12,
+          "text": "In our experiments in this section and Section VII-C, we run Kimera-Multi in a setting, where robots are constantly in communication range, which means that interrobot loop closures are established at the earliest possible time."
+        },
+        {
+          "page": 12,
+          "text": "In future work, we plan to further improve our implementation and test our system in scenarios where communication is intermittent."
+        },
+        {
+          "page": 14,
+          "text": "Both datasets contain many outlier loop closures, which are successfully rejected by D-GNC."
+        },
+        {
+          "page": 14,
+          "text": "collected using a Clearpath Jackal UGV equipped with a forward-facing RealSense D435i RGBD Camera and IMU."
+        }
+      ]
+    },
+    {
+      "id": "K07",
+      "review": "03-reviews/T4-multi-robot-coordination/2022-LAMP2-K07/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "pdf_sha256": "4904428fdb5a2a8d1ec350fee1b7cfa2275f000b03aa111d4c55b125adafcc6f",
+      "markdown_sha256": "3464c0a292b0f74693bf85b6cbffae4c02c56ee1f9d0a93a87db574828f895dc",
+      "survey_module": "multi-robot",
+      "evidence_type": "recorded-robot-data",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 4,
+          "text": "When a robot moves out of communication range, the pose graph and keyed scans are queued up and are then sent as a batch to the base-station when the communication is re-established."
+        },
+        {
+          "page": 4,
+          "text": "To safeguard against erroneous loop closures, our multi-robot back-end includes two outlier rejection options"
+        },
+        {
+          "page": 5,
+          "text": "The experiments in this letter ran on a laptop with Intel i7-8750H processor with 12 cores."
+        },
+        {
+          "page": 7,
+          "text": "We are able to achieve map errors below 4 m in these different large-scale and challenging environments."
+        }
+      ]
+    },
+    {
+      "id": "K08",
+      "review": "03-reviews/T4-multi-robot-coordination/2022-CSIRO-SubT-K08/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        15,
+        16,
+        21,
+        24,
+        25,
+        31,
+        33,
+        35,
+        37,
+        38,
+        39
+      ],
+      "pdf_sha256": "627e31d896f4d7fb5f06bd19de507f565253ff7f9f691876965ab8af4d06630c",
+      "markdown_sha256": "85cd8fc1a1846f8c56a5a4609abf87b37d9cd566988be4f160f30acf7bd61d9b",
+      "survey_module": "multi-robot",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 25,
+          "text": "This pull-based approach is robust in the face of unreliable network conditions and allows for inter-agent data sharing without requiring end-to-end paths."
+        },
+        {
+          "page": 25,
+          "text": "This includes synchronization status for each peer, making it possible for agents to decide if they should return to base to deliver mission-critical data, as was done at the Urban and Cave events."
+        },
+        {
+          "page": 37,
+          "text": "Consequently, good communications links were maintained throughout; the challenge of the test was extreme traversability rather than scale."
+        },
+        {
+          "page": 33,
+          "text": "A total of 15 out of 80 artifacts were correctly detected and localized over the duration of the event."
+        }
+      ]
+    },
+    {
+      "id": "K09",
+      "review": "03-reviews/T4-multi-robot-coordination/2022-Explorer-SubT-K09/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        5,
+        7,
+        10,
+        14,
+        15,
+        18,
+        19,
+        20,
+        42,
+        43,
+        49,
+        51,
+        52
+      ],
+      "pdf_sha256": "f41e415698ba83500863c50e148a32531f932934e02fdae9f31699abab23e556",
+      "markdown_sha256": "fec52e98d73fd83960a2a40fe400d306dbfde34d14ddf952ebb53a4981e91ae5",
+      "survey_module": "multi-robot",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 19,
+          "text": "The ledger is a record of submaps that gets broadcast over the network."
+        },
+        {
+          "page": 10,
+          "text": "In one instance specifically, our drone was able to connect with all three of our ground vehicles simultaneously"
+        },
+        {
+          "page": 19,
+          "text": "Within the frame are four motor/wheel modules, a battery module, and an electronics module."
+        },
+        {
+          "page": 49,
+          "text": "We only scored 4 positive detections on this last day, which placed us in 2nd place overall for the competition."
+        }
+      ]
+    },
+    {
+      "id": "K10",
+      "review": "03-reviews/T4-multi-robot-coordination/2022-CERBERUS-K10/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pdf_sha256": "928cfa8a9d556ad92eac32ec3ebc9221750890e3a6d5c89c99d2aef62b093c1f",
+      "markdown_sha256": "a37282a97e6938ab5eb5619242dce627b090a3a5d9c2afcff58af5e1213d84f5",
+      "survey_module": "multi-robot",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 3,
+          "text": "If it went beyond the communication range after a certain step, it would backtrack to a point with connectivity."
+        },
+        {
+          "page": 5,
+          "text": "When in communication range, individual robots incrementally transferred their odometry estimates and sensor data to create an inter-robot factor graph."
+        },
+        {
+          "page": 3,
+          "text": "Overall, the robots walked for more than 1.7 km and successfully identified and reported 23 of 40 artifacts that were distributed along the course."
+        },
+        {
+          "page": 1,
+          "text": "As both CERBERUS and CSIRO Data61 were tied with 23 points each, the tiebreaker rule had to be invoked"
+        }
+      ]
+    },
+    {
+      "id": "K11",
+      "review": "03-reviews/T5-semantic-embodied-navigation/2021-HM3D-K11/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        10
+      ],
+      "pdf_sha256": "ec1559e9e5137f67ff16002d4442feaa64c6b55cad621803b9ceb2f6968fa390",
+      "markdown_sha256": "29b40d3896afd3774bf806eefaf93e9ed42e331b444f53105919a4cd1a6badc2",
+      "survey_module": "semantic-language-navigation",
+      "evidence_type": "dataset-resource",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 4,
+          "text": "All spaces were scanned using a Matterport Pro2 tripod-based depth sensor."
+        },
+        {
+          "page": 7,
+          "text": "RGB-D visual inputs, and GPS+Compass readings for localization."
+        },
+        {
+          "page": 10,
+          "text": "Extension of HM3D with object semantics and physical attributes in future work will enable even more embodied AI tasks such as ObjectGoal navigation and object rearrangement."
+        },
+        {
+          "page": 2,
+          "text": "HM3D-trained PointNav agents achieve 100% performance on Gibson-test dataset, suggesting that it might be time to retire that episode dataset."
+        }
+      ]
+    },
+    {
+      "id": "K12",
+      "review": "03-reviews/T5-semantic-embodied-navigation/2023-LM-Nav-K12/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "pdf_sha256": "464d4cf79d3028225fbd6a534e5b9971df1a690aed55eae951fd7c81882a167e",
+      "markdown_sha256": "132bbb1efda65e0d5809e5226fcff034426dadb9bc6a6a381fa80ca51c9ecad9",
+      "survey_module": "semantic-language-navigation",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 6,
+          "text": "In each evaluation environment, we first construct the graph by manually driving the robot and collecting image and GPS observations."
+        },
+        {
+          "page": 7,
+          "text": "LM-Nav generates a successful walk for 85% of them, and causes disengagement only once (an average of 1 intervention per 6.4km of traversals)."
+        },
+        {
+          "page": 8,
+          "text": "Additionally, LM-Nav uses a VNM that is specific to outdoor navigation with the Jackal robot, which limits wider adoption for other robot embodiments and sensor suites."
+        },
+        {
+          "page": 6,
+          "text": "We tested our system on 20 queries in 2 environments, corresponding to a combined length of over 6km."
+        }
+      ]
+    },
+    {
+      "id": "K13",
+      "review": "03-reviews/T5-semantic-embodied-navigation/2023-GNM-K13/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "pdf_sha256": "1587ea069993c6f660f63d7d2a5ba0272fec50a9b29ac7542170742ca1f35d18",
+      "markdown_sha256": "818e7dbe8e7341d992060411b45b403ad785e84c2de4e463561cc29461a5a524",
+      "survey_module": "semantic-language-navigation",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 2,
+          "text": "The GNM dataset contains over 60 hours of real-world navigation trajectories: a combination of tele-operated and autonomous navigation behaviors collected across 6 distinct robotic platforms"
+        },
+        {
+          "page": 6,
+          "text": "Most prominently, our system does not explicitly account for differences in capabilities: we assume all robots are ground robots (though we study generalization to a quadrotor) with a forward-facing RGB camera."
+        },
+        {
+          "page": 4,
+          "text": "we quantitatively evaluate the navigation performance of policies trained with heterogeneous datasets in an assortment of 20 indoor and outdoor environments on the Jackal and LoCoBot platforms (Tables III, IV)."
+        },
+        {
+          "page": 4,
+          "text": "A popular open-source platform based on a Kobuki, equipped with an off-the-shelf PCB-mounted fisheye camera."
+        }
+      ]
+    },
+    {
+      "id": "K14",
+      "review": "03-reviews/T5-semantic-embodied-navigation/2023-ViNT-K14/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        14
+      ],
+      "pdf_sha256": "7298c0d3c5164f4e2b693766c4925a028a17c3e32aa0548827b417e28a5a8488",
+      "markdown_sha256": "133d40a76c451214cb0573a7332521688dc177d5b6f6e42b3893b5bec44aa3e9",
+      "survey_module": "semantic-language-navigation",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 4,
+          "text": "The training dataset contains over 100 hours of real-world trajectories sourced entirely from existing datasets, spanning 8 distinct robotic platforms with varying speeds and dynamics."
+        },
+        {
+          "page": 8,
+          "text": "As with many large-scale models, ViNT carries a heavier computational burden at inference time, which can present a challenge for power-constrained platforms such as quadcopters."
+        },
+        {
+          "page": 6,
+          "text": "The robots have access to onboard wheel odometry (indoors), GPS coordinates (outdoors), or passive satellite imagery (outdoors), to track their position and use as a goal-directed heuristic."
+        },
+        {
+          "page": 7,
+          "text": "Most notably, ViNT successfully generalizes zero-shot to control a Go 1 quadruped, which does not appear during training."
+        }
+      ]
+    },
+    {
+      "id": "K15",
+      "review": "03-reviews/T5-semantic-embodied-navigation/2024-ConceptGraphs-K15/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "pdf_sha256": "1e84c3bc2888c6c431e858f2efeadfeda6780ff6956b53d56ae6c9b5476c5c20",
+      "markdown_sha256": "d8536bde349a267ca6107071c08b041888fc5389cfded141148059232ea4fb90",
+      "survey_module": "semantic-language-navigation",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 5,
+          "text": "we carry out navigation experiments in the REAL Lab scene with a Clearpath Jackal UGV. The robot is equipped with a VLP-16 LiDAR and a forward-facing Realsense D435i camera."
+        },
+        {
+          "page": 5,
+          "text": "Using an LVLM [56], the robot then checks if the object is at the expected location. If not, it queries an LLM to find a new plausible location given the captions of the other objects in the representation."
+        },
+        {
+          "page": 6,
+          "text": "Second, our 3D scene graph occasionally misses small or thin objects and makes duplicate detections."
+        },
+        {
+          "page": 6,
+          "text": "During this process, previously observed objects are removed if they are not observed by the robot and new objects can also be added."
+        }
+      ]
+    },
+    {
+      "id": "K16",
+      "review": "03-reviews/T5-semantic-embodied-navigation/2024-NoMaD-K16/review.md",
+      "verification_level": "light",
+      "scope": "targeted-source-reading",
+      "physical_pages": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "pdf_sha256": "c2bbbbf104df5eae914596de5498473790cb3466ab448401d463345b5454be6b",
+      "markdown_sha256": "3e20dc38b27af18ef0f9223f85a5ccf0d4ac23ca348d99b1445d8946b059e363",
+      "survey_module": "semantic-language-navigation",
+      "evidence_type": "closed-loop-hardware",
+      "retained_text_numbers": true,
+      "retained_table_values_rendered": false,
+      "excerpts": [
+        {
+          "page": 4,
+          "text": "We train NoMaD on a combination of GNM and SACSoN datasets, large heterogeneous datasets collected across a diverse set of environments and robotic platforms, including pedestrian-rich environments, spanning over 100 hours of real-world trajectories"
+        },
+        {
+          "page": 6,
+          "text": "The navigation tasks are specified via goal images which, though quite general, are sometimes not the most natural modalities for users to employ."
+        },
+        {
+          "page": 4,
+          "text": "We evaluate NoMaD in 6 distinct indoor and outdoor environments"
+        },
+        {
+          "page": 5,
+          "text": "Visualizing rollouts of NoMaD deployed in challenging indoor (top) and outdoor (bottom) environments on the LoCoBot platform, showcasing successful exploration trajectories."
+        }
+      ]
+    }
+  ]
+}

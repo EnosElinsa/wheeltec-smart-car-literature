@@ -1,0 +1,12 @@
+{
+  "source": "manual_publisher_download",
+  "official_landing_url": "https://www.roboticsproceedings.org/rss17/p021.html",
+  "doi": "10.15607/RSS.2021.XVII.021",
+  "pdf_sha256": "e198794571c0680f6672c5abd896106f336e1e8c8045cebe8f3aeb5877e4ba3c",
+  "bibtex_sha256": "4aad1799cea1b15f7152c5fccac7feb13da293c9b88373feb9eb0e033f6ee183",
+  "arp_verify": "rejected (heuristic)",
+  "agent_identity_check": "arp verify rejected the PDF: the RSS PDF does not print its DOI and its title contains an ff ligature. The agent matched title, author list, venue header (RSS 2021) and year between the PDF first page and the BibTeX.",
+  "selection_id": "K03",
+  "acquisition_method": "manual_publisher_download",
+  "batch": "review-additions-2026-11-04"
+}

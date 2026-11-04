@@ -1,0 +1,31 @@
+{
+  "paper_id": "e505c3a16e4640049c9d26a7ecf4eef0",
+  "metadata": {
+    "title": "GNM: A General Navigation Model to Drive Any Robot",
+    "authors": [
+      "Dhruv Shah",
+      "Ajay Sridhar",
+      "Arjun Bhorkar",
+      "Noriaki Hirose",
+      "Sergey Levine"
+    ],
+    "year": 2023,
+    "venue": "2023 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra48891.2023.10161227",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10161227/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10161227/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10161227&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "1587ea069993c6f660f63d7d2a5ba0272fec50a9b29ac7542170742ca1f35d18",
+  "bibtex_sha256": "d4538f9f086831086ec49fcb0a3c0f2237bac26707534e76bdd2297762a182e0",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-04T15:08:12.983849+00:00",
+  "selection_id": "K13",
+  "acquisition_method": "automated_publisher_retrieval",
+  "batch": "review-additions-2026-11-04"
+}
