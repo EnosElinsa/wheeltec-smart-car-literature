@@ -104,6 +104,26 @@ def main():
             attribute = attribute.strip()
             evaluation_counts[attribute] = evaluation_counts.get(attribute, 0) + 1
     assert evaluation_counts == stats['evaluation_technical']
+    # Evidence map (Table IV): recompute the function x attribute counts and check the generated rows.
+    evaluation_table = (MANUSCRIPT / 'generated/table-evaluation.tex').read_text(encoding='utf-8')
+    evidence_map = stats['evidence_map']
+    for module, values in evidence_map.items():
+        group = [row for row in technical_rows if row['survey_module'] == module]
+        attrs = [{x.strip() for x in row['evaluation_all'].split(',')} for row in group]
+        assert values == {
+            'publications': len(group),
+            'residual': sum('residual' in a for a in attrs),
+            'closed-loop-task': sum('closed-loop-task' in a for a in attrs),
+            'designed-degradation': sum('designed-degradation' in a for a in attrs),
+            'degradation-with-task': sum({'designed-degradation', 'closed-loop-task'} <= a for a in attrs),
+            'integrity-reliability': sum('integrity-reliability' in a for a in attrs),
+            'placement-reported': sum(row['compute_location'] != 'not-reported' for row in group),
+        }, module
+    assert sum(v['publications'] for v in evidence_map.values()) == len(technical_rows)
+    for key in ('publications', 'residual', 'closed-loop-task', 'designed-degradation',
+                'degradation-with-task', 'integrity-reliability', 'placement-reported'):
+        cells = [str(v[key]) for v in evidence_map.values()] + [str(sum(v[key] for v in evidence_map.values()))]
+        assert ' & ' + ' & '.join(cells) + r' \\' in evaluation_table, key
     inventory = list(csv.DictReader((MANUSCRIPT / 'generated/corpus-inventory.csv').open(encoding='utf-8')))
     assert {row['code'] for row in inventory} == set(inclusion['selected_ids'])
     for row in inventory:
@@ -147,6 +167,7 @@ def main():
         "source_hash_mismatches": 0,
         "evaluation_denominator": len(technical_rows),
         "evaluation_attribute_counts": evaluation_counts,
+        "evidence_map": evidence_map,
         "source_checked_numerical_cases": len(cases),
         "displayed_equations_unchanged": len(current_equations),
         "overfull_boxes": 0,

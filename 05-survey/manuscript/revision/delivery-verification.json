@@ -1,5 +1,5 @@
 {
-  "pages": 23,
+  "pages": 24,
   "corpus_prose_citations": 229,
   "indexed_library_count": 231,
   "internal_reference_ids": [
@@ -31,12 +31,59 @@
     "integrity-reliability": 14,
     "closed-loop-task": 128
   },
+  "evidence_map": {
+    "localization-mapping": {
+      "publications": 66,
+      "residual": 66,
+      "closed-loop-task": 2,
+      "designed-degradation": 45,
+      "degradation-with-task": 2,
+      "integrity-reliability": 3,
+      "placement-reported": 45
+    },
+    "traversability-planning-control": {
+      "publications": 52,
+      "residual": 29,
+      "closed-loop-task": 49,
+      "designed-degradation": 21,
+      "degradation-with-task": 19,
+      "integrity-reliability": 1,
+      "placement-reported": 29
+    },
+    "semantic-language-navigation": {
+      "publications": 30,
+      "residual": 13,
+      "closed-loop-task": 29,
+      "designed-degradation": 9,
+      "degradation-with-task": 8,
+      "integrity-reliability": 0,
+      "placement-reported": 17
+    },
+    "multi-robot": {
+      "publications": 40,
+      "residual": 29,
+      "closed-loop-task": 26,
+      "designed-degradation": 24,
+      "degradation-with-task": 13,
+      "integrity-reliability": 1,
+      "placement-reported": 30
+    },
+    "fault-recovery-deployment": {
+      "publications": 40,
+      "residual": 23,
+      "closed-loop-task": 22,
+      "designed-degradation": 31,
+      "degradation-with-task": 17,
+      "integrity-reliability": 9,
+      "placement-reported": 28
+    }
+  },
   "source_checked_numerical_cases": 7,
   "displayed_equations_unchanged": 6,
   "overfull_boxes": 0,
   "underfull_horizontal_boxes": 7,
   "underfull_vertical_boxes": 0,
-  "pdf_sha256": "2b6d5e452e81bc1744da972241c4d48b3020f43af946aa43684b9ec2bc2807bd",
+  "pdf_sha256": "85b9241282e707be7b7d41bb296f69195cbb8706bb1a7acac7414b7fb5716b41",
   "supplement": {
     "pages": 8,
     "unique_labels": 13,
@@ -47,7 +94,7 @@
     "overfull_boxes": 0,
     "underfull_horizontal_boxes": 1,
     "underfull_vertical_boxes": 0,
-    "pdf_sha256": "be47e0c9f07835a0481def0659ca742f7b76ee836af8c5f676a0cd41c177b368"
+    "pdf_sha256": "c039c4f05cedae37778edd1c63420696010fd09acd29a02f39faee96c6b5357c"
   },
-  "base_commit": "e8441a750afdca63d025e865a2a6c7b18fe59f0e"
+  "base_commit": "c643f5ee34bbd0b0b5a4a05ff9020b6f1f1a2993"
 }

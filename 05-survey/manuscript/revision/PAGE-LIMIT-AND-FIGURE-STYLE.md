@@ -1,5 +1,7 @@
 # Page limit, synthesis table and figure style - November 4, 2026
 
+This record describes the state after this revision. [EVIDENCE-MAP-AND-PROSE.md](EVIDENCE-MAP-AND-PROSE.md) supersedes its page count (now 24), Table IV description, word counts and style measurements.
+
 This revision follows [FIGURES-AND-CONDENSATION.md](FIGURES-AND-CONDENSATION.md). It brings the main paper within the 24-page maximum of IEEE T-IV surveys, adds a cross-function synthesis table, revises the prose of Sections I-IX, and redraws the figures in a grayscale journal style. The selection is unchanged: 229 selected works and 5 background references, 234 references in total, all from 2021-2026.
 
 ## Length
