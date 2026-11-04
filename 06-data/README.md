@@ -5,6 +5,7 @@ The unified catalog lists **247 acquired and assessed publications** in the shar
 | File | Purpose |
 |---|---|
 | [library-catalog.csv](library-catalog.csv) | Unified catalog of all 247 acquired publications, including source paths, assessment status and current survey selection |
+| [evidence-coding/README.md](evidence-coding/README.md) | Evidence-coding layer of the 245-work survey selection: codebook v1.0 with operational definitions, decision rules, the coding unit, double-coding attributes, and the sampling, interface-ranking and sensitivity rules fixed before coding |
 | [review-additions-2026-11-04/README.md](review-additions-2026-11-04/README.md) | 16 reviewer-named 2021-2024 works (K01-K16): official pairs, local PyMuPDF4LLM transcriptions (262 pages) and targeted light cards; all 16 are survey selection members |
 | [review-additions-2026-11-04/source-reading.json](review-additions-2026-11-04/source-reading.json) | Page scopes and excerpts for the 16 K-series light cards |
 | [survey-200plus-2026-11-03/README.md](survey-200plus-2026-11-03/README.md) | All 48 additions registered: 44 strict native pairs, three derived citations, one publisher title variant; 48-work integration stage; current manuscript has 203 references after age-policy filtering |
