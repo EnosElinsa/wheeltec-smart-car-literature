@@ -146,8 +146,8 @@
   "corpus_count": 229,
   "indexed_library_count": 231,
   "internal_reference_count": 2,
-  "citation_scope_sha256": "3011e9c458add2a306b8c7cf7ffacdd0c44f5a79ee01db9964f5df684d88c513",
-  "inclusion_sha256": "c8fe293ccf58fc1acae8b0e80001018e58f0c7a3e0d05fd2bf4154996a521699",
+  "citation_scope_sha256": "79fa8783b846e54bc0108462b9d2bb1cdce6487896759ef59fdee84c43cc35fe",
+  "inclusion_sha256": "d071c0039786168ba756c7b337f12b83bcf015082ab889a82ac5b0eb499946be",
   "source_index_sha256": "ac235137e34c27a13108dcc205dc93e01046a7b612da95161c594cf6ba9d6afb",
   "comparison_sha256": "ac7cd92019684365edd98cef1064a08a3c26d01bfaaa0c37e2f433d49359012d"
 }

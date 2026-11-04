@@ -13,6 +13,11 @@ from citation_scope import load_background, load_corpus
 REPOSITORY = literature_root(MANUSCRIPT)
 
 
+def text_digest(path):
+    """SHA-256 of a text file with CRLF normalized to LF, independent of the checkout line endings."""
+    return hashlib.sha256(path.read_bytes().replace(b'\r\n', b'\n')).hexdigest()
+
+
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -27,8 +32,8 @@ def main():
     assert {row['code'] for row in rows} == set(inclusion['selected_ids'])
     assert stats['source_index_sha256'] == digest(REPOSITORY / '06-data/paper-index.csv')
     assert stats['comparison_sha256'] == digest(REPOSITORY / '06-data/corpus-comparison.csv')
-    assert stats['citation_scope_sha256'] == digest(MANUSCRIPT / 'data/citation-scope.json')
-    assert stats['inclusion_sha256'] == digest(REPOSITORY / '06-data/survey-inclusion.json')
+    assert stats['citation_scope_sha256'] == text_digest(MANUSCRIPT / 'data/citation-scope.json')
+    assert stats['inclusion_sha256'] == text_digest(REPOSITORY / '06-data/survey-inclusion.json')
     sections = sorted((MANUSCRIPT / "sections").glob("*.tex"))
     text = "\n".join(path.read_text(encoding="utf-8") for path in sections)
     # Only included artifacts define labels in the delivered manuscript.
@@ -155,7 +160,7 @@ def main():
         "indexed_library_count": len(all_rows),
         "internal_reference_ids": citation_policy['internal_reference_ids'],
         "foundational_exception_count": len(citation_policy['foundational_exceptions']),
-        "citation_scope_sha256": digest(MANUSCRIPT / 'data/citation-scope.json'),
+        "citation_scope_sha256": text_digest(MANUSCRIPT / 'data/citation-scope.json'),
         "bibliography_entries": len(bibkeys),
         "resolved_bibliography_entries": len(resolved_keys),
         "unique_labels": len(labels),

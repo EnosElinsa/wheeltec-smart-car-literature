@@ -14,6 +14,11 @@ R = literature_root(M)
 G = M / 'generated'
 G.mkdir(exist_ok=True)
 
+def text_digest(path):
+    """SHA-256 of a text file with CRLF normalized to LF, independent of the checkout line endings."""
+    return hashlib.sha256(path.read_bytes().replace(b'\r\n', b'\n')).hexdigest()
+
+
 def digest(p):
     return hashlib.sha256(p.read_bytes()).hexdigest()
 
@@ -69,8 +74,8 @@ stats['evidence_map'] = evidence_map
 stats['corpus_count'] = len(rows)
 stats['indexed_library_count'] = len(all_rows)
 stats['internal_reference_count'] = len(citation_policy['internal_reference_ids'])
-stats['citation_scope_sha256'] = digest(M / 'data/citation-scope.json')
-stats['inclusion_sha256'] = digest(R / '06-data/survey-inclusion.json')
+stats['citation_scope_sha256'] = text_digest(M / 'data/citation-scope.json')
+stats['inclusion_sha256'] = text_digest(R / '06-data/survey-inclusion.json')
 stats['source_index_sha256'] = digest(R / '06-data/paper-index.csv')
 stats['comparison_sha256'] = digest(R / '06-data/corpus-comparison.csv')
 (G / 'stats.json').write_text(json.dumps(stats, indent=2) + '\n', encoding='utf-8')

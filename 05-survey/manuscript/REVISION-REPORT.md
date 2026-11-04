@@ -2,10 +2,11 @@
 
 The [main survey](survey.pdf) has 24 pages, 238 references, three figures and five tables, which is the maximum length of IEEE T-IV surveys. The [supplement](supplement.pdf) has eight pages, 65 references, one figure and seven tables. All 229 selected publications appear in substantive main-text prose, and every reference dates from 2021-2026. Evaluation counts cover 228 technical publications and exclude the context review.
 
-The two latest revisions are as follows.
+The three latest revisions are as follows.
 
 - [EVIDENCE-MAP-AND-PROSE.md](revision/EVIDENCE-MAP-AND-PROSE.md) turns Table IV into an evidence map by navigation function. Only 26% of the technical publications report task outcomes under a designed degradation, and only 2 of the 66 localization and mapping studies report a task outcome. The same revision restructures the citation-chain sentences.
 - [ROADMAP-AUDIT-AND-SURVEYS.md](revision/ROADMAP-AUDIT-AND-SURVEYS.md) adds Table V, a research roadmap for the four open interfaces. It also adds condition-based guidance to the section syntheses, tightens the abstract, and checks the critical characterizations of Sections IV-X against the review cards and transcriptions, which corrected five wordings. Four related surveys join Table I.
+- [CONTRIBUTIONS-AUDIT-AND-REVIEW.md](revision/CONTRIBUTIONS-AUDIT-AND-REVIEW.md) states the evidence finding and the roadmap in the contribution list. It adds platform coverage to Table IV, since 36 of the 66 localization and mapping studies do not evaluate on a wheeled robot. It also checks all 22 numerical result sentences against the sources with no mismatch, verifies a clean build from a fresh GitHub clone, and reports a simulated two-reviewer review.
 
 Earlier records cover the [page limit, synthesis table and grayscale figures](revision/PAGE-LIMIT-AND-FIGURE-STYLE.md), the [SVG figures and condensation](revision/FIGURES-AND-CONDENSATION.md), and the [refresh integration](revision/IEEE-REFRESH-INTEGRATION.md) of R01-R36 with the removal of pre-2021 references.
 
@@ -17,4 +18,4 @@ Open before submission:
 - Author information and submission declarations are incomplete.
 - This is a working draft with non-exhaustive coverage and no new robot experiments.
 
-[Current revision](revision/ROADMAP-AUDIT-AND-SURVEYS.md) · [Evidence guide](revision/README.md) · [Build instructions](README.md)
+[Current revision](revision/CONTRIBUTIONS-AUDIT-AND-REVIEW.md) · [Evidence guide](revision/README.md) · [Build instructions](README.md)

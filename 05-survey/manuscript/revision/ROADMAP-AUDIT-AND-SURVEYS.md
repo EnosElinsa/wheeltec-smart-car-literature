@@ -1,5 +1,7 @@
 # Research roadmap, claim audit and related surveys - November 4, 2026
 
+This record describes the state after this revision. [CONTRIBUTIONS-AUDIT-AND-REVIEW.md](CONTRIBUTIONS-AUDIT-AND-REVIEW.md) supersedes its Table IV, page-balance and style measurements.
+
 This revision follows [EVIDENCE-MAP-AND-PROSE.md](EVIDENCE-MAP-AND-PROSE.md). It completes the remaining items of the content and prose plan: a research roadmap for Section X, condition-based guidance in the section syntheses, a tighter abstract, a check of critical characterizations against the sources, four additional related surveys, and acronym and terminology consistency. The selected corpus is unchanged at 229 works. The bibliography grows from 234 to 238 references, all from 2021-2026, because four related surveys join the background references.
 
 ## Section X and Table V
