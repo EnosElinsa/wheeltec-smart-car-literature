@@ -2,9 +2,9 @@
   "date": "2026-11-04",
   "scope": "Critical characterizations in Sections IV-X: sentences with a limiting marker that cite exactly one corpus work, and limiting clauses that end in a single citation inside multi-citation sentences.",
   "method": "Each claim was matched against its review card and the local full-text transcription by keyword overlap. Claims without a direct match were checked with targeted phrase searches. Source excerpts remain local and are not published.",
-  "sentence_claims_checked": 72,
-  "clause_claims_checked": 65,
-  "clause_claims_with_targeted_search": 35,
+  "sentence_claims_checked": 61,
+  "clause_claims_checked": 66,
+  "clause_claims_with_targeted_search": 32,
   "corrections": [
     {
       "code": "S13",
@@ -45,12 +45,6 @@
   "claims": [
     {
       "section": "04",
-      "code": "S37",
-      "claim": "DCReg decouples registration and preconditions the weak subspaces without changing the least-squares objective .",
-      "status": "supported"
-    },
-    {
-      "section": "04",
       "code": "F04",
       "claim": "Switch-SLAM adds visual constraints only when normalized Hessian eigenvalues indicate LiDAR degeneracy and falls back to inertial propagation when both modalities fail .",
       "status": "supported"
@@ -58,25 +52,13 @@
     {
       "section": "04",
       "code": "R02",
-      "claim": "RaLI-Multi corrects LiDAR--inertial drift along the detected degenerate direction with inter-vehicle UWB ranges, provided that at least one horizontal direction remains well constrained, and a stopped anchor vehicle optimizes and broadcasts the shared pose graph .",
-      "status": "supported"
-    },
-    {
-      "section": "04",
-      "code": "R03",
-      "claim": "A sparse-channel LiDAR system adds an explicit ground-normal factor and intensity features to suppress vertical drift, although its ground detector misses gradual slope changes .",
-      "status": "supported"
-    },
-    {
-      "section": "04",
-      "code": "R04",
-      "claim": "WING learns corrections for IMU bias and for wheel errors caused by skidding and vertical bouncing on a continuous B-spline ground manifold, yielding interoceptive-only odometry whose value as a fallback depends on how closely the ground follows the manifold .",
+      "claim": "Teammates provide another source, as RaLI-Multi corrects LiDAR--inertial drift along the detected degenerate direction with inter-vehicle UWB ranges, provided that at least one horizontal direction remains well constrained .",
       "status": "supported"
     },
     {
       "section": "04",
       "code": "M39",
-      "claim": "Contact uncertainty can also be estimated explicitly, as when a tire-model observer fuses wheel-level velocity estimates by covariance intersection and excludes inconsistent wheels .",
+      "claim": "Contact uncertainty can also be estimated explicitly, as when a tire-model observer fuses wheel-level velocities by covariance intersection and excludes inconsistent wheels .",
       "status": "supported"
     },
     {
@@ -95,12 +77,6 @@
       "section": "04",
       "code": "E15",
       "claim": "DynoSAM instead estimates rigid-object motion in world-centric factor graphs through full-batch optimization without loop closure .",
-      "status": "supported"
-    },
-    {
-      "section": "04",
-      "code": "N20",
-      "claim": "Dense static maps carry their own cost, as dense multi-scan adjustment fits grid-cell distributions jointly over several scans and runs slower than recording time .",
       "status": "supported"
     },
     {
@@ -130,13 +106,13 @@
     {
       "section": "04",
       "code": "S20",
-      "claim": "Active sensing adds a caution, since robot-mounted lighting in LUCID improves visual appearance without necessarily improving odometry .",
+      "claim": "Robot-mounted lighting in LUCID improves visual appearance without necessarily improving odometry .",
       "status": "supported"
     },
     {
       "section": "05",
       "code": "M23",
-      "claim": "A risk-aware learner labels traversed footprints and adds weak obstacle labels before predicting unvisited cells, although its predictions are evaluated only on manually driven recordings .",
+      "claim": "A risk-aware learner labels traversed footprints and weak obstacles before predicting unvisited cells, with predictions evaluated only on manually driven recordings .",
       "status": "supported"
     },
     {
@@ -148,19 +124,13 @@
     {
       "section": "05",
       "code": "S45",
-      "claim": "SPARTA predicts angle-conditioned risk distributions as reusable Fourier functions from a fully observed prior point cloud and evaluates their tire-deformation consequences in simulation, with a physical demonstration that routes around a virtual risky branch .",
+      "claim": "SPARTA predicts angle-conditioned risk distributions as reusable Fourier functions from a fully observed prior point cloud .",
       "status": "supported"
     },
     {
       "section": "05",
       "code": "S42",
       "claim": "A visual-foundation-model approach learns cost, speed, and novelty maps from expert driving for model predictive path integral (MPPI) control, with field trials in which operator corrections expose residual failures that offline trajectory agreement conceals .",
-      "status": "supported"
-    },
-    {
-      "section": "05",
-      "code": "R15",
-      "claim": "TRAIL learns an implicit field of terrain attributes from RGB and LiDAR and optimizes path geometry and speed along its gradients, with field interventions caused by wet-ground traction loss and failures attributed to occlusion and limited field of view .",
       "status": "supported"
     },
     {
@@ -172,7 +142,7 @@
     {
       "section": "05",
       "code": "R18",
-      "claim": "SCOPE predicts distributions of future occupancy grids from robot motion, tracked objects, and a local static map and inserts their mean and uncertainty into the costmaps of existing planners, with distillation enabling embedded inference .",
+      "claim": "SCOPE predicts future occupancy-grid distributions from robot motion, tracked objects, and a local static map and inserts their mean and uncertainty into the costmaps of existing planners, with distillation enabling embedded inference .",
       "status": "supported"
     },
     {
@@ -202,13 +172,7 @@
     {
       "section": "05",
       "code": "E26",
-      "claim": "A LiDAR-based CBF controller fits a GP to current obstacle edges and uses its mean and gradient in a quadratic program, with an invariance argument that requires known state, unconstrained inputs, and suitable updates while excluding the GP variance .",
-      "status": "supported"
-    },
-    {
-      "section": "05",
-      "code": "S05",
-      "claim": "A risk-aware-zone barrier expands an avoidance region under input saturation, with a score that is not a calibrated probability .",
+      "claim": "A LiDAR-based CBF safety filter fits a GP to current obstacle edges and uses its mean and gradient in a quadratic program, with an invariance argument that excludes the GP variance .",
       "status": "supported"
     },
     {
@@ -219,8 +183,8 @@
     },
     {
       "section": "05",
-      "code": "N12",
-      "claim": "Prescribed-time spatiotemporal tubes assume bounded disturbances and terminal separation without explicit input constraints .",
+      "code": "R14",
+      "claim": "MonoMPC learns the distribution of minimum clearance for candidate controls from monocular depth, without temporal memory, and minimizes a distribution-based risk .",
       "status": "supported"
     },
     {
@@ -266,6 +230,12 @@
       "status": "supported"
     },
     {
+      "section": "06",
+      "code": "R26",
+      "claim": "VAMOS plans at 1\\,Hz on a laptop GPU , a rate that a fast local controller can bridge only while it retains a valid action.",
+      "status": "supported"
+    },
+    {
       "section": "07",
       "code": "R20",
       "claim": "Multi-Proxy combines lightweight descriptors for progressive loop detection with asynchronous ADMM pose-graph optimization and continues under simulated packet loss and latency, where a two-stage Gauss--Seidel baseline fails to converge, provided that front-end odometry stays stable .",
@@ -280,31 +250,25 @@
     {
       "section": "07",
       "code": "F03",
-      "claim": "Correlation-aware collaboration exchanges states, covariances, and cross-covariances of common landmarks before Kullback--Leibler averaging and Schmidt--Kalman updates, a procedure that excludes faulty observations and corrects uncertain landmarks .",
+      "claim": "Correlation-aware collaboration, evaluated on recorded road-vehicle data, exchanges states, covariances, and cross-covariances of common landmarks before Kullback--Leibler averaging and Schmidt--Kalman updates .",
       "status": "supported"
     },
     {
       "section": "07",
       "code": "F12",
-      "claim": "Failure-aware target tracking fuses target estimates by covariance intersection after reconnection and lets a permanently isolated drone signal a hazard .",
+      "claim": "Failure-aware target tracking fuses target estimates by covariance intersection after reconnection and lets a permanently isolated aerial tracker signal a hazard .",
       "status": "supported"
     },
     {
       "section": "08",
       "code": "E51",
-      "claim": "Kinematics-based detection compares position, angular velocity, and acceleration through transport relations, although its rover evaluation injects faults into recorded data whose substitute position source already contains inertial measurements .",
-      "status": "supported"
-    },
-    {
-      "section": "08",
-      "code": "E52",
-      "claim": "Adaptive sliding-mode control handles injected actuator faults and saturation on industrial hardware as long as some actuation remains .",
+      "claim": "Kinematics-based detection compares position, angular velocity, and acceleration through transport relations, with faults injected into recorded rover data .",
       "status": "supported"
     },
     {
       "section": "08",
       "code": "X07",
-      "claim": "Integrity analysis for extended Kalman filter (EKF) SLAM also accumulates landmark fault risk, although its recorded example crosses the threshold only after localization fails .",
+      "claim": "Integrity analysis for extended Kalman filter (EKF) SLAM accumulates landmark fault risk, although its recorded example crosses the threshold only after localization fails .",
       "status": "supported"
     },
     {
@@ -322,7 +286,13 @@
     {
       "section": "08",
       "code": "R36",
-      "claim": "RADIUM moves failure prediction before deployment by sampling environment parameters from a distribution conditioned on failure .",
+      "claim": "RADIUM moves failure prediction before deployment by sampling environment parameters from a distribution conditioned on failure and repairs the policy on the discovered cases, reporting up to five times higher robustness for a repaired vision-in-the-loop policy on a 1/10-scale car .",
+      "status": "supported"
+    },
+    {
+      "section": "08",
+      "code": "F03",
+      "claim": "In the estimator, fault-tolerant prior-map collaboration excludes faulty observations, inflates faulty-landmark covariance, and specifies reinitialization for odometry faults without evaluating an executed reset .",
       "status": "supported"
     },
     {
@@ -334,7 +304,7 @@
     {
       "section": "08",
       "code": "R33",
-      "claim": "Help Me Through learns viewpoint actions from about 50\\,h of human demonstrations to keep monocular SLAM tracking through texture-poor transitions, with a physical test that runs the policy on live images while a person teleoperates path planning .",
+      "claim": "Help Me Through learns viewpoint actions from about 50\\,h of human demonstrations, or 20\\,h followed by online fine-tuning, to keep monocular SLAM tracking through texture-poor transitions, with a physical test that runs the policy on live images while a person teleoperates path planning .",
       "status": "supported"
     },
     {
@@ -352,19 +322,13 @@
     {
       "section": "08",
       "code": "R31",
-      "claim": "A cloud--edge system offloads mapping and trajectory generation to a Kubernetes cluster over 5G and keeps MPC tracking and collision avoidance on Jetson-equipped Ackermann robots, with connection modes that fall back to a leader-based local network .",
+      "claim": "A cloud--edge system offloads mapping and trajectory generation over 5G while keeping MPC tracking and collision avoidance on Jetson-equipped Ackermann robots, falling back to a leader-based local network .",
       "status": "supported"
     },
     {
       "section": "08",
       "code": "S18",
       "claim": "Counterfactual replay selects among adapting policies at the cost of between-trial computation .",
-      "status": "supported"
-    },
-    {
-      "section": "08",
-      "code": "S19",
-      "claim": "An outdoor visual-inertial benchmark shows why failure and resource reporting must remain coupled, since loop closure changes both accuracy and compute while failed and low-coverage runs are removed before averaging .",
       "status": "supported"
     },
     {
@@ -405,12 +369,6 @@
     },
     {
       "section": "09",
-      "code": "F11",
-      "claim": "The compute-sensitive trajectory metric of M2UD supports estimator comparison without measuring control-loop delay .",
-      "status": "supported"
-    },
-    {
-      "section": "09",
       "code": "N20",
       "claim": "DMSA processes data at 1.5--4 times the recording duration and distinguishes unsupported sensor adaptations from failed runs .",
       "status": "supported"
@@ -419,18 +377,6 @@
       "section": "09",
       "code": "N04",
       "claim": "A study of LiDAR--inertial non-reproducibility repeats each experiment 30 times after controlling subscribers and buffering , showing that repeated playback characterizes implementation variability rather than variation across missions.",
-      "status": "supported"
-    },
-    {
-      "section": "09",
-      "code": "E13",
-      "claim": "Comparisons with simulator pose characterize planning, whereas ablations with a SLAM back end expose the effects of estimated pose .",
-      "status": "supported"
-    },
-    {
-      "section": "10",
-      "code": "R33",
-      "claim": "Active view planning tries to prevent visual tracking loss before it occurs, although its physical test uses teleoperated motion .",
       "status": "supported"
     },
     {
@@ -453,20 +399,8 @@
     },
     {
       "section": "10",
-      "code": "F11",
-      "claim": "Datasets such as M2UD support estimator comparisons on difficult ground-robot sequences , whereas action-dependent terrain decisions require closed-loop trials that also distinguish uncertain obstacle location from uncertain traversal consequence.",
-      "status": "supported"
-    },
-    {
-      "section": "10",
       "code": "F12",
-      "claim": "Disconnection, Reconnection, and Corrupted Shared Information Reconnection mechanisms exist for particular shared quantities, such as the target estimates that failure-aware tracking fuses after a link returns .",
-      "status": "supported"
-    },
-    {
-      "section": "10",
-      "code": "N11",
-      "claim": "Range-consistency monitoring reconstructs shared localization errors under a centralized mixed-reality protocol , whereas a moving wheeled team adds physical range corruption and limited communication.",
+      "claim": "Disconnection, Reconnection, and Corrupted Shared Information Reconnection mechanisms exist for particular shared quantities, such as the target estimates that failure-aware aerial tracking fuses after a link returns .",
       "status": "supported"
     },
     {

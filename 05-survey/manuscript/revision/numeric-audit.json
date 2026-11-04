@@ -2,8 +2,8 @@
   "date": "2026-11-04",
   "scope": "Every sentence in Sections IV-X that reports a numerical result (percentages, times, rates, counts with units, or decimal values).",
   "method": "Numbers in comparison records were checked earlier against the PDFs (data/within-study-comparisons.json). For the other sentences, every number was searched in the review card and in the local full-text transcription, and the numbers of each sentence were required to occur together in one transcription passage. Source excerpts remain local.",
-  "sentences": 23,
-  "in_comparison_records": 10,
+  "sentences": 22,
+  "in_comparison_records": 9,
   "mismatches": 0,
   "entries": [
     {
@@ -19,7 +19,7 @@
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "With a common FAST-LIO2 backbone, absolute pose error (APE) on the SubT-MRS Long Corridor recording falls from 3.113 to 1.386\\,m, at the cost of an increase in average desktop computation from 21.04 to 28.69\\,ms."
+      "sentence": "With a common FAST-LIO2 backbone, absolute pose error (APE) on the SubT-MRS Long Corridor recording falls from 3.113 to 1.386\\,m, while average desktop computation rises from 21.04 to 28.69\\,ms."
     },
     {
       "section": "04",
@@ -32,7 +32,7 @@
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "However, the improvement is not uniform, since the APE on the Short exp recording is 0.429\\,m against 0.412\\,m for the baseline."
+      "sentence": "The improvement is not uniform, since the APE on the Short exp recording is 0.429\\,m against 0.412\\,m for the baseline."
     },
     {
       "section": "04",
@@ -59,7 +59,7 @@
       ],
       "status": "numbers found together in the local full-text transcription",
       "card_locator": "R13 p. 7",
-      "sentence": "Its success falls from 94\\% in simulation to 80\\% outdoors on a Scout Mini, which the authors attribute to wheel slip and sensor noise, although it still exceeds the 67\\% of MPPI and 73\\% of GAKD in the same outdoor comparison."
+      "sentence": "Its success falls from 94\\% in simulation to 80\\% outdoors on a Scout Mini, although it still exceeds the 67\\% of MPPI and 73\\% of GAKD in the same outdoor comparison."
     },
     {
       "section": "05",
@@ -120,7 +120,7 @@
       ],
       "status": "numbers found together in the local full-text transcription",
       "card_locator": "",
-      "sentence": "In Jackal trials on the same estimated depth, its collision rate is 6.6\\% against 25\\% for a navigation stack at a similar mean speed and 48.3\\% for a faster setting, with planning on a networked laptop and no temporal memory."
+      "sentence": "In Jackal trials on the same estimated depth, its collision rate is 6.6\\% against 25\\% for a navigation stack at a similar mean speed and 48.3\\% for a faster setting."
     },
     {
       "section": "06",
@@ -132,8 +132,8 @@
         "21",
         "27"
       ],
-      "status": "27 of 30 stated in the source; 21 of 30 derived from the 9 reported failures in 30 trials",
-      "card_locator": "R27 pp. 7-8 (failure analysis, Sec. IV-D)",
+      "status": "numbers found together in the local full-text transcription",
+      "card_locator": "R27 pp. 7-8",
       "sentence": "In 30 building trials it succeeds end to end in 21 and reaches a correct position in 27, with detection errors causing most failures."
     },
     {
@@ -183,18 +183,17 @@
       ],
       "status": "numbers found together in the local full-text transcription",
       "card_locator": "R26 p. 6, Table III",
-      "sentence": "With the planner unchanged, the affordance model of a wheeled robot raises its success on a ramp-or-stairs task from 6 to 9 of 10 runs, a gain indicating that semantic proposals need filtering by the capabilities of the executing chassis."
+      "sentence": "With the planner unchanged, the affordance model of a wheeled robot raises its success on a ramp-or-stairs task from 6 to 9 of 10 runs."
     },
     {
       "section": "06",
       "codes": [
-        "R26",
-        "R29"
+        "R26"
       ],
       "numbers": [],
       "status": "count or unit statement found in the local full-text transcription",
       "card_locator": "R26 p. 4 (1 Hz inference)",
-      "sentence": "VAMOS plans at 1\\,Hz on a laptop GPU~ , while OLiVia-Nav moves reasoning into compact encoders~ ."
+      "sentence": "VAMOS plans at 1\\,Hz on a laptop GPU~ , a rate that a fast local controller can bridge only while it retains a valid action."
     },
     {
       "section": "07",
@@ -245,17 +244,7 @@
       "numbers": [],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "With the same planner in simulation, recovery yields eight successes in ten runs against three in ten in a dense world with 1\\,m doorways."
-    },
-    {
-      "section": "08",
-      "codes": [
-        "E59"
-      ],
-      "numbers": [],
-      "status": "source-checked comparison record (data/within-study-comparisons.json)",
-      "card_locator": "",
-      "sentence": "Both variants succeed in all ten runs in a sparse world with 2\\,m doorways."
+      "sentence": "With the same planner in simulation, recovery yields eight successes in ten runs against three in ten in a dense world with 1\\,m doorways, whereas both variants succeed in all ten runs in a sparse world with 2\\,m doorways."
     },
     {
       "section": "08",

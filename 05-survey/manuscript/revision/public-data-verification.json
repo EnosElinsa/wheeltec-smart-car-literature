@@ -1,5 +1,5 @@
 {
-  "pages": 24,
+  "pages": 23,
   "corpus_prose_citations": 229,
   "indexed_library_count": 231,
   "internal_reference_ids": [
@@ -86,9 +86,9 @@
   "source_checked_numerical_cases": 7,
   "displayed_equations_unchanged": 6,
   "overfull_boxes": 0,
-  "underfull_horizontal_boxes": 6,
+  "underfull_horizontal_boxes": 11,
   "underfull_vertical_boxes": 0,
-  "pdf_sha256": "95623df3a8f93afe8523a0f502006e0c417ff2a38d758df5c60de5b5516ce925",
+  "pdf_sha256": "0739cdae3141afa294f4b1e844163141b26bc40d55a39f465074e9646cf0165d",
   "supplement": {
     "pages": 8,
     "unique_labels": 12,
@@ -99,7 +99,7 @@
     "overfull_boxes": 0,
     "underfull_horizontal_boxes": 1,
     "underfull_vertical_boxes": 0,
-    "pdf_sha256": "95f5e2e556b6df55ade7bddddc3cdcde258d87cd3121d69c195b8550ef1728ed"
+    "pdf_sha256": "182f5f14bdb19b2a86a96262e9989b1053bf9e14b7a1a8178be356fb5334c5b9"
   },
-  "base_commit": "a3fd8a1fc1478da34e901a4af97015935f778070"
+  "base_commit": "7642712fd0f5ce0f7cfdc67409505134631da876"
 }
