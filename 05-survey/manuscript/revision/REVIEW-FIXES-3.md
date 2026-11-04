@@ -125,7 +125,13 @@ The review tied two gap claims to the missing works. Both now hold with them:
 
 ## Length
 
-The main paper has 24 pages, the T-IV maximum. The last page holds references 234-252 in the left column (bottom 748 pt) and 253-265 in the right (bottom 595 pt), without a forced column break (`\IEEEtriggeratref{999}`). The supplement grew from 8 to 9 pages with 81 references.
+The main paper has 24 pages, the T-IV maximum. Without a forced column break the last page held references 234-252 in the left column (bottom 748 pt) and 253-265 in the right (bottom 595 pt). `\IEEEtriggeratref{251}` now balances it: references 234-250 end at 676 pt and 251-265 at 667 pt. The supplement grew from 8 to 9 pages with 81 references.
+
+## Follow-up wording fixes
+The review of this round approved the changes with three minor wording findings, which were then applied:
+- **S1 sensitivity sentence.** "of the 228 technical publications" became "of the 228 purposively selected technical publications", so both shares are marked as statistics of the purposive sample.
+- **Table IV, multi-robot gaps.** "Ideal or modeled communication" became "Mostly ideal or modeled communication", since the CSIRO Data61, Explorer and CERBERUS team systems (K08-K10) were fielded under real link loss.
+- **Section VI-B, ViNT.** "at a higher inference cost" became "at a higher inference cost than feedforward convolutional policies", the comparison the authors state (ViNT PDF p. 8).
 
 ## Verification
 
