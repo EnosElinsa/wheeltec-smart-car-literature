@@ -1,22 +1,10 @@
 {
   "ngram_size": 10,
-  "source_documents": 163,
-  "survey_windows": 13063,
-  "unique_overlapping_phrases": 1,
-  "matching_survey_windows": 1,
-  "overlap_percent_of_survey_windows": 0.0077,
-  "matches": [
-    {
-      "section": "sections/04-localization.tex",
-      "ngram": "0 429 m versus 0 412 m for the baseline",
-      "survey_occurrences": 1,
-      "sources": [
-        {
-          "file": "03-reviews/T1-perception-localization/2026-LODESTAR-E01/review.md",
-          "paragraph": 40
-        }
-      ]
-    }
-  ],
+  "source_documents": 267,
+  "survey_windows": 11247,
+  "unique_overlapping_phrases": 0,
+  "matching_survey_windows": 0,
+  "overlap_percent_of_survey_windows": 0.0,
+  "matches": [],
   "interpretation": "Exact phrase matches are screening signals; technical names and standard terminology need manual review."
 }

@@ -113,6 +113,17 @@ macros = {'CorpusCount':len(rows), 'CoreCount':len(technical_rows), 'ContextCoun
           'FaultIntegrityCount':evidence_map['fault-recovery-deployment']['integrity-reliability'],
           'LocBoundaryCount':evidence_map['localization-mapping']['publications'] - evidence_map['localization-mapping']['wheeled-target'],
           'WheeledTargetCount':sum(v['wheeled-target'] for v in evidence_map.values())}
+# Final selection stage (works named by an internal review of an earlier draft) and sensitivity without it.
+COVERAGE_BATCH = 'review-additions-2026-11-04'
+macros['CoverageCount'] = batches.get(COVERAGE_BATCH, 0)
+macros['RecentCount'] = sum(r['bibliographic_year'] in {'2025', '2026'} for r in rows)
+macros['RecentShare'] = round(100 * macros['RecentCount'] / len(rows))
+base_rows = [r for r in technical_rows if r['source_batch'] != COVERAGE_BATCH]
+macros['DegTaskCountBase'] = sum({'designed-degradation', 'closed-loop-task'} <= {x.strip() for x in r['evaluation_all'].split(',')}
+                                 for r in base_rows)
+macros['CoreCountBase'] = len(base_rows)
+macros['DegTaskShareBase'] = round(100 * macros['DegTaskCountBase'] / macros['CoreCountBase'])
+assert (macros['DegTaskCountBase'], macros['CoreCountBase']) == (59, 228)           # S1 sensitivity sentence
 
 # Qualitative statements in Sections IV-IX that rest on the evidence map.
 def share(module, key):
@@ -123,7 +134,7 @@ for module in ('traversability-planning-control', 'semantic-language-navigation'
     assert share(module, 'closed-loop-task') > 0.9                                   # "nearly all report task outcomes"
 assert share('traversability-planning-control', 'designed-degradation') < 0.5      # "fewer than half" (Sec. V)
 assert share('semantic-language-navigation', 'designed-degradation') < 1 / 3       # "fewer than a third" (Sec. VI)
-assert 0.3 <= share('multi-robot', 'degradation-with-task') <= 0.37                # "about a third" (Sec. VII)
+assert 0.25 < share('multi-robot', 'degradation-with-task') < 1 / 3              # "more than a quarter" (Sec. VII)
 assert max(EVIDENCE_MODULES, key=lambda m: share(m, 'degradation-with-task')) == 'fault-recovery-deployment'
 assert evidence_map['fault-recovery-deployment']['integrity-reliability'] > macros['IntegrityCount'] / 2
 assert share('localization-mapping', 'wheeled-target') < 0.5                         # "more than half ... other platforms" (Sec. IV)
@@ -131,6 +142,8 @@ assert share('localization-mapping', 'wheeled-target') < 0.5                    
     '\n'.join('\\newcommand{\\'+k+'}{'+f'{v:,}'+'}' for k,v in macros.items())+'\n', encoding='utf-8')
 
 # Preserve each original publisher entry except the necessarily unique citation key.
+# Listed author names that a publisher export gives in lowercase are capitalized in refs.bib only.
+AUTHOR_CASE = {'K12': ('ichter, brian', 'Ichter, Brian')}
 keymap, blocks = [], ['% DERIVED bibliography. Source citation.bib files remain byte-identical.\n']
 for row in rows:
     raw = (R / row['bibtex']).read_bytes()
@@ -144,10 +157,16 @@ for row in rows:
     source = source.replace('&amp;', '&')
     source = re.sub(r'(?<!\\)&', lambda _match: r'\&', source)
     source = protect_entry(source)
+    transformation = 'unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained'
+    if row['code'] in AUTHOR_CASE:
+        lower_name, name = AUTHOR_CASE[row['code']]
+        assert source.count(lower_name) == 1, row['code']
+        source = source.replace(lower_name, name)
+        transformation += '; lowercase author name "' + lower_name + '" capitalized'
     blocks.append('% '+row['code']+'; raw source SHA-256: '+row['bibtex_sha256']+'\n'+source+'\n')
     keymap.append({'code':row['code'],'key':new,'raw_key':old,'raw_bibtex':row['bibtex'],
                    'raw_sha256':row['bibtex_sha256'],'formal_year':row['bibliographic_year'],
-                   'transformation':'unique citation key; line endings and trailing whitespace normalized; HTML ampersand decoded and LaTeX ampersand escaped; acronyms, mixed-case names and listed proper names in the title brace-protected for IEEEtran sentence case (scripts/bib_case.py); publisher fields retained'})
+                   'transformation':transformation})
 blocks.append('% ===== Verified background references (not in reviewed corpus) =====\n')
 for item in verification:
     d = json.loads((M / item['raw_record']).read_text(encoding='utf-8'))['message']

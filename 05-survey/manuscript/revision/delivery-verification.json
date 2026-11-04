@@ -1,15 +1,15 @@
 {
-  "pages": 23,
-  "corpus_prose_citations": 229,
-  "indexed_library_count": 231,
+  "pages": 24,
+  "corpus_prose_citations": 245,
+  "indexed_library_count": 247,
   "internal_reference_ids": [
     "X01",
     "X15"
   ],
   "foundational_exception_count": 7,
   "citation_scope_sha256": "6f806d1df136a8c95788931178931f7720b5ff496c98506d8dfad0784152483a",
-  "bibliography_entries": 246,
-  "resolved_bibliography_entries": 246,
+  "bibliography_entries": 265,
+  "resolved_bibliography_entries": 265,
   "unique_labels": 28,
   "figures": 3,
   "tables": 6,
@@ -21,56 +21,56 @@
     "S-tab:reliability",
     "S-tab:semantic"
   ],
-  "source_artifacts_checked": 693,
+  "source_artifacts_checked": 741,
   "local_fulltext_verification": "passed",
   "source_hash_mismatches": 0,
-  "evaluation_denominator": 228,
+  "evaluation_denominator": 244,
   "evaluation_attribute_counts": {
-    "residual": 160,
-    "designed-degradation": 130,
+    "residual": 170,
+    "designed-degradation": 135,
     "integrity-reliability": 14,
-    "closed-loop-task": 128
+    "closed-loop-task": 139
   },
   "evidence_map": {
     "localization-mapping": {
-      "publications": 66,
-      "residual": 66,
+      "publications": 67,
+      "residual": 67,
       "closed-loop-task": 2,
-      "designed-degradation": 45,
+      "designed-degradation": 46,
       "degradation-with-task": 2,
       "integrity-reliability": 3,
       "placement-reported": 45,
       "wheeled-target": 30
     },
     "traversability-planning-control": {
-      "publications": 52,
-      "residual": 29,
-      "closed-loop-task": 49,
-      "designed-degradation": 21,
-      "degradation-with-task": 19,
+      "publications": 56,
+      "residual": 32,
+      "closed-loop-task": 51,
+      "designed-degradation": 23,
+      "degradation-with-task": 20,
       "integrity-reliability": 1,
-      "placement-reported": 29,
-      "wheeled-target": 47
+      "placement-reported": 31,
+      "wheeled-target": 50
     },
     "semantic-language-navigation": {
-      "publications": 30,
-      "residual": 13,
-      "closed-loop-task": 29,
-      "designed-degradation": 9,
-      "degradation-with-task": 8,
+      "publications": 36,
+      "residual": 16,
+      "closed-loop-task": 35,
+      "designed-degradation": 10,
+      "degradation-with-task": 9,
       "integrity-reliability": 0,
-      "placement-reported": 17,
-      "wheeled-target": 25
+      "placement-reported": 18,
+      "wheeled-target": 30
     },
     "multi-robot": {
-      "publications": 40,
-      "residual": 29,
-      "closed-loop-task": 26,
-      "designed-degradation": 24,
+      "publications": 45,
+      "residual": 32,
+      "closed-loop-task": 29,
+      "designed-degradation": 25,
       "degradation-with-task": 13,
       "integrity-reliability": 1,
-      "placement-reported": 30,
-      "wheeled-target": 29
+      "placement-reported": 33,
+      "wheeled-target": 32
     },
     "fault-recovery-deployment": {
       "publications": 40,
@@ -86,20 +86,20 @@
   "source_checked_numerical_cases": 7,
   "displayed_equations_unchanged": 6,
   "overfull_boxes": 0,
-  "underfull_horizontal_boxes": 11,
+  "underfull_horizontal_boxes": 10,
   "underfull_vertical_boxes": 0,
-  "pdf_sha256": "0739cdae3141afa294f4b1e844163141b26bc40d55a39f465074e9646cf0165d",
+  "pdf_sha256": "bf1fbc24e24f0867f1b6e776d8e6b0397fecd662669eb53c5c9d78ec4efa8b37",
   "supplement": {
-    "pages": 8,
+    "pages": 9,
     "unique_labels": 12,
     "figures": 1,
     "tables": 6,
-    "resolved_bibliography_entries": 65,
+    "resolved_bibliography_entries": 81,
     "unresolved_references": [],
     "overfull_boxes": 0,
     "underfull_horizontal_boxes": 1,
     "underfull_vertical_boxes": 0,
-    "pdf_sha256": "182f5f14bdb19b2a86a96262e9989b1053bf9e14b7a1a8178be356fb5334c5b9"
+    "pdf_sha256": "da22ea929837fc1fb96520517ec6f5314cf2aba367b49c2ecf658183e29db435"
   },
-  "base_commit": "7642712fd0f5ce0f7cfdc67409505134631da876"
+  "base_commit": "69fbf8108132cb2a47df2e05d0fb1bd1c02e5aba"
 }

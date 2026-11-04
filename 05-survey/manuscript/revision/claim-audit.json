@@ -2,9 +2,9 @@
   "date": "2026-11-04",
   "scope": "Critical characterizations in Sections IV-X: sentences with a limiting marker that cite exactly one corpus work, and limiting clauses that end in a single citation inside multi-citation sentences.",
   "method": "Each claim was matched against its review card and the local full-text transcription by keyword overlap. Claims without a direct match were checked with targeted phrase searches. Source excerpts remain local and are not published.",
-  "sentence_claims_checked": 61,
-  "clause_claims_checked": 66,
-  "clause_claims_with_targeted_search": 32,
+  "sentence_claims_checked": 67,
+  "clause_claims_checked": 68,
+  "clause_claims_with_targeted_search": 34,
   "corrections": [
     {
       "code": "S13",
@@ -40,6 +40,34 @@
       "before": "or assign tasks before the mission while penalizing capability shortfall",
       "after": "or fix a robust task schedule before the mission under uncertain agent capabilities",
       "reason": "The source formulates a robust pre-mission schedule under capability uncertainty; a shortfall penalty is not stated."
+    },
+    {
+      "code": "K03",
+      "section": "X-C",
+      "before": "The open question is how uncertainty in pose alters the probability that a wheel-supported footprint lies on the estimated traversable surface under incomplete observation.",
+      "after": "The open question is how uncertainty in pose, beyond its share of map variance, alters the probability that a wheel-supported footprint lies on the estimated traversable surface under incomplete observation, and whether propagating it changes executed outcomes.",
+      "reason": "STEP states that its traversability evaluation accounts for localization error (PDF p. 2) and derives its collision-risk variance from the elevation-map variance, which it describes as mainly a function of localization error (p. 5); its simulation assumes no localization error (p. 7). A preceding sentence now names STEP, and EVORA, which uses motion-capture pose indoors (p. 15) and leaves perception uncertainty to separate treatment (p. 18)."
+    },
+    {
+      "code": "K03/K05",
+      "section": "VIII (Table IV)",
+      "before": "Pose uncertainty rarely propagated into terrain decisions",
+      "after": "Pose uncertainty rarely propagated into terrain decisions, with its effect on outcomes untested",
+      "reason": "STEP propagates localization error through elevation-map variance but does not test its effect on outcomes; EVORA does not propagate pose uncertainty."
+    },
+    {
+      "code": "K06/K07",
+      "section": "X-D",
+      "before": "The open interface is selective acceptance when isolated robots return with stale, correlated, or biased information,",
+      "after": "The open interface is selective acceptance beyond outlier rejection when isolated robots return with stale, correlated, or biased information,",
+      "reason": "Kimera-Multi rejects outlier inter-robot loop closures with distributed GNC while its robots stay constantly in communication range (PDF pp. 12, 14). LAMP 2.0 queues pose graphs and keyed scans during link loss, sends them as a batch on reconnection, and filters loop closures with ICM or GNC (pp. 4-5), without evaluating stale or biased batches separately. Two preceding sentences now state these findings and the untested acceptance in the SubT team systems."
+    },
+    {
+      "code": "evidence-map",
+      "section": "VII (synthesis)",
+      "before": "About a third of the studies reviewed here report task outcomes under a named degradation condition",
+      "after": "More than a quarter of the studies reviewed here report task outcomes under a named degradation condition",
+      "reason": "With the coverage additions, the Section VII share fell from 13 of 40 (0.325) to 13 of 45 (0.289); build_data.py now asserts 0.25 < share < 1/3."
     }
   ],
   "claims": [
@@ -113,6 +141,12 @@
       "section": "05",
       "code": "M23",
       "claim": "A risk-aware learner labels traversed footprints and weak obstacles before predicting unvisited cells, with predictions evaluated only on manually driven recordings .",
+      "status": "supported"
+    },
+    {
+      "section": "05",
+      "code": "K04",
+      "claim": "TartanDrive records about 200,000 interactions of a joystick-driven all-terrain vehicle for learning off-road dynamics, although the learned models were not tested in a navigation stack .",
       "status": "supported"
     },
     {
@@ -213,6 +247,12 @@
     },
     {
       "section": "06",
+      "code": "K12",
+      "claim": "LM-Nav parses an instruction into landmarks with GPT-3, grounds them with CLIP in a graph built by manually driving a Jackal, and finds a successful walk for 85\\% of 20 instructions over more than 6\\,km with one disengagement .",
+      "status": "supported"
+    },
+    {
+      "section": "06",
       "code": "R25",
       "claim": "Sem-NaVAE applies the same generate-and-select structure without a map, scoring conditional variational autoencoder (VAE) proposals with lightweight open-vocabulary segmentation and reporting 90\\% success on 120--240\\,m campus and park routes with few repetitions per route .",
       "status": "supported"
@@ -243,8 +283,26 @@
     },
     {
       "section": "07",
+      "code": "K06",
+      "claim": "Kimera-Multi rejects outlier loop closures with distributed graduated non-convexity (GNC) on recorded Jackal data, with robots kept constantly in communication range .",
+      "status": "supported"
+    },
+    {
+      "section": "07",
+      "code": "K07",
+      "claim": "LAMP 2.0 instead queues pose graphs and keyed scans while a robot is out of range and sends them as a batch on reconnection to a base station that filters loop closures by consistency checks or GNC, keeping map errors below 4\\,m on replayed data from Husky and Spot robots .",
+      "status": "supported"
+    },
+    {
+      "section": "07",
       "code": "R24",
       "claim": "MEF-Explore derives rendezvous from entropy fields and assumes that low-rate position exchange is always available, exploring 21.32\\% faster with a 16.67\\% higher success rate than the baseline on three TurtleBot2 robots .",
+      "status": "supported"
+    },
+    {
+      "section": "07",
+      "code": "K08",
+      "claim": "Team CSIRO Data61 had every tracked, legged, and aerial robot solve the same multi-agent pose graph from data exchanged by store-and-forward messaging, with agents returning to base when mission-critical data remained unsynchronized .",
       "status": "supported"
     },
     {
@@ -396,6 +454,12 @@
       "code": "S44",
       "claim": "SocialNav-SUB indicates that incorrect reasoning, and not only unavailable or delayed responses, requires explicit testing .",
       "status": "supported"
+    },
+    {
+      "section": "10",
+      "code": "K03",
+      "claim": "STEP comes closest, since localization error enters its CVaR collision risk through the elevation-map variance, although its simulation assumes no localization error and its field runs on a Husky and a Spot quadruped report no failure rates .",
+      "status": "corrected"
     },
     {
       "section": "10",

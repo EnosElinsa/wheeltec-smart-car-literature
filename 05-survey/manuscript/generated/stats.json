@@ -5,132 +5,133 @@
     "followup-2026-11-02": 15,
     "ieee-refresh-2026-11-03": 36,
     "ieee-supplement-2026-11-03": 20,
+    "review-additions-2026-11-04": 16,
     "supplemental": 5,
     "survey-200plus-2026-11-03": 48
   },
   "publication_type": {
-    "conference": 34,
-    "journal": 195
+    "conference": 44,
+    "journal": 201
   },
   "bibliographic_year": {
-    "2021": 5,
-    "2022": 8,
-    "2023": 9,
-    "2024": 34,
+    "2021": 8,
+    "2022": 14,
+    "2023": 12,
+    "2024": 38,
     "2025": 87,
     "2026": 86
   },
   "survey_module": {
     "fault-recovery-deployment": 40,
-    "localization-mapping": 66,
-    "multi-robot": 40,
-    "semantic-language-navigation": 30,
-    "traversability-planning-control": 53
+    "localization-mapping": 67,
+    "multi-robot": 45,
+    "semantic-language-navigation": 36,
+    "traversability-planning-control": 57
   },
   "evidence_type": {
-    "closed-loop-hardware": 113,
+    "closed-loop-hardware": 123,
     "dataset-playback": 23,
-    "dataset-resource": 5,
+    "dataset-resource": 9,
     "numerical": 11,
     "online-hardware": 12,
-    "recorded-robot-data": 52,
+    "recorded-robot-data": 54,
     "simulation": 12,
     "survey": 1
   },
   "platform_class": {
-    "ackermann": 9,
+    "ackermann": 10,
     "aerial": 7,
     "aquatic": 1,
-    "differential-drive": 39,
+    "differential-drive": 40,
     "handheld": 4,
-    "legged": 9,
-    "mixed": 29,
-    "none": 5,
+    "legged": 10,
+    "mixed": 30,
+    "none": 6,
     "omnidirectional": 5,
-    "road-vehicle": 11,
+    "road-vehicle": 12,
     "skid-steer": 29,
-    "tracked": 2,
-    "wheeled-unspecified": 79
+    "tracked": 3,
+    "wheeled-unspecified": 88
   },
   "boundary_platform": {
-    "no": 161,
-    "yes": 68
+    "no": 172,
+    "yes": 73
   },
   "verification_level": {
     "full": 23,
-    "light": 206
+    "light": 222
   },
   "evaluation_primary": {
-    "closed-loop-task": 113,
-    "designed-degradation": 3,
+    "closed-loop-task": 122,
+    "designed-degradation": 4,
     "integrity-reliability": 8,
-    "residual": 105
+    "residual": 111
   },
   "compute_location": {
-    "desktop-offline": 66,
-    "mixed": 28,
+    "desktop-offline": 67,
+    "mixed": 29,
     "not-applicable": 1,
-    "not-reported": 79,
+    "not-reported": 89,
     "offboard-local": 15,
-    "onboard": 40
+    "onboard": 44
   },
   "survey_included": {
     "context": 1,
-    "yes": 228
+    "yes": 244
   },
   "evaluation_all": {
-    "closed-loop-task": 129,
-    "designed-degradation": 130,
+    "closed-loop-task": 140,
+    "designed-degradation": 135,
     "integrity-reliability": 14,
-    "residual": 160
+    "residual": 170
   },
   "evaluation_technical": {
-    "closed-loop-task": 128,
-    "designed-degradation": 130,
+    "closed-loop-task": 139,
+    "designed-degradation": 135,
     "integrity-reliability": 14,
-    "residual": 160
+    "residual": 170
   },
-  "evaluation_denominator": 228,
+  "evaluation_denominator": 244,
   "evidence_map": {
     "localization-mapping": {
-      "publications": 66,
-      "residual": 66,
+      "publications": 67,
+      "residual": 67,
       "closed-loop-task": 2,
-      "designed-degradation": 45,
+      "designed-degradation": 46,
       "degradation-with-task": 2,
       "integrity-reliability": 3,
       "placement-reported": 45,
       "wheeled-target": 30
     },
     "traversability-planning-control": {
-      "publications": 52,
-      "residual": 29,
-      "closed-loop-task": 49,
-      "designed-degradation": 21,
-      "degradation-with-task": 19,
+      "publications": 56,
+      "residual": 32,
+      "closed-loop-task": 51,
+      "designed-degradation": 23,
+      "degradation-with-task": 20,
       "integrity-reliability": 1,
-      "placement-reported": 29,
-      "wheeled-target": 47
+      "placement-reported": 31,
+      "wheeled-target": 50
     },
     "semantic-language-navigation": {
-      "publications": 30,
-      "residual": 13,
-      "closed-loop-task": 29,
-      "designed-degradation": 9,
-      "degradation-with-task": 8,
+      "publications": 36,
+      "residual": 16,
+      "closed-loop-task": 35,
+      "designed-degradation": 10,
+      "degradation-with-task": 9,
       "integrity-reliability": 0,
-      "placement-reported": 17,
-      "wheeled-target": 25
+      "placement-reported": 18,
+      "wheeled-target": 30
     },
     "multi-robot": {
-      "publications": 40,
-      "residual": 29,
-      "closed-loop-task": 26,
-      "designed-degradation": 24,
+      "publications": 45,
+      "residual": 32,
+      "closed-loop-task": 29,
+      "designed-degradation": 25,
       "degradation-with-task": 13,
       "integrity-reliability": 1,
-      "placement-reported": 30,
-      "wheeled-target": 29
+      "placement-reported": 33,
+      "wheeled-target": 32
     },
     "fault-recovery-deployment": {
       "publications": 40,
@@ -143,11 +144,11 @@
       "wheeled-target": 30
     }
   },
-  "corpus_count": 229,
-  "indexed_library_count": 231,
+  "corpus_count": 245,
+  "indexed_library_count": 247,
   "internal_reference_count": 2,
   "citation_scope_sha256": "6f806d1df136a8c95788931178931f7720b5ff496c98506d8dfad0784152483a",
-  "inclusion_sha256": "d071c0039786168ba756c7b337f12b83bcf015082ab889a82ac5b0eb499946be",
-  "source_index_sha256": "ac235137e34c27a13108dcc205dc93e01046a7b612da95161c594cf6ba9d6afb",
-  "comparison_sha256": "ac7cd92019684365edd98cef1064a08a3c26d01bfaaa0c37e2f433d49359012d"
+  "inclusion_sha256": "784490af9f935a6c5c248555935d71f907020d16b06f1c090a748a3786de0d2e",
+  "source_index_sha256": "8864fdd078ff986995e6c350b101f8b2ba863476401781d58226c58a492df666",
+  "comparison_sha256": "e21d8f19be720ae121042ad567fa0392ff739017d7bf563b6dad568a5a904e0b"
 }

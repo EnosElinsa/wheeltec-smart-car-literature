@@ -26,29 +26,29 @@
       2,
       2,
       2,
-      9,
+      10,
       18,
       33
     ],
     "traversability-planning-control": [
-      3,
-      1,
+      5,
+      2,
       4,
-      9,
+      10,
       22,
       14
     ],
     "semantic-language-navigation": [
+      1,
       0,
-      0,
-      0,
-      4,
+      3,
+      6,
       15,
       11
     ],
     "multi-robot": [
       0,
-      2,
+      7,
       1,
       6,
       8,

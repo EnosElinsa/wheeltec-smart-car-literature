@@ -9,7 +9,8 @@ style file:
 * a hyphen-separated segment with a capital after its first character
   (SLAM, LiDAR, MPC, 3D, NavGPT) or a single capital inside a hyphenated name
   (R-FAC, C-CBF);
-* proper names listed in ``PROPER_NAMES`` (Gaussian, Kalman, Voronoi, ...).
+* proper names listed in ``PROPER_NAMES`` (Gaussian, Kalman, Voronoi, ...);
+* multi-word proper names listed in ``PHRASES`` (Subterranean Challenge), braced whole.
 
 A hyphenated token is braced segment by segment when its other segments are
 descriptive words (``LiDAR-based`` becomes ``{LiDAR}-based``); otherwise the whole
@@ -19,10 +20,10 @@ Text already inside braces, math, and LaTeX commands is left unchanged.
 import re
 
 PROPER_NAMES = {
-    'Ackermann', 'Bayesian', 'Bezier', 'Boolean', 'Carlo', 'Cauchy', 'Delaunay', 'Dijkstra',
-    'Euclidean', 'Euler', 'Fisher', 'Fourier', 'Gauss', 'Gaussian', 'Hamiltonian', 'Hessian',
-    'Hilbert', 'Huber', 'Jacobian', 'Kalman', 'Koopman', 'Kullback', 'Lagrangian', 'Leibler',
-    'Lie', 'Lyapunov', 'Mahalanobis', 'Markov', 'Mars', 'Monte', 'Nash', 'Newton', 'Pareto',
+    'Ackermann', 'Bayesian', 'Bezier', 'Boolean', 'Carlo', 'Cauchy', 'Data61', 'Delaunay', 'Dijkstra',
+    'Euclidean', 'Euler', 'Fisher', 'Fourier', 'Gauss', 'Gaussian', 'Habitat', 'Hamiltonian', 'Hessian',
+    'Hilbert', 'Huber', 'Jacobian', 'Kalman', 'Kimera', 'Koopman', 'Kullback', 'Lagrangian', 'Leibler',
+    'Lie', 'Lyapunov', 'Mahalanobis', 'Markov', 'Mars', 'Matterport', 'Monte', 'Nash', 'Newton', 'Pareto',
     'Poisson', 'Riemannian', 'Schmidt', 'Shannon', 'Stackelberg', 'Taylor', 'Voronoi',
     'Wasserstein', 'Wiener',
 }
@@ -34,6 +35,9 @@ DESCRIPTIVE = {
 }
 
 TOKEN = re.compile(r"[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*")
+
+# Multi-word proper names braced as a whole so that every word keeps its capital.
+PHRASES = ('Subterranean Challenge', 'SubT Challenge')
 
 
 def _meaningful(segment: str) -> bool:
@@ -77,6 +81,13 @@ def protect_title(title: str) -> str:
         elif c == '}':
             depth -= 1
         elif depth == 0 and not math:
+            phrase = next((p for p in PHRASES if title.startswith(p, i)
+                           and (i == 0 or not title[i - 1].isalnum())
+                           and not title[i + len(p):i + len(p) + 1].isalnum()), None)
+            if phrase:
+                out.append('{' + phrase + '}')
+                i += len(phrase)
+                continue
             m = TOKEN.match(title, i)
             if m and (i == 0 or not title[i - 1].isalnum()):
                 out.append(_protect_token(m.group(0)))

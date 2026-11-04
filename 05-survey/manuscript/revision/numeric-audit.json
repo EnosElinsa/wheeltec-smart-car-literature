@@ -1,14 +1,15 @@
 {
   "date": "2026-11-04",
   "scope": "Every sentence in Sections IV-X that reports a numerical result (percentages, times, rates, counts with units, or decimal values).",
-  "method": "Numbers in comparison records were checked earlier against the PDFs (data/within-study-comparisons.json). For the other sentences, every number was searched in the review card and in the local full-text transcription, and the numbers of each sentence were required to occur together in one transcription passage. Source excerpts remain local.",
-  "sentences": 22,
+  "method": "Numbers in comparison records were checked earlier against the PDFs (data/within-study-comparisons.json). For the other sentences, every number was searched in the review card and in the local full-text transcription, and the numbers of each sentence were required to occur together in one transcription passage. Numbers taken from the 2026-11-04 coverage additions (K01-K16) were also re-read on the physical PDF page named in card_locator. Source excerpts remain local.",
+  "sentences": 27,
   "in_comparison_records": 9,
   "mismatches": 0,
   "entries": [
     {
       "section": "04",
       "codes": [
+        "K01",
         "E01"
       ],
       "numbers": [
@@ -19,11 +20,12 @@
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "With a common FAST-LIO2 backbone, absolute pose error (APE) on the SubT-MRS Long Corridor recording falls from 3.113 to 1.386\\,m, while average desktop computation rises from 21.04 to 28.69\\,ms."
+      "sentence": "With a common FAST-LIO2 backbone, absolute pose error (APE) on the Long Corridor recording of the SubT-MRS dataset~ falls from 3.113 to 1.386\\,m, while average desktop computation rises from 21.04 to 28.69\\,ms."
     },
     {
       "section": "04",
       "codes": [
+        "K01",
         "E01"
       ],
       "numbers": [
@@ -37,6 +39,19 @@
     {
       "section": "04",
       "codes": [
+        "K01"
+      ],
+      "numbers": [
+        "1.61",
+        "0.836"
+      ],
+      "status": "numbers checked on the cited PDF page",
+      "card_locator": "K01 p. 7 (LiDAR-track average ATE 1.61 m mixed vs 0.836 m geometric); p. 6 (no fusion entry met the criteria)",
+      "sentence": "Its LiDAR entries averaged 1.61\\,m ATE on mixed-degradation sequences against 0.836\\,m on geometric ones."
+    },
+    {
+      "section": "04",
+      "codes": [
         "R05"
       ],
       "numbers": [
@@ -45,6 +60,19 @@
       "status": "numbers found together in the local full-text transcription",
       "card_locator": "R05 p. 16",
       "sentence": "AirSLAM combines learned point and line features with map reuse and reaches 40\\,Hz on an embedded GPU under illumination change, although it reduces to a point-feature system where structural lines are absent~ ."
+    },
+    {
+      "section": "05",
+      "codes": [
+        "K02"
+      ],
+      "numbers": [
+        "40.20",
+        "59.5"
+      ],
+      "status": "numbers checked on the cited PDF page",
+      "card_locator": "K02 p. 5 (SalsaNext 40.20% vs 59.5% mIoU on SemanticKITTI)",
+      "sentence": "RELLIS-3D labels LiDAR scans and images from a Warthog at one campus site, on which SalsaNext segmentation reaches 40.20\\% mean intersection over union against 59.5\\% on an urban benchmark~ ."
     },
     {
       "section": "05",
@@ -139,6 +167,34 @@
     {
       "section": "06",
       "codes": [
+        "K12"
+      ],
+      "numbers": [
+        "85",
+        "20",
+        "6"
+      ],
+      "status": "numbers checked on the cited PDF page",
+      "card_locator": "K12 p. 6 (20 queries, over 6 km); p. 7 (85%, one disengagement)",
+      "sentence": "LM-Nav parses an instruction into landmarks with GPT-3, grounds them with CLIP in a graph built by manually driving a Jackal, and finds a successful walk for 85\\% of 20 instructions over more than 6\\,km with one disengagement~ ."
+    },
+    {
+      "section": "06",
+      "codes": [
+        "K14",
+        "K16"
+      ],
+      "numbers": [
+        "100",
+        "15"
+      ],
+      "status": "numbers checked on the cited PDF page",
+      "card_locator": "K14 p. 4 (over 100 hours, 8 platforms); p. 7 (Go 1 zero-shot); K16 p. 5 (15x fewer parameters than subgoal diffusion)",
+      "sentence": "ViNT scales the data to over 100\\,h from eight platforms and drives an unseen Go~1 quadruped at a higher inference cost~ , whereas NoMaD unifies goal-free exploration and image-goal navigation in one diffusion policy on a LoCoBot with 15 times fewer parameters"
+    },
+    {
+      "section": "06",
+      "codes": [
         "E50"
       ],
       "numbers": [
@@ -208,6 +264,18 @@
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
       "sentence": "In ten simulated trials of Scene~1, each robot succeeds in 90\\% of trials, compared with 40\\% and 30\\% for an ablation that removes both partitioning and greedy subgoal selection."
+    },
+    {
+      "section": "07",
+      "codes": [
+        "K07"
+      ],
+      "numbers": [
+        "4"
+      ],
+      "status": "numbers checked on the cited PDF page",
+      "card_locator": "K07 p. 7 (map errors below 4 m)",
+      "sentence": "LAMP~2.0 instead queues pose graphs and keyed scans while a robot is out of range and sends them as a batch on reconnection to a base station that filters loop closures by consistency checks or GNC, keeping map errors below 4\\,m on replayed data from Husky and"
     },
     {
       "section": "07",

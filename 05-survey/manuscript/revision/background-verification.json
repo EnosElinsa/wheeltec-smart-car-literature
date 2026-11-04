@@ -174,5 +174,29 @@
     "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); background attribution",
     "title": "From the desks of ROS maintainers: A survey of modern &amp; capable mobile robotics algorithms in the robot operating system 2",
     "verified_utc": "2026-11-04T14:49:55.336397+00:00"
+  },
+  {
+    "doi": "10.1109/tro.2024.3463504",
+    "key": "B_RadarSurvey2024",
+    "raw_record": "revision/background-sources/B_RadarSurvey2024.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey cited in Table I, scope from the publisher abstract page",
+    "title": "A New Wave in Robotics: Survey on Recent MmWave Radar Applications in Robotics",
+    "verified_utc": "2026-11-04T18:06:47.300267+00:00"
+  },
+  {
+    "doi": "10.1146/annurev-control-042920-020211",
+    "key": "B_SafeLearning2022",
+    "raw_record": "revision/background-sources/B_SafeLearning2022.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey cited in Table I, scope from its abstract",
+    "title": "Safe Learning in Robotics: From Learning-Based Control to Safe Reinforcement Learning",
+    "verified_utc": "2026-11-04T18:06:47.300267+00:00"
+  },
+  {
+    "doi": "10.1016/j.isprsjprs.2022.12.021",
+    "key": "B_AdverseWeather2023",
+    "raw_record": "revision/background-sources/B_AdverseWeather2023.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey cited in Table I, scope from the publisher abstract page",
+    "title": "Perception and sensing for autonomous vehicles under adverse weather conditions: A survey",
+    "verified_utc": "2026-11-04T18:06:47.300267+00:00"
   }
 ]
