@@ -1,4 +1,4 @@
-> Stage record: the later [IEEE refresh integration](ieee-refresh-integration-2026-11-03.md) assessed and cited R01-R36 and moved the five foundational exceptions below to the internal library. The current manuscript has 229 selected works and 234 references, all from 2021-2026.
+> Stage record: the later [IEEE refresh integration](ieee-refresh-integration-2026-11-03.md) assessed and cited R01-R36 and moved the five foundational exceptions below to the internal library. The current manuscript has 229 selected works and 238 references, all from 2021-2026.
 
 # Recent citation policy and IEEE refresh
 

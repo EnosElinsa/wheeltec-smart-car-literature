@@ -1,4 +1,4 @@
-> Stage record before the recent-citation revision and the IEEE refresh: the current manuscript has 229 selected works and 234 references. See the [IEEE refresh integration](../../04-analysis/ieee-refresh-integration-2026-11-03.md).
+> Stage record before the recent-citation revision and the IEEE refresh: the current manuscript has 229 selected works and 238 references. See the [IEEE refresh integration](../../04-analysis/ieee-refresh-integration-2026-11-03.md).
 
 # Survey expansion toward 200 references
 

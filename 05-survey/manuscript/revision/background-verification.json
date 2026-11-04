@@ -126,5 +126,37 @@
     "raw_record": "revision/background-sources/B_HumanAware2013.json",
     "verified_utc": "2026-11-02T13:09:00.586625+00:00",
     "scope": "identity/metadata verified from opened Crossref DOI record; background only"
+  },
+  {
+    "doi": "10.1007/s11263-024-02019-5",
+    "key": "B_GlobalLiDARLoc2024",
+    "raw_record": "revision/background-sources/B_GlobalLiDARLoc2024.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey cited in Table I, scope from its abstract",
+    "title": "A Survey on Global LiDAR Localization: Challenges, Advances and Open Problems",
+    "verified_utc": "2026-11-04T12:47:51.057848+00:00"
+  },
+  {
+    "doi": "10.1145/3583741",
+    "key": "B_SocialNav2023",
+    "raw_record": "revision/background-sources/B_SocialNav2023.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey cited in Table I, scope from its abstract",
+    "title": "Core Challenges of Social Robot Navigation: A Survey",
+    "verified_utc": "2026-11-04T12:47:51.057848+00:00"
+  },
+  {
+    "doi": "10.1109/tro.2023.3323938",
+    "key": "B_SubTSLAM2024",
+    "raw_record": "revision/background-sources/B_SubTSLAM2024.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey cited in Table I, scope from its abstract",
+    "title": "Present and Future of SLAM in Extreme Environments: The DARPA SubT Challenge",
+    "verified_utc": "2026-11-04T12:47:51.057848+00:00"
+  },
+  {
+    "doi": "10.18653/v1/2022.acl-long.524",
+    "key": "B_VLNSurvey2022",
+    "raw_record": "revision/background-sources/B_VLNSurvey2022.json",
+    "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey cited in Table I, scope from its abstract",
+    "title": "Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions",
+    "verified_utc": "2026-11-04T12:47:51.057848+00:00"
   }
 ]

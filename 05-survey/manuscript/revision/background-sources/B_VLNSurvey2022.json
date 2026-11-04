@@ -1,0 +1,178 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     10,
+     24
+    ]
+   ],
+   "date-time": "2026-10-24T02:42:27Z",
+   "timestamp": 1792809747140,
+   "version": "4.5.0"
+  },
+  "publisher-location": "Stroudsburg, PA, USA",
+  "reference-count": 0,
+  "publisher": "Association for Computational Linguistics",
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [],
+  "published-print": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "DOI": "10.18653/v1/2022.acl-long.524",
+  "type": "proceedings-article",
+  "created": {
+   "date-parts": [
+    [
+     2022,
+     6,
+     2
+    ]
+   ],
+   "date-time": "2022-06-02T21:34:53Z",
+   "timestamp": 1654205693000
+  },
+  "page": "7606-7623",
+  "source": "Crossref",
+  "is-referenced-by-count": 95,
+  "title": [
+   "Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions"
+  ],
+  "prefix": "10.18653",
+  "author": [
+   {
+    "given": "Jing",
+    "family": "Gu",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Eliana",
+    "family": "Stefani",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Qi",
+    "family": "Wu",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Jesse",
+    "family": "Thomason",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Xin",
+    "family": "Wang",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "1643",
+  "event": {
+   "name": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+   "location": "Dublin, Ireland",
+   "start": {
+    "date-parts": [
+     [
+      2022,
+      5
+     ]
+    ]
+   },
+   "end": {
+    "date-parts": [
+     [
+      2022,
+      5
+     ]
+    ]
+   }
+  },
+  "container-title": [
+   "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)"
+  ],
+  "original-title": [],
+  "deposited": {
+   "date-parts": [
+    [
+     2022,
+     6,
+     2
+    ]
+   ],
+   "date-time": "2022-06-02T21:39:07Z",
+   "timestamp": 1654205947000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://aclanthology.org/2022.acl-long.524"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  },
+  "references-count": 0,
+  "URL": "https://doi.org/10.18653/v1/2022.acl-long.524",
+  "relation": {},
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2022
+    ]
+   ]
+  }
+ }
+}

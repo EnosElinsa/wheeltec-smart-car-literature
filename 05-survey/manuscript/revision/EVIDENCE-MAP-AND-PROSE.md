@@ -1,5 +1,7 @@
 # Evidence map and prose restructuring - November 4, 2026
 
+This record describes the state after this revision. [ROADMAP-AUDIT-AND-SURVEYS.md](ROADMAP-AUDIT-AND-SURVEYS.md) supersedes its reference count (now 238), table and label counts, Section X description and style measurements.
+
 This revision follows [PAGE-LIMIT-AND-FIGURE-STYLE.md](PAGE-LIMIT-AND-FIGURE-STYLE.md). It turns the corpus coding into a cross-function evidence map, states what the map shows in the main text, and restructures the citation-chain sentences of Sections IV-IX. The selection is unchanged: 229 selected works and 5 background references, 234 references in total, all from 2021-2026.
 
 ## Evidence map (Table IV)

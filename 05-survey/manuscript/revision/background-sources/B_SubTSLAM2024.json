@@ -1,0 +1,790 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     11,
+     4
+    ]
+   ],
+   "date-time": "2026-11-04T05:57:57Z",
+   "timestamp": 1793771877817,
+   "version": "4.6.1"
+  },
+  "reference-count": 134,
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2024,
+       1,
+       1
+      ]
+     ],
+     "date-time": "2024-01-01T00:00:00Z",
+     "timestamp": 1704067200000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2024,
+       1,
+       1
+      ]
+     ],
+     "date-time": "2024-01-01T00:00:00Z",
+     "timestamp": 1704067200000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-029"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2024,
+       1,
+       1
+      ]
+     ],
+     "date-time": "2024-01-01T00:00:00Z",
+     "timestamp": 1704067200000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-037"
+   }
+  ],
+  "funder": [
+   {
+    "name": "Jet Propulsion Laboratory&#x2014;California Institute of Technology",
+    "id": [
+     {
+      "id": "https://ror.org/05dxps055",
+      "id-type": "ROR",
+      "asserted-by": "crossref"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/100000104",
+    "name": "National Aeronautics and Space Administration",
+    "doi-asserted-by": "publisher",
+    "id": [
+     {
+      "id": "10.13039/100000104",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "DOI": "10.13039/100000185",
+    "name": "Defense Advanced Research Projects Agency",
+    "doi-asserted-by": "publisher",
+    "award": [
+     "HR00111820045"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "HR00111820045"
+      ]
+     }
+    ],
+    "id": [
+     {
+      "id": "10.13039/100000185",
+      "id-type": "DOI",
+      "asserted-by": "publisher"
+     }
+    ]
+   },
+   {
+    "name": "GACR Agency",
+    "award": [
+     "23-07517S"
+    ],
+    "award-info": [
+     {
+      "award-number": [
+       "23-07517S"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Office of Naval Research RAPID program"
+   }
+  ],
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "IEEE Trans. Robot."
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "DOI": "10.1109/tro.2023.3323938",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2023,
+     10,
+     16
+    ]
+   ],
+   "date-time": "2023-10-16T14:36:01Z",
+   "timestamp": 1697466961000
+  },
+  "page": "936-959",
+  "source": "Crossref",
+  "is-referenced-by-count": 225,
+  "title": [
+   "Present and Future of SLAM in Extreme Environments: The DARPA SubT Challenge"
+  ],
+  "prefix": "10.1109",
+  "volume": "40",
+  "author": [
+   {
+    "ORCID": "https://orcid.org/0000-0002-4094-7077",
+    "authenticated-orcid": false,
+    "given": "Kamak",
+    "family": "Ebadi",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "Department of Mobility and Robotic Systems, NASA Jet Propulsion Laboratory, Pasadena, CA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-3162-0363",
+    "authenticated-orcid": false,
+    "given": "Lukas",
+    "family": "Bernreiter",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Mechanical Engineering, ETH Z&#x00FC;rich, Autonomous Systems Lab, Z&#x00FC;rich, Switzerland"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-6281-1218",
+    "authenticated-orcid": false,
+    "given": "Harel",
+    "family": "Biggie",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Computer Science, University of Colorado Boulder, Boulder, CO, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-7788-6618",
+    "authenticated-orcid": false,
+    "given": "Gavin",
+    "family": "Catt",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Robotics and Autonomous Systems Group, CSIRO, Pullenvale, QLD, Australia"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2829-5256",
+    "authenticated-orcid": false,
+    "given": "Yun",
+    "family": "Chang",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Aeronautics and Astronautics, MIT, Cambridge, MA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-0110-2311",
+    "authenticated-orcid": false,
+    "given": "Arghya",
+    "family": "Chatterjee",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Mechanical Engineering, Bangladesh University of Engineering and Technology, Dhaka, Bangladesh"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-4188-5186",
+    "authenticated-orcid": false,
+    "given": "Christopher E.",
+    "family": "Denniston",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Robotics Embedded Systems Lab, University of Southern California, Los Angeles, CA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-0594-5487",
+    "authenticated-orcid": false,
+    "given": "Simon-Pierre",
+    "family": "Deschênes",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Computer Science and Software Engineering, Laval University, Qu&#x00E9;bec, QC, Canada"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9092-3655",
+    "authenticated-orcid": false,
+    "given": "Kyle",
+    "family": "Harlow",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Computer Science, University of Colorado Boulder, Boulder, CO, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9304-1455",
+    "authenticated-orcid": false,
+    "given": "Shehryar",
+    "family": "Khattak",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Mechanical and Process Engineering, ETH Z&#x00FC;rich, Z&#x00FC;rich, Switzerland"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-7220-2937",
+    "authenticated-orcid": false,
+    "given": "Lucas",
+    "family": "Nogueira",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Carnegie Mellon University, Pittsburgh, PA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-8218-3346",
+    "authenticated-orcid": false,
+    "given": "Matteo",
+    "family": "Palieri",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "347J, NASA Jet Propulsion Laboratory, Pasadena, CA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-0887-9430",
+    "authenticated-orcid": false,
+    "given": "Pavel",
+    "family": "Petráček",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Faculty of Electrical Engineering, Department of Cybernetics, Multi-Robot Systems Group, Czech Technical University in Prague, Prague, Czech Republic"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-5337-9558",
+    "authenticated-orcid": false,
+    "given": "Matěj",
+    "family": "Petrlík",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Cybernetics, Czech Technical University in Prague, Ceske Budejovice, Czech Republic"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-6905-200X",
+    "authenticated-orcid": false,
+    "given": "Andrzej",
+    "family": "Reinke",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Agricultural Faculty, University of Bonn, Bonn, Germany"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-1914-742X",
+    "authenticated-orcid": false,
+    "given": "Vít",
+    "family": "Krátký",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Cybernetics, Czech Technical University in Prague, Prague, Czech Republic"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Shibo",
+    "family": "Zhao",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-5509-1841",
+    "authenticated-orcid": false,
+    "given": "Ali-akbar",
+    "family": "Agha-mohammadi",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Robotics NASA-JPL, Caltech, Pasadena, CA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9989-298X",
+    "authenticated-orcid": false,
+    "given": "Kostas",
+    "family": "Alexis",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Engineering Cybernetics, NTNU - Norwegian University of Science and Technology, Trondheim, Norway"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9651-6866",
+    "authenticated-orcid": false,
+    "given": "Christoffer",
+    "family": "Heckman",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Computer Science, University of Colorado Boulder, Boulder, CO, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9969-1176",
+    "authenticated-orcid": false,
+    "given": "Kasra",
+    "family": "Khosoussi",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Data61, Commonwealth Scientific and Industrial Research, Pullenvale, QLD, Australia"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2286-776X",
+    "authenticated-orcid": false,
+    "given": "Navinda",
+    "family": "Kottege",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Robotics and Autonomous Systems Group, CSIRO, Pullenvale, QLD, Australia"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-9768-3615",
+    "authenticated-orcid": false,
+    "given": "Benjamin",
+    "family": "Morrell",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Mobility and Robotic Systems, Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-4285-4990",
+    "authenticated-orcid": false,
+    "given": "Marco",
+    "family": "Hutter",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Institute of Robotics and Intelligent Systems, ETH Zurich, Zurich, Switzerland"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0009-0003-0758-8230",
+    "authenticated-orcid": false,
+    "given": "Fred",
+    "family": "Pauling",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Robotics, CSIRO Robotics and Autonomous Systems, Pullenvale, QLD, Australia"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-1288-2744",
+    "authenticated-orcid": false,
+    "given": "François",
+    "family": "Pomerleau",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Computer Science and Software Engineering, Universit&#x00E9; Laval, Quebec City, Canada"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0001-7106-3816",
+    "authenticated-orcid": false,
+    "given": "Martin",
+    "family": "Saska",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Department of Cybernetics, Czech Technical University in Prague, Prague 6, Czech Republic"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-8373-4688",
+    "authenticated-orcid": false,
+    "given": "Sebastian",
+    "family": "Scherer",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Robotics Institute, Carnegie Mellon University, Pittsburgh, PA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2760-7983",
+    "authenticated-orcid": false,
+    "given": "Roland",
+    "family": "Siegwart",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Autonomous Systems Lab, ETH Z&#x00FC;rich, Z&#x00FC;rich, Switzerland"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0002-2416-075X",
+    "authenticated-orcid": false,
+    "given": "Jason L.",
+    "family": "Williams",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Robotics and Autonomous Systems Group, CSIRO, Kenmore, QLD, Australia"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-1884-5397",
+    "authenticated-orcid": false,
+    "given": "Luca",
+    "family": "Carlone",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Laboratory for Information and Decision Systems, Massachusetts Institute of Technology, Cambridge, MA, USA"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "263",
+  "container-title": [
+   "IEEE Transactions on Robotics"
+  ],
+  "original-title": [],
+  "link": [
+   {
+    "URL": "http://xplorestaging.ieee.org/ielx7/8860/10365208/10286080.pdf?arnumber=10286080",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2025,
+     2,
+     6
+    ]
+   ],
+   "date-time": "2025-02-06T13:57:59Z",
+   "timestamp": 1738850279000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://ieeexplore.ieee.org/document/10286080/"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  },
+  "references-count": 134,
+  "URL": "https://doi.org/10.1109/tro.2023.3323938",
+  "relation": {},
+  "ISSN": [
+   "1552-3098",
+   "1941-0468"
+  ],
+  "issn-type": [
+   {
+    "value": "1552-3098",
+    "type": "print"
+   },
+   {
+    "value": "1941-0468",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2024
+    ]
+   ]
+  }
+ }
+}

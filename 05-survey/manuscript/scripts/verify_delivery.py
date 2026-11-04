@@ -47,7 +47,7 @@ def main():
     background = load_background(MANUSCRIPT, citation_policy)
     assert len(bibkeys) == len(set(bibkeys)) == len(rows) + len(background)
     assert corpus_keys <= cited_keys <= set(bibkeys)
-    assert len(labels) == len(set(labels)) == 26
+    assert len(labels) == len(set(labels)) == 27
     assert resolved_keys == set(bibkeys)
     assert not ({'P_' + code for code in citation_policy['internal_reference_ids']} |
                 set(citation_policy['excluded_background_keys'])) & (cited_keys | resolved_keys)

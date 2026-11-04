@@ -1,0 +1,329 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     10,
+     24
+    ]
+   ],
+   "date-time": "2026-10-24T03:23:24Z",
+   "timestamp": 1792812204110,
+   "version": "4.5.0"
+  },
+  "reference-count": 273,
+  "publisher": "Springer Science and Business Media LLC",
+  "issue": "8",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2024,
+       3,
+       6
+      ]
+     ],
+     "date-time": "2024-03-06T00:00:00Z",
+     "timestamp": 1709683200000
+    },
+    "content-version": "tdm",
+    "delay-in-days": 0,
+    "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2024,
+       3,
+       6
+      ]
+     ],
+     "date-time": "2024-03-06T00:00:00Z",
+     "timestamp": 1709683200000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+   }
+  ],
+  "content-domain": {
+   "domain": [
+    "link.springer.com"
+   ],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "Int J Comput Vis"
+  ],
+  "published-print": {
+   "date-parts": [
+    [
+     2024,
+     8
+    ]
+   ]
+  },
+  "DOI": "10.1007/s11263-024-02019-5",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     6
+    ]
+   ],
+   "date-time": "2024-03-06T00:02:02Z",
+   "timestamp": 1709683322000
+  },
+  "page": "3139-3171",
+  "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 144,
+  "title": [
+   "A Survey on Global LiDAR Localization: Challenges, Advances and Open Problems"
+  ],
+  "prefix": "10.1007",
+  "volume": "132",
+  "author": [
+   {
+    "given": "Huan",
+    "family": "Yin",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Xuecheng",
+    "family": "Xu",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Sha",
+    "family": "Lu",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Xieyuanli",
+    "family": "Chen",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Rong",
+    "family": "Xiong",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Shaojie",
+    "family": "Shen",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Cyrill",
+    "family": "Stachniss",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Yue",
+    "family": "Wang",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "297",
+  "published-online": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     6
+    ]
+   ]
+  },
+  "container-title": [
+   "International Journal of Computer Vision"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://link.springer.com/content/pdf/10.1007/s11263-024-02019-5.pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://link.springer.com/article/10.1007/s11263-024-02019-5/fulltext.html",
+    "content-type": "text/html",
+    "content-version": "vor",
+    "intended-application": "text-mining"
+   },
+   {
+    "URL": "https://link.springer.com/content/pdf/10.1007/s11263-024-02019-5.pdf",
+    "content-type": "application/pdf",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2024,
+     7,
+     11
+    ]
+   ],
+   "date-time": "2024-07-11T10:25:56Z",
+   "timestamp": 1720693556000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://link.springer.com/10.1007/s11263-024-02019-5"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     6
+    ]
+   ]
+  },
+  "references-count": 273,
+  "journal-issue": {
+   "issue": "8",
+   "published-print": {
+    "date-parts": [
+     [
+      2024,
+      8
+     ]
+    ]
+   }
+  },
+  "alternative-id": [
+   "2019"
+  ],
+  "URL": "https://doi.org/10.1007/s11263-024-02019-5",
+  "relation": {},
+  "ISSN": [
+   "0920-5691",
+   "1573-1405"
+  ],
+  "issn-type": [
+   {
+    "value": "0920-5691",
+    "type": "print"
+   },
+   {
+    "value": "1573-1405",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     6
+    ]
+   ]
+  },
+  "assertion": [
+   {
+    "value": "19 April 2023",
+    "order": 1,
+    "name": "received",
+    "label": "Received",
+    "group": {
+     "name": "ArticleHistory",
+     "label": "Article History"
+    }
+   },
+   {
+    "value": "27 January 2024",
+    "order": 2,
+    "name": "accepted",
+    "label": "Accepted",
+    "group": {
+     "name": "ArticleHistory",
+     "label": "Article History"
+    }
+   },
+   {
+    "value": "6 March 2024",
+    "order": 3,
+    "name": "first_online",
+    "label": "First Online",
+    "group": {
+     "name": "ArticleHistory",
+     "label": "Article History"
+    }
+   }
+  ]
+ }
+}

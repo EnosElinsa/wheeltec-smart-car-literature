@@ -1,4 +1,4 @@
-> Stage record: the later [IEEE refresh integration](IEEE-REFRESH-INTEGRATION.md) cites R01-R36 and removes the five foundational exceptions. The current manuscript has 229 selected works and 234 references.
+> Stage record: the later [IEEE refresh integration](IEEE-REFRESH-INTEGRATION.md) cites R01-R36 and removes the five foundational exceptions. The current manuscript has 229 selected works and 238 references.
 
 # Recent-citation policy revision
 
