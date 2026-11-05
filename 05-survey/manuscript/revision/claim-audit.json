@@ -324,13 +324,13 @@
       "basis": "publisher abstract (terms of the cited study)"
     },
     {
-      "location": "III",
+      "location": "S1",
       "codes": [],
       "claim": "All 220 archived screening decisions name Codex as reviewer and host, with a relevance policy stated in all but four; no record names the model or its version",
       "basis": "local screening archive (policy_version empty for 4)"
     },
     {
-      "location": "III",
+      "location": "S7",
       "codes": [],
       "claim": "Kappa ranges from -0.04 (drivetrain-dependent effect) to 1.00 (incidental sources)",
       "basis": "generated/coding-agreement.csv; asserted"
@@ -1012,5 +1012,35 @@
       "claim": "Five of the six undeveloped candidates above Interface 3 are merged into Interface 4 or Interface 2 (moving agents in semantic choices), with the sixth named in Section X-E",
       "basis": "generated/interface-candidates.csv after the task-setting recheck: PLN-REL:MOD ranks 21, below Interface 3 (rank 11); merged and named-gap counts of the rejected candidates and the direct counts in the PLN-SEM:DYN and PLN-REL:MOD reasons asserted in build_data.py"
     }
-  ]
+  ],
+  "round6_moved_or_shortened": {
+    "date": "2026-11-05",
+    "reason": "Section III shortened to a concise method summary at the author's request. The selection table and stage-level details moved to supplement S1. The acknowledgment was shortened.",
+    "moved": [
+      {
+        "claim": "All 220 archived screening decisions name Codex as reviewer and host, with a relevance policy stated in all but four; no record names the model or its version",
+        "from": "III",
+        "to": "S1",
+        "note": "The supplement S1 paragraph on the screening archive keeps the claim."
+      },
+      {
+        "claim": "Kappa ranges from -0.04 (drivetrain-dependent effect) to 1.00 (incidental sources)",
+        "from": "III",
+        "to": "S7",
+        "note": "Section III now gives only the median kappa (macro KappaMedian). The range stays in supplement S7 and Table S-agreement."
+      }
+    ],
+    "new_claims": [
+      {
+        "location": "III",
+        "claim": "The corpus is dominated by IEEE publications and by works from 2025-2026",
+        "basis": "macros IEEEShare and RecentShare from build_data.py"
+      },
+      {
+        "location": "III",
+        "claim": "Median Cohen's kappa over the double-coded attributes",
+        "basis": "macro KappaMedian from coding.py agreement output"
+      }
+    ]
+  }
 }

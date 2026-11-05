@@ -1,38 +1,8 @@
-\section{Scope, Literature Selection, and Coding}
+\section{Review Method}
 \label{sec:methodology}
 
-This survey covers localization and mapping, traversability and motion control, semantic navigation, multi-robot coordination, and fault management for wheeled mobile robots operating under degraded sensing, terrain, maps, communication, or computation. It includes journal articles and main-conference papers published from 2021 to 2026 that propose, evaluate, or benchmark a mechanism relevant to these functions, counting a preprint and its published version once. Studies on road vehicles, other ground robots, or non-ground and handheld carriers are included when the inputs of their mechanism exist on a wheeled robot, its assumptions do not rest on the other embodiment, and the evaluation isolates the mechanism. Their platform group is counted in Fig.~\ref{fig:matrix} and Table~\ref{tab:evaluation} and marked in the supplementary implementation tables.
+This survey covers localization and mapping, traversability and motion control, semantic navigation, multi-robot coordination, and fault management for wheeled mobile robots operating under degraded sensing, terrain, maps, communication, or computation. It includes journal articles and main-conference papers from 2021 to 2026 that propose, evaluate, or benchmark a mechanism for these functions. Studies on road vehicles, other ground robots, or non-ground carriers are included when the inputs of their mechanism exist on a wheeled robot and its assumptions do not rest on the other embodiment. Fig.~\ref{fig:matrix} and Table~\ref{tab:evaluation} count these platform groups separately.
 
-\begin{table}[!t]
-\centering
-\caption{Selection stages of the \CorpusCount{} publications. Each row adds publications to the earlier stages. IEEE counts the works published by IEEE.}
-\label{tab:selection}
-\surveytableformat
-\begin{tabularx}{\linewidth}{@{}L{2.1cm}Yrr@{}}
-\toprule
-\textbf{Selection} & \textbf{Basis} & \textbf{Works} & \textbf{IEEE} \\
-\midrule
-Initial sample & Capped journal selection, 2021--2026 & \BaselineCount & \BaselineIEEE \\
-\addlinespace[3pt]
-Complementary publications & Four technical studies and one context review & \SupplementCount & \SupplementIEEE \\
-\addlinespace[3pt]
-Thematic sample & Ten works under each of six themes & \ExpansionCount & \ExpansionIEEE \\
-\addlinespace[3pt]
-Integration questions & Four questions on combined navigation functions & \FollowupCount & \FollowupIEEE \\
-\addlinespace[3pt]
-Targeted IEEE coverage & Motion priors, recovery, shared-state diagnosis, and reproducibility & \IEEECount & \TargetedIEEE \\
-\addlinespace[3pt]
-Further targeted coverage & Map validity, terrain risk, multimodal navigation, collaboration, and adaptation & \SurveyExpansionCount & \SurveyExpansionIEEE \\
-\addlinespace[3pt]
-Recent IEEE coverage & Six 2025--2026 IEEE journal or ICRA papers per theme & \IEEERefreshCount & \RefreshIEEE \\
-\addlinespace[3pt]
-Coverage additions & 2021--2024 works named in an internal review of an earlier draft & \CoverageCount & \CoverageIEEE \\
-\midrule
-\textbf{Total} & & \textbf{\CorpusCount} & \textbf{\TotalIEEE} \\
-\bottomrule
-\end{tabularx}
-\end{table}
+The \CorpusCount{} publications were selected in purposive stages. A language-model-assisted title and abstract screening of robotics journals formed the initial sample, which theme-balanced and targeted searches extended together with works that an internal review of an earlier draft named as missing (Section~\ref{S-supp:selection} of the supplementary material). The corpus is dominated by IEEE publications (\IEEEShare\%) and by works from 2025--2026 (\RecentShare\%). Its counts in Section~\ref{sec:evaluation} therefore describe the selected literature rather than the field. Foundational methods from before 2021 are cited as background outside the coded corpus.
 
-An initial search of \LegacyJournals{} journals over \LegacySlices{} journal--year combinations yielded \LegacyRecords{} merged records, of which \LegacyReviewable{} had complete metadata. Title and abstract screening assisted by a language model under preset topic allocations stopped after \BaselineCount{} acceptances and left \LegacyUnreviewed{} records unassessed. Its order and rejection history are unavailable. Six purposive stages then added works (Table~\ref{tab:selection}) under theme quotas, for the four integration questions of Section~\ref{sec:challenges}, and through IEEE-only and citation-based coverage that included RSS and CoRL proceedings. All 220 archived screening decisions of later candidate searches name Codex as reviewer and host, with a title-and-abstract relevance policy stated in all but four. Some also record the read scope and eligibility gates on DOI identity, venue, year, publication type, and main-conference status. No screening record names the language model or its version. IEEE publications form \IEEEShare\% of the corpus, against \IEEEShareRest\% outside the two IEEE-only stages, which contributed \IEEEOnlyCount{} works (Table~\ref{S-tab:venue-mix} in the supplementary material). After screening-based selection ended on November 3, 2026, a final stage on November 4 added \CoverageCount{} works from 2021--2024 that an internal review of an earlier draft had named as missing, each with a formal publication record. Even with them, \RecentCount{} of the \CorpusCount{} works (\RecentShare\%) date from 2025--2026, a skew to which the stage limited to recent IEEE papers contributes. Every included work was read and coded, by full reading for \FullCount{} works and by targeted or extract-based reading for the others. The corpus is therefore a purposive sample whose stage quotas and publisher restrictions shape the counts of Section~\ref{sec:evaluation}, and it supports technical comparisons rather than estimates of topic prevalence. Foundational methods and definitions from before 2021 are cited as background references outside the coded corpus.
-
-Every corpus work is coded with a published codebook (Section~\ref{S-supp:coding} of the supplementary material). With the publication as the coding unit, a combined attribute such as a task outcome under a named degradation condition counts only when both parts come from the same experiment. Degradation evidence falls into three classes: a condition injected or varied against a comparator (D1), a condition deliberately selected for its difficulty without manipulation (D2), and an incidental condition that the study reports (D3). Here, a named degradation condition means D1 or D2. Each work also receives its addressed sources and response family, with a source location for every value read from a paper, and a platform group and drivetrain from its platform class. A separate language-model session, configured for a different model, coded a stratified random sample of \SampleCount{} works without access to the primary codes. Before adjudication, Cohen's kappa over the thirteen double-coded attributes has a median of \KappaMedian{} and ranges from \KappaMin{} for the drivetrain-dependent effect to \KappaMax{} for the rarely coded incidental sources (Section~\ref{S-supp:second-coding} of the supplementary material). This statistic measures agreement between two language-model coding passes on shared evidence and is not human inter-rater reliability. Reported metrics are interpreted within the platform and protocol of each study, without pooling effect sizes across heterogeneous datasets or trial units.
+Each work is coded with a published codebook (Section~\ref{S-supp:coding} of the supplementary material). Degradation evidence falls into three classes: a condition injected or varied against a comparator (D1), a condition deliberately selected for its difficulty without manipulation (D2), and an incidental condition that the study reports (D3). A named degradation condition means D1 or D2. A combined attribute such as a task outcome under such a condition counts only when both parts come from the same experiment. A separate language-model session coded a stratified sample of \SampleCount{} works without access to the primary codes, with a median Cohen's kappa of \KappaMedian{} over the double-coded attributes (Section~\ref{S-supp:second-coding} of the supplementary material). This value measures agreement between two language-model coding passes and is not human inter-rater reliability. Reported metrics are interpreted within the platform and protocol of each study, without pooling effect sizes across datasets.

@@ -55,7 +55,8 @@ def main():
     assert len(bibkeys) == len(set(bibkeys)) == len(rows) + len(background)
     assert corpus_keys <= cited_keys <= set(bibkeys)
     # Round 4 adds tab:drivetrain and tab:checklist; fig:taxonomy became fig:matrix.
-    assert len(labels) == len(set(labels)) == 30
+    # Round 5 moves tab:selection from Section III to supplement S1.
+    assert len(labels) == len(set(labels)) == 29
     assert resolved_keys == set(bibkeys)
     assert not ({'P_' + code for code in citation_policy['internal_reference_ids']} |
                 set(citation_policy['excluded_background_keys'])) & (cited_keys | resolved_keys)
@@ -89,16 +90,16 @@ def main():
     # Round 4: evidence coding (S6), language-model second coding (S7), interface derivation (S8) and the venue mix.
     coding_labels = {"supp:coding", "supp:second-coding", "supp:interfaces", "tab:venue-mix", "tab:evidence-percent",
                      "tab:matrix-works", "tab:sensitivity", "tab:agreement", "tab:cooccurrence", "tab:candidates"}
-    assert len(supplement_labels) == len(set(supplement_labels)) == 22
+    assert len(supplement_labels) == len(set(supplement_labels)) == 23
     assert coding_labels <= set(supplement_labels)
     assert {"fig:corpus"} | supplement_tables <= set(supplement_labels)
-    assert "tab:selection" in labels
+    assert "tab:selection" in supplement_labels and "tab:selection" not in labels
     assert set(supplement_labels).isdisjoint(labels)
     assert supplement_refs <= set(supplement_labels)
     # The main text cites the supplement tables through xr (\externaldocument[S-]{supplement}).
     external_refs = {ref[2:] for ref in ref_uses if ref.startswith("S-")}
     assert ref_uses - {"S-" + ref for ref in external_refs} <= set(labels)
-    expected_external = supplement_tables | {"tab:venue-mix", "tab:sensitivity", "tab:evidence-percent",
+    expected_external = supplement_tables | {"supp:selection", "tab:sensitivity", "tab:evidence-percent",
                                              "supp:coding", "supp:second-coding", "supp:interfaces"}
     assert external_refs == expected_external, sorted(external_refs ^ expected_external)
     assert supplement_tables <= external_refs <= set(supplement_labels)

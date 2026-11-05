@@ -31,7 +31,7 @@ FAMILY_LABELS = {
     'VIII-C': 'executed recovery', 'VIII-D': 'resource management',
 }
 COLUMN_NAMES = {'IV': 'Localization', 'V': 'Planning', 'VI': 'Semantic', 'VII': 'Multi-robot', 'VIII': 'Faults'}
-SHADES = [WHITE, FILL_LIGHT, '#DCDCDC', '#C4C4C4']
+SHADES = [WHITE, '#EFEFEF', '#D3D3D3', '#B4B4B4']  # evenly spaced, distinguishable in print
 LEGEND_LABELS = ['none', 'replay, simulation, model, or resource', 'hardware or recorded data',
                  'physical closed loop']
 
@@ -92,7 +92,8 @@ def fig_matrix() -> Canvas:
                 c.text(mid, yy + h / 2 - 1.2, f"{cell['addressed']}/{cell['named']}/{cell['manipulated']}", fs,
                        anchor='middle')
                 groups = [f"W{cell['wheeled_addressed']}"] + [f'{m}{cell[key]}' for m, key in marks if cell[key]]
-                c.text(mid, yy + h / 2 + lead - 1.2, ' '.join(groups), fs, anchor='middle', fill=MUTED)
+                c.text(mid, yy + h / 2 + lead - 1.2, ' '.join(groups), fs, anchor='middle',
+                       fill=INK if cell['shade'] == len(SHADES) - 1 else MUTED)
             if s != rows[-1]:
                 c.polyline([(xs, yy + h), (xc, yy + h)], stroke=HAIR, sw=0.4)
             yy += h
@@ -127,9 +128,12 @@ def box(c, x, y, w, h, sec, title, sub, fill=WHITE):
 
 
 def source_tag(c, x, y, title, detail, align='left'):
+    """Dashed degradation tag. ``align`` places ``x`` at the left edge, the right edge or the center."""
     w = max(width(title, 7.0, 'bold'), width(detail, 7.0, style='italic')) + 10
     if align == 'right':
         x = x - w
+    elif align == 'center':
+        x = x - w / 2
     c.rect(x, y, w, 22, fill=FILL_LIGHT, stroke=INK, sw=0.6, dash=(2.2, 1.4))
     c.text(x + 5, y + 9.2, title, 7.0, 'bold')
     c.text(x + 5, y + 18.2, detail, 7.0, style='italic', fill=MUTED)
@@ -137,12 +141,22 @@ def source_tag(c, x, y, title, detail, align='left'):
 
 
 def fig_stack() -> Canvas:
+    """Function stack with each degradation group placed directly above the box it enters.
+
+    Every entry arrow is a short vertical or a single hook, so no arrow crosses a box,
+    another arrow or the main information flow.
+    """
     W = 516.0
     c = Canvas(W, 10)
     bw, bh = 86.0, 46.0
     gap = (W - 8 - 5 * bw) / 4
     xs = [4 + k * (bw + gap) for k in range(5)]
-    my = 94.0
+    mid = [x + bw / 2 for x in xs]
+    tag_a, tag_b = 2.0, 42.0          # two rows of degradation tags
+    ty, th = 34.0, 42.0               # teammates and task interpretation
+    my = 96.0                         # main function row
+    dash = (2.6, 1.6)
+
     specs = [(None, 'Measurements', ['Cameras, LiDAR, radar,', 'IMU, wheels, GNSS, UWB']),
              ('IV', 'State estimation', ['Pose, covariance,', 'validity, measurement age']),
              ('IV, V', 'Representation', ['Geometry, terrain,', 'semantics, persistence']),
@@ -154,13 +168,36 @@ def fig_stack() -> Canvas:
     for k in range(4):
         c.arrow([(xs[k] + bw, flow_y), (xs[k + 1], flow_y)], sw=0.9, head=4.2)
 
-    # Upper row: information from teammates and from task interpretation.
-    ty, th = 28.0, 42.0
+    # Information from teammates and from task interpretation.
     box(c, xs[2], ty, bw, th, 'VII', 'Teammates', ['Shared maps, poses,', 'allocations'], fill=FILL_LIGHT)
-    box(c, xs[3], ty, bw, th, 'VI', 'Task interpretation', ['Goals, language,', 'social preferences'], fill=FILL_LIGHT)
-    tm_x, ti_x = xs[2] + bw / 2, xs[3] + bw / 2
-    c.arrow([(tm_x, ty + th), (tm_x, my)], dash=(2.6, 1.6), sw=0.7, both=True, head=3.6)
-    c.arrow([(ti_x, ty + th), (ti_x, my)], dash=(2.6, 1.6), sw=0.7, head=3.6)
+    box(c, xs[3], ty, bw, th, 'VI', 'Task interpretation', ['Goals, language,', 'social preferences'],
+        fill=FILL_LIGHT)
+    c.arrow([(mid[2], ty + th), (mid[2], my)], dash=dash, sw=0.7, both=True, head=3.6)
+    c.arrow([(mid[3], ty + th), (mid[3], my)], dash=dash, sw=0.7, head=3.6)
+
+    # Degradation groups and their entry points.
+    entry = dict(stroke=RULE, sw=0.6, head=3.4)
+    # Sensing and estimation: above Measurements and State estimation.
+    sx, sw_ = source_tag(c, (mid[0] + mid[1]) / 2, tag_b, 'Sensing and estimation',
+                         'texture, geometry, bias, association', align='center')
+    for x in (xs[0] + bw - 16, xs[1] + 16):
+        c.arrow([(x, tag_b + 22), (x, my)], **entry)
+    # Environment and map change: down the lane between State estimation and Representation.
+    lane = (xs[1] + bw + xs[2]) / 2
+    ex, ew = source_tag(c, lane - 6, tag_a, 'Environment and map change', 'moving agents, changed structure',
+                        align='right')
+    c.arrow([(ex + ew, tag_a + 11), (lane, tag_a + 11), (lane, my + 8), (xs[2], my + 8)], **entry)
+    # Communication and computation: above Teammates.
+    cx_, cw_ = source_tag(c, xs[2] - 3, tag_a, 'Communication and computation', 'loss, delay, deadlines, memory')
+    c.arrow([(mid[2], tag_a + 22), (mid[2], ty)], **entry)
+    # Learned and semantic inference: above Task interpretation.
+    lx_, lw_ = source_tag(c, W - 4, tag_a, 'Learned and semantic inference', 'wrong output, misgrounding',
+                          align='right')
+    c.arrow([(lx_, tag_a + 11), (mid[3], tag_a + 11), (mid[3], ty)], **entry)
+    assert cx_ + cw_ < mid[3] - 4 and ex + ew < lane and sx + sw_ < lane
+    # Terrain and mobility: above Control.
+    source_tag(c, W - 4, tag_b, 'Terrain and mobility', 'slope, slip, material, actuation', align='right')
+    c.arrow([(mid[4], tag_b + 22), (mid[4], my)], **entry)
 
     # Supervision row.
     sy, sh = my + bh + 22, 27.0
@@ -171,50 +208,31 @@ def fig_stack() -> Canvas:
     c.text(sx0 + 5, sy + 21.5, 'Sec. VIII', 7.0, style='italic', fill=MUTED)
     c.text(sx0 + 120, sy + 11.5, 'Monitor assumptions and integrity, request information,', 7.0)
     c.text(sx0 + 120, sy + 21, 'slow, stop, reinitialize, replan, reassign, or escalate', 7.0)
-    est_x = xs[1] + bw / 2
-    c.arrow([(est_x, my + bh), (est_x, sy)], dash=(2.6, 1.6), sw=0.7, head=3.6)
-    for x in (xs[3] + bw / 2, xs[4] + bw / 2):
-        c.arrow([(x, sy), (x, my + bh)], dash=(2.6, 1.6), sw=0.7, head=3.6)
+    est_x = mid[1] - 20
+    c.arrow([(est_x, my + bh), (est_x, sy)], dash=dash, sw=0.7, head=3.6)
+    for x in (mid[3] + 20, mid[4]):
+        c.arrow([(x, sy), (x, my + bh)], dash=dash, sw=0.7, head=3.6)
+
+    # Interface 3: pose covariance passed from state estimation to planning.
+    cov_y = my + bh + 10
+    cov_a, cov_b = xs[1] + bw - 14, xs[3] + 16
+    c.polyline([(cov_a, my + bh), (cov_a, cov_y), (cov_b, cov_y)], stroke=INK, sw=0.7, dash=dash)
+    c.arrow([(cov_b, cov_y), (cov_b, my + bh)], dash=dash, sw=0.7, head=3.6)
 
     # Physical feedback loop.
     ly = sy + sh + 11
-    c.arrow([(xs[4] + bw, flow_y), (W - 1.5, flow_y), (W - 1.5, ly), (xs[0] + bw / 2, ly), (xs[0] + bw / 2, my + bh)],
+    c.arrow([(xs[4] + bw, flow_y), (W - 1.5, flow_y), (W - 1.5, ly), (mid[0], ly), (mid[0], my + bh)],
             sw=0.9, head=4.2)
     label = 'Executed motion changes the next observations'
     lw = width(label, 7.0, style='italic') + 10
     c.rect(W / 2 - lw / 2, ly - 5, lw, 10, fill=WHITE)
     c.text(W / 2, ly + 2.4, label, 7.0, style='italic', anchor='middle', fill=MUTED)
 
-    # Degradation sources and their entry points.
-    sx, sw_ = source_tag(c, 4, 58, 'Sensing and estimation', 'texture, geometry, bias, association')
-    c.arrow([(xs[0] + bw / 2, 80), (xs[0] + bw / 2, my)], stroke=RULE, sw=0.6, head=3.4)
-    c.arrow([(sx + sw_, 69), (xs[1] + 22, 69), (xs[1] + 22, my)], stroke=RULE, sw=0.6, head=3.4)
-    ex, ew = source_tag(c, 4, 28, 'Environment and map change', 'moving agents, aged or moved structure')
-    c.arrow([(ex + ew, 39), (xs[2] - 6, 39), (xs[2] - 6, my + 7), (xs[2], my + 7)], stroke=RULE, sw=0.6, head=3.4)
-    cx_, cw_ = source_tag(c, 4, 2, 'Communication and computation', 'loss, delay, deadlines, memory')
-    drop_t, drop_m = xs[3] + 16, xs[2] + bw - 16
-    c.polyline([(cx_ + cw_, 13), (drop_t, 13)], stroke=RULE, sw=0.6)
-    c.arrow([(drop_t, 13), (drop_t, ty)], stroke=RULE, sw=0.6, head=3.4)
-    c.arrow([(drop_m, 13), (drop_m, ty)], stroke=RULE, sw=0.6, head=3.4)
-    lx_, lw_ = source_tag(c, W - 4, 2, 'Learned and semantic inference', 'wrong output, misgrounding', align='right')
-    entry_t = xs[3] + bw - 10
-    c.arrow([(lx_, 17), (entry_t, 17), (entry_t, ty)], stroke=RULE, sw=0.6, head=3.4)
-    side_x = (xs[3] + bw + xs[4]) / 2
-    c.arrow([(side_x, 23), (side_x, my - 8), (entry_t, my - 8), (entry_t, my)], stroke=RULE, sw=0.6, head=3.4)
-    source_tag(c, W - 4, 56, 'Terrain and mobility', 'slope, slip, material, actuation', align='right')
-    c.arrow([(xs[4] + bw / 2, 78), (xs[4] + bw / 2, my)], stroke=RULE, sw=0.6, head=3.4)
-
-    # Interface 3: pose covariance passed from state estimation to planning.
-    cov_y = my + bh + 9
-    cov_a, cov_b = xs[1] + bw - 12, xs[3] + 18
-    c.polyline([(cov_a, my + bh), (cov_a, cov_y), (cov_b, cov_y)], stroke=INK, sw=0.7, dash=(2.6, 1.6))
-    c.arrow([(cov_b, cov_y), (cov_b, my + bh)], dash=(2.6, 1.6), sw=0.7, head=3.6)
-
     # Open interfaces of Section X.
-    c.marker(est_x + 10, (my + bh + sy) / 2, '1')
-    c.marker(ti_x + 10, (ty + th + my) / 2, '2')
-    c.marker(xs[2] + bw / 2, cov_y, '3')
-    c.marker(tm_x + 10, (ty + th + my) / 2, '4')
+    c.marker(est_x - 9, (my + bh + sy) / 2, '1')
+    c.marker(mid[3] + 10, (ty + th + my) / 2, '2')
+    c.marker((cov_a + cov_b) / 2, cov_y, '3')
+    c.marker(mid[2] + 10, (ty + th + my) / 2, '4')
 
     # Legend.
     gy = ly + 20
@@ -224,7 +242,7 @@ def fig_stack() -> Canvas:
     c.arrow([(x, gy - 2.4), (x + 22, gy - 2.4)], sw=0.9, head=4.2)
     c.text(x + 26, gy, items[0], 7.0, fill=MUTED)
     x += 26 + width(items[0], 7.0) + 14
-    c.arrow([(x, gy - 2.4), (x + 22, gy - 2.4)], sw=0.7, dash=(2.6, 1.6), head=3.6)
+    c.arrow([(x, gy - 2.4), (x + 22, gy - 2.4)], sw=0.7, dash=dash, head=3.6)
     c.text(x + 26, gy, items[1], 7.0, fill=MUTED)
     x += 26 + width(items[1], 7.0) + 14
     c.rect(x, gy - 7, 10, 9, fill=FILL_LIGHT, stroke=INK, sw=0.6, dash=(2.2, 1.4))

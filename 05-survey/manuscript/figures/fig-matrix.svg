@@ -22,39 +22,39 @@
 <text x="417.80" y="45.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">IV-E relocalization</text>
 <text x="417.80" y="52.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">VIII-B integrity monitors</text>
 <text x="101.80" y="33.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Perceptual degradation</text>
-<rect x="182.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="182.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="29.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">38/34/9</text>
-<text x="205.50" y="37.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W18 R3 N17</text>
-<rect x="228.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#F3F3F3" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="205.50" y="37.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W18 R3 N17</text>
+<rect x="228.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#EFEFEF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="251.50" y="29.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">3/1/1</text>
 <text x="251.50" y="37.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W3</text>
-<rect x="274.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="274.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="29.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2/2/0</text>
-<text x="297.50" y="37.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W2</text>
-<rect x="320.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="297.50" y="37.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W2</text>
+<rect x="320.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="29.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">4/3/0</text>
-<text x="343.50" y="37.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W2 G1 N1</text>
-<rect x="366.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="343.50" y="37.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W2 G1 N1</text>
+<rect x="366.50" y="20.70" width="46.00" height="19.80" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="389.50" y="29.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">6/5/0</text>
 <text x="389.50" y="37.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W4 R1 N1</text>
 <polyline points="99.50,40.50 182.50,40.50" fill="none" stroke="#B5B5B5" stroke-width="0.4" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="101.80" y="49.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Sensor fault and false</text>
 <text x="101.80" y="56.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">association</text>
-<rect x="182.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="182.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="49.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">6/5/3</text>
 <text x="205.50" y="56.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W2 R1 G1 N2</text>
 <rect x="228.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="251.50" y="49.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">1/0/0</text>
 <text x="251.50" y="56.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W1</text>
-<rect x="274.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="274.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="49.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">1/1/1</text>
-<text x="297.50" y="56.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W1</text>
-<rect x="320.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="297.50" y="56.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W1</text>
+<rect x="320.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="49.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">8/6/3</text>
 <text x="343.50" y="56.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W5 N3</text>
-<rect x="366.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="366.50" y="40.50" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="389.50" y="49.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">10/10/6</text>
-<text x="389.50" y="56.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W7 R3</text>
+<text x="389.50" y="56.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W7 R3</text>
 <polyline points="0.50,60.30 515.50,60.30" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="2.80" y="69.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">A2. Wheels roll on supporting</text>
 <text x="2.80" y="77.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">ground with known contact</text>
@@ -63,21 +63,21 @@
 <text x="417.80" y="84.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">V-E tracking, delay</text>
 <text x="101.80" y="72.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Terrain and wheel-ground</text>
 <text x="101.80" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">contact</text>
-<rect x="182.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="182.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="72.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">17/13/4</text>
 <text x="205.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W13 R1 N3</text>
-<rect x="228.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="228.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="251.50" y="72.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">20/20/2</text>
-<text x="251.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W17 R1 G2</text>
-<rect x="274.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="251.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W17 R1 G2</text>
+<rect x="274.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="72.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">4/3/0</text>
-<text x="297.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W4</text>
-<rect x="320.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="297.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W4</text>
+<rect x="320.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="72.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">3/2/0</text>
-<text x="343.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W2 G1</text>
-<rect x="366.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="343.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W2 G1</text>
+<rect x="366.50" y="60.30" width="46.00" height="27.40" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="389.50" y="72.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">5/5/1</text>
-<text x="389.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W4 N1</text>
+<text x="389.50" y="80.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W4 N1</text>
 <polyline points="0.50,87.70 515.50,87.70" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="2.80" y="97.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">A3. The mapped scene is static</text>
 <text x="2.80" y="104.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">or persistent</text>
@@ -86,32 +86,32 @@
 <text x="417.80" y="112.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">V-D risk constraints</text>
 <text x="417.80" y="119.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">VI-A semantic memory</text>
 <text x="101.80" y="100.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Moving agents</text>
-<rect x="182.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="182.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="96.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">16/13/0</text>
-<text x="205.50" y="104.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W6 R2 N8</text>
-<rect x="228.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="205.50" y="104.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W6 R2 N8</text>
+<rect x="228.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="251.50" y="96.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">23/21/7</text>
-<text x="251.50" y="104.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W21 G1 N1</text>
-<rect x="274.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="251.50" y="104.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W21 G1 N1</text>
+<rect x="274.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="96.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">8/8/1</text>
-<text x="297.50" y="104.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W7 G1</text>
+<text x="297.50" y="104.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W7 G1</text>
 <rect x="320.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="100.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">–</text>
-<rect x="366.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="366.50" y="87.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="389.50" y="96.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">8/7/0</text>
-<text x="389.50" y="104.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W6 N2</text>
+<text x="389.50" y="104.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W6 N2</text>
 <polyline points="99.50,107.50 182.50,107.50" fill="none" stroke="#B5B5B5" stroke-width="0.4" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="101.80" y="120.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Map and scene change</text>
-<rect x="182.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="182.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="116.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">16/16/3</text>
-<text x="205.50" y="123.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W7 R2 N7</text>
-<rect x="228.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="205.50" y="123.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W7 R2 N7</text>
+<rect x="228.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="251.50" y="116.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2/2/1</text>
-<text x="251.50" y="123.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W2</text>
-<rect x="274.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="251.50" y="123.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W2</text>
+<rect x="274.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="116.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">7/6/4</text>
-<text x="297.50" y="123.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W7</text>
-<rect x="320.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="297.50" y="123.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W7</text>
+<rect x="320.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="116.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">1/1/0</text>
 <text x="343.50" y="123.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W1</text>
 <rect x="366.50" y="107.50" width="46.00" height="19.80" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.4"/>
@@ -126,20 +126,20 @@
 <text x="417.80" y="159.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">VIII-B integrity monitors</text>
 <text x="101.80" y="143.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Learned and semantic</text>
 <text x="101.80" y="151.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">inference error</text>
-<rect x="182.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="182.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="143.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">4/3/1</text>
 <text x="205.50" y="151.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W1 R2 N1</text>
-<rect x="228.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="228.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="251.50" y="143.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">14/12/1</text>
-<text x="251.50" y="151.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W13 G1</text>
-<rect x="274.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="251.50" y="151.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W13 G1</text>
+<rect x="274.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="143.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">7/5/0</text>
-<text x="297.50" y="151.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W7</text>
+<text x="297.50" y="151.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W7</text>
 <rect x="320.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="147.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">–</text>
-<rect x="366.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="366.50" y="127.30" width="46.00" height="35.00" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="389.50" y="143.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">9/8/0</text>
-<text x="389.50" y="151.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W8 N1</text>
+<text x="389.50" y="151.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W8 N1</text>
 <polyline points="0.50,162.30 515.50,162.30" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="2.80" y="171.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">A5. Shared information is</text>
 <text x="2.80" y="179.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">timely and consistent</text>
@@ -148,18 +148,18 @@
 <text x="417.80" y="186.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">VII-C rendezvous, repair</text>
 <text x="101.80" y="174.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Communication loss,</text>
 <text x="101.80" y="182.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">delay and bandwidth</text>
-<rect x="182.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#F3F3F3" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="182.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#EFEFEF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="174.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2/1/0</text>
 <text x="205.50" y="182.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W1 R1</text>
-<rect x="228.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#F3F3F3" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="228.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#EFEFEF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="251.50" y="174.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">3/2/2</text>
 <text x="251.50" y="182.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W3</text>
 <rect x="274.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="178.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">–</text>
-<rect x="320.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="320.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="174.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">30/18/11</text>
-<text x="343.50" y="182.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W20 G3 N7</text>
-<rect x="366.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="343.50" y="182.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W20 G3 N7</text>
+<rect x="366.50" y="162.30" width="46.00" height="27.40" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="389.50" y="174.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2/1/1</text>
 <text x="389.50" y="182.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W2</text>
 <polyline points="0.50,189.70 515.50,189.70" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
@@ -172,22 +172,22 @@
 <text x="101.80" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">saturation</text>
 <rect x="182.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="202.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">–</text>
-<rect x="228.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="228.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="251.50" y="198.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">5/3/3</text>
-<text x="251.50" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W5</text>
-<rect x="274.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="251.50" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W5</text>
+<rect x="274.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="198.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">1/1/1</text>
-<text x="297.50" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W1</text>
-<rect x="320.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="297.50" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W1</text>
+<rect x="320.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="198.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">5/3/1</text>
-<text x="343.50" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W5</text>
-<rect x="366.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="343.50" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W5</text>
+<rect x="366.50" y="189.70" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="389.50" y="198.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">8/8/4</text>
-<text x="389.50" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W7 R1</text>
+<text x="389.50" y="206.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W7 R1</text>
 <polyline points="99.50,209.50 182.50,209.50" fill="none" stroke="#B5B5B5" stroke-width="0.4" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="101.80" y="218.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Computation and energy</text>
 <text x="101.80" y="225.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">limits</text>
-<rect x="182.50" y="209.50" width="46.00" height="19.80" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="182.50" y="209.50" width="46.00" height="19.80" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="205.50" y="218.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">4/2/2</text>
 <text x="205.50" y="225.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W2 N2</text>
 <rect x="228.50" y="209.50" width="46.00" height="19.80" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.4"/>
@@ -196,20 +196,20 @@
 <rect x="274.50" y="209.50" width="46.00" height="19.80" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="297.50" y="218.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">9/0/0</text>
 <text x="297.50" y="225.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W7 G2</text>
-<rect x="320.50" y="209.50" width="46.00" height="19.80" rx="0.0" fill="#C4C4C4" stroke="#B5B5B5" stroke-width="0.4"/>
+<rect x="320.50" y="209.50" width="46.00" height="19.80" rx="0.0" fill="#B4B4B4" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="343.50" y="218.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">6/1/1</text>
-<text x="343.50" y="225.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W5 N1</text>
-<rect x="366.50" y="209.50" width="46.00" height="19.80" rx="0.0" fill="#DCDCDC" stroke="#B5B5B5" stroke-width="0.4"/>
+<text x="343.50" y="225.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">W5 N1</text>
+<rect x="366.50" y="209.50" width="46.00" height="19.80" rx="0.0" fill="#D3D3D3" stroke="#B5B5B5" stroke-width="0.4"/>
 <text x="389.50" y="218.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">7/3/3</text>
 <text x="389.50" y="225.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#4A4A4A">W4 R1 N2</text>
 <polyline points="0.50,229.30 515.50,229.30" fill="none" stroke="#111111" stroke-width="0.8" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="2.80" y="240.80" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="start" fill="#111111">Strongest setting with a named condition:</text>
 <rect x="135.05" y="234.20" width="10.00" height="8.00" rx="0.0" fill="#FFFFFF" stroke="#111111" stroke-width="0.5"/>
 <text x="148.05" y="240.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">none</text>
-<rect x="171.66" y="234.20" width="10.00" height="8.00" rx="0.0" fill="#F3F3F3" stroke="#111111" stroke-width="0.5"/>
+<rect x="171.66" y="234.20" width="10.00" height="8.00" rx="0.0" fill="#EFEFEF" stroke="#111111" stroke-width="0.5"/>
 <text x="184.66" y="240.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">replay, simulation, model, or resource</text>
-<rect x="301.00" y="234.20" width="10.00" height="8.00" rx="0.0" fill="#DCDCDC" stroke="#111111" stroke-width="0.5"/>
+<rect x="301.00" y="234.20" width="10.00" height="8.00" rx="0.0" fill="#D3D3D3" stroke="#111111" stroke-width="0.5"/>
 <text x="314.00" y="240.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">hardware or recorded data</text>
-<rect x="397.27" y="234.20" width="10.00" height="8.00" rx="0.0" fill="#C4C4C4" stroke="#111111" stroke-width="0.5"/>
+<rect x="397.27" y="234.20" width="10.00" height="8.00" rx="0.0" fill="#B4B4B4" stroke="#111111" stroke-width="0.5"/>
 <text x="410.27" y="240.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">physical closed loop</text>
 </svg>
