@@ -82,6 +82,8 @@ stats['comparison_sha256'] = digest(R / '06-data/corpus-comparison.csv')
 # Evidence coding layer (06-data/evidence-coding): final codes, matrices, interface ranking, sensitivity and
 # venue mix. These products do not change the card-based evidence map, macros or Table V of this revision.
 stats.update(coding.write_products(G, rows, decisions_path=M / 'data/interface-decisions.json'))
+# Pre-resolution agreement of the language-model second coding with the frozen primary codes (40 sampled works).
+stats.update(coding.write_agreement(G))
 (G / 'stats.json').write_text(json.dumps(stats, indent=2) + '\n', encoding='utf-8')
 batches = stats['source_batch']
 modules = stats['survey_module']

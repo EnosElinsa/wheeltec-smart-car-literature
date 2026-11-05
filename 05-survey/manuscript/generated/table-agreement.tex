@@ -1,0 +1,30 @@
+\begin{table*}[!t]
+\centering
+\caption{Agreement between the independent second coding and the frozen primary codes on the 40 sampled works, before adjudication. Both coders are language-model sessions on different models, so the values describe how consistently two such coders apply the codebook to shared evidence. They are not human inter-rater reliability.}
+\label{tab:agreement}
+\surveytableformat
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}L{2.9cm}Yrrrrrrrr@{}}
+\toprule
+\textbf{Attribute} & \textbf{Unit} & \textbf{n} & \textbf{Cat.} & \textbf{Agr. \%} & \textbf{$\kappa$} & \textbf{Exact \%} & \textbf{Flag $\kappa$} & \textbf{Works} & \textbf{P/S/B} \\
+\midrule
+Functions & non-principal function flags, pooled & 160 & 2 & 96.2 & 0.89 & 85.0 & 0.75--1.00 & 6 & 2/4/0 \\
+Addressed sources & source flags, pooled & 360 & 2 & 96.4 & 0.86 & 70.0 & 0.66--1.00 & 12 & 4/8/0 \\
+Manipulated sources (D1) & source flags, pooled & 360 & 2 & 94.7 & 0.53 & 67.5 & -- & 13 & 4/8/1 \\
+Selected sources (D2) & source flags, pooled & 360 & 2 & 95.8 & 0.61 & 70.0 & -- & 12 & 4/7/1 \\
+Incidental sources (D3) & source flags, pooled & 360 & 2 & 100.0 & 1.00 & 100.0 & -- & 0 & 0/0/0 \\
+Named sources (D1 or D2) & source flags, pooled & 360 & 2 & 97.2 & 0.86 & 80.0 & 0.63--1.00 & 8 & -- \\
+Response family & primary family & 40 & 20 & 85.0 & 0.84 & -- & -- & 6 & -- \\
+Response family & full value, with the optional secondary family of version 1.0 & 40 & 46 & 30.0 & 0.29 & -- & -- & 28 & 24/0/4 \\
+Publication class & strongest class & 40 & 3 & 72.5 & 0.58 & -- & -- & 11 & -- \\
+Nominal control & value & 40 & 3 & 67.5 & 0.42 & -- & -- & 13 & 4/9/0 \\
+Single-level injection & value & 40 & 2 & 92.5 & 0.54 & -- & -- & 3 & 2/1/0 \\
+Task setting & value & 40 & 4 & 90.0 & 0.86 & -- & -- & 4 & 1/2/1 \\
+Same-experiment class & value & 40 & 3 & 82.5 & 0.69 & -- & -- & 7 & 4/3/0 \\
+Same-experiment setting & value & 40 & 3 & 92.5 & 0.86 & -- & -- & 3 & 1/2/0 \\
+Degradation evidence level & value & 40 & 7 & 85.0 & 0.81 & -- & -- & 6 & 3/2/1 \\
+Drivetrain effect & value & 40 & 2 & 87.5 & $-$0.04 & -- & -- & 5 & 5/0/0 \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}\parbox{\linewidth}{\footnotesize\raggedright n counts the scored units and Cat. the categories that either coder used. $\kappa$ is unweighted Cohen's kappa (n/a when both coders use one category). Set-valued attributes are scored as one binary flag per value: $\kappa$ and Agr. pool all flag decisions of the attribute (for functions the four non-principal functions of each work), Exact gives the share of works with identical sets, and Flag $\kappa$ the range of the per-flag kappas (functions over the 32 works whose principal function differs, sources over all 40 works). The pre-registered unit of response family is the primary family; the second row compares the full value, which in codebook version 1.0 could add an optional secondary family. Named sources and publication class are derived from the three class columns. Works counts the works with differing values and P/S/B how the logged disagreements were resolved: primary kept, second adopted, both revised.}
+\end{table*}

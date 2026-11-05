@@ -1,0 +1,314 @@
+code,attribute,value,source,locator,note
+E01,src_addressed,PER,card,"card: Problem, pp. 1-2",
+E01,response_family,IV-A,card,"card: Mechanism, pp. 3-5",
+E01,src_selected,PER,card,"card: Evidence type and transfer, p. 5",
+E01,level_degradation,D,card,"card: Platform and setup, pp. 5-7",
+E05,functions,REL,transcription,"transcription: Abstract and Sec. 1 Introduction, PDF p. 1",degeneracy diagnosis is a failure-monitoring function
+E05,src_addressed,PER,transcription,"transcription: Sec. 1 Introduction, PDF p. 1",
+E05,response_family,IV-A,transcription,"transcription: Sec. 1 and degeneracy-analysis method, PDF pp. 1-16",
+E05,response_family,VIII-B,transcription,"transcription: degeneracy detection and analysis, PDF pp. 5-16",
+E05,src_selected,PER,transcription,"transcription: real and simulated degeneracy experiments, PDF pp. 24-36","corridors, tunnels, and spiral scenes are selected for degeneracy"
+E05,level_degradation,R,transcription,"transcription: real-data experiments, PDF pp. 24-36",
+E07,functions,REL,transcription,"transcription: Resilience under severe and persistent sensor degradation, PDF p. 2",
+E07,src_addressed,PER,transcription,"transcription: Hierarchical adaptation on sensor fusion, PDF pp. 2-5",
+E07,response_family,IV-B,transcription,"transcription: Adaptive engine selection for mixed degradation, PDF p. 5",
+E07,response_family,VIII-C,transcription,"transcription: Learning-based inertial odometry for complete degradation, PDF pp. 5-7",
+E07,src_manipulated,PER,transcription,"transcription: Fig. 5 sensor-drop experiment, PDF p. 5",sensors are sequentially and completely blocked
+E07,nominal_control,yes,transcription,"transcription: Fig. 5 sensor-drop experiment, PDF p. 5",the sequence begins with functioning sensors
+E07,level_degradation,O,transcription,"transcription: Fig. 5 online odometry experiment, PDF p. 5",
+E12,functions,LOC,transcription,"transcription: Introduction and uncertainty-map method, PDF pp. 1-6",map and pose uncertainty are mechanism outputs
+E12,response_family,V-B,transcription,"transcription: uncertainty frontiers and exploration objectives, PDF pp. 1-6",
+E12,task_setting,simulation,transcription,"transcription: Sec. 5 Experiments, PDF pp. 7-9",Gazebo exploration outcomes
+E13,functions,LOC,card,"card: Mechanism, pp. 9-10",Fisher information changes the exploration roadmap
+E13,src_addressed,PER,card,"card: Problem, pp. 1-2",
+E13,src_addressed,TER,card,"card: Mechanism, pp. 5-6",
+E13,response_family,V-B,card,"card: Mechanism, pp. 6-9",
+E13,response_family,V-A,card,"card: Mechanism, pp. 5-6",
+E13,src_selected,TER,card,"card: Platform and setup, p. 11",Cave and Marsyard are selected uneven-terrain worlds
+E13,src_incidental,PER,card,"card: Platform and setup, p. 14",visual tracking failures occurred in the SLAM ablation
+E13,task_setting,simulation,card,"card: Key quantitative results, p. 12, Table 2",
+E13,deg_task_class,D2,card,"card: Key quantitative results, p. 12, Table 2",exploration time is reported in selected terrain worlds
+E13,deg_task_setting,simulation,card,"card: Platform and setup, pp. 11-12",
+E13,level_degradation,S,card,"card: Evidence type and transfer, pp. 12-19",numeric condition results are simulated
+E19,src_addressed,DYN,card,"card: Problem, p. 1",
+E19,src_addressed,RES,card,"card: Problem, pp. 1-2",CPU-only operation is a design target
+E19,response_family,IV-D,card,"card: Mechanism, pp. 3-4",
+E19,src_selected,DYN,card,"card: Platform and setup, p. 4",dynamic RGB-D sequences are deliberately used
+E19,src_selected,RES,card,"card: Compute and latency, pp. 4-6",the evaluated system is deliberately CPU-only
+E19,single_level_injection,yes,card,"card: Compute and latency, pp. 4-6",GPU use is withheld at one reported resource level
+E19,level_degradation,D,card,"card: Platform and setup, pp. 4-6",
+E25,src_addressed,DYN,card,"card: Problem, pp. 1-2",
+E25,response_family,V-D,card,"card: Mechanism, pp. 5-10",
+E25,src_manipulated,DYN,card,"card: Platform and setup, pp. 10-13",pedestrian distributions and counts are controlled
+E25,task_setting,both,card,"card: Key quantitative results, pp. 11-13",duration and collision outcomes
+E25,deg_task_class,D1,card,"card: Key quantitative results, pp. 11-13",task outcomes are reported across controlled moving-agent conditions
+E25,deg_task_setting,physical,card,"card: Platform and setup, p. 13",one- and three-pedestrian hardware runs report collision outcomes
+E25,level_degradation,P,card,"card: Platform and setup, p. 13",
+E31,functions,LOC,card,"card: Mechanism, pp. 8-10",collaborative SLAM estimates and merges robot maps
+E31,src_addressed,COM,card,"card: Problem, pp. 1-2",
+E31,response_family,VII-B,card,"card: Mechanism, pp. 9-10",
+E31,src_selected,COM,card,"card: Evidence type and transfer, p. 15",a fixed sparse publishing schedule is imposed
+E31,single_level_injection,yes,card,"card: Evidence type and transfer, p. 15",only one ten-second schedule is reported
+E31,level_degradation,R,card,"card: Evidence type and transfer, p. 15",communication evaluation replays authors' recordings
+E33,functions,PLN,transcription,"transcription: decentralized exploration architecture, PDF pp. 1-4",map prediction changes frontier utility and exploration
+E33,src_addressed,TER,transcription,"transcription: Introduction, PDF pp. 1-2",
+E33,src_addressed,COM,transcription,"transcription: Sec. III-C Communication Between Robots, PDF p. 4",
+E33,src_addressed,RES,transcription,"transcription: Introduction and exploration architecture, PDF pp. 1-4",
+E33,response_family,VII-B,transcription,"transcription: Sec. III-C Communication Between Robots, PDF p. 4",
+E33,response_family,V-B,transcription,"transcription: exploration architecture and frontier utility, PDF pp. 4-8",
+E33,src_manipulated,COM,transcription,"transcription: Fig. 4 and Table I CSP comparison, PDF pp. 8-11","CSP is varied at 25, 50, and 100 percent"
+E33,src_manipulated,RES,transcription,"transcription: Table II energy-budget comparison, PDF p. 12",
+E33,src_selected,TER,transcription,"transcription: simulation and hardware environments, PDF pp. 11-15",uneven natural terrain is deliberately selected
+E33,nominal_control,yes,transcription,"transcription: Fig. 4 and Table I, PDF pp. 8-11",100 percent CSP removes dropout
+E33,task_setting,both,transcription,"transcription: Table II and hardware exploration, PDF pp. 12-15",coverage and completion are reported
+E33,deg_task_class,D1,transcription,"transcription: Table II, PDF p. 12",coverage is reported at multiple energy budgets
+E33,deg_task_setting,physical,transcription,"transcription: indoor hardware exploration, PDF p. 15",coverage is reported when budgets are depleted
+E33,level_degradation,P,transcription,"transcription: hardware experiments, PDF pp. 14-15",
+E40,functions,LOC,card,"card: Mechanism, pp. 3-6",distributed SLAM estimation is a contributed function
+E40,src_addressed,COM,card,"card: Problem, pp. 2-3",
+E40,response_family,VII-B,card,"card: Mechanism, pp. 3-6",
+E40,response_family,VII-C,card,"card: Platform and setup, p. 9",
+E40,src_manipulated,COM,card,"card: Platform and setup, pp. 7-9",drops and information delay are varied
+E40,level_degradation,D,card,"card: Platform and setup, p. 9",public pose graphs are replayed under modeled communication
+E44,functions,PLN,card,"card: Mechanism, pp. 4-5",the MDP chooses exploration and goal actions
+E44,src_addressed,MAP,card,"card: Problem, pp. 1-2",
+E44,response_family,VI-A,card,"card: Mechanism, pp. 2-4",
+E44,response_family,VI-B,card,"card: Mechanism, pp. 4-5",
+E44,src_manipulated,MAP,card,"card: Platform and setup, p. 6",objects are moved or added and graph updating is ablated
+E44,src_incidental,PER,card,"card: Stated limitations, p. 8",missing depth and motion blur caused observed failures
+E44,task_setting,simulation,card,"card: Key quantitative results, pp. 6-7, Tables II-IV",
+E44,deg_task_class,D1,card,"card: Baselines and controls, p. 6, Fig. 5",updated and non-updated graph variants are compared under moved-object tasks
+E44,deg_task_setting,simulation,card,"card: Platform and setup, p. 6",
+E44,level_degradation,S,card,"card: Evidence type and transfer, pp. 6-8",numeric condition results are simulated
+E46,functions,PLN,transcription,"transcription: Sec. III-B RAPPER and Sec. III-C NæVIS, PDF pp. 4-5",behavior-tree and local planners contribute navigation
+E46,response_family,VI-B,transcription,"transcription: Sec. III-A GeoQA, PDF p. 4",
+E46,task_setting,both,transcription,"transcription: Tables I and III, PDF p. 7",simulation SR/SPL and physical-trial SPL are reported
+E50,functions,PLN,card,"card: Mechanism, pp. 4-5",the learned policy executes velocity sequences
+E50,src_addressed,DYN,card,"card: Platform and setup, p. 7",
+E50,src_addressed,RES,card,"card: Problem and Compute and latency, pp. 2, 6-7",
+E50,response_family,VI-B,card,"card: Mechanism, pp. 4-5",
+E50,response_family,V-C,card,"card: Mechanism, pp. 4-5",
+E50,src_selected,DYN,card,"card: Platform and setup, p. 7",six targets are moved after navigation starts
+E50,src_incidental,RES,card,"card: Evidence type and transfer, pp. 7, 15-16",slow inference and encoder size affected execution
+E50,single_level_injection,yes,card,"card: Platform and setup, p. 7",the moving-target test reports one staged level
+E50,task_setting,physical,card,"card: Key quantitative results, pp. 6-7, Tables 2-3",
+E50,deg_task_class,D2,card,"card: Key quantitative results, pp. 6-7, Table 2",arrival rate is reported for moved targets
+E50,deg_task_setting,physical,card,"card: Platform and setup, pp. 6-7",
+E50,level_degradation,P,card,"card: Evidence type and transfer, pp. 6-7",
+E54,src_addressed,MOD,transcription,"transcription: Sec. III Methodology, PDF pp. 3-4",conformal p-values monitor learned anomaly scores
+E54,response_family,VIII-B,transcription,"transcription: Sec. III-F Conformal Prediction, PDF p. 4",
+E54,src_selected,MOD,transcription,"transcription: Sec. III-A and Sec. V, PDF pp. 3, 6",anomalous inputs and model errors are separately reported
+E54,level_degradation,R,transcription,"transcription: Sec. V-B and Table III, PDF p. 6",
+E58,functions,MRC,transcription,"transcription: Introduction and problem variants, PDF pp. 1-2",fleet selection and shared charging schedules coordinate robots
+E58,src_addressed,RES,transcription,"transcription: Introduction and Sec. IV Robust Scheduling, PDF pp. 1, 4",
+E58,response_family,VIII-D,transcription,"transcription: charging-schedule formulation, PDF pp. 1-5",
+E58,response_family,VII-A,transcription,"transcription: robot-selection problem variant, PDF pp. 2-5",
+E58,src_manipulated,RES,transcription,"transcription: Sec. IV-A and Sec. V, PDF pp. 4-7",operating periods and reserves are varied
+E58,task_setting,simulation,transcription,"transcription: Sec. VI mission simulation, PDF pp. 7-8",aggregate flying time and delayed charging are reported
+E58,deg_task_class,D1,transcription,"transcription: Fig. 6 and Sec. VI, PDF pp. 7-8",mission service is compared across schedules and delays
+E58,deg_task_setting,simulation,transcription,"transcription: Sec. VI mission simulation, PDF pp. 7-8",
+E58,level_degradation,N,transcription,"transcription: Secs. V-VI, PDF pp. 6-8",
+E59,functions,PLN,card,"card: Mechanism, pp. 2-5",recovery is integrated with a safe-corridor planner
+E59,response_family,VIII-C,card,"card: Mechanism, p. 5",
+E59,response_family,V-D,card,"card: Mechanism, pp. 2-5",
+E59,task_setting,simulation,card,"card: Key quantitative results, p. 6, Fig. 6",goal success is reported over 120 Gazebo runs
+F03,functions,MRC,card,"card: Mechanism, pp. 3-6",robots exchange state and common-landmark observations
+F03,functions,REL,card,"card: Mechanism, pp. 7-8",FDIR detects and repairs estimator faults
+F03,src_addressed,SFA,card,"card: Problem, pp. 1-3",
+F03,src_addressed,MAP,card,"card: Problem, pp. 1-3",
+F03,response_family,IV-F,card,"card: Mechanism, pp. 3-6",
+F03,response_family,VIII-C,card,"card: Mechanism, p. 8",
+F03,src_manipulated,SFA,card,"card: Platform and setup, pp. 8-13",observation biases are injected
+F03,src_manipulated,MAP,card,"card: Platform and setup, pp. 8-13",prior-landmark faults are injected
+F03,level_degradation,R,card,"card: Evidence type and transfer, pp. 12-14",faults are evaluated on recorded vehicle data
+F05,functions,PLN,card,"card: Mechanism, pp. 3-4",candidate trajectories are executed and adjusted by DWA
+F05,src_addressed,TER,card,"card: Problem, pp. 1, 3-4",
+F05,src_addressed,RES,card,"card: Compute and latency, pp. 4, 7",the local planner continues while the slow model responds
+F05,response_family,VI-C,card,"card: Mechanism, pp. 3-4",
+F05,response_family,V-A,card,"card: Mechanism, pp. 3-4",
+F05,src_selected,TER,card,"card: Platform and setup, pp. 4-7","curbs, grass, flower beds, and crossings are selected contexts"
+F05,task_setting,physical,card,"card: Platform and setup, p. 7","distance, time, and interventions are reported"
+F05,deg_task_class,D2,card,"card: Evidence type and transfer, pp. 6-7",one physical route combines selected traversability cases and task outcomes
+F05,deg_task_setting,physical,card,"card: Platform and setup, p. 7",
+F05,level_degradation,P,card,"card: Evidence type and transfer, p. 7",
+K04,src_addressed,TER,card,"card: Problem, pp. 1-2",
+K04,response_family,resource,card,"card: Evidence type and transfer, pp. 1-6",
+K04,src_selected,TER,card,"card: Platform and setup, pp. 3, 6",dataset and evaluation set are built around difficult off-road terrain
+K04,level_degradation,R,card,"card: Evidence type and transfer, pp. 3-6",authors' recordings also benchmark dynamics models
+K13,functions,PLN,card,"card: Mechanism, pp. 2-3",the image-goal policy drives robots
+K13,src_addressed,SFA,card,"card: Platform and setup, p. 6",
+K13,src_addressed,ACT,card,"card: Platform and setup, p. 6",
+K13,src_addressed,MOD,card,"card: Evidence type and transfer, pp. 1, 4-6",cross-domain generalization is separately evaluated
+K13,response_family,VI-B,card,"card: Mechanism, pp. 2-3",
+K13,response_family,V-C,card,"card: Mechanism, pp. 2-3",
+K13,src_selected,SFA,card,"card: Platform and setup, p. 6",camera viewpoint is deliberately perturbed
+K13,src_selected,ACT,card,"card: Platform and setup, p. 6",steering is clipped and the robot is damaged during navigation
+K13,src_selected,MOD,card,"card: Platform and setup, pp. 4-6",zero-shot deployment uses unseen robots and domains
+K13,single_level_injection,yes,card,"card: Platform and setup, p. 6",each physical perturbation is reported at one imposed level
+K13,task_setting,physical,card,"card: Platform and setup, pp. 4-6",goal-reaching outcomes are reported
+K13,deg_task_class,D2,card,"card: Key quantitative results, p. 6, Fig. 5",goal reaching is reported under imposed degradation without a same-system level comparator
+K13,deg_task_setting,physical,card,"card: Platform and setup, p. 6",
+K13,level_degradation,P,card,"card: Evidence type and transfer, pp. 4-6",
+K13,drivetrain_effect,yes,card,"card: Key quantitative results, p. 6",clipped angular velocity changes the executed path
+K16,functions,PLN,card,"card: Mechanism, pp. 3-4",the policy executes goal and exploration actions
+K16,response_family,VI-B,card,"card: Mechanism, pp. 3-4",
+K16,response_family,V-B,card,"card: Mechanism, pp. 3-4",
+K16,task_setting,physical,card,"card: Platform and setup, pp. 4-5",success and collisions are reported on a robot
+M10,functions,LOC,transcription,"transcription: Sec. IV-D VLM-Based Global Localization, PDF pp. 7-8",
+M10,functions,PLN,transcription,"transcription: Sec. IV-F Local Planning and Replanning, PDF pp. 8-9",
+M10,src_addressed,PER,transcription,"transcription: Introduction and real-world environment, PDF pp. 1, 8",
+M10,src_addressed,MAP,transcription,"transcription: Sec. IV-F Local Planning and Replanning, PDF pp. 8-10",
+M10,src_addressed,RES,transcription,"transcription: Introduction and lightweight VLM evaluation, PDF pp. 2, 9",
+M10,response_family,VI-B,transcription,"transcription: task interpretation and OSM grounding, PDF pp. 3-7",
+M10,response_family,IV-E,transcription,"transcription: Sec. IV-D VLM-Based Global Localization, PDF pp. 7-8",
+M10,src_manipulated,MAP,transcription,"transcription: Table III Comparative Analysis of Replanner, PDF p. 10",OSM deviations are varied from zero to two nonzero levels
+M10,src_selected,PER,transcription,"transcription: real-world environment, PDF p. 8",GPS is deliberately disabled during navigation
+M10,nominal_control,yes,transcription,"transcription: Table III, PDF p. 10",zero map deviation is included
+M10,single_level_injection,yes,transcription,"transcription: real-world environment, PDF p. 8",GPS is disabled at one reported level
+M10,task_setting,both,transcription,"transcription: navigation results, PDF pp. 10-11",simulation success rates and campus completion outcomes are reported
+M10,deg_task_class,D1,transcription,"transcription: Table III, PDF p. 10",SR and SPL are reported across map-deviation levels
+M10,deg_task_setting,physical,transcription,"transcription: real-world results, PDF p. 11",the GPS-disabled campus sequence reports completion and collisions
+M10,level_degradation,P,transcription,"transcription: real-world results, PDF p. 11",
+M25,functions,PLN,transcription,"transcription: Introduction and Proposed Approach, PDF pp. 1-4",CQLite selects exploration frontiers
+M25,src_addressed,COM,transcription,"transcription: Introduction and Proposed Approach, PDF pp. 1-4",
+M25,src_addressed,RES,transcription,"transcription: Introduction and evaluation, PDF pp. 1, 7-8",
+M25,response_family,VII-B,transcription,"transcription: Proposed Approach, PDF pp. 3-5",
+M25,response_family,V-B,transcription,"transcription: Proposed Approach, PDF pp. 3-5",
+M25,task_setting,simulation,transcription,"transcription: Experiments and results, PDF pp. 5-8",coverage and mapping time are reported in Gazebo
+M26,src_addressed,TER,transcription,"transcription: Sec. I Introduction, PDF p. 1",
+M26,response_family,V-A,transcription,"transcription: Sec. III and method, PDF pp. 2-6",
+M26,src_selected,TER,transcription,"transcription: Sec. V Experiments, PDF pp. 6-7","vegetated hillside, garden, and park are selected"
+M26,task_setting,physical,transcription,"transcription: Sec. V and Table I, PDF pp. 6-7","path length, safety distance, and collision are reported"
+M26,deg_task_class,D2,transcription,"transcription: Sec. V and Table I, PDF pp. 6-7",physical task outcomes occur in selected vegetation
+M26,deg_task_setting,physical,transcription,"transcription: Sec. V Experiments, PDF pp. 6-7",
+M26,level_degradation,P,transcription,"transcription: Sec. V Experiments, PDF pp. 6-7",
+N08,src_addressed,TER,card,"card: Problem and Mechanism, p. 4",
+N08,response_family,V-A,card,"card: Mechanism, p. 4",
+N08,response_family,V-B,card,"card: Platform and setup, pp. 5-8",
+N08,src_selected,TER,card,"card: Evidence type and transfer, pp. 5, 7-8",challenging uneven terrains are selected
+N08,task_setting,both,card,"card: Platform and setup, pp. 5, 7-8","exploration completion, time, and path length are reported"
+N08,deg_task_class,D2,card,"card: Platform and setup, pp. 5, 7-8",task outcomes occur in selected terrain scenes
+N08,deg_task_setting,physical,card,"card: Platform and setup, pp. 7-8",
+N08,level_degradation,P,card,"card: Evidence type and transfer, pp. 7-8",
+N08,drivetrain_effect,yes,card,"card: Mechanism and Transfer conditions, pp. 4, 7-8",heading consistency and platform kinematics alter path feasibility
+N14,functions,REL,card,"card: Mechanism and Stated limitations, pp. 1-2, 7",the bounded-silence trigger provides a fallback against event-generator faults
+N14,src_addressed,SFA,card,"card: Mechanism, pp. 1-2, 7",event-generator faults and attacks produce missing or wrong triggers
+N14,src_addressed,COM,card,"card: Problem and Compute and latency, pp. 1, 7-8",
+N14,src_addressed,RES,card,"card: Problem and Mechanism, pp. 1-2",
+N14,response_family,V-E,card,"card: Mechanism, pp. 1-2, 7",
+N14,response_family,VIII-C,card,"card: Mechanism, p. 7",the controller falls back to periodic sampling
+N14,drivetrain_effect,yes,card,"card: Platform and setup, pp. 7-8",Ackermann steering and actuator limits shape the feasible controller
+R05,src_addressed,PER,card,"card: Problem, pp. 1-2",
+R05,src_addressed,RES,card,"card: Compute and latency, p. 16",embedded acceleration is a design goal
+R05,response_family,IV-B,card,"card: Mechanism, pp. 3-10",point and line features complement one another
+R05,response_family,IV-E,card,"card: Mechanism, pp. 3-10",
+R05,src_manipulated,PER,card,"card: Platform and setup, pp. 10-14",illumination levels and generated darkness are varied
+R05,src_manipulated,RES,card,"card: Compute and latency, p. 16",the same system is timed on PC and Jetson
+R05,nominal_control,yes,card,"card: Platform and setup, pp. 10-14",normal-light data accompany dark variants
+R05,level_degradation,D,card,"card: Evidence type and transfer, pp. 10-16",condition results are dataset replay and compute benchmarks
+R10,functions,SEM,card,"card: Mechanism, pp. 2-4",language features and prompts are part of localization
+R10,response_family,IV-E,card,"card: Mechanism, pp. 2-4",
+R10,response_family,VI-B,card,"card: Mechanism, pp. 2-4",
+R22,functions,PLN,card,"card: Mechanism, pp. 4-10",task allocation and route planning are contributed functions
+R22,src_addressed,COM,card,"card: Problem, pp. 1-2",
+R22,response_family,VII-A,card,"card: Mechanism, pp. 4-10",
+R22,response_family,VII-B,card,"card: Mechanism, pp. 4-10",
+R22,task_setting,both,card,"card: Platform and setup, pp. 11-16",simulation and physical exploration times are reported
+R23,functions,LOC,card,"card: Mechanism, pp. 5-11",distributed C-SLAM estimation is contributed
+R23,src_addressed,SFA,card,"card: Problem and Mechanism, pp. 1-11",
+R23,src_addressed,COM,card,"card: Problem and Mechanism, pp. 1-11",
+R23,response_family,VII-C,card,"card: Mechanism, pp. 5-11",
+R23,response_family,VII-B,card,"card: Mechanism, pp. 5-11",
+R23,src_manipulated,SFA,card,"card: Platform and setup, pp. 11-16",outlier conditions and robust components are varied
+R23,src_manipulated,COM,card,"card: Platform and setup, pp. 11-16","delay, rate, range, and dropout conditions are varied"
+R23,level_degradation,D,card,"card: Evidence type and transfer, pp. 16-18",real-data benchmarks are replayed with modeled communication
+R26,functions,PLN,card,"card: Mechanism, pp. 3-4",the VLM proposes paths and the specialist reranks them
+R26,src_addressed,TER,card,"card: Problem and Platform and setup, pp. 1, 5-6",
+R26,src_addressed,MOD,card,"card: Mechanism, pp. 3-4",the specialist rejects infeasible learned plans
+R26,response_family,VI-C,card,"card: Mechanism, pp. 3-4",
+R26,response_family,V-A,card,"card: Mechanism, pp. 3-4",
+R26,src_manipulated,TER,card,"card: Key quantitative results, p. 6, Tables II-III",stairs and ramps are imposed with a response ablation
+R26,src_manipulated,MOD,card,"card: Key quantitative results, p. 6, Tables II-III",affordance modulation is enabled and disabled under infeasible proposals
+R26,task_setting,physical,card,"card: Key quantitative results, p. 6, Tables II-III",success is reported on Spot and Hound
+R26,deg_task_class,D1,card,"card: Key quantitative results, p. 6, Table II",success is compared with and without affordance modulation
+R26,deg_task_setting,physical,card,"card: Platform and setup, pp. 5-6",
+R26,level_degradation,P,card,"card: Evidence type and transfer, pp. 5-6",
+R26,drivetrain_effect,yes,card,"card: Key quantitative results, p. 6, Table II",the wheeled Hound must select ramps rather than stairs
+R31,functions,LOC,card,"card: Mechanism, pp. 4-10",cloud services construct and fuse maps
+R31,functions,PLN,card,"card: Mechanism, pp. 4-10",cloud trajectories and edge MPC drive navigation
+R31,functions,MRC,card,"card: Platform and setup, pp. 11-19",robots coordinate mapping and collision avoidance
+R31,src_addressed,COM,card,"card: Problem and Mechanism, pp. 1-10",
+R31,src_addressed,RES,card,"card: Problem and Mechanism, pp. 1-10",
+R31,response_family,VIII-D,card,"card: Mechanism, pp. 4-10",
+R31,response_family,VII-C,card,"card: Mechanism, p. 9",
+R31,src_manipulated,RES,card,"card: Key quantitative results, p. 15",client load is scaled against fixed cloud resources
+R31,task_setting,both,card,"card: Platform and setup, pp. 11-19",simulation and outdoor physical navigation and mapping outcomes are reported
+R31,deg_task_class,D2,card,"card: Platform and setup, pp. 17-19",physical tasks use one deliberately resource-constrained configuration
+R31,deg_task_setting,physical,card,"card: Platform and setup, pp. 17-19",
+R31,level_degradation,P,card,"card: Evidence type and transfer, pp. 17-19",
+R33,functions,LOC,card,"card: Problem and Mechanism, pp. 1-9",SLAM tracking quality is the mechanism input and outcome
+R33,functions,PLN,card,"card: Mechanism, pp. 4-9",active view actions change motion
+R33,src_addressed,PER,card,"card: Problem, pp. 1-4",
+R33,response_family,VIII-C,card,"card: Mechanism, pp. 4-9",
+R33,response_family,IV-A,card,"card: Mechanism, pp. 4-9",
+R33,src_selected,PER,card,"card: Platform and setup, pp. 3-13",transition and low-texture scenes are deliberately selected
+R33,task_setting,simulation,card,"card: Evidence type and transfer, pp. 10-13",transition completion is evaluated in simulation
+R33,deg_task_class,D2,card,"card: Baselines and controls, pp. 10-13",completion is reported in selected transition scenarios
+R33,deg_task_setting,simulation,card,"card: Platform and setup, pp. 10-13",
+R33,level_degradation,S,card,"card: Evidence type and transfer, pp. 10-14",
+S14,functions,PLN,card,"card: Mechanism and Platform and setup, pp. 4-6",the adapted policy controls navigation
+S14,src_addressed,TER,card,"card: Problem and Mechanism, pp. 1, 4-6",
+S14,src_addressed,DYN,card,"card: Problem and Mechanism, pp. 1, 4-6",
+S14,src_addressed,MOD,card,"card: Problem and Mechanism, pp. 1, 4-6",online learning addresses base-policy modeling errors
+S14,response_family,VIII-C,card,"card: Mechanism, pp. 4-5",
+S14,response_family,V-C,card,"card: Mechanism, pp. 4-5",
+S14,src_manipulated,TER,card,"card: Baselines and controls, p. 6",base and adapted policies are compared on uneven floor
+S14,src_manipulated,DYN,card,"card: Baselines and controls, p. 6",base and adapted policies are compared around pedestrians
+S14,src_manipulated,MOD,card,"card: Baselines and controls, p. 6",the adaptation response is compared with the pre-trained base policy
+S14,task_setting,physical,card,"card: Platform and setup, pp. 6, 14","collisions, interventions, and SPL are reported"
+S14,deg_task_class,D1,card,"card: Baselines and controls, p. 6",task outcomes compare the base and adapted policy under organized conditions
+S14,deg_task_setting,physical,card,"card: Platform and setup, p. 6",
+S14,level_degradation,P,card,"card: Evidence type and transfer, pp. 6, 14",
+S19,functions,LOC,card,"card: Mechanism, pp. 1, 6-7",the benchmark evaluates and modifies SLAM loop closing
+S19,src_addressed,PER,card,"card: Platform and setup, p. 3",
+S19,src_addressed,RES,card,"card: Problem and Compute and latency, pp. 1, 7",
+S19,response_family,VIII-D,card,"card: Problem and Mechanism, pp. 1, 6-7",
+S19,response_family,IV-E,card,"card: Mechanism, pp. 6-7",
+S19,src_manipulated,RES,card,"card: Mechanism and Compute and latency, pp. 6-7",input frame rate and loop-closure configurations are controlled
+S19,src_selected,PER,card,"card: Platform and setup, p. 3",seasonal outdoor sequences are deliberately collected
+S19,level_degradation,R,card,"card: Evidence type and transfer, pp. 3, 6-7",
+S20,src_addressed,PER,transcription,"transcription: Sec. 1 Introduction, PDF pp. 1-3",
+S20,response_family,IV-B,transcription,"transcription: Secs. 4-7, PDF pp. 7-21",auxiliary lighting and image enhancement complement vision
+S20,src_manipulated,PER,transcription,"transcription: LUCID dataset and results table, PDF pp. 8-21",daylight and multiple LED intensities are compared on repeated paths
+S20,nominal_control,yes,transcription,"transcription: results table daylight reference, PDF p. 13",daylight reference is included
+S20,level_degradation,R,transcription,"transcription: LUCID dataset results, PDF pp. 13-21",
+S25,functions,PLN,card,"card: Mechanism, pp. 3-21",the macro-action MDP plans joint motion and check-ins
+S25,src_addressed,SFA,card,"card: Stated limitations, pp. 18, 21",
+S25,src_addressed,COM,card,"card: Problem and Mechanism, pp. 1-3, 21",
+S25,response_family,VII-D,card,"card: Platform and setup, p. 14",
+S25,response_family,VII-C,card,"card: Mechanism, pp. 3, 21",
+S25,src_manipulated,SFA,card,"card: Baselines and controls, pp. 15-18",observation nonidealities are varied numerically
+S25,src_manipulated,COM,card,"card: Baselines and controls, pp. 15-21",check-in cost and observation delay are varied
+S25,nominal_control,yes,card,"card: Baselines and controls, pp. 15-18",perfect observations and zero-delay cases are included
+S25,level_degradation,P,card,"card: Platform and setup, p. 14",hardware formation runs use deliberately sparse check-ins
+S29,functions,LOC,card,"card: Mechanism, pp. 3-11",collaborative SLAM estimation is contributed
+S29,src_addressed,COM,card,"card: Problem, pp. 1-3",
+S29,response_family,VII-B,card,"card: Mechanism, pp. 3-11",
+X07,functions,LOC,card,"card: Mechanism, pp. 4-12",the monitor evaluates EKF-SLAM localization
+X07,src_addressed,SFA,card,"card: Problem, pp. 1-2",
+X07,response_family,VIII-B,card,"card: Mechanism, pp. 5-12",
+X07,response_family,IV-A,card,"card: Mechanism, pp. 4-12",high-risk landmarks are excluded from updates
+X07,src_manipulated,SFA,card,"card: Baselines and controls, p. 13",properly and poorly spaced landmark maps create controlled association failure
+X07,nominal_control,yes,card,"card: Baselines and controls, p. 13",properly spaced landmarks provide a no-fault level
+X07,level_degradation,R,card,"card: Evidence type and transfer, pp. 14-15",the selected vehicle recording is the strongest named-condition result
+X12,functions,MRC,transcription,"transcription: Introduction and scouting architecture, PDF pp. 1-3",a scout supplies the action robot's mission-gain map
+X12,src_addressed,TER,transcription,"transcription: vibration-aware scenario, PDF pp. 5-8",
+X12,src_addressed,DYN,transcription,"transcription: occlusion-aware scenario, PDF pp. 4-5",
+X12,response_family,V-E,transcription,"transcription: mission-gain MPPI controller, PDF pp. 1-4",
+X12,response_family,VII-B,transcription,"transcription: scout map distillation and transmission, PDF pp. 2-4",
+X12,src_manipulated,TER,transcription,"transcription: vibration simulations and experiments, PDF pp. 6-8",roughness and mission-gain response are compared
+X12,src_manipulated,DYN,transcription,"transcription: occlusion simulations and experiments, PDF pp. 4-6",dynamic-agent encounters compare mission-gain and shortest-path responses
+X12,task_setting,both,transcription,"transcription: two validation scenarios, PDF pp. 4-8","discovery distance, goal completion, collisions, and payload retention are reported"
+X12,deg_task_class,D1,transcription,"transcription: vibration experiments, PDF p. 8",payload retention is compared with and without mission-gain response on debris
+X12,deg_task_setting,physical,transcription,"transcription: vibration experiments, PDF p. 8",
+X12,level_degradation,P,transcription,"transcription: vibration experiments, PDF p. 8",

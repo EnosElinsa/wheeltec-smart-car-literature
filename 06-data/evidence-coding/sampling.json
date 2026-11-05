@@ -1,0 +1,75 @@
+{
+  "note": "Sampling record of the independent second coding, published after that coding was complete. The draw follows the sampling block of codebook.json (version 1.0) and is reproduced by python scripts/coding.py --draw-sample --check-only (run in 05-survey/manuscript). Per-work strata and draw order are in sample-manifest.csv.",
+  "drawn_on": "2026-11-04",
+  "rule": "codebook.json sampling block, implemented by coding.draw_sample",
+  "seed": 20261105,
+  "k": 1,
+  "generator_seed": 20261106,
+  "python": "3.14.3",
+  "allocation": {
+    "IV": {
+      "full": 2,
+      "light-legacy": 2,
+      "light-targeted": 4
+    },
+    "V": {
+      "full": 2,
+      "light-legacy": 3,
+      "light-targeted": 3
+    },
+    "VI": {
+      "full": 2,
+      "light-legacy": 2,
+      "light-targeted": 4
+    },
+    "VII": {
+      "full": 2,
+      "light-legacy": 2,
+      "light-targeted": 4
+    },
+    "VIII": {
+      "full": 2,
+      "light-legacy": 2,
+      "light-targeted": 4
+    }
+  },
+  "allocation_totals": {
+    "full": 10,
+    "light-legacy": 11,
+    "light-targeted": 19
+  },
+  "required_stages": [
+    "baseline-2026-09-18",
+    "supplemental",
+    "expansion-2026-10-24",
+    "followup-2026-11-02",
+    "ieee-supplement-2026-11-03",
+    "survey-200plus-2026-11-03",
+    "ieee-refresh-2026-11-03",
+    "review-additions-2026-11-04"
+  ],
+  "rejected_attempts": [
+    {
+      "k": 0,
+      "missing_stages": [
+        "supplemental"
+      ]
+    }
+  ],
+  "stage_counts": {
+    "baseline-2026-09-18": 3,
+    "supplemental": 2,
+    "expansion-2026-10-24": 16,
+    "followup-2026-11-02": 2,
+    "ieee-supplement-2026-11-03": 2,
+    "survey-200plus-2026-11-03": 5,
+    "ieee-refresh-2026-11-03": 7,
+    "review-additions-2026-11-04": 3
+  },
+  "codebook_version": "1.0",
+  "codebook_json_sha256": "dbbcf506a8a0a4c5ed8c518d7fa8d7e8470aab942bc22a36e766dcba50d1206d",
+  "codebook_md_sha256": "e217554c33f2317a30b81b864a9626370ac354e1190de9561c8c613cd68af922",
+  "sample_json_sha256": "4c07df0637f27aca45e8f59062269f81920762a7c6222ab3833b7036c2d96bca",
+  "sample_json_note": "sample.json, the list handed to the second coder, held the 40 codes with citation key, bibliographic metadata and the paths of each work's review card, transcription and PDF, and no strata or codes. It stays local because it contains local file paths.",
+  "works": 40
+}

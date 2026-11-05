@@ -1,0 +1,65 @@
+{
+  "note": "Session record of the independent second coding of 40 sampled works, written from the second coder's notes and the workflow configuration. This is a language-model second coding. It is not human inter-rater reliability.",
+  "label": "language-model second coding",
+  "second_coder": {
+    "kind": "language-model coder, not a human rater",
+    "host": "Kiro workflow session, a separate session for the second-coding step of the round-4 workflow",
+    "model": "gpt-5.6-sol",
+    "model_source": "Model configured for the second-coding step in the workflow definition. The session's own notes state that its configuration exposed no model identifier.",
+    "date": "2026-11-04",
+    "start": "2026-11-04T13:25:56-08:00",
+    "end": "2026-11-04T13:41:42-08:00",
+    "start_note": "The start time is the coder's first coding checkpoint after reading its inputs; the session launch time was not exposed.",
+    "inputs": "codebook.md version 1.0 and sample.json (the 40 sampled codes with citation key, bibliographic metadata and the paths of each work's review card, transcription and PDF; no strata and no codes)",
+    "access": "Only the received codebook, the sample list and the sampled works' review cards, transcriptions and PDFs. The session had no access to the primary codes, the sampling strata, the survey manuscript or its data, the archive, other documentation or version-control history.",
+    "files_opened": "The received codebook.md and sample.json, its own codes.json and notes.md, and for each of the 40 sampled works its review card and its transcription (80 source files). No PDF file was opened; physical PDF pages were taken from the page markers of the transcriptions and from the page citations of the cards.",
+    "output": "codes.json (schema version 1, 40 works, 313 locator rows) and notes.md, both kept local; published conversion in second-codes.csv and second-locators.csv.",
+    "uncertain_calls": [
+      "response_family: a secondary family recorded only when a distinct contributed mechanism fits it",
+      "functions: PLN added when a work contributes goal, route, trajectory or control decisions, not for an unchanged navigation stack",
+      "E05, E13, E19, E31, E33, E40, E44, E54, F03, K13, M10, N08, N14, R05, R26, R31, R33, S14, S25, S29, X12: class, source or setting decisions noted per work in the notes"
+    ]
+  },
+  "primary_coder": {
+    "kind": "language-model coder, not a human rater",
+    "host": "Kiro workflow session for the primary-coding step of the round-4 workflow",
+    "model": "claude-opus-5.5",
+    "model_source": "Model configured for the primary-coding step in the workflow definition.",
+    "date": "2026-11-04",
+    "access": "Codebook version 1.0, the review cards, transcriptions, PDFs and batch reading records of all 245 works. The primary-coding and coding-review steps were instructed not to open the second coder's output; the 40 sampled works were coded like every other work.",
+    "frozen": "freeze.json records the SHA-256 of primary-codes.csv and primary-locators.csv at the freeze; corrections go through adjudication-log.csv only."
+  },
+  "adjudication": {
+    "resolver": "agreement-step Kiro session",
+    "kind": "a language-model workflow session with access to both codings and the sources, not a human adjudicator",
+    "procedure": "Every value on which the two codings differ was re-read at both coders' locators in the card, the transcription or the PDF page, then resolved and logged with a short reason and the deciding locator (codebook Section 19).",
+    "codebook_after": "1.1"
+  },
+  "timeline": {
+    "codebook_version_1_0_committed": "2026-11-04 12:58 -08:00 (commit be0a73f); worked example replaced 13:16 (commit 67872f4)",
+    "second_coding": "2026-11-04 13:25 to 13:41 -08:00",
+    "primary_codes_committed": "2026-11-04 14:48 -08:00 (commit 64531cd); page-located corrections and re-freeze 15:33 (commit 69c8711)"
+  },
+  "hashes": {
+    "received_codebook_md_sha256": "e217554c33f2317a30b81b864a9626370ac354e1190de9561c8c613cd68af922",
+    "received_codebook_equals": "codebook.md version 1.0 as frozen in freeze.json",
+    "codebook_sha256_stated_by_coder": "e217554c33f2317a30b81b864a9626370ac354e1190de9561c8c613cd68af922",
+    "sample_json_sha256": "4c07df0637f27aca45e8f59062269f81920762a7c6222ab3833b7036c2d96bca",
+    "codes_json_sha256": "c5640d54aef0125e7e75dd89c56807f1bb5c2f1d294d1994458f55148702712f",
+    "notes_md_sha256": "5388f120f23c21313ae48c2832342bedd342c93bcef03a6a1925e7ad3fbb225d"
+  },
+  "conversion": {
+    "tool": "python scripts/coding.py --import-second CODES_JSON (run in 05-survey/manuscript)",
+    "given_and_derived_columns": "filled from the library index; mixed_wheeled and transfer_basis are single-coded by the primary coder and left empty",
+    "double_coded_values": "copied unchanged",
+    "format_repairs": [],
+    "invalid_values": 0,
+    "validation": "python scripts/coding.py --check-codes ../../06-data/evidence-coding/second-codes.csv --kind second: 40 rows, 0 errors, 57 warnings",
+    "warnings": "All 57 warnings concern locator form (codebook Section 15): card locators that combine two block names or cite page ranges wider than the named block cites. Every value has a locator row, and no consistency rule CR01-CR15 is broken. The locators are published as the coder wrote them; the adjudication re-read the sources."
+  },
+  "deviations": [
+    "The second coder took physical PDF pages from transcription page markers instead of opening the PDF files.",
+    "The session notes give the host as the local client and do not name the model; the model is taken from the workflow configuration.",
+    "sample.json held local file paths and stays local; its SHA-256 is recorded here and in sampling.json."
+  ]
+}

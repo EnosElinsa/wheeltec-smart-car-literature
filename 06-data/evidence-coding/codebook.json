@@ -1,7 +1,11 @@
 {
   "name": "Degradation-evidence codebook of the wheeled-robot autonomy survey",
-  "version": "1.0",
+  "version": "1.1",
   "date": "2026-11-04",
+  "versions": [
+    {"version": "1.0", "date": "2026-11-04", "note": "First version, fixed before any work was coded. Both coding passes used it."},
+    {"version": "1.1", "date": "2026-11-04", "note": "Written after the agreement step. response_family holds the primary family only (CR20). drivetrain_effect excludes differences between wheeled and other locomotion, actuator or speed limits that apply to any wheel arrangement, and kinematic models without a reported geometry-dependent result. The adjudication log adds recheck-revised and multi-part deciding locators. No allowed value, sampling rule, agreement unit or derived measure changed."}
+  ],
   "human_readable": "06-data/evidence-coding/codebook.md",
   "coding_unit": {
     "unit": "publication",
@@ -248,7 +252,7 @@
      "locator": "One locator for every listed source."},
     {"name": "response_family", "kind": "coded", "form": "one-or-two", "values": ["IV-A", "IV-B", "IV-C", "IV-D", "IV-E", "IV-F", "V-A", "V-B", "V-C", "V-D", "V-E", "VI-A", "VI-B", "VI-C", "VI-D", "VII-A", "VII-B", "VII-C", "VII-D", "VIII-A", "VIII-B", "VIII-C", "VIII-D", "resource", "context"], "double_coded": true,
      "derivation": "No card field. The primary coder may start from the survey subsection that first cites the work.",
-     "rule": "A primary family from the principal section that matches the response the work contributes, chosen by the main claim of the abstract or contribution list. An optional secondary family from any section follows after '|' and differs from the primary. 'resource' is the primary family of a dataset or benchmark resource and 'context' that of the context review.",
+     "rule": "A primary family from the principal section that matches the response the work contributes, chosen by the main claim of the abstract or contribution list. 'resource' is the primary family of a dataset or benchmark resource and 'context' that of the context review. Version 1.0 allowed an optional secondary family after '|'. From version 1.1 the final codes hold the primary family only (CR20); the form stays one-or-two so that the version 1.0 records validate.",
      "locator": "One locator for every listed family."},
     {"name": "src_manipulated", "kind": "coded", "form": "set", "values": ["PER", "SFA", "TER", "ACT", "DYN", "MAP", "MOD", "COM", "RES", "none"], "double_coded": true,
      "derivation": "Candidates: card degradation (does not separate D1 from D2).",
@@ -307,7 +311,7 @@
      "rule": "Copied from the card; discrepancies go to notes.", "locator": "none"},
     {"name": "drivetrain_effect", "kind": "coded", "form": "one", "values": ["yes", "no"], "double_coded": true,
      "derivation": "No card field. Read Problem, Mechanism, Stated limitations and Transfer conditions, then the paper.",
-     "rule": "'yes' when the paper states or shows, in the design rationale, the results or the limitations, that a degradation effect or the feasibility of a response depends on the wheel arrangement or steering geometry of a wheeled platform: skid-steer slip in turns, minimum turning radius or non-holonomic limits of car-like steering, lateral motion of omnidirectional bases, reversing limits, rotation in place or footprint. Naming the drivetrain or using a generic kinematic model without a reported effect is 'no'. Coded for every work, including works outside the target wheeled group that report such an effect for a wheeled carrier.",
+     "rule": "'yes' when the paper states or shows, in the design rationale, the results or the limitations, that a degradation effect or the feasibility of a response depends on the wheel arrangement or steering geometry of a wheeled platform: skid-steer slip in turns, minimum turning radius or non-holonomic limits of car-like steering, lateral motion of omnidirectional bases, reversing limits, rotation in place or footprint. Naming the drivetrain or using a generic kinematic model without a reported effect is 'no'. Coded for every work, including works outside the target wheeled group that report such an effect for a wheeled carrier. Version 1.1: the attribute compares wheel arrangements and steering geometries among wheeled carriers. A difference between wheeled and legged or other locomotion, an actuator or speed limit that applies to any wheel arrangement, and a controller built on a drivetrain-specific kinematic model without a reported geometry-dependent result or design choice are 'no'. Wheels repositioned to reshape the support footprint, a differential base that cannot strafe and a design built around the minimum turning radius remain 'yes'.",
      "locator": "One locator for 'yes'."},
     {"name": "transfer_basis", "kind": "coded", "form": "one", "values": ["mechanism", "counterexample", "na"], "double_coded": false,
      "derivation": "Card Transfer conditions block; inclusion rule of 06-data/vocabulary.md.",
@@ -337,7 +341,8 @@
     {"id": "CR16", "rule": "Given and derived attributes equal their derivation."},
     {"id": "CR17", "rule": "Every value that the locator rules require has a locator row; for a light-legacy work at least one of them has source 'pdf' or 'transcription'."},
     {"id": "CR18", "rule": "Multi-valued fields list each id once, in canonical order."},
-    {"id": "CR19", "rule": "The context review codes none or na in every coded attribute except response_family 'context' and drivetrain_effect 'no'."}
+    {"id": "CR19", "rule": "The context review codes none or na in every coded attribute except response_family 'context' and drivetrain_effect 'no'."},
+    {"id": "CR20", "rule": "From version 1.1, response_family in the final codes holds one family. The check applies to the final codes, not to the frozen version 1.0 records."}
   ],
   "locator_rules": {
     "sources": ["card", "transcription", "pdf", "source-reading"],
@@ -463,7 +468,9 @@
     "kappa": "Unweighted Cohen's kappa (po - pe) / (1 - pe). It is undefined when pe = 1 (both coders use one category); the report then gives 'n/a' with percent agreement and prevalence.",
     "percent_agreement": "Share of units on which both coders give the same value.",
     "interpretation": "Both coders are language-model sessions that read the same review cards, which were themselves prepared with language-model tools. The statistic measures agreement in applying this codebook to shared evidence. It is not human inter-rater reliability.",
-    "adjudication": "Every disagreement is resolved by re-reading the source at both coders' locators and logged with the resolved value, the resolution (primary-kept, second-adopted or both-revised), a short reason and the deciding locator. A rule that causes disagreement in three or more sampled works is clarified in a new codebook version, and the pattern is rechecked across all works with every change logged.",
+    "adjudication": "Every disagreement is resolved by re-reading the source at both coders' locators and logged with the resolved value, the resolution (primary-kept, second-adopted or both-revised), a short reason and the deciding locator. A rule that causes disagreement in three or more sampled works is clarified in a new codebook version, and the pattern is rechecked across all works with every change logged. A change from that recheck has the scope corpus-recheck and the resolution recheck-revised. A deciding locator may list several locators separated by '; ', and it serves as the locator of every value that the resolution introduces.",
+    "resolutions": ["primary-kept", "second-adopted", "both-revised", "recheck-revised"],
+    "scopes": ["sample", "corpus-recheck"],
     "frozen_primary": "The primary codes are frozen with a SHA-256 record before agreement is computed. Later corrections go through the adjudication log."
   },
   "sampling": {

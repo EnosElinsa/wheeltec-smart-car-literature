@@ -1,6 +1,6 @@
 # Degradation-evidence codebook
 
-Version 1.0, 2026-11-04. Machine-readable form: `06-data/evidence-coding/codebook.json`. Both files state the same rules. A mechanical check (`python scripts/coding.py --check-codebook`, run in `05-survey/manuscript`) compares the attribute summary below with the JSON file.
+Version 1.1, 2026-11-04. Both coding passes used version 1.0 of the same date. Version 1.1 clarifies two rules after the agreement step (Section 23). Machine-readable form: `06-data/evidence-coding/codebook.json`. Both files state the same rules. A mechanical check (`python scripts/coding.py --check-codebook`, run in `05-survey/manuscript`) compares the attribute summary below with the JSON file.
 
 ## 1. Purpose
 
@@ -32,7 +32,7 @@ Two attributes, `deg_task_class` and `deg_task_setting`, record a conjunction. T
 
 ## 4. Attribute summary
 
-Kinds: **given** values are copied from the library index and never coded. **Derived** values are fixed mappings of card fields. **Coded** values are decided by reading. Form `set` lists zero or more ids joined with `|` in the canonical order of the value list, with `none` for the empty set. Form `one-or-two` holds one id or two distinct ids joined with `|`.
+Kinds: **given** values are copied from the library index and never coded. **Derived** values are fixed mappings of card fields. **Coded** values are decided by reading. Form `set` lists zero or more ids joined with `|` in the canonical order of the value list, with `none` for the empty set. Form `one-or-two` holds one id or two distinct ids joined with `|`. From version 1.1 the final codes use one id only (rule `CR20`). The form stays `one-or-two` so that the version 1.0 records keep validating.
 
 | Attribute | Kind | Form | Allowed values | Double-coded |
 |---|---|---|---|---|
@@ -189,7 +189,9 @@ A response family groups works by the response they contribute. The families fol
 | `resource` | Dataset or benchmark resource | The main contribution is a dataset or benchmark (card `evidence_type` is `dataset-resource`) |
 | `context` | Context review | The single literature review kept for context |
 
-**`response_family`.** The primary family comes from the principal section and matches the response the work contributes. When two families of that section fit, the main claim of the abstract or the contribution list decides, and the other family may follow as the secondary value. An optional secondary family may come from any section and differs from the primary. A dataset or benchmark resource takes `resource` as its primary family, and the context review takes `context`.
+**`response_family`.** The primary family comes from the principal section and matches the response the work contributes. When two families of that section fit, the main claim of the abstract or the contribution list decides. A dataset or benchmark resource takes `resource` as its primary family, and the context review takes `context`.
+
+Version 1.0 allowed an optional secondary family from any section, without a rule for when to record it. In the sample the primary coder recorded one for 3 of 40 works and the second coder for 29. No count, matrix or ranking uses the secondary value. From version 1.1 the attribute therefore holds the primary family only (`CR20`). The secondary values of the version 1.0 records are removed through the adjudication log, for the sampled works and in a recheck of all works.
 
 ## 9. Degradation-evidence classes
 
@@ -264,6 +266,8 @@ The shade steps of the source-by-function matrix are 0 (no named condition), 1 (
 
 **`drivetrain_effect`.** `yes` when the paper states or shows that a degradation effect, or the feasibility of a response, depends on the wheel arrangement or steering geometry of a wheeled platform. Examples are skid-steer slip in turns, the minimum turning radius or non-holonomic limits of car-like steering, lateral motion of omnidirectional bases, reversing limits, rotation in place and footprint. The statement may appear in the design rationale, the results or the limitations. Naming the drivetrain, or using a generic kinematic model without a reported effect, is `no`. The attribute is coded for every work, including works outside the target wheeled group that report such an effect for a wheeled carrier.
 
+Clarification of version 1.1: the attribute compares wheel arrangements and steering geometries among wheeled carriers. Three cases code `no`. The first is a difference between wheeled and legged or other locomotion, such as a wheeled robot that must take a ramp where a legged robot takes stairs. The second is an actuator or speed limit that applies to any wheel arrangement, such as a clipped angular velocity. The third is a controller built on a drivetrain-specific kinematic model when the paper reports no result or design choice that depends on that geometry. Wheels that are repositioned to reshape the support footprint, a differential base that cannot strafe, and a design built around the minimum turning radius remain `yes`.
+
 **`transfer_basis`** (single-coded). For works outside the target wheeled group, three transfer criteria are checked:
 
 1. The inputs of the mechanism exist on a wheeled ground robot.
@@ -321,6 +325,7 @@ For a light card, a card locator suffices only when the cited card passage names
 | `CR17` | Every value that Section 15 lists has a locator row. For a light-legacy work at least one of them has source `pdf` or `transcription`. |
 | `CR18` | Multi-valued fields list each id once, in canonical order. |
 | `CR19` | The context review codes `none` or `na` in every coded attribute except `response_family` = `context` and `drivetrain_effect` = `no`. |
+| `CR20` | From version 1.1, `response_family` in the final codes holds one family. The check applies to the final codes, not to the frozen version 1.0 records. |
 
 ## 17. Derived measures, matrices and the interface ranking
 
@@ -431,7 +436,7 @@ Kappa is unweighted Cohen's kappa, (po - pe) / (1 - pe), where po is the observe
 
 Both coders are language-model sessions that read the same review cards, and these cards were themselves prepared with language-model tools. The statistic therefore measures agreement in applying this codebook to shared evidence. It is not human inter-rater reliability.
 
-The primary codes are frozen with a SHA-256 record before agreement is computed. Every disagreement is resolved by re-reading the source at both coders' locators and is logged with the resolved value, the resolution (`primary-kept`, `second-adopted` or `both-revised`), a short reason and the deciding locator. A rule that causes disagreement in three or more sampled works is clarified in a new codebook version, and the pattern is rechecked across all works with every change logged. Corrections after the freeze go through the adjudication log only.
+The primary codes are frozen with a SHA-256 record before agreement is computed. Every disagreement is resolved by re-reading the source at both coders' locators and is logged with the resolved value, the resolution (`primary-kept`, `second-adopted` or `both-revised`), a short reason and the deciding locator. A rule that causes disagreement in three or more sampled works is clarified in a new codebook version, and the pattern is rechecked across all works with every change logged. A change from that recheck has the scope `corpus-recheck` and the resolution `recheck-revised`. Corrections after the freeze go through the adjudication log only. A deciding locator may list several locators separated by a semicolon and a space, and it serves as the locator of every value that the resolution introduces.
 
 ## 20. Sampling
 
@@ -527,4 +532,5 @@ All examples are hypothetical and describe no corpus work.
 
 ## 23. Versions
 
-- 1.0 (2026-11-04): first version, fixed before any work was coded.
+- 1.0 (2026-11-04): first version, fixed before any work was coded. Both coding passes used it.
+- 1.1 (2026-11-04): written after the agreement step. Two rules caused disagreement in three or more sampled works. (1) `response_family` holds the primary family only (Section 8, `CR20`). Eight primary codes carried a secondary family. Two lost it through the resolution of sampled disagreements and six in the recheck of all works. (2) `drivetrain_effect` excludes differences between wheeled and other locomotion, actuator or speed limits that apply to any wheel arrangement, and kinematic models without a reported geometry-dependent result (Section 13). The clarification can only turn `yes` into `no`. The recheck read the six primary codes with `yes`, and all six keep `yes`. The adjudication log adds `recheck-revised` and multi-part deciding locators (Section 19). No allowed value, sampling rule, agreement unit or derived measure changed.

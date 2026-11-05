@@ -7,8 +7,11 @@ Run from 05-survey/manuscript:
   python scripts/coding.py --draw-sample --check-only    # redraw and compare with the published sampling record
   python scripts/coding.py --check-codes PATH --kind primary|second [--partial]
   python scripts/coding.py --freeze                      # record SHA-256 of the validated primary files
+  python scripts/coding.py --import-second CODES_JSON    # convert the second coder's output into the CSV files
+  python scripts/coding.py --agreement                   # pre-resolution agreement into generated/
 
-build_data.py calls write_products() to derive the evidence map, matrices, rankings and sensitivity tables.
+build_data.py calls write_products() to derive the evidence map, matrices, rankings and sensitivity tables, and
+write_agreement() for the agreement of the independent second coding with the frozen primary codes.
 """
 import argparse
 import csv
@@ -407,8 +410,9 @@ def required_locators(code, codebook):
     return needed
 
 
-def validate_codes(codes, corpus_rows, codebook, kind, partial=False, locators=None):
-    """Return (errors, warnings). kind 'second' keeps the second coder's values: rule breaks are warnings."""
+def validate_codes(codes, corpus_rows, codebook, kind, partial=False, locators=None, final=False):
+    """Return (errors, warnings). kind 'second' keeps the second coder's values: rule breaks are warnings.
+    final=True checks the final codes (frozen codes with the adjudication log applied) against CR20 as well."""
     errors, warnings = [], []
     soft = warnings if kind == 'second' else errors
     by_code = {r['code']: r for r in corpus_rows}
@@ -501,6 +505,8 @@ def validate_codes(codes, corpus_rows, codebook, kind, partial=False, locators=N
         else:
             rules.append(('CR12', families.get(family[0]) == code['principal_section']))
         rules.append(('CR12', all(f not in ('context',) for f in family[1:])))
+        if final:
+            rules.append(('CR20', len(family) == 1))
         if not context and not resource:
             rules.append(('CR13', bool(S['src_addressed']) or bool(code.get('notes', '').strip())))
         if kind == 'primary':
@@ -567,12 +573,226 @@ def apply_adjudication(codes, log):
     return [final[c['code']] for c in codes]
 
 
+LOCATOR_PREFIXES = (('PDF p.', 'pdf'), ('card:', 'card'), ('transcription:', 'transcription'),
+                    ('source-reading:', 'source-reading'))
+ABSENT_VALUES = {'', 'none', 'na', 'no'}
+
+
+def locator_source(text):
+    """Source type of one locator text, read from its prefix (codebook Section 15 formats)."""
+    for prefix, source in LOCATOR_PREFIXES:
+        if text.startswith(prefix):
+            return source
+    raise ValueError(f'locator {text!r} has no known prefix')
+
+
+def adjudication_locators(log, codebook):
+    """Locator rows for values that the adjudication log introduces. The deciding locator of a log row may hold
+    several locators separated by '; '; each supports every value of the resolved code."""
+    forms = {a['name']: a['form'] for a in codebook['attributes']}
+    rows = []
+    for entry in log:
+        if entry['resolved_value'] == entry['primary_value'] or not entry['locator'].strip():
+            continue
+        value = entry['resolved_value']
+        values = value.split('|') if forms[entry['attribute']] in ('set', 'one-or-two') else [value]
+        for text in (t.strip() for t in entry['locator'].split('; ')):
+            for v in values:
+                if v not in ABSENT_VALUES:
+                    rows.append({'code': entry['code'], 'attribute': entry['attribute'], 'value': v,
+                                 'source': locator_source(text), 'locator': text, 'note': 'adjudication'})
+    return rows
+
+
+# Agreement units fixed in codebook Section 19. Set-valued attributes are scored as binary flags per value.
+SET_ATTRIBUTES = ('functions', 'src_addressed', 'src_manipulated', 'src_selected', 'src_incidental')
+SINGLE_ATTRIBUTES = ('nominal_control', 'single_level_injection', 'task_setting', 'deg_task_class',
+                     'deg_task_setting', 'level_degradation', 'drivetrain_effect')
+FLAGGED_UNITS = ('functions', 'src_addressed', 'named_sources')
+AGREEMENT_FIELDS = ['attribute', 'unit', 'kind', 'preregistered', 'works', 'n', 'categories_used', 'agreement_pct',
+                    'kappa', 'exact_set_pct', 'primary_prevalence', 'second_prevalence', 'disagreements',
+                    'works_in_disagreement', 'resolved_primary', 'resolved_second', 'resolved_both', 'changed_primary']
+RESOLUTIONS = {'primary-kept': 'resolved_primary', 'second-adopted': 'resolved_second', 'both-revised': 'resolved_both'}
+
+
+def agreement_rows(primary, second, log, codebook):
+    """Pre-resolution agreement of the frozen primary codes with the second codes on the sampled works."""
+    codes = sorted(second)
+    fn_of = section_function(codebook)
+    functions = function_order(codebook)
+    sources = codebook['source_order']
+    sample_log = [e for e in log if e['scope'] == 'sample']
+    by_attribute = {}
+    for e in sample_log:
+        by_attribute.setdefault(e['attribute'], []).append(e)
+    rows = []
+
+    def prevalence(values, order=None):
+        if all(isinstance(v, bool) for v in values):
+            return f'{sum(values) / len(values):.3f}' if values else ''
+        counts = Counter(values)
+        order = order or sorted(counts)
+        return ' '.join(f'{v}:{counts[v]}' for v in order if counts[v])
+
+    def add(attribute, unit, kind, preregistered, a, b, works, order=None, exact=None, column=None, differing=None):
+        """differing: works whose unit values differ (works_in_disagreement) for rows without a log column."""
+        kappa = cohen_kappa(a, b)
+        row = {'attribute': attribute, 'unit': unit, 'kind': kind, 'preregistered': 'yes' if preregistered else 'no',
+               'works': works, 'n': len(a), 'categories_used': len(set(a) | set(b)),
+               'agreement_pct': round(100 * percent_agreement(a, b), 1),
+               'kappa': 'n/a' if kappa is None else round(kappa, 3),
+               'exact_set_pct': '' if exact is None else round(100 * exact, 1),
+               'primary_prevalence': prevalence(a, order), 'second_prevalence': prevalence(b, order),
+               'disagreements': sum(x != y for x, y in zip(a, b)),
+               'works_in_disagreement': '' if differing is None else differing,
+               'resolved_primary': '', 'resolved_second': '', 'resolved_both': '', 'changed_primary': ''}
+        if column:
+            differing = [c for c in codes if primary[c][column] != second[c][column]]
+            entries = by_attribute.get(column, [])
+            assert sorted(e['code'] for e in entries) == differing, (column, differing)
+            for e in entries:
+                assert (e['primary_value'], e['second_value']) == (primary[e['code']][column], second[e['code']][column]), e
+            counts = Counter(e['resolution'] for e in entries)
+            assert set(counts) <= set(RESOLUTIONS), counts
+            row['works_in_disagreement'] = len(differing)
+            row.update({field: counts[name] for name, field in RESOLUTIONS.items()})
+            row['changed_primary'] = sum(e['resolved_value'] != e['primary_value'] for e in entries)
+        rows.append(row)
+        return row
+
+    # functions: one flag per function over the works whose principal function differs, pooled, exact set.
+    pooled_a, pooled_b = [], []
+    flag_rows = []
+    for f in functions:
+        units = [c for c in codes if fn_of.get(primary[c]['principal_section']) != f]
+        a = [f in sset(primary[c], 'functions') for c in units]
+        b = [f in sset(second[c], 'functions') for c in units]
+        pooled_a += a
+        pooled_b += b
+        flag_rows.append((f, a, b, len(units)))
+    exact = sum(sset(primary[c], 'functions') == sset(second[c], 'functions') for c in codes) / len(codes)
+    add('functions', 'non-principal function flags, pooled', 'attribute', False, pooled_a, pooled_b, len(codes),
+        exact=exact, column='functions')
+    for f, a, b, n in flag_rows:
+        add('functions', f'flag {f}', 'flag', True, a, b, n)
+    # Source-set attributes: one flag per source, pooled over the nine flags of every work, exact set.
+    for name in SET_ATTRIBUTES[1:] + ('named_sources',):
+        if name == 'named_sources':
+            get_p, get_s = (lambda c: named_of(primary[c])), (lambda c: named_of(second[c]))
+        else:
+            get_p, get_s = (lambda c, n=name: sset(primary[c], n)), (lambda c, n=name: sset(second[c], n))
+        a = [s in get_p(c) for c in codes for s in sources]
+        b = [s in get_s(c) for c in codes for s in sources]
+        same = sum(get_p(c) == get_s(c) for c in codes)
+        derived = name == 'named_sources'
+        add(name, 'source flags, pooled', 'derived' if derived else 'attribute', name == 'src_manipulated',
+            a, b, len(codes), exact=same / len(codes), column=None if derived else name,
+            differing=len(codes) - same if derived else None)
+        if name in FLAGGED_UNITS:
+            for s in sources:
+                add(name, f'flag {s}', 'flag', True, [s in get_p(c) for c in codes], [s in get_s(c) for c in codes],
+                    len(codes))
+    # Response family: the primary family (pre-registered) and, for information, the full value.
+    families = [f['id'] for f in codebook['response_families']]
+    a = [primary[c]['response_family'].split('|')[0] for c in codes]
+    b = [second[c]['response_family'].split('|')[0] for c in codes]
+    add('response_family', 'primary family', 'attribute', True, a, b, len(codes), order=families,
+        differing=sum(x != y for x, y in zip(a, b)))
+    # The full value carries the log accounting: version 1.0 allowed an optional secondary family.
+    add('response_family', 'full value, with the optional secondary family of version 1.0', 'additional', False,
+        [primary[c]['response_family'] for c in codes], [second[c]['response_family'] for c in codes], len(codes),
+        column='response_family')
+    # Publication class (derived from the three class columns) and the single-valued attributes.
+    a = [publication_class(primary[c]) for c in codes]
+    b = [publication_class(second[c]) for c in codes]
+    add('publication_class', 'strongest class', 'derived', True, a, b, len(codes), order=['D1', 'D2', 'D3', 'none'],
+        differing=sum(x != y for x, y in zip(a, b)))
+    for name in SINGLE_ATTRIBUTES:
+        add(name, 'value', 'attribute', True, [primary[c][name] for c in codes], [second[c][name] for c in codes],
+            len(codes), order=attribute(codebook, name)['values'], column=name)
+    return rows
+
+
+def import_second(codes_json, corpus_rows, codebook):
+    """Convert the second coder's codes.json into second-codes.csv and second-locators.csv.
+    Given and derived columns come from the paper index, double-coded values are copied unchanged. A format
+    repair (whitespace or letter case) is made only when the intended value is unambiguous; any other value
+    outside the codebook is kept as 'invalid:<value>'. Returns the repairs and counts."""
+    raw = json.loads(Path(codes_json).read_text(encoding='utf-8'))
+    by_code = {r['code']: r for r in corpus_rows}
+    double = codebook['double_coding']['attributes']
+    repairs, out = [], []
+    for work in raw['works']:
+        row = {c: '' for c in codebook['columns']}
+        row.update(derived_values(by_code[work['code']], codebook))
+        for name in double:
+            allowed = attribute(codebook, name)['values']
+            parts = []
+            for part in work[name].split('|'):
+                fixed = part.strip()
+                if fixed not in allowed:
+                    fixed = next((v for v in allowed if v.lower() == fixed.lower()), 'invalid:' + part)
+                if fixed != part:
+                    repairs.append({'code': work['code'], 'attribute': name, 'received': part, 'stored': fixed})
+                parts.append(fixed)
+            row[name] = '|'.join(parts)
+        row['notes'] = work.get('notes', '')
+        out.append(row)
+    out.sort(key=lambda r: r['code'])
+    fields = codebook['second_coder_output']['locator_fields']
+    locators = sorted(({k: loc.get(k, '') for k in fields} for loc in raw['locators']),
+                      key=lambda l: [r['code'] for r in out].index(l['code']))
+    write_csv(SECOND_CODES, codebook['columns'], out)
+    write_csv(SECOND_LOCATORS, fields, locators)
+    return {'works': len(out), 'locators': len(locators), 'repairs': repairs,
+            'codebook_sha256_stated': raw.get('codebook_sha256'), 'schema_version': raw.get('schema_version')}
+
+
+def check_second_freeze(record):
+    """The published second-coding files still match the hashes recorded in freeze.json."""
+    for name, expected in record.get('second', {}).get('files', {}).items():
+        actual = sha256_file(CODING / name)
+        if actual != expected:
+            raise AssertionError(f'{name} changed after the freeze ({actual} != {expected})')
+
+
+def write_agreement(out_dir):
+    """Write coding-agreement.csv and table-agreement.tex; return the 'agreement' summary for stats.json."""
+    if not SECOND_CODES.is_file():
+        return {}
+    codebook = load_codebook()
+    record = check_freeze()
+    assert record and 'second' in record, 'freeze.json has no second-coding record'
+    check_second_freeze(record)
+    _, primary_rows = load_codes(PRIMARY_CODES)
+    _, second_rows = load_codes(SECOND_CODES)
+    _, log = load_codes(ADJUDICATION_LOG)
+    primary = {r['code']: r for r in primary_rows}
+    second = {r['code']: r for r in second_rows}
+    rows = agreement_rows(primary, second, log, codebook)
+    write_csv(Path(out_dir) / 'coding-agreement.csv', AGREEMENT_FIELDS, rows)
+    (Path(out_dir) / 'table-agreement.tex').write_text(table_agreement(rows), encoding='utf-8')
+    sample = [e for e in log if e['scope'] == 'sample']
+    recheck = [e for e in log if e['scope'] == 'corpus-recheck']
+    return {'agreement': {
+        'works': len(second), 'codebook_version': codebook['version'],
+        'coders': 'Two language-model sessions on different models; not human inter-rater reliability.',
+        'disagreements': len(sample), 'works_with_disagreement': len({e['code'] for e in sample}),
+        'resolutions': dict(Counter(e['resolution'] for e in sample)),
+        'changed_primary': sum(e['resolved_value'] != e['primary_value'] for e in sample),
+        'corpus_recheck_changes': len(recheck),
+        'rows': [{k: r[k] for k in ('attribute', 'unit', 'kind', 'n', 'categories_used', 'agreement_pct', 'kappa',
+                                    'exact_set_pct', 'works_in_disagreement')} for r in rows]}}
+
+
 # --------------------------------------------------------------------------- derived products
 
 PRIMARY_CODES = CODING / 'primary-codes.csv'
 PRIMARY_LOCATORS = CODING / 'primary-locators.csv'
 ADJUDICATION_LOG = CODING / 'adjudication-log.csv'
 FREEZE = CODING / 'freeze.json'
+SECOND_CODES = CODING / 'second-codes.csv'
+SECOND_LOCATORS = CODING / 'second-locators.csv'
 HUMAN_TAG = 'human-assistance'
 
 
@@ -1142,6 +1362,53 @@ def table_candidates(ranking, reasons=None):
                  'sorts by gap share.', '@{}rL{1.9cm}rrrrrrL{1.5cm}Y@{}', header, body, colsep='3pt')
 
 
+AGREEMENT_LABELS = {'functions': 'Functions', 'src_addressed': 'Addressed sources', 'response_family': 'Response family',
+                    'src_manipulated': 'Manipulated sources (D1)', 'src_selected': 'Selected sources (D2)',
+                    'src_incidental': 'Incidental sources (D3)', 'named_sources': 'Named sources (D1 or D2)',
+                    'publication_class': 'Publication class', 'nominal_control': 'Nominal control',
+                    'single_level_injection': 'Single-level injection', 'task_setting': 'Task setting',
+                    'deg_task_class': 'Same-experiment class', 'deg_task_setting': 'Same-experiment setting',
+                    'level_degradation': 'Degradation evidence level', 'drivetrain_effect': 'Drivetrain effect'}
+
+
+def table_agreement(rows):
+    """Supplement table: one row per double-coded attribute and derived unit, before adjudication."""
+    flag_kappas = {}
+    for r in rows:
+        if r['kind'] == 'flag' and r['kappa'] != 'n/a':
+            flag_kappas.setdefault(r['attribute'], []).append(r['kappa'])
+    body = []
+    for r in rows:
+        if r['kind'] == 'flag':
+            continue
+        kappas = flag_kappas.get(r['attribute'])
+        flag_range = f'{min(kappas):.2f}--{max(kappas):.2f}' if kappas else '--'
+        kappa = r['kappa'] if r['kappa'] == 'n/a' else f"{r['kappa']:.2f}".replace('-', '$-$')
+        resolved = ('/'.join(str(r[k]) for k in ('resolved_primary', 'resolved_second', 'resolved_both'))
+                    if r['resolved_primary'] != '' else '--')
+        cells = [AGREEMENT_LABELS[r['attribute']], tex_escape(r['unit']), str(r['n']), str(r['categories_used']),
+                 f"{r['agreement_pct']:.1f}", kappa, '--' if r['exact_set_pct'] == '' else f"{r['exact_set_pct']:.1f}",
+                 flag_range, '--' if r['works_in_disagreement'] == '' else str(r['works_in_disagreement']), resolved]
+        body.append(' & '.join(cells) + r' \\')
+    header = bold_row(['Attribute', 'Unit', 'n', 'Cat.', r'Agr. \%', r'$\kappa$', r'Exact \%', r'Flag $\kappa$',
+                       'Works', 'P/S/B'])
+    return table('tab:agreement', 'Agreement between the independent second coding and the frozen primary codes '
+                 'on the 40 sampled works, before adjudication. Both coders are language-model sessions on '
+                 'different models, so the values describe how consistently two such coders apply the codebook to '
+                 'shared evidence. They are not human inter-rater reliability.',
+                 '@{}L{2.9cm}Yrrrrrrrr@{}', header, body,
+                 r'n counts the scored units and Cat. the categories that either coder used. $\kappa$ is unweighted '
+                 r"Cohen's kappa (n/a when both coders use one category). Set-valued attributes are scored as one "
+                 r'binary flag per value: $\kappa$ and Agr. pool all flag decisions of the attribute (for functions '
+                 r'the four non-principal functions of each work), Exact gives the share of works with identical '
+                 r'sets, and Flag $\kappa$ the range of the per-flag kappas (functions over the 32 works whose '
+                 r'principal function differs, sources over all 40 works). The pre-registered unit of response '
+                 r'family is the primary family; the second row compares the full value, which in codebook version '
+                 r'1.0 could add an optional secondary family. Named sources and publication class are derived from '
+                 r'the three class columns. Works counts the works with differing values and P/S/B how the logged '
+                 r'disagreements were resolved: primary kept, second adopted, both revised.', colsep='3pt')
+
+
 PRODUCT_FILES = ['evidence-codes.csv', 'evidence-map.csv', 'degradation-function-matrix.csv',
                  'degradation-function-matrix.json', 'assumption-links.csv', 'function-pair-cooccurrence.csv',
                  'interface-candidates.csv', 'interface-traceability.csv', 'sensitivity.csv', 'venue-mix-by-stage.csv',
@@ -1184,7 +1451,8 @@ def write_products(out_dir, rows, decisions_path=None):
     codebook = load_codebook()
     index = {r['code']: r for r in rows}
     codes, log = final_codes()
-    errors, _ = validate_codes(codes, rows, codebook, 'primary', locators=load_codes(PRIMARY_LOCATORS)[1])
+    locators = load_codes(PRIMARY_LOCATORS)[1] + adjudication_locators(log, codebook)
+    errors, _ = validate_codes(codes, rows, codebook, 'primary', locators=locators, final=True)
     assert not errors, errors[:5]
     freeze = check_freeze()
     technical = [c for c in codes if c['principal_section'] != 'context']
@@ -1324,6 +1592,10 @@ def main(argv=None):
     parser.add_argument('--kind', choices=['primary', 'second'], default='primary')
     parser.add_argument('--partial', action='store_true')
     parser.add_argument('--freeze', action='store_true', help='write freeze.json for the validated primary files')
+    parser.add_argument('--import-second', type=Path, metavar='CODES_JSON',
+                        help="convert the second coder's codes.json into second-codes.csv and second-locators.csv")
+    parser.add_argument('--agreement', action='store_true',
+                        help='write generated/coding-agreement.csv and generated/table-agreement.tex')
     args = parser.parse_args(argv)
     codebook = load_codebook()
     _, rows, _, _ = load_corpus(R, M)
@@ -1382,6 +1654,11 @@ def main(argv=None):
                               'primary-locators.csv': sha256_file(PRIMARY_LOCATORS)}}
         FREEZE.write_text(json.dumps(record, indent=2) + '\n', encoding='utf-8')
         print('frozen', record['primary']['primary-codes.csv'])
+    if args.import_second:
+        print(json.dumps(import_second(args.import_second, rows, codebook), indent=2))
+    if args.agreement:
+        summary = write_agreement(M / 'generated')['agreement']
+        print(json.dumps({k: v for k, v in summary.items() if k != 'rows'}, indent=2))
     return status
 
 

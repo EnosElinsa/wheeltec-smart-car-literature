@@ -8,5 +8,18 @@
   "primary": {
     "primary-codes.csv": "b56dff1ee78bb25b22f7bc9eee25ac8a8cf43bc39030d98c22764c1d90d91d45",
     "primary-locators.csv": "83bba1539fa3cbca1828f21d2e07eb60f19c519208247ff0e447e5aaa69d2ecc"
+  },
+  "second": {
+    "note": "SHA-256 of the independent second coding. codes.json and notes.md are the raw outputs of the second coder (kept local); second-codes.csv and second-locators.csv are their published conversion, which must not change.",
+    "received_codebook_md_sha256": "e217554c33f2317a30b81b864a9626370ac354e1190de9561c8c613cd68af922",
+    "received_codebook_matches_frozen_version": "1.0",
+    "sample_json_sha256": "4c07df0637f27aca45e8f59062269f81920762a7c6222ab3833b7036c2d96bca",
+    "codes_json_sha256": "c5640d54aef0125e7e75dd89c56807f1bb5c2f1d294d1994458f55148702712f",
+    "notes_md_sha256": "5388f120f23c21313ae48c2832342bedd342c93bcef03a6a1925e7ad3fbb225d",
+    "files": {
+      "second-codes.csv": "63c6392e8770b485756483015ea7fc5158ede25b0c1073223a18e43594f711fd",
+      "second-locators.csv": "7729eeac4b41d76aaebe69a9ae4b5dc4e65760f72d2feeff86fb902309b58e4f",
+      "sample-manifest.csv": "f37ead403473cd6e89538401f18635cd891aa7bba2eb7b2d0ad38ea6d54902c3"
+    }
   }
 }

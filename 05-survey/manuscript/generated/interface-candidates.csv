@@ -1,22 +1,22 @@
 candidate_id,function_a,function_b,source,works,direct_wheeled_joint,wheeled_works,safety_relevant,gap,gap_share,eligible,rank,rank_without_integration_stage,rank_by_gap_share,interface,named_alternative,status,reason,screen_note,codes
-LOC-PLN:PER,LOC,PLN,PER,4,0,4,yes,4,1.0,yes,13,10,2,3,none,interface,,"4 works, 0 with direct joint wheeled evidence, 4 target wheeled",E12|E13|E14|N19
+LOC-PLN:PER,LOC,PLN,PER,5,1,5,yes,4,0.8,yes,12,9,18,3,none,interface,,"5 works, 1 with direct joint wheeled evidence, 5 target wheeled",E13|E14|M10|N19|R33
 LOC-PLN:SFA,LOC,PLN,SFA,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells",none
 LOC-PLN:TER,LOC,PLN,TER,2,0,1,yes,2,1.0,no,,,,3,none,interface,,"2 works, 0 with direct joint wheeled evidence, 1 target wheeled",E13|S46
 LOC-PLN:ACT,LOC,PLN,ACT,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells",none
 LOC-PLN:DYN,LOC,PLN,DYN,1,0,1,yes,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells",S02
-LOC-PLN:MAP,LOC,PLN,MAP,2,0,2,yes,2,1.0,no,,,,none,Map change forcing plan re-validation,ineligible,,"2 works, 0 with direct joint wheeled evidence, 2 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells; named alternative: Map change forcing plan re-validation",N05|S02
+LOC-PLN:MAP,LOC,PLN,MAP,3,1,3,yes,2,0.6667,yes,28,26,25,none,Map change forcing plan re-validation,below,,"3 works, 1 with direct joint wheeled evidence, 3 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells; named alternative: Map change forcing plan re-validation",M10|N05|S02
 LOC-PLN:MOD,LOC,PLN,MOD,2,0,1,yes,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells",M31|S46
-LOC-PLN:COM,LOC,PLN,COM,2,0,2,yes,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 2 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells",E34|X08
-LOC-PLN:RES,LOC,PLN,RES,2,0,2,yes,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 2 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells",M31|E34
-LOC-SEM:PER,LOC,SEM,PER,2,0,1,no,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 1 target wheeled",M10|R08
+LOC-PLN:COM,LOC,PLN,COM,3,0,3,yes,3,1.0,yes,25,21,4,none,none,below,,"3 works, 0 with direct joint wheeled evidence, 3 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells",E34|X08|R31
+LOC-PLN:RES,LOC,PLN,RES,4,1,4,yes,3,0.75,yes,24,20,21,none,none,below,,"4 works, 1 with direct joint wheeled evidence, 4 target wheeled; function pair of Interface 3 with a source outside its pre-registered cells",M31|E34|M10|R31
+LOC-SEM:PER,LOC,SEM,PER,2,1,1,no,1,0.5,no,,,,none,none,ineligible,,"2 works, 1 with direct joint wheeled evidence, 1 target wheeled",M10|R08
 LOC-SEM:SFA,LOC,SEM,SFA,0,0,0,no,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
 LOC-SEM:TER,LOC,SEM,TER,1,0,0,no,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 0 target wheeled; no target wheeled work",R08
 LOC-SEM:ACT,LOC,SEM,ACT,0,0,0,no,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
 LOC-SEM:DYN,LOC,SEM,DYN,1,0,1,no,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 1 target wheeled",M44
-LOC-SEM:MAP,LOC,SEM,MAP,2,1,2,no,1,0.5,no,,,,none,none,ineligible,,"2 works, 1 with direct joint wheeled evidence, 2 target wheeled",M02|M10
+LOC-SEM:MAP,LOC,SEM,MAP,2,2,2,no,0,0.0,no,,,,none,none,ineligible,,"2 works, 2 with direct joint wheeled evidence, 2 target wheeled",M02|M10
 LOC-SEM:MOD,LOC,SEM,MOD,2,0,1,no,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 1 target wheeled",M31|R08
 LOC-SEM:COM,LOC,SEM,COM,0,0,0,no,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
-LOC-SEM:RES,LOC,SEM,RES,3,1,2,no,2,0.6667,yes,26,24,24,none,none,below,,"3 works, 1 with direct joint wheeled evidence, 2 target wheeled",M31|M02|E48
+LOC-SEM:RES,LOC,SEM,RES,4,2,3,no,2,0.5,yes,30,29,30,none,none,below,,"4 works, 2 with direct joint wheeled evidence, 3 target wheeled",M31|M02|M10|E48
 LOC-MRC:PER,LOC,MRC,PER,6,0,5,no,6,1.0,yes,8,6,14,none,none,rejected,,"6 works, 0 with direct joint wheeled evidence, 5 target wheeled; function pair of Interface 4 with a source outside its pre-registered cells",E36|S23|S28|R02|R20|K07
 LOC-MRC:SFA,LOC,MRC,SFA,9,0,6,no,9,1.0,yes,3,3,13,none,none,rejected,,"9 works, 0 with direct joint wheeled evidence, 6 target wheeled; function pair of Interface 4 with a source outside its pre-registered cells",E53|F03|N11|S10|S11|S23|R23|K06|K07
 LOC-MRC:TER,LOC,MRC,TER,1,0,1,no,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 4 with a source outside its pre-registered cells",E53
@@ -24,44 +24,44 @@ LOC-MRC:ACT,LOC,MRC,ACT,0,0,0,no,0,,no,,,,none,none,ineligible,,"0 works, 0 with
 LOC-MRC:DYN,LOC,MRC,DYN,1,0,1,no,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 4 with a source outside its pre-registered cells",E36
 LOC-MRC:MAP,LOC,MRC,MAP,2,0,1,no,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 4 with a source outside its pre-registered cells",E36|F03
 LOC-MRC:MOD,LOC,MRC,MOD,0,0,0,no,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled; function pair of Interface 4 with a source outside its pre-registered cells",none
-LOC-MRC:COM,LOC,MRC,COM,16,0,11,no,16,1.0,yes,1,1,12,4,none,interface,,"16 works, 0 with direct joint wheeled evidence, 11 target wheeled",E34|E36|E37|E31|X08|E40|M36|F15|F03|S10|S29|R20|R21|R23|K06|K07
-LOC-MRC:RES,LOC,MRC,RES,3,0,3,no,3,1.0,yes,25,21,15,none,none,below,,"3 works, 0 with direct joint wheeled evidence, 3 target wheeled; function pair of Interface 4 with a source outside its pre-registered cells",E34|E36|E31
+LOC-MRC:COM,LOC,MRC,COM,17,0,12,no,17,1.0,yes,1,1,12,4,none,interface,,"17 works, 0 with direct joint wheeled evidence, 12 target wheeled",E34|E36|E37|E31|X08|E40|M36|F15|F03|S10|S29|R20|R21|R23|R31|K06|K07
+LOC-MRC:RES,LOC,MRC,RES,4,0,4,no,4,1.0,yes,22,18,15,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 4 target wheeled; function pair of Interface 4 with a source outside its pre-registered cells",E34|E36|E31|R31
 LOC-REL:PER,LOC,REL,PER,9,1,5,yes,8,0.8889,yes,4,4,17,1,none,interface,,"9 works, 1 with direct joint wheeled evidence, 5 target wheeled",E05|E07|E08|E56|F04|N04|S19|R11|R33
-LOC-REL:SFA,LOC,REL,SFA,7,0,3,yes,7,1.0,yes,6,8,4,1,none,interface,,"7 works, 0 with direct joint wheeled evidence, 3 target wheeled",X07|M28|E53|E56|F01|F03|N11
+LOC-REL:SFA,LOC,REL,SFA,7,0,3,yes,7,1.0,yes,6,8,5,1,none,interface,,"7 works, 0 with direct joint wheeled evidence, 3 target wheeled",X07|M28|E53|E56|F01|F03|N11
 LOC-REL:TER,LOC,REL,TER,2,0,2,yes,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 2 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",M39|E53
 LOC-REL:ACT,LOC,REL,ACT,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",none
 LOC-REL:DYN,LOC,REL,DYN,2,1,2,yes,1,0.5,no,,,,none,none,ineligible,,"2 works, 1 with direct joint wheeled evidence, 2 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",M35|R11
-LOC-REL:MAP,LOC,REL,MAP,4,1,3,yes,3,0.75,yes,19,22,20,none,none,below,,"4 works, 1 with direct joint wheeled evidence, 3 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",M35|F03|N06|R11
+LOC-REL:MAP,LOC,REL,MAP,4,1,3,yes,3,0.75,yes,26,27,22,none,none,below,,"4 works, 1 with direct joint wheeled evidence, 3 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",M35|F03|N06|R11
 LOC-REL:MOD,LOC,REL,MOD,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",none
-LOC-REL:COM,LOC,REL,COM,1,0,0,yes,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 0 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells; no target wheeled work",F03
-LOC-REL:RES,LOC,REL,RES,1,0,1,yes,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",S19
-PLN-SEM:PER,PLN,SEM,PER,1,1,1,yes,0,0.0,no,,,,none,none,ineligible,,"1 works, 1 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",E42
+LOC-REL:COM,LOC,REL,COM,2,0,1,yes,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",F03|R31
+LOC-REL:RES,LOC,REL,RES,2,0,2,yes,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 2 target wheeled; function pair of Interface 1 with a source outside its pre-registered cells",S19|R31
+PLN-SEM:PER,PLN,SEM,PER,2,2,2,yes,0,0.0,no,,,,none,none,ineligible,,"2 works, 2 with direct joint wheeled evidence, 2 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",E42|M10
 PLN-SEM:SFA,PLN,SEM,SFA,1,1,1,yes,0,0.0,no,,,,none,none,ineligible,,"1 works, 1 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",K13
-PLN-SEM:TER,PLN,SEM,TER,4,4,4,yes,0,0.0,yes,27,25,27,none,none,below,,"4 works, 4 with direct joint wheeled evidence, 4 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",E42|F05|S40|R26
+PLN-SEM:TER,PLN,SEM,TER,4,4,4,yes,0,0.0,yes,32,30,32,none,none,below,,"4 works, 4 with direct joint wheeled evidence, 4 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",E42|F05|S40|R26
 PLN-SEM:ACT,PLN,SEM,ACT,1,1,1,yes,0,0.0,no,,,,none,none,ineligible,,"1 works, 1 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",K13
-PLN-SEM:DYN,PLN,SEM,DYN,10,3,8,yes,7,0.7,yes,5,5,23,none,none,rejected,,"10 works, 3 with direct joint wheeled evidence, 8 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",E42|E43|E45|E50|M07|M18|E60|F06|R29|K14
-PLN-SEM:MAP,PLN,SEM,MAP,1,0,1,yes,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 1 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",E45
-PLN-SEM:MOD,PLN,SEM,MOD,7,2,6,yes,5,0.7143,yes,9,7,22,2,none,interface,,"7 works, 2 with direct joint wheeled evidence, 6 target wheeled",M31|E46|E60|R26|R29|K13|K14
+PLN-SEM:DYN,PLN,SEM,DYN,10,3,8,yes,7,0.7,yes,5,5,24,none,none,rejected,,"10 works, 3 with direct joint wheeled evidence, 8 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",E42|E43|E45|E50|M07|M18|E60|F06|R29|K14
+PLN-SEM:MAP,PLN,SEM,MAP,2,1,2,yes,1,0.5,no,,,,none,none,ineligible,,"2 works, 1 with direct joint wheeled evidence, 2 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",E45|M10
+PLN-SEM:MOD,PLN,SEM,MOD,7,2,6,yes,5,0.7143,yes,9,7,23,2,none,interface,,"7 works, 2 with direct joint wheeled evidence, 6 target wheeled",M31|E46|E60|R26|R29|K13|K14
 PLN-SEM:COM,PLN,SEM,COM,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",none
-PLN-SEM:RES,PLN,SEM,RES,4,1,4,yes,3,0.75,yes,18,23,19,2,none,interface,,"4 works, 1 with direct joint wheeled evidence, 4 target wheeled",M31|E50|F06|R29
+PLN-SEM:RES,PLN,SEM,RES,6,3,6,yes,3,0.5,yes,23,25,29,2,none,interface,,"6 works, 3 with direct joint wheeled evidence, 6 target wheeled",M31|E50|M10|F06|F05|R29
 PLN-MRC:PER,PLN,MRC,PER,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
 PLN-MRC:SFA,PLN,MRC,SFA,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
-PLN-MRC:TER,PLN,MRC,TER,2,1,2,yes,1,0.5,no,,,,none,none,ineligible,,"2 works, 1 with direct joint wheeled evidence, 2 target wheeled",X12|F09
-PLN-MRC:ACT,PLN,MRC,ACT,3,0,3,yes,3,1.0,yes,21,17,7,none,none,below,,"3 works, 0 with direct joint wheeled evidence, 3 target wheeled",E32|S04|R17
+PLN-MRC:TER,PLN,MRC,TER,3,2,3,yes,1,0.3333,yes,31,,31,none,none,below,,"3 works, 2 with direct joint wheeled evidence, 3 target wheeled",X12|E33|F09
+PLN-MRC:ACT,PLN,MRC,ACT,4,0,4,yes,4,1.0,yes,14,11,2,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 4 target wheeled",E32|S04|S25|R17
 PLN-MRC:DYN,PLN,MRC,DYN,1,1,1,yes,0,0.0,no,,,,none,none,ineligible,,"1 works, 1 with direct joint wheeled evidence, 1 target wheeled",X12
 PLN-MRC:MAP,PLN,MRC,MAP,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
 PLN-MRC:MOD,PLN,MRC,MOD,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
-PLN-MRC:COM,PLN,MRC,COM,14,1,11,yes,13,0.9286,yes,2,2,16,none,none,rejected,,"14 works, 1 with direct joint wheeled evidence, 11 target wheeled",E32|E33|E34|E38|X08|E39|M25|E57|F13|F14|R19|R22|R24|R31
-PLN-MRC:RES,PLN,MRC,RES,4,1,3,yes,3,0.75,yes,22,18,21,none,none,below,,"4 works, 1 with direct joint wheeled evidence, 3 target wheeled",E33|E34|E57|R31
-PLN-REL:PER,PLN,REL,PER,3,0,2,yes,3,1.0,yes,24,20,9,none,none,below,,"3 works, 0 with direct joint wheeled evidence, 2 target wheeled",M11|N10|S18
-PLN-REL:SFA,PLN,REL,SFA,4,0,4,yes,4,1.0,yes,14,19,3,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 4 target wheeled",M01|E55|F02|N14
-PLN-REL:TER,PLN,REL,TER,2,0,1,yes,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 1 target wheeled",N10|N17
-PLN-REL:ACT,PLN,REL,ACT,5,0,5,yes,5,1.0,yes,10,11,1,none,none,rejected,,"5 works, 0 with direct joint wheeled evidence, 5 target wheeled",E52|E55|M15|F02|S15
-PLN-REL:DYN,PLN,REL,DYN,7,3,5,yes,4,0.5714,yes,12,9,25,none,none,rejected,,"7 works, 3 with direct joint wheeled evidence, 5 target wheeled",E25|E60|N15|S14|S16|S47|R36
+PLN-MRC:COM,PLN,MRC,COM,15,1,12,yes,14,0.9333,yes,2,2,16,none,none,rejected,,"15 works, 1 with direct joint wheeled evidence, 12 target wheeled",E32|E33|E34|E38|X08|E39|M25|E57|F13|F14|S25|R19|R22|R24|R31
+PLN-MRC:RES,PLN,MRC,RES,5,1,4,yes,4,0.8,yes,15,12,19,none,none,below,,"5 works, 1 with direct joint wheeled evidence, 4 target wheeled",E33|E34|M25|E57|R31
+PLN-REL:PER,PLN,REL,PER,4,0,3,yes,4,1.0,yes,18,15,9,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 3 target wheeled",M11|N10|S18|R33
+PLN-REL:SFA,PLN,REL,SFA,4,0,4,yes,4,1.0,yes,16,23,3,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 4 target wheeled",M01|E55|F02|N14
+PLN-REL:TER,PLN,REL,TER,3,1,2,yes,2,0.6667,yes,29,28,26,none,none,below,,"3 works, 1 with direct joint wheeled evidence, 2 target wheeled",N10|N17|S14
+PLN-REL:ACT,PLN,REL,ACT,5,0,5,yes,5,1.0,yes,10,13,1,none,none,rejected,,"5 works, 0 with direct joint wheeled evidence, 5 target wheeled",E52|E55|M15|F02|S15
+PLN-REL:DYN,PLN,REL,DYN,7,3,5,yes,4,0.5714,yes,13,10,27,none,none,below,,"7 works, 3 with direct joint wheeled evidence, 5 target wheeled",E25|E60|N15|S14|S16|S47|R36
 PLN-REL:MAP,PLN,REL,MAP,1,1,1,yes,0,0.0,no,,,,none,none,ineligible,,"1 works, 1 with direct joint wheeled evidence, 1 target wheeled",S41
-PLN-REL:MOD,PLN,REL,MOD,8,4,6,yes,4,0.5,yes,11,15,26,none,none,rejected,,"8 works, 4 with direct joint wheeled evidence, 6 target wheeled",E60|F08|S14|S18|S38|S41|S47|R36
-PLN-REL:COM,PLN,REL,COM,3,0,2,yes,3,1.0,yes,23,,8,none,none,below,,"3 works, 0 with direct joint wheeled evidence, 2 target wheeled",E57|F02|R31
-PLN-REL:RES,PLN,REL,RES,5,1,3,yes,4,0.8,yes,15,13,18,none,Perception latency affecting control|Energy or computation limits on planning,below,,"5 works, 1 with direct joint wheeled evidence, 3 target wheeled; named alternative: Perception latency affecting control; Energy or computation limits on planning",E57|M11|N14|S41|R31
+PLN-REL:MOD,PLN,REL,MOD,8,4,6,yes,4,0.5,yes,11,19,28,none,none,rejected,,"8 works, 4 with direct joint wheeled evidence, 6 target wheeled",E60|F08|S14|S18|S38|S41|S47|R36
+PLN-REL:COM,PLN,REL,COM,4,0,3,yes,4,1.0,yes,17,24,8,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 3 target wheeled",E57|F02|N14|R31
+PLN-REL:RES,PLN,REL,RES,5,1,3,yes,4,0.8,yes,19,16,20,none,Perception latency affecting control|Energy or computation limits on planning,below,,"5 works, 1 with direct joint wheeled evidence, 3 target wheeled; named alternative: Perception latency affecting control; Energy or computation limits on planning",E57|M11|N14|S41|R31
 SEM-MRC:PER,SEM,MRC,PER,0,0,0,no,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
 SEM-MRC:SFA,SEM,MRC,SFA,0,0,0,no,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
 SEM-MRC:TER,SEM,MRC,TER,0,0,0,no,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
@@ -81,11 +81,11 @@ SEM-REL:MOD,SEM,REL,MOD,1,0,0,yes,1,1.0,no,,,,2,none,interface,,"1 works, 0 with
 SEM-REL:COM,SEM,REL,COM,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled; function pair of Interface 2 with a source outside its pre-registered cells",none
 SEM-REL:RES,SEM,REL,RES,0,0,0,yes,0,,no,,,,2,none,interface,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
 MRC-REL:PER,MRC,REL,PER,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
-MRC-REL:SFA,MRC,REL,SFA,6,0,3,yes,6,1.0,yes,7,12,6,none,none,rejected,,"6 works, 0 with direct joint wheeled evidence, 3 target wheeled",E53|F12|F03|N11|N13|S17
+MRC-REL:SFA,MRC,REL,SFA,6,0,3,yes,6,1.0,yes,7,14,7,none,none,rejected,,"6 works, 0 with direct joint wheeled evidence, 3 target wheeled",E53|F12|F03|N11|N13|S17
 MRC-REL:TER,MRC,REL,TER,2,0,2,yes,2,1.0,no,,,,none,none,ineligible,,"2 works, 0 with direct joint wheeled evidence, 2 target wheeled",E53|S17
-MRC-REL:ACT,MRC,REL,ACT,3,0,3,yes,3,1.0,yes,20,16,5,none,none,below,,"3 works, 0 with direct joint wheeled evidence, 3 target wheeled",X13|N13|R35
+MRC-REL:ACT,MRC,REL,ACT,3,0,3,yes,3,1.0,yes,27,22,6,none,none,below,,"3 works, 0 with direct joint wheeled evidence, 3 target wheeled",X13|N13|R35
 MRC-REL:DYN,MRC,REL,DYN,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
 MRC-REL:MAP,MRC,REL,MAP,1,0,0,yes,1,1.0,no,,,,none,none,ineligible,,"1 works, 0 with direct joint wheeled evidence, 0 target wheeled; no target wheeled work",F03
 MRC-REL:MOD,MRC,REL,MOD,0,0,0,yes,0,,no,,,,none,none,ineligible,,"0 works, 0 with direct joint wheeled evidence, 0 target wheeled",none
-MRC-REL:COM,MRC,REL,COM,4,0,1,yes,4,1.0,yes,16,,10,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 1 target wheeled",E57|F12|F03|R31
-MRC-REL:RES,MRC,REL,RES,4,0,1,yes,4,1.0,yes,17,14,11,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 1 target wheeled",E57|E58|R31|R34
+MRC-REL:COM,MRC,REL,COM,4,0,1,yes,4,1.0,yes,20,,10,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 1 target wheeled",E57|F12|F03|R31
+MRC-REL:RES,MRC,REL,RES,4,0,1,yes,4,1.0,yes,21,17,11,none,none,below,,"4 works, 0 with direct joint wheeled evidence, 1 target wheeled",E57|E58|R31|R34
