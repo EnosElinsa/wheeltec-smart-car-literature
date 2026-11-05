@@ -1,8 +1,8 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "scope": "Critical characterizations in Sections IV-X: sentences with a limiting marker that cite exactly one corpus work, and limiting clauses that end in a single citation inside multi-citation sentences.",
-  "method": "Each claim was matched against its review card and the local full-text transcription by keyword overlap. Claims without a direct match were checked with targeted phrase searches. Source excerpts remain local and are not published.",
-  "sentence_claims_checked": 67,
+  "method": "Each claim was matched against its review card and the local full-text transcription by keyword overlap. Claims without a direct match were checked with targeted phrase searches. Source excerpts remain local and are not published. Round 4 adds the corrections caused by the final evidence codes, the claim entries of the new or changed characterizations (checked against review cards and PDF pages, locators only), and removed or regrouped claims.",
+  "sentence_claims_checked": 64,
   "clause_claims_checked": 68,
   "clause_claims_with_targeted_search": 34,
   "corrections": [
@@ -68,6 +68,405 @@
       "before": "About a third of the studies reviewed here report task outcomes under a named degradation condition",
       "after": "More than a quarter of the studies reviewed here report task outcomes under a named degradation condition",
       "reason": "With the coverage additions, the Section VII share fell from 13 of 40 (0.325) to 13 of 45 (0.289); build_data.py now asserts 0.25 < share < 1/3."
+    },
+    {
+      "code": "evidence-map",
+      "section": "Abstract, I, IX-B, XI",
+      "before": "61 of 244 (25%) report task outcomes under a named degradation condition (card fields, not necessarily the same experiment)",
+      "after": "80 of 244 (33%) report a task outcome under a named degradation condition in the same experiment, from 1 of 67 localization to 36 of 56 planning studies",
+      "reason": "Round 4 replaces the card fields by the final evidence codes (primary codes plus adjudication log) and requires both parts from one experiment; the card-level value stays as a sensitivity row (Table S10)."
+    },
+    {
+      "code": "evidence-map",
+      "section": "IV (synthesis)",
+      "before": "only 2 of 67 report a task outcome; 37 evaluate on road vehicles, other embodiments, ...",
+      "after": "only 1 of 67 reports a task outcome, while most also evaluate on carriers other than a target wheeled robot (37 of 67)",
+      "reason": "Final codes; asserted in build_data.py."
+    },
+    {
+      "code": "evidence-map",
+      "section": "V (synthesis)",
+      "before": "nearly all report task outcomes; fewer than half report results under a named degradation condition",
+      "after": "these studies report task outcomes under a named degradation condition in the same experiment more often than the studies of any other function (36 of 56)",
+      "reason": "Final codes; the maximum same-experiment share is asserted for planning."
+    },
+    {
+      "code": "evidence-map",
+      "section": "VI (synthesis)",
+      "before": "nearly every study reports task outcomes; fewer than a third report results under a named condition",
+      "after": "most studies report task outcomes (32 of 36), while fewer than half report one under a named degradation condition in the same experiment (16 of 36)",
+      "reason": "Final codes; asserted in build_data.py."
+    },
+    {
+      "code": "evidence-map",
+      "section": "VII (synthesis)",
+      "before": "More than a quarter of the studies reviewed here report task outcomes under a named degradation condition (13 of 45)",
+      "after": "Fewer than a quarter of the studies reviewed here report a task outcome under a named degradation condition in the same experiment (11 of 45), 2 of them on physical robots",
+      "reason": "Final codes; asserted in build_data.py."
+    },
+    {
+      "code": "evidence-map",
+      "section": "VIII (synthesis)",
+      "before": "9 of 14 integrity assessments and the largest share of task outcomes under a named condition",
+      "after": "9 of 14 integrity or failure-risk assessments (largest-share claim removed)",
+      "reason": "Under the final codes, fault management has 16 of 40 against 36 of 56 in planning."
+    },
+    {
+      "code": "evidence-map",
+      "section": "IX-B",
+      "before": "Fault-management studies have the largest share of this combination",
+      "after": "The share rises from 1% in localization through 24%, 40% and 44% to 64% in planning and control",
+      "reason": "Final codes; pre-registered finding RF2 fails, as Supplement S6 states."
+    },
+    {
+      "code": "evidence-map",
+      "section": "Supplement S1",
+      "before": "Without the additions, 59 of 228 (26%)",
+      "after": "Without the additions, 76 of 228 (33%), same-experiment definition",
+      "reason": "Final codes."
+    },
+    {
+      "code": "evidence-map",
+      "section": "X (opening)",
+      "before": "The interfaces are an agenda proposed by this survey rather than a ranking derived from the coding",
+      "after": "Interfaces 1-4 rank 4, 9, 12 and 1 of 32 candidates (4, 7, 9 and 1 without the integration-questions stage) and remain an agenda proposed by this survey rather than the four highest-ranked candidates",
+      "reason": "Pre-registered ranking rule of codebook v1.0 applied to the final codes; ranks asserted in build_data.py."
+    },
+    {
+      "code": "M10",
+      "section": "X-C",
+      "before": "the single direct study of Interface 3 is direct through injected map deviations rather than pose uncertainty",
+      "after": "The single direct wheeled study, OPEN, completes a GPS-disabled campus delivery with no pose-uncertainty term in its traversability cost, which leaves this question with extrapolated evidence only.",
+      "reason": "Corrected in the second manuscript check of round 4: the injected map deviations were tested in simulation only (PDF p. 10, Table III). The direct physical condition is the GPS-disabled campus run (adjudication log; PDF p. 11 and p. 8). The local replanning cost comes from image segmentation without an uncertainty term (paper Sec. IV-F). build_data.py asserts src_selected PER, deg_task_setting physical and level_degradation P for M10. The pronoun \"Their\" became \"The\" after the third check."
+    }
+  ],
+  "round4_claims": [
+    {
+      "location": "Table II (differential)",
+      "codes": [
+        "E02"
+      ],
+      "claim": "Slip and wheel lift break the encoder model; covariance can grow along unexplained motion",
+      "basis": "review card, transfer conditions (p. 4); Sec. IV-C wording audited earlier"
+    },
+    {
+      "location": "Table II (differential)",
+      "codes": [
+        "R33"
+      ],
+      "claim": "Sideways moves need rotation",
+      "basis": "PDF p. 14, Fig. 18; adjudicated drivetrain_effect yes"
+    },
+    {
+      "location": "Table II (skid steer)",
+      "codes": [
+        "M39"
+      ],
+      "claim": "Slip varies with speed, maneuver, and surface",
+      "basis": "review card, baselines and controls (p. 7, Fig. 12)"
+    },
+    {
+      "location": "Table II (skid steer)",
+      "codes": [
+        "E04"
+      ],
+      "claim": "A fixed model misses side slip at speed",
+      "basis": "PDF p. 1; card problem statement"
+    },
+    {
+      "location": "Table II (Ackermann)",
+      "codes": [
+        "S07"
+      ],
+      "claim": "Turning radius and input bounds limit corrections",
+      "basis": "PDF p. 1; card mechanism (curvature limits in the field and saturated tracking law)"
+    },
+    {
+      "location": "Table II (omnidirectional)",
+      "codes": [
+        "M09",
+        "S48"
+      ],
+      "claim": "No drive-specific effect reported on Mecanum bases",
+      "basis": "both coded drivetrain_effect no, drivetrain omnidirectional; asserted in build_data.py"
+    },
+    {
+      "location": "Table II note",
+      "codes": [
+        "N17"
+      ],
+      "claim": "A wheeled-legged robot also recovers by repositioning its wheels to reshape the support polygon, which conventional wheels cannot do",
+      "basis": "review card, mechanism (pp. 2-5); codebook v1.1 Sec. 13 keeps wheel repositioning at drivetrain_effect yes"
+    },
+    {
+      "location": "Table II note",
+      "codes": [
+        "E02",
+        "R33",
+        "M39",
+        "E04",
+        "S07",
+        "N17"
+      ],
+      "claim": "Except for the Mecanum studies, corpus citations mark works coded with a drivetrain-dependent effect",
+      "basis": "asserted in build_data.py on generated/evidence-codes.csv"
+    },
+    {
+      "location": "X-A",
+      "codes": [
+        "R11",
+        "X07",
+        "M28"
+      ],
+      "claim": "Only the cross-modal teach-and-repeat study gives direct joint wheeled evidence among the 15 works; the integrity analyses rest on road-vehicle data",
+      "basis": "generated/interface-traceability.csv; asserted"
+    },
+    {
+      "location": "X-B",
+      "codes": [],
+      "claim": "5 of the 11 works give direct wheeled evidence, none names a computation limit or response delay among its conditions",
+      "basis": "asserted on generated/evidence-codes.csv"
+    },
+    {
+      "location": "X-C",
+      "codes": [
+        "K03",
+        "K05",
+        "R13",
+        "R15"
+      ],
+      "claim": "These terrain planners give direct wheeled evidence for terrain risk without coding localization as a function",
+      "basis": "asserted (functions and evidence codes)"
+    },
+    {
+      "location": "X-C",
+      "codes": [
+        "M10"
+      ],
+      "claim": "OPEN completes a GPS-disabled campus delivery with no pose-uncertainty term in its traversability cost",
+      "basis": "adjudication log (PDF p. 11, p. 8); paper Sec. IV-F; asserted (see corrections)"
+    },
+    {
+      "location": "X-C",
+      "codes": [
+        "K03"
+      ],
+      "claim": "STEP field runs on a Husky and a Spot quadruped report no failure rates",
+      "basis": "restored round-3 wording, audited earlier (PDF pp. 2, 5, 7)"
+    },
+    {
+      "location": "X-D",
+      "codes": [],
+      "claim": "None of the 17 works gives direct joint wheeled evidence; its 12 target wheeled works name conditions only in recorded data, replay, online estimation or simulation, if at all",
+      "basis": "asserted (level_degradation in R, D, O, S, none)"
+    },
+    {
+      "location": "X-E",
+      "codes": [
+        "M15",
+        "E52",
+        "F02"
+      ],
+      "claim": "Actuator faults accommodated inside one tracking controller still lack tests of a planning or supervision response",
+      "basis": "candidate PLN-REL:ACT; data/interface-decisions.json"
+    },
+    {
+      "location": "X opening",
+      "codes": [],
+      "claim": "Six candidates ranked above Interface 3 are merged into Interface 4 or Interface 2",
+      "basis": "asserted against data/interface-decisions.json"
+    },
+    {
+      "location": "V-A",
+      "codes": [
+        "K02"
+      ],
+      "claim": "SalsaNext reaches 40.20% mIoU on RELLIS-3D against 59.5% on an urban benchmark",
+      "basis": "PDF p. 5; numeric-audit.json"
+    },
+    {
+      "location": "I",
+      "codes": [
+        "B_DrivingAutomation2021"
+      ],
+      "claim": "SAE J3016 defines levels through user and system roles in the dynamic driving task and its fallback",
+      "basis": "Crossref abstract of 10.4271/j3016_202104"
+    },
+    {
+      "location": "I",
+      "codes": [
+        "B_SOTIF2022"
+      ],
+      "claim": "ISO 21448 concerns hazards from insufficiencies of specification or of sensing and processing performance rather than from faults, for series-production road vehicles",
+      "basis": "official ISO catalogue abstract (hash in background-verification.json)"
+    },
+    {
+      "location": "I",
+      "codes": [
+        "B_ODDMonitoring2021"
+      ],
+      "claim": "An operational-design-domain check can flag laser scans unsuitable for matching before localization runs",
+      "basis": "publisher abstract"
+    },
+    {
+      "location": "I, X-A",
+      "codes": [
+        "B_MRMFallback2025"
+      ],
+      "claim": "A minimum risk maneuver brings an automated vehicle to a minimum risk condition after an unanswered takeover request or severe system failure",
+      "basis": "publisher abstract (terms of the cited study)"
+    },
+    {
+      "location": "III",
+      "codes": [],
+      "claim": "All 220 archived screening decisions name Codex as reviewer and host, with a relevance policy stated in all but four; no record names the model or its version",
+      "basis": "local screening archive (policy_version empty for 4)"
+    },
+    {
+      "location": "III",
+      "codes": [],
+      "claim": "Kappa ranges from -0.04 (drivetrain-dependent effect) to 1.00 (incidental sources)",
+      "basis": "generated/coding-agreement.csv; asserted"
+    },
+    {
+      "location": "VI-A",
+      "codes": [
+        "E47"
+      ],
+      "claim": "On simulated HM3D object search, with success as stopping within 1 m of a target instance in at most 500 steps, VLFM reaches 52.5% success and 30.4% SPL",
+      "basis": "PDF p. 5, Table I and metric definitions; PDF p. 2, success rule"
+    },
+    {
+      "location": "IV-A",
+      "codes": [
+        "E01"
+      ],
+      "claim": "APE is an ATE from the EVO tool with no stated alignment or statistic",
+      "basis": "PDF p. 5 (APE with EVO as the main metric), p. 7 Table V title; no alignment or RMSE statement found in the PDF text or transcription"
+    },
+    {
+      "location": "IV-C, IV-C, V-D, V-E, VIII-B, IX-D, X-C",
+      "codes": [
+        "N02",
+        "E02",
+        "E26",
+        "N14",
+        "X07"
+      ],
+      "claim": "References to Eqs. (1)-(6) added to sentences that use them; characterizations unchanged",
+      "basis": "equations byte-identical (verify_delivery.py hash baseline)"
+    },
+    {
+      "location": "Table V (synthesis)",
+      "codes": [
+        "E01",
+        "F04",
+        "E02",
+        "S37",
+        "E07",
+        "E08",
+        "K01",
+        "R07",
+        "K03",
+        "E13",
+        "E26",
+        "S45",
+        "N05",
+        "M42",
+        "E25",
+        "K05",
+        "E44",
+        "M10",
+        "R26",
+        "S43",
+        "F05",
+        "S44",
+        "S40",
+        "R25",
+        "R22",
+        "R21",
+        "R19",
+        "E34",
+        "R20",
+        "F03",
+        "R23",
+        "K07",
+        "E51",
+        "X07",
+        "E59",
+        "R32",
+        "E52",
+        "M35",
+        "E55",
+        "N10",
+        "N17"
+      ],
+      "claim": "Representative citations per cell; each cited work is described in Sections IV-VIII with the property the cell names",
+      "basis": "the section sentences that cite the same work (all audited in this record or earlier)"
+    },
+    {
+      "location": "VII-B, VII-C, VIII-B, IV-E, V-B, V-D, VI-B",
+      "codes": [
+        "E05",
+        "S31",
+        "S24",
+        "S37",
+        "N01",
+        "N02",
+        "E56",
+        "M34",
+        "R06",
+        "M14",
+        "M31",
+        "M05",
+        "E22",
+        "E23",
+        "E30",
+        "E24",
+        "E29",
+        "K14",
+        "K16",
+        "E50",
+        "K07",
+        "K09",
+        "K10",
+        "X07"
+      ],
+      "claim": "Long sentences split or regrouped (B21); characterizations unchanged",
+      "basis": "earlier audit entries of the same works"
+    },
+    {
+      "location": "IX-E",
+      "codes": [
+        "F07",
+        "E60",
+        "R26",
+        "R07"
+      ],
+      "claim": "Timing examples that repeat VI-D regrouped into one sentence",
+      "basis": "R07 p. 7 (2.74 Hz); other characterizations as in VI-D and VIII-B"
+    }
+  ],
+  "round4_removed_or_regrouped": [
+    {
+      "section": "V-A",
+      "code": "K04",
+      "text": "TartanDrive sentence (about 200,000 interactions, models not tested in a navigation stack); the limitation stays in Table III"
+    },
+    {
+      "section": "IX-C",
+      "code": "R13",
+      "text": "Repeat of the simulation-to-outdoor success drop; stays in Sec. V-A"
+    },
+    {
+      "section": "IX-D",
+      "code": "R27/R25",
+      "text": "Small-sample sentence; R27 trial counts stay in Sec. VI-A, R25 repetitions in Sec. VI-C"
+    },
+    {
+      "section": "X-A, X-B, X-D",
+      "code": "R04/N09/F12/R36",
+      "text": "Re-descriptions of works reviewed in Secs. IV-VIII shortened into citation groups"
     }
   ],
   "claims": [
@@ -92,7 +491,7 @@
     {
       "section": "04",
       "code": "E02",
-      "claim": "Time-of-flight (ToF)--wheel odometry inflates process covariance only along the remainder that differential-drive motion cannot explain .",
+      "claim": "Time-of-flight (ToF)--wheel odometry inflates process covariance only along the remainder that the differential-drive model eq:differential cannot explain .",
       "status": "supported"
     },
     {
@@ -145,12 +544,6 @@
     },
     {
       "section": "05",
-      "code": "K04",
-      "claim": "TartanDrive records about 200,000 interactions of a joystick-driven all-terrain vehicle for learning off-road dynamics, although the learned models were not tested in a navigation stack .",
-      "status": "supported"
-    },
-    {
-      "section": "05",
       "code": "N08",
       "claim": "An anisotropic explorer penalizes motion by slope and travel direction with a quasi-static Euler Cost that omits slip and suspension transients .",
       "status": "supported"
@@ -166,6 +559,12 @@
       "code": "S42",
       "claim": "A visual-foundation-model approach learns cost, speed, and novelty maps from expert driving for model predictive path integral (MPPI) control, with field trials in which operator corrections expose residual failures that offline trajectory agreement conceals .",
       "status": "supported"
+    },
+    {
+      "section": "05",
+      "code": "M05",
+      "claim": "FRTree instead builds overlapping free polytopes and checks that each region can contain the robot geometry, with tests on a quadruped rather than under wheeled curvature limits .",
+      "status": "corrected"
     },
     {
       "section": "05",
@@ -206,7 +605,7 @@
     {
       "section": "05",
       "code": "E26",
-      "claim": "A LiDAR-based CBF safety filter fits a GP to current obstacle edges and uses its mean and gradient in a quadratic program, with an invariance argument that excludes the GP variance .",
+      "claim": "A LiDAR-based CBF safety filter fits a GP to current obstacle edges and uses its mean and gradient in the condition eq:cbf of a quadratic program, with an invariance argument that excludes the GP variance .",
       "status": "supported"
     },
     {
@@ -289,12 +688,6 @@
     },
     {
       "section": "07",
-      "code": "K07",
-      "claim": "LAMP 2.0 instead queues pose graphs and keyed scans while a robot is out of range and sends them as a batch on reconnection to a base station that filters loop closures by consistency checks or GNC, keeping map errors below 4\\,m on replayed data from Husky and Spot robots .",
-      "status": "supported"
-    },
-    {
-      "section": "07",
       "code": "R24",
       "claim": "MEF-Explore derives rendezvous from entropy fields and assumes that low-rate position exchange is always available, exploring 21.32\\% faster with a 16.67\\% higher success rate than the baseline on three TurtleBot2 robots .",
       "status": "supported"
@@ -302,7 +695,13 @@
     {
       "section": "07",
       "code": "K08",
-      "claim": "Team CSIRO Data61 had every tracked, legged, and aerial robot solve the same multi-agent pose graph from data exchanged by store-and-forward messaging, with agents returning to base when mission-critical data remained unsynchronized .",
+      "claim": "In the DARPA Subterranean Challenge, Team CSIRO Data61 had every tracked, legged, and aerial robot solve the same multi-agent pose graph from data exchanged by store-and-forward messaging, with agents returning to base when mission-critical data remained unsynchronized .",
+      "status": "supported"
+    },
+    {
+      "section": "07",
+      "code": "K09",
+      "claim": "Team Explorer's wheeled robots and drones broadcast a ledger of submaps and fetch missing ones from whichever robot holds them .",
       "status": "supported"
     },
     {
@@ -321,12 +720,6 @@
       "section": "08",
       "code": "E51",
       "claim": "Kinematics-based detection compares position, angular velocity, and acceleration through transport relations, with faults injected into recorded rover data .",
-      "status": "supported"
-    },
-    {
-      "section": "08",
-      "code": "X07",
-      "claim": "Integrity analysis for extended Kalman filter (EKF) SLAM accumulates landmark fault risk, although its recorded example crosses the threshold only after localization fails .",
       "status": "supported"
     },
     {
@@ -391,8 +784,8 @@
     },
     {
       "section": "09",
-      "code": "R13",
-      "claim": "The step to hardware can itself change the result, as the drop in success of terrain-adaptive MPC between simulation and outdoor trials shows .",
+      "code": "E26",
+      "claim": "A barrier proof may assume feasible inputs for eq:cbf that saturation violates .",
       "status": "supported"
     },
     {
@@ -439,14 +832,8 @@
     },
     {
       "section": "10",
-      "code": "R04",
-      "claim": "Wheel--inertial odometry with a ground-manifold prior offers an interoceptive fallback whose drift grows without external correction .",
-      "status": "supported"
-    },
-    {
-      "section": "10",
       "code": "N09",
-      "claim": "In the team-level analogue, Co-NavGPT executes semantic frontier assignments geometrically with perception and planning on a workstation .",
+      "claim": "A delayed team assignment, as in Co-NavGPT with perception and planning on a workstation , can likewise remain syntactically valid after the shared map or the allocation has changed.",
       "status": "supported"
     },
     {
@@ -458,20 +845,14 @@
     {
       "section": "10",
       "code": "K03",
-      "claim": "STEP comes closest, since localization error enters its CVaR collision risk through the elevation-map variance, although its simulation assumes no localization error and its field runs on a Husky and a Spot quadruped report no failure rates .",
+      "claim": "STEP comes closest to this question among these planners, since localization error enters its collision risk through the elevation-map variance, although its simulation assumes no localization error and its field runs on a Husky and a Spot quadruped report no failure rates .",
       "status": "corrected"
     },
     {
       "section": "10",
-      "code": "F12",
-      "claim": "Disconnection, Reconnection, and Corrupted Shared Information Reconnection mechanisms exist for particular shared quantities, such as the target estimates that failure-aware aerial tracking fuses after a link returns .",
-      "status": "supported"
-    },
-    {
-      "section": "10",
-      "code": "R36",
-      "claim": "Simulation-based failure prediction can repair policies before deployment, although only for the failures that the simulator models .",
-      "status": "supported"
+      "code": "M10",
+      "claim": "The single direct wheeled study, OPEN, completes a GPS-disabled campus delivery with no pose-uncertainty term in its traversability cost , which leaves this question with extrapolated evidence only.",
+      "status": "corrected"
     }
   ]
 }

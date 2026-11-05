@@ -10,9 +10,9 @@
   "citation_scope_sha256": "6f806d1df136a8c95788931178931f7720b5ff496c98506d8dfad0784152483a",
   "bibliography_entries": 270,
   "resolved_bibliography_entries": 270,
-  "unique_labels": 29,
+  "unique_labels": 30,
   "figures": 3,
-  "tables": 7,
+  "tables": 8,
   "unresolved_references": [],
   "supplement_references": [
     "S-supp:coding",
@@ -214,7 +214,7 @@
   "overfull_boxes": 0,
   "underfull_horizontal_boxes": 0,
   "underfull_vertical_boxes": 0,
-  "pdf_sha256": "3b31cec143c790a49411dc244d3d2eff7c2be2e2b29b51becf96e1d81946d13c",
+  "pdf_sha256": "969489b8c62368a2dd2bd8e476e20fe181b52c811e8bb362833564eac7564002",
   "supplement": {
     "pages": 17,
     "unique_labels": 22,
@@ -225,7 +225,7 @@
     "overfull_boxes": 0,
     "underfull_horizontal_boxes": 3,
     "underfull_vertical_boxes": 0,
-    "pdf_sha256": "dc7d3eb1b940a26bca4006bdd8a2bdee0942931098e33b1ba9bcb4f228299f2b"
+    "pdf_sha256": "4207558839596fded8e26dd7fb86c4f4ef2d770fd1680a86f3e89234cbc08844"
   },
-  "base_commit": "a9433d92bfc79b3126257bc30eab41bce1420d40"
+  "base_commit": "5cc146e1335dc72cdf02d0515cd35b7aa07d117e"
 }

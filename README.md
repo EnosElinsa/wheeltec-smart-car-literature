@@ -31,7 +31,7 @@ Publisher PDFs, transcriptions and extracted images remain local. Public indexes
 
 All **247 publications have review cards**: 23 full assessments and 224 light assessments. The light cards comprise 89 historical extract-based assessments and 135 targeted readings with physical-page locators and explicit limits. Targeted reading does not imply whole-paper verification; the [review workflow](03-reviews/WORKFLOW.md) defines assessment depth, and numbers cited in the survey are rechecked against the PDF.
 
-The manuscript cites 245 selected works (244 technical studies and one context review) and 20 background references, for **265 references**. All corpus works date from 2021-2026. Seven background references are foundational pre-2021 sources cited for attribution of definitions, outside the coded corpus. X01 (1999) and X15 (2016) remain uncited library records. The [selection record](06-data/survey-inclusion.json) holds the current membership and the historical baseline; the [unified catalog](06-data/library-catalog.csv) records each paper's status.
+The manuscript cites 245 selected works (244 technical studies and one context review) and 25 background references, for **270 references**. All corpus works date from 2021-2026. Seven background references are foundational pre-2021 sources cited for attribution of definitions, outside the coded corpus. X01 (1999) and X15 (2016) remain uncited library records. The [selection record](06-data/survey-inclusion.json) holds the current membership and the historical baseline; the [unified catalog](06-data/library-catalog.csv) records each paper's status.
 
 ## Maintenance
 

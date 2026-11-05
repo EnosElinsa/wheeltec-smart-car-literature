@@ -1,10 +1,78 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "scope": "Every sentence in Sections IV-X that reports a numerical result (percentages, times, rates, counts with units, or decimal values).",
-  "method": "Numbers in comparison records were checked earlier against the PDFs (data/within-study-comparisons.json). For the other sentences, every number was searched in the review card and in the local full-text transcription, and the numbers of each sentence were required to occur together in one transcription passage. Numbers taken from the 2026-11-04 coverage additions (K01-K16) were also re-read on the physical PDF page named in card_locator. Source excerpts remain local.",
-  "sentences": 27,
-  "in_comparison_records": 9,
+  "method": "Numbers in comparison records were checked earlier against the PDFs (data/within-study-comparisons.json). For the other sentences, every number was searched in the review card and in the local full-text transcription, and the numbers of each sentence were required to occur together in one transcription passage. Numbers taken from the 2026-11-04 coverage additions (K01-K16) and the numbers added in round 4 (E47) were also re-read on the physical PDF page named in card_locator. Sample statistics come from generated/stats.tex and are asserted in scripts/build_data.py. Source excerpts remain local.",
+  "sentences": 29,
+  "in_comparison_records": 10,
   "mismatches": 0,
+  "round4_changes": [
+    {
+      "section": "V-A",
+      "codes": [
+        "K04"
+      ],
+      "change": "removed",
+      "text": "TartanDrive sentence with about 200,000 interactions; TartanDrive stays cited in the RELLIS-3D sentence and Table III"
+    },
+    {
+      "section": "V-A",
+      "codes": [
+        "K02"
+      ],
+      "change": "merged",
+      "text": "RELLIS-3D sentence merged with the learner-data sentence; numbers 40.20 and 59.5 unchanged (PDF p. 5)"
+    },
+    {
+      "section": "IX-C",
+      "codes": [
+        "R13"
+      ],
+      "change": "removed",
+      "text": "Repeat of the simulation-to-outdoor drop of terrain-adaptive MPC; the numbers stay in Sec. V-A"
+    },
+    {
+      "section": "IX-D",
+      "codes": [
+        "R27",
+        "R25"
+      ],
+      "change": "removed",
+      "text": "\"30 object-search trials\" and \"few repetitions per outdoor route\", first shortened to \"Small hardware samples\", then cut; 30 building trials stay in Sec. VI-A"
+    },
+    {
+      "section": "IX-E",
+      "codes": [
+        "F07",
+        "E60",
+        "R26",
+        "R07"
+      ],
+      "change": "shortened",
+      "text": "Timing examples that repeat Sec. VI-D regrouped; 1 Hz stays in Sec. VI-D, 2.74 Hz unchanged"
+    },
+    {
+      "section": "VI-A",
+      "codes": [
+        "E47"
+      ],
+      "change": "added",
+      "text": "VLFM HM3D object search: 52.5% success and 30.4% SPL, success within 1 m in at most 500 steps (PDF p. 5 Table I, p. 2)"
+    },
+    {
+      "section": "X-C",
+      "codes": [
+        "K03"
+      ],
+      "change": "shortened",
+      "text": "STEP sentence without \"CVaR\"; platform clause and the absence of failure rates kept"
+    },
+    {
+      "section": "Supplement S1",
+      "codes": [],
+      "change": "added",
+      "text": "Screening-archive counts (220 records: 150 accept, 40 reject, 30 pending; read scope for 85 = 74/7/3/1; hard gates recorded for 119, 94 passed; gate observations 43; identity checks 57), counted from the local archived screening decisions; sample statistics in all sections come from stats.tex macros computed by build_data.py"
+    }
+  ],
   "entries": [
     {
       "section": "04",
@@ -20,7 +88,7 @@
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "With a common FAST-LIO2 backbone, absolute pose error (APE) on the Long Corridor recording of the SubT-MRS dataset~ falls from 3.113 to 1.386\\,m, while average desktop computation rises from 21.04 to 28.69\\,ms."
+      "sentence": "With a common FAST-LIO2 backbone, absolute pose error (APE), the source's ATE-type error from the EVO tool with no declared alignment, on the Long Corridor recording of the SubT-MRS dataset~ falls from 3.113 to 1.386\\,m, while average desktop computation rises"
     },
     {
       "section": "04",
@@ -64,6 +132,7 @@
     {
       "section": "05",
       "codes": [
+        "K04",
         "K02"
       ],
       "numbers": [
@@ -72,7 +141,7 @@
       ],
       "status": "numbers checked on the cited PDF page",
       "card_locator": "K02 p. 5 (SalsaNext 40.20% vs 59.5% mIoU on SemanticKITTI)",
-      "sentence": "RELLIS-3D labels LiDAR scans and images from a Warthog at one campus site, on which SalsaNext segmentation reaches 40.20\\% mean intersection over union against 59.5\\% on an urban benchmark~ ."
+      "sentence": "Such learners depend on off-road data such as the TartanDrive dynamics recordings~ and the RELLIS-3D campus scans, on which SalsaNext segmentation reaches 40.20\\% mean intersection over union against 59.5\\% on an urban benchmark~ ."
     },
     {
       "section": "05",
@@ -167,6 +236,20 @@
     {
       "section": "06",
       "codes": [
+        "E47"
+      ],
+      "numbers": [
+        "500",
+        "52.5",
+        "30.4"
+      ],
+      "status": "numbers checked on the cited PDF page",
+      "card_locator": "E47 p. 5 Table I (HM3D SPL 30.4, SR 52.5) and SPL definition; p. 2 (success: STOP within 1 m of a target instance in 500 or fewer steps)",
+      "sentence": "On simulated Habitat-Matterport 3D (HM3D) object search, where success means stopping within 1\\,m of the target in at most 500 steps, VLFM reaches 52.5\\% success and 30.4\\% SPL."
+    },
+    {
+      "section": "06",
+      "codes": [
         "K12"
       ],
       "numbers": [
@@ -181,16 +264,14 @@
     {
       "section": "06",
       "codes": [
-        "K14",
-        "K16"
+        "K14"
       ],
       "numbers": [
-        "100",
-        "15"
+        "100"
       ],
       "status": "numbers checked on the cited PDF page",
-      "card_locator": "K14 p. 4 (over 100 hours, 8 platforms); p. 7 (Go 1 zero-shot); K16 p. 5 (15x fewer parameters than subgoal diffusion)",
-      "sentence": "ViNT scales the data to over 100\\,h from eight platforms and drives an unseen Go~1 quadruped at a higher inference cost~ , whereas NoMaD unifies goal-free exploration and image-goal navigation in one diffusion policy on a LoCoBot with 15 times fewer parameters"
+      "card_locator": "K14 p. 4 (over 100 hours, 8 platforms); p. 7 (Go 1 zero-shot)",
+      "sentence": "ViNT scales the data to over 100\\,h from eight platforms and drives an unseen Go~1 quadruped at a higher inference cost than feedforward convolutional policies~ ."
     },
     {
       "section": "06",
@@ -202,16 +283,27 @@
         "28",
         "0.2",
         "0.89",
-        "0.67",
+        "0.67"
+      ],
+      "status": "source-checked comparison record (data/within-study-comparisons.json)",
+      "card_locator": "",
+      "sentence": "In 150 trials with 28 initially visible objects, its success within 0.2\\,m is 0.89 versus 0.67 for OWL-v2 with ZoeDepth."
+    },
+    {
+      "section": "06",
+      "codes": [
+        "E50"
+      ],
+      "numbers": [
+        "15",
         "0.13",
         "0.60",
-        "15",
         "0.89",
         "0.77"
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "In 150 trials with 28 initially visible objects, its success within 0.2\\,m is 0.89 versus 0.67 for OWL-v2 with ZoeDepth, while in a separate ablation collision training raises arrival with obstacles from 0.13 to 0.60 in 15 trials but lowers success without obs"
+      "sentence": "In a separate ablation of 15 trials, collision training raises arrival with obstacles from 0.13 to 0.60 but lowers success without obstacles from 0.89 to 0.77."
     },
     {
       "section": "06",
@@ -275,7 +367,7 @@
       ],
       "status": "numbers checked on the cited PDF page",
       "card_locator": "K07 p. 7 (map errors below 4 m)",
-      "sentence": "LAMP~2.0 instead queues pose graphs and keyed scans while a robot is out of range and sends them as a batch on reconnection to a base station that filters loop closures by consistency checks or GNC, keeping map errors below 4\\,m on replayed data from Husky and"
+      "sentence": "Its base station filters loop closures by consistency checks or GNC and keeps map errors below 4\\,m on replayed data from Husky and Spot robots."
     },
     {
       "section": "07",
@@ -364,8 +456,8 @@
         "2.74"
       ],
       "status": "numbers found together in the local full-text transcription",
-      "card_locator": "R07 p. 7 (2.74 Hz on Jetson Orin NX); R26 p. 4 (1 Hz)",
-      "sentence": "Sentinel's fast and slow monitors have different intervention horizons~ , FORTRESS caches slow reasoning before runtime planning~ , and a 1\\,Hz VLM planner~ or a change detector at 2.74\\,Hz on an embedded GPU~ requires a local controller that stays valid betwe"
+      "card_locator": "R07 p. 7 (2.74 Hz on Jetson Orin NX)",
+      "sentence": "Fast and slow monitors~ , cached reasoning~ , slow VLM planning~ , and change detection at 2.74\\,Hz on an embedded GPU~ each need a local controller that stays valid between outputs."
     },
     {
       "section": "09",

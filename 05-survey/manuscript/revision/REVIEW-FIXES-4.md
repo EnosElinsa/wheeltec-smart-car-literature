@@ -4,7 +4,7 @@ This revision follows [REVIEW-FIXES-3.md](REVIEW-FIXES-3.md). It answers the rem
 
 The review refers to the draft of commit 5249a0f. Its "Table III" (synthesis) is now Table V, its "Table IV" (evidence map) is now Table VI, and its "Table V" (interfaces) is now Table VII. The supplementary module tables are again Tables S3-S7, after the new venue-mix table S1 and the selected-results table S2.
 
-This record covers the evidence coding and its integration into the main paper and the supplement (Groups 1 and 2 of the round and the remaining A1 items). The minor items B10-B21, the AI-use acknowledgment, the audits and the documentation counts follow in a later section of this record.
+This record covers the evidence coding and its integration into the main paper and the supplement (Groups 1 and 2 of the round and the remaining A1 items). The minor items B10-B21, the AI-use acknowledgment, the audits and the documentation counts are recorded in the section "Second part: minor items, acknowledgment and audits" below. That part moves Table V into Section IX and adds a checklist as Table VII, so the interface table called Table VII in the first part is now Table VIII.
 
 ## Author decisions
 
@@ -141,9 +141,74 @@ A second local check of the two commits above (simulated reviewer, not journal p
 
 The X-C sentence names OPEN, which VI-B introduces, in place of a descriptive phrase. This keeps the X-C paragraph at its earlier line count. A first version with the longer phrase moved one line onto page 17 and four references onto page 24, which made a 25th page. The main paper keeps 24 pages and the last-page balance of the first fix pass (references 240-255 end at 658 pt, 256-270 at 667 pt, `\IEEEtriggeratref{256}`).
 
-## Still open in this round
+## Second part: minor items, acknowledgment and audits
 
-- Minor items B10, B11 (references to Eqs. (4)-(6)), B14, B15 (reporting checklist), B16 (synthesis-table citations and placement), B18, B19 check, B20 and B21.
-- The AI-use acknowledgment, which must also name the language-model primary coding, second coding and adjudication.
-- The short-sentence share is 13.8% against the 14% limit, and each last-page column has about 80 pt free, which the checklist table and the acknowledgment must not exceed without matching cuts.
-- Numeric, claim and overlap audits for the new and changed sentences, and the README and document counts.
+The second part of the round (commit "Survey: minor review items, AI-use acknowledgment, audits and round-4 record") applies the minor items B10-B21, both non-blocking findings of the third manuscript check, the AI-use acknowledgment, the numeric, claim and overlap audits, and the documentation counts.
+
+**Numbering after this part.** Table V (responses by function) is now defined at the start of Section IX, where it is first cited. The new reporting checklist is Table VII in IX-F. The interface table of Section X is Table VIII (Table VII in the first part of this record). Tables I-IV and VI keep their numbers.
+
+| Item | Change | Location |
+|---|---|---|
+| B10 type size | Every text element of Figs. 2 and 3 and Fig. S1 is now set at 7 pt or larger (was 6.2-6.8 pt). The dashed source tags are 1 pt taller. Fig. 3 data labels are upright, with italic kept only for the lane tags. Its task-measure label wraps to two lines clear of the recovery line. Figure heights are unchanged (Fig. 2 224 pt, Fig. 3 202 pt, Fig. S1 150 pt), and grayscale renders were checked. | `scripts/build_figures.py`, Figs. 2, 3, S1 |
+| B18 Fig. 2 | The Representation box names Sections IV and V. A dashed link runs from State estimation below the Representation box to Planning and carries marker 3, so Interface 3 is shown as pose uncertainty passed to planning. | Fig. 2 |
+| B11 equations | `\eqref` now ties each equation to the prose that uses it: (1) SE2-LIO in IV-C, (2) time-of-flight-wheel odometry in IV-C, (3) memory-event-triggered MPC in V-E, (4) pose uncertainty in X-C, (5) the LiDAR barrier filter in V-D and the barrier proof in IX-D, (6) EKF-SLAM integrity in VIII-B and the alert-limit row of Table VII. Table II keeps its references to (1)-(3). The six equations are byte-identical (hash baseline in `verify_delivery.py`). | Secs. IV, V, VIII, IX, X, Table VII |
+| B14 metrics | II-C defines SPL as the episode mean of the shortest path length divided by the longer of the shortest and executed paths, with zero for a failed episode. VI-A uses it once: VLFM reaches 52.5% success and 30.4% SPL on simulated HM3D object search, where success means stopping within 1 m of a target instance in at most 500 steps (PDF p. 5, Table I; p. 2). IV-A states that APE is an ATE from the EVO tool for which the LODESTAR paper states no alignment or summary statistic (PDF p. 5; p. 7, Table V). | Sec. II-C, IV-A, VI-A |
+| B21 density | Sentences that chained three or more studies or exceeded 45 words were split in IV-A, IV-C, IV-E, V-B, V-D, V-F, VI-B, VII-B, VII-C and VIII-B. In Sections IV-IX, outside floats, "whereas" falls from 32 to 29 and "although" from 15 to 11. Coined terms are replaced: "shared-state acceptance" by "accepting shared data after reconnection" (abstract, Table VIII), "assignment age" by "the age of team assignments", "conditional map repair" by "estimate repair after reconnection" (Table V). The VII-C heading is now "Rendezvous, Disconnection, and Reconnection" and the X-D heading "Reconnection and Corrupted Shared Information". "Embodiment filter" stays, since VI-C defines it at first use. Several short sentences were joined with a neighbor to keep the short-sentence share within the band. | Secs. III-X, abstract |
+| B15 checklist | New Table VII lists 13 reporting elements of a joint evaluation of detection and response: fault model, onset and duration, severity, trial unit, denominator, reference, alarms with the alert limit, event times, detection-to-action delay, computation, controls, executed response and task outcome. The three list sentences of IX-F moved into it (cut C9). `verify_delivery.py` now expects 30 main labels. | Sec. IX-F, Table VII |
+| B16 synthesis table | Table V moved from Section VIII to the start of Section IX, before its first citation. Each cell cites two to four representative works that Sections IV-VIII discuss with the property the cell names, and the cell wording is shorter (cut C10). | Sec. IX, Table V |
+| B19 check | X-E no longer repeats Section IX or Table VIII. Its opening sentence on benchmarks with controlled severity, which IX-F covers, was removed. | Sec. X-E |
+| B20 workflow terms | The supplement no longer says "the library", "evidence cards", "explicitly derived", "official-title/PDF-title variant" or "provenance exceptions remain visible". The sentences now speak of the works already selected, two assessed studies from before 2021, reading records, citation entries rewritten from the publisher's citation file (kept unchanged), a title that differs between publisher page and PDF, and citation changes recorded in the public data. | Supplement S1, S2, S3 |
+| Third check, finding 1 | "Their single direct wheeled study" now reads "The single direct wheeled study". | Sec. X-C |
+| Third check, finding 2 | The acknowledgment names the language-model coding, the audits carry the claim ledger of the first part, and the short-sentence share and last-page balance hold (see below). | Acknowledgment, audits |
+
+### AI-use acknowledgment
+
+The acknowledgment now reads, in substance: language-model tools screened candidate titles and abstracts (Section III), with the agent Codex named in all archived decisions, and drafted the corpus reading records in Codex and Kiro sessions. Kiro workflow sessions drafted and revised the manuscript and supplement, prepared the internal review of an earlier draft that named the final-stage works, performed the primary evidence coding of Section III with the model claude-opus-5.5, and adjudicated coding differences. The second coding ran in a separate Kiro session with the model gpt-5.6-sol. MinerU and the OXR-1.0 model transcribed the publisher PDFs, with PyMuPDF4LLM extraction for some batches. No record names the model behind the other Codex and Kiro sessions. The authors reviewed all such output and take full responsibility for the content.
+
+Sources of each statement: the screening archive (reviewer and host `codex` in all 220 decisions), the review-card logs (`host: Codex`, `host: Kiro`), `06-data/evidence-coding/second-coder-record.json` (both coding models, taken from the workflow configuration), `06-data/fulltext-manifest.json` (MinerU), the `markdown-extraction.json` records of the S and R batches (OXR-1.0 through vLLM) and the `source-reading.json` records of the N and K batches (PyMuPDF4LLM 0.2.9).
+
+**Uncertainties for the author to resolve before submission:**
+
+1. **Vendor names.** The records name the agents Codex and Kiro but not their vendors, and the acknowledgment names none. IEEE asks for the AI system used. Add vendor names if the author wants them.
+2. **Models of the other sessions.** No record names the model behind the screening sessions, the card-drafting sessions, the earlier manuscript drafts or the earlier internal review. The acknowledgment says so instead of guessing.
+3. **Source of the two coding models.** claude-opus-5.5 (primary coding) and gpt-5.6-sol (second coding) come from the workflow configuration recorded in `second-coder-record.json`. The second coder's own notes exposed no model identifier. The model of the adjudication session is not recorded and is not named.
+4. **Author review of the codes.** The last sentence says that the authors reviewed all such output. No record shows an author review of the 245 primary codes, the adjudication log or the second-coding sample. The author must confirm this or ask for the sentence to be narrowed.
+5. **PyMuPDF4LLM.** It is a text-extraction library rather than a language model. It is named because the brief listed it. Remove it if the acknowledgment should cover AI systems only.
+6. **Earlier drafting hosts.** The acknowledgment attributes manuscript drafting and revision to Kiro workflow sessions, as the round plan records. If earlier manuscript versions were drafted in Codex sessions, the sentence should name them too.
+7. **Internal checks of this round.** The simulated manuscript checks of this round and the planned re-review are Kiro sessions as well. The acknowledgment names only the internal review that named the final-stage works.
+
+### Pre-existing Crossref reference lists
+
+Fifteen committed files in `revision/background-sources/` still hold a Crossref `reference` list: B_CBF2017 (58 entries), B_Cadena2016 (267), B_Campion1996 (27), B_DWA1997 (16), B_FASTLIO22022 (65), B_Foundation2024 (262), B_Habitat2019 (28), B_HumanAware2013 (106), B_KITTI2012 (48), B_Nav22020 (25), B_Nav22020-corrected (25), B_ORBSLAM32021 (83), B_TEB2013 (22), B_TUM2012 (47) and B_Traversability2022 (86). The public-tree rule of this round forbids committing Crossref reference lists, and the five records added in this round omit them. These fifteen files predate the round and were left unchanged for an author decision (strip the `reference` field and update the recorded hashes, or keep them).
+
+### Audits
+
+- **Numeric audit** ([numeric-audit.json](numeric-audit.json)): 29 numerical result sentences in Sections IV-X, 10 of them in checked comparison records, 18 with a page locator, 0 mismatches. The new VLFM numbers were read on PDF pp. 2 and 5. A `round4_changes` list records the removed, merged, shortened and added numerical sentences of both parts of the round, including the screening-archive counts of S1.
+- **Claim audit** ([claim-audit.json](claim-audit.json)): 64 critical characterizations re-extracted from the current text. The 10 round-4 corrections join the 9 earlier ones: the statements on the evidence map that changed under the final codes (abstract, Sections I, IV-IX, XI, S1, the Section X opening) and the corrected X-C basis for OPEN (GPS-disabled campus run, PDF p. 11 and p. 8, in place of the simulation-only map deviations). `round4_claims` lists 29 new or changed characterizations of the round with their basis: the Table II drivetrain effects, the direct-evidence statements of X-A to X-D, the background positioning of Section I, the screening and kappa statements of Section III, the VLFM and APE statements, the equation references, the Table V citations and the B21 splits. A further list records the removed or regrouped claims.
+- **Overlap audit** ([overlap-report.json](overlap-report.json)): no exact ten-word phrase is shared between the survey and the 267 public source documents (11,166 survey windows).
+
+### Page budget of the second part
+
+The additions (Table VII, the Table V citations, the larger figure type, the equation references, the SPL definition and the VLFM numbers, the APE clause and the longer acknowledgment) were paid for by removing repetition, with every citation key kept in prose:
+
+- IX-F: the three list sentences now carried by Table VII, and the comparison sentence shortened to a reference to the table (cut C9).
+- IX-A and IX-B: the sentence that lower error can help explain a task result, the class definitions that repeat Section III, and the integrity-count clause that repeats VIII-E.
+- IX-C to IX-E: the simulation-to-outdoor drop of terrain-adaptive MPC (stays in V-A), the small-sample sentence (contingency cut K4, its works stay cited in VI-A and VI-C), and the timing examples that repeat VI-D (cut C12).
+- Table V cells and Table VIII row 1 shortened (cuts C10 and C11).
+- Sec. I "The main contributions ... are summarized as follows" (part of contingency cut K5), the Sec. II-B signpost to Fig. 2, the Sec. III list of foundational examples, the X-E opening sentence, and a few words in IV, VIII, X and XI that removed one-word last lines.
+- The X-D heading now fits on one line.
+
+Prose words outside floats, from the first part of the round to now: I 742 to 736, II 788 to 790, III 620 to 609, IV 1,444 to 1,460, V 1,459 to 1,468, VI 1,185 to 1,210, VII 1,149 to 1,149, VIII 985 to 986, IX 1,406 to 1,206, X 1,132 to 1,118, XI 281 to 280. The abstract has 250 words.
+
+### Length and verification of the second part
+
+- `build_data.py`, `build_figures.py`, `latexmk -gg` of the supplement and the main paper, `verify_delivery.py` and `--sources` pass: 24 pages, 270 resolved references, 30 labels, three figures, eight tables, six unchanged equations, a 17-page supplement with 22 labels and 13 tables, and 741 source artifacts with no hash mismatch. Neither log has an Overfull, undefined or LaTeX Warning line.
+- The last page is balanced by `\IEEEtriggeratref{256}`: references 240-255 end at 658 pt and 256-270 at 667 pt.
+- All 245 corpus keys and 25 background keys are cited in prose outside floats. The house-style scan of new or changed sentences, captions and table cells is clean, its listed ", and" joins are list joins, and captions name no colors. Sentence rhythm: 451 sentences, mean 23.4 words, 11.3% under 12 words. The style fingerprint shows no flags.
+- Library checks pass: pytest, `build_tables --strict`, `build_indexes --strict`, `check_links` and `check_public_tree --cjk strict`.
+
+## Still open after this round
+
+- The author decisions above: the acknowledgment wording and its uncertainties, and the fifteen pre-existing Crossref reference lists.
+- The fresh simulated re-review and its comparison with the earlier major items follow as a separate local step and are not part of this record.
+- Author information and submission declarations remain incomplete.

@@ -1,7 +1,7 @@
 \section{Fault Tolerance, Recovery, and Long-Term Deployment}
 \label{sec:reliability}
 
-Fault detection, isolation, accommodation, and restoration need not occur together, since a controller may tolerate bias without identifying its source (Table~\ref{S-tab:reliability} in the supplementary material).
+Fault detection, isolation, accommodation, and restoration need not occur together, since a controller may tolerate bias of unknown source (Table~\ref{S-tab:reliability} in the supplementary material).
 
 \subsection{Fault Estimation and Tolerant Control}
 
@@ -9,7 +9,7 @@ Analytic redundancy provides diagnosis without duplicating every sensor. Kinemat
 
 \subsection{Integrity and Failure Monitoring}
 
-Monitors differ in the failure event they characterize. Reliable Monte Carlo localization (MCL) estimates a latent localization-success state alongside pose and triggers free-space global relocalization~\cite{P_M35}. Integrity analysis for extended Kalman filter (EKF) SLAM accumulates landmark fault risk, although its recorded example crosses the threshold only after localization fails~\cite{P_X07}. A prior-line-map protection level predicts estimation error, with operational alerting left for future work~\cite{P_F01}. Monitors of learned policies use statistical alarm definitions. Conformal anomaly detection controls the nominal false-alarm rate under exchangeability~\cite{P_E54}, while Sentinel pairs fast action-consistency monitoring with slower vision-language progress assessment~\cite{P_F07}. PAAD predicts anomalies along a planned path on field recordings in which people reposition the robot after failures~\cite{P_N18}. RADIUM moves failure prediction before deployment by sampling environment parameters from a distribution conditioned on failure and repairs the policy on the discovered cases, reporting up to five times higher robustness for a repaired vision-in-the-loop policy on a 1/10-scale car~\cite{P_R36}.
+Monitors differ in the failure event they characterize. Reliable Monte Carlo localization (MCL) estimates a latent localization-success state alongside pose and triggers free-space global relocalization~\cite{P_M35}. Integrity analysis for extended Kalman filter (EKF) SLAM accumulates landmark fault risk into the integrity risk \eqref{eq:integrity}~\cite{P_X07}. In its recorded example, this risk crosses the threshold only after localization fails. A prior-line-map protection level predicts estimation error, with operational alerting left for future work~\cite{P_F01}. Monitors of learned policies use statistical alarm definitions, as conformal anomaly detection controls the nominal false-alarm rate under exchangeability~\cite{P_E54}, while Sentinel pairs fast action-consistency monitoring with slower vision-language progress assessment~\cite{P_F07}. PAAD predicts anomalies along a planned path on field recordings in which people reposition the robot after failures~\cite{P_N18}. RADIUM moves failure prediction before deployment by sampling environment parameters from a distribution conditioned on failure and repairs the policy on the discovered cases, reporting up to five times higher robustness for a repaired vision-in-the-loop policy on a 1/10-scale car~\cite{P_R36}.
 
 \subsection{From Diagnosis to an Executed Response}
 
@@ -23,28 +23,6 @@ Resource choices determine whether a response remains available. CODEI selects b
 
 Maintenance and learning form a second operational loop. Predictive data acquisition selects new training observations for teach-repeat-learn navigation from visual matching ambiguity~\cite{P_N06}. SELFI stabilizes deployment-time reinforcement learning with a model-based objective and counts interventions during learning~\cite{P_S14}, while LiReN combines foundation-model adaptation with pseudo-resets, keepout rules, charging, and help escalation~\cite{P_S41}. Counterfactual replay selects among adapting policies at the cost of between-trial computation~\cite{P_S18}.
 
-\begin{table*}[t]
-\centering
-\caption{Responses to degradation by navigation function, the conditions under which they help, and the main evidence gaps in the reviewed studies.}
-\label{tab:synthesis}
-\surveytableformat
-\begin{tabularx}{\linewidth}{@{}L{2.35cm}YYY@{}}
-\toprule
-\textbf{Function} & \textbf{Main responses} & \textbf{Conditions for benefit} & \textbf{Main evidence gaps} \\
-\midrule
-Localization and mapping (Sec.~\ref{sec:localization}) & Selective updates, complementary sensing, motion and contact priors, relocalization, map revision & Surviving geometry in observable directions, independently informative measurements, credible supervision for learned priors, later overlap, valid persistence estimates & Mostly recorded or replayed data. Degeneracy, consistency, and similarity scores differ in meaning. Responses to a revised map rarely executed \\
-\addlinespace[3pt]
-Traversability, planning, and control (Sec.~\ref{sec:planning}) & Terrain costs and risk fields, information-aware exploration, learned prediction and policies, safety filters and risk constraints, delay-aware tracking & Accurate pose and adequate terrain coverage, available priors and loop opportunities, training coverage, known state and admissible inputs & Estimated risk rather than measured collisions. Few quantified simulation-to-hardware comparisons. Pose uncertainty rarely propagated into terrain decisions, with its effect on outcomes untested \\
-\addlinespace[3pt]
-Semantic navigation (Sec.~\ref{sec:semantic}) & Semantic scene memory, geographic grounding, learned actions, language-derived cost layers, candidate selection with embodiment filters & Valid map updates, coverage of prior maps or tours, a candidate generator that proposes feasible routes, a local controller that stays valid during pending inference & Incorrect or stale reasoning rarely injected. GPS, cloud, and map-preparation dependencies. Few physical trials per route \\
-\addlinespace[3pt]
-Multi-robot coordination (Sec.~\ref{sec:multi}) & Allocation and spatial partition, compact sharing, distributed and asynchronous estimation, rendezvous, conditional map repair & Compatible shared inputs, reachable encounters, stable front-end odometry, tracked correlations & Mostly ideal or modeled communication. Acceptance of stale or biased content after a partition untested on moving teams \\
-\addlinespace[3pt]
-Fault tolerance and recovery (Sec.~\ref{sec:reliability}) & Analytic redundancy and tolerant control, integrity and runtime monitoring, executed recovery, resource and service management & A modeled fault channel with remaining actuation, a monitored event that matches the response, trustworthy state for the recovery maneuver & Injected or simulated faults. Restarted or censored trials. Interruptions and human assistance seldom reported \\
-\bottomrule
-\end{tabularx}
-\end{table*}
-
 \subsection{Synthesis}
 
-Recovery quality in long-term service is a matter of both restored operation and the interruptions needed to achieve it, which depend on charging, energy, network access, offboard computation, and human assistance. The studies reviewed here contain \RelIntegrityCount{} of the \IntegrityCount{} integrity or failure-risk assessments in the sample (Table~\ref{tab:evaluation}), although their faults are often injected or simulated.
+Recovery quality in long-term service concerns both restored operation and the interruptions needed to achieve it, which depend on charging, energy, network access, offboard computation, and human assistance. The studies reviewed here contain \RelIntegrityCount{} of the \IntegrityCount{} integrity or failure-risk assessments in the sample (Table~\ref{tab:evaluation}), mostly with injected or simulated faults.

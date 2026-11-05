@@ -121,18 +121,18 @@ def box(c, x, y, w, h, sec, title, sub, fill=WHITE):
     c.rect(x, y, w, h, fill=fill, stroke=INK, sw=0.7)
     c.text(x + 4, y + 10, title, 7.2, 'bold')
     c.polyline([(x + 4, y + 13.5), (x + w - 4, y + 13.5)], stroke=HAIR, sw=0.4)
-    c.lines(x + 4, y + 22, sub, 6.6, 7.6)
+    c.lines(x + 4, y + 22.5, sub, 7.0, 8.0)
     if sec:
-        c.text(x + w - 4, y + h - 3.6, f'Sec. {sec}', 6.2, style='italic', anchor='end', fill=MUTED)
+        c.text(x + w - 4, y + h - 3.6, f'Sec. {sec}', 7.0, style='italic', anchor='end', fill=MUTED)
 
 
 def source_tag(c, x, y, title, detail, align='left'):
-    w = max(width(title, 6.8, 'bold'), width(detail, 6.2, style='italic')) + 10
+    w = max(width(title, 7.0, 'bold'), width(detail, 7.0, style='italic')) + 10
     if align == 'right':
         x = x - w
-    c.rect(x, y, w, 21, fill=FILL_LIGHT, stroke=INK, sw=0.6, dash=(2.2, 1.4))
-    c.text(x + 5, y + 9, title, 6.8, 'bold')
-    c.text(x + 5, y + 17.2, detail, 6.2, style='italic', fill=MUTED)
+    c.rect(x, y, w, 22, fill=FILL_LIGHT, stroke=INK, sw=0.6, dash=(2.2, 1.4))
+    c.text(x + 5, y + 9.2, title, 7.0, 'bold')
+    c.text(x + 5, y + 18.2, detail, 7.0, style='italic', fill=MUTED)
     return x, w
 
 
@@ -145,7 +145,7 @@ def fig_stack() -> Canvas:
     my = 94.0
     specs = [(None, 'Measurements', ['Cameras, LiDAR, radar,', 'IMU, wheels, GNSS, UWB']),
              ('IV', 'State estimation', ['Pose, covariance,', 'validity, measurement age']),
-             ('IV', 'Representation', ['Geometry, terrain,', 'semantics, persistence']),
+             ('IV, V', 'Representation', ['Geometry, terrain,', 'semantics, persistence']),
              ('V', 'Planning', ['Route, trajectory,', 'risk and feasibility']),
              ('V', 'Control', ['Feasible wheel commands', 'under actuator limits'])]
     for x, (sec, title, sub) in zip(xs, specs):
@@ -168,9 +168,9 @@ def fig_stack() -> Canvas:
     c.rect(sx0, sy, sx1 - sx0, sh, fill=FILL, stroke=INK, sw=0.7)
     c.polyline([(sx0 + 112, sy), (sx0 + 112, sy + sh)], stroke=INK, sw=0.5)
     c.text(sx0 + 5, sy + 11, 'Supervision and recovery', 7.2, 'bold')
-    c.text(sx0 + 5, sy + 21, 'Sec. VIII', 6.2, style='italic', fill=MUTED)
-    c.text(sx0 + 120, sy + 11.5, 'Monitor assumptions and integrity, request information,', 6.6)
-    c.text(sx0 + 120, sy + 20.5, 'slow, stop, reinitialize, replan, reassign, or escalate', 6.6)
+    c.text(sx0 + 5, sy + 21.5, 'Sec. VIII', 7.0, style='italic', fill=MUTED)
+    c.text(sx0 + 120, sy + 11.5, 'Monitor assumptions and integrity, request information,', 7.0)
+    c.text(sx0 + 120, sy + 21, 'slow, stop, reinitialize, replan, reassign, or escalate', 7.0)
     est_x = xs[1] + bw / 2
     c.arrow([(est_x, my + bh), (est_x, sy)], dash=(2.6, 1.6), sw=0.7, head=3.6)
     for x in (xs[3] + bw / 2, xs[4] + bw / 2):
@@ -181,33 +181,39 @@ def fig_stack() -> Canvas:
     c.arrow([(xs[4] + bw, flow_y), (W - 1.5, flow_y), (W - 1.5, ly), (xs[0] + bw / 2, ly), (xs[0] + bw / 2, my + bh)],
             sw=0.9, head=4.2)
     label = 'Executed motion changes the next observations'
-    lw = width(label, 6.6, style='italic') + 10
+    lw = width(label, 7.0, style='italic') + 10
     c.rect(W / 2 - lw / 2, ly - 5, lw, 10, fill=WHITE)
-    c.text(W / 2, ly + 2.2, label, 6.6, style='italic', anchor='middle', fill=MUTED)
+    c.text(W / 2, ly + 2.4, label, 7.0, style='italic', anchor='middle', fill=MUTED)
 
     # Degradation sources and their entry points.
     sx, sw_ = source_tag(c, 4, 58, 'Sensing and estimation', 'texture, geometry, bias, association')
-    c.arrow([(xs[0] + bw / 2, 79), (xs[0] + bw / 2, my)], stroke=RULE, sw=0.6, head=3.4)
-    c.arrow([(sx + sw_, 68.5), (xs[1] + 22, 68.5), (xs[1] + 22, my)], stroke=RULE, sw=0.6, head=3.4)
+    c.arrow([(xs[0] + bw / 2, 80), (xs[0] + bw / 2, my)], stroke=RULE, sw=0.6, head=3.4)
+    c.arrow([(sx + sw_, 69), (xs[1] + 22, 69), (xs[1] + 22, my)], stroke=RULE, sw=0.6, head=3.4)
     ex, ew = source_tag(c, 4, 28, 'Environment and map change', 'moving agents, aged or moved structure')
-    c.arrow([(ex + ew, 38.5), (xs[2] - 6, 38.5), (xs[2] - 6, my + 7), (xs[2], my + 7)], stroke=RULE, sw=0.6, head=3.4)
+    c.arrow([(ex + ew, 39), (xs[2] - 6, 39), (xs[2] - 6, my + 7), (xs[2], my + 7)], stroke=RULE, sw=0.6, head=3.4)
     cx_, cw_ = source_tag(c, 4, 2, 'Communication and computation', 'loss, delay, deadlines, memory')
     drop_t, drop_m = xs[3] + 16, xs[2] + bw - 16
-    c.polyline([(cx_ + cw_, 12.5), (drop_t, 12.5)], stroke=RULE, sw=0.6)
-    c.arrow([(drop_t, 12.5), (drop_t, ty)], stroke=RULE, sw=0.6, head=3.4)
-    c.arrow([(drop_m, 12.5), (drop_m, ty)], stroke=RULE, sw=0.6, head=3.4)
+    c.polyline([(cx_ + cw_, 13), (drop_t, 13)], stroke=RULE, sw=0.6)
+    c.arrow([(drop_t, 13), (drop_t, ty)], stroke=RULE, sw=0.6, head=3.4)
+    c.arrow([(drop_m, 13), (drop_m, ty)], stroke=RULE, sw=0.6, head=3.4)
     lx_, lw_ = source_tag(c, W - 4, 2, 'Learned and semantic inference', 'wrong output, misgrounding', align='right')
     entry_t = xs[3] + bw - 10
     c.arrow([(lx_, 17), (entry_t, 17), (entry_t, ty)], stroke=RULE, sw=0.6, head=3.4)
     side_x = (xs[3] + bw + xs[4]) / 2
     c.arrow([(side_x, 23), (side_x, my - 8), (entry_t, my - 8), (entry_t, my)], stroke=RULE, sw=0.6, head=3.4)
     source_tag(c, W - 4, 56, 'Terrain and mobility', 'slope, slip, material, actuation', align='right')
-    c.arrow([(xs[4] + bw / 2, 77), (xs[4] + bw / 2, my)], stroke=RULE, sw=0.6, head=3.4)
+    c.arrow([(xs[4] + bw / 2, 78), (xs[4] + bw / 2, my)], stroke=RULE, sw=0.6, head=3.4)
+
+    # Interface 3: pose covariance passed from state estimation to planning.
+    cov_y = my + bh + 9
+    cov_a, cov_b = xs[1] + bw - 12, xs[3] + 18
+    c.polyline([(cov_a, my + bh), (cov_a, cov_y), (cov_b, cov_y)], stroke=INK, sw=0.7, dash=(2.6, 1.6))
+    c.arrow([(cov_b, cov_y), (cov_b, my + bh)], dash=(2.6, 1.6), sw=0.7, head=3.6)
 
     # Open interfaces of Section X.
     c.marker(est_x + 10, (my + bh + sy) / 2, '1')
     c.marker(ti_x + 10, (ty + th + my) / 2, '2')
-    c.marker((xs[2] + bw + xs[3]) / 2, flow_y - 10, '3')
+    c.marker(xs[2] + bw / 2, cov_y, '3')
     c.marker(tm_x + 10, (ty + th + my) / 2, '4')
 
     # Legend.
@@ -216,17 +222,17 @@ def fig_stack() -> Canvas:
     items = ['Information flow', 'Exchange or supervision', 'Degradation source and entry point',
              'Open interface examined in Sec. X']
     c.arrow([(x, gy - 2.4), (x + 22, gy - 2.4)], sw=0.9, head=4.2)
-    c.text(x + 26, gy, items[0], 6.6, fill=MUTED)
-    x += 26 + width(items[0], 6.6) + 14
+    c.text(x + 26, gy, items[0], 7.0, fill=MUTED)
+    x += 26 + width(items[0], 7.0) + 14
     c.arrow([(x, gy - 2.4), (x + 22, gy - 2.4)], sw=0.7, dash=(2.6, 1.6), head=3.6)
-    c.text(x + 26, gy, items[1], 6.6, fill=MUTED)
-    x += 26 + width(items[1], 6.6) + 14
+    c.text(x + 26, gy, items[1], 7.0, fill=MUTED)
+    x += 26 + width(items[1], 7.0) + 14
     c.rect(x, gy - 7, 10, 9, fill=FILL_LIGHT, stroke=INK, sw=0.6, dash=(2.2, 1.4))
     c.arrow([(x + 11, gy - 2.4), (x + 25, gy - 2.4)], stroke=RULE, sw=0.6, head=3.4)
-    c.text(x + 29, gy, items[2], 6.6, fill=MUTED)
-    x += 29 + width(items[2], 6.6) + 14
+    c.text(x + 29, gy, items[2], 7.0, fill=MUTED)
+    x += 29 + width(items[2], 7.0) + 14
     c.marker(x + 4.6, gy - 2.4, '1')
-    c.text(x + 12.5, gy, items[3], 6.6, fill=MUTED)
+    c.text(x + 12.5, gy, items[3], 7.0, fill=MUTED)
     c.h = gy + 4
     return c
 
@@ -253,7 +259,7 @@ def fig_evaluation() -> Canvas:
     c.rect(t_on, top, t_off - t_on, bottom - top, fill='#ECECEC')
     for (title, tag, _), (yy, h) in zip(lanes, tops):
         c.text(6, yy + h / 2 - 0.5, title, 7.2, 'bold')
-        c.text(6, yy + h / 2 + 8, tag, 6.4, style='italic', fill=MUTED)
+        c.text(6, yy + h / 2 + 8.4, tag, 7.0, style='italic', fill=MUTED)
     for (yy, h) in tops[1:]:
         c.polyline([(4, yy), (W - 4, yy)], stroke=HAIR, sw=0.4)
     c.polyline([(4, top), (W - 4, top)], sw=0.8)
@@ -265,10 +271,10 @@ def fig_evaluation() -> Canvas:
 
     # Lane 1: operating condition.
     yy, h = tops[0]
-    c.text((t_on + t_off) / 2, yy + h / 2 + 2.3, 'degraded interval: source, severity, duration', 6.6,
-           style='italic', anchor='middle')
-    c.text(x0 + 5, yy + h / 2 + 2.3, 'nominal', 6.6, style='italic', fill=MUTED)
-    c.text((t_rec + x1) / 2, yy + h / 2 + 2.3, 'nominal', 6.6, style='italic', anchor='middle', fill=MUTED)
+    c.text((t_on + t_off) / 2, yy + h / 2 + 2.3, 'degraded interval: source, severity, duration', 7.0,
+           anchor='middle')
+    c.text(x0 + 5, yy + h / 2 + 2.3, 'nominal', 7.0, fill=MUTED)
+    c.text((t_rec + x1) / 2, yy + h / 2 + 2.3, 'nominal', 7.0, anchor='middle', fill=MUTED)
 
     # Lane 2: monitor statistic (crosses the threshold at the alarm) and pose error.
     yy, h = tops[1]
@@ -301,15 +307,15 @@ def fig_evaluation() -> Canvas:
         return base - 1.5 - rise(t_reloc) * math.exp(-(t - t_reloc) / 14)
 
     c.polyline([(x0, thr), (x1, thr)], stroke=RULE, sw=0.6, dash=(3.2, 1.8))
-    c.text(x1 - 2, thr - 2.6, 'alarm threshold', 6.4, style='italic', anchor='end', fill=MUTED)
+    c.text(x1 - 2, thr - 2.6, 'alarm threshold', 7.0, anchor='end', fill=MUTED)
     c.polyline(curve(err), stroke=INK, sw=0.8, dash=(2.4, 1.5))
     c.polyline(curve(stat), stroke=INK, sw=0.9)
-    c.text(x0 + 4, base - 8, 'monitor statistic', 6.4, style='italic')
-    c.text(x1 - 2, base + 6, 'pose error against the reference', 6.4, style='italic', anchor='end')
+    c.text(x0 + 4, base - 8.5, 'monitor statistic', 7.0)
+    c.text(x1 - 2, base + 6.2, 'pose error against the reference', 7.0, anchor='end')
     c.polygon([(t_det, thr - 1), (t_det - 3.2, thr - 6.6), (t_det + 3.2, thr - 6.6)], fill=INK)
     fa = base - 5 - 21.0
     c.polygon([(174, fa - 1.5), (170.8, fa - 7.1), (177.2, fa - 7.1)], fill=WHITE, stroke=INK, sw=0.6)
-    c.text(174, fa - 9.6, 'false alarm', 6.4, style='italic', anchor='middle')
+    c.text(174, fa - 9.8, 'false alarm', 7.0, anchor='middle')
 
     # Lane 3: executed actions.
     yy, h = tops[2]
@@ -317,7 +323,7 @@ def fig_evaluation() -> Canvas:
             (t_reloc, t_rec, 'relocalize', FILL), (t_rec, x1, 'resume task', WHITE)]
     for a, b, label, fill in segs:
         c.rect(a + 0.8, yy + 6, b - a - 1.6, h - 12, fill=fill, stroke=INK, sw=0.5)
-        c.text((a + b) / 2, yy + h / 2 + 2.3, label, 6.8, anchor='middle')
+        c.text((a + b) / 2, yy + h / 2 + 2.4, label, 7.0, anchor='middle')
 
     # Lane 4: task progress.
     yy, h = tops[3]
@@ -331,25 +337,26 @@ def fig_evaluation() -> Canvas:
             return lo - (t_act - x0) * rate - (t - t_act) * rate * 0.05
         return max(lo - (t_act - x0) * rate - (t_rec - t_act) * rate * 0.05 - (t - t_rec) * rate, hi)
     c.polyline(curve(prog), stroke=INK, sw=0.9)
-    c.text(x0 + 4, hi + 2, 'progress toward the goal', 6.4, style='italic')
-    c.text(x1 - 2, lo - 1, 'completion, contacts, interventions, time', 6.4, style='italic', anchor='end', fill=MUTED)
+    c.text(x0 + 4, hi + 2.2, 'progress toward the goal', 7.0)
+    c.text(x1 - 2, lo - 8.6, 'completion, contacts,', 7.0, anchor='end', fill=MUTED)
+    c.text(x1 - 2, lo - 0.6, 'interventions, time', 7.0, anchor='end', fill=MUTED)
 
     # Time axis and derived intervals.
     c.arrow([(x0, axis_y), (x1, axis_y)], sw=0.6, head=3.6)
-    c.text(x1, axis_y + 9.5, 'time', 6.6, style='italic', anchor='end', fill=MUTED)
+    c.text(x1, axis_y + 9.5, 'time', 7.0, anchor='end', fill=MUTED)
     for t, name in events:
         c.polyline([(t, axis_y - 2), (t, axis_y + 2)], sw=0.6)
-        c.text(t, axis_y + 9.5, name, 6.6, anchor='middle')
-    spans = [(t_on, t_det, 'detection delay', 19), (t_det, t_act, 'response delay', 28),
-             (t_on, t_rec, 'recovery time', 37)]
+        c.text(t, axis_y + 9.5, name, 7.0, anchor='middle')
+    spans = [(t_on, t_det, 'detection delay', 19.5), (t_det, t_act, 'response delay', 29),
+             (t_on, t_rec, 'recovery time', 38.5)]
     for a, b, label, dy in spans:
         yb = axis_y + dy - 3
         c.arrow([(a, yb), (b, yb)], stroke=MUTED, sw=0.5, head=2.8, both=True)
-        c.text(b + 4, yb + 2.2, label, 6.4, style='italic', fill=MUTED)
-    c.text(6, axis_y + 9.5, 'Report per episode', 6.8, 'bold')
-    c.lines(6, axis_y + 18.5, ['trial unit, reference source,', 'alarms, actions, censoring'], 6.4, 7.6,
-            style='italic', fill=MUTED)
-    c.h = axis_y + 42
+        c.text(b + 4, yb + 2.4, label, 7.0, fill=MUTED)
+    c.text(6, axis_y + 9.5, 'Report per episode', 7.0, 'bold')
+    c.lines(6, axis_y + 18.8, ['trial unit, reference source,', 'alarms, actions, censoring'], 7.0, 8.2,
+            fill=MUTED)
+    c.h = axis_y + 43.5
     return c
 
 
@@ -372,7 +379,7 @@ def fig_corpus() -> Canvas:
         if v:
             c.polyline([(left, yv), (W - right, yv)], stroke=HAIR, sw=0.35, dash=(1.2, 1.4))
         c.polyline([(left - 2, yv), (left, yv)], sw=0.5)
-        c.text(left - 3.5, yv + 2.3, str(v), 6.6, anchor='end')
+        c.text(left - 3.5, yv + 2.3, str(v), 7.0, anchor='end')
     for i, year in enumerate(years):
         xb = left + i * step + (step - bar_w) / 2
         yb = top + plot_h
@@ -382,17 +389,17 @@ def fig_corpus() -> Canvas:
                 hgt = plot_h * v / ymax
                 c.rect(xb, yb - hgt, bar_w, hgt, fill=GRAYS[k], stroke=INK, sw=0.35)
                 yb -= hgt
-        c.text(xb + bar_w / 2, yb - 2.6, str(totals[i]), 6.6, 'bold', anchor='middle')
-        c.text(xb + bar_w / 2, top + plot_h + 9.5, str(year), 6.8, anchor='middle')
+        c.text(xb + bar_w / 2, yb - 2.6, str(totals[i]), 7.0, 'bold', anchor='middle')
+        c.text(xb + bar_w / 2, top + plot_h + 9.5, str(year), 7.0, anchor='middle')
     c.polyline([(left, top - 2), (left, top + plot_h), (W - right, top + plot_h)], sw=0.6)
-    c.text(9.0, top + plot_h / 2, 'Publications', 6.8, anchor='middle', rotate=-90)
+    c.text(9.0, top + plot_h / 2, 'Publications', 7.0, anchor='middle', rotate=-90)
     lx, ly = left + 8, top + 7
-    lbox_w = max(width(l, 6.6) for l in labels) + 21
+    lbox_w = max(width(l, 7.0) for l in labels) + 21
     c.rect(lx - 4, ly - 7, lbox_w, len(labels) * 9.4 + 4.5, fill=WHITE, stroke=HAIR, sw=0.5)
     for k, label in enumerate(labels):
         y = ly + k * 9.4
         c.rect(lx, y - 5.4, 7.5, 6.5, fill=GRAYS[k], stroke=INK, sw=0.35)
-        c.text(lx + 11, y + 0.4, label, 6.6)
+        c.text(lx + 11, y + 0.4, label, 7.0)
     return c
 
 

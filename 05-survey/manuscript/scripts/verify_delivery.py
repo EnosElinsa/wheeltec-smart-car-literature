@@ -54,8 +54,8 @@ def main():
     background = load_background(MANUSCRIPT, citation_policy)
     assert len(bibkeys) == len(set(bibkeys)) == len(rows) + len(background)
     assert corpus_keys <= cited_keys <= set(bibkeys)
-    # Round 4 adds tab:drivetrain; fig:taxonomy became fig:matrix.
-    assert len(labels) == len(set(labels)) == 29
+    # Round 4 adds tab:drivetrain and tab:checklist; fig:taxonomy became fig:matrix.
+    assert len(labels) == len(set(labels)) == 30
     assert resolved_keys == set(bibkeys)
     assert not ({'P_' + code for code in citation_policy['internal_reference_ids']} |
                 set(citation_policy['excluded_background_keys'])) & (cited_keys | resolved_keys)

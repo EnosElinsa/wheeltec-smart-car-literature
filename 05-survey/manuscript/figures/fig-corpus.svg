@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="252.0pt" height="150.0pt" viewBox="0 0 252.0 150.0">
 <polyline points="22.00,134.00 24.00,134.00" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="136.30" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">0</text>
+<text x="20.50" y="136.30" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">0</text>
 <polyline points="24.00,120.67 25.20,120.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,120.67 27.80,120.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,120.67 30.40,120.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -89,7 +89,7 @@
 <polyline points="245.00,120.67 246.20,120.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,120.67 248.00,120.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,120.67 24.00,120.67" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="122.97" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">10</text>
+<text x="20.50" y="122.97" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">10</text>
 <polyline points="24.00,107.33 25.20,107.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,107.33 27.80,107.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,107.33 30.40,107.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -178,7 +178,7 @@
 <polyline points="245.00,107.33 246.20,107.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,107.33 248.00,107.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,107.33 24.00,107.33" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="109.63" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">20</text>
+<text x="20.50" y="109.63" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">20</text>
 <polyline points="24.00,94.00 25.20,94.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,94.00 27.80,94.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,94.00 30.40,94.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -267,7 +267,7 @@
 <polyline points="245.00,94.00 246.20,94.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,94.00 248.00,94.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,94.00 24.00,94.00" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="96.30" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">30</text>
+<text x="20.50" y="96.30" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">30</text>
 <polyline points="24.00,80.67 25.20,80.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,80.67 27.80,80.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,80.67 30.40,80.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -356,7 +356,7 @@
 <polyline points="245.00,80.67 246.20,80.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,80.67 248.00,80.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,80.67 24.00,80.67" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="82.97" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">40</text>
+<text x="20.50" y="82.97" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">40</text>
 <polyline points="24.00,67.33 25.20,67.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,67.33 27.80,67.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,67.33 30.40,67.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -445,7 +445,7 @@
 <polyline points="245.00,67.33 246.20,67.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,67.33 248.00,67.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,67.33 24.00,67.33" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="69.63" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">50</text>
+<text x="20.50" y="69.63" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">50</text>
 <polyline points="24.00,54.00 25.20,54.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,54.00 27.80,54.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,54.00 30.40,54.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -534,7 +534,7 @@
 <polyline points="245.00,54.00 246.20,54.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,54.00 248.00,54.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,54.00 24.00,54.00" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="56.30" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">60</text>
+<text x="20.50" y="56.30" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">60</text>
 <polyline points="24.00,40.67 25.20,40.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,40.67 27.80,40.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,40.67 30.40,40.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -623,7 +623,7 @@
 <polyline points="245.00,40.67 246.20,40.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,40.67 248.00,40.67" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,40.67 24.00,40.67" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="42.97" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">70</text>
+<text x="20.50" y="42.97" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">70</text>
 <polyline points="24.00,27.33 25.20,27.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,27.33 27.80,27.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,27.33 30.40,27.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -712,7 +712,7 @@
 <polyline points="245.00,27.33 246.20,27.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,27.33 248.00,27.33" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,27.33 24.00,27.33" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="29.63" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">80</text>
+<text x="20.50" y="29.63" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">80</text>
 <polyline points="24.00,14.00 25.20,14.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="26.60,14.00 27.80,14.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="29.20,14.00 30.40,14.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
@@ -801,57 +801,57 @@
 <polyline points="245.00,14.00 246.20,14.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="247.60,14.00 248.00,14.00" fill="none" stroke="#B5B5B5" stroke-width="0.35" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="22.00,14.00 24.00,14.00" fill="none" stroke="#111111" stroke-width="0.5" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="20.50" y="16.30" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">90</text>
+<text x="20.50" y="16.30" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="end" fill="#111111">90</text>
 <rect x="31.84" y="131.33" width="21.65" height="2.67" rx="0.0" fill="#262626" stroke="#111111" stroke-width="0.35"/>
 <rect x="31.84" y="124.67" width="21.65" height="6.67" rx="0.0" fill="#5C5C5C" stroke="#111111" stroke-width="0.35"/>
 <rect x="31.84" y="123.33" width="21.65" height="1.33" rx="0.0" fill="#8E8E8E" stroke="#111111" stroke-width="0.35"/>
-<text x="42.67" y="120.73" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">8</text>
-<text x="42.67" y="143.50" font-family="Times" font-size="6.8" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2021</text>
+<text x="42.67" y="120.73" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">8</text>
+<text x="42.67" y="143.50" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2021</text>
 <rect x="69.17" y="131.33" width="21.65" height="2.67" rx="0.0" fill="#262626" stroke="#111111" stroke-width="0.35"/>
 <rect x="69.17" y="128.67" width="21.65" height="2.67" rx="0.0" fill="#5C5C5C" stroke="#111111" stroke-width="0.35"/>
 <rect x="69.17" y="119.33" width="21.65" height="9.33" rx="0.0" fill="#BDBDBD" stroke="#111111" stroke-width="0.35"/>
 <rect x="69.17" y="115.33" width="21.65" height="4.00" rx="0.0" fill="#E4E4E4" stroke="#111111" stroke-width="0.35"/>
-<text x="80.00" y="112.73" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">14</text>
-<text x="80.00" y="143.50" font-family="Times" font-size="6.8" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2022</text>
+<text x="80.00" y="112.73" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">14</text>
+<text x="80.00" y="143.50" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2022</text>
 <rect x="106.51" y="131.33" width="21.65" height="2.67" rx="0.0" fill="#262626" stroke="#111111" stroke-width="0.35"/>
 <rect x="106.51" y="126.00" width="21.65" height="5.33" rx="0.0" fill="#5C5C5C" stroke="#111111" stroke-width="0.35"/>
 <rect x="106.51" y="122.00" width="21.65" height="4.00" rx="0.0" fill="#8E8E8E" stroke="#111111" stroke-width="0.35"/>
 <rect x="106.51" y="120.67" width="21.65" height="1.33" rx="0.0" fill="#BDBDBD" stroke="#111111" stroke-width="0.35"/>
 <rect x="106.51" y="118.00" width="21.65" height="2.67" rx="0.0" fill="#E4E4E4" stroke="#111111" stroke-width="0.35"/>
-<text x="117.33" y="115.40" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">12</text>
-<text x="117.33" y="143.50" font-family="Times" font-size="6.8" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2023</text>
+<text x="117.33" y="115.40" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">12</text>
+<text x="117.33" y="143.50" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2023</text>
 <rect x="143.84" y="120.67" width="21.65" height="13.33" rx="0.0" fill="#262626" stroke="#111111" stroke-width="0.35"/>
 <rect x="143.84" y="107.33" width="21.65" height="13.33" rx="0.0" fill="#5C5C5C" stroke="#111111" stroke-width="0.35"/>
 <rect x="143.84" y="99.33" width="21.65" height="8.00" rx="0.0" fill="#8E8E8E" stroke="#111111" stroke-width="0.35"/>
 <rect x="143.84" y="91.33" width="21.65" height="8.00" rx="0.0" fill="#BDBDBD" stroke="#111111" stroke-width="0.35"/>
 <rect x="143.84" y="83.33" width="21.65" height="8.00" rx="0.0" fill="#E4E4E4" stroke="#111111" stroke-width="0.35"/>
-<text x="154.67" y="80.73" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">38</text>
-<text x="154.67" y="143.50" font-family="Times" font-size="6.8" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2024</text>
+<text x="154.67" y="80.73" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">38</text>
+<text x="154.67" y="143.50" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2024</text>
 <rect x="181.17" y="110.00" width="21.65" height="24.00" rx="0.0" fill="#262626" stroke="#111111" stroke-width="0.35"/>
 <rect x="181.17" y="80.67" width="21.65" height="29.33" rx="0.0" fill="#5C5C5C" stroke="#111111" stroke-width="0.35"/>
 <rect x="181.17" y="60.67" width="21.65" height="20.00" rx="0.0" fill="#8E8E8E" stroke="#111111" stroke-width="0.35"/>
 <rect x="181.17" y="50.00" width="21.65" height="10.67" rx="0.0" fill="#BDBDBD" stroke="#111111" stroke-width="0.35"/>
 <rect x="181.17" y="18.00" width="21.65" height="32.00" rx="0.0" fill="#E4E4E4" stroke="#111111" stroke-width="0.35"/>
-<text x="192.00" y="15.40" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">87</text>
-<text x="192.00" y="143.50" font-family="Times" font-size="6.8" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2025</text>
+<text x="192.00" y="15.40" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">87</text>
+<text x="192.00" y="143.50" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2025</text>
 <rect x="218.51" y="90.00" width="21.65" height="44.00" rx="0.0" fill="#262626" stroke="#111111" stroke-width="0.35"/>
 <rect x="218.51" y="71.33" width="21.65" height="18.67" rx="0.0" fill="#5C5C5C" stroke="#111111" stroke-width="0.35"/>
 <rect x="218.51" y="56.67" width="21.65" height="14.67" rx="0.0" fill="#8E8E8E" stroke="#111111" stroke-width="0.35"/>
 <rect x="218.51" y="26.00" width="21.65" height="30.67" rx="0.0" fill="#BDBDBD" stroke="#111111" stroke-width="0.35"/>
 <rect x="218.51" y="19.33" width="21.65" height="6.67" rx="0.0" fill="#E4E4E4" stroke="#111111" stroke-width="0.35"/>
-<text x="229.33" y="16.73" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">86</text>
-<text x="229.33" y="143.50" font-family="Times" font-size="6.8" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2026</text>
+<text x="229.33" y="16.73" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">86</text>
+<text x="229.33" y="143.50" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111">2026</text>
 <polyline points="24.00,12.00 24.00,134.00 248.00,134.00" fill="none" stroke="#111111" stroke-width="0.6" stroke-linejoin="miter" stroke-linecap="butt"/>
-<text x="9.00" y="74.00" font-family="Times" font-size="6.8" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111" transform="rotate(-90 9.00 74.00)">Publications</text>
-<rect x="28.00" y="14.00" width="82.23" height="51.50" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.5"/>
+<text x="9.00" y="74.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="middle" fill="#111111" transform="rotate(-90 9.00 74.00)">Publications</text>
+<rect x="28.00" y="14.00" width="85.94" height="51.50" rx="0.0" fill="#FFFFFF" stroke="#B5B5B5" stroke-width="0.5"/>
 <rect x="32.00" y="15.60" width="7.50" height="6.50" rx="0.0" fill="#262626" stroke="#111111" stroke-width="0.35"/>
-<text x="43.00" y="21.40" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Localization / mapping</text>
+<text x="43.00" y="21.40" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Localization / mapping</text>
 <rect x="32.00" y="25.00" width="7.50" height="6.50" rx="0.0" fill="#5C5C5C" stroke="#111111" stroke-width="0.35"/>
-<text x="43.00" y="30.80" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Planning / control</text>
+<text x="43.00" y="30.80" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Planning / control</text>
 <rect x="32.00" y="34.40" width="7.50" height="6.50" rx="0.0" fill="#8E8E8E" stroke="#111111" stroke-width="0.35"/>
-<text x="43.00" y="40.20" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Semantic navigation</text>
+<text x="43.00" y="40.20" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Semantic navigation</text>
 <rect x="32.00" y="43.80" width="7.50" height="6.50" rx="0.0" fill="#BDBDBD" stroke="#111111" stroke-width="0.35"/>
-<text x="43.00" y="49.60" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Multi-robot</text>
+<text x="43.00" y="49.60" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Multi-robot</text>
 <rect x="32.00" y="53.20" width="7.50" height="6.50" rx="0.0" fill="#E4E4E4" stroke="#111111" stroke-width="0.35"/>
-<text x="43.00" y="59.00" font-family="Times" font-size="6.6" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Reliability / recovery</text>
+<text x="43.00" y="59.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#111111">Reliability / recovery</text>
 </svg>
