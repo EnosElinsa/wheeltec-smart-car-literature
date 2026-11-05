@@ -68,7 +68,7 @@ Inference at 1 Hz on an RTX 3080 laptop (p. 4).
 
 ## Key quantitative results
 
-- Affordance modulation raises Hound success from 60% to 90% while Spot remains at 100% (p. 6, Table III).
+- Affordance modulation raises Hound success from 60% to 90% while Spot remains at 100% (p. 6, Table II).
 
 Numbers above come from the inspected text passages; table values were not re-read from rendered pages in this targeted reading.
 
@@ -120,6 +120,7 @@ Counted once by the registered publication identity; no other version is in the 
 ## Verification log
 
 - 2026-11-03 | host: Kiro | scope: targeted source reading of identity, abstract and selected method, setup, evaluation and limitation passages on physical PDF pp. 1, 3, 4, 5, 6, 8; excerpts checked against Markdown and PDF text; table values not re-read from rendered pages; not a whole-paper audit | corrections: none (new card)
+- 2026-11-05 | host: Kiro | scope: PDF p. 6 Table II caption checked for the Hound result | corrections: Table III label corrected to Table II
 - Legacy extraction: none; new targeted reading of the 2026-11-03 IEEE refresh batch.
 
 ## Original abstract

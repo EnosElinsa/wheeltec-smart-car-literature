@@ -6,6 +6,7 @@ Run from 05-survey/manuscript:
   python scripts/coding.py --draw-sample                 # print the draw record as JSON, write nothing
   python scripts/coding.py --draw-sample --check-only    # redraw and compare with the published sampling record
   python scripts/coding.py --check-codes PATH --kind primary|second [--partial]
+  python scripts/coding.py --check-final                 # validate the final codes (frozen codes plus the log, CR20, CR21)
   python scripts/coding.py --freeze                      # record SHA-256 of the validated primary files
   python scripts/coding.py --import-second CODES_JSON    # convert the second coder's output into the CSV files
   python scripts/coding.py --agreement                   # pre-resolution agreement into generated/
@@ -410,9 +411,19 @@ def required_locators(code, codebook):
     return needed
 
 
+def physical_level_supported(code, rows):
+    """CR21: level_degradation P needs a physical same-experiment conjunction or a review-recheck locator that
+    confirms a stated result of a physical run under a named condition (codebook Section 12)."""
+    return (code['level_degradation'] != 'P' or code['deg_task_setting'] == 'physical'
+            or any(r.get('note') == 'recheck-kept' for r in rows))
+
+
 def validate_codes(codes, corpus_rows, codebook, kind, partial=False, locators=None, final=False):
     """Return (errors, warnings). kind 'second' keeps the second coder's values: rule breaks are warnings.
-    final=True checks the final codes (frozen codes with the adjudication log applied) against CR20 as well."""
+    final=True checks the final codes (frozen codes with the adjudication log applied, validated with the final
+    locators) against the final-code rules as well: CR20 (one response family) and CR21 (level P needs
+    deg_task_setting physical or a 'recheck-kept' locator for the level). CR21 is a coding.py check that makes the
+    Section 12 rule checkable; the frozen codebook text does not list it."""
     errors, warnings = [], []
     soft = warnings if kind == 'second' else errors
     by_code = {r['code']: r for r in corpus_rows}
@@ -507,6 +518,7 @@ def validate_codes(codes, corpus_rows, codebook, kind, partial=False, locators=N
         rules.append(('CR12', all(f not in ('context',) for f in family[1:])))
         if final:
             rules.append(('CR20', len(family) == 1))
+            rules.append(('CR21', physical_level_supported(code, index.get((cid, 'level_degradation', 'P'), []))))
         if not context and not resource:
             rules.append(('CR13', bool(S['src_addressed']) or bool(code.get('notes', '').strip())))
         if kind == 'primary':
@@ -586,22 +598,76 @@ def locator_source(text):
     raise ValueError(f'locator {text!r} has no known prefix')
 
 
+REVIEW_SCOPE = 'review-recheck'
+LOCATOR_NOTES = {'recheck-kept': 'recheck-kept', 'locator-corrected': 'locator-corrected'}
+
+
+def entry_values(entry, forms):
+    value = entry['resolved_value']
+    values = value.split('|') if forms[entry['attribute']] in ('set', 'one-or-two') else [value]
+    return [v for v in values if v not in ABSENT_VALUES]
+
+
 def adjudication_locators(log, codebook):
-    """Locator rows for values that the adjudication log introduces. The deciding locator of a log row may hold
-    several locators separated by '; '; each supports every value of the resolved code."""
+    """Locator rows that the adjudication log adds: for values it introduces (note 'adjudication'), for values that a
+    review recheck confirmed on a page ('recheck-kept') and for corrected locators of unchanged values
+    ('locator-corrected'). The deciding locator of a log row may hold several locators separated by '; '; each
+    supports every value of the resolved code."""
     forms = {a['name']: a['form'] for a in codebook['attributes']}
     rows = []
     for entry in log:
-        if entry['resolved_value'] == entry['primary_value'] or not entry['locator'].strip():
+        if entry['resolved_value'] != entry['primary_value']:
+            note = 'adjudication'
+        else:
+            note = LOCATOR_NOTES.get(entry['resolution'])
+        if note is None or not entry['locator'].strip():
             continue
-        value = entry['resolved_value']
-        values = value.split('|') if forms[entry['attribute']] in ('set', 'one-or-two') else [value]
         for text in (t.strip() for t in entry['locator'].split('; ')):
-            for v in values:
-                if v not in ABSENT_VALUES:
-                    rows.append({'code': entry['code'], 'attribute': entry['attribute'], 'value': v,
-                                 'source': locator_source(text), 'locator': text, 'note': 'adjudication'})
+            for v in entry_values(entry, forms):
+                rows.append({'code': entry['code'], 'attribute': entry['attribute'], 'value': v,
+                             'source': locator_source(text), 'locator': text, 'note': note})
     return rows
+
+
+def merge_locators(primary_rows, log, codebook):
+    """Final locators: the frozen primary locator rows without those that a 'locator-corrected' log row replaces,
+    plus the locator rows of the log. A correction keeps its value and must replace at least one primary row."""
+    forms = {a['name']: a['form'] for a in codebook['attributes']}
+    replaced = set()
+    for entry in log:
+        if entry['resolution'] != 'locator-corrected':
+            continue
+        assert entry['resolved_value'] == entry['primary_value'], (entry['code'], entry['attribute'])
+        for v in entry_values(entry, forms):
+            key = (entry['code'], entry['attribute'], v)
+            assert any((r['code'], r['attribute'], r['value']) == key for r in primary_rows), key
+            replaced.add(key)
+    kept = [r for r in primary_rows if (r['code'], r['attribute'], r['value']) not in replaced]
+    return kept + adjudication_locators(log, codebook)
+
+
+def final_locators(log, codebook):
+    """Locators of the final codes (frozen primary locators merged with the adjudication log)."""
+    return merge_locators(load_codes(PRIMARY_LOCATORS)[1], log, codebook)
+
+
+def review_recheck_summary(log):
+    """Counts of the review-recheck rows of the adjudication log for stats.json."""
+    rows = [e for e in log if e['scope'] == REVIEW_SCOPE]
+    level = [e for e in rows if e['attribute'] == 'level_degradation' and e['resolution'] in ('recheck-kept', 'recheck-revised')]
+    revised = [e for e in level if e['resolution'] == 'recheck-revised']
+    drive = [e for e in rows if e['attribute'] == 'drivetrain_effect' and e['resolution'] == 'recheck-revised']
+    assert all((e['primary_value'], e['resolved_value']) == ('no', 'yes') for e in drive), 'drivetrain rows must be no to yes'
+    corrected = [e for e in rows if e['resolution'] == 'locator-corrected']
+    return {'rows': len(rows), 'values_changed': sum(e['resolved_value'] != e['primary_value'] for e in rows),
+            'level_works': len({e['code'] for e in level}),
+            'level_kept': len({e['code'] for e in level if e['resolution'] == 'recheck-kept'}),
+            'level_revised': len({e['code'] for e in revised}),
+            'level_revised_codes': sorted({e['code'] for e in revised}),
+            'drivetrain_added': len({e['code'] for e in drive}),
+            'drivetrain_added_codes': sorted({e['code'] for e in drive}),
+            'locator_corrections': len(corrected),
+            'locator_corrected_works': len({e['code'] for e in corrected})}
 
 
 # Agreement units fixed in codebook Section 19. Set-valued attributes are scored as binary flags per value.
@@ -1451,7 +1517,7 @@ def write_products(out_dir, rows, decisions_path=None):
     codebook = load_codebook()
     index = {r['code']: r for r in rows}
     codes, log = final_codes()
-    locators = load_codes(PRIMARY_LOCATORS)[1] + adjudication_locators(log, codebook)
+    locators = final_locators(log, codebook)
     errors, _ = validate_codes(codes, rows, codebook, 'primary', locators=locators, final=True)
     assert not errors, errors[:5]
     freeze = check_freeze()
@@ -1535,7 +1601,8 @@ def write_products(out_dir, rows, decisions_path=None):
         'coding': {'codes': len(codes), 'technical': len(technical), 'adjudications': len(log),
                    'locators': len(load_codes(PRIMARY_LOCATORS)[1]),
                    'frozen': freeze['primary'] if freeze else None,
-                   'codebook_version': codebook['version']},
+                   'codebook_version': codebook['version'],
+                   'review_recheck': review_recheck_summary(log)},
     }
     return summary
 
@@ -1563,6 +1630,19 @@ def self_test(codebook, technical_rows):
     codes = [{'code': 'Z99', 'src_selected': 'PER'}]
     log = [{'code': 'Z99', 'attribute': 'src_selected', 'primary_value': 'PER', 'resolved_value': 'none'}]
     assert apply_adjudication(codes, log)[0]['src_selected'] == 'none' and codes[0]['src_selected'] == 'PER'
+    primary = [{'code': 'Z99', 'attribute': 'deg_task_class', 'value': 'D2', 'source': 'card', 'locator': 'card: Results, p. 6', 'note': ''},
+               {'code': 'Z99', 'attribute': 'task_setting', 'value': 'physical', 'source': 'pdf', 'locator': 'PDF p. 6', 'note': ''}]
+    fix = [{'code': 'Z99', 'attribute': 'deg_task_class', 'primary_value': 'D2', 'second_value': '', 'resolved_value': 'D2',
+            'resolution': 'locator-corrected', 'scope': REVIEW_SCOPE, 'locator': 'PDF p. 6, Table II'}]
+    merged = merge_locators(primary, fix, codebook)
+    assert [(r['attribute'], r['locator'], r['note']) for r in merged] == [
+        ('task_setting', 'PDF p. 6', ''), ('deg_task_class', 'PDF p. 6, Table II', 'locator-corrected')]
+    simulated = {'level_degradation': 'P', 'deg_task_setting': 'simulation'}
+    kept = [{'note': 'recheck-kept'}]
+    assert not physical_level_supported(simulated, [{'note': ''}])
+    assert physical_level_supported(simulated, kept)
+    assert physical_level_supported({'level_degradation': 'P', 'deg_task_setting': 'physical'}, [])
+    assert physical_level_supported({'level_degradation': 'S', 'deg_task_setting': 'none'}, [])
     print('self-test OK')
 
 
@@ -1591,6 +1671,8 @@ def main(argv=None):
     parser.add_argument('--check-codes', type=Path)
     parser.add_argument('--kind', choices=['primary', 'second'], default='primary')
     parser.add_argument('--partial', action='store_true')
+    parser.add_argument('--check-final', action='store_true',
+                        help='validate the final codes (frozen primary codes plus the adjudication log) with the final locators')
     parser.add_argument('--freeze', action='store_true', help='write freeze.json for the validated primary files')
     parser.add_argument('--import-second', type=Path, metavar='CODES_JSON',
                         help="convert the second coder's codes.json into second-codes.csv and second-locators.csv")
@@ -1640,6 +1722,16 @@ def main(argv=None):
             except AssertionError as error:
                 print('ERROR', error)
                 status = 1
+    if args.check_final:
+        codes, log = final_codes()
+        errors, warnings = validate_codes(codes, rows, codebook, 'primary', locators=final_locators(log, codebook), final=True)
+        for w in warnings:
+            print('WARNING', w)
+        for e in errors:
+            print('ERROR', e)
+        applies = sum(c['level_degradation'] == 'P' and c['deg_task_setting'] != 'physical' for c in codes)
+        print(f'final codes: {len(codes)} rows, {len(errors)} errors, {len(warnings)} warnings; CR21 applies to {applies} works')
+        status = max(status, 1 if errors else 0)
     if args.freeze:
         _, codes = load_codes(PRIMARY_CODES)
         errors, _ = validate_codes(codes, rows, codebook, 'primary', locators=load_codes(PRIMARY_LOCATORS)[1])

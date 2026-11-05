@@ -132,8 +132,7 @@ def main():
     final = coding.apply_adjudication(primary, log)
     assert sorted(c['code'] for c in final) == sorted(inclusion['selected_ids'])
     errors, _ = coding.validate_codes(final, rows, codebook, 'primary',
-                                      locators=coding.load_codes(coding_dir / 'primary-locators.csv')[1]
-                                      + coding.adjudication_locators(log, codebook), final=True)
+                                      locators=coding.final_locators(log, codebook), final=True)
     assert not errors, errors[:5]
     published = list(csv.DictReader((MANUSCRIPT / 'generated/evidence-codes.csv').open(encoding='utf-8', newline='')))
     assert [{k: r[k] for k in codebook['columns']} for r in published] == [{k: c[k] for k in codebook['columns']} for c in final]

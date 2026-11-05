@@ -13,13 +13,13 @@ task_named_same,Named condition with a task outcome in the same experiment,1,1.5
 task_manipulated_same,D1 condition with a task outcome in the same experiment,0,0.0,12,21.4,6,16.7,5,11.1,4,10.0,27,11.1
 physical_task_named_same,Same-experiment combination on a physical robot,1,1.5,19,33.9,12,33.3,2,4.4,4,10.0,38,15.6
 direct_wheeled_joint,Direct joint wheeled evidence,1,1.5,17,30.4,11,30.6,1,2.2,4,10.0,34,13.9
-level_physical,"Named condition, physical closed loop",1,1.5,25,44.6,14,38.9,6,13.3,11,27.5,57,23.4
+level_physical,"Named condition, physical closed loop",1,1.5,24,42.9,14,38.9,5,11.1,11,27.5,55,22.5
 level_hw_recorded,"Named condition, online hardware or recorded data",46,68.7,3,5.4,0,0.0,6,13.3,11,27.5,66,27.0
-level_replay_sim_num,"Named condition, replay, simulation, numerical model or resource",14,20.9,18,32.1,5,13.9,15,33.3,12,30.0,64,26.2
+level_replay_sim_num,"Named condition, replay, simulation, numerical model or resource",14,20.9,19,33.9,5,13.9,16,35.6,12,30.0,66,27.0
 integrity,Integrity or failure-risk assessment,3,4.5,1,1.8,0,0.0,1,2.2,9,22.5,14,5.7
 placement,Computation placement reported,45,67.2,31,55.4,18,50.0,33,73.3,28,70.0,155,63.5
 group_WHL,Target wheeled robot,30,44.8,50,89.3,30,83.3,32,71.1,30,75.0,172,70.5
 group_ROAD,Road vehicle,7,10.4,1,1.8,0,0.0,0,0.0,4,10.0,12,4.9
 group_GND,Other ground robot,1,1.5,4,7.1,5,13.9,3,6.7,0,0.0,13,5.3
 group_OTH,"Non-ground, handheld, mixed-carrier or no platform",29,43.3,1,1.8,1,2.8,10,22.2,6,15.0,47,19.3
-drivetrain_effect,Drivetrain-dependent effect reported,3,4.5,1,1.8,0,0.0,0,0.0,2,5.0,6,2.5
+drivetrain_effect,Drivetrain-dependent effect reported,3,4.5,3,5.4,0,0.0,0,0.0,4,10.0,10,4.1

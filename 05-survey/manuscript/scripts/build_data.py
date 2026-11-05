@@ -191,9 +191,10 @@ assert all(EV[k]['functions'] == 'PLN' and EV[k]['direct_wheeled_joint'] == 'yes
            for k in ('K03', 'K05', 'R13', 'R15'))                           # Sec. X-C: terrain planners without LOC
 assert EV['M10']['src_selected'] == 'PER' and EV['M10']['deg_task_setting'] == 'physical' \
     and EV['M10']['level_degradation'] == 'P'                       # Sec. X-C: direct through the GPS-disabled campus run
-assert sorted(k for k, e in EV.items() if e['drivetrain_effect'] == 'yes') == sorted(('E02', 'R33', 'M39', 'E04', 'S07', 'N17'))
-assert all(EV[k]['drivetrain_effect'] == 'no' and EV[k]['drivetrain'] == 'omnidirectional'
-           for k in ('M09', 'S48'))                                 # Table II note: "except the two Mecanum studies"
+assert sorted(k for k, e in EV.items() if e['drivetrain_effect'] == 'yes') == sorted(('E02', 'R33', 'M39', 'E04', 'S07', 'N17',
+                                                                                     'M04', 'M09', 'N10', 'S16'))
+assert EV['S48']['drivetrain_effect'] == 'no' and EV['M09']['drivetrain_effect'] == 'yes' \
+    and all(EV[k]['drivetrain'] == 'omnidirectional' for k in ('M09', 'S48'))  # Table II: the two Mecanum studies (M09 yes after the review recheck)
 assert {t['code']: t['platform_group'] for t in TRACE if t['interface'] == '1' and t['code'] in ('X07', 'M28')} == \
     {'X07': 'ROAD', 'M28': 'ROAD'}                                                          # Sec. X-A: road-vehicle integrity analyses
 DECISIONS = json.loads((M / 'data/interface-decisions.json').read_text(encoding='utf-8'))['decisions']

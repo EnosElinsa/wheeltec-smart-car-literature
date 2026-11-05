@@ -193,16 +193,16 @@
       "task_manipulated_same": 12,
       "physical_task_named_same": 19,
       "direct_wheeled_joint": 17,
-      "level_physical": 25,
+      "level_physical": 24,
       "level_hw_recorded": 3,
-      "level_replay_sim_num": 18,
+      "level_replay_sim_num": 19,
       "integrity": 1,
       "placement": 31,
       "group_WHL": 50,
       "group_ROAD": 1,
       "group_GND": 4,
       "group_OTH": 1,
-      "drivetrain_effect": 1
+      "drivetrain_effect": 3
     },
     "SEM": {
       "publications": 36,
@@ -245,9 +245,9 @@
       "task_manipulated_same": 5,
       "physical_task_named_same": 2,
       "direct_wheeled_joint": 1,
-      "level_physical": 6,
+      "level_physical": 5,
       "level_hw_recorded": 6,
-      "level_replay_sim_num": 15,
+      "level_replay_sim_num": 16,
       "integrity": 1,
       "placement": 33,
       "group_WHL": 32,
@@ -280,7 +280,7 @@
       "group_ROAD": 4,
       "group_GND": 0,
       "group_OTH": 6,
-      "drivetrain_effect": 2
+      "drivetrain_effect": 4
     },
     "All": {
       "publications": 244,
@@ -297,16 +297,16 @@
       "task_manipulated_same": 27,
       "physical_task_named_same": 38,
       "direct_wheeled_joint": 34,
-      "level_physical": 57,
+      "level_physical": 55,
       "level_hw_recorded": 66,
-      "level_replay_sim_num": 64,
+      "level_replay_sim_num": 66,
       "integrity": 14,
       "placement": 155,
       "group_WHL": 172,
       "group_ROAD": 12,
       "group_GND": 13,
       "group_OTH": 47,
-      "drivetrain_effect": 6
+      "drivetrain_effect": 10
     }
   },
   "matrix": {
@@ -2225,8 +2225,8 @@
       "named": 25,
       "task_named_same": 16,
       "direct_wheeled_joint": 12,
-      "drivetrain_effect": 2,
-      "effect_codes": "E04|M39",
+      "drivetrain_effect": 3,
+      "effect_codes": "E04|M39|N10",
       "sources_addressed": "COM:4|DYN:4|MAP:5|MOD:5|PER:5|RES:3|SFA:1|TER:14"
     },
     {
@@ -2255,8 +2255,8 @@
       "named": 4,
       "task_named_same": 2,
       "direct_wheeled_joint": 0,
-      "drivetrain_effect": 0,
-      "effect_codes": "none",
+      "drivetrain_effect": 1,
+      "effect_codes": "M09",
       "sources_addressed": "ACT:1|DYN:2|MOD:2"
     },
     {
@@ -2270,8 +2270,8 @@
       "named": 66,
       "task_named_same": 28,
       "direct_wheeled_joint": 14,
-      "drivetrain_effect": 0,
-      "effect_codes": "none",
+      "drivetrain_effect": 2,
+      "effect_codes": "M04|S16",
       "sources_addressed": "ACT:5|COM:12|DYN:21|MAP:15|MOD:13|PER:19|RES:12|SFA:7|TER:19"
     },
     {
@@ -2371,13 +2371,33 @@
   "coding": {
     "codes": 245,
     "technical": 244,
-    "adjudications": 118,
+    "adjudications": 146,
     "locators": 1646,
     "frozen": {
       "primary-codes.csv": "b56dff1ee78bb25b22f7bc9eee25ac8a8cf43bc39030d98c22764c1d90d91d45",
       "primary-locators.csv": "83bba1539fa3cbca1828f21d2e07eb60f19c519208247ff0e447e5aaa69d2ecc"
     },
-    "codebook_version": "1.1"
+    "codebook_version": "1.1",
+    "review_recheck": {
+      "rows": 28,
+      "values_changed": 6,
+      "level_works": 19,
+      "level_kept": 17,
+      "level_revised": 2,
+      "level_revised_codes": [
+        "F09",
+        "N05"
+      ],
+      "drivetrain_added": 4,
+      "drivetrain_added_codes": [
+        "M04",
+        "M09",
+        "N10",
+        "S16"
+      ],
+      "locator_corrections": 5,
+      "locator_corrected_works": 2
+    }
   },
   "agreement": {
     "works": 40,
@@ -2866,16 +2886,16 @@
       "task_manipulated_same": 12,
       "physical_task_named_same": 19,
       "direct_wheeled_joint": 17,
-      "level_physical": 25,
+      "level_physical": 24,
       "level_hw_recorded": 3,
-      "level_replay_sim_num": 18,
+      "level_replay_sim_num": 19,
       "integrity": 1,
       "placement": 31,
       "group_WHL": 50,
       "group_ROAD": 1,
       "group_GND": 4,
       "group_OTH": 1,
-      "drivetrain_effect": 1
+      "drivetrain_effect": 3
     },
     "SEM": {
       "publications": 36,
@@ -2918,9 +2938,9 @@
       "task_manipulated_same": 5,
       "physical_task_named_same": 2,
       "direct_wheeled_joint": 1,
-      "level_physical": 6,
+      "level_physical": 5,
       "level_hw_recorded": 6,
-      "level_replay_sim_num": 15,
+      "level_replay_sim_num": 16,
       "integrity": 1,
       "placement": 33,
       "group_WHL": 32,
@@ -2953,7 +2973,7 @@
       "group_ROAD": 4,
       "group_GND": 0,
       "group_OTH": 6,
-      "drivetrain_effect": 2
+      "drivetrain_effect": 4
     },
     "All": {
       "publications": 244,
@@ -2970,16 +2990,16 @@
       "task_manipulated_same": 27,
       "physical_task_named_same": 38,
       "direct_wheeled_joint": 34,
-      "level_physical": 57,
+      "level_physical": 55,
       "level_hw_recorded": 66,
-      "level_replay_sim_num": 64,
+      "level_replay_sim_num": 66,
       "integrity": 14,
       "placement": 155,
       "group_WHL": 172,
       "group_ROAD": 12,
       "group_GND": 13,
       "group_OTH": 47,
-      "drivetrain_effect": 6
+      "drivetrain_effect": 10
     }
   },
   "evaluation_table_keys": [

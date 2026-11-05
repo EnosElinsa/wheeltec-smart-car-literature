@@ -79,16 +79,16 @@
       "task_manipulated_same": 12,
       "physical_task_named_same": 19,
       "direct_wheeled_joint": 17,
-      "level_physical": 25,
+      "level_physical": 24,
       "level_hw_recorded": 3,
-      "level_replay_sim_num": 18,
+      "level_replay_sim_num": 19,
       "integrity": 1,
       "placement": 31,
       "group_WHL": 50,
       "group_ROAD": 1,
       "group_GND": 4,
       "group_OTH": 1,
-      "drivetrain_effect": 1
+      "drivetrain_effect": 3
     },
     "SEM": {
       "publications": 36,
@@ -131,9 +131,9 @@
       "task_manipulated_same": 5,
       "physical_task_named_same": 2,
       "direct_wheeled_joint": 1,
-      "level_physical": 6,
+      "level_physical": 5,
       "level_hw_recorded": 6,
-      "level_replay_sim_num": 15,
+      "level_replay_sim_num": 16,
       "integrity": 1,
       "placement": 33,
       "group_WHL": 32,
@@ -166,7 +166,7 @@
       "group_ROAD": 4,
       "group_GND": 0,
       "group_OTH": 6,
-      "drivetrain_effect": 2
+      "drivetrain_effect": 4
     },
     "All": {
       "publications": 244,
@@ -183,22 +183,22 @@
       "task_manipulated_same": 27,
       "physical_task_named_same": 38,
       "direct_wheeled_joint": 34,
-      "level_physical": 57,
+      "level_physical": 55,
       "level_hw_recorded": 66,
-      "level_replay_sim_num": 64,
+      "level_replay_sim_num": 66,
       "integrity": 14,
       "placement": 155,
       "group_WHL": 172,
       "group_ROAD": 12,
       "group_GND": 13,
       "group_OTH": 47,
-      "drivetrain_effect": 6
+      "drivetrain_effect": 10
     }
   },
   "coding": {
     "codebook_version": "1.1",
     "coded_works": 245,
-    "adjudication_rows": 118,
+    "adjudication_rows": 146,
     "frozen_primary_codes_sha256": "b56dff1ee78bb25b22f7bc9eee25ac8a8cf43bc39030d98c22764c1d90d91d45",
     "evidence_map_recomputed_from": "06-data/evidence-coding/primary-codes.csv + adjudication-log.csv"
   },
@@ -214,7 +214,7 @@
   "overfull_boxes": 0,
   "underfull_horizontal_boxes": 0,
   "underfull_vertical_boxes": 0,
-  "pdf_sha256": "1d14ccaae01b04397c20fd8577a2722be6da5fa9be6b76745ad9ef234bc25b11",
+  "pdf_sha256": "1ce0caac8c87118a7484f3c9d98fe2f544fbfa6bd762ade91d82b025f5d928c3",
   "supplement": {
     "pages": 17,
     "unique_labels": 22,
@@ -225,7 +225,7 @@
     "overfull_boxes": 0,
     "underfull_horizontal_boxes": 3,
     "underfull_vertical_boxes": 0,
-    "pdf_sha256": "09d2f05649136cf1caa3aea2a7b58222f442c17f0249cfee69276045d8be01c0"
+    "pdf_sha256": "6756ea3805fbb81b465548ae1d80d4939f0551516d48aabb7638faaaff3a8f2d"
   },
-  "base_commit": "a1ce7f31ba3fe0c13a725d353f2e9ef819ba176c"
+  "base_commit": "b3bf8577b464afb373e175fe228b71a1b413f84c"
 }
