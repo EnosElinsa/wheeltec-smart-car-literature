@@ -231,8 +231,8 @@ def fig_stack() -> Canvas:
     c.arrow([(x + 11, gy - 2.4), (x + 25, gy - 2.4)], stroke=RULE, sw=0.6, head=3.4)
     c.text(x + 29, gy, items[2], 7.0, fill=MUTED)
     x += 29 + width(items[2], 7.0) + 14
-    c.marker(x + 4.6, gy - 2.4, '1')
-    c.text(x + 12.5, gy, items[3], 7.0, fill=MUTED)
+    c.marker(x + 4.9, gy - 2.4, '1')
+    c.text(x + 12.8, gy, items[3], 7.0, fill=MUTED)
     c.h = gy + 4
     return c
 

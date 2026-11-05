@@ -530,14 +530,14 @@
 <polygon points="338.50,140.00 339.80,143.60 337.20,143.60" fill="#111111" stroke="none" stroke-width="0.6" stroke-linejoin="miter"/>
 <polyline points="338.50,149.00 338.50,146.40" fill="none" stroke="#111111" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="butt"/>
 <polyline points="338.50,144.80 338.50,143.60" fill="none" stroke="#111111" stroke-width="0.7" stroke-linejoin="round" stroke-linecap="butt"/>
-<circle cx="162.50" cy="151.00" r="4.6" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
-<text x="162.50" y="153.35" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">1</text>
-<circle cx="373.50" cy="82.00" r="4.6" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
-<text x="373.50" y="84.35" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">2</text>
-<circle cx="258.00" cy="149.00" r="4.6" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
-<text x="258.00" y="151.35" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">3</text>
-<circle cx="268.00" cy="82.00" r="4.6" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
-<text x="268.00" y="84.35" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">4</text>
+<circle cx="162.50" cy="151.00" r="4.9" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
+<text x="162.50" y="153.50" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">1</text>
+<circle cx="373.50" cy="82.00" r="4.9" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
+<text x="373.50" y="84.50" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">2</text>
+<circle cx="258.00" cy="149.00" r="4.9" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
+<text x="258.00" y="151.50" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">3</text>
+<circle cx="268.00" cy="82.00" r="4.9" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
+<text x="268.00" y="84.50" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">4</text>
 <polygon points="26.00,217.60 21.80,219.11 21.80,216.09" fill="#111111" stroke="none" stroke-width="0.6" stroke-linejoin="miter"/>
 <polyline points="4.00,217.60 21.80,217.60" fill="none" stroke="#111111" stroke-width="0.9" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="30.00" y="220.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#4A4A4A">Information flow</text>
@@ -563,7 +563,7 @@
 <polygon points="226.23,217.60 222.83,218.82 222.83,216.38" fill="#7A7A7A" stroke="none" stroke-width="0.6" stroke-linejoin="miter"/>
 <polyline points="212.23,217.60 222.83,217.60" fill="none" stroke="#7A7A7A" stroke-width="0.6" stroke-linejoin="miter" stroke-linecap="butt"/>
 <text x="230.23" y="220.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#4A4A4A">Degradation source and entry point</text>
-<circle cx="347.59" cy="217.60" r="4.6" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
-<text x="347.59" y="219.95" font-family="Times" font-size="6.6" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">1</text>
-<text x="355.49" y="220.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#4A4A4A">Open interface examined in Sec. X</text>
+<circle cx="347.89" cy="217.60" r="4.9" fill="#FFFFFF" stroke="#111111" stroke-width="0.6"/>
+<text x="347.89" y="220.10" font-family="Times" font-size="7.0" font-weight="bold" font-style="normal" text-anchor="middle" fill="#111111">1</text>
+<text x="355.79" y="220.00" font-family="Times" font-size="7.0" font-weight="normal" font-style="normal" text-anchor="start" fill="#4A4A4A">Open interface examined in Sec. X</text>
 </svg>

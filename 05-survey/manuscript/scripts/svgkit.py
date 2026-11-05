@@ -150,10 +150,10 @@ class Canvas:
             y += leading
         return y
 
-    def marker(self, cx, cy, label, r=4.6):
+    def marker(self, cx, cy, label, r=4.9):
         """Circled numeral that identifies an open interface (Section X)."""
         self.circle(cx, cy, r, fill=WHITE, stroke=INK, sw=0.6)
-        self.text(cx, cy + 2.35, label, size=6.6, weight='bold', anchor='middle', fill=INK)
+        self.text(cx, cy + 2.5, label, size=7.0, weight='bold', anchor='middle', fill=INK)
 
     # Output ----------------------------------------------------------------
     def svg(self) -> str:

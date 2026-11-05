@@ -138,6 +138,13 @@
       "before": "the single direct study of Interface 3 is direct through injected map deviations rather than pose uncertainty",
       "after": "The single direct wheeled study, OPEN, completes a GPS-disabled campus delivery with no pose-uncertainty term in its traversability cost, which leaves this question with extrapolated evidence only.",
       "reason": "Corrected in the second manuscript check of round 4: the injected map deviations were tested in simulation only (PDF p. 10, Table III). The direct physical condition is the GPS-disabled campus run (adjudication log; PDF p. 11 and p. 8). The local replanning cost comes from image segmentation without an uncertainty term (paper Sec. IV-F). build_data.py asserts src_selected PER, deg_task_setting physical and level_degradation P for M10. The pronoun \"Their\" became \"The\" after the third check."
+    },
+    {
+      "code": "evidence-map",
+      "section": "VIII (synthesis)",
+      "before": "The studies reviewed here contain 9 of the 14 integrity or failure-risk assessments in the sample (Table VI), although their faults are often injected or simulated.",
+      "after": "The studies reviewed here contain 9 of the 14 integrity or failure-risk assessments in the sample (Table VI), mostly with injected or simulated faults.",
+      "reason": "Changed in the second part of round 4 (B21, fewer caveat-attaching \"although\" clauses) and recorded after the fourth manuscript check. Six of the nine Section VIII works coded with an integrity or failure-risk assessment rest on injected faults or simulation (X07, M28, M35, E51, E59, E60; final codes and review cards), so \"mostly\" holds in the purposively selected sample. E54, F01 and F07 evaluate recorded or deployment data without injection."
     }
   ],
   "round4_claims": [
@@ -405,8 +412,9 @@
       "basis": "the section sentences that cite the same work (all audited in this record or earlier)"
     },
     {
-      "location": "VII-B, VII-C, VIII-B, IV-E, V-B, V-D, VI-B",
+      "location": "IV-A, VII-B, VII-C, VIII-B, IV-E, V-B, V-D, VI-B",
       "codes": [
+        "E01",
         "E05",
         "S31",
         "S24",
@@ -426,14 +434,21 @@
         "E29",
         "K14",
         "K16",
-        "E50",
         "K07",
         "K09",
         "K10",
         "X07"
       ],
-      "claim": "Long sentences split or regrouped (B21); characterizations unchanged",
+      "claim": "Long sentences split or regrouped (B21); characterizations unchanged, apart from the LeLaN split recorded separately",
       "basis": "earlier audit entries of the same works"
+    },
+    {
+      "location": "VI-B",
+      "codes": [
+        "E50"
+      ],
+      "claim": "In a separate ablation, collision training raises arrival with obstacles from 0.13 to 0.60 in 15 trials but lowers success without obstacles from 0.89 to 0.77; the 15-trial count belongs to the with-obstacle arm only",
+      "basis": "E50 card and PDF p. 7, Sec. 4.2 and Table 3: 15 experiments stated for the with-obstacle column, no trial count stated for the without-obstacle column. A first B21 split (\"In a separate ablation of 15 trials\") extended the count to both arms and was reverted after the fourth manuscript check."
     },
     {
       "location": "IX-E",

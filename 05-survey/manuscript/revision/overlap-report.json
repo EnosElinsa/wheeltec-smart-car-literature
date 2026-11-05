@@ -1,7 +1,7 @@
 {
   "ngram_size": 10,
   "source_documents": 267,
-  "survey_windows": 11166,
+  "survey_windows": 11191,
   "unique_overlapping_phrases": 0,
   "matching_survey_windows": 0,
   "overlap_percent_of_survey_windows": 0.0,

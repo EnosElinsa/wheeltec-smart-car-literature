@@ -214,7 +214,7 @@
   "overfull_boxes": 0,
   "underfull_horizontal_boxes": 0,
   "underfull_vertical_boxes": 0,
-  "pdf_sha256": "969489b8c62368a2dd2bd8e476e20fe181b52c811e8bb362833564eac7564002",
+  "pdf_sha256": "7ae60f7bf2132e38b1ec0342409ee2b5cb6fb540ad5fff33fb15bdf92763d7d8",
   "supplement": {
     "pages": 17,
     "unique_labels": 22,
@@ -225,7 +225,7 @@
     "overfull_boxes": 0,
     "underfull_horizontal_boxes": 3,
     "underfull_vertical_boxes": 0,
-    "pdf_sha256": "4207558839596fded8e26dd7fb86c4f4ef2d770fd1680a86f3e89234cbc08844"
+    "pdf_sha256": "618eb02a65f494099fd72fed623f78cd06a30fbdeb25ae6a4cdeb11076ff0609"
   },
-  "base_commit": "5cc146e1335dc72cdf02d0515cd35b7aa07d117e"
+  "base_commit": "6b6f7f5a106438ac2e319abe924a42f379c5f63b"
 }

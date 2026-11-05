@@ -88,7 +88,7 @@
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "With a common FAST-LIO2 backbone, absolute pose error (APE), the source's ATE-type error from the EVO tool with no declared alignment, on the Long Corridor recording of the SubT-MRS dataset~ falls from 3.113 to 1.386\\,m, while average desktop computation rises"
+      "sentence": "With a common FAST-LIO2 backbone, its APE on the Long Corridor recording of the SubT-MRS dataset~ falls from 3.113 to 1.386\\,m, while average desktop computation rises from 21.04 to 28.69\\,ms."
     },
     {
       "section": "04",
@@ -245,7 +245,7 @@
       ],
       "status": "numbers checked on the cited PDF page",
       "card_locator": "E47 p. 5 Table I (HM3D SPL 30.4, SR 52.5) and SPL definition; p. 2 (success: STOP within 1 m of a target instance in 500 or fewer steps)",
-      "sentence": "On simulated Habitat-Matterport 3D (HM3D) object search, where success means stopping within 1\\,m of the target in at most 500 steps, VLFM reaches 52.5\\% success and 30.4\\% SPL."
+      "sentence": "On simulated Habitat-Matterport 3D (HM3D) object search, where success means stopping within 1\\,m of a target instance in at most 500 steps, VLFM reaches 52.5\\% success and 30.4\\% SPL."
     },
     {
       "section": "06",
@@ -295,15 +295,15 @@
         "E50"
       ],
       "numbers": [
-        "15",
         "0.13",
         "0.60",
+        "15",
         "0.89",
         "0.77"
       ],
       "status": "source-checked comparison record (data/within-study-comparisons.json)",
       "card_locator": "",
-      "sentence": "In a separate ablation of 15 trials, collision training raises arrival with obstacles from 0.13 to 0.60 but lowers success without obstacles from 0.89 to 0.77."
+      "sentence": "In a separate ablation, collision training raises arrival with obstacles from 0.13 to 0.60 in 15 trials but lowers success without obstacles from 0.89 to 0.77."
     },
     {
       "section": "06",
