@@ -10,49 +10,16 @@
     "iso_21448": "User decision A: cite ISO 21448:2022 as an IEEEtran @standard entry that carries only fields shown on the official ISO catalogue page (reference number, title, organization ISO, year 2022, catalogue URL) and no DOI. The background record has the new type official-catalogue-page with the URL, the retrieval date and the SHA-256 of the saved page. The saved page stays in the gitignored revision/local/ and is never committed.",
     "rendering": "IEEEtran prints organization, \"Std.\" and number, so the bibliography number is the reference number without its organization prefix: the entry reads \"ISO Std. 21448:2022\" rather than \"ISO Std. ISO 21448:2022\"."
   },
-  "records": [
-    {
-      "doi": "10.4271/j3016_202104",
-      "key": "B_DrivingAutomation2021",
-      "raw_record": "revision/background-sources/B_DrivingAutomation2021.json",
-      "scope": "identity/metadata verified from opened Crossref DOI record (type standard; no cited-reference list deposited); automated-driving positioning, terms from its abstract",
-      "title": "Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles",
-      "verified_utc": "2026-11-05T00:38:49.805843+00:00"
-    },
-    {
-      "doi": "10.1109/icar53236.2021.9659362",
-      "key": "B_ODDMonitoring2021",
-      "raw_record": "revision/background-sources/B_ODDMonitoring2021.json",
-      "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); automated-driving positioning, scope from the publisher abstract page",
-      "title": "Operational Design Domain Monitoring at Runtime for 2D Laser-Based Localization algorithms",
-      "verified_utc": "2026-11-05T00:38:49.805843+00:00"
-    },
-    {
-      "doi": "10.1109/iv64158.2025.11097617",
-      "key": "B_MRMFallback2025",
-      "raw_record": "revision/background-sources/B_MRMFallback2025.json",
-      "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); automated-driving positioning, scope from the publisher abstract page",
-      "title": "Minimum Risk Maneuver Fallback Strategy for Autonomous Vehicles: Design and Experimental Validation",
-      "verified_utc": "2026-11-05T00:38:49.805843+00:00"
-    },
-    {
-      "doi": "10.3390/s24061909",
-      "key": "B_TraversabilityRisk2024",
-      "raw_record": "revision/background-sources/B_TraversabilityRisk2024.json",
-      "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey for Table I, scope from its abstract",
-      "title": "A Review on Traversability Risk Assessments for Autonomous Ground Vehicles: Methods and Metrics",
-      "verified_utc": "2026-11-05T00:38:49.805843+00:00"
-    },
-    {
-      "key": "B_SOTIF2022",
-      "record_type": "official-catalogue-page",
-      "url": "https://www.iso.org/standard/77490.html",
-      "retrieved_utc": "2026-11-05T01:45:09.378909+00:00",
-      "page_sha256": "810113351d293eac149c3f4d817729d94d87136840cff02a71c1e58602e1c13e",
-      "raw_record": "revision/background-sources/B_SOTIF2022.json",
-      "scope": "identity/metadata copied from the official ISO catalogue page (no DOI exists; page saved locally, not committed, SHA-256 recorded); automated-driving positioning, scope from the catalogue abstract",
-      "title": "Road vehicles — Safety of the intended functionality",
-      "verified_utc": "2026-11-05T01:46:55.958915+00:00"
-    }
-  ]
+  "records": [],
+  "moved": {
+    "date": "2026-11-05",
+    "note": "All five staged records moved unchanged to background-verification.json in the commit that first cites them (round 4, Sections I and X).",
+    "keys": [
+      "B_DrivingAutomation2021",
+      "B_ODDMonitoring2021",
+      "B_MRMFallback2025",
+      "B_TraversabilityRisk2024",
+      "B_SOTIF2022"
+    ]
+  }
 }

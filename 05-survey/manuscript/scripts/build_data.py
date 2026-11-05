@@ -71,7 +71,7 @@ for module in EVIDENCE_MODULES:
 assert sum(v['publications'] for v in evidence_map.values()) == len(technical_rows)
 for attribute, count in stats['evaluation_technical'].items():
     assert sum(v[attribute] for v in evidence_map.values()) == count
-stats['evidence_map'] = evidence_map
+stats['evidence_map_card'] = evidence_map
 stats['corpus_count'] = len(rows)
 stats['indexed_library_count'] = len(all_rows)
 stats['internal_reference_count'] = len(citation_policy['internal_reference_ids'])
@@ -79,11 +79,13 @@ stats['citation_scope_sha256'] = text_digest(M / 'data/citation-scope.json')
 stats['inclusion_sha256'] = text_digest(R / '06-data/survey-inclusion.json')
 stats['source_index_sha256'] = digest(R / '06-data/paper-index.csv')
 stats['comparison_sha256'] = digest(R / '06-data/corpus-comparison.csv')
-# Evidence coding layer (06-data/evidence-coding): final codes, matrices, interface ranking, sensitivity and
-# venue mix. These products do not change the card-based evidence map, macros or Table V of this revision.
+# Evidence coding layer (06-data/evidence-coding): final codes (frozen primary codes plus the adjudication log),
+# matrices, interface ranking, sensitivity and venue mix. The evidence map of Table VI and every sample statistic
+# in the prose come from these codes. The card-based map above remains a sensitivity row (S-card-round3).
 stats.update(coding.write_products(G, rows, decisions_path=M / 'data/interface-decisions.json'))
 # Pre-resolution agreement of the language-model second coding with the frozen primary codes (40 sampled works).
 stats.update(coding.write_agreement(G))
+stats['evidence_map'] = stats['evidence_map_v2']
 (G / 'stats.json').write_text(json.dumps(stats, indent=2) + '\n', encoding='utf-8')
 batches = stats['source_batch']
 modules = stats['survey_module']
@@ -108,44 +110,153 @@ macros = {'CorpusCount':len(rows), 'CoreCount':len(technical_rows), 'ContextCoun
           'LegacyRecords':58583,'LegacyReviewable':43086,'LegacyUnreviewed':43041,
           'LegacyJournals':17,'LegacySlices':102,'HistoricalQueue':79,
           'QuerySlices':34,'QueryIncomplete':7,
-          'OnboardCount':stats['compute_location']['onboard'],
-          'ComputeUnreported':stats['compute_location']['not-reported'],
-          'DegTaskCount':sum(v['degradation-with-task'] for v in evidence_map.values()),
-          'DegTaskShare':round(100 * sum(v['degradation-with-task'] for v in evidence_map.values()) / len(technical_rows)),
-          'IntegrityCount':stats['evaluation_technical'].get('integrity-reliability', 0),
-          'LocTechCount':evidence_map['localization-mapping']['publications'],
-          'LocTaskCount':evidence_map['localization-mapping']['closed-loop-task'],
-          'LocDegCount':evidence_map['localization-mapping']['designed-degradation'],
-          'FaultIntegrityCount':evidence_map['fault-recovery-deployment']['integrity-reliability'],
-          'LocBoundaryCount':evidence_map['localization-mapping']['publications'] - evidence_map['localization-mapping']['wheeled-target'],
-          'WheeledTargetCount':sum(v['wheeled-target'] for v in evidence_map.values())}
-# Final selection stage (works named by an internal review of an earlier draft) and sensitivity without it.
+          'OnboardCount':stats['compute_location']['onboard']}
+# Final selection stage (works named by an internal review of an earlier draft).
 COVERAGE_BATCH = 'review-additions-2026-11-04'
 macros['CoverageCount'] = batches.get(COVERAGE_BATCH, 0)
 macros['RecentCount'] = sum(r['bibliographic_year'] in {'2025', '2026'} for r in rows)
 macros['RecentShare'] = round(100 * macros['RecentCount'] / len(rows))
-base_rows = [r for r in technical_rows if r['source_batch'] != COVERAGE_BATCH]
-macros['DegTaskCountBase'] = sum({'designed-degradation', 'closed-loop-task'} <= {x.strip() for x in r['evaluation_all'].split(',')}
-                                 for r in base_rows)
-macros['CoreCountBase'] = len(base_rows)
-macros['DegTaskShareBase'] = round(100 * macros['DegTaskCountBase'] / macros['CoreCountBase'])
-assert (macros['DegTaskCountBase'], macros['CoreCountBase']) == (59, 228)           # S1 sensitivity sentence
 
-# Qualitative statements in Sections IV-IX that rest on the evidence map.
-def share(module, key):
-    return evidence_map[module][key] / evidence_map[module]['publications']
-assert share('localization-mapping', 'closed-loop-task') < 0.05                      # "only n of N" (Sec. IV)
-assert share('localization-mapping', 'residual') == 1                                # "all ... report component measures" (Sec. IX)
-for module in ('traversability-planning-control', 'semantic-language-navigation'):
-    assert share(module, 'closed-loop-task') > 0.9                                   # "nearly all report task outcomes"
-assert share('traversability-planning-control', 'designed-degradation') < 0.5      # "fewer than half" (Sec. V)
-assert share('semantic-language-navigation', 'designed-degradation') < 1 / 3       # "fewer than a third" (Sec. VI)
-assert 0.25 < share('multi-robot', 'degradation-with-task') < 1 / 3              # "more than a quarter" (Sec. VII)
-assert max(EVIDENCE_MODULES, key=lambda m: share(m, 'degradation-with-task')) == 'fault-recovery-deployment'
-assert evidence_map['fault-recovery-deployment']['integrity-reliability'] > macros['IntegrityCount'] / 2
-assert share('localization-mapping', 'wheeled-target') < 0.5                         # "more than half ... other platforms" (Sec. IV)
+# Evidence statistics from the final evidence codes (statistics of the purposively selected sample).
+V2 = stats['evidence_map_v2']
+FUNCTIONS = ['LOC', 'PLN', 'SEM', 'MRC', 'REL']
+PREFIX = {'LOC': 'Loc', 'PLN': 'Pln', 'SEM': 'Sem', 'MRC': 'Mrc', 'REL': 'Rel'}
+def pct(k, n):
+    return round(100 * k / n)
+def vshare(f, key):
+    return V2[f][key] / V2[f]['publications']
+assert V2['All']['publications'] == len(technical_rows)
+for f in FUNCTIONS:
+    e, p = V2[f], PREFIX[f]
+    macros.update({p + 'TechCount': e['publications'], p + 'TaskCount': e['task_any'], p + 'NamedCount': e['named'],
+                   p + 'SameCount': e['task_named_same'], p + 'SameShare': pct(e['task_named_same'], e['publications']),
+                   p + 'PhysSameCount': e['physical_task_named_same'], p + 'IntegrityCount': e['integrity'],
+                   p + 'NonWheeledCount': e['publications'] - e['group_WHL']})
+A = V2['All']
+macros.update({'DegTaskCount': A['task_named_same'], 'DegTaskShare': pct(A['task_named_same'], A['publications']),
+               'TaskAnyCount': A['task_any'], 'NamedCount': A['named'], 'AddressedCount': A['addressed'],
+               'ManipulatedCount': A['manipulated'], 'SelectedOnlyCount': A['selected_only'],
+               'IncidentalOnlyCount': A['incidental_only'],
+               'DOneSameCount': A['task_manipulated_same'], 'PhysSameCount': A['physical_task_named_same'],
+               'DirectWheeledCount': A['direct_wheeled_joint'], 'IntegrityCount': A['integrity'],
+               'ComputeUnreported': A['publications'] - A['placement'],
+               'GroupWHL': A['group_WHL'], 'GroupROAD': A['group_ROAD'], 'GroupGND': A['group_GND'], 'GroupOTH': A['group_OTH'],
+               'DrivetrainEffectCount': A['drivetrain_effect']})
+SENS = {r['row_id']: r for r in stats['sensitivity']}
+def sens_share(row_id):
+    return pct(SENS[row_id]['numerator'], SENS[row_id]['denominator'])
+assert SENS['S-def-headline']['numerator'] == A['task_named_same']
+macros.update({'DOneNominalShare': sens_share('S-def-D1-nominal'), 'AnyUnitShare': sens_share('S-unit-any'),
+               'IncidentalShare': sens_share('S-def-with-incidental'),
+               'DegTaskCountCard': SENS['S-card-round3']['numerator'], 'DegTaskShareCard': sens_share('S-card-round3'),
+               'DepthFullShare': sens_share('S-depth-full'), 'DepthLegacyShare': sens_share('S-depth-light-legacy'),
+               'DepthTargetedShare': sens_share('S-depth-light-targeted'),
+               'WhlShare': sens_share('S-platform-WHL'), 'NonWhlShare': sens_share('S-platform-non-WHL'),
+               'QuotaShare': sens_share('S-quota'), 'NonQuotaShare': sens_share('S-non-quota'),
+               'NoIEEEOnlyShare': sens_share('S-no-ieee-only')})
+stage_out = [sens_share(i) for i in SENS if i.startswith('S-stage-out-')]
+year_rows = [sens_share(i) for i in SENS if i.startswith('S-year-')]
+macros.update({'StageMinShare': min(stage_out), 'StageMaxShare': max(stage_out),
+               'YearMinShare': min(year_rows), 'YearMaxShare': max(year_rows)})
+# Sensitivity without the coverage additions (Supplement S1).
+base = SENS['S-no-coverage']
+macros.update({'DegTaskCountBase': base['numerator'], 'CoreCountBase': base['denominator'],
+               'DegTaskShareBase': sens_share('S-no-coverage')})
+assert (macros['DegTaskCountBase'], macros['CoreCountBase']) == (76, 228)           # S1 sensitivity sentence
+assert macros['CoreCountBase'] == len(technical_rows) - batches[COVERAGE_BATCH]
+# Interface ranking (Sec. X and Supplement S8).
+CAND = stats['candidates']
+IFACE = {i['id']: i for i in CAND['interfaces']}
+NUMBER = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four'}
+for i, word in NUMBER.items():
+    macros.update({'Iface' + word + 'Rank': IFACE[i]['rank'], 'Iface' + word + 'RankA': IFACE[i]['rank_without_integration_stage'],
+                   'Iface' + word + 'Works': CAND['interface_works'][str(i)],
+                   'Iface' + word + 'Direct': CAND['interface_direct_wheeled'].get(str(i), 0)})
+macros.update({'CandidateCount': CAND['eligible_count'], 'RejectedCount': len(CAND['rejected']),
+               'IfaceBestRank': min(i['rank'] for i in IFACE.values()), 'IfaceWorstRank': CAND['lowest_interface_rank'],
+               'HumanAssistCount': len(CAND['human_assistance_codes'])})
+assert not CAND['interfaces_are_top4']                       # Sec. X opening: the four interfaces do not rank 1-4
+TRACE = list(csv.DictReader((G / 'interface-traceability.csv').open(encoding='utf-8', newline='')))
+direct_codes = {i: [t['code'] for t in TRACE if t['interface'] == str(i) and t['direct_wheeled'] == 'yes'] for i in NUMBER}
+assert direct_codes[1] == ['R11'] and direct_codes[3] == ['M10'] and direct_codes[4] == []   # Sec. X-A, X-C, X-D
+assert max(NUMBER, key=lambda i: len(direct_codes[i])) == 2                                  # Sec. X-B: "the most ... of the four"
+assert IFACE[4]['rank'] == 1                                                                 # Sec. X-D: "first in the ranking"
+EV = {r['code']: r for r in csv.DictReader((G / 'evidence-codes.csv').open(encoding='utf-8', newline=''))}
+assert not any({'RES', 'COM'} & set(EV[t['code']]['named_sources'].split('|'))
+               for t in TRACE if t['interface'] == '2')                     # Sec. X-B: no computation limit or delay named
+assert all(EV[k]['functions'] == 'PLN' and EV[k]['direct_wheeled_joint'] == 'yes'
+           for k in ('K03', 'K05', 'R13', 'R15'))                           # Sec. X-C: terrain planners without LOC
+assert all(EV[k]['drivetrain_effect'] == 'yes' for k in ('E02', 'R33', 'M39', 'E04', 'S07', 'N17'))   # Table II citations
+assert all(EV[k]['drivetrain_effect'] == 'no' and EV[k]['drivetrain'] == 'omnidirectional' for k in ('M09', 'S48'))
+assert {t['code']: t['platform_group'] for t in TRACE if t['interface'] == '1' and t['code'] in ('X07', 'M28')} == \
+    {'X07': 'ROAD', 'M28': 'ROAD'}                                                          # Sec. X-A: road-vehicle integrity analyses
+DECISIONS = json.loads((M / 'data/interface-decisions.json').read_text(encoding='utf-8'))['decisions']
+category = {d['candidate_id']: d['category'] for d in DECISIONS}
+rejected = CAND['rejected']
+assert all(c in category for c in rejected)                                                  # every higher-ranked candidate has a reason
+assert sum(category[c] == 'merged' for c in rejected) == 6 and sum(category[c] == 'named-gap' for c in rejected) == 1
+assert {d['interface'] for d in DECISIONS if d['category'] == 'merged'} == {2, 4}           # Sec. X: "Interfaces 4 and 2 absorb"
+# Headline count of the frozen primary codes before adjudication (Supplement S7).
+_, primary_codes = coding.load_codes(coding.PRIMARY_CODES)
+macros['DegTaskCountPrimary'] = sum(c['deg_task_class'] in ('D1', 'D2') for c in primary_codes if c['principal_section'] != 'context')
+# Venue mix (Sec. III).
+VENUE = {r['stage']: r for r in stats['venue_mix']}
+ieee_only = coding.load_codebook()['stage_groups']['ieee_only_stages']
+macros.update({'IEEEShare': pct(VENUE['all']['IEEE'], VENUE['all']['works']),
+               'IEEEOnlyCount': sum(VENUE[s]['works'] for s in ieee_only),
+               'IEEEShareRest': pct(VENUE['all']['IEEE'] - sum(VENUE[s]['IEEE'] for s in ieee_only),
+                                    VENUE['all']['works'] - sum(VENUE[s]['works'] for s in ieee_only))})
+assert all(VENUE[s]['IEEE'] == VENUE[s]['works'] for s in ieee_only)
+for stage, name in [('baseline-2026-09-18', 'Baseline'), ('supplemental', 'Supplement'), ('expansion-2026-10-24', 'Expansion'),
+                    ('followup-2026-11-02', 'Followup'), ('ieee-supplement-2026-11-03', 'Targeted'),
+                    ('survey-200plus-2026-11-03', 'SurveyExpansion'), ('ieee-refresh-2026-11-03', 'Refresh'),
+                    (COVERAGE_BATCH, 'Coverage')]:
+    macros[name + 'IEEE'] = VENUE[stage]['IEEE']
+macros['TotalIEEE'] = VENUE['all']['IEEE']
+# Language-model second coding (Sec. III and Supplement S7): pre-adjudication agreement on the double-coded attributes.
+AGREE = stats['agreement']
+double = [r for r in AGREE['rows'] if r['kind'] == 'attribute']
+kappas = sorted(r['kappa'] for r in double)
+assert len(double) == 13 and all(isinstance(k, float) for k in kappas)
+fmt = lambda k: f'{k:.2f}'.replace('-', '$-$')
+macros.update({'SampleCount': AGREE['works'], 'KappaMedian': fmt(kappas[len(kappas) // 2]), 'KappaMin': fmt(kappas[0]),
+               'KappaMax': fmt(kappas[-1]), 'AgreeMin': f"{min(r['agreement_pct'] for r in double):.1f}",
+               'AgreeMax': f"{max(r['agreement_pct'] for r in double):.1f}",
+               'DisagreeCount': AGREE['disagreements'], 'ResolvedPrimary': AGREE['resolutions']['primary-kept'],
+               'ResolvedSecond': AGREE['resolutions']['second-adopted'], 'ResolvedBoth': AGREE['resolutions']['both-revised'],
+               'ChangedPrimary': AGREE['changed_primary'],
+               'HeadlineKappa': fmt(next(r['kappa'] for r in double if r['attribute'] == 'deg_task_class'))})
+AGREE_CSV = {r['attribute'] + '|' + r['unit']: r for r in csv.DictReader((G / 'coding-agreement.csv').open(encoding='utf-8', newline=''))}
+assert (AGREE_CSV['drivetrain_effect|value']['primary_prevalence'], AGREE_CSV['drivetrain_effect|value']['second_prevalence']) == \
+    ('yes:1 no:39', 'yes:4 no:36')                                   # Supplement S7: "four works ... to one"
+assert [r['attribute'] for r in sorted(double, key=lambda r: r['kappa'])[:2]] == ['drivetrain_effect', 'nominal_control']
+assert AGREE['corpus_recheck_changes'] == 6                          # Supplement S7: "six further values"
+
+# Qualitative statements that rest on the evidence codes (each comment names the sentence).
+same = {f: vshare(f, 'task_named_same') for f in FUNCTIONS}
+assert vshare('LOC', 'task_any') < 0.05                         # Sec. IV synthesis, IX-B: "only n of N ... task outcome"
+assert V2['LOC']['task_any'] == 1                               # Sec. IV synthesis, IX-B: singular "reports"
+assert V2['LOC']['component'] == V2['LOC']['publications']      # Sec. IX-B: "all ... report component measures"
+assert min(same, key=same.get) == 'LOC' and max(same, key=same.get) == 'PLN'   # abstract, Sec. I, IX-B, XI: "from LOC to PLN"
+assert [f for f in sorted(FUNCTIONS, key=same.get)] == ['LOC', 'MRC', 'REL', 'SEM', 'PLN']   # Sec. IX-B order of shares
+assert vshare('PLN', 'task_any') > 0.5 and vshare('SEM', 'task_any') > 0.5   # Sec. V, VI: "most ... report task outcomes"
+assert vshare('SEM', 'task_named_same') < 0.5                   # Sec. VI: "fewer than half"
+assert vshare('MRC', 'task_named_same') < 0.25                  # Sec. VII: "fewer than a quarter"
+assert V2['REL']['integrity'] > A['integrity'] / 2              # Sec. VIII, IX-B: "n of the N integrity assessments"
+assert vshare('LOC', 'group_WHL') < 0.5                         # Sec. IV synthesis: non-wheeled carriers
+robust = [r for i, r in SENS.items() if i.startswith(('S-stage-out-', 'S-depth-')) or i in ('S-quota', 'S-non-quota')]
+assert all(r['RF1'] in ('holds', 'holds (tie)') and r['RF4'] == 'holds' for r in robust)   # Sec. IX-B robustness sentence
+assert all(r['RF2'] == 'fails' for r in robust)                 # Sec. IX-B: planning, not fault management, is highest
+assert all(max(FUNCTIONS, key=lambda f: r[f]) == 'PLN' for r in robust)   # Sec. IX-B: "... and planning the highest"
+definitions = [r for i, r in SENS.items() if i.startswith(('S-def-', 'S-unit-', 'S-card-'))]
+assert all(r['RF1'] == 'holds' and r['RF4'] == 'holds' for r in definitions)               # Supplement S6: "under every definition"
+assert [i for i, r in SENS.items() if r['RF1'] == 'fails'] == ['S-year-2026']               # Supplement S6: "RF1 fails only ... 2026"
+assert [i for i, r in SENS.items() if r['RF4'] == 'fails'] == ['S-quota-theme-T2']          # Supplement S6: "RF4 only in one quota theme"
+assert SENS['S-def-headline']['RF2'] == SENS['S-def-headline']['RF3'] == 'fails'            # Supplement S6: RF2 and RF3 fail
+assert SENS['S-card-round3']['RF2'] == 'holds'                                              # Supplement S6: card coding supported RF2
+assert sum(r['RF1'] == 'holds (tie)' for r in robust) == 1 and SENS['S-depth-full']['RF1'] == 'holds (tie)'
 (G / 'stats.tex').write_text('% Generated by scripts/build_data.py; counts describe this sample.\n' +
-    '\n'.join('\\newcommand{\\'+k+'}{'+f'{v:,}'+'}' for k,v in macros.items())+'\n', encoding='utf-8')
+    '\n'.join('\\newcommand{\\'+k+'}{'+(v if isinstance(v, str) else f'{v:,}')+'}' for k,v in macros.items())+'\n', encoding='utf-8')
 
 # Preserve each original publisher entry except the necessarily unique citation key.
 # Listed author names that a publisher export gives in lowercase are capitalized in refs.bib only.
@@ -352,6 +463,9 @@ evaluation_focus.update({
  'S41':'Adaptation with operational resets and infrastructure',
 })
 
+CODEBOOK = coding.load_codebook()
+# Platform-group marks of the module tables (R road vehicle, G other ground robot, N non-ground or no platform).
+GROUP_MARK = {g['id']: g['mark'] for g in CODEBOOK['platform_groups']}
 for module, codes in selected.items():
     lines = [r'\begin{table*}[t]',r'\centering',r'\caption{'+titles[module]+r'.}',
              r'\label{tab:'+module+'}',r'\surveytableformat',
@@ -364,7 +478,8 @@ for module, codes in selected.items():
         mechanism, separator, inputs = sensors.partition('. Inputs: ')
         assert separator, code
         platform = r['platform_class'].replace('ackermann','Ackermann').replace('wheeled-unspecified','wheeled (drive unspecified)').replace('road-vehicle','road vehicle').replace('-',' ')
-        name = r'\textbf{'+tex(display_names.get(code, r['short_name']))+r'}~\cite{P_'+code+'}'+(r'\textsuperscript{\(\dagger\)}' if r['boundary_platform']=='yes' else '')
+        mark = GROUP_MARK[coding.group_of(r['platform_class'], CODEBOOK)]
+        name = r'\textbf{'+tex(display_names.get(code, r['short_name']))+r'}~\cite{P_'+code+'}'+(r'\textsuperscript{'+mark+'}' if mark else '')
         settings = ', '.join(ev[x.strip()] for x in r['evidence_all'].split(','))
         if code == 'F02':
             settings = 'Hardware-in-the-loop, Numerical'
@@ -386,30 +501,68 @@ for module, codes in selected.items():
     lines += [r'\bottomrule',r'\end{tabularx}',r'\surveyplatformnote',r'\end{table*}']
     (G / ('table-'+module+'.tex')).write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
+# Table VI (evidence map) from the final evidence codes. Rows and keys are checked by verify_delivery.py.
+EVALUATION_ROWS = [
+    (None, [('Publications', 'publications')]),
+    ('Measurement level', [('Component measures', 'component'), ('Task outcome', 'task_any'),
+                           ('Physical task outcome', 'task_physical')]),
+    ('Degradation evidence', [('Named condition (D1 or D2)', 'named'),
+                              ('Injected or varied, D1', 'manipulated'), ('Selected only, D2', 'selected_only'),
+                              ('Incidental only, D3', 'incidental_only')]),
+    ('Same experiment', [('Named condition and task outcome', 'task_named_same'),
+                         ('D1 condition and task outcome', 'task_manipulated_same'),
+                         ('On a physical robot', 'physical_task_named_same'),
+                         ('On a target wheeled robot', 'direct_wheeled_joint')]),
+    ('Assessment and resources', [('Integrity or failure risk', 'integrity'),
+                                  ('Computation placement', 'placement')]),
+    ('Platform group', [('Target wheeled robot', 'group_WHL'), ('Road vehicle (R)', 'group_ROAD'),
+                        ('Other ground robot (G)', 'group_GND'), ('Non-ground or none (N)', 'group_OTH')]),
+]
+stats['evaluation_table_keys'] = [key for _, keys in EVALUATION_ROWS for _, key in keys]
+(G / 'stats.json').write_text(json.dumps(stats, indent=2) + '\n', encoding='utf-8')
 lines = [r'\begin{table}[!ht]',r'\centering',
-         r'\caption{Reported evaluation attributes among the \CoreCount{} technical publications, by the section that reviews each publication. Attributes overlap, and the context review is excluded.}',
-         r'\label{tab:evaluation}',r'\surveytableformat',r'\setlength{\tabcolsep}{3.2pt}',
+         r'\caption{Coded evidence attributes of the \CoreCount{} technical publications, by the section that reviews each publication. Attributes overlap, and the context review is excluded.}',
+         r'\label{tab:evaluation}',r'\surveytableformat',r'\setlength{\tabcolsep}{3.2pt}',r'\renewcommand{\arraystretch}{1.04}',
          r'\begin{tabularx}{\linewidth}{@{}Yrrrrrr@{}}',r'\toprule',
          r'\textbf{Attribute} & \textbf{IV} & \textbf{V} & \textbf{VI} & \textbf{VII} & \textbf{VIII} & \textbf{All} \\',r'\midrule']
 def evidence_row(label, key):
-    values = [evidence_map[m][key] for m in EVIDENCE_MODULES]
-    total = str(sum(values)) if key == 'publications' else f'{sum(values)} ({round(100 * sum(values) / len(technical_rows))}\\%)'
+    values = [V2[f][key] for f in FUNCTIONS]
+    total = str(V2['All'][key]) if key == 'publications' else f"{V2['All'][key]} ({pct(V2['All'][key], len(technical_rows))}\\%)"
     return label+' & '+' & '.join(str(v) for v in values)+' & '+total+r' \\'
-lines.append(evidence_row('Publications', 'publications'))
-for group, keys in [('Measurement level', [('Component measures', 'residual'), ('Task outcomes', 'closed-loop-task')]),
-                    ('Test conditions', [('Degradation testing', 'designed-degradation'),
-                                         ('Degradation testing with task outcomes', 'degradation-with-task')]),
-                    ('Risk and diagnostic assessment', [('Integrity or failure-risk assessment', 'integrity-reliability')]),
-                    ('Platform and resources', [('Wheeled-robot platform or data', 'wheeled-target'),
-                                                ('Computation placement reported', 'placement-reported')])]:
-    lines.append(r'\addlinespace[3pt]')
-    lines.append(r'\multicolumn{7}{@{}l}{\textit{'+group+r'}} \\')
+for group, keys in EVALUATION_ROWS:
+    if group:
+        lines.append(r'\addlinespace[2pt]')
+        lines.append(r'\multicolumn{7}{@{}l}{\textit{'+group+r'}} \\')
     for label, key in keys:
         lines.append(evidence_row(label, key))
 lines += [r'\bottomrule',r'\end{tabularx}',
-          r'\par\vspace{3pt}\parbox{\linewidth}{\footnotesize\raggedright Counts are per publication, and the two attributes of a combined row need not come from the same experiment. Percentages refer to all \CoreCount{} publications. Fig.~S1 also counts the context review of Section~\ref{sec:planning}.}',
+          r'\par\vspace{3pt}\parbox{\linewidth}{\footnotesize\raggedright Counts are per publication. A same-experiment row counts a publication only when the condition and the task outcome come from one experiment. Percentages refer to all \CoreCount{} publications. Table~\ref{S-tab:evidence-percent} gives column percentages.}',
           r'\end{table}']
 (G / 'table-evaluation.tex').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+
+# Table I (related surveys) from data/related-surveys.json; scopes follow each survey's abstract.
+related = json.loads((M / 'data/related-surveys.json').read_text(encoding='utf-8'))
+background_keys = {item['key'] for item in verification}
+lines = [r'\begin{table*}[t]', r'\centering',
+         r"\caption{Related surveys characterized from their abstracts. ``Not stated'' means that the abstract does not name the topic, which does not exclude coverage in the body of the survey.}",
+         r'\label{tab:related-reviews}', r'\surveytableformat',
+         r'\begin{tabularx}{\linewidth}{@{}L{4.1cm}L{3.4cm}L{3.5cm}L{2.0cm}Y@{}}', r'\toprule',
+         r'\textbf{Survey} & \textbf{Platform scope} & \textbf{Degradation coverage} & \textbf{Recovery or faults} & \textbf{Evaluation practice} \\',
+         r'\midrule']
+for item in related['rows']:
+    key = item['key']
+    assert key in background_keys or key == 'P_X04', key
+    if key.startswith('B_'):
+        record = load_record(M, next(v for v in verification if v['key'] == key))
+        assert record['DOI'].lower() == item['doi'], key
+    else:
+        assert by_id[key[2:]]['doi'].lower() == item['doi'], key
+    cells = [tex(item['survey']) + ' (' + item['year'] + r')~\cite{' + key + '}'] + [tex(item[c]) for c in ('platform', 'degradation', 'recovery', 'evaluation')]
+    lines.append(' & '.join(cells) + r' \\')
+own = related['this_survey']
+lines += [r'\midrule', ' & '.join([tex(own['survey']) + ' (' + own['year'] + ')'] + [tex(own[c]) for c in ('platform', 'degradation', 'recovery', 'evaluation')]) + r' \\',
+          r'\bottomrule', r'\end{tabularx}', r'\end{table*}']
+(G / 'table-related-reviews.tex').write_text('\n'.join(lines) + '\n', encoding='utf-8')
 
 result_cases = json.loads((M / 'data/within-study-comparisons.json').read_text(encoding='utf-8'))
 lines = [r'\begin{table*}[!t]', r'\centering',
@@ -445,7 +598,9 @@ with (G / 'corpus-inventory.csv').open('w',encoding='utf-8',newline='') as f:
     writer.writeheader()
     for r in rows:
         writer.writerow(dict(code=r['code'],key='P_'+r['code'],title=r['title'],formal_year=r['bibliographic_year'],module=r['survey_module'],evidence=r['evidence_type'],boundary=r['boundary_platform'],verification=r['verification_level'],source_pdf_sha256=r['pdf_sha256'],source_bib_sha256=r['bibtex_sha256'],source_md_sha256=r['markdown_sha256'],**coding.inventory_extra(r, codebook)))
-print(json.dumps({'corpus_entries':len(rows),'background_entries':len(verification),'generated_tables':7,'source_index_sha256':stats['source_index_sha256']}))
+print(json.dumps({'corpus_entries':len(rows),'background_entries':len(verification),
+                  'generated_tables':len([p for p in G.glob('table-*.tex') if p.name != 'table-gaps.tex']),
+                  'source_index_sha256':stats['source_index_sha256']}))
 
 gap_path = R / '06-data/gap-priority.csv'
 if gap_path.exists():

@@ -1394,16 +1394,16 @@ def table_agreement(rows):
                        'Works', 'P/S/B'])
     return table('tab:agreement', 'Agreement between the independent second coding and the frozen primary codes '
                  'on the 40 sampled works, before adjudication. Both coders are language-model sessions on '
-                 'different models, so the values describe how consistently two such coders apply the codebook to '
-                 'shared evidence. They are not human inter-rater reliability.',
+                 'different models. The values therefore describe how consistently two such coders apply the '
+                 'codebook to shared evidence. They are not human inter-rater reliability.',
                  '@{}L{2.9cm}Yrrrrrrrr@{}', header, body,
                  r'n counts the scored units and Cat. the categories that either coder used. $\kappa$ is unweighted '
                  r"Cohen's kappa (n/a when both coders use one category). Set-valued attributes are scored as one "
-                 r'binary flag per value: $\kappa$ and Agr. pool all flag decisions of the attribute (for functions '
-                 r'the four non-principal functions of each work), Exact gives the share of works with identical '
-                 r'sets, and Flag $\kappa$ the range of the per-flag kappas (functions over the 32 works whose '
+                 r'binary flag per value. For them, $\kappa$ and Agr. pool all flag decisions of the attribute (for '
+                 r'functions the four non-principal functions of each work). Exact gives the share of works with '
+                 r'identical sets. Flag $\kappa$ gives the range of the per-flag kappas (functions over the 32 works whose '
                  r'principal function differs, sources over all 40 works). The pre-registered unit of response '
-                 r'family is the primary family; the second row compares the full value, which in codebook version '
+                 r'family is the primary family. The second row compares the full value, which in codebook version '
                  r'1.0 could add an optional secondary family. Named sources and publication class are derived from '
                  r'the three class columns. Works counts the works with differing values and P/S/B how the logged '
                  r'disagreements were resolved: primary kept, second adopted, both revised.', colsep='3pt')

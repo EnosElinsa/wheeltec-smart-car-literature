@@ -9,7 +9,7 @@
 \midrule
 \textbf{Visual NMPC recovery}~\cite{P_N10} & \surveytableinputs{Tracking-loss stop and relocalization; restart after failure.}{stereo vision, actuator feedback} & \surveytablepair{Hardware}{Tracking; stop/relocalization handling} & \surveytablepair{skid steer}{Unspecified} \\
 \addlinespace[3pt]
-\textbf{Set-based LPV diagnosis}~\cite{P_N16}\textsuperscript{\(\dagger\)} & \surveytableinputs{Zonotopic detection and fault-class separation.}{yaw rate, odometry, sideslip, steering angle} & \surveytablepair{Acquired data}{Detectability and isolability under injected faults} & \surveytablepair{road vehicle}{Desktop evaluation} \\
+\textbf{Set-based LPV diagnosis}~\cite{P_N16}\textsuperscript{R} & \surveytableinputs{Zonotopic detection and fault-class separation.}{yaw rate, odometry, sideslip, steering angle} & \surveytablepair{Acquired data}{Detectability and isolability under injected faults} & \surveytablepair{road vehicle}{Desktop evaluation} \\
 \addlinespace[3pt]
 \textbf{Reliable MCL}~\cite{P_M35} & \surveytableinputs{Joint pose/reliability estimation with global relocalization.}{2D LiDAR, odometry or inertial navigation} & \surveytablepair{Acquired data, Replay, Sim.}{Reliability estimates and relocalization} & \surveytablepair{wheeled (drive unspecified)}{Unspecified} \\
 \addlinespace[3pt]
@@ -17,7 +17,7 @@
 \addlinespace[3pt]
 \textbf{KSFD}~\cite{P_E51} & \surveytableinputs{Kinematic residuals for sensor-fault diagnosis.}{inertial channels and an inertial-aided position substitute} & \surveytablepair{Acquired data, Numerical}{Fault-isolation residual patterns} & \surveytablepair{Ackermann}{Desktop evaluation} \\
 \addlinespace[3pt]
-\textbf{Behavior-tree recovery}~\cite{P_N17}\textsuperscript{\(\dagger\)} & \surveytableinputs{Behavior-tree supervision and failure-specific recovery.}{terrain maps, contacts, planner status} & \surveytablepair{Hardware, Sim.}{Recovery on retained scenarios; human-rescue boundary} & \surveytablepair{mixed}{Onboard} \\
+\textbf{Behavior-tree recovery}~\cite{P_N17}\textsuperscript{N} & \surveytableinputs{Behavior-tree supervision and failure-specific recovery.}{terrain maps, contacts, planner status} & \surveytablepair{Hardware, Sim.}{Recovery on retained scenarios; human-rescue boundary} & \surveytablepair{mixed}{Onboard} \\
 \addlinespace[3pt]
 \textbf{Line-map integrity}~\cite{P_F01} & \surveytableinputs{Prior-line-map localization with an error protection level.}{monocular images, IMU, prior 3D lines} & \surveytablepair{Acquired data, Replay, Sim.}{Pose error and protection-level coverage} & \surveytablepair{wheeled (drive unspecified)}{Desktop evaluation} \\
 \addlinespace[3pt]

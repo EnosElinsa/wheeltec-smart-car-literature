@@ -1,7 +1,7 @@
 \section{Background}
 \label{sec:background}
 \subsection{Wheeled Platforms and Motion Constraints}
-A wheeled mobile robot moves through driven or steered rolling contacts whose footprint, arrangement, and contact conditions constrain the paths it can execute. Differential-drive robots turn by varying the left and right wheel speeds, skid-steer robots use the same actuation with lateral slip at the contacts, Ackermann vehicles steer the front wheels with a finite minimum turning radius, and omnidirectional platforms generate lateral motion through their wheel arrangement~\cite{B_Campion1996}. For a planar reference point with position $(x,y)$ and heading $\psi$, a common idealization is
+A wheeled mobile robot moves through driven or steered rolling contacts whose footprint, arrangement, and contact conditions constrain the paths it can execute. Differential-drive, skid-steer, Ackermann, and omnidirectional platforms differ in how they turn and whether they can move sideways~\cite{B_Campion1996}. For a planar reference point with position $(x,y)$ and heading $\psi$, a common idealization is
 \begin{equation}
 \dot{x}=v\cos\psi,\qquad \dot{y}=v\sin\psi,\qquad \dot{\psi}=\omega,
 \label{eq:unicycle}
@@ -17,15 +17,43 @@ An ideal bicycle approximation for Ackermann steering instead gives
 \omega=\frac{v}{L}\tan\delta,
 \label{eq:ackermann}
 \end{equation}
-where $L$ is the wheelbase and $\delta$ is the steering angle. Slip violates the pure-rolling assumption, wheel calibration affects odometry, and steering and acceleration limits constrain tracking. On uneven ground, suspension, pitch, roll, clearance, traction, and payload further affect feasibility. A planar collision-free path may therefore be physically unsuitable even when localization is accurate.
+where $L$ is the wheelbase and $\delta$ is the steering angle. Table~\ref{tab:drivetrain} lists how slip, steering limits, and wheel arrangement violate \eqref{eq:unicycle}--\eqref{eq:ackermann} for each drivetrain and which recovery motions remain available. On uneven ground, suspension, pitch, roll, clearance, traction, and payload further affect feasibility. A planar collision-free path may therefore be physically unsuitable even when localization is accurate.
+
+\begin{table}[!t]
+\centering
+\caption{Drivetrain type, the kinematic assumption that degradation violates, and the recovery motions that remain available.}
+\label{tab:drivetrain}
+\surveytableformat
+\begin{tabularx}{\linewidth}{@{}L{1.42cm}YL{2.4cm}@{}}
+\toprule
+\textbf{Drive} & \textbf{Degradation effect} & \textbf{Recovery motions} \\
+\midrule
+Differential, \eqref{eq:unicycle}--\eqref{eq:differential} & Slip and wheel lift break the encoder model. Covariance can grow along unexplained motion~\cite{P_E02} & Turning in place, reversing. Sideways moves need rotation~\cite{P_R33} \\
+\addlinespace[2pt]
+Skid steer, \eqref{eq:differential} & Slip varies with speed, maneuver, and surface~\cite{P_M39}. A fixed model misses side slip at speed~\cite{P_E04} & Turning in place at the cost of odometry. Reversing \\
+\addlinespace[2pt]
+Ackermann, \eqref{eq:ackermann} & Turning radius and input bounds limit corrections~\cite{P_S07} & No turning in place. Reorientation needs space or reversing \\
+\addlinespace[2pt]
+Omni\-directional & Lateral motion from the wheel arrangement~\cite{B_Campion1996}. No drive-specific effect reported on Mecanum bases~\cite{P_M09,P_S48} & Sidestepping and turning in place \\
+\bottomrule
+\end{tabularx}
+\par\vspace{3pt}\parbox{\linewidth}{\footnotesize\raggedright Citations mark the corpus works coded with a drivetrain-dependent effect. A legged-wheeled robot also recovers by stepping and support changes that conventional wheels cannot perform~\cite{P_N17}.}
+\end{table}
 
 \subsection{The Navigation Stack and Its Degradation}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig-matrix.pdf}
+\caption{Degradation-source by function evidence matrix of the \CoreCount{} technical publications. Rows group nine degradation sources by the navigation assumption they violate. The right column lists the response families that address each assumption, by subsection. In each cell, $a/n/m$ counts the works of the section that address the source, name it as an evaluated condition (D1 or D2), and inject or vary it against a comparator (D1). The second line splits the $a$ works into target wheeled robots (W), road vehicles (R), other ground robots (G), and non-ground, handheld, mixed, or unspecified carriers (N). Shading marks the strongest evidence setting among the $n$ works. A work appears in every source row it addresses but only in the column of its principal section. Counts describe the purposively selected sample.}
+\label{fig:matrix}
+\end{figure*}
+
 Fig.~\ref{fig:stack} shows the principal functions of a navigation system, the points at which degradation enters, and the interfaces examined in Section~\ref{sec:challenges}. Cameras, color and depth (RGB-D) cameras, LiDAR, radar, inertial measurement units (IMUs), wheel encoders, global navigation satellite system (GNSS) receivers, and ultra-wideband (UWB) ranging supply measurements with calibration parameters and timestamps. The estimator infers robot state from these measurements and motion inputs, the mapping algorithm estimates spatial structure, the planner selects a route or trajectory, and the controller converts that reference into actuator commands. A supervisor can interrupt execution when measurements, models, or resources no longer support the current action. Deployed systems such as the Nav2 stack of the robot operating system (ROS)~\cite{B_Nav22020,B_Nav2Survey2023} realize these functions through interacting maps, planners, controllers, and recovery behaviors, as in planner fallback~\cite{P_S16} or behavior-tree supervision~\cite{P_N17}.
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/fig-stack.pdf}
-\caption{Navigation functions, degradation entry points, and open interfaces. Each function box names the section that reviews it, and dashed boxes mark the four sources of degradation. Teammates and task interpretation supply information to the motion stack rather than bypassing vehicle constraints. The circled numerals locate the four interfaces of Section~X.}
+\caption{Navigation functions, degradation entry points, and open interfaces. Each function box names the section that reviews it. Dashed boxes mark the five groups of degradation sources. Teammates and task interpretation supply information to the motion stack rather than bypassing vehicle constraints. The circled numerals locate the four interfaces of Section~X.}
 \label{fig:stack}
 \end{figure*}
 
@@ -34,17 +62,17 @@ An estimator can be described through the posterior~\cite{B_Cadena2016}
 p(\mathbf{x}_t,\mathcal{M}\mid\mathbf{z}_{1:t},\mathbf{u}_{1:t}),
 \label{eq:belief}
 \end{equation}
-where $\mathbf{x}_t$ is the robot state, $\mathcal{M}$ is the map, and $\mathbf{z}_{1:t}$ and $\mathbf{u}_{1:t}$ denote observation and motion-input sequences available through time $t$. Localization estimates state relative to a given reference, whereas SLAM estimates state and map jointly, commonly through visual--inertial odometry (VIO) or LiDAR--inertial odometry (LIO). ORB-SLAM3~\cite{B_ORBSLAM32021} and FAST-LIO2~\cite{B_FASTLIO22022} are representative visual and LiDAR--inertial systems on which several reviewed methods build. Loop closures constrain revisited places, although an incorrect association can introduce correlated errors into many states. Downstream decisions may therefore require the covariance, association confidence, and age of an estimate as well as its mean. Since geometric, topological, and semantic representations retain different information, a representation sufficient for one decision can be insufficient for another. A place graph may support a long route while omitting a small obstacle. Similarly, a terrain label may describe appearance without establishing traction for a loaded vehicle.
+where $\mathbf{x}_t$ is the robot state, $\mathcal{M}$ is the map, and $\mathbf{z}_{1:t}$ and $\mathbf{u}_{1:t}$ denote observation and motion-input sequences available through time $t$. Localization estimates state relative to a given reference, whereas SLAM estimates state and map jointly, commonly through visual--inertial odometry (VIO) or LiDAR--inertial odometry (LIO). Loop closures constrain revisited places, although an incorrect association can introduce correlated errors into many states. Downstream decisions may therefore require the covariance, association confidence, and age of an estimate as well as its mean.
 
-In local planning, the dynamic window approach (DWA) searches admissible velocity commands~\cite{B_DWA1997}, timed-elastic-band (TEB) optimization adjusts a sequence of poses and timing variables~\cite{B_TEB2013}, and model predictive control (MPC) repeatedly solves a finite-horizon control problem. DWA and TEB remain common comparators for the learned and predictive local planners evaluated in recent studies~\cite{P_M06,P_M30}. A controller using a control barrier function (CBF) constrains inputs to keep the state within an admissible set under stated assumptions~\cite{B_CBF2017,P_E24,P_E26}. For a control-affine model $\dot{\mathbf{x}}=f(\mathbf{x})+g(\mathbf{x})\mathbf{u}$, a common condition is
+In local planning, the dynamic window approach (DWA) searches admissible velocity commands~\cite{B_DWA1997}, timed-elastic-band (TEB) optimization adjusts a sequence of poses and timing variables~\cite{B_TEB2013}, and model predictive control (MPC) repeatedly solves a finite-horizon control problem. A controller using a control barrier function (CBF) constrains inputs to keep the state within an admissible set under stated assumptions~\cite{B_CBF2017,P_E24,P_E26}. For a control-affine model $\dot{\mathbf{x}}=f(\mathbf{x})+g(\mathbf{x})\mathbf{u}$, a common condition is
 \begin{equation}
 \nabla h(\mathbf{x})^{\mathsf T}\bigl[f(\mathbf{x})+g(\mathbf{x})\mathbf{u}\bigr]
 +\alpha(h(\mathbf{x}))\geq 0,
 \label{eq:cbf}
 \end{equation}
-where $f$ denotes the drift dynamics, $g$ maps the control input $\mathbf{u}$ to the state derivative, $h(\mathbf{x})\geq0$ defines the admissible set, and $\alpha$ is a suitable increasing function with $\alpha(0)=0$. The resulting safety argument depends on the state information, dynamics, admissible inputs, and update implementation. Penalizing a barrier violation in an objective, by contrast, does not establish the condition during execution.
+where $f$ denotes the drift dynamics, $g$ maps the control input $\mathbf{u}$ to the state derivative, $h(\mathbf{x})\geq0$ defines the admissible set, and $\alpha$ is a suitable increasing function with $\alpha(0)=0$.
 
-Here, \emph{degradation} denotes an operating change that reduces the quality or validity of the information, models, resources, or physical capabilities required for navigation. Fig.~\ref{fig:stack} distinguishes four sources of degradation, which can occur together within one navigation episode. Sensing and estimation degradation includes weak texture, illumination change, poorly constrained scan geometry, GNSS denial, timing errors, and incorrect associations, as well as measurements that carry little information along one motion direction. Terrain and mobility degradation includes slopes, vegetation, soft ground, slip, and changed actuator behavior, where similar geometry can hide different friction or sinkage. Environment and map change includes moving people, altered layouts, and construction, all of which require the robot to separate transient obstacles from lasting map updates. Communication and computation degradation includes packet loss, partitions, stale shared states, delayed model responses, and missed deadlines. A restored link raises the further problem of reconciling states accumulated during the outage.
+Here, \emph{degradation} denotes an operating change that reduces the quality or validity of the information, models, resources, or physical capabilities required for navigation. Fig.~\ref{fig:stack} distinguishes five groups of degradation sources, which can occur together within one navigation episode. The codebook of Section~\ref{sec:methodology} splits them into nine sources, each violating one of the six navigation assumptions listed in Fig.~\ref{fig:matrix}. The figure links each assumption to its sources and to the response families of Sections~\ref{sec:localization}--\ref{sec:reliability} and counts the coded works and the strongest evidence for every source and function.
 
 \subsection{Accuracy, Task Performance, and Integrity}
 Absolute trajectory error (ATE) measures differences between estimated and reference poses after a declared alignment, whereas relative pose error (RPE) measures motion error over a declared interval. Both are commonly summarized by the root mean square error (RMSE), whose value depends on alignment freedoms, scale treatment, synchronization, aggregation, and the dependence of the reference on the evaluated sensors. Task measures include goal success, collisions, interventions, completion time, coverage, and energy, while success weighted by path length (SPL) combines goal success with path efficiency. Neither task success nor low ATE identifies the source of a failure or the ability to recover after an alarm.

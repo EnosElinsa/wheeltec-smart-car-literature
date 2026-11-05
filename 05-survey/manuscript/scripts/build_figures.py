@@ -1,7 +1,8 @@
 """Draw the manuscript figures as SVG sources and convert them to vector PDF.
 
 Outputs ``figures/<name>.svg`` (editable source) and ``figures/<name>.pdf``
-(included by LaTeX). The corpus figure reads ``generated/corpus-year-module.json``
+(included by LaTeX). The matrix and corpus figures read
+``generated/degradation-function-matrix.json`` and ``generated/corpus-year-module.json``,
 written by ``scripts/build_data.py``. All figures are grayscale line drawings
 set in Times, so they print and photocopy without loss.
 """
@@ -11,169 +12,105 @@ import json
 import math
 from pathlib import Path
 
-import csv
-
-from project_paths import literature_root
 from svgkit import FILL, FILL_LIGHT, GRAYS, HAIR, INK, MUTED, RULE, WHITE, Canvas, svg_to_pdf, width, wrap
 
 M = Path(__file__).resolve().parents[1]
 OUT = M / 'figures'
 OUT.mkdir(exist_ok=True)
 
-CHALLENGES = [
-    ('1', 'Localization-triggered recovery'),
-    ('2', 'Semantic reasoning with fallback'),
-    ('3', 'Pose uncertainty in terrain decisions'),
-    ('4', 'Reconnection and shared-state acceptance'),
-]
-
-
 # ---------------------------------------------------------------------------
-# Fig. 1: taxonomy of responses to degradation
+# Fig. 1: degradation-source x function evidence matrix
 # ---------------------------------------------------------------------------
-TAXONOMY = [
-    ('IV', 'Localization and mapping', [
-        ('Selective updates and conditioning', 'LODESTAR, Switch-SLAM, DR-ICP, DCReg'),
-        ('Complementary sensing', 'LiDAR-radar-inertial fusion, Super4DR, RaLI-Multi, LiDAR-teach/radar-repeat'),
-        ('Motion priors and contact', 'SE2-LIO, WING, ToF-wheel odometry, DURAL'),
-        ('Map revision and relocalization', 'ELite, Chamelion, NeuSE, CMRNext, OMCL'),
-    ]),
-    ('V', 'Traversability, planning, and control', [
-        ('Terrain cost and risk', 'CADNet, SPARTA, terrain-adaptive MPC, TRAIL'),
-        ('Information-aware exploration', 'FIT-SLAM 2, LRAE, SLAM-aware graph planning'),
-        ('Prediction and learned policies', 'SCOPE, HEIGHT, prescient MPC, homotopy MPC'),
-        ('Safety constraints and risk bounds', 'Safe Horizon MPC, MonoMPC, Perceive With Confidence'),
-    ]),
-    ('VI', 'Semantic and language-guided navigation', [
-        ('Semantic scene memory', 'HOV-SG, OpenIN, osmAG-LLM, VLN-Game'),
-        ('Geographic grounding and learned actions', 'OPEN, CAUSALNAV, LeLaN, Uni-NaVid'),
-        ('Candidate selection and embodiment filters', 'VL-TGS, Sem-NaVAE, VAMOS'),
-        ('Social and behavioral constraints', 'GSON, NORM-Nav, OLiVia-Nav, SocialNav-SUB'),
-    ]),
-    ('VII', 'Multi-robot coordination', [
-        ('Allocation and spatial responsibility', 'CURE, URGE, TAPM-IVP'),
-        ('Compact sharing under bandwidth limits', 'MR-TopoMap, bandwidth-efficient C-SLAM, layered transmission'),
-        ('Distributed estimation', 'iMESA, riMESA, Multi-Proxy, Swarm-SLAM'),
-        ('Rendezvous and reconnection', 'CoCoPlan, MEF-Explore, correlation-aware map repair'),
-    ]),
-    ('VIII', 'Fault tolerance, recovery, and deployment', [
-        ('Diagnosis and tolerant control', 'Set-based LPV diagnosis, kinematic residuals, prescribed-performance control'),
-        ('Integrity and runtime monitoring', 'Reliable MCL, EKF-SLAM integrity, Sentinel, RADIUM'),
-        ('Executed recovery', 'GP-based recovery, RTEB, CARE, active view planning'),
-        ('Resources and sustained service', 'Energy co-management, persistent charging, cloud-edge offloading, LiReN'),
-    ]),
-]
-
-
-# Corpus codes of the Fig. 1 examples; examples whose coding sets boundary_platform get a dagger.
-EXAMPLE_CODES = {
- 'LODESTAR': 'E01', 'Switch-SLAM': 'F04', 'DR-ICP': 'S24', 'DCReg': 'S37', 'LiDAR-radar-inertial fusion': 'E09',
- 'Super4DR': 'R12', 'RaLI-Multi': 'R02', 'LiDAR-teach/radar-repeat': 'R11', 'SE2-LIO': 'N02', 'WING': 'R04',
- 'ToF-wheel odometry': 'E02', 'DURAL': 'E03', 'ELite': 'E18', 'Chamelion': 'R07', 'NeuSE': 'S34', 'CMRNext': 'R06',
- 'OMCL': 'R10', 'CADNet': 'M29', 'SPARTA': 'S45', 'terrain-adaptive MPC': 'R13', 'TRAIL': 'R15', 'FIT-SLAM 2': 'E13',
- 'LRAE': 'M14', 'SLAM-aware graph planning': 'N05', 'SCOPE': 'R18', 'HEIGHT': 'R16', 'prescient MPC': 'M30',
- 'homotopy MPC': 'S09', 'Safe Horizon MPC': 'E25', 'MonoMPC': 'R14', 'Perceive With Confidence': 'F08',
- 'HOV-SG': 'E48', 'OpenIN': 'E44', 'osmAG-LLM': 'R27', 'VLN-Game': 'R28', 'OPEN': 'M10', 'CAUSALNAV': 'E45',
- 'LeLaN': 'E50', 'Uni-NaVid': 'E49', 'VL-TGS': 'F05', 'Sem-NaVAE': 'R25', 'VAMOS': 'R26', 'GSON': 'F06',
- 'NORM-Nav': 'R30', 'OLiVia-Nav': 'R29', 'SocialNav-SUB': 'S44', 'CURE': 'M17', 'URGE': 'R22', 'TAPM-IVP': 'F09',
- 'MR-TopoMap': 'M36', 'bandwidth-efficient C-SLAM': 'S29', 'layered transmission': 'R21', 'iMESA': 'E40',
- 'riMESA': 'R23', 'Multi-Proxy': 'R20', 'Swarm-SLAM': 'S10', 'CoCoPlan': 'R19', 'MEF-Explore': 'R24',
- 'correlation-aware map repair': 'F03', 'Set-based LPV diagnosis': 'N16', 'kinematic residuals': 'E51',
- 'prescribed-performance control': 'M15', 'Reliable MCL': 'M35', 'EKF-SLAM integrity': 'X07', 'Sentinel': 'F07',
- 'RADIUM': 'R36', 'GP-based recovery': 'E59', 'RTEB': 'S16', 'CARE': 'S47', 'active view planning': 'R33',
- 'Energy co-management': 'R32', 'persistent charging': 'E58', 'cloud-edge offloading': 'R31', 'LiReN': 'S41',
+# Short labels of the response families listed for each assumption (codebook 'assumptions').
+FAMILY_LABELS = {
+    'IV-A': 'selective updates', 'IV-B': 'complementary sensing', 'IV-C': 'contact priors',
+    'IV-D': 'persistent maps', 'IV-E': 'relocalization', 'V-A': 'terrain risk', 'V-C': 'prediction',
+    'V-D': 'risk constraints', 'V-E': 'tracking, delay', 'VI-A': 'semantic memory', 'VI-B': 'learned actions',
+    'VI-C': 'candidate selection', 'VI-D': 'decision timing', 'VII-B': 'distributed estimation',
+    'VII-C': 'rendezvous, repair', 'VIII-A': 'tolerant control', 'VIII-B': 'integrity monitors',
+    'VIII-C': 'executed recovery', 'VIII-D': 'resource management',
 }
+COLUMN_NAMES = {'IV': 'Localization', 'V': 'Planning', 'VI': 'Semantic', 'VII': 'Multi-robot', 'VIII': 'Faults'}
+SHADES = [WHITE, FILL_LIGHT, '#DCDCDC', '#C4C4C4']
+LEGEND_LABELS = ['none', 'replay, simulation, model, or resource', 'hardware or recorded data',
+                 'physical closed loop']
 
 
-def boundary_codes() -> set[str]:
-    path = literature_root(M) / '06-data/corpus-comparison.csv'
-    return {r['code'] for r in csv.DictReader(path.open(encoding='utf-8-sig')) if r['boundary_platform'] == 'yes'}
-
-
-def mark_boundary(methods: str, boundary: set[str]) -> str:
-    names = methods.split(', ')
-    assert all(n in EXAMPLE_CODES for n in names), [n for n in names if n not in EXAMPLE_CODES]
-    return ', '.join(n + ('\u2020' if EXAMPLE_CODES[n] in boundary else '') for n in names)
-
-
-def fig_taxonomy() -> Canvas:
-    W, margin, gap = 516.0, 0.5, 6.0
-    cw = (W - 2 * margin - 4 * gap) / 5
-    indent, pad = 8.0, 3.4
-    box_w = cw - indent
+def fig_matrix() -> Canvas:
+    data = json.loads((M / 'generated/degradation-function-matrix.json').read_text(encoding='utf-8'))
+    sources = {s['id']: s for s in data['sources']}
+    cells = {(x['source'], x['section']): x for x in data['cells']}
+    sections = [f['section'] for f in data['functions']]
+    marks = [(g['mark'], {'ROAD': 'road', 'GND': 'other_ground', 'OTH': 'non_ground'}[g['id']])
+             for g in data['platform_groups'] if g['mark']]
+    W, x0 = 516.0, 0.5
+    a_w, s_w, cell_w, gap = 96.0, 80.0, 46.0, 3.0
+    r_w = W - 2 * x0 - a_w - s_w - 5 * cell_w - 3 * gap
+    xa, xs = x0, x0 + a_w + gap
+    xc = xs + s_w + gap
+    xr = xc + 5 * cell_w + gap
+    fs, lead, pad = 7.0, 7.6, 2.3
     c = Canvas(W, 10)
 
-    heads = [wrap(f'{sec}. {title}', cw - 8, 7.4, 'bold') for sec, title, _ in TAXONOMY]
-    head_h = max(len(h) for h in heads) * 8.8 + 6.5
-    cells = []
-    boundary = boundary_codes()
-    for _, _, mechs in TAXONOMY:
-        col = []
-        for name, methods in mechs:
-            n = wrap(name, box_w - 2 * pad, 7.0)
-            m = wrap(mark_boundary(methods, boundary), box_w - 2 * pad, 6.3, style='italic')
-            col.append((n, m, len(n) * 8.2 + len(m) * 7.3 + 5.2))
-        cells.append(col)
-    row_h = [max(cells[k][r][2] for k in range(5)) for r in range(4)]
+    # Header.
+    top = 0.5
+    head_h = 2 * lead + 5
+    c.polyline([(x0, top), (W - x0, top)], sw=0.8)
+    for x, w, label in ((xa, a_w, 'Violated assumption'), (xs, s_w, 'Degradation source'),
+                        (xr, r_w, 'Response families')):
+        c.text(x + pad, top + head_h - 6, label, fs, 'bold')
+    for k, sec in enumerate(sections):
+        cx = xc + k * cell_w + cell_w / 2
+        c.text(cx, top + lead + 1, f'Sec. {sec}', fs, 'bold', anchor='middle')
+        c.text(cx, top + 2 * lead + 1, COLUMN_NAMES[sec], fs, anchor='middle')
+    y = top + head_h
+    c.polyline([(x0, y), (W - x0, y)], sw=0.6)
 
-    title = 'Responses to degradation in wheeled navigation'
-    root_w, root_h, root_y = width(title, 8.2, 'bold') + 26, 16.0, 0.5
-    c.rect((W - root_w) / 2, root_y, root_w, root_h, fill=FILL, stroke=INK, sw=0.7)
-    c.text(W / 2, root_y + 11.2, title, 8.2, 'bold', anchor='middle')
-    xs = [margin + k * (cw + gap) for k in range(5)]
-    bus_y = root_y + root_h + 6
-    head_y = bus_y + 6
-    c.polyline([(W / 2, root_y + root_h), (W / 2, bus_y)], sw=0.6)
-    c.polyline([(xs[0] + cw / 2, bus_y), (xs[4] + cw / 2, bus_y)], sw=0.6)
+    for a in data['assumptions']:
+        rows = a['sources']
+        a_lines = wrap(f"{a['id']}. {a['statement'].rstrip('.')}", a_w - 2 * pad, fs)
+        fam = [f'{f} {FAMILY_LABELS[f]}' for f in a['response_families']]
+        s_lines = {s: wrap(sources[s]['name'], s_w - 2 * pad, fs) for s in rows}
+        need = max(len(a_lines), len(fam)) * lead + 2 * pad
+        heights = [max(2 * lead + 2 * pad, len(s_lines[s]) * lead + 2 * pad) for s in rows]
+        extra = max(0.0, need - sum(heights))
+        heights = [h + extra / len(rows) for h in heights]
+        block = sum(heights)
+        c.lines(xa + pad, y + pad + fs, a_lines, fs, lead)
+        c.lines(xr + pad, y + pad + fs, fam, fs, lead)
+        yy = y
+        for s, h in zip(rows, heights):
+            c.lines(xs + pad, yy + (h - len(s_lines[s]) * lead) / 2 + fs - 0.6, s_lines[s], fs, lead)
+            for k, sec in enumerate(sections):
+                cell = cells[(s, sec)]
+                cx = xc + k * cell_w
+                c.rect(cx, yy, cell_w, h, fill=SHADES[cell['shade']], stroke=HAIR, sw=0.4)
+                mid = cx + cell_w / 2
+                if not cell['addressed']:
+                    c.text(mid, yy + h / 2 + 2.4, '\u2013', fs, anchor='middle', fill=MUTED)
+                    continue
+                c.text(mid, yy + h / 2 - 1.2, f"{cell['addressed']}/{cell['named']}/{cell['manipulated']}", fs,
+                       anchor='middle')
+                groups = [f"W{cell['wheeled_addressed']}"] + [f'{m}{cell[key]}' for m, key in marks if cell[key]]
+                c.text(mid, yy + h / 2 + lead - 1.2, ' '.join(groups), fs, anchor='middle', fill=MUTED)
+            if s != rows[-1]:
+                c.polyline([(xs, yy + h), (xc, yy + h)], stroke=HAIR, sw=0.4)
+            yy += h
+        y += block
+        c.polyline([(x0, y), (W - x0, y)], sw=0.8 if a is data['assumptions'][-1] else 0.5)
 
-    y = head_y
-    for k in range(5):
-        x = xs[k]
-        c.polyline([(x + cw / 2, bus_y), (x + cw / 2, head_y)], sw=0.6)
-        c.rect(x, head_y, cw, head_h, fill=FILL, stroke=INK, sw=0.7)
-        c.lines(x + 4, head_y + 10.2, heads[k], 7.4, 8.8, weight='bold')
-        spine_x = x + 4.0
-        y = head_y + head_h + 5
-        last_mid = y
-        for r, (n, m, _) in enumerate(cells[k]):
-            bx = x + indent
-            c.rect(bx, y, box_w, row_h[r], fill=WHITE, stroke=RULE, sw=0.5)
-            mid = y + 6.5
-            c.polyline([(spine_x, mid), (bx, mid)], stroke=RULE, sw=0.5)
-            last_mid = mid
-            yy = c.lines(bx + pad, y + 8.4, n, 7.0, 8.2)
-            c.lines(bx + pad, yy + 0.2, m, 6.3, 7.3, style='italic', fill=MUTED)
-            y += row_h[r] + 3.5
-        c.polyline([(spine_x, head_y + head_h), (spine_x, last_mid)], stroke=RULE, sw=0.5)
-    body_bottom = y
-
-    # Evaluation axes (Section IX) and open interfaces (Section X).
-    band_y, band_h = body_bottom + 6, 49.0
-    # The right box is sized to its two label columns; the left box takes the rest.
-    col1 = max(width(CHALLENGES[i][1], 7.0) for i in (0, 2)) + 22
-    col2 = max(width(CHALLENGES[i][1], 7.0) for i in (1, 3)) + 16
-    rw = col1 + col2 + 8
-    left_w = W - 2 * margin - gap - rw
-    c.rect(margin, band_y, left_w, band_h, fill=WHITE, stroke=INK, sw=0.7)
-    c.text(margin + 5, band_y + 10, 'IX. Evaluation practice', 7.4, 'bold')
-    c.polyline([(margin + 5, band_y + 14), (margin + left_w - 5, band_y + 14)], stroke=HAIR, sw=0.4)
-    axes = [('Measurement level', 'component error vs. task outcome'),
-            ('Test conditions', 'onset, severity, duration'),
-            ('Risk and diagnostic claims', 'event, calibration, assumptions')]
-    for i, (name, sub) in enumerate(axes):
-        ay = band_y + 24.5 + i * 9.4
-        c.text(margin + 5, ay, name + ':', 7.0)
-        c.text(margin + 9 + width(name + ':', 7.0), ay, sub, 6.6, style='italic', fill=MUTED)
-    rx0 = margin + left_w + gap
-    c.rect(rx0, band_y, rw, band_h, fill=WHITE, stroke=INK, sw=0.7)
-    c.text(rx0 + 5, band_y + 10, 'X. Open interfaces between functions', 7.4, 'bold')
-    c.polyline([(rx0 + 5, band_y + 14), (rx0 + rw - 5, band_y + 14)], stroke=HAIR, sw=0.4)
-    for i, (num, label) in enumerate(CHALLENGES):
-        px = rx0 + 5 + (i % 2) * col1
-        py = band_y + 27 + (i // 2) * 12.5
-        c.marker(px + 4.6, py - 2.4, num)
-        c.text(px + 12.5, py, label, 7.0)
-    c.h = band_y + band_h + 0.5
+    # Shading legend.
+    gy = y + 11.5
+    x = x0 + pad
+    title = 'Strongest setting with a named condition:'
+    c.text(x, gy, title, fs, 'bold')
+    x += width(title, fs, 'bold') + 8
+    assert len(data['shade_steps']) == len(LEGEND_LABELS)
+    for shade, label in enumerate(LEGEND_LABELS):
+        c.rect(x, gy - 6.6, 10, 8, fill=SHADES[shade], stroke=INK, sw=0.5)
+        c.text(x + 13, gy, label, fs)
+        x += 13 + width(label, fs) + 10
+    c.h = gy + 3.5
     return c
 
 
@@ -254,11 +191,16 @@ def fig_stack() -> Canvas:
     c.arrow([(sx + sw_, 68.5), (xs[1] + 22, 68.5), (xs[1] + 22, my)], stroke=RULE, sw=0.6, head=3.4)
     ex, ew = source_tag(c, 4, 28, 'Environment and map change', 'moving agents, aged or moved structure')
     c.arrow([(ex + ew, 38.5), (xs[2] - 6, 38.5), (xs[2] - 6, my + 7), (xs[2], my + 7)], stroke=RULE, sw=0.6, head=3.4)
-    cx_, cw_ = source_tag(c, W - 4, 2, 'Communication and computation', 'loss, delay, deadlines, memory', align='right')
-    drop_t, drop_m = xs[3] + bw - 16, xs[2] + bw - 16
-    c.polyline([(cx_, 12.5), (drop_m, 12.5)], stroke=RULE, sw=0.6)
+    cx_, cw_ = source_tag(c, 4, 2, 'Communication and computation', 'loss, delay, deadlines, memory')
+    drop_t, drop_m = xs[3] + 16, xs[2] + bw - 16
+    c.polyline([(cx_ + cw_, 12.5), (drop_t, 12.5)], stroke=RULE, sw=0.6)
     c.arrow([(drop_t, 12.5), (drop_t, ty)], stroke=RULE, sw=0.6, head=3.4)
     c.arrow([(drop_m, 12.5), (drop_m, ty)], stroke=RULE, sw=0.6, head=3.4)
+    lx_, lw_ = source_tag(c, W - 4, 2, 'Learned and semantic inference', 'wrong output, misgrounding', align='right')
+    entry_t = xs[3] + bw - 10
+    c.arrow([(lx_, 17), (entry_t, 17), (entry_t, ty)], stroke=RULE, sw=0.6, head=3.4)
+    side_x = (xs[3] + bw + xs[4]) / 2
+    c.arrow([(side_x, 23), (side_x, my - 8), (entry_t, my - 8), (entry_t, my)], stroke=RULE, sw=0.6, head=3.4)
     source_tag(c, W - 4, 56, 'Terrain and mobility', 'slope, slip, material, actuation', align='right')
     c.arrow([(xs[4] + bw / 2, 77), (xs[4] + bw / 2, my)], stroke=RULE, sw=0.6, head=3.4)
 
@@ -272,7 +214,7 @@ def fig_stack() -> Canvas:
     gy = ly + 20
     x = 4.0
     items = ['Information flow', 'Exchange or supervision', 'Degradation source and entry point',
-             'Open interface examined in Sec. X (numbering as in Fig. 1)']
+             'Open interface examined in Sec. X']
     c.arrow([(x, gy - 2.4), (x + 22, gy - 2.4)], sw=0.9, head=4.2)
     c.text(x + 26, gy, items[0], 6.6, fill=MUTED)
     x += 26 + width(items[0], 6.6) + 14
@@ -454,7 +396,7 @@ def fig_corpus() -> Canvas:
     return c
 
 
-FIGURES = {'fig-taxonomy': fig_taxonomy, 'fig-stack': fig_stack, 'fig-evaluation': fig_evaluation,
+FIGURES = {'fig-matrix': fig_matrix, 'fig-stack': fig_stack, 'fig-evaluation': fig_evaluation,
            'fig-corpus': fig_corpus}
 
 

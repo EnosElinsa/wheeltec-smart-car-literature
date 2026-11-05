@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "purpose": "Reasons for not developing an interface candidate that the pre-registered ranking (06-data/evidence-coding/codebook.json, interface_ranking) places above the lowest-ranked developed interface, and for the alternatives named by the internal review. scripts/build_data.py joins the reasons into generated/interface-candidates.csv and Supplement Table tab:candidates and asserts that every such candidate has one.",
+  "categories": {
+    "merged": "The candidate's unresolved question is part of a developed interface, whose matched comparison varies the candidate's source.",
+    "named-gap": "The candidate is not developed as an interface. Section X-E names it as a further evaluation gap.",
+    "below": "The candidate ranks below the lowest developed interface."
+  },
+  "decisions": [
+    {"candidate_id": "PLN-MRC:COM", "category": "merged", "interface": 4,
+     "reason": "Merged into Interface 4. Rendezvous, reception-aware control and communication-aware allocation already plan around links (Sec. VII-C). The open part is acceptance of information after reconnection."},
+    {"candidate_id": "LOC-MRC:SFA", "category": "merged", "interface": 4,
+     "reason": "Merged into Interface 4. Outlier loop closures and faulty shared landmarks are the corrupted content that its comparison injects as landmark bias."},
+    {"candidate_id": "PLN-SEM:DYN", "category": "merged", "interface": 2,
+     "reason": "Merged into Interface 2, whose comparison varies obstacle-track quality. Three works already give direct joint wheeled evidence for social or semantic choices among moving people."},
+    {"candidate_id": "MRC-REL:SFA", "category": "merged", "interface": 4,
+     "reason": "Merged into Interface 4. Fault propagation through shared state is one of its primary outcomes."},
+    {"candidate_id": "LOC-MRC:PER", "category": "merged", "interface": 4,
+     "reason": "Merged into Interface 4. Teammate ranges and maps serve as complementary sensing (Sec. IV-B), and their acceptance after a partition is the interface question."},
+    {"candidate_id": "PLN-REL:ACT", "category": "named-gap", "interface": null,
+     "reason": "Named as a further gap in Sec. X-E. The five works accommodate modeled actuator faults inside one tracking controller, without a response chosen across functions."},
+    {"candidate_id": "PLN-REL:MOD", "category": "merged", "interface": 2,
+     "reason": "Merged into Interface 2, whose comparison injects incorrect responses. Four works already give direct joint wheeled evidence for monitored or recovered learned policies."},
+    {"candidate_id": "PLN-REL:RES", "category": "below", "interface": null,
+     "reason": "Named alternative (perception latency, energy and computation limits). Ranks below the lowest developed interface. Sec. X-E keeps it as a resource question."},
+    {"candidate_id": "LOC-PLN:MAP", "category": "below", "interface": null,
+     "reason": "Named alternative (map change forcing plan re-validation). Three works, ranked below the lowest developed interface."}
+  ],
+  "human_assistance": "Named alternative without a function pair. Ten works record human assistance in their codes. Sec. X-E and the evaluation checklist treat interventions as outcomes rather than as an interface."
+}

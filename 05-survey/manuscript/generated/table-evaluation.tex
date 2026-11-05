@@ -1,30 +1,43 @@
 \begin{table}[!ht]
 \centering
-\caption{Reported evaluation attributes among the \CoreCount{} technical publications, by the section that reviews each publication. Attributes overlap, and the context review is excluded.}
+\caption{Coded evidence attributes of the \CoreCount{} technical publications, by the section that reviews each publication. Attributes overlap, and the context review is excluded.}
 \label{tab:evaluation}
 \surveytableformat
 \setlength{\tabcolsep}{3.2pt}
+\renewcommand{\arraystretch}{1.04}
 \begin{tabularx}{\linewidth}{@{}Yrrrrrr@{}}
 \toprule
 \textbf{Attribute} & \textbf{IV} & \textbf{V} & \textbf{VI} & \textbf{VII} & \textbf{VIII} & \textbf{All} \\
 \midrule
 Publications & 67 & 56 & 36 & 45 & 40 & 244 \\
-\addlinespace[3pt]
+\addlinespace[2pt]
 \multicolumn{7}{@{}l}{\textit{Measurement level}} \\
 Component measures & 67 & 32 & 16 & 32 & 23 & 170 (70\%) \\
-Task outcomes & 2 & 51 & 35 & 29 & 22 & 139 (57\%) \\
-\addlinespace[3pt]
-\multicolumn{7}{@{}l}{\textit{Test conditions}} \\
-Degradation testing & 46 & 23 & 10 & 25 & 31 & 135 (55\%) \\
-Degradation testing with task outcomes & 2 & 20 & 9 & 13 & 17 & 61 (25\%) \\
-\addlinespace[3pt]
-\multicolumn{7}{@{}l}{\textit{Risk and diagnostic assessment}} \\
-Integrity or failure-risk assessment & 3 & 1 & 0 & 1 & 9 & 14 (6\%) \\
-\addlinespace[3pt]
-\multicolumn{7}{@{}l}{\textit{Platform and resources}} \\
-Wheeled-robot platform or data & 30 & 50 & 30 & 32 & 30 & 172 (70\%) \\
-Computation placement reported & 45 & 31 & 18 & 33 & 28 & 155 (64\%) \\
+Task outcome & 1 & 44 & 32 & 25 & 20 & 122 (50\%) \\
+Physical task outcome & 1 & 24 & 23 & 15 & 9 & 72 (30\%) \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textit{Degradation evidence}} \\
+Named condition (D1 or D2) & 61 & 46 & 19 & 27 & 34 & 187 (77\%) \\
+Injected or varied, D1 & 16 & 15 & 6 & 13 & 11 & 61 (25\%) \\
+Selected only, D2 & 45 & 31 & 13 & 14 & 23 & 126 (52\%) \\
+Incidental only, D3 & 1 & 1 & 2 & 4 & 2 & 10 (4\%) \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textit{Same experiment}} \\
+Named condition and task outcome & 1 & 36 & 16 & 11 & 16 & 80 (33\%) \\
+D1 condition and task outcome & 0 & 12 & 6 & 5 & 4 & 27 (11\%) \\
+On a physical robot & 1 & 19 & 12 & 2 & 4 & 38 (16\%) \\
+On a target wheeled robot & 1 & 17 & 11 & 1 & 4 & 34 (14\%) \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textit{Assessment and resources}} \\
+Integrity or failure risk & 3 & 1 & 0 & 1 & 9 & 14 (6\%) \\
+Computation placement & 45 & 31 & 18 & 33 & 28 & 155 (64\%) \\
+\addlinespace[2pt]
+\multicolumn{7}{@{}l}{\textit{Platform group}} \\
+Target wheeled robot & 30 & 50 & 30 & 32 & 30 & 172 (70\%) \\
+Road vehicle (R) & 7 & 1 & 0 & 0 & 4 & 12 (5\%) \\
+Other ground robot (G) & 1 & 4 & 5 & 3 & 0 & 13 (5\%) \\
+Non-ground or none (N) & 29 & 1 & 1 & 10 & 6 & 47 (19\%) \\
 \bottomrule
 \end{tabularx}
-\par\vspace{3pt}\parbox{\linewidth}{\footnotesize\raggedright Counts are per publication, and the two attributes of a combined row need not come from the same experiment. Percentages refer to all \CoreCount{} publications. Fig.~S1 also counts the context review of Section~\ref{sec:planning}.}
+\par\vspace{3pt}\parbox{\linewidth}{\footnotesize\raggedright Counts are per publication. A same-experiment row counts a publication only when the condition and the task outcome come from one experiment. Percentages refer to all \CoreCount{} publications. Table~\ref{S-tab:evidence-percent} gives column percentages.}
 \end{table}
