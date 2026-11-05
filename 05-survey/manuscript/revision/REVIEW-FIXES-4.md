@@ -179,7 +179,7 @@ Sources of each statement: the screening archive (reviewer and host `codex` in a
 
 ### Pre-existing Crossref reference lists
 
-Fifteen committed files in `revision/background-sources/` still hold a Crossref `reference` list: B_CBF2017 (58 entries), B_Cadena2016 (267), B_Campion1996 (27), B_DWA1997 (16), B_FASTLIO22022 (65), B_Foundation2024 (262), B_Habitat2019 (28), B_HumanAware2013 (106), B_KITTI2012 (48), B_Nav22020 (25), B_Nav22020-corrected (25), B_ORBSLAM32021 (83), B_TEB2013 (22), B_TUM2012 (47) and B_Traversability2022 (86). The public-tree rule of this round forbids committing Crossref reference lists, and the five records added in this round omit them. These fifteen files predate the round and were left unchanged for an author decision (strip the `reference` field and update the recorded hashes, or keep them).
+Fifteen committed files in `revision/background-sources/` still hold a Crossref `reference` list: B_CBF2017 (58 entries), B_Cadena2016 (267), B_Campion1996 (27), B_DWA1997 (16), B_FASTLIO22022 (65), B_Foundation2024 (262), B_Habitat2019 (28), B_HumanAware2013 (106), B_KITTI2012 (48), B_Nav22020 (25), B_Nav22020-corrected (25), B_ORBSLAM32021 (83), B_TEB2013 (22), B_TUM2012 (47) and B_Traversability2022 (86). The public-tree rule of this round forbids committing Crossref reference lists, and the five records added in this round omit them. These fifteen files predate the round. On the author's decision (2026-11-05) the `reference` field was removed from each of them and every other field kept, including `reference-count`. Each file was rewritten only after re-serializing it unchanged reproduced its original bytes, so the cited-reference list is the only difference. The bibliography and both PDFs are unchanged in content, and the delivery records carry the new file hashes. No background record now holds a Crossref reference list.
 
 ### Audits
 
@@ -235,6 +235,6 @@ The acknowledgment, Section III, supplement S7, the agreement-table caption and 
 
 ## Still open after this round
 
-- The author decisions above: the acknowledgment wording and its uncertainties, and the fifteen pre-existing Crossref reference lists.
+- The acknowledgment stays as worded (author decision 2026-11-05). The fifteen pre-existing Crossref reference lists were removed.
 - The simulated re-review of commit f463649 has one report, from reviewer 2, kept locally. At the author's instruction it stands alone, with no second reviewer and no aggregate. Its comparison with the earlier major items is kept locally beside it.
 - Author information and submission declarations remain incomplete.
