@@ -4,7 +4,8 @@ version = "0.1.0"
 description = "Validation and generation tools for the wheeled mobile robot literature library"
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = { file = "LICENSE-MIT" }
+authors = [{ name = "Zhiyuan Cai" }]
 keywords = ["robotics", "mobile-robots", "literature-review", "survey", "evidence-synthesis"]
 dependencies = [
     "pymupdf",

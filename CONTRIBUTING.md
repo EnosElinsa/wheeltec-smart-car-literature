@@ -2,6 +2,8 @@
 
 The repository owner maintains the library and the manuscript. To report an error in a review card, a data value or the manuscript, open a GitHub issue that names the paper ID, the file and the physical PDF page of the evidence. This guide records the conventions and procedures that the maintainer follows.
 
+Contributions are accepted under the license of the part they change: MIT for code and CC BY 4.0 for cards, analyses, data and documentation (see the [license table](README.md#license)). The manuscript carries no license before publication.
+
 ## Conventions
 
 - **Language.** Every tracked file is in English. Review prose uses American English and writes "LiDAR". Excerpts and original abstracts are verbatim. `tools.check_public_tree --cjk strict` rejects CJK text.
@@ -45,7 +47,7 @@ python -m tools.check_public_tree --cjk strict
 python -m tools.review_check --all --pdf
 ```
 
-The last command needs the local PDFs and transcriptions. Run `git status` afterwards: a check that regenerates a file should leave no diff.
+The last command needs the local PDFs and transcriptions. Run `git status` afterwards: a check that regenerates a file should leave no diff. The [Checks workflow](.github/workflows/checks.yml) repeats the first four checks and `python -m tools.build_tables --strict` on GitHub for every push to `main`.
 
 ## Commit messages
 

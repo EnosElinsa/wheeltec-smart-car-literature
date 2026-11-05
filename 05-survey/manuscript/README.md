@@ -60,6 +60,6 @@ The public library excludes publisher full texts. Missing local sources must not
 
 ## Status and rights
 
-Author details and submission declarations remain incomplete. The public snapshot was authorized by the repository owner; no submission acceptance or venue approval is implied. No blanket license is applied to third-party source material or to the manuscript.
+Author details and submission declarations remain incomplete. The public snapshot was authorized by the repository owner; no submission acceptance or venue approval is implied. No license is granted for the manuscript text, figures, generated tables or built PDFs before publication. The scripts in `scripts/` are MIT-licensed, and third-party source material is not covered (see the [license table](../../README.md#license)).
 
 [Refresh integration](revision/IEEE-REFRESH-INTEGRATION.md), [expansion integration audit](revision/SURVEY-EXPANSION-INTEGRATION.md) and [IEEE integration notes](notes/ieee-integration-plan.md) record earlier stages.

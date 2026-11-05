@@ -1,5 +1,9 @@
 # WHEELTEC Smart Car Literature Library
 
+[![Checks](https://github.com/EnosElinsa/wheeltec-smart-car-literature/actions/workflows/checks.yml/badge.svg)](https://github.com/EnosElinsa/wheeltec-smart-car-literature/actions/workflows/checks.yml)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-MIT)
+[![Content: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE-CC-BY-4.0)
+
 An evidence library and survey manuscript on wheeled mobile robot autonomy under degradation. The library holds 247 assessed publications with review cards, coded comparison data and source provenance. The manuscript, *Wheeled Mobile Robot Autonomy Under Degradation: A Survey of Methods and Evaluation*, is built from the same data in [05-survey/manuscript/](05-survey/manuscript/README.md).
 
 The library supports research on the WHEELTEC R680 wheeled robot. A robot or computer reported in a paper is not evidence that the method has been deployed on the R680.
@@ -64,6 +68,8 @@ Run every command from the repository root unless a section says otherwise.
 
 ## Checks
 
+The [Checks workflow](.github/workflows/checks.yml) runs every check below that needs no local sources, on each push to `main` and on pull requests, with Python 3.11 and 3.14. It fails when a check fails or when the regenerated indexes or tables differ from the committed files.
+
 | Command | What it checks | Needs local sources |
 |---|---|---|
 | `python -m pytest` | Unit tests of the tools (`tools/tests`) | No |
@@ -80,8 +86,17 @@ The manuscript has its own build and verification steps, described in the [manus
 
 The repository is maintained by its owner. [CONTRIBUTING.md](CONTRIBUTING.md) describes the conventions, the procedure for adding a batch of papers and the checks to run before a commit. Corrections to a card or a data value are welcome as GitHub issues that name the paper ID and the PDF page.
 
-## Citation and license
+## Citation
 
-The survey is unpublished. Until it appears, cite this repository by its URL and the commit you used.
+The survey is unpublished. Until it appears, cite this repository as described in [CITATION.cff](CITATION.cff), which GitHub shows under "Cite this repository", and name the commit you used.
 
-No license file is published yet. `pyproject.toml` declares the MIT license for the Python tools. No license is granted for the review cards, analyses, data or manuscript. Bibliographic metadata and abstracts quoted in the cards remain the property of their publishers and authors.
+## License
+
+| Material | Paths | Terms |
+|---|---|---|
+| Code | `tools/`, `05-survey/manuscript/scripts/`, `.github/` | [MIT](LICENSE-MIT) |
+| Review cards, analyses, data, provenance records, indexes and documentation | `03-reviews/`, `04-analysis/`, `06-data/`, the provenance files in `01-papers/`, and the Markdown files outside `05-survey/manuscript/` | [CC BY 4.0](LICENSE-CC-BY-4.0) |
+| Survey manuscript | `05-survey/manuscript/` except `scripts/`: LaTeX sources, figures, generated tables, built PDFs and revision records | No license is granted before publication. All rights are reserved |
+| Third-party material | Publisher citation exports (`*.bib` and `*.ris` files in `01-papers/` and `06-data/`), Crossref and catalogue records, and the abstracts and excerpts quoted in the cards | Not covered by these licenses. The rights stay with their owners |
+
+To attribute CC BY 4.0 material, name Zhiyuan Cai and the WHEELTEC Smart Car Literature Library, link this repository, and state any changes you made.

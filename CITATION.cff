@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this library, its data or its tools, please cite it as below."
+type: dataset
+title: "WHEELTEC Smart Car Literature Library: evidence library and survey on wheeled mobile robot autonomy under degradation"
+authors:
+  - family-names: Cai
+    given-names: Zhiyuan
+repository-code: "https://github.com/EnosElinsa/wheeltec-smart-car-literature"
+url: "https://github.com/EnosElinsa/wheeltec-smart-car-literature"
+abstract: >-
+  An evidence library on wheeled mobile robot autonomy under degradation.
+  It holds review cards for 247 assessed publications, coded comparison
+  data, evidence codes with source locators, acquisition and transcription
+  provenance, validation tools, and the LaTeX sources of a working survey
+  manuscript built from the same data.
+keywords:
+  - robotics
+  - wheeled mobile robots
+  - autonomous navigation
+  - localization
+  - motion planning
+  - multi-robot systems
+  - fault tolerance
+  - literature review
+  - evidence synthesis
+license:
+  - MIT
+  - CC-BY-4.0

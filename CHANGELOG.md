@@ -4,6 +4,7 @@ Notable changes to the library and the survey manuscript, newest first. Dates co
 
 ## 2026-11-05
 
+- Repository: MIT license for the code and CC BY 4.0 for the cards, analyses, data and documentation, with the manuscript unlicensed before publication ([license table](README.md#license)). Adds `CITATION.cff`, the Checks workflow, this changelog, the contributing guide and the analysis index, and marks dated records with a stage-record banner.
 - Manuscript round 6 ([REVIEW-FIXES-6](05-survey/manuscript/revision/REVIEW-FIXES-6.md)): Section III becomes a three-paragraph review method, and the selection table moves to supplement S1. The AI-use acknowledgment is reduced to three sentences, Fig. 2 is redrawn and the Fig. 1 shades are evenly spaced. The main paper stays at 24 pages.
 - Manuscript round 5 ([REVIEW-FIXES-5](05-survey/manuscript/revision/REVIEW-FIXES-5.md)): answers items M1-M4 and m2 of a simulated re-review. A review recheck through the adjudication log kept the physical evidence level of 17 of 19 works, lowered 2 and found 4 more drivetrain-dependent effects.
 - Manuscript round 4, second part ([REVIEW-FIXES-4](05-survey/manuscript/revision/REVIEW-FIXES-4.md)): reporting checklist, minor review items B10-B21, AI-use acknowledgment and audits.
