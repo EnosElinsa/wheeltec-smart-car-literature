@@ -1,37 +1,37 @@
 row_id,analysis,subset,definition,numerator,denominator,share,LOC,LOC_k,LOC_n,PLN,PLN_k,PLN_n,SEM,SEM_k,SEM_n,MRC,MRC_k,MRC_n,REL,REL_k,REL_n,RF1,RF2,RF3,RF4
-S-def-headline,definition,all technical works,S-def-headline,80,244,0.3279,0.0149,1,67,0.6429,36,56,0.4444,16,36,0.2444,11,45,0.4,16,40,holds,fails,fails,holds
+S-def-headline,definition,all technical works,S-def-headline,81,244,0.332,0.0149,1,67,0.6429,36,56,0.4722,17,36,0.2444,11,45,0.4,16,40,holds,fails,fails,holds
 S-def-D1,definition,all technical works,S-def-D1,27,244,0.1107,0.0,0,67,0.2143,12,56,0.1667,6,36,0.1111,5,45,0.1,4,40,holds,fails,fails,holds
 S-def-D1-nominal,definition,all technical works,S-def-D1-nominal,11,244,0.0451,0.0,0,67,0.0536,3,56,0.1111,4,36,0.0667,3,45,0.025,1,40,holds,fails,fails,holds
-S-def-physical,definition,all technical works,S-def-physical,38,244,0.1557,0.0149,1,67,0.3393,19,56,0.3333,12,36,0.0444,2,45,0.1,4,40,holds,fails,fails,holds
-S-def-with-incidental,definition,all technical works,S-def-with-incidental,87,244,0.3566,0.0149,1,67,0.6607,37,56,0.5,18,36,0.3111,14,45,0.425,17,40,holds,fails,fails,holds
-S-unit-any,coding-unit,all technical works,S-unit-any,82,244,0.3361,0.0149,1,67,0.6607,37,56,0.4444,16,36,0.2444,11,45,0.425,17,40,holds,fails,fails,holds
+S-def-physical,definition,all technical works,S-def-physical,43,244,0.1762,0.0149,1,67,0.3571,20,56,0.3611,13,36,0.0444,2,45,0.175,7,40,holds,fails,fails,holds
+S-def-with-incidental,definition,all technical works,S-def-with-incidental,88,244,0.3607,0.0149,1,67,0.6607,37,56,0.5278,19,36,0.3111,14,45,0.425,17,40,holds,fails,fails,holds
+S-unit-any,coding-unit,all technical works,S-unit-any,83,244,0.3402,0.0149,1,67,0.6607,37,56,0.4722,17,36,0.2444,11,45,0.425,17,40,holds,fails,fails,holds
 S-card-round3,definition,all technical works,S-card-round3,61,244,0.25,0.0299,2,67,0.3571,20,56,0.25,9,36,0.2889,13,45,0.425,17,40,holds,holds,fails,holds
 S-depth-full,depth,depth = full,S-def-headline,7,23,0.3043,0.0,0,7,0.8,4,5,0.6667,2,3,0.0,0,3,0.2,1,5,holds (tie),fails,fails,holds
 S-depth-light-legacy,depth,depth = light-legacy,S-def-headline,33,86,0.3837,0.0,0,21,0.6207,18,29,0.5833,7,12,0.4,6,15,0.2222,2,9,holds,fails,fails,holds
-S-depth-light-targeted,depth,depth = light-targeted,S-def-headline,40,135,0.2963,0.0256,1,39,0.6364,14,22,0.3333,7,21,0.1852,5,27,0.5,13,26,holds,fails,fails,holds
-S-depth-no-legacy,depth,"depth in {full, light-targeted}",S-def-headline,47,158,0.2975,0.0217,1,46,0.6667,18,27,0.375,9,24,0.1667,5,30,0.4516,14,31,holds,fails,fails,holds
-S-stage-out-baseline-2026-09-18,leave-one-stage-out,baseline-2026-09-18,S-def-headline,62,199,0.3116,0.0172,1,58,0.6111,22,36,0.3871,12,31,0.275,11,40,0.4706,16,34,holds,fails,fails,holds
-S-stage-out-supplemental,leave-one-stage-out,supplemental,S-def-headline,78,240,0.325,0.0149,1,67,0.6364,35,55,0.4444,16,36,0.2326,10,43,0.4103,16,39,holds,fails,fails,holds
-S-stage-out-expansion-2026-10-24,leave-one-stage-out,expansion-2026-10-24,S-def-headline,60,184,0.3261,0.0208,1,48,0.6744,29,43,0.4231,11,26,0.1765,6,34,0.3939,13,33,holds,fails,fails,holds
-S-stage-out-followup-2026-11-02,leave-one-stage-out,followup-2026-11-02,S-def-headline,75,229,0.3275,0.0161,1,62,0.6364,35,55,0.4412,15,34,0.1951,8,41,0.4324,16,37,holds,fails,fails,holds
-S-stage-out-ieee-supplement-2026-11-03,leave-one-stage-out,ieee-supplement-2026-11-03,S-def-headline,74,224,0.3304,0.0161,1,62,0.6346,33,52,0.4571,16,35,0.2558,11,43,0.4062,13,32,holds,fails,fails,holds
-S-stage-out-survey-200plus-2026-11-03,leave-one-stage-out,survey-200plus-2026-11-03,S-def-headline,67,196,0.3418,0.0196,1,51,0.6667,32,48,0.4667,14,30,0.3056,11,36,0.2903,9,31,holds,fails,fails,holds
+S-depth-light-targeted,depth,depth = light-targeted,S-def-headline,41,135,0.3037,0.0256,1,39,0.6364,14,22,0.381,8,21,0.1852,5,27,0.5,13,26,holds,fails,fails,holds
+S-depth-no-legacy,depth,"depth in {full, light-targeted}",S-def-headline,48,158,0.3038,0.0217,1,46,0.6667,18,27,0.4167,10,24,0.1667,5,30,0.4516,14,31,holds,fails,fails,holds
+S-stage-out-baseline-2026-09-18,leave-one-stage-out,baseline-2026-09-18,S-def-headline,63,199,0.3166,0.0172,1,58,0.6111,22,36,0.4194,13,31,0.275,11,40,0.4706,16,34,holds,fails,fails,holds
+S-stage-out-supplemental,leave-one-stage-out,supplemental,S-def-headline,79,240,0.3292,0.0149,1,67,0.6364,35,55,0.4722,17,36,0.2326,10,43,0.4103,16,39,holds,fails,fails,holds
+S-stage-out-expansion-2026-10-24,leave-one-stage-out,expansion-2026-10-24,S-def-headline,61,184,0.3315,0.0208,1,48,0.6744,29,43,0.4615,12,26,0.1765,6,34,0.3939,13,33,holds,fails,fails,holds
+S-stage-out-followup-2026-11-02,leave-one-stage-out,followup-2026-11-02,S-def-headline,76,229,0.3319,0.0161,1,62,0.6364,35,55,0.4706,16,34,0.1951,8,41,0.4324,16,37,holds,fails,fails,holds
+S-stage-out-ieee-supplement-2026-11-03,leave-one-stage-out,ieee-supplement-2026-11-03,S-def-headline,75,224,0.3348,0.0161,1,62,0.6346,33,52,0.4857,17,35,0.2558,11,43,0.4062,13,32,holds,fails,fails,holds
+S-stage-out-survey-200plus-2026-11-03,leave-one-stage-out,survey-200plus-2026-11-03,S-def-headline,68,196,0.3469,0.0196,1,51,0.6667,32,48,0.5,15,30,0.3056,11,36,0.2903,9,31,holds,fails,fails,holds
 S-stage-out-ieee-refresh-2026-11-03,leave-one-stage-out,ieee-refresh-2026-11-03,S-def-headline,68,208,0.3269,0.0,0,55,0.6275,32,51,0.4667,14,30,0.2368,9,38,0.3824,13,34,holds,fails,fails,holds
-S-stage-out-review-additions-2026-11-04,leave-one-stage-out,review-additions-2026-11-04,S-def-headline,76,228,0.3333,0.0152,1,66,0.6538,34,52,0.4667,14,30,0.275,11,40,0.4,16,40,holds,fails,fails,holds
+S-stage-out-review-additions-2026-11-04,leave-one-stage-out,review-additions-2026-11-04,S-def-headline,77,228,0.3377,0.0152,1,66,0.6538,34,52,0.5,15,30,0.275,11,40,0.4,16,40,holds,fails,fails,holds
 S-year-2021-2023,year,2021-2023,S-def-headline,10,33,0.303,0.0,0,6,0.6,6,10,0.5,2,4,0.0,0,8,0.4,2,5,holds (tie),fails,fails,holds
 S-year-2024,year,2024,S-def-headline,11,38,0.2895,0.0,0,10,0.8,8,10,0.1667,1,6,0.1667,1,6,0.1667,1,6,holds,fails,fails,holds
-S-year-2025,year,2025,S-def-headline,39,87,0.4483,0.0,0,18,0.6364,14,22,0.5333,8,15,0.5,4,8,0.5417,13,24,holds,fails,fails,holds
+S-year-2025,year,2025,S-def-headline,40,87,0.4598,0.0,0,18,0.6364,14,22,0.6,9,15,0.5,4,8,0.5417,13,24,holds,fails,fails,holds
 S-year-2026,year,2026,S-def-headline,20,86,0.2326,0.0303,1,33,0.5714,8,14,0.4545,5,11,0.2609,6,23,0.0,0,5,fails,fails,fails,holds
-S-quota,stage-group,stage in stage_groups.quota_stages,S-def-headline,32,96,0.3333,0.0323,1,31,0.6111,11,18,0.4375,7,16,0.3889,7,18,0.4615,6,13,holds,fails,fails,holds
+S-quota,stage-group,stage in stage_groups.quota_stages,S-def-headline,33,96,0.3438,0.0323,1,31,0.6111,11,18,0.5,8,16,0.3889,7,18,0.4615,6,13,holds,fails,fails,holds
 S-non-quota,stage-group,stage not in stage_groups.quota_stages,S-def-headline,48,148,0.3243,0.0,0,36,0.6579,25,38,0.45,9,20,0.1481,4,27,0.3704,10,27,holds,fails,fails,holds
 S-quota-theme-T1,theme,T1,S-def-headline,0,16,0.0,0.0,0,16,,0,0,,0,0,,0,0,,0,0,n/a,n/a,n/a,holds
 S-quota-theme-T2,theme,T2,S-def-headline,2,16,0.125,0.0769,1,13,0.3333,1,3,,0,0,,0,0,,0,0,n/a,n/a,n/a,fails
 S-quota-theme-T3,theme,T3,S-def-headline,10,16,0.625,,0,0,0.6667,10,15,,0,0,0.0,0,1,,0,0,n/a,n/a,n/a,n/a
 S-quota-theme-T4,theme,T4,S-def-headline,6,16,0.375,,0,0,,0,0,,0,0,0.375,6,16,,0,0,n/a,n/a,n/a,n/a
-S-quota-theme-T5,theme,T5,S-def-headline,7,16,0.4375,,0,0,,0,0,0.4375,7,16,,0,0,,0,0,n/a,n/a,n/a,n/a
+S-quota-theme-T5,theme,T5,S-def-headline,8,16,0.5,,0,0,,0,0,0.5,8,16,,0,0,,0,0,n/a,n/a,n/a,n/a
 S-quota-theme-T6,theme,T6,S-def-headline,7,16,0.4375,0.0,0,2,,0,0,,0,0,1.0,1,1,0.4615,6,13,n/a,n/a,n/a,n/a
 S-no-ieee-only,stage-group,stage not in stage_groups.ieee_only_stages,S-def-headline,62,188,0.3298,0.0,0,50,0.617,29,47,0.4828,14,29,0.25,9,36,0.3846,10,26,holds,fails,fails,holds
-S-no-coverage,stage-group,stage is not the coverage-additions stage,S-def-headline,76,228,0.3333,0.0152,1,66,0.6538,34,52,0.4667,14,30,0.275,11,40,0.4,16,40,holds,fails,fails,holds
-S-platform-WHL,platform,platform_group = WHL,S-def-headline,68,172,0.3953,0.0333,1,30,0.64,32,50,0.5,15,30,0.25,8,32,0.4,12,30,holds,fails,fails,holds
-S-platform-WHL-mixed,platform,"platform_group = WHL, or mixed_wheeled = yes",S-def-headline,68,182,0.3736,0.0263,1,38,0.64,32,50,0.5,15,30,0.2353,8,34,0.4,12,30,holds,fails,fails,holds
+S-no-coverage,stage-group,stage is not the coverage-additions stage,S-def-headline,77,228,0.3377,0.0152,1,66,0.6538,34,52,0.5,15,30,0.275,11,40,0.4,16,40,holds,fails,fails,holds
+S-platform-WHL,platform,platform_group = WHL,S-def-headline,69,172,0.4012,0.0333,1,30,0.64,32,50,0.5333,16,30,0.25,8,32,0.4,12,30,holds,fails,fails,holds
+S-platform-WHL-mixed,platform,"platform_group = WHL, or mixed_wheeled = yes",S-def-headline,69,182,0.3791,0.0263,1,38,0.64,32,50,0.5333,16,30,0.2353,8,34,0.4,12,30,holds,fails,fails,holds
 S-platform-non-WHL,platform,"platform_group in {ROAD, GND, OTH}",S-def-headline,12,72,0.1667,0.0,0,37,0.6667,4,6,0.1667,1,6,0.2308,3,13,0.4,4,10,holds,fails,fails,holds

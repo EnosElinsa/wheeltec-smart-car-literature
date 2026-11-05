@@ -22,7 +22,7 @@ interface,code,key,stage,principal_section,platform_group,level_degradation,deg_
 2,F06,P_F06,followup-2026-11-02,VI,WHL,P,none,none,no,PLN-SEM:RES
 2,F05,P_F05,followup-2026-11-02,VI,WHL,P,D2,physical,yes,PLN-SEM:RES
 2,R26,P_R26,ieee-refresh-2026-11-03,VI,WHL,P,D2,physical,yes,PLN-SEM:MOD
-2,R29,P_R29,ieee-refresh-2026-11-03,VI,WHL,P,none,none,no,PLN-SEM:MOD|PLN-SEM:RES
+2,R29,P_R29,ieee-refresh-2026-11-03,VI,WHL,P,D2,physical,yes,PLN-SEM:MOD|PLN-SEM:RES
 2,K13,P_K13,review-additions-2026-11-04,VI,WHL,P,D1,physical,yes,PLN-SEM:MOD
 2,K14,P_K14,review-additions-2026-11-04,VI,WHL,S,D2,simulation,no,PLN-SEM:MOD
 3,E13,P_E13,expansion-2026-10-24,V,WHL,S,D2,simulation,no,LOC-PLN:PER|LOC-PLN:TER

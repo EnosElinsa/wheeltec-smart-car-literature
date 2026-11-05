@@ -506,19 +506,19 @@
         "F05"
       ],
       "change": "added",
-      "text": "The other 53 headline works (DTwoSameCount, deg_task_class D2) lack a comparator; one physical run per method checked for M14 (one field exploration mission, PDF p. 7) and F05 (each method evaluated in a single run on the outdoor route, PDF p. 7)"
+      "text": "The other 54 headline works (DTwoSameCount, deg_task_class D2) lack a comparator; one physical run per method checked for M14 (one field exploration mission, PDF p. 7) and F05 (each method evaluated in a single run on the outdoor route, PDF p. 7)"
     },
     {
       "section": "X opening",
       "codes": [],
       "change": "changed",
-      "text": "Each interface rank quoted with its best candidate (LOC-REL:PER 4, PLN-SEM:MOD 9 with PLN-SEM:RES 23, LOC-PLN:PER 12, LOC-MRC:COM 1); Rank B 5, 23, 18 and 12 below PLN-REL:ACT (Rank B 1); one sentence on the count-based rule; rule fixed in codebook version 1.0 before coding (commit 67872f4)"
+      "text": "Each interface rank quoted with its best candidate (LOC-REL:PER 4, PLN-SEM:MOD 10 with PLN-SEM:RES 26, LOC-PLN:PER 11, LOC-MRC:COM 1); Rank B 5, 26, 18 and 12 below PLN-REL:ACT (Rank B 1); one sentence on the count-based rule; rule fixed in codebook version 1.0 before coding (commit 67872f4)"
     },
     {
       "section": "Supplement S8",
       "codes": [],
       "change": "changed",
-      "text": "Ranks with cell ids, PLN-SEM:RES rank 23 (IfaceTwoResRank), LOC-PLN:TER 2 works below the eligibility threshold (IfaceThreeTerWorks), Rank B 5, 23, 18 and 12 (IfaceOneRankB-IfaceFourRankB)"
+      "text": "Ranks with cell ids, PLN-SEM:RES rank 26 (IfaceTwoResRank), LOC-PLN:TER 2 works below the eligibility threshold (IfaceThreeTerWorks), Rank B 5, 26, 18 and 12 (IfaceOneRankB-IfaceFourRankB)"
     },
     {
       "section": "X-C, X-D",
@@ -538,10 +538,36 @@
         "M04",
         "M09",
         "N10",
+        "S16",
+        "M12",
+        "N17",
+        "R29",
+        "R36",
         "S16"
       ],
       "change": "added",
-      "text": "DrivetrainEffectCount 10 after the symmetric recheck (6 before, DrivetrainRecheckAdded 4); S7 recheck of 19 levels (LevelRecheckWorks), 2 lowered (LevelRecheckRevised), locators of 2 works corrected (LocatorCorrectionWorks); all asserted in build_data.py"
+      "text": "DrivetrainEffectCount 10 after the symmetric recheck (6 before, DrivetrainRecheckAdded 4); S7 recheck of 19 levels (LevelRecheckWorks), 2 lowered (LevelRecheckRevised), locators of 2 works corrected (LocatorCorrectionWorks), task-outcome setting recoded as physical for 5 kept works (SettingRecheckRevised: M12, N17, R29, R36, S16); all asserted in build_data.py"
+    },
+    {
+      "section": "Abstract, IX-B, X, XI, Tables VI and VIII, Supplement S1, S6, S7, S8",
+      "codes": [
+        "M12",
+        "N17",
+        "R29",
+        "R36",
+        "S16"
+      ],
+      "change": "changed",
+      "text": "Macros moved by the task-setting recheck (stats.tex): DegTaskCount 80 to 81 (DegTaskShare 33 unchanged), DTwoSameCount 53 to 54, TaskAnyCount 122 to 123, PhysSameCount 38 to 43, DirectWheeledCount 34 to 37, PlnPhysSameCount 19 to 20, SemTaskCount 32 to 33, SemSameCount 16 to 17, SemSameShare 44 to 47, SemPhysSameCount 12 to 13, RelPhysSameCount 4 to 7, DegTaskCountBase 76 to 77 (DegTaskShareBase 33 to 34), QuotaShare 33 to 34, StageMinShare 31 to 32, StageMaxShare 34 to 35, YearMaxShare 45 to 46, IfaceTwoRank 9 to 10, IfaceTwoRankA 7 to 8, IfaceTwoRankB 23 to 26, IfaceTwoResRank 23 to 26, IfaceTwoDirect 5 to 6, IfaceThreeRank 12 to 11, IfaceWorstRank 12 to 11, RejectedCount 7 to 6"
+    },
+    {
+      "section": "X opening, Supplement S8",
+      "codes": [
+        "R29",
+        "R36"
+      ],
+      "change": "changed",
+      "text": "\"Six of the 7 candidates ... with the seventh named\" became \"Five of the 6 candidates ... with the sixth named\"; PLN-REL:MOD (rank 11 to 21) no longer ranks above Interface 3, and \"and learned decisions\" was removed from the Interface 2 merge; the reasons of PLN-SEM:DYN and PLN-REL:MOD in data/interface-decisions.json now give four and five works with direct joint wheeled evidence"
     }
   ]
 }

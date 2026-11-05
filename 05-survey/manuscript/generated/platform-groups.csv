@@ -1,5 +1,5 @@
 group,name,mark,platform_classes,works,LOC,PLN,SEM,MRC,REL,task_any,named,task_named_same,physical_task_named_same,transfer_mechanism,transfer_counterexample,mixed_wheeled
-WHL,Target wheeled robot,none,ackermann:10|differential-drive:40|omnidirectional:5|skid-steer:29|wheeled-unspecified:88,172,30,50,30,32,30,99,131,68,34,0,0,0
+WHL,Target wheeled robot,none,ackermann:10|differential-drive:40|omnidirectional:5|skid-steer:29|wheeled-unspecified:88,172,30,50,30,32,30,100,131,69,37,0,0,0
 ROAD,Road vehicle,R,road-vehicle:12,12,7,1,0,0,4,0,11,0,0,12,0,0
-GND,Other ground robot,G,legged:10|tracked:3,13,1,4,5,3,0,12,6,5,4,13,0,0
-OTH,"Non-ground, handheld, mixed-carrier or no platform",N,aerial:7|aquatic:1|handheld:4|mixed:30|none:5,47,29,1,1,10,6,11,39,7,0,46,1,10
+GND,Other ground robot,G,legged:10|tracked:3,13,1,4,5,3,0,12,6,5,5,13,0,0
+OTH,"Non-ground, handheld, mixed-carrier or no platform",N,aerial:7|aquatic:1|handheld:4|mixed:30|none:5,47,29,1,1,10,6,11,39,7,1,46,1,10

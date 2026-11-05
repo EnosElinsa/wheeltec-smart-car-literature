@@ -151,12 +151,16 @@ assert A['task_manipulated_same'] < A['task_named_same'] / 2   # abstract, Sec. 
 RECHECK = stats['coding']['review_recheck']
 macros.update({'DrivetrainRecheckAdded': RECHECK['drivetrain_added'], 'LevelRecheckWorks': RECHECK['level_works'],
                'LevelRecheckRevised': RECHECK['level_revised'],
-               'LocatorCorrectionWorks': RECHECK['locator_corrected_works']})
+               'LocatorCorrectionWorks': RECHECK['locator_corrected_works'],
+               'SettingRecheckRevised': RECHECK['setting_revised']})
 assert macros['DrivetrainEffectCount'] == 6 + RECHECK['drivetrain_added']   # Table II note, S7: "It added n, for N works in all"
 assert RECHECK['drivetrain_added'] > 0                                       # S7: "It added n" rather than "It found none"
 assert RECHECK['level_works'] == 19 and RECHECK['level_kept'] + RECHECK['level_revised'] == 19   # S7: "the n works whose ..."
 assert RECHECK['level_kept'] > 0 and RECHECK['level_revised'] > 1           # S7: "It kept the level ..., lowered it for n works"
 assert RECHECK['locator_corrected_works'] > 1                               # S7: "corrected the source locations of n works"
+_kept_level = {e['code'] for e in coding.load_codes(coding.ADJUDICATION_LOG)[1] if e['scope'] == coding.REVIEW_SCOPE
+               and e['attribute'] == 'level_degradation' and e['resolution'] == 'recheck-kept'}
+assert RECHECK['setting_revised'] > 1 and set(RECHECK['setting_revised_codes']) <= _kept_level   # S7: "For n of the kept works"
 SENS = {r['row_id']: r for r in stats['sensitivity']}
 def sens_share(row_id):
     return pct(SENS[row_id]['numerator'], SENS[row_id]['denominator'])
@@ -177,7 +181,7 @@ macros.update({'StageMinShare': min(stage_out), 'StageMaxShare': max(stage_out),
 base = SENS['S-no-coverage']
 macros.update({'DegTaskCountBase': base['numerator'], 'CoreCountBase': base['denominator'],
                'DegTaskShareBase': sens_share('S-no-coverage')})
-assert (macros['DegTaskCountBase'], macros['CoreCountBase']) == (76, 228)           # S1 sensitivity sentence
+assert (macros['DegTaskCountBase'], macros['CoreCountBase']) == (77, 228)           # S1 sensitivity sentence
 assert macros['CoreCountBase'] == len(technical_rows) - batches[COVERAGE_BATCH]
 # Interface ranking (Sec. X and Supplement S8).
 CAND = stats['candidates']
@@ -239,7 +243,11 @@ DECISIONS = json.loads((M / 'data/interface-decisions.json').read_text(encoding=
 category = {d['candidate_id']: d['category'] for d in DECISIONS}
 rejected = CAND['rejected']
 assert all(c in category for c in rejected)                                                  # every higher-ranked candidate has a reason
-assert sum(category[c] == 'merged' for c in rejected) == 6 and sum(category[c] == 'named-gap' for c in rejected) == 1
+assert sum(category[c] == 'merged' for c in rejected) == 5 and sum(category[c] == 'named-gap' for c in rejected) == 1
+# Sec. X opening and S8: "Five of the n candidates ... merged into Interface 4 ... or Interface 2 ..., with the sixth named"
+assert (CANDS['PLN-SEM:DYN']['direct_wheeled_joint'], CANDS['PLN-REL:MOD']['direct_wheeled_joint']) == ('4', '5')
+# data/interface-decisions.json reasons: "Four works already give direct ..." (PLN-SEM:DYN), "Five works ..." (PLN-REL:MOD)
+assert len(rejected) == 6 and sorted(d['interface'] for d in DECISIONS if d['candidate_id'] in rejected and d['category'] == 'merged') == [2, 4, 4, 4, 4]
 assert [c for c, r in CANDS.items() if r['rank_by_gap_share'] == '1'] == ['PLN-REL:ACT'] \
     and CANDS['PLN-REL:ACT']['interface'] == 'none' and category['PLN-REL:ACT'] == 'named-gap' \
     and min(IFACE[i]['rank_by_gap_share'] for i in NUMBER) > 1   # Sec. X opening, S8: Rank B "below the actuator-fault candidate"

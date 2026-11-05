@@ -659,6 +659,8 @@ def review_recheck_summary(log):
     drive = [e for e in rows if e['attribute'] == 'drivetrain_effect' and e['resolution'] == 'recheck-revised']
     assert all((e['primary_value'], e['resolved_value']) == ('no', 'yes') for e in drive), 'drivetrain rows must be no to yes'
     corrected = [e for e in rows if e['resolution'] == 'locator-corrected']
+    setting = [e for e in rows if e['attribute'] == 'deg_task_setting' and e['resolution'] == 'recheck-revised']
+    assert all(e['resolved_value'] == 'physical' for e in setting), 'setting rows must end at physical'
     return {'rows': len(rows), 'values_changed': sum(e['resolved_value'] != e['primary_value'] for e in rows),
             'level_works': len({e['code'] for e in level}),
             'level_kept': len({e['code'] for e in level if e['resolution'] == 'recheck-kept'}),
@@ -666,6 +668,8 @@ def review_recheck_summary(log):
             'level_revised_codes': sorted({e['code'] for e in revised}),
             'drivetrain_added': len({e['code'] for e in drive}),
             'drivetrain_added_codes': sorted({e['code'] for e in drive}),
+            'setting_revised': len({e['code'] for e in setting}),
+            'setting_revised_codes': sorted({e['code'] for e in setting}),
             'locator_corrections': len(corrected),
             'locator_corrected_works': len({e['code'] for e in corrected})}
 
