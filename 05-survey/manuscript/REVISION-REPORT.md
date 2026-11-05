@@ -3,6 +3,7 @@
 The [main survey](survey.pdf) has 24 pages, 270 references, three figures and eight tables, which is the maximum length of IEEE T-IV surveys. The [supplement](supplement.pdf) has 17 pages, 228 references, one figure and 13 tables. All 245 selected publications appear in substantive main-text prose, and every corpus work dates from 2021-2026. Seven of the 25 background references are foundational pre-2021 sources cited for attribution. Evaluation counts cover 244 technical publications and exclude the context review.
 
 The latest revisions are as follows.
+- [REVIEW-FIXES-5.md](revision/REVIEW-FIXES-5.md) answers M1-M4 and m2 of a simulated re-review. A recheck through the adjudication log kept the physical evidence level of 17 of 19 works and lowered 2, added 4 drivetrain-dependent effects (10 in all) and corrected the source locations of 2 works. The abstract and conclusion give the D1 share (27 works, 11%) next to the headline. Section X quotes each interface rank with its best candidate and Rank B, states that the count-based rule favors larger candidates, and says that the rule was fixed in codebook version 1.0 before coding.
 - [REVIEW-FIXES-4.md](revision/REVIEW-FIXES-4.md) codes all 245 works with a published codebook and a language-model second coding of 40 sampled works (median kappa 0.81 before adjudication, not human inter-rater reliability). Task outcomes under a named degradation condition in the same experiment now cover 80 of the 244 technical publications (33%), from 1 of 67 localization to 36 of 56 planning studies. Fig. 1 becomes a degradation-source by function matrix, the four interfaces are placed in a pre-registered ranking, and Section I positions the survey against automated-driving standards. The second part adds the reporting checklist (Table VII), applies the minor items B10-B21, names the AI tools in the acknowledgment and reruns the audits.
 
 - [ROADMAP-AUDIT-AND-SURVEYS.md](revision/ROADMAP-AUDIT-AND-SURVEYS.md) adds Table V, a research roadmap for the four open interfaces. It also adds condition-based guidance to the section syntheses, tightens the abstract, and checks the critical characterizations of Sections IV-X against the review cards and transcriptions, which corrected five wordings. Four related surveys join Table I.
@@ -17,10 +18,10 @@ Assessment remains uneven: 23 full reviews and 222 light reviews in the manuscri
 
 Open before submission:
 
-- The main paper is at the 24-page maximum. The last page balances at 658 and 667 pt with `\IEEEtriggeratref{256}`.
+- The main paper is at the 24-page maximum. Both columns of the last page end at 748 pt without a reference trigger (`\IEEEtriggeratref{999}`).
 - The review proposed restructuring Sections IV-VIII. This revision condensed them instead. Further works named by the review were not acquired; NeBula exists only as a preprint.
 - The author must confirm the acknowledgment wording. [REVIEW-FIXES-4.md](revision/REVIEW-FIXES-4.md) lists its uncertainties and the pre-existing Crossref reference lists of fifteen background records.
 - Author information and submission declarations are incomplete.
 - This is a working draft with non-exhaustive coverage and no new robot experiments.
 
-[Current revision](revision/REVIEW-FIXES-4.md) · [Evidence guide](revision/README.md) · [Build instructions](README.md)
+[Current revision](revision/REVIEW-FIXES-5.md) · [Evidence guide](revision/README.md) · [Build instructions](README.md)

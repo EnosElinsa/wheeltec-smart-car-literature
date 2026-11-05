@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "purpose": "Reasons for not developing an interface candidate that the pre-registered ranking (06-data/evidence-coding/codebook.json, interface_ranking) places above the lowest-ranked developed interface, and for the alternatives named by the internal review. scripts/build_data.py joins the reasons into generated/interface-candidates.csv and Supplement Table tab:candidates and asserts that every such candidate has one.",
+  "purpose": "Reasons for not developing an interface candidate that the ranking rule fixed in codebook version 1.0 before coding (06-data/evidence-coding/codebook.json, interface_ranking) places above the lowest-ranked developed interface, and for the alternatives named by the internal review. scripts/build_data.py joins the reasons into generated/interface-candidates.csv and Supplement Table tab:candidates and asserts that every such candidate has one.",
   "categories": {
     "merged": "The candidate's unresolved question is part of a developed interface, whose matched comparison varies the candidate's source.",
     "named-gap": "The candidate is not developed as an interface. Section X-E names it as a further evaluation gap.",

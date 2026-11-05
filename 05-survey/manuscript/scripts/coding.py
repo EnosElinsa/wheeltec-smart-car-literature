@@ -758,7 +758,7 @@ def agreement_rows(primary, second, log, codebook):
             for s in sources:
                 add(name, f'flag {s}', 'flag', True, [s in get_p(c) for c in codes], [s in get_s(c) for c in codes],
                     len(codes))
-    # Response family: the primary family (pre-registered) and, for information, the full value.
+    # Response family: the primary family (fixed in codebook version 1.0 before coding) and, for information, the full value.
     families = [f['id'] for f in codebook['response_families']]
     a = [primary[c]['response_family'].split('|')[0] for c in codes]
     b = [second[c]['response_family'].split('|')[0] for c in codes]
@@ -1042,7 +1042,7 @@ def cooccurrence(codes, codebook):
 
 
 def cell_owners(codebook):
-    """Candidate id -> interfaces and named alternatives whose pre-registered cells contain it."""
+    """Candidate id -> interfaces and named alternatives whose cells in codebook version 1.0 contain it."""
     owners = {}
     ranking = codebook['interface_ranking']
     entries = [(itf['cells'], 'interfaces', itf['id']) for itf in ranking['interfaces']]
@@ -1116,7 +1116,7 @@ def interface_ranking(codes, codebook):
         note = [f"{c['works']} works, {c['direct_wheeled_joint']} with direct joint wheeled evidence, {c['wheeled_works']} target wheeled"]
         pair = f"{c['function_a']}-{c['function_b']}"
         if pair in pairs and not own['interfaces']:
-            note.append(f"function pair of Interface {' and '.join(pairs[pair])} with a source outside its pre-registered cells")
+            note.append(f"function pair of Interface {' and '.join(pairs[pair])} with a source outside its cells in codebook version 1.0")
         if c['works'] and not c['wheeled_works']:
             note.append('no target wheeled work')
         if own['alternatives']:
@@ -1389,7 +1389,7 @@ def table_sensitivity(rows, codebook):
     header = bold_row(['Row', 'Works', r'\%'] + [sections[f] + r' \%' for f in functions] + ['RF1', 'RF2', 'RF3', 'RF4'])
     return table('tab:sensitivity', 'Sensitivity of the share of technical works that report a named degradation '
                  'condition and a task outcome in the same experiment. Rows vary the definition, the coding unit or '
-                 'the subset. RF1-RF4 state whether each pre-registered finding holds.',
+                 'the subset. RF1-RF4 state whether each finding fixed in codebook version 1.0 before coding holds.',
                  '@{}Yrrrrrrrcccc@{}', header, body,
                  'Definition rows change the measure and use all technical works. Other rows apply the headline '
                  'measure to a subset. A finding is n/a when a function it compares has fewer than three works in '
@@ -1422,7 +1422,7 @@ def table_candidates(ranking, reasons=None):
                  str(c['rank_by_gap_share'] or '--'), status, tex_escape(reasons.get(c['candidate_id'], ''))]
         body.append(' & '.join(cells) + r' \\')
     header = bold_row(['Rank', 'Candidate', 'n', 'j', 'w', 'Gap', 'Rank A', 'Rank B', 'Status', 'Reason'])
-    return table('tab:candidates', 'Interface candidates ranked by the pre-registered rule. A candidate is a '
+    return table('tab:candidates', 'Interface candidates ranked by the rule fixed in codebook version 1.0 before coding. A candidate is a '
                  'function pair with one coupling source. n counts its works, j the works with direct joint wheeled '
                  'evidence and w the target wheeled works. Rank A drops the integration-questions stage and Rank B '
                  'sorts by gap share.', '@{}rL{1.9cm}rrrrrrL{1.5cm}Y@{}', header, body, colsep='3pt')
@@ -1468,8 +1468,8 @@ def table_agreement(rows):
                  r'binary flag per value. For them, $\kappa$ and Agr. pool all flag decisions of the attribute (for '
                  r'functions the four non-principal functions of each work). Exact gives the share of works with '
                  r'identical sets. Flag $\kappa$ gives the range of the per-flag kappas (functions over the 32 works whose '
-                 r'principal function differs, sources over all 40 works). The pre-registered unit of response '
-                 r'family is the primary family. The second row compares the full value, which in codebook version '
+                 r'principal function differs, sources over all 40 works). The unit of response family fixed in '
+                 r'codebook version 1.0 is the primary family. The second row compares the full value, which in codebook version '
                  r'1.0 could add an optional secondary family. Named sources and publication class are derived from '
                  r'the three class columns. Works counts the works with differing values and P/S/B how the logged '
                  r'disagreements were resolved: primary kept, second adopted, both revised.', colsep='3pt')

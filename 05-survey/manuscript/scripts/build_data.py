@@ -142,6 +142,21 @@ macros.update({'DegTaskCount': A['task_named_same'], 'DegTaskShare': pct(A['task
                'ComputeUnreported': A['publications'] - A['placement'],
                'GroupWHL': A['group_WHL'], 'GroupROAD': A['group_ROAD'], 'GroupGND': A['group_GND'], 'GroupOTH': A['group_OTH'],
                'DrivetrainEffectCount': A['drivetrain_effect']})
+# D1 share of the headline (abstract, Sec. XI), the D2 rest (Sec. IX-B) and the localization named share (Sec. IX-B).
+macros.update({'DOneSameShare': pct(A['task_manipulated_same'], A['publications']),
+               'DTwoSameCount': A['task_named_same'] - A['task_manipulated_same'],
+               'LocNamedShare': pct(V2['LOC']['named'], V2['LOC']['publications'])})
+assert A['task_manipulated_same'] < A['task_named_same'] / 2   # abstract, Sec. XI: "Only n (s%) inject or vary that condition"
+# Review recheck of the final codes (Table II note, Supplement S7).
+RECHECK = stats['coding']['review_recheck']
+macros.update({'DrivetrainRecheckAdded': RECHECK['drivetrain_added'], 'LevelRecheckWorks': RECHECK['level_works'],
+               'LevelRecheckRevised': RECHECK['level_revised'],
+               'LocatorCorrectionWorks': RECHECK['locator_corrected_works']})
+assert macros['DrivetrainEffectCount'] == 6 + RECHECK['drivetrain_added']   # Table II note, S7: "It added n, for N works in all"
+assert RECHECK['drivetrain_added'] > 0                                       # S7: "It added n" rather than "It found none"
+assert RECHECK['level_works'] == 19 and RECHECK['level_kept'] + RECHECK['level_revised'] == 19   # S7: "the n works whose ..."
+assert RECHECK['level_kept'] > 0 and RECHECK['level_revised'] > 1           # S7: "It kept the level ..., lowered it for n works"
+assert RECHECK['locator_corrected_works'] > 1                               # S7: "corrected the source locations of n works"
 SENS = {r['row_id']: r for r in stats['sensitivity']}
 def sens_share(row_id):
     return pct(SENS[row_id]['numerator'], SENS[row_id]['denominator'])
@@ -170,6 +185,7 @@ IFACE = {i['id']: i for i in CAND['interfaces']}
 NUMBER = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four'}
 for i, word in NUMBER.items():
     macros.update({'Iface' + word + 'Rank': IFACE[i]['rank'], 'Iface' + word + 'RankA': IFACE[i]['rank_without_integration_stage'],
+                   'Iface' + word + 'RankB': IFACE[i]['rank_by_gap_share'],
                    'Iface' + word + 'Works': CAND['interface_works'][str(i)],
                    'Iface' + word + 'Direct': CAND['interface_direct_wheeled'].get(str(i), 0)})
 macros.update({'CandidateCount': CAND['eligible_count'], 'RejectedCount': len(CAND['rejected']),
@@ -180,7 +196,19 @@ TRACE = list(csv.DictReader((G / 'interface-traceability.csv').open(encoding='ut
 direct_codes = {i: [t['code'] for t in TRACE if t['interface'] == str(i) and t['direct_wheeled'] == 'yes'] for i in NUMBER}
 assert direct_codes[1] == ['R11'] and direct_codes[3] == ['M10'] and direct_codes[4] == []   # Sec. X-A, X-C, X-D
 assert max(NUMBER, key=lambda i: len(direct_codes[i])) == 2                                  # Sec. X-B: "the most ... of the four"
-assert IFACE[4]['rank'] == 1                                                                 # Sec. X-D: "first in the ranking"
+assert IFACE[4]['rank'] == 1                                                                 # Sec. X opening, S8: Interface 4 ranks first
+# Ranks of the interface cells (Sec. X opening and Supplement S8), from the candidate table.
+CANDS = {r['candidate_id']: r for r in csv.DictReader((G / 'interface-candidates.csv').open(encoding='utf-8', newline=''))}
+best_cell = {i: min((c for c in CANDS.values() if c['interface'] == str(i) and c['eligible'] == 'yes'),
+                    key=lambda c: int(c['rank']))['candidate_id'] for i in NUMBER}
+assert best_cell == {1: 'LOC-REL:PER', 2: 'PLN-SEM:MOD', 3: 'LOC-PLN:PER', 4: 'LOC-MRC:COM'}   # Sec. X opening, S8: rank through its best cell
+assert all(int(CANDS[best_cell[i]]['rank']) == IFACE[i]['rank'] for i in NUMBER)
+assert CANDS['PLN-SEM:RES']['interface'] == '2' and CANDS['PLN-SEM:RES']['eligible'] == 'yes'   # Sec. X opening, S8: computation-limit cell
+assert CANDS['LOC-PLN:TER']['interface'] == '3' and CANDS['LOC-PLN:TER']['eligible'] == 'no' \
+    and int(CANDS['LOC-PLN:TER']['works']) < 3                                               # S8: terrain cell below the eligibility threshold
+macros.update({'IfaceTwoResRank': int(CANDS['PLN-SEM:RES']['rank']), 'IfaceThreeTerWorks': int(CANDS['LOC-PLN:TER']['works'])})
+ranked = sorted((c for c in CANDS.values() if c['eligible'] == 'yes'), key=lambda c: int(c['rank']))
+assert all(int(a['gap']) >= int(b['gap']) for a, b in zip(ranked, ranked[1:]))   # Sec. X opening, S8: "counting works ranks ... more works above"
 whl_four = [t for t in TRACE if t['interface'] == '4' and t['platform_group'] == 'WHL']
 assert {t['level_degradation'] for t in whl_four} <= {'R', 'D', 'O', 'S', 'none'}           # Sec. X-D: "only in recorded data, ..."
 macros['IfaceFourWhl'] = len(whl_four)
@@ -194,7 +222,17 @@ assert EV['M10']['src_selected'] == 'PER' and EV['M10']['deg_task_setting'] == '
 assert sorted(k for k, e in EV.items() if e['drivetrain_effect'] == 'yes') == sorted(('E02', 'R33', 'M39', 'E04', 'S07', 'N17',
                                                                                      'M04', 'M09', 'N10', 'S16'))
 assert EV['S48']['drivetrain_effect'] == 'no' and EV['M09']['drivetrain_effect'] == 'yes' \
-    and all(EV[k]['drivetrain'] == 'omnidirectional' for k in ('M09', 'S48'))  # Table II: the two Mecanum studies (M09 yes after the review recheck)
+    and all(EV[k]['drivetrain'] == 'omnidirectional' for k in ('M09', 'S48'))  # Table II: Mecanum slip (M09), the other Mecanum study (S48)
+background_tex = (M / 'sections/02-background.tex').read_text(encoding='utf-8')
+_label = background_tex.index(r'\label{tab:drivetrain}')
+table_ii = background_tex[background_tex.rindex(r'\begin{table}', 0, _label):background_tex.index(r'\end{table}', _label)]
+table_ii_codes = {k.strip()[2:] for g in re.findall(r'\\cite\{([^}]+)\}', table_ii) for k in g.split(',')
+                  if k.strip().startswith('P_')}
+assert 'S48' in table_ii_codes and all(EV[k]['drivetrain_effect'] == 'yes' for k in table_ii_codes - {'S48'})
+# Table II note: "Except for the second Mecanum study, corpus citations mark works coded with a drivetrain-dependent effect."
+assert macros['DTwoSameCount'] == sum(e['deg_task_class'] == 'D2' for e in EV.values() if e['principal_section'] != 'context')
+assert all(EV[k]['deg_task_class'] == 'D2' and EV[k]['deg_task_setting'] == 'physical'
+           for k in ('M14', 'F05'))   # Sec. IX-B: "some resting on one physical run per method" (M14, F05 PDF p. 7)
 assert {t['code']: t['platform_group'] for t in TRACE if t['interface'] == '1' and t['code'] in ('X07', 'M28')} == \
     {'X07': 'ROAD', 'M28': 'ROAD'}                                                          # Sec. X-A: road-vehicle integrity analyses
 DECISIONS = json.loads((M / 'data/interface-decisions.json').read_text(encoding='utf-8'))['decisions']
@@ -202,6 +240,9 @@ category = {d['candidate_id']: d['category'] for d in DECISIONS}
 rejected = CAND['rejected']
 assert all(c in category for c in rejected)                                                  # every higher-ranked candidate has a reason
 assert sum(category[c] == 'merged' for c in rejected) == 6 and sum(category[c] == 'named-gap' for c in rejected) == 1
+assert [c for c, r in CANDS.items() if r['rank_by_gap_share'] == '1'] == ['PLN-REL:ACT'] \
+    and CANDS['PLN-REL:ACT']['interface'] == 'none' and category['PLN-REL:ACT'] == 'named-gap' \
+    and min(IFACE[i]['rank_by_gap_share'] for i in NUMBER) > 1   # Sec. X opening, S8: Rank B "below the actuator-fault candidate"
 merged = {d['candidate_id']: d['interface'] for d in DECISIONS if d['category'] == 'merged'}
 assert merged == {'PLN-MRC:COM': 4, 'LOC-MRC:SFA': 4, 'MRC-REL:SFA': 4, 'LOC-MRC:PER': 4,
                   'PLN-SEM:DYN': 2, 'PLN-REL:MOD': 2}               # Sec. X opening: the merged cases listed per interface

@@ -2,7 +2,7 @@
   "date": "2026-11-05",
   "scope": "Every sentence in Sections IV-X that reports a numerical result (percentages, times, rates, counts with units, or decimal values).",
   "method": "Numbers in comparison records were checked earlier against the PDFs (data/within-study-comparisons.json). For the other sentences, every number was searched in the review card and in the local full-text transcription, and the numbers of each sentence were required to occur together in one transcription passage. Numbers taken from the 2026-11-04 coverage additions (K01-K16) and the numbers added in round 4 (E47) were also re-read on the physical PDF page named in card_locator. Sample statistics come from generated/stats.tex and are asserted in scripts/build_data.py. Source excerpts remain local.",
-  "sentences": 29,
+  "sentences": 30,
   "in_comparison_records": 10,
   "mismatches": 0,
   "round4_changes": [
@@ -330,7 +330,7 @@
         "10"
       ],
       "status": "numbers found together in the local full-text transcription",
-      "card_locator": "R26 p. 6, Table III",
+      "card_locator": "R26 PDF p. 6, Table II",
       "sentence": "With the planner unchanged, the affordance model of a wheeled robot raises its success on a ramp-or-stairs task from 6 to 9 of 10 runs."
     },
     {
@@ -471,6 +471,77 @@
       "status": "numbers found together in the local full-text transcription",
       "card_locator": "N20 p. 6",
       "sentence": "DMSA processes data at 1.5--4 times the recording duration and distinguishes unsupported sensor adaptations from failed runs~ ."
+    },
+    {
+      "section": "09",
+      "codes": [
+        "M14",
+        "F05"
+      ],
+      "numbers": [
+        "one"
+      ],
+      "status": "numbers checked on the cited PDF page",
+      "card_locator": "M14 PDF p. 7; F05 PDF p. 7",
+      "sentence": "The other 53 lack such a comparator, some resting on one physical run per method, as in the LRAE field test~ and the outdoor route of VL-TGS~ ."
+    }
+  ],
+  "round5_changes": [
+    {
+      "section": "Abstract",
+      "codes": [],
+      "change": "added",
+      "text": "D1 count and share of the headline (27 of 244, 11%; DOneSameCount, DOneSameShare) after the headline sentence; the interface ranks 4, 9, 12 and 1 removed, the four interfaces named as the agenda of the survey"
+    },
+    {
+      "section": "IX-B",
+      "codes": [],
+      "change": "added",
+      "text": "Localization share with a named condition and component measures (91%, LocNamedShare) next to the 1% task-outcome share; the estimate named as the natural endpoint of an estimation study"
+    },
+    {
+      "section": "IX-B",
+      "codes": [
+        "M14",
+        "F05"
+      ],
+      "change": "added",
+      "text": "The other 53 headline works (DTwoSameCount, deg_task_class D2) lack a comparator; one physical run per method checked for M14 (one field exploration mission, PDF p. 7) and F05 (each method evaluated in a single run on the outdoor route, PDF p. 7)"
+    },
+    {
+      "section": "X opening",
+      "codes": [],
+      "change": "changed",
+      "text": "Each interface rank quoted with its best candidate (LOC-REL:PER 4, PLN-SEM:MOD 9 with PLN-SEM:RES 23, LOC-PLN:PER 12, LOC-MRC:COM 1); Rank B 5, 23, 18 and 12 below PLN-REL:ACT (Rank B 1); one sentence on the count-based rule; rule fixed in codebook version 1.0 before coding (commit 67872f4)"
+    },
+    {
+      "section": "Supplement S8",
+      "codes": [],
+      "change": "changed",
+      "text": "Ranks with cell ids, PLN-SEM:RES rank 23 (IfaceTwoResRank), LOC-PLN:TER 2 works below the eligibility threshold (IfaceThreeTerWorks), Rank B 5, 23, 18 and 12 (IfaceOneRankB-IfaceFourRankB)"
+    },
+    {
+      "section": "X-C, X-D",
+      "codes": [],
+      "change": "removed",
+      "text": "X-C clause with the 6 works of Interface 3 (repeats Table VIII); X-D clause on the first rank of Interface 4 (the rank is in the X opening)"
+    },
+    {
+      "section": "XI",
+      "codes": [],
+      "change": "added",
+      "text": "D1 share (11%, DOneSameShare) next to the 33% headline share; \"The share\" became \"The headline share\""
+    },
+    {
+      "section": "Table II note, Supplement S7",
+      "codes": [
+        "M04",
+        "M09",
+        "N10",
+        "S16"
+      ],
+      "change": "added",
+      "text": "DrivetrainEffectCount 10 after the symmetric recheck (6 before, DrivetrainRecheckAdded 4); S7 recheck of 19 levels (LevelRecheckWorks), 2 lowered (LevelRecheckRevised), locators of 2 works corrected (LocatorCorrectionWorks); all asserted in build_data.py"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-05",
   "scope": "Critical characterizations in Sections IV-X: sentences with a limiting marker that cite exactly one corpus work, and limiting clauses that end in a single citation inside multi-citation sentences.",
-  "method": "Each claim was matched against its review card and the local full-text transcription by keyword overlap. Claims without a direct match were checked with targeted phrase searches. Source excerpts remain local and are not published. Round 4 adds the corrections caused by the final evidence codes, the claim entries of the new or changed characterizations (checked against review cards and PDF pages, locators only), and removed or regrouped claims.",
+  "method": "Each claim was matched against its review card and the local full-text transcription by keyword overlap. Claims without a direct match were checked with targeted phrase searches. Source excerpts remain local and are not published. Round 4 adds the corrections caused by the final evidence codes, the claim entries of the new or changed characterizations (checked against review cards and PDF pages, locators only), and removed or regrouped claims. Round 5 adds the claims changed for the simulated re-review of degradation evidence, interface ranks and drivetrain evidence, each checked against the final codes, generated/interface-candidates.csv or the cited PDF page, locators only.",
   "sentence_claims_checked": 64,
   "clause_claims_checked": 68,
   "clause_claims_with_targeted_search": 34,
@@ -868,6 +868,134 @@
       "code": "M10",
       "claim": "The single direct wheeled study, OPEN, completes a GPS-disabled campus delivery with no pose-uncertainty term in its traversability cost , which leaves this question with extrapolated evidence only.",
       "status": "corrected"
+    }
+  ],
+  "round5_claims": [
+    {
+      "location": "IX-B",
+      "codes": [],
+      "claim": "Evidence for localization and mapping stops at the estimate, the natural endpoint of an estimation study",
+      "basis": "all 67 localization studies report component measures (asserted in build_data.py); the added clause qualifies the gap rather than adding a count"
+    },
+    {
+      "location": "IX-B",
+      "codes": [
+        "M14",
+        "F05"
+      ],
+      "claim": "The other 53 headline works lack a comparator, some resting on one physical run per method, as in the LRAE field test and the outdoor route of VL-TGS",
+      "basis": "DTwoSameCount equals the deg_task_class D2 count; M14 and F05 coded D2 with deg_task_setting physical (asserted); M14 PDF p. 7 (one real-world exploration mission), F05 PDF p. 7 (each method evaluated in a single run)"
+    },
+    {
+      "location": "X opening, Supplement S8",
+      "codes": [],
+      "claim": "Each interface takes the rank of its best candidate: 4 (LOC-REL:PER) for Interface 1 and 12 (LOC-PLN:PER) for Interface 3 through perceptual degradation, 9 (PLN-SEM:MOD) for Interface 2 through learned inference error (23 through computation limits, PLN-SEM:RES), 1 (LOC-MRC:COM) for Interface 4 through communication loss; the terrain cell LOC-PLN:TER has 2 works, below the eligibility threshold",
+      "basis": "generated/interface-candidates.csv; best eligible cell per interface, PLN-SEM:RES and LOC-PLN:TER asserted in build_data.py"
+    },
+    {
+      "location": "X opening, Supplement S8",
+      "codes": [],
+      "claim": "At equal direct evidence, counting works ranks a candidate with more works above one with fewer, with candidate sizes shaped by the selection stages",
+      "basis": "ranking rule of codebook version 1.0 (sort by works without direct joint wheeled evidence); build_data.py asserts that the gap does not increase down the ranking"
+    },
+    {
+      "location": "X opening, Supplement S8",
+      "codes": [
+        "E52",
+        "E55",
+        "M15",
+        "F02",
+        "S15"
+      ],
+      "claim": "Ranked by gap share (Rank B), Interfaces 1-4 rank 5, 23, 18 and 12, below the actuator-fault candidate named in Section X-E",
+      "basis": "rank_by_gap_share of generated/interface-candidates.csv; the only Rank B 1 is PLN-REL:ACT, not an interface, category named-gap in data/interface-decisions.json (asserted)"
+    },
+    {
+      "location": "X opening, Supplement S8, scripts/coding.py tables, data/interface-decisions.json",
+      "codes": [],
+      "claim": "The ranking rule was fixed in the public codebook before coding (commit 67872f4); \"pre-registered\" removed",
+      "basis": "commit 67872f4 holds codebook version 1.0 (committed 2026-11-04 13:16), before the primary codes (commit 64531cd, 14:48); no registry entry exists, so the term was replaced"
+    },
+    {
+      "location": "X opening",
+      "codes": [],
+      "claim": "First sentence shortened to the numbering and the matched comparison of Table VIII",
+      "basis": "the clause on insufficiently characterized behavior repeated the open questions of X-A to X-D"
+    },
+    {
+      "location": "Table II (differential, skid steer, Ackermann)",
+      "codes": [
+        "M04",
+        "N10",
+        "S16"
+      ],
+      "claim": "Citations added to \"Sideways moves need rotation\" (M04), \"Slip varies with speed, maneuver, and surface\" (N10) and \"Turning radius and input bounds limit corrections\" (S16)",
+      "basis": "drivetrain_effect yes after the review recheck: M04 PDF p. 7, Sec. 5.1 (the nonholonomic robot cannot move sideways); N10 PDF p. 7, Sec. VI-C (skid-steer motion causes pose drift); S16 PDF p. 6, Sec. 3.1.1 and p. 7, Sec. 3.1.2 (planner built for steering limits and a minimum radius of curvature)"
+    },
+    {
+      "location": "Table II (omnidirectional)",
+      "codes": [
+        "M09",
+        "S48"
+      ],
+      "claim": "Mecanum rollers can slip on uneven ground; another Mecanum study reports no drive-specific effect",
+      "basis": "replaces the round-4 claim \"No drive-specific effect reported on Mecanum bases\"; M09 drivetrain_effect yes after the review recheck (PDF p. 3, Sec. II-A), S48 no; asserted in build_data.py"
+    },
+    {
+      "location": "Table II note",
+      "codes": [
+        "E02",
+        "R33",
+        "M39",
+        "E04",
+        "S07",
+        "N17",
+        "M04",
+        "M09",
+        "N10",
+        "S16"
+      ],
+      "claim": "Except for the second Mecanum study, corpus citations mark works coded with a drivetrain-dependent effect. The corpus has 10 such works under the definition narrowed in codebook version 1.1, after a recheck of all works for missed cases",
+      "basis": "build_data.py asserts that every corpus key cited in the Table II float except S48 has drivetrain_effect yes and that DrivetrainEffectCount = 6 + DrivetrainRecheckAdded"
+    },
+    {
+      "location": "Sec. I (contributions)",
+      "codes": [],
+      "claim": "Responses compared across five functions and their sensing, model, and action requirements, with reported drivetrain effects",
+      "basis": "the survey compares drivetrain effects only where works report them (10 works, Table II)"
+    },
+    {
+      "location": "X-A",
+      "codes": [],
+      "claim": "\"a wheeled robot can often also relocalize or reposition\" became \"can also\"; the X-A sentence on the different trigger objects was removed (repeats the monitor list of X-A)",
+      "basis": "no frequency is coded for relocalization or repositioning; Table II gives the recovery motions per drive"
+    },
+    {
+      "location": "X-D",
+      "codes": [],
+      "claim": "Clause \"which places it first in the ranking\" removed",
+      "basis": "the rank of Interface 4 is stated with its candidate in the X opening"
+    },
+    {
+      "location": "XI",
+      "codes": [],
+      "claim": "Only 11% obtain the headline combination under a condition injected or varied against a comparator; the sentence \"These dependencies explain why improved component scores alone do not establish more reliable navigation\" was removed (repeats the evaluation argument of Sec. IX)",
+      "basis": "DOneSameShare from generated/stats.tex; assertion that D1 is fewer than half of the headline works"
+    },
+    {
+      "location": "Supplement S7",
+      "codes": [
+        "F09",
+        "N05",
+        "E44",
+        "R26",
+        "M04",
+        "M09",
+        "N10",
+        "S16"
+      ],
+      "claim": "A further recheck searched all works for missed drivetrain-dependent effects and added 4 (10 in all), read the PDF pages of the 19 works with a physical level but no physical task outcome under a named condition, lowered the level for 2 and corrected the source locations of 2 works; a consistency check of the final codes now requires a stated physical result for the physical level",
+      "basis": "stats.json coding.review_recheck; adjudication-log.csv review-recheck rows; coding.py CR21 and --check-final; counts asserted in build_data.py"
     }
   ]
 }

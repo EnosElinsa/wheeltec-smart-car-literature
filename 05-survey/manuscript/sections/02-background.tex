@@ -19,6 +19,13 @@ An ideal bicycle approximation for Ackermann steering instead gives
 \end{equation}
 where $L$ is the wheelbase and $\delta$ is the steering angle. Table~\ref{tab:drivetrain} lists how slip, steering limits, and wheel arrangement violate \eqref{eq:unicycle}--\eqref{eq:ackermann} for each drivetrain and which recovery motions remain available. On uneven ground, suspension, pitch, roll, clearance, traction, and payload further affect feasibility. A planar collision-free path may therefore be physically unsuitable even when localization is accurate.
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/fig-matrix.pdf}
+\caption{Degradation-source by function evidence matrix of the \CoreCount{} technical publications. Rows group nine degradation sources by the navigation assumption they violate. The right column lists the response families that address each assumption, by subsection. In each cell, $a/n/m$ counts the works of the section that address the source, name it as an evaluated condition (D1 or D2), and inject or vary it against a comparator (D1). The second line splits the $a$ works into target wheeled robots (W), road vehicles (R), other ground robots (G), and non-ground, handheld, mixed, or unspecified carriers (N). Shading marks the strongest evidence setting among the $n$ works. A work appears in every source row it addresses but only in the column of its principal section. Counts describe the purposively selected sample.}
+\label{fig:matrix}
+\end{figure*}
+
 \begin{table}[!t]
 \centering
 \caption{Drivetrain type, the kinematic assumption that degradation violates, and the recovery motions that remain available.}
@@ -28,26 +35,19 @@ where $L$ is the wheelbase and $\delta$ is the steering angle. Table~\ref{tab:dr
 \toprule
 \textbf{Drive} & \textbf{Degradation effect} & \textbf{Recovery motions} \\
 \midrule
-Differential, \eqref{eq:unicycle}--\eqref{eq:differential} & Slip and wheel lift break the encoder model. Covariance can grow along unexplained motion~\cite{P_E02} & Turning in place, reversing. Sideways moves need rotation~\cite{P_R33} \\
+Differential, \eqref{eq:unicycle}--\eqref{eq:differential} & Slip and wheel lift break the encoder model. Covariance can grow along unexplained motion~\cite{P_E02} & Turning in place, reversing. Sideways moves need rotation~\cite{P_R33,P_M04} \\
 \addlinespace[2pt]
-Skid steer, \eqref{eq:differential} & Slip varies with speed, maneuver, and surface~\cite{P_M39}. A fixed model misses side slip at speed~\cite{P_E04} & Turning in place at the cost of odometry. Reversing \\
+Skid steer, \eqref{eq:differential} & Slip varies with speed, maneuver, and surface~\cite{P_M39,P_N10}. A fixed model misses side slip at speed~\cite{P_E04} & Turning in place at the cost of odometry. Reversing \\
 \addlinespace[2pt]
-Ackermann, \eqref{eq:ackermann} & Turning radius and input bounds limit corrections~\cite{P_S07} & No turning in place. Reorientation needs space or reversing \\
+Ackermann, \eqref{eq:ackermann} & Turning radius and input bounds limit corrections~\cite{P_S07,P_S16} & No turning in place. Reorientation needs space or reversing \\
 \addlinespace[2pt]
-Omni\-directional & Lateral motion from the wheel arrangement~\cite{B_Campion1996}. No drive-specific effect reported on Mecanum bases~\cite{P_M09,P_S48} & Sidestepping and turning in place \\
+Omni\-directional & Lateral motion from the wheel arrangement~\cite{B_Campion1996}. Mecanum rollers can slip on uneven ground~\cite{P_M09}. Another Mecanum study reports no drive-specific effect~\cite{P_S48} & Sidestepping and turning in place \\
 \bottomrule
 \end{tabularx}
-\par\vspace{3pt}\parbox{\linewidth}{\footnotesize\raggedright Except for the Mecanum studies, corpus citations mark works coded with a drivetrain-dependent effect. A wheeled-legged robot also recovers by repositioning its wheels to reshape the support polygon, which conventional wheels cannot do~\cite{P_N17}.}
+\par\vspace{3pt}\parbox{\linewidth}{\footnotesize\raggedright Except for the second Mecanum study, corpus citations mark works coded with a drivetrain-dependent effect. The corpus has \DrivetrainEffectCount{} such works under the definition narrowed in codebook version 1.1, after a recheck of all works for missed cases (Section~\ref{S-supp:second-coding} of the supplementary material). A wheeled-legged robot also recovers by repositioning its wheels to reshape the support polygon, which conventional wheels cannot do~\cite{P_N17}.}
 \end{table}
 
 \subsection{The Navigation Stack and Its Degradation}
-\begin{figure*}[t]
-\centering
-\includegraphics[width=\textwidth]{figures/fig-matrix.pdf}
-\caption{Degradation-source by function evidence matrix of the \CoreCount{} technical publications. Rows group nine degradation sources by the navigation assumption they violate. The right column lists the response families that address each assumption, by subsection. In each cell, $a/n/m$ counts the works of the section that address the source, name it as an evaluated condition (D1 or D2), and inject or vary it against a comparator (D1). The second line splits the $a$ works into target wheeled robots (W), road vehicles (R), other ground robots (G), and non-ground, handheld, mixed, or unspecified carriers (N). Shading marks the strongest evidence setting among the $n$ works. A work appears in every source row it addresses but only in the column of its principal section. Counts describe the purposively selected sample.}
-\label{fig:matrix}
-\end{figure*}
-
 Cameras, color and depth (RGB-D) cameras, LiDAR, radar, inertial measurement units (IMUs), wheel encoders, global navigation satellite system (GNSS) receivers, and ultra-wideband (UWB) ranging supply measurements with calibration parameters and timestamps. The estimator infers robot state from these measurements and motion inputs, the mapping algorithm estimates spatial structure, the planner selects a route or trajectory, and the controller converts that reference into actuator commands. A supervisor can interrupt execution when measurements, models, or resources no longer support the current action. Deployed systems such as the Nav2 stack of the robot operating system (ROS)~\cite{B_Nav22020,B_Nav2Survey2023} realize these functions through interacting maps, planners, controllers, and recovery behaviors, as in planner fallback~\cite{P_S16} or behavior-tree supervision~\cite{P_N17}.
 
 \begin{figure*}[t]
