@@ -181,13 +181,18 @@ direct_codes = {i: [t['code'] for t in TRACE if t['interface'] == str(i) and t['
 assert direct_codes[1] == ['R11'] and direct_codes[3] == ['M10'] and direct_codes[4] == []   # Sec. X-A, X-C, X-D
 assert max(NUMBER, key=lambda i: len(direct_codes[i])) == 2                                  # Sec. X-B: "the most ... of the four"
 assert IFACE[4]['rank'] == 1                                                                 # Sec. X-D: "first in the ranking"
+whl_four = [t for t in TRACE if t['interface'] == '4' and t['platform_group'] == 'WHL']
+assert {t['level_degradation'] for t in whl_four} <= {'R', 'D', 'O', 'S', 'none'}           # Sec. X-D: "only in recorded data, ..."
+macros['IfaceFourWhl'] = len(whl_four)
 EV = {r['code']: r for r in csv.DictReader((G / 'evidence-codes.csv').open(encoding='utf-8', newline=''))}
 assert not any({'RES', 'COM'} & set(EV[t['code']]['named_sources'].split('|'))
                for t in TRACE if t['interface'] == '2')                     # Sec. X-B: no computation limit or delay named
 assert all(EV[k]['functions'] == 'PLN' and EV[k]['direct_wheeled_joint'] == 'yes'
            for k in ('K03', 'K05', 'R13', 'R15'))                           # Sec. X-C: terrain planners without LOC
-assert all(EV[k]['drivetrain_effect'] == 'yes' for k in ('E02', 'R33', 'M39', 'E04', 'S07', 'N17'))   # Table II citations
-assert all(EV[k]['drivetrain_effect'] == 'no' and EV[k]['drivetrain'] == 'omnidirectional' for k in ('M09', 'S48'))
+assert EV['M10']['src_manipulated'] == 'MAP' and EV['M10']['deg_task_class'] == 'D1'      # Sec. X-C: direct through map deviations
+assert sorted(k for k, e in EV.items() if e['drivetrain_effect'] == 'yes') == sorted(('E02', 'R33', 'M39', 'E04', 'S07', 'N17'))
+assert all(EV[k]['drivetrain_effect'] == 'no' and EV[k]['drivetrain'] == 'omnidirectional'
+           for k in ('M09', 'S48'))                                 # Table II note: "except the two Mecanum studies"
 assert {t['code']: t['platform_group'] for t in TRACE if t['interface'] == '1' and t['code'] in ('X07', 'M28')} == \
     {'X07': 'ROAD', 'M28': 'ROAD'}                                                          # Sec. X-A: road-vehicle integrity analyses
 DECISIONS = json.loads((M / 'data/interface-decisions.json').read_text(encoding='utf-8'))['decisions']
@@ -195,7 +200,9 @@ category = {d['candidate_id']: d['category'] for d in DECISIONS}
 rejected = CAND['rejected']
 assert all(c in category for c in rejected)                                                  # every higher-ranked candidate has a reason
 assert sum(category[c] == 'merged' for c in rejected) == 6 and sum(category[c] == 'named-gap' for c in rejected) == 1
-assert {d['interface'] for d in DECISIONS if d['category'] == 'merged'} == {2, 4}           # Sec. X: "Interfaces 4 and 2 absorb"
+merged = {d['candidate_id']: d['interface'] for d in DECISIONS if d['category'] == 'merged'}
+assert merged == {'PLN-MRC:COM': 4, 'LOC-MRC:SFA': 4, 'MRC-REL:SFA': 4, 'LOC-MRC:PER': 4,
+                  'PLN-SEM:DYN': 2, 'PLN-REL:MOD': 2}               # Sec. X opening: the merged cases listed per interface
 # Headline count of the frozen primary codes before adjudication (Supplement S7).
 _, primary_codes = coding.load_codes(coding.PRIMARY_CODES)
 macros['DegTaskCountPrimary'] = sum(c['deg_task_class'] in ('D1', 'D2') for c in primary_codes if c['principal_section'] != 'context')
@@ -230,6 +237,19 @@ AGREE_CSV = {r['attribute'] + '|' + r['unit']: r for r in csv.DictReader((G / 'c
 assert (AGREE_CSV['drivetrain_effect|value']['primary_prevalence'], AGREE_CSV['drivetrain_effect|value']['second_prevalence']) == \
     ('yes:1 no:39', 'yes:4 no:36')                                   # Supplement S7: "four works ... to one"
 assert [r['attribute'] for r in sorted(double, key=lambda r: r['kappa'])[:2]] == ['drivetrain_effect', 'nominal_control']
+# Sec. III and Supplement S7: the kappa range runs from the drivetrain effect to incidental sources, which both
+# coders set in the same few source flags.
+assert [r['attribute'] for r in double if r['kappa'] == kappas[-1]] == ['src_incidental']
+incidental = next(r for r in double if r['attribute'] == 'src_incidental')
+_, second_codes = coding.load_codes(coding.SECOND_CODES)
+frozen = {c['code']: c for c in primary_codes}
+flags = lambda c: {(c['code'], s) for s in coding.split_set(c['src_incidental'])}
+inc_second = set().union(*(flags(c) for c in second_codes))
+inc_primary = set().union(*(flags(frozen[c['code']]) for c in second_codes))
+assert inc_second == inc_primary and incidental['works_in_disagreement'] == 0
+assert len(inc_second) / incidental['n'] < 0.01                      # Sec. III: "the rarely coded incidental sources"
+assert incidental['n'] == len(second_codes) * len(coding.load_codebook()['source_order'])
+macros.update({'IncidentalFlags': len(inc_second), 'IncidentalUnits': incidental['n']})
 assert AGREE['corpus_recheck_changes'] == 6                          # Supplement S7: "six further values"
 
 # Qualitative statements that rest on the evidence codes (each comment names the sentence).
@@ -552,6 +572,7 @@ lines = [r'\begin{table*}[t]', r'\centering',
 for item in related['rows']:
     key = item['key']
     assert key in background_keys or key == 'P_X04', key
+    assert item['basis_url'].startswith(('https://www.semanticscholar.org/paper/', 'https://api.crossref.org/works/')), key
     if key.startswith('B_'):
         record = load_record(M, next(v for v in verification if v['key'] == key))
         assert record['DOI'].lower() == item['doi'], key
