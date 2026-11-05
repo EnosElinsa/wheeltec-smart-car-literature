@@ -1,0 +1,241 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     9,
+     10
+    ]
+   ],
+   "date-time": "2026-09-10T14:26:51Z",
+   "timestamp": 1789050411580,
+   "version": "build-2803163510"
+  },
+  "reference-count": 87,
+  "publisher": "MDPI AG",
+  "issue": "6",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2024,
+       3,
+       16
+      ]
+     ],
+     "date-time": "2024-03-16T00:00:00Z",
+     "timestamp": 1710547200000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://creativecommons.org/licenses/by/4.0/"
+   }
+  ],
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [
+   "Sensors"
+  ],
+  "abstract": "<jats:p>Evaluating the risk associated with operations is an essential element of safe planning and an essential prerequisite in mobile robotics. This issue is very broad, with numerous definitions emerging in the recent literature adapting different application scenarios and leading to different algorithmic approaches. In this review, we will investigate how the state-of-the-art approaches define the traversability risk, particularly for mobile robots, whereby we classify existing risk-aware navigation algorithms according to their characterization of risk. Subsequently, we will overview the formulations of risk assessment along a path using traversability grid maps since it is essential for a mobile robot to evaluate its path to predict potential hazards. Finally, we will discuss the consistency of commonly used risk metrics in robotics. The aim of the review is to offer a comprehensive overview to newcomers in the field, to provide a structured reference for practitioners, and to also inspire future developments.</jats:p>",
+  "DOI": "10.3390/s24061909",
+  "type": "journal-article",
+  "created": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     18
+    ]
+   ],
+   "date-time": "2024-03-18T04:25:15Z",
+   "timestamp": 1710735915000
+  },
+  "page": "1909",
+  "update-policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+  "source": "Crossref",
+  "is-referenced-by-count": 14,
+  "title": [
+   "A Review on Traversability Risk Assessments for Autonomous Ground Vehicles: Methods and Metrics"
+  ],
+  "prefix": "10.3390",
+  "volume": "24",
+  "author": [
+   {
+    "given": "Mohamed",
+    "family": "Benrabah",
+    "sequence": "first",
+    "affiliation": [
+     {
+      "name": "Clermont Auvergne INP, CNRS, Institut Pascal, Université Clermont Auvergne, F-63000 Clermont-Ferrand, France"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Charifou",
+    "family": "Orou Mousse",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Clermont Auvergne INP, CNRS, Institut Pascal, Université Clermont Auvergne, F-63000 Clermont-Ferrand, France"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Elie",
+    "family": "Randriamiarintsoa",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Clermont Auvergne INP, CNRS, Institut Pascal, Université Clermont Auvergne, F-63000 Clermont-Ferrand, France"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "ORCID": "https://orcid.org/0000-0003-3799-4910",
+    "authenticated-orcid": false,
+    "given": "Roland",
+    "family": "Chapuis",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Clermont Auvergne INP, CNRS, Institut Pascal, Université Clermont Auvergne, F-63000 Clermont-Ferrand, France"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Romuald",
+    "family": "Aufrère",
+    "sequence": "additional",
+    "affiliation": [
+     {
+      "name": "Clermont Auvergne INP, CNRS, Institut Pascal, Université Clermont Auvergne, F-63000 Clermont-Ferrand, France"
+     }
+    ],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "1968",
+  "published-online": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     16
+    ]
+   ]
+  },
+  "container-title": [
+   "Sensors"
+  ],
+  "original-title": [],
+  "language": "en",
+  "link": [
+   {
+    "URL": "https://www.mdpi.com/1424-8220/24/6/1909/pdf",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2025,
+     10,
+     10
+    ]
+   ],
+   "date-time": "2025-10-10T14:14:44Z",
+   "timestamp": 1760105684000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://www.mdpi.com/1424-8220/24/6/1909"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     16
+    ]
+   ]
+  },
+  "references-count": 87,
+  "journal-issue": {
+   "issue": "6",
+   "published-online": {
+    "date-parts": [
+     [
+      2024,
+      3
+     ]
+    ]
+   }
+  },
+  "alternative-id": [
+   "s24061909"
+  ],
+  "URL": "https://doi.org/10.3390/s24061909",
+  "relation": {},
+  "ISSN": [
+   "1424-8220"
+  ],
+  "issn-type": [
+   {
+    "value": "1424-8220",
+    "type": "electronic"
+   }
+  ],
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2024,
+     3,
+     16
+    ]
+   ]
+  }
+ }
+}

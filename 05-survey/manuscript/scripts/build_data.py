@@ -8,8 +8,8 @@ from pathlib import Path
 
 M = Path(__file__).resolve().parents[1]
 from project_paths import literature_root
-from citation_scope import load_background, load_corpus
-from bib_case import protect_entry, protect_title
+from citation_scope import background_entry, load_background, load_corpus
+from bib_case import protect_entry
 import coding
 R = literature_root(M)
 G = M / 'generated'
@@ -175,20 +175,9 @@ for row in rows:
                    'transformation':transformation})
 blocks.append('% ===== Verified background references (not in reviewed corpus) =====\n')
 for item in verification:
-    d = json.loads((M / item['raw_record']).read_text(encoding='utf-8'))['message']
     # Derived context entries: metadata fields are copied from the opened DOI record.
-    # Brace-protecting acronyms and proper names keeps them under IEEEtran sentence case.
-    author = ' and '.join(a.get('family',a.get('name','')) + (', '+a['given'] if a.get('given') else '') for a in d['author'])
-    # Use the print year when citing final volume/pages, rather than online-first year.
-    publication_date = d.get('published-print', d['published']) if d.get('volume') else d['published']
-    fields = {'author':author,'title':protect_title(d['title'][0]),
-              'year':str(publication_date['date-parts'][0][0]),'doi':d['DOI']}
-    typ = 'inproceedings' if d.get('type') == 'proceedings-article' else 'article'
-    fields['booktitle' if typ == 'inproceedings' else 'journal'] = d['container-title'][0]
-    for k in ['volume','issue','page']:
-        if d.get(k): fields[{'issue':'number','page':'pages'}.get(k,k)] = str(d[k]).replace('–','--')
-    fields = {k:v.replace('&amp;', '&').replace('&',r'\&') for k,v in fields.items()}
-    blocks.append('@'+typ+'{'+item['key']+',\n' + ',\n'.join('  '+k+' = {'+v+'}' for k,v in fields.items())+'\n}\n')
+    d = json.loads((M / item['raw_record']).read_text(encoding='utf-8'))['message']
+    blocks.append(background_entry(item['key'], d))
 (M / 'refs.bib').write_text('\n'.join(blocks), encoding='utf-8')
 (G / 'citation-key-map.json').write_text(json.dumps(keymap,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 

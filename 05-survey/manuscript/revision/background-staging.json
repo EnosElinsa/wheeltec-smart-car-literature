@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "purpose": "Verified background records for the round-4 automated-driving positioning (Sec. I, Sec. X-A) and the Table I rebuild. They are not yet cited. build_data.py and verify_delivery.py read only background-verification.json, which requires every bibliography entry to be cited, so a record moves there unchanged in the commit that first cites it.",
+  "citation_scope": "All staged records are dated 2021-2026, so the seven pre-2021 foundational exceptions of data/citation-scope.json are unchanged.",
+  "records": [
+    {
+      "doi": "10.4271/j3016_202104",
+      "key": "B_DrivingAutomation2021",
+      "raw_record": "revision/background-sources/B_DrivingAutomation2021.json",
+      "scope": "identity/metadata verified from opened Crossref DOI record (type standard; no cited-reference list deposited); automated-driving positioning, terms from its abstract",
+      "title": "Taxonomy and Definitions for Terms Related to Driving Automation Systems for On-Road Motor Vehicles",
+      "verified_utc": "2026-11-05T00:38:49.805843+00:00"
+    },
+    {
+      "doi": "10.1109/icar53236.2021.9659362",
+      "key": "B_ODDMonitoring2021",
+      "raw_record": "revision/background-sources/B_ODDMonitoring2021.json",
+      "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); automated-driving positioning, scope from the publisher abstract page",
+      "title": "Operational Design Domain Monitoring at Runtime for 2D Laser-Based Localization algorithms",
+      "verified_utc": "2026-11-05T00:38:49.805843+00:00"
+    },
+    {
+      "doi": "10.1109/iv64158.2025.11097617",
+      "key": "B_MRMFallback2025",
+      "raw_record": "revision/background-sources/B_MRMFallback2025.json",
+      "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); automated-driving positioning, scope from the publisher abstract page",
+      "title": "Minimum Risk Maneuver Fallback Strategy for Autonomous Vehicles: Design and Experimental Validation",
+      "verified_utc": "2026-11-05T00:38:49.805843+00:00"
+    },
+    {
+      "doi": "10.3390/s24061909",
+      "key": "B_TraversabilityRisk2024",
+      "raw_record": "revision/background-sources/B_TraversabilityRisk2024.json",
+      "scope": "identity/metadata verified from opened Crossref DOI record (cited-reference list omitted); related survey for Table I, scope from its abstract",
+      "title": "A Review on Traversability Risk Assessments for Autonomous Ground Vehicles: Methods and Metrics",
+      "verified_utc": "2026-11-05T00:38:49.805843+00:00"
+    }
+  ]
+}

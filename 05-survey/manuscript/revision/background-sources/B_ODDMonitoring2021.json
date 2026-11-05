@@ -1,0 +1,219 @@
+{
+ "status": "ok",
+ "message-type": "work",
+ "message-version": "1.0.0",
+ "message": {
+  "indexed": {
+   "date-parts": [
+    [
+     2026,
+     6,
+     10
+    ]
+   ],
+   "date-time": "2026-06-10T16:23:56Z",
+   "timestamp": 1781108636550,
+   "version": "3.54.1"
+  },
+  "reference-count": 12,
+  "publisher": "IEEE",
+  "license": [
+   {
+    "start": {
+     "date-parts": [
+      [
+       2021,
+       12,
+       6
+      ]
+     ],
+     "date-time": "2021-12-06T00:00:00Z",
+     "timestamp": 1638748800000
+    },
+    "content-version": "vor",
+    "delay-in-days": 0,
+    "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2021,
+       12,
+       6
+      ]
+     ],
+     "date-time": "2021-12-06T00:00:00Z",
+     "timestamp": 1638748800000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-029"
+   },
+   {
+    "start": {
+     "date-parts": [
+      [
+       2021,
+       12,
+       6
+      ]
+     ],
+     "date-time": "2021-12-06T00:00:00Z",
+     "timestamp": 1638748800000
+    },
+    "content-version": "stm-asf",
+    "delay-in-days": 0,
+    "URL": "https://doi.org/10.15223/policy-037"
+   }
+  ],
+  "content-domain": {
+   "domain": [],
+   "crossmark-restriction": false
+  },
+  "short-container-title": [],
+  "published-print": {
+   "date-parts": [
+    [
+     2021,
+     12,
+     6
+    ]
+   ]
+  },
+  "DOI": "10.1109/icar53236.2021.9659362",
+  "type": "proceedings-article",
+  "created": {
+   "date-parts": [
+    [
+     2022,
+     1,
+     5
+    ]
+   ],
+   "date-time": "2022-01-05T15:42:02Z",
+   "timestamp": 1641397322000
+  },
+  "page": "449-454",
+  "source": "Crossref",
+  "is-referenced-by-count": 4,
+  "title": [
+   "Operational Design Domain Monitoring at Runtime for 2D Laser-Based Localization algorithms"
+  ],
+  "prefix": "10.1109",
+  "author": [
+   {
+    "given": "Zayed",
+    "family": "Alsayed",
+    "sequence": "first",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Paulo",
+    "family": "Resende",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   },
+   {
+    "given": "Benazouz",
+    "family": "Bradai",
+    "sequence": "additional",
+    "affiliation": [],
+    "role": [
+     {
+      "vocabulary": "crossref",
+      "role": "author"
+     }
+    ]
+   }
+  ],
+  "member": "263",
+  "event": {
+   "name": "2021 20th International Conference on Advanced Robotics (ICAR)",
+   "location": "Ljubljana, Slovenia",
+   "start": {
+    "date-parts": [
+     [
+      2021,
+      12,
+      6
+     ]
+    ]
+   },
+   "end": {
+    "date-parts": [
+     [
+      2021,
+      12,
+      10
+     ]
+    ]
+   }
+  },
+  "container-title": [
+   "2021 20th International Conference on Advanced Robotics (ICAR)"
+  ],
+  "original-title": [],
+  "link": [
+   {
+    "URL": "http://xplorestaging.ieee.org/ielx7/9658571/9659314/09659362.pdf?arnumber=9659362",
+    "content-type": "unspecified",
+    "content-version": "vor",
+    "intended-application": "similarity-checking"
+   }
+  ],
+  "deposited": {
+   "date-parts": [
+    [
+     2022,
+     5,
+     10
+    ]
+   ],
+   "date-time": "2022-05-10T12:56:37Z",
+   "timestamp": 1652187397000
+  },
+  "score": 1,
+  "resource": {
+   "primary": {
+    "URL": "https://ieeexplore.ieee.org/document/9659362/"
+   }
+  },
+  "subtitle": [],
+  "short-title": [],
+  "issued": {
+   "date-parts": [
+    [
+     2021,
+     12,
+     6
+    ]
+   ]
+  },
+  "references-count": 12,
+  "URL": "https://doi.org/10.1109/icar53236.2021.9659362",
+  "relation": {},
+  "subject": [],
+  "published": {
+   "date-parts": [
+    [
+     2021,
+     12,
+     6
+    ]
+   ]
+  }
+ }
+}
