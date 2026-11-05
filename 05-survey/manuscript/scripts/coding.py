@@ -776,7 +776,7 @@ def write_agreement(out_dir):
     recheck = [e for e in log if e['scope'] == 'corpus-recheck']
     return {'agreement': {
         'works': len(second), 'codebook_version': codebook['version'],
-        'coders': 'Two language-model sessions on different models; not human inter-rater reliability.',
+        'coders': 'Two language-model sessions configured for different models (executed models not recorded); not human inter-rater reliability.',
         'disagreements': len(sample), 'works_with_disagreement': len({e['code'] for e in sample}),
         'resolutions': dict(Counter(e['resolution'] for e in sample)),
         'changed_primary': sum(e['resolved_value'] != e['primary_value'] for e in sample),
@@ -1393,7 +1393,7 @@ def table_agreement(rows):
     header = bold_row(['Attribute', 'Unit', 'n', 'Cat.', r'Agr. \%', r'$\kappa$', r'Exact \%', r'Flag $\kappa$',
                        'Works', 'P/S/B'])
     return table('tab:agreement', 'Agreement between the independent second coding and the frozen primary codes '
-                 'on the 40 sampled works, before adjudication. Both coders are language-model sessions on '
+                 'on the 40 sampled works, before adjudication. Both coders are language-model sessions configured for '
                  'different models. The values therefore describe how consistently two such coders apply the '
                  'codebook to shared evidence. They are not human inter-rater reliability.',
                  '@{}L{2.9cm}Yrrrrrrrr@{}', header, body,

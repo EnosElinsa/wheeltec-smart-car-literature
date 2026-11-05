@@ -2382,7 +2382,7 @@
   "agreement": {
     "works": 40,
     "codebook_version": "1.1",
-    "coders": "Two language-model sessions on different models; not human inter-rater reliability.",
+    "coders": "Two language-model sessions configured for different models (executed models not recorded); not human inter-rater reliability.",
     "disagreements": 112,
     "works_with_disagreement": 35,
     "resolutions": {

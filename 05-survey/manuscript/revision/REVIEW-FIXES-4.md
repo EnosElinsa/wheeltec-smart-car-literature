@@ -8,7 +8,7 @@ This record covers the evidence coding and its integration into the main paper a
 
 ## Author decisions
 
-- **Second coding.** An independent language-model coder on a different model double-codes a stratified random sample of about 40 works, without access to the primary codes. The manuscript states that this is a language-model second coding and not human inter-rater reliability.
+- **Second coding.** An independent language-model coder, configured for a different model, double-codes a stratified random sample of about 40 works, without access to the primary codes. The executed models were not recorded (see "Attribution correction" below). The manuscript states that this is a language-model second coding and not human inter-rater reliability.
 - **Standards without a DOI (decision A, 2026-11-04).** ISO 21448:2022 is cited as an IEEEtran `@standard` entry that carries only the fields shown on the official ISO catalogue page. SAE J3016 has a Crossref DOI record and follows the existing pattern. The decision is recorded in [background-staging.json](background-staging.json).
 - **Screening model.** The model, version and prompts of the language-model screening are not supplied. The manuscript describes the screening from the archived records and states that no record names the model or its version.
 
@@ -163,7 +163,7 @@ The second part of the round (commit "Survey: minor review items, AI-use acknowl
 
 ### AI-use acknowledgment
 
-The acknowledgment now reads, in substance: language-model tools screened candidate titles and abstracts (Section III), with the agent Codex named in all archived decisions, and drafted the corpus reading records in Codex and Kiro sessions. Kiro workflow sessions drafted and revised the manuscript and supplement, prepared the internal review of an earlier draft that named the final-stage works, performed the primary evidence coding of Section III with the model claude-opus-5.5, and adjudicated coding differences. The second coding ran in a separate Kiro session with the model gpt-5.6-sol. MinerU and the OXR-1.0 model transcribed the publisher PDFs, with PyMuPDF4LLM extraction for some batches. No record names the model behind the other Codex and Kiro sessions. The authors reviewed all such output and take full responsibility for the content.
+The acknowledgment now reads, in substance: language-model tools screened candidate titles and abstracts (Section III), with the agent Codex named in all archived decisions, and drafted the corpus reading records in Codex and Kiro sessions. Kiro workflow sessions drafted and revised the manuscript and supplement, prepared the internal review of an earlier draft that named the final-stage works, performed the primary evidence coding of Section III, and adjudicated coding differences. The second coding ran in a separate Kiro session. The workflow configured the primary coding for claude-opus-5.5 and the second coding for gpt-5.6-sol. Neither session recorded the model that actually ran, and another session of the same workflow, configured for a GPT model, reported a Claude model instead. MinerU and the OXR-1.0 model transcribed the publisher PDFs, with PyMuPDF4LLM extraction for some batches. No record names the model behind the other Codex and Kiro sessions. The authors reviewed all such output and take full responsibility for the content.
 
 Sources of each statement: the screening archive (reviewer and host `codex` in all 220 decisions), the review-card logs (`host: Codex`, `host: Kiro`), `06-data/evidence-coding/second-coder-record.json` (both coding models, taken from the workflow configuration), `06-data/fulltext-manifest.json` (MinerU), the `markdown-extraction.json` records of the S and R batches (OXR-1.0 through vLLM) and the `source-reading.json` records of the N and K batches (PyMuPDF4LLM 0.2.9).
 
@@ -171,7 +171,7 @@ Sources of each statement: the screening archive (reviewer and host `codex` in a
 
 1. **Vendor names.** The records name the agents Codex and Kiro but not their vendors, and the acknowledgment names none. IEEE asks for the AI system used. Add vendor names if the author wants them.
 2. **Models of the other sessions.** No record names the model behind the screening sessions, the card-drafting sessions, the earlier manuscript drafts or the earlier internal review. The acknowledgment says so instead of guessing.
-3. **Source of the two coding models.** claude-opus-5.5 (primary coding) and gpt-5.6-sol (second coding) come from the workflow configuration recorded in `second-coder-record.json`. The second coder's own notes exposed no model identifier. The model of the adjudication session is not recorded and is not named.
+3. **Source of the two coding models.** claude-opus-5.5 (primary coding) and gpt-5.6-sol (second coding) are the models configured in the workflow, recorded in `second-coder-record.json`. They are not confirmed executed models (see "Attribution correction" below). The model of the adjudication session is not recorded and is not named.
 4. **Author review of the codes.** The last sentence says that the authors reviewed all such output. No record shows an author review of the 245 primary codes, the adjudication log or the second-coding sample. The author must confirm this or ask for the sentence to be narrowed.
 5. **PyMuPDF4LLM.** It is a text-extraction library rather than a language model. It is named because the brief listed it. Remove it if the acknowledgment should cover AI systems only.
 6. **Earlier drafting hosts.** The acknowledgment attributes manuscript drafting and revision to Kiro workflow sessions, as the round plan records. If earlier manuscript versions were drafted in Codex sessions, the sentence should name them too.
@@ -224,8 +224,17 @@ A local check of the second part (simulated reviewer, not journal peer review) f
 
 These fixes cost no page space. The main paper keeps 24 pages and the last-page balance (references 240-255 end at 658 pt, 256-270 at 667 pt, `\IEEEtriggeratref{256}`).
 
+### Attribution correction
+The acknowledgment, Section III, supplement S7, the agreement-table caption and the evidence-coding README had named claude-opus-5.5 and gpt-5.6-sol as the models of the two coding passes and said that the coders ran "on a different model". Two records do not support that wording. The second coder's notes state that its session exposed no model identifier. The re-review session configured for gpt-5.6-terra reported Claude Sonnet 5.5 in its own session context. A configured workflow model is therefore not evidence of the executed model.
+- The acknowledgment now names the models as configured for each pass and states that neither session recorded the model that actually ran.
+- Section III and supplement S7 say "configured for a different model". The agreement-table caption and `generated/stats.json` say "configured for different models".
+- `second-coder-record.json` replaces `model` with `configured_model` and adds `executed_model: "not recorded"`. The evidence-coding README adds a paragraph on configured and executed models.
+- The frozen codebook (version 1.1, Section 19) still states the design intent of a second coder on a different model. Its text stays unchanged because its hash is recorded. The README records that this intent is configured but not verified.
+- The two coders may have run on the same or related models. The kappa values may then overstate agreement between independent coders.
+- The longer acknowledgment moved reference 256 onto a 25th page under `\IEEEtriggeratref{256}`. With the trigger inactive (`\IEEEtriggeratref{999}`) the paper has 24 pages, and the last page balances naturally: references 236-254 end at 739 pt and 255-270 at 712 pt.
+
 ## Still open after this round
 
 - The author decisions above: the acknowledgment wording and its uncertainties, and the fifteen pre-existing Crossref reference lists.
-- The fresh simulated re-review and its comparison with the earlier major items follow as a separate local step and are not part of this record.
+- The simulated re-review of commit f463649 has one report, from reviewer 2, kept locally. At the author's instruction it stands alone, with no second reviewer and no aggregate. Its comparison with the earlier major items is kept locally beside it.
 - Author information and submission declarations remain incomplete.
