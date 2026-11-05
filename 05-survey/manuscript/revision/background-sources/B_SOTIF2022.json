@@ -1,0 +1,24 @@
+{
+ "record_type": "official-catalogue-page",
+ "url": "https://www.iso.org/standard/77490.html",
+ "retrieved_utc": "2026-11-05T01:45:09.378909+00:00",
+ "retrieval": "DOM of the rendered page saved with headless Microsoft Edge (scripted HTTP requests receive HTTP 403)",
+ "saved_page": "revision/local/B_SOTIF2022-iso-catalogue.html",
+ "saved_page_committed": false,
+ "page_sha256": "810113351d293eac149c3f4d817729d94d87136840cff02a71c1e58602e1c13e",
+ "fields": {
+  "reference_number": "ISO 21448:2022",
+  "title": "Road vehicles — Safety of the intended functionality",
+  "organization": "ISO",
+  "edition": "1",
+  "publication_date": "2022-06",
+  "status": "Published",
+  "stage": "90.92 (International Standard to be revised)",
+  "technical_committee": "ISO/TC 22/SC 32",
+  "pages": "181"
+ },
+ "field_basis": {
+  "organization": "prefix of the reference number shown on the catalogue page",
+  "other fields": "shown on the catalogue page; abstract text not copied"
+ }
+}

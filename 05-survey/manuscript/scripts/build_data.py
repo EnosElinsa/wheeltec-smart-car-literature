@@ -8,7 +8,7 @@ from pathlib import Path
 
 M = Path(__file__).resolve().parents[1]
 from project_paths import literature_root
-from citation_scope import background_entry, load_background, load_corpus
+from citation_scope import background_entry, load_background, load_corpus, load_record
 from bib_case import protect_entry
 import coding
 R = literature_root(M)
@@ -175,9 +175,8 @@ for row in rows:
                    'transformation':transformation})
 blocks.append('% ===== Verified background references (not in reviewed corpus) =====\n')
 for item in verification:
-    # Derived context entries: metadata fields are copied from the opened DOI record.
-    d = json.loads((M / item['raw_record']).read_text(encoding='utf-8'))['message']
-    blocks.append(background_entry(item['key'], d))
+    # Derived context entries: metadata fields are copied from the opened DOI record or official catalogue page.
+    blocks.append(background_entry(item['key'], load_record(M, item)))
 (M / 'refs.bib').write_text('\n'.join(blocks), encoding='utf-8')
 (G / 'citation-key-map.json').write_text(json.dumps(keymap,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 

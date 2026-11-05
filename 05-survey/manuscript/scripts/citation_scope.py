@@ -5,32 +5,62 @@ import re
 
 from bib_case import protect_title
 
+# A standard without a DOI is recorded from its official catalogue page; the page itself stays in
+# the gitignored revision/local/ and the record keeps only the bibliographic fields the page shows.
+CATALOGUE = 'official-catalogue-page'
+
+
+def load_record(manuscript, record):
+    """Metadata of one background record: the Crossref message, or the official catalogue record."""
+    payload = json.loads((manuscript / record['raw_record']).read_text(encoding='utf-8'))
+    if payload.get('record_type') == CATALOGUE:
+        assert record.get('record_type') == CATALOGUE, record['key']
+        assert (record['url'], record['page_sha256']) == (payload['url'], payload['page_sha256']), record['key']
+        return payload
+    return payload['message']
+
 
 def citation_date(metadata):
-    """Crossref date that gives a background record its citation year.
+    """Date that gives a background record its citation year.
 
     Final volumes use the print year rather than the online-first year. Crossref standard
-    records carry no publication date, so they fall back to the approval date.
+    records carry no publication date, so they fall back to the approval date. A catalogue
+    record uses the publication date shown on the catalogue page.
     """
+    if metadata.get('record_type') == CATALOGUE:
+        return {'date-parts': [[int(x) for x in metadata['fields']['publication_date'].split('-')]]}
     if metadata.get('type') == 'standard':
         return next(metadata[k] for k in ('published-print', 'published', 'approved') if metadata.get(k))
     return metadata.get('published-print', metadata['published']) if metadata.get('volume') else metadata['published']
 
 
+def keep_digits(number):
+    """IEEEtran splits digit runs longer than four into groups of three; an empty group keeps a designation intact."""
+    return re.sub(r'(\d{4})(?=\d)', r'\1{}', number)
+
+
 def background_entry(key, d):
-    """BibTeX entry for one opened Crossref record; every field is copied from the record."""
+    """BibTeX entry for one background record; every field is copied from the opened record."""
+    year = str(citation_date(d)['date-parts'][0][0])
+    if d.get('record_type') == CATALOGUE:
+        shown = d['fields']
+        # IEEEtran prints "<organization> Std. <number>", so the number is the reference number
+        # without its organization prefix ("ISO 21448:2022" gives "ISO Std. 21448:2022").
+        assert shown['reference_number'].startswith(shown['organization'] + ' '), key
+        fields = {'title': protect_title(shown['title']), 'organization': shown['organization'],
+                  'number': keep_digits(shown['reference_number'][len(shown['organization']) + 1:]),
+                  'year': year, 'url': d['url']}
+        return '@standard{' + key + ',\n' + ',\n'.join('  ' + k + ' = {' + v + '}' for k, v in fields.items()) + '\n}\n'
     # Brace-protecting acronyms and proper names keeps them under IEEEtran sentence case.
     # A corporate author (Crossref 'name' without 'family') is braced so BibTeX keeps it whole.
     author = ' and '.join(a['family'] + (', ' + a['given'] if a.get('given') else '') if 'family' in a
                           else '{' + a['name'] + '}' for a in d['author'])
-    fields = {'author': author, 'title': protect_title(d['title'][0]),
-              'year': str(citation_date(d)['date-parts'][0][0]), 'doi': d['DOI']}
+    fields = {'author': author, 'title': protect_title(d['title'][0]), 'year': year, 'doi': d['DOI']}
     if d.get('type') == 'standard':
         typ = 'standard'
         fields['organization'] = d['standards-body']['name']
-        # Designation derived from the DOI suffix (10.4271/j3016_202104 gives J3016_202104). IEEEtran
-        # splits digit runs longer than four into groups of three; an empty group keeps the code intact.
-        fields['number'] = re.sub(r'(\d{4})(?=\d)', r'\1{}', d['DOI'].split('/', 1)[1].upper().replace('_', r'\_'))
+        # Designation derived from the DOI suffix (10.4271/j3016_202104 gives J3016_202104).
+        fields['number'] = keep_digits(d['DOI'].split('/', 1)[1].upper().replace('_', r'\_'))
     else:
         typ = 'inproceedings' if d.get('type') == 'proceedings-article' else 'article'
         fields['booktitle' if typ == 'inproceedings' else 'journal'] = d['container-title'][0]
@@ -65,8 +95,7 @@ def load_background(manuscript, policy):
     records = [r for r in all_records if r['key'] not in excluded]
     old = set()
     for record in records:
-        metadata = json.loads((manuscript / record['raw_record']).read_text(encoding='utf-8'))['message']
-        if citation_date(metadata)['date-parts'][0][0] < policy['primary_years'][0]:
+        if citation_date(load_record(manuscript, record))['date-parts'][0][0] < policy['primary_years'][0]:
             old.add(record['key'])
     assert old == set(policy['foundational_exceptions']), 'Unjustified foundational exception'
     return records
