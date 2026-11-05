@@ -189,7 +189,8 @@ assert not any({'RES', 'COM'} & set(EV[t['code']]['named_sources'].split('|'))
                for t in TRACE if t['interface'] == '2')                     # Sec. X-B: no computation limit or delay named
 assert all(EV[k]['functions'] == 'PLN' and EV[k]['direct_wheeled_joint'] == 'yes'
            for k in ('K03', 'K05', 'R13', 'R15'))                           # Sec. X-C: terrain planners without LOC
-assert EV['M10']['src_manipulated'] == 'MAP' and EV['M10']['deg_task_class'] == 'D1'      # Sec. X-C: direct through map deviations
+assert EV['M10']['src_selected'] == 'PER' and EV['M10']['deg_task_setting'] == 'physical' \
+    and EV['M10']['level_degradation'] == 'P'                       # Sec. X-C: direct through the GPS-disabled campus run
 assert sorted(k for k, e in EV.items() if e['drivetrain_effect'] == 'yes') == sorted(('E02', 'R33', 'M39', 'E04', 'S07', 'N17'))
 assert all(EV[k]['drivetrain_effect'] == 'no' and EV[k]['drivetrain'] == 'omnidirectional'
            for k in ('M09', 'S48'))                                 # Table II note: "except the two Mecanum studies"
