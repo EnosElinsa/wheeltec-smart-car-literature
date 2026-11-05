@@ -2,8 +2,21 @@
 name = "wheeltec-literature-tools"
 version = "0.1.0"
 description = "Validation and generation tools for the wheeled mobile robot literature library"
+readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
+keywords = ["robotics", "mobile-robots", "literature-review", "survey", "evidence-synthesis"]
+dependencies = [
+    "pymupdf",
+    "requests",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Repository = "https://github.com/EnosElinsa/wheeltec-smart-car-literature"
+Changelog = "https://github.com/EnosElinsa/wheeltec-smart-car-literature/blob/main/CHANGELOG.md"
 
 [tool.pytest.ini_options]
 testpaths = ["tools/tests"]

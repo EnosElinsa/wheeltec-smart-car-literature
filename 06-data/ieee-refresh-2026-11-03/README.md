@@ -1,6 +1,8 @@
 # Recent IEEE refresh: registered and assessed sources
 
-**36 verified official PDF/native-BibTeX pairs, 36 OXR Markdown files and 36 targeted light review cards.** All 36 are manuscript members. The library has 231 acquired and assessed publications; the manuscript cites 229 selected works and 246 references.
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
+**36 verified official PDF/native-BibTeX pairs, 36 OXR Markdown files and 36 targeted light review cards.** All 36 are manuscript members. At integration, the library had 231 acquired and assessed publications, and the manuscript cited 229 selected works.
 
 The batch contains 23 formal-year 2026 and 13 formal-year 2025 papers: six each in localization, mapping, planning/control, collaboration, semantic navigation, and reliability/deployment. There are 34 journal articles and two ICRA papers. Exact DOIs were checked against the original 195-source library before freezing the selection. Formal issue and online dates can differ: R02 retains the publisher's 2026 issue year despite its 2024 DOI/online date. Raw IEEE BibTeX bytes were preserved.
 

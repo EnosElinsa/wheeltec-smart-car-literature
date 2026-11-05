@@ -23,7 +23,7 @@ Comments like this one are removed in real reviews.
 | DOI | <[10.xxxx/yyyy](https://doi.org/10.xxxx/yyyy) or "none (see official URL)"> |
 | Official URL | <publisher landing page> |
 | Theme folder | <T1-perception-localization> |
-| Batch | <baseline-2026-09-18, supplemental, expansion-2026-10-24, or followup-2026-11-02> |
+| Batch | <the paper's `source_batch` in 06-data/paper-index.csv: baseline-2026-09-18, supplemental, expansion-2026-10-24, followup-2026-11-02, ieee-supplement-2026-11-03, survey-200plus-2026-11-03, ieee-refresh-2026-11-03 or review-additions-2026-11-04> |
 | Local files | `<01-papers/.../paper.pdf>` and `<02-fulltext/.../paper.md>` (local only, not in the public repository); add a relative link to the paper's `citation.bib` |
 
 ## Survey coding

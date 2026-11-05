@@ -1,5 +1,7 @@
 # Manual IEEE Xplore import receipt
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 On November 3, 2026, seven PDF/raw-BibTeX pairs were checked and copied into the library. Original Downloads files, native citation bytes, encodings and line endings were preserved. The receipt records source filenames, hashes and library-relative paths; machine-specific paths and earlier retry diagnostics remain in the local archive.
 
 All 20 supplementary pairs now have local full-text exports. At import time, the seven papers below had not received targeted readings. Acquisition did not change the 127-paper reviewed index or manuscript statistics. Local PyMuPDF4LLM exports preserve physical-page markers and referenced images; the PDF remains authoritative for equations and table values.

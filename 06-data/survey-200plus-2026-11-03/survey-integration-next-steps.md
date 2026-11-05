@@ -1,6 +1,8 @@
 # Survey integration after the 48-paper extraction (pre-integration record)
 
-Historical planning scope. The subsequent targeted readings and working manuscript integration are complete: 195 assessed works and 211 references. See the [current integration report](../../04-analysis/survey-expansion-integration-2026-11-03.md). Counts and pending actions below describe the earlier stage.
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
+Historical planning scope. The subsequent targeted readings and working manuscript integration are complete: 195 assessed works and 211 references. See the [integration report](../../04-analysis/survey-expansion-integration-2026-11-03.md). Counts and pending actions below describe the earlier stage.
 
 All 48 selected additions now have source Markdown. The manuscript still has 163 references and 147 assessed publications. The following is a reading and revision plan based on the frozen selection rationale and the current section structure, not findings from completed whole-paper assessment. Final placement and inclusion remain conditional on source reading.
 

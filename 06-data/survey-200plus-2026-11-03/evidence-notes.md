@@ -1,5 +1,7 @@
 # Citation resolution and provenance
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 On November 3, 2026, the user explicitly requested RIS-to-BibTeX conversion and Crossref supplementation for the remaining records. All 48 selected additions now have a registered PDF and usable citation in the shared theme directories. This comprises **44 strict publisher PDF/raw-BibTeX pairs**, **three derived citations**, and **one publisher-linked title variant**. The catalog totals **195 publications**. No further user download is required for these five records.
 
 | ID | Resolution | Citation treatment |

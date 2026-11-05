@@ -1,5 +1,7 @@
 # Manual download import
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 The initial user handoff contained 33 queued PDFs, 30 native BibTeX exports and two RIS files (65 files). All 33 PDFs were present. Twenty-nine complete native pairs passed initial import; the newly supplied S08 export completes the thirtieth native pair from that queue. S24-S26 are now registered with explicitly derived citations under the user's instruction, preserving their original BibTeX/RIS. S41 was retained from the earlier official PMLR download and is now registered with a documented title variant. No further manual download is required.
 
 The expansion now has 48 registered publications: 44 strict native pairs, three derived citations and one publisher title variant, for a library total of 195. All original downloaded bytes are preserved. See [resolution evidence](evidence-notes.md), [citation exceptions](citation-exceptions.csv), [current state](README.md), and [Markdown coverage](markdown-coverage.md).

@@ -1,5 +1,7 @@
 # Identity and citation notes
 
+> **Stage record, November 4, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 These notes record the identity checks and citation treatment of the 16 works K01–K16. Fifteen records keep the publisher's BibTeX bytes unchanged. One record (K11) uses a derived citation. Hashes for every file are in the [manifest](manifest.json).
 
 | ID | Check | Citation treatment |

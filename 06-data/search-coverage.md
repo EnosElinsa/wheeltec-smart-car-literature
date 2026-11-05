@@ -1,6 +1,8 @@
 # Search coverage and boundaries
 
-This records the historical discovery and screening scope, preserved during the November 2, 2026 English maintenance. The old archive was screened first, followed by 2025–2026 corpus discovery across 17 journals. Each of the six themes used four search rounds: terminology, scenarios/mechanisms, citations, and counterevidence. Keywords only nominated candidates; acceptance reasons were recorded separately through title/abstract judgments.
+> **Stage record of the discovery and screening before the October 25, 2026 organization.** Its counts and statuses describe that stage and are not updated. Current totals are in the [repository README](../README.md). It was preserved during the English maintenance of November 2, 2026.
+
+This records the historical discovery and screening scope. The old archive was screened first, followed by 2025–2026 corpus discovery across 17 journals. Each of the six themes used four search rounds: terminology, scenarios/mechanisms, citations, and counterevidence. Keywords only nominated candidates; acceptance reasons were recorded separately through title/abstract judgments.
 
 The initial 34 journal/year slices had statuses `{'complete': 27, 'failed': 6, 'partial': 1}`. An independent bounded retry returned the seven remaining slices, giving a merged historical status of `{'complete': 34}`. Here, `complete` means that the provider's enumeration cursor was exhausted in that run; it does not establish that the publisher's entire catalog was retrieved without omissions.
 

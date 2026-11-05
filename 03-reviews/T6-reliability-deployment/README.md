@@ -2,7 +2,7 @@
 
 [Section index](../INDEX.md) · [Reading guide](../../READING_GUIDE.md)
 
-Full-text reviews: 39 papers.
+Review cards: 39 papers.
 
 PDFs and Markdown transcriptions are local only: they are excluded from the public repository for copyright reasons, so their paths are shown as code, not as links. ★ marks the 3 key papers of the [reading guide](../../READING_GUIDE.md). Module, Evidence, and Platform are the `survey_module`, `evidence_type`, and `platform_class` values of each review's survey coding ([vocabulary](../../06-data/vocabulary.md)).
 

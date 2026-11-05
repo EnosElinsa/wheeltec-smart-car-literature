@@ -1,5 +1,7 @@
 # Organization log
 
+> **Stage record, October 25, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md). The maintenance section dates from November 2, 2026.
+
 Historical organization date: October 25, 2026. At the user's request, source Markdown was restored and stored separately, and all files/directories received English names. Document bodies retained their original language at that time.
 
 Maintenance date: November 2, 2026. Public navigation documents and review cards are now in English. The original 18 key-paper selections are retained, with paper-specific evidence and platform/compute boundaries in the reading guide. The 112 cards comprise 23 full verifications and 89 light conversions; light-card numbers must be rechecked against the PDF before survey citation. `04-analysis/` remains in Chinese, and the existing survey manuscript is unchanged.

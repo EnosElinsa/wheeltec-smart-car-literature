@@ -1,6 +1,6 @@
-> Stage record before the recent-citation revision and the IEEE refresh: the current manuscript has 229 selected works and 246 references. See the [IEEE refresh integration](ieee-refresh-integration-2026-11-03.md).
-
 # Integration of the 48-paper expansion
+
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md). The [recent-citation policy](recent-citation-policy-2026-11-03.md) and the [IEEE refresh integration](ieee-refresh-integration-2026-11-03.md) record the next stages.
 
 The working survey now includes **195 assessed publications** (192 technical studies and three context works), plus 16 additional background references, for **211 resolved bibliography entries**. Every selected work appears in substantive section prose. The main paper has 33 pages; the supplement has three. Five representative tables contain 63 rows, including 15 of the new works.
 

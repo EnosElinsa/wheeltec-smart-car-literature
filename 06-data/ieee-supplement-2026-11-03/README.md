@@ -1,6 +1,8 @@
 # Supplementary IEEE sources — November 3, 2026
 
-These 20 publications are included in the unified 147-paper survey selection. Each has a targeted light review card with comparison coding and physical-page evidence. The acquisition and reading records below preserve source provenance and assessment scope; the papers themselves use the shared theme directories.
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
+These 20 publications joined the survey selection at its 147-paper stage and remain survey members. Each has a targeted light review card with comparison coding and physical-page evidence. The acquisition and reading records below preserve source provenance and assessment scope; the papers themselves use the shared theme directories.
 
 Seven pairs were supplied as manual IEEE Xplore downloads. The PDF and native BibTeX bytes are preserved, with DOI, title, authors, year and venue checked. Download originals remain in place. Formal publication years are recorded independently of the year embedded in a DOI.
 

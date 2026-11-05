@@ -1,6 +1,8 @@
 # Coverage assessment for the 200-reference expansion (pre-integration record)
 
-Historical planning scope. The subsequent targeted readings and working manuscript integration are complete: 195 assessed works and 211 references. See the [current integration report](survey-expansion-integration-2026-11-03.md). Counts and pending actions below describe the earlier stage.
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md).
+
+Historical planning scope. The subsequent targeted readings and working manuscript integration are complete: 195 assessed works and 211 references. See the [integration report](survey-expansion-integration-2026-11-03.md). Counts and pending actions below describe the earlier stage.
 
 Assessment date: November 3, 2026. The existing manuscript has 163 references and compares 147 assessed publications. A frozen addition of 48 papers targets 211 references after acquisition, targeted reading and substantive citation. All 48 sources are registered: 44 strict native pairs, three explicitly derived citations and one documented publisher title variant. Candidate selection and actual citation counts must remain separate.
 

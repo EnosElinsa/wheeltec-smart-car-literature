@@ -1,6 +1,8 @@
 # Selected-source reading notes — supplementary IEEE batch
 
-These targeted readings support the N01–N20 light review cards in the current 147-paper selection. They do not establish whole-paper verification. Page numbers are physical PDF pages. Source paths and hashes are in [manifest.json](manifest.json).
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
+These targeted readings support the N01–N20 light review cards in the survey selection, which had 147 papers at that stage. They do not establish whole-paper verification. Page numbers are physical PDF pages. Source paths and hashes are in [manifest.json](manifest.json).
 
 ## N01 — Adaptive error-state fusion for ground-vehicle LIO
 

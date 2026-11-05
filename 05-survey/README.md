@@ -1,14 +1,23 @@
 # Survey manuscript
 
-*Wheeled Mobile Robot Autonomy Under Degradation: A Survey of Methods and Evaluation* lives in [manuscript/](manuscript/README.md) in this repository: main paper, supplement, LaTeX sources, figure sources, generated tables, bibliography, numerical evidence records and build instructions. It is a working draft with author information and submission declarations still to be completed. The manuscript was a separate repository until November 4, 2026. That repository has since been deleted from GitHub, and its history is kept in a local backup bundle outside this repository's history.
+*Wheeled Mobile Robot Autonomy Under Degradation: A Survey of Methods and Evaluation* is a working draft in [manuscript/](manuscript/README.md). The folder holds the main paper, the supplement, the LaTeX and figure sources, generated tables, the bibliography, numerical evidence records and build instructions. Author information and submission declarations are still incomplete.
 
-The current main paper has 24 pages and 270 references, including 245 corpus works from 2021-2026 and seven foundational pre-2021 background sources, which is the maximum length of IEEE T-IV surveys (18 pages plus 6 paid pages). Its 17-page supplement records selection, evidence-coding and evaluation details and holds the five tables of representative implementations. All 245 selected works appear in substantive prose, including the 36 papers of the [IEEE refresh](../06-data/ieee-refresh-2026-11-03/README.md) and the 16 [coverage additions](../06-data/review-additions-2026-11-04/README.md). The [current revision record](manuscript/revision/REVIEW-FIXES-4.md) describes the evidence coding with a language-model second coding, the source-by-function matrix, the interface ranking, the minor review items, the AI-use acknowledgment and the audits. Earlier records describe the [condensation of Sections IV-VIII and the coverage additions](manuscript/revision/REVIEW-FIXES-3.md), the [foundational background references and the selection table](manuscript/revision/REVIEW-FIXES-2.md), the [low-cost review fixes](manuscript/revision/REVIEW-FIXES-1.md), the [contributions, numeric audit, clean build and review outcome](manuscript/revision/CONTRIBUTIONS-AUDIT-AND-REVIEW.md), the [research roadmap, claim audit and related surveys](manuscript/revision/ROADMAP-AUDIT-AND-SURVEYS.md), the [evidence map of Table IV and the restructured prose](manuscript/revision/EVIDENCE-MAP-AND-PROSE.md), the [table move, synthesis table and grayscale figures](manuscript/revision/PAGE-LIMIT-AND-FIGURE-STYLE.md) and the [SVG figures and condensed text](manuscript/revision/FIGURES-AND-CONDENSATION.md).
+The main paper has 24 pages, the maximum length of an IEEE T-IV survey (18 pages plus 6 paid pages). It cites 270 references: the 245 selected corpus works from 2021-2026 and 25 background references, 7 of them foundational pre-2021 sources. All 245 selected works appear in substantive prose. The 17-page supplement records the selection, the evidence coding and the evaluation details, and holds the five tables of representative implementations.
+
+| Document | Content |
+|---|---|
+| [Main paper](manuscript/survey.pdf) · [Supplement](manuscript/supplement.pdf) | Built PDFs of the current draft |
+| [Manuscript guide](manuscript/README.md) | Build, figure, regeneration and verification commands |
+| [Revision status](manuscript/REVISION-REPORT.md) | Current state of the draft and the items open before submission |
+| [Revision records](manuscript/revision/README.md) | One record per revision round; the current round is [REVIEW-FIXES-6](manuscript/revision/REVIEW-FIXES-6.md) |
 
 | Supporting evidence | Entry point |
 |---|---|
-| English review cards | [Review index](../03-reviews/INDEX.md) |
-| Cross-paper analysis | [Evidence synthesis](../04-analysis/evidence-synthesis.md) |
-| Coded comparison and source hashes | [Data guide](../06-data/README.md) |
-| Integration stages | [36-paper IEEE refresh](../04-analysis/ieee-refresh-integration-2026-11-03.md) · [48-paper expansion](../04-analysis/survey-expansion-integration-2026-11-03.md) · [Recent-citation policy](../04-analysis/recent-citation-policy-2026-11-03.md) · [20-source IEEE batch](../06-data/ieee-supplement-2026-11-03/README.md) |
+| Review cards | [Review index](../03-reviews/INDEX.md) |
+| Evidence codes behind the survey statistics | [Evidence coding](../06-data/evidence-coding/README.md) |
+| Catalog, paper index and source hashes | [Data guide](../06-data/README.md) |
+| Earlier integration stages | [Analysis records](../04-analysis/README.md) |
 
-Publisher PDFs and transcriptions remain local. New cards are targeted light readings, not whole-paper audits.
+Publisher PDFs and transcriptions remain local. Most cards are targeted light readings, not whole-paper audits, and the survey rechecks every number it takes from a light card against the PDF.
+
+The manuscript was a separate Git repository until November 4, 2026. That repository has been deleted from GitHub, and its history is kept in a local backup bundle outside this repository.

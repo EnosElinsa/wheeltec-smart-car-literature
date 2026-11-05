@@ -1,6 +1,8 @@
 # IEEE evidence integration — November 3, 2026
 
-N01–N20 have targeted light review cards and are incorporated into the survey. The current selection contains 147 publications; assessment comprises 23 full and 124 light reviews, including 89 historical conversions and 35 targeted readings. The companion library retains the selection record, physical-page reading scope, source hashes and an updated utilization matrix.
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../../README.md).
+
+N01–N20 have targeted light review cards and are incorporated into the survey. The selection then contained 147 publications, and assessment comprised 23 full and 124 light reviews, including 89 historical conversions and 35 targeted readings. The companion library retains the selection record, physical-page reading scope, source hashes and an updated utilization matrix.
 
 - Section IV compares ground weighting, near-planar motion, trace/contact observations and dense estimation.
 - Sections V–VII compare anisotropic terrain costs, conditional tube control, event-triggered computation, semantic allocation, graph objectives and shared-state diagnosis.

@@ -38,7 +38,7 @@ from tools.catalog import CATALOG_REL, catalog_csv, load_catalog
 SECTIONS = {
     "01-papers": "Publisher PDFs and citations",
     "02-fulltext": "Full-text Markdown transcriptions and referenced figures",
-    "03-reviews": "Full-text reviews",
+    "03-reviews": "Review cards",
 }
 SECTION_NOTES = {
     "02-fulltext": "The transcriptions can contain OCR and formula errors; the PDF is the "

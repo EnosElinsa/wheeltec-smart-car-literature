@@ -1,5 +1,7 @@
 # Confirmed follow-up reading: 15 papers
 
+> **Stage record, November 2, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md).
+
 Prepared and confirmed by the user on 2026-11-02. The fixed selection is F01-F15; acquisition difficulties do not change it. Completed papers retain these IDs in the library. See the [acquisition/review ledger](followup-status.csv) and [full-text assessment](followup-assessment.md) for actual completion and remaining access requirements.
 
 All 79 source titles and archived abstracts were read. Canonical DOI/URL matching removes three repeated records (rows 32 -> 3, 46 -> 34, 59 -> 23). Two more records already belong to the library (row 30 = E50, LeLaN; row 41 = E60, FORTRESS). This leaves 74 distinct candidates outside the historical corpus: 15 confirmed here and 59 deferred. Deferral is a bounded reading decision, not a rejection of scientific quality.

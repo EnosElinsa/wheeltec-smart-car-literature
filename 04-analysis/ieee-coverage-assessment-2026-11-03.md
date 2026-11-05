@@ -1,5 +1,7 @@
 # Survey coverage and supplementary IEEE evidence
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md).
+
 Assessment date: November 3, 2026. This document evaluates coverage and use of sources; it is not manuscript text.
 
 ## Adequacy of the current corpus

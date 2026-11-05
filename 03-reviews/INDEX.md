@@ -1,6 +1,6 @@
 # 03-reviews
 
-Full-text reviews: 247 papers. The folders `01-papers`, `02-fulltext`, and `03-reviews` use the same `<theme>/<year>-<short-name>-<ID>/` layout. Reviews follow [TEMPLATE.md](TEMPLATE.md) and [WORKFLOW.md](WORKFLOW.md).
+Review cards: 247 papers. The folders `01-papers`, `02-fulltext`, and `03-reviews` use the same `<theme>/<year>-<short-name>-<ID>/` layout. Reviews follow [TEMPLATE.md](TEMPLATE.md) and [WORKFLOW.md](WORKFLOW.md).
 
 [Library overview](../README.md) · [Reading guide](../READING_GUIDE.md)
 

@@ -1,5 +1,7 @@
 # Markdown extraction coverage
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 **195 of 195 registered papers now have archived Markdown**, with file hashes verified. This includes all 147 baseline papers and all 48 additions.
 
 The 48 additions were re-extracted using **SoMark OXR-1.0 through self-hosted vLLM 0.25.1**, with its D-FINE layout model. Their **802 physical PDF pages** are represented by sequential `<!-- PDF page: N -->` markers. OXR Markdown, per-page structured JSON and 996 referenced figure/image assets are retained under the matching `02-fulltext/<theme>/<folder>/` directories. Referenced files resolve locally. The earlier PyMuPDF4LLM exports remain private comparison backups; they are not the active transcriptions.

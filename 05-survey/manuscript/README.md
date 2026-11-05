@@ -6,37 +6,49 @@ Working survey draft: *Wheeled Mobile Robot Autonomy Under Degradation: A Survey
 
 The current paper compares 245 selected publications (244 technical and one context review) with 25 additional background references, for 270 references. All corpus works date from 2021-2026, and seven background references are foundational pre-2021 sources cited for attribution. It compares degradation responses across estimation, planning, semantic navigation, coordination and reliability. Assessment depth and non-exhaustive selection are disclosed in the supplement. N01–N20, S01–S48, R01–R36 and K01–K16 are integrated into the technical comparisons, evaluation discussion and open questions; the S, R and K cards are targeted readings, not whole-paper audits. X01/X15 remain internal library sources.
 
-The main paper has 24 pages, the T-IV maximum, and the supplement 17. [REVIEW-FIXES-6.md](revision/REVIEW-FIXES-6.md) records the current revision: the concise review method of Section III with the selection table in supplement S1, the short AI-use acknowledgment and the redrawn Fig. 2. [REVIEW-FIXES-5.md](revision/REVIEW-FIXES-5.md) records the revision before it: the review recheck of physical evidence levels and drivetrain effects, the D1 share next to the headline, the interface ranks with their best candidates and Rank B, and the ranking rule fixed in codebook version 1.0 before coding. [REVIEW-FIXES-4.md](revision/REVIEW-FIXES-4.md) records round 4: the evidence coding of all 245 works with a language-model second coding, the degradation-source by function matrix, the interface ranking, the drivetrain and checklist tables, the minor review items, the AI-use acknowledgment and the audits. [REVIEW-FIXES-3.md](revision/REVIEW-FIXES-3.md) records the condensation of Sections IV-VIII, the coverage additions K01-K16 with three related surveys, and the re-checked gap claims. [REVIEW-FIXES-2.md](revision/REVIEW-FIXES-2.md) records the foundational background references and the selection table in Section III. [REVIEW-FIXES-1.md](revision/REVIEW-FIXES-1.md) records the low-cost fixes from a simulated two-reviewer review. [CONTRIBUTIONS-AUDIT-AND-REVIEW.md](revision/CONTRIBUTIONS-AUDIT-AND-REVIEW.md) records updated contributions, platform coverage in Table IV, the numeric audit, a clean-checkout build and a simulated review. [ROADMAP-AUDIT-AND-SURVEYS.md](revision/ROADMAP-AUDIT-AND-SURVEYS.md) records the Table V research roadmap, condition-based section syntheses, the claim audit and four related surveys. [EVIDENCE-MAP-AND-PROSE.md](revision/EVIDENCE-MAP-AND-PROSE.md) records Table IV as an evidence map generated from the corpus coding, its findings in the text and the restructured prose. [PAGE-LIMIT-AND-FIGURE-STYLE.md](revision/PAGE-LIMIT-AND-FIGURE-STYLE.md) records the module tables moved to the supplement, the synthesis table and the grayscale figures, and [FIGURES-AND-CONDENSATION.md](revision/FIGURES-AND-CONDENSATION.md) the SVG figures, condensed sections, the shorter Section III and reference formatting.
+The main paper has 24 pages, the T-IV maximum, and the supplement 17. [REVIEW-FIXES-6.md](revision/REVIEW-FIXES-6.md) records the current revision: the concise review method of Section III with the selection table in supplement S1, the short AI-use acknowledgment and the redrawn Fig. 2. The [revision evidence guide](revision/README.md) lists every earlier round, and [REVISION-REPORT.md](REVISION-REPORT.md) summarizes the state of the draft and the items open before submission.
 
 This directory is part of the evidence-library repository, which is the project's only repository. The manuscript was a separate Git repository until November 4, 2026. That repository has been deleted from GitHub, and its history is kept in a local backup bundle.
 
+## Layout
+
+| Path | Content |
+|---|---|
+| `survey.tex`, `supplement.tex`, `survey-format.tex`, `sections/` | LaTeX sources of the main paper and the supplement |
+| `survey.pdf`, `supplement.pdf` | Built PDFs |
+| `refs.bib`, `ieee-bst-control.bib` | Bibliography written by `scripts/build_data.py`, and the IEEEtran control entry |
+| `figures/` | SVG figure sources and the vector PDFs that LaTeX includes |
+| `generated/` | Tables, statistics macros and data products written by `scripts/build_data.py` |
+| `data/` | Maintained inputs: citation scope, interface decisions, numerical comparisons, equation baseline and related surveys |
+| `scripts/` | Data, figure, coding and verification scripts |
+| `revision/` | Revision records, audits, verification reports and background source records |
+| `notes/` | Planning notes of earlier stages |
+
+## Requirements
+
+- A TeX distribution (TeX Live or MiKTeX) with `latexmk`, IEEEtran, `graphicx`, `xr` and BibTeX.
+- Python 3.11 or later with PyMuPDF (`pip install pymupdf`) for the figures.
+- `pdfinfo` from Poppler on `PATH` for the verifier.
+
+The scripts run from this directory. They locate the evidence library two levels up (the repository root); set `WHEELTEC_LITERATURE_ROOT` to use another checkout.
+
 ## Build
-
-The committed sources, figures and generated tables compile with TeX Live or MiKTeX, IEEEtran, graphicx, xr and BibTeX. The main paper cites the supplement tables through `xr`, so compile the supplement first:
-
-```shell
-latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error supplement.tex
-latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error survey.tex
-```
-
-## Figures
-
-`figures/*.svg` are the editable figure sources and `figures/*.pdf` the vector files that LaTeX includes. The figures are grayscale with Times text, matching the IEEEtran body font. Both file types are generated by one script, which needs Python 3.10+ and PyMuPDF (`pip install pymupdf`):
-
-```shell
-python scripts/build_figures.py
-```
-
-`scripts/svgkit.py` holds the drawing helpers. The corpus figure of the supplement reads `generated/corpus-year-module.json`, written by `scripts/build_data.py`. PyMuPDF ignores SVG dash arrays and markers, so the helpers draw dashes and arrowheads as explicit segments and polygons.
-
-## Regenerate and verify
-
-Python 3.10+ is needed for the scripts. They locate the evidence library two levels up (the repository root); set `WHEELTEC_LITERATURE_ROOT` to use another checkout.
 
 ```shell
 python scripts/build_data.py
+python scripts/build_figures.py
+latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error supplement.tex
+latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error survey.tex
 python scripts/verify_delivery.py
 ```
+
+The committed bibliography, generated tables and figures compile as they are, so the two Python steps are needed only after a change to the library data or a figure. `build_data.py` writes `refs.bib` and everything in `generated/` from the paper index, the selection record, the evidence codes, `data/citation-scope.json` and the background records in `revision/background-sources/`. The main paper cites supplement labels through `xr`, so build the supplement first. After section or supplement edits, `latexmk` can report that the targets are up to date; add `-gg` to force a full rebuild.
+
+## Figures
+
+`figures/*.svg` are the editable figure sources and `figures/*.pdf` the vector files that LaTeX includes. The figures are grayscale with Times text, matching the IEEEtran body font. `scripts/build_figures.py` writes both file types, and `scripts/svgkit.py` holds the drawing helpers. The corpus figure of the supplement reads `generated/corpus-year-module.json`, written by `scripts/build_data.py`. PyMuPDF ignores SVG dash arrays and markers, so the helpers draw dashes and arrowheads as explicit segments and polygons.
+
+## Verification
 
 The verifier requires successful builds and `pdfinfo` on PATH. Its default mode checks public corpus data, citations, labels, equations, generated quantities and PDF diagnostics, and records the repository commit the checked tree is based on. To additionally verify all 741 source artifacts, restore the local PDFs/transcriptions at their indexed paths and run:
 
@@ -45,6 +57,8 @@ python scripts/verify_delivery.py --sources
 ```
 
 The public library excludes publisher full texts. Missing local sources must not be interpreted as completed source verification. Original publisher citations are retained in the library; `refs.bib` is the manuscript's derived bibliography, in which `scripts/bib_case.py` brace-protects acronyms and proper names in titles for IEEEtran sentence case and `scripts/build_data.py` capitalizes one lowercase author name of the LM-Nav export. `ieee-bst-control.bib` applies the IEEE rule of listing the first author and "et al." for entries with more than six authors. Numerical comparison locators and source hashes are in `data/`.
+
+## Status and rights
 
 Author details and submission declarations remain incomplete. The public snapshot was authorized by the repository owner; no submission acceptance or venue approval is implied. No blanket license is applied to third-party source material or to the manuscript.
 

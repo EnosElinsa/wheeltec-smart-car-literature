@@ -1,6 +1,8 @@
 # Integrated evidence analysis (147-work stage)
 
-Historical scope: this analysis records the 147-work stage. The current 195-work/211-reference working survey and the 48 new readings are recorded in the [latest integration analysis](survey-expansion-integration-2026-11-03.md).
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md).
+
+This analysis records the 147-work stage. The next stage, with 195 works, 211 references and the 48 new readings, is recorded in the [48-paper integration analysis](survey-expansion-integration-2026-11-03.md).
 
 ## Scope and reading contract
 

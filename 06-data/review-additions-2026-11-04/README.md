@@ -1,5 +1,7 @@
 # Review additions: registered and assessed sources
 
+> **Stage record, November 4, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 **16 verified official PDF/BibTeX pairs, 16 local PyMuPDF4LLM Markdown files and 16 targeted light review cards.** All 16 are survey selection members. The library now has 247 acquired and assessed publications, and the survey selection has 245 works.
 
 An internal simulated two-reviewer review of an earlier draft named these works as missing from the corpus. The user confirmed the selection of 16 formally published works from 2021–2024. They were not found by a systematic search, and this stage did not apply the earlier screening. By bibliographic year there are three works from 2021, six from 2022, three from 2023 and four from 2024. Six are journal articles and ten are conference papers. Their survey modules are localization and mapping (1), traversability, planning and control (4), multi-robot systems (5), and semantic and language navigation (6).

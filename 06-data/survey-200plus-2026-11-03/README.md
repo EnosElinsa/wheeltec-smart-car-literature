@@ -1,6 +1,6 @@
-> Stage record before the recent-citation revision and the IEEE refresh: the current manuscript has 229 selected works and 246 references. See the [IEEE refresh integration](../../04-analysis/ieee-refresh-integration-2026-11-03.md).
-
 # Survey expansion toward 200 references
+
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md). The [recent-citation policy](../../04-analysis/recent-citation-policy-2026-11-03.md) and the [IEEE refresh integration](../../04-analysis/ieee-refresh-integration-2026-11-03.md) record the next stages.
 
 The frozen selection contains 48 papers: 36 journal articles and 12 formal main-conference papers. **All 48 PDFs and usable citations are registered** in the shared theme directories: 44 strict publisher PDF/raw-BibTeX pairs, three derived citations (S24-S26), and one documented publisher title variant (S41). The library totals **195 publications**. There are no remaining download omissions in this batch.
 

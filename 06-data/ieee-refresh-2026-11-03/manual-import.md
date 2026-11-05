@@ -1,5 +1,7 @@
 # User-download import
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 All 36 frozen papers have one official PDF and one raw IEEE BibTeX file. All 72 original downloads are preserved byte for byte. Identity checks used the PDF and raw citation, not filename matching alone. The source manifest records destination paths and hashes.
 
 R13 uses equivalent LaTeX/Unicode epsilon representations; only the validation text view was normalized. R02 retains its 2026 publisher issue year; the DOI contains the earlier 2024 online year. No raw citation or frozen selection was rewritten.

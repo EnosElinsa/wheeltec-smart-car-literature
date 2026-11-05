@@ -1,5 +1,7 @@
 # Targeted extraction-quality checks
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 All 482 pages passed the final page-count, marker, file-hash and image-reference checks. The mechanical screen initially flagged two formula-heavy appendix pages; they were inspected against rendered PDFs. These checks do not certify exact equation or numerical recognition.
 
 | Paper / physical page | Trigger | Check and disposition |

@@ -1,6 +1,8 @@
 # R680 baseline data collection: platform gate
 
-Historical organization date: October 25, 2026. This page preserves the original data-collection gate. The historical record described full-text review of the selected papers, with relevant follow-up candidates still to be read before project approval; that wording does not imply uniform current full verification. For the current library of 147 works, with 23 full and 124 light cards, see the [integrated evidence analysis](integrated-evidence.md). Physical data collection has not started.
+> **Stage record, October 25, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md).
+
+Historical organization date: October 25, 2026. This page preserves the original data-collection gate. The historical record described full-text review of the selected papers, with relevant follow-up candidates still to be read before project approval; that wording does not imply uniform full verification. The [integrated evidence analysis](integrated-evidence.md) records the later 147-work stage, with 23 full and 124 light cards. Physical data collection has not started.
 
 The operational instructions are in the robot package: `../../wheeltec-ros-source-reference/ros2/navigation/vision-nav/wheeltec_vision_nav/BASELINE.md` (`../../wheeltec-ros-source-reference/ros2/navigation/vision-nav/wheeltec_vision_nav/BASELINE.md`, local only).
 

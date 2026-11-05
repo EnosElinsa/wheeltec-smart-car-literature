@@ -1,6 +1,8 @@
 # OXR Markdown coverage
 
-All 36 new sources were transcribed using SoMarkAI/OXR-1.0 through self-hosted vLLM 0.25.1 and OXR D-FINE layout analysis. The archive contains 36 Markdown files, 482 per-page JSON files and 907 image assets referenced by Markdown or page JSON. The full library has 231 source transcriptions. The 195 earlier transcriptions retain their original bytes.
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
+All 36 new sources were transcribed using SoMarkAI/OXR-1.0 through self-hosted vLLM 0.25.1 and OXR D-FINE layout analysis. The archive contains 36 Markdown files, 482 per-page JSON files and 907 image assets referenced by Markdown or page JSON. The library then had 231 source transcriptions. The 195 earlier transcriptions retain their original bytes.
 
 Every PDF page has one physical-page marker; all output hashes and referenced image paths resolve. Mechanical checks screened short output, low PDF-text word coverage and truncation warnings. No flagged page remains after the recorded checks. This establishes artifact coverage, not exact recognition of every equation, table or reading order. Use the original PDF for numerical claims and formulas.
 

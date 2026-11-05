@@ -1,5 +1,7 @@
 # Follow-up reading assessment: G1–G4
 
+> **Stage record, November 2, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md).
+
 **Assessment date:** November 2, 2026. **Scope:** the fixed F01–F15 follow-up selection. All fifteen official publisher PDF/raw BibTeX pairs have been acquired, with original MinerU precision transcriptions and fifteen new targeted *light* review cards passing the PDF-inclusive checker. The user supplied the previously inaccessible F03, F09, and F11 publisher PDFs; their identities match the retained raw publisher citation exports. This is a corpus-scoped reading assessment, not a claim about every robotics paper. It preserves the four questions in [the confirmed shortlist](followup-shortlist.md). The cards use selected abstract, method, evaluation, and conclusion pages; numerical tables and proofs were not comprehensively verified. Source and review completion are recorded separately in [the status ledger](followup-status.csv).
 
 The boundary platforms provide mechanisms to investigate, not validation of the reference R680. None of these readings establishes an R680 implementation, its sensor calibration, compute deadline, braking/terrain limits, or recovery performance.

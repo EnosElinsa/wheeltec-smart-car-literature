@@ -1,5 +1,7 @@
 # Integration of the 36-paper IEEE refresh
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../README.md).
+
 The working survey now cites **229 selected works** (228 technical studies and one context review) and **5 background references**, for **234 resolved references**. Every cited work dates from 2021-2026. All R01-R36 received targeted light cards and appear in substantive section prose. The main paper compiled to 36 pages and the supplement to three at the time of this record.
 
 Follow-up, November 4, 2026: the [figures and condensation revision](../05-survey/manuscript/revision/FIGURES-AND-CONDENSATION.md) reduced the main paper to 26 pages with all 229 works still cited, brought the sentence rhythm into the team band (mean 23.0 words, 13% under 12 words) and moved the manuscript into this repository. The [page-limit revision](../05-survey/manuscript/revision/PAGE-LIMIT-AND-FIGURE-STYLE.md) then moved the five module tables to the supplement and reduced the main paper to 23 pages, within the 24-page T-IV maximum. The [evidence-map revision](../05-survey/manuscript/revision/EVIDENCE-MAP-AND-PROSE.md) added a function-by-attribute evidence map and brought it to 24 pages, and the [roadmap and audit revision](../05-survey/manuscript/revision/ROADMAP-AUDIT-AND-SURVEYS.md) added four related surveys (238 references) and checked the critical characterizations against the sources.

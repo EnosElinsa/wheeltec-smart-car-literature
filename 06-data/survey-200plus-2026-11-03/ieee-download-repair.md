@@ -1,5 +1,7 @@
 # IEEE acquisition repair and access status
 
+> **Stage record, November 3, 2026.** Its counts and statuses describe that date and are not updated. Current totals are in the [repository README](../../README.md).
+
 This report records the automatic-download stage before the later user import. See the [manual import receipt](manual-import.md) and [current batch state](README.md) for updated counts and remaining actions.
 
 The dedicated headful Chrome browser did not inherit the existing HTTP(S) proxy environment. Direct IEEE navigation failed with ERR_CONNECTION_TIMED_OUT. Passing the configured proxy to the isolated browser restored official page access and the configured institutional return flow. The repair preserves proxy exclusions, keeps proxy credentials out of URLs and diagnostics, and leaves the hash-pinned 0.6.0 release unchanged through an explicit local browser overlay.
