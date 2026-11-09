@@ -1,0 +1,26 @@
+{
+  "paper_id": "cc9c771648204086af2605c03de7d902",
+  "metadata": {
+    "title": "Adaptive Diffusion Terrain Generator for Autonomous Uneven Terrain Navigation",
+    "authors": [
+      "Youwei Yu",
+      "Junhong Xu",
+      "Lantao Liu"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v270/yu25a.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v270/yu25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/yu25a/yu25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v270/yu25a.html",
+  "pdf_sha256": "5521b79483c290e2b14717c600e67c66d65a52b3491b8120eb66e1cdcd30e5f6",
+  "bibtex_sha256": "92f5f05b9199ba1766b24b8bacdc7c141c1e19f363870294d412c6f76e4dd318",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:34:13.554123+00:00"
+}

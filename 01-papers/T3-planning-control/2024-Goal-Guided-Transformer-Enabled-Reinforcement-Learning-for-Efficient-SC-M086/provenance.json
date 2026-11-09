@@ -1,0 +1,28 @@
+{
+  "paper_id": "6875101833324d43bbd68dd0098d6e2d",
+  "metadata": {
+    "title": "Goal-Guided Transformer-Enabled Reinforcement Learning for Efficient Autonomous Navigation",
+    "authors": [
+      "Wenhui Huang",
+      "Yanxin Zhou",
+      "Xiangkun He",
+      "Chen Lv"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/tits.2023.3312453",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10254445/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10254445/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10254445&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "3de841725b1399ebe1ae7171e6a7d7372fbfd8f1d0ed94fee9f15742153d0458",
+  "bibtex_sha256": "a26749e9ff0d9d5f2cd126001f0d0b4daf8eb1f01cd98396093d26dd2240ff1e",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:52:28.301181+00:00",
+  "selection_id": "0ba3ff96ea60e8a0d658ece5"
+}

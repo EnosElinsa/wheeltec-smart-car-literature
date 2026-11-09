@@ -1,0 +1,29 @@
+{
+  "paper_id": "515799e89de84f589ad0fd4c2917a986",
+  "metadata": {
+    "title": "Shared control for autonomous robotic navigation: A review",
+    "authors": [
+      "Zhang"
+    ],
+    "year": 2026,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2026.105467",
+    "publisher": "Elsevier ScienceDirect",
+    "landing_url": "https://www.sciencedirect.com/science/article/pii/S0921889026001405",
+    "publication_type": "Short Survey",
+    "authors_complete": false
+  },
+  "official_landing_url": "https://www.sciencedirect.com/science/article/pii/S0921889026001405",
+  "official_pdf_url": "https://www.sciencedirect.com/science/article/pii/S0921889026001405/pdfft",
+  "official_bibtex_url": "https://www.sciencedirect.com/sdfe/arp/cite?pii=S0921889026001405&format=text%2Fx-bibtex&withabstract=true",
+  "pdf_sha256": "6b108561d385bdc0dbc969dea37ac0e6d0be7da6f4b50ce8f406a171fe4774fc",
+  "bibtex_sha256": "3ff40e7dcd8be592880eabc7abad399b306f4fdb985d5844304ed4f26921b9be",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T09:00:39.969507+00:00",
+  "acquisition_method": "manual_publisher_download",
+  "metadata_source_url": "https://api.elsevier.com/content/search/scopus?query=DOI%28%2210.1016%2Fj.robot.2026.105467%22%29&count=2&view=STANDARD",
+  "metadata_author_scope": "first_author",
+  "source_pdf_filename": "Shared control for autonomous robotic navigation A review.pdf",
+  "source_bibtex_filename": "S0921889026001405.bib"
+}

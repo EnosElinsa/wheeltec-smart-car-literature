@@ -1,0 +1,29 @@
+{
+  "paper_id": "20e31fafc18243b2b8ea9ac703a158a1",
+  "metadata": {
+    "title": "Learning Decentralized Multi-Robot PointGoal Navigation",
+    "authors": [
+      "Takieddine Soualhi",
+      "Nathan Crombez",
+      "Yassine Ruichek",
+      "Alexandre Lombard",
+      "Stéphane Galland"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3550798",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10924425/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10924425/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10924425&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "ea09180fb380146fccfe3f20dc1361c8c8b994baecc7d651eb1e4626f111d0e9",
+  "bibtex_sha256": "3b997878cd1eec09480076baffb501995050e0f200fd01a04b4783a65097192a",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:43:49.840990+00:00",
+  "selection_id": "132ef3b400f44830a18fdc29"
+}

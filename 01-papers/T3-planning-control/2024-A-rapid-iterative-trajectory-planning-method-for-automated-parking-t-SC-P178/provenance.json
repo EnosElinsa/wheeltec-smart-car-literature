@@ -1,0 +1,31 @@
+{
+  "paper_id": "9a4546509e704befa5cd32901f64a353",
+  "metadata": {
+    "title": "A rapid iterative trajectory planning method for automated parking through differential flatness",
+    "authors": [
+      "Zhouheng Li",
+      "Lei Xie",
+      "Cheng Hu",
+      "Hongye Su"
+    ],
+    "year": 2024,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2024.104816",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1016/j.robot.2024.104816",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1016/j.robot.2024.104816",
+  "official_pdf_url": "https://doi.org/10.1016/j.robot.2024.104816",
+  "official_bibtex_url": "https://doi.org/10.1016/j.robot.2024.104816",
+  "pdf_sha256": "406dea849ec05e0ddfeb5020943dd551b6501323790020d577412bca9c99c52b",
+  "bibtex_sha256": "ce943504f01547415c7640c1e6dcc52898c68789c0cb0df3bff214c9cfc08746",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:15:58.921684+00:00",
+  "selection_id": "db39daf5c4f7a4c3ee9ca0f7",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "A rapid iterative trajectory planning method for automated parking through differential flatness.pdf",
+  "source_bibtex_filename": "S0921889024002008.bib"
+}

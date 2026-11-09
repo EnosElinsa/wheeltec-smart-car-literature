@@ -1,0 +1,28 @@
+{
+  "paper_id": "5c6f748ff1de485c8e84d0ea9fe06a79",
+  "metadata": {
+    "title": "Overlapping Social Navigation Principles: A Framework for Social Robot Navigation",
+    "authors": [
+      "Bryce Ikeda",
+      "Mark Higger",
+      "Christina Soyoung Song",
+      "J. Gregory Trafton"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra55743.2025.11128863",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11128863/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11128863/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11128863&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "3a759ae366512a4e950657cf8ed1dbd22ac09dddcb5b620cdd723df64351f44f",
+  "bibtex_sha256": "718fb8a6f302e0ab44bbffd5ec4194d2ea3f06985159d72e0b12bdac6282322e",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:45:14.298460+00:00",
+  "selection_id": "8faaba1e0aca58cf8a8d59c5"
+}

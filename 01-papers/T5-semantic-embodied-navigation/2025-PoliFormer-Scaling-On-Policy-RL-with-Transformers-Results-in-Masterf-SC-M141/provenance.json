@@ -1,0 +1,32 @@
+{
+  "paper_id": "b29256adbcf54aaea61175d440ab0057",
+  "metadata": {
+    "title": "PoliFormer: Scaling On-Policy RL with Transformers Results in Masterful Navigators",
+    "authors": [
+      "Kuo-Hao Zeng",
+      "Zichen Zhang",
+      "Kiana Ehsani",
+      "Rose Hendrix",
+      "Jordi Salvador",
+      "Alvaro Herrasti",
+      "Ross Girshick",
+      "Aniruddha Kembhavi",
+      "Luca Weihs"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v270/zeng25a.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v270/zeng25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/zeng25a/zeng25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v270/zeng25a.html",
+  "pdf_sha256": "19b11d60218dc5418ac9d3673e03e851944187b998fe83142477e96502c40a82",
+  "bibtex_sha256": "b97b18b71f11782ca4fadf7ee47ca541e5cc54cdb43f2198edee66b180cf16f8",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:37:29.295338+00:00"
+}

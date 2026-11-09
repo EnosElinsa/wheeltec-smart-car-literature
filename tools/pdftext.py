@@ -1,7 +1,7 @@
 """Read original PDF page text, using optional local OCR for image-only pages.
 
 OCR requires PyMuPDF and an English Tesseract model in TESSDATA_PREFIX, the
-system tessdata directory, or tmp/ocr/tessdata/eng.traineddata. It never
+system tessdata directory, or .local/ocr/tessdata/eng.traineddata. It never
 changes the PDF. Local OCR caches are bound to PDF bytes, model bytes, and
 PyMuPDF version. Without a model, image-only pages remain empty and cannot
 pass an excerpt match. OCR matches still need visual inspection.
@@ -29,7 +29,7 @@ def read_pdf_pages(path: Path, *, tessdata: Path | None = None,
             try:
                 tessdata = Path(fitz.get_tessdata())
             except RuntimeError:
-                tessdata = REPO_ROOT / "tmp" / "ocr" / "tessdata"
+                tessdata = REPO_ROOT / ".local" / "ocr" / "tessdata"
         model = Path(tessdata) / "eng.traineddata"
         if not model.is_file():
             return pages

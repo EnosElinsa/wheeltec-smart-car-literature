@@ -1,0 +1,32 @@
+{
+  "paper_id": "cfc8488677a544e08386c43f558e2b21",
+  "metadata": {
+    "title": "UniLGL: Learning Uniform Place Recognition for FOV-Limited/Panoramic LiDAR Global Localization",
+    "authors": [
+      "Hongming Shen",
+      "Xun Chen",
+      "Yulin Hui",
+      "Zhenyu Wu",
+      "Wei Wang",
+      "Qiyang Lyu",
+      "Tianchen Deng",
+      "Danwei Wang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2026.3672514",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11429541/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11429541/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11429541&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "aa4a6002cab15b4d75396f2391007fa6f97342270856dcc4a921b93572f49b95",
+  "bibtex_sha256": "9d7d51882fda0c0d15374eec542f5ec1afb8cf40aaec344b1f6cf116c92bec6e",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:33:11.248083+00:00",
+  "selection_id": "45f4e38b4ec733338612c6ea"
+}

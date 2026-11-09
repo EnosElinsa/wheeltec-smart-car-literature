@@ -1,0 +1,31 @@
+{
+  "paper_id": "4b3c8fd59199405b91dc689b74965c93",
+  "metadata": {
+    "title": "MTG: Mapless Trajectory Generator with Traversability Coverage for Outdoor Navigation",
+    "authors": [
+      "Jing Liang",
+      "Peng Gao",
+      "Xuesu Xiao",
+      "Adarsh Jagan Sathyamoorthy",
+      "Mohamed Elnoor",
+      "Ming C. Lin",
+      "Dinesh Manocha"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57147.2024.10611319",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10611319/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10611319/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10611319&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "3af5a2a77c5aafa329f4a35fc8bdc300f65ef367f7cbbbe0a30ef8ba944f463a",
+  "bibtex_sha256": "b34d0ee5886c7bdf2cd2613b8be3246e479839210c031484c611d0af63551461",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:53:47.705349+00:00",
+  "selection_id": "5b52918c0b5195ae55527b7b"
+}

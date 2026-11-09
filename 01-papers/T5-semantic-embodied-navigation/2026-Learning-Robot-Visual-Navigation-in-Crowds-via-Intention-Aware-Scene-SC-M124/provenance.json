@@ -1,0 +1,32 @@
+{
+  "paper_id": "444258b16ea94a2cb8086e657bfa4c47",
+  "metadata": {
+    "title": "Learning Robot Visual Navigation in Crowds via Intention-Aware Scene Representations",
+    "authors": [
+      "Han Bao",
+      "Bingyi Xia",
+      "Hanjing Ye",
+      "Yu Zhan",
+      "Hao Cheng",
+      "Baozhi Jia",
+      "Wenjun Xu",
+      "Jiankun Wang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3677748",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11456337/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11456337/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11456337&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "e9bf2538be0bbd220f124f6920dbbbb1414c69d56988b3c4bcc8d372ea64209b",
+  "bibtex_sha256": "f0e8628e025689eff3eef1394bc420bfd66bcff755398a1265a101d13e167733",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:29:17.495384+00:00",
+  "selection_id": "7c84c58a1c59fec0feeca639"
+}

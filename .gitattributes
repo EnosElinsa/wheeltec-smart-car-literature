@@ -1,6 +1,8 @@
 # Publisher BibTeX exports must keep their original bytes (hashes are
 # recorded in 06-data/paper-index.csv), so Git must not normalize them.
 *.bib -text
+# Raw publisher citation spacing is part of the preserved source bytes.
+01-papers/**/citation.bib -whitespace
 # Data tables keep their byte layout (UTF-8 BOM, line endings).
 *.csv -text whitespace=cr-at-eol
 *.jsonl -text

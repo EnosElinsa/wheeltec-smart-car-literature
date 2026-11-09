@@ -1,0 +1,28 @@
+{
+  "paper_id": "6ab00c19ffc747649a9d3253bb64f665",
+  "metadata": {
+    "title": "“Feariosity”-Guided Reinforcement Learning for Safe and Efficient Autonomous End-to-End Navigation",
+    "authors": [
+      "Dong Hu",
+      "Longfei Mo",
+      "Jingda Wu",
+      "Chao Huang"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3577523",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11027413/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11027413/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11027413&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "9e34135c2cc954ead163320c3bdd21d2d6f96537eccf88e1be838ac136893c84",
+  "bibtex_sha256": "880c7f5a2d4b3c4e52213bc026d9a8363639217b7b4f31b620e0aa5ae5ec2562",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:47:29.648585+00:00",
+  "selection_id": "394d267338d66044ba9ca4e8"
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "e2478bdb9fb14fefb64475e85a7684e2",
+  "metadata": {
+    "title": "A Benchmark Dataset for Collaborative SLAM in Service Environments",
+    "authors": [
+      "Harin Park",
+      "Inha Lee",
+      "Minje Kim",
+      "Hyungyu Park",
+      "Kyungdon Joo"
+    ],
+    "year": 2024,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2024.3491415",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10742554/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10742554/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10742554&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "36353c24abc93b403d2591cb5f2e3798edbc32cc51ac7bb681862a956945ae8b",
+  "bibtex_sha256": "8e081691421652acc6bbed65e02a1e047103b12a11ecd26bd72cb1bcadf2d40e",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:47:47.282471+00:00",
+  "selection_id": "217f7edc6451cc49e1f189c9"
+}

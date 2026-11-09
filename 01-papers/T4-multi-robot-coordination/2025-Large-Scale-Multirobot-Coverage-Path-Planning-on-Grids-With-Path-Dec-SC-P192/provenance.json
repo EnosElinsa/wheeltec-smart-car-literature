@@ -1,0 +1,27 @@
+{
+  "paper_id": "9ff4c3dcd8f940669e95092becdd9a52",
+  "metadata": {
+    "title": "Large-Scale Multirobot Coverage Path Planning on Grids With Path Deconfliction",
+    "authors": [
+      "Jingtao Tang",
+      "Zining Mao",
+      "Hang Ma"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3567476",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10989517/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10989517/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10989517&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "e3fe2f50e7e08f8961e8713c6344e536e257ef990c7f40f0ac05d260205201b8",
+  "bibtex_sha256": "d870b3ae2380d9ae1eda288564e26fbd3bb1b2640856db217a0b5438418c41d2",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:43:29.910244+00:00",
+  "selection_id": "a73de16abb2f1db878c80fd4"
+}

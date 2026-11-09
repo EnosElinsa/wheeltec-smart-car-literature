@@ -1,0 +1,29 @@
+{
+  "paper_id": "8f7c522961f74e7e95fa0a87c0f8bd49",
+  "metadata": {
+    "title": "Boosting Efficient Reinforcement Learning for Vision-and-Language Navigation With Open-Sourced LLM",
+    "authors": [
+      "Jiawei Wang",
+      "Teng Wang",
+      "Wenzhe Cai",
+      "Lele Xu",
+      "Changyin Sun"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2024.3511402",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10777561/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10777561/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10777561&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "19b6f823b5b2d7a1c735b2931a3c4789500175fe696e5e0d93d324c13a5a6f77",
+  "bibtex_sha256": "14cea92702d4a39b3ddb75ed0635eaae3a3614007496fa73dfc095ce80abef93",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:35:37.973567+00:00",
+  "selection_id": "b7eeacc04babd494a654982c"
+}

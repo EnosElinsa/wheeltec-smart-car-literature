@@ -1,0 +1,29 @@
+{
+  "paper_id": "0833953084694adc9fa0799911ede5af",
+  "metadata": {
+    "title": "Cooperative and Asynchronous Transformer-Based Mission Planning for heterogeneous teams of mobile robots",
+    "authors": [
+      "Milad Farjadnasab",
+      "Shahin Sirouspour"
+    ],
+    "year": 2025,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2025.105131",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1016/j.robot.2025.105131",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1016/j.robot.2025.105131",
+  "official_pdf_url": "https://doi.org/10.1016/j.robot.2025.105131",
+  "official_bibtex_url": "https://doi.org/10.1016/j.robot.2025.105131",
+  "pdf_sha256": "543ef93355598e8a9e07b283f0aa1af42d27a5c43297b0f2e87a9cd10ba97f5c",
+  "bibtex_sha256": "667089cd5fb5cfa5e892a407902944d3426e7140a6694cc591069f7ff192a4da",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:16:21.347137+00:00",
+  "selection_id": "e19e3aa0049cd475fb43852a",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Cooperative and Asynchronous Transformer-Based Mission Planning for heterogeneous teams of mobile robots.pdf",
+  "source_bibtex_filename": "S0921889025002283.bib"
+}

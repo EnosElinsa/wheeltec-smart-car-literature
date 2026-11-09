@@ -1,0 +1,30 @@
+{
+  "paper_id": "9395ebe6759140058e3ea15fc5279c2f",
+  "metadata": {
+    "title": "NaviDiffuser: Tackling Multi-Objective Robot Navigation by Weight Range Guided Diffusion Model",
+    "authors": [
+      "Xuyang Zhang",
+      "Ziyang Feng",
+      "Quecheng Qiu",
+      "Jie Peng",
+      "Haoyu Li",
+      "Jianmin Ji"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros60139.2025.11247084",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11247084/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11247084/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11247084&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "aa52bb35acb9ea4a23473a3257114db4c5a3fc09faf54b2b7784f3f9ee2f2f6c",
+  "bibtex_sha256": "137bf336d7d06f9d150c521882a6c7b06cf2b00f8f9600db7beacf51576a747b",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:44:28.374254+00:00",
+  "selection_id": "e2b7922fce43349a05bdde61"
+}

@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v270-gao25c,
+  title = 	 {Provably Safe Online Multi-Agent Navigation in Unknown Environments},
+  author =       {Gao, Zhan and Yang, Guang and Bayrooti, Jasmine and Prorok, Amanda},
+  booktitle = 	 {Proceedings of The 8th Conference on Robot Learning},
+  pages = 	 {5466--5486},
+  year = 	 {2025},
+  editor = 	 {Agrawal, Pulkit and Kroemer, Oliver and Burgard, Wolfram},
+  volume = 	 {270},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--09 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v270/main/assets/gao25c/gao25c.pdf},
+  url = 	 {https://proceedings.mlr.press/v270/gao25c.html},
+  abstract = 	 {Control Barrier Functions (CBFs) provide safety guarantees for multi-agent navigation. However, traditional approaches require full knowledge of the environment (e.g., obstacle positions and shapes) to formulate CBFs and hence, are not applicable in unknown environments. This paper overcomes this issue by proposing an Online Exploration-based Control Lyapunov Barrier Function (OE-CLBF) controller. It estimates the unknown environment by learning its corresponding CBF with a Support Vector Machine (SVM) in an online manner, using local neighborhood information, and leverages the latter to generate actions for safe navigation. To reduce the computation incurred by the online SVM training, we use an Imitation Learning (IL) framework to predict the importance of neighboring agents with Graph Attention Networks (GATs), and train the SVM only with information received from neighbors of high ‘value’. The OE-CLBF allows for decentralized deployment, and importantly, provides provable safety guarantees that we derive in this paper. Experiments corroborate theoretical findings and demonstrate superior performance w.r.t. state-of-the-art baselines in a variety of unknown environments.}
+}

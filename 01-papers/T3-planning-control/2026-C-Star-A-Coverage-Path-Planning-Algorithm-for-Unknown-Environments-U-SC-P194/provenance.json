@@ -1,0 +1,27 @@
+{
+  "paper_id": "68eca9f61f4d438ebd553cb115570616",
+  "metadata": {
+    "title": "C<inline-formula><tex-math notation=\"LaTeX\">$^{*}$</tex-math></inline-formula>: A Coverage Path Planning Algorithm for Unknown Environments Using Rapidly Covering Graphs",
+    "authors": [
+      "Zongyuan Shen",
+      "James P. Wilson",
+      "Shalabh Gupta"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2026.3661719",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11373112/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11373112/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11373112&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "609a0282da629cc8e787541e373febb2a9ef5e7aa5bd39ab45229d918905ac6e",
+  "bibtex_sha256": "0b1fcf383053b8d464783bbeed977d90204d13395c5a6cd2fa93af77da962942",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:27:24.609254+00:00",
+  "selection_id": "45b75fb5559fd57d6808c6ef"
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "23a407cfe23c4082a5c4964e3cbb1801",
+  "metadata": {
+    "title": "Confidence-Aware Robust Dynamical Distance Constrained Reinforcement Learning for Social Robot Navigation",
+    "authors": [
+      "Kai Zhu",
+      "Tao Xue",
+      "Tao Zhang"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2025.3578326",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11029302/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11029302/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11029302&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "ed1dac32d21ed68e1855a02da11bf8b8b707751e3de8be3a2b4ddb5c79485a11",
+  "bibtex_sha256": "f6a7c03e1d5f532714f8a77aaff3857a9b4524e0715eb5d9c14cc408e597bcf4",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:36:01.008504+00:00",
+  "selection_id": "f457b633bccec2b7ce084254"
+}

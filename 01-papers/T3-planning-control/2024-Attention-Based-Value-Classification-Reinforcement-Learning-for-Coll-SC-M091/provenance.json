@@ -1,0 +1,28 @@
+{
+  "paper_id": "127dd4f4f91844a580853540d61d035c",
+  "metadata": {
+    "title": "Attention-Based Value Classification Reinforcement Learning for Collision-Free Robot Navigation",
+    "authors": [
+      "Chao Sun",
+      "Xing Wu",
+      "Yuanda Wang",
+      "Changyin Sun"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/tiv.2024.3391007",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10504956/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10504956/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10504956&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b26a82cde8a2db80c9cab03d83ecbe6ade8c2b501f0e06683ee4939bcb2299e3",
+  "bibtex_sha256": "54011e61b344898273f0c8a7f5b9b0da0277e78d4edb6bea79c70e48d7dc4155",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:48:40.229578+00:00",
+  "selection_id": "048f671483338d6f8d6b8f6c"
+}

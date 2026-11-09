@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v305-hu25c,
+  title = 	 {ComposableNav: Instruction-Following Navigation in Dynamic Environments via Composable Diffusion},
+  author =       {Hu, Zichao and Tang, Chen and Munje, Michael Joseph and Zhu, Yifeng and Liu, Alex and Liu, Shuijing and Warnell, Garrett and Stone, Peter and Biswas, Joydeep},
+  booktitle = 	 {Proceedings of The 9th Conference on Robot Learning},
+  pages = 	 {4246--4268},
+  year = 	 {2025},
+  editor = 	 {Lim, Joseph and Song, Shuran and Park, Hae-Won},
+  volume = 	 {305},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {27--30 Sep},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v305/main/assets/hu25c/hu25c.pdf},
+  url = 	 {https://proceedings.mlr.press/v305/hu25c.html},
+  abstract = 	 {This paper considers the problem of enabling robots to navigate dynamic environments while following instructions.  The challenge lies in the combinatorial nature of instruction specifications: each instruction can include multiple specifications, and the number of possible specification combinations grows exponentially as the robot’s skill set expands. For example, “overtake the pedestrian while staying on the right side of the road” consists of two specifications: *"overtake the pedestrian"* and *"walk on the right side of the road."* To tackle this challenge, we propose ComposableNav, based on the intuition that following an instruction involves independently satisfying its constituent specifications, each corresponding to a distinct motion primitive.  Using diffusion models, ComposableNav learns each primitive separately, then composes them in parallel at deployment time to satisfy novel combinations of specifications unseen in training.  Additionally, to avoid the onerous need for demonstrations of individual motion primitives, we propose a two-stage training procedure: (1) supervised pre-training to learn a base diffusion model for dynamic navigation, and (2) reinforcement learning fine-tuning that molds the base model into different motion primitives. Through simulation and real-world experiments, we show that ComposableNav enables robots to follow instructions by generating trajectories that satisfy diverse and unseen combinations of specifications, significantly outperforming both non-compositional VLM-based policies and costmap composing baselines.}
+}

@@ -1,0 +1,32 @@
+{
+  "paper_id": "9e86f00eaf95405d8beaaf972bc66acf",
+  "metadata": {
+    "title": "Self-reflective terrain-aware robot adaptation for consistent off-road ground navigation",
+    "authors": [
+      "Sriram Siva",
+      "Maggie Wigness",
+      "John G. Rogers",
+      "Long Quang",
+      "Hao Zhang"
+    ],
+    "year": 2024,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649231225243",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1177/02783649231225243",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1177/02783649231225243",
+  "official_pdf_url": "https://doi.org/10.1177/02783649231225243",
+  "official_bibtex_url": "https://doi.org/10.1177/02783649231225243",
+  "pdf_sha256": "177d5e0fafee305d7fecdebe533eab19bea84bd2a2a3b5724e6f382ea6d0aa52",
+  "bibtex_sha256": "97b5d9092c75a4d13f426e1f9f124309d4473f34949ea866caf61183ceecff4a",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:18:09.046777+00:00",
+  "selection_id": "f7b1a1891359d1c82b482989",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "siva-et-al-2024-self-reflective-terrain-aware-robot-adaptation-for-consistent-off-road-ground-navigation.pdf",
+  "source_bibtex_filename": "csp_43_.bib"
+}

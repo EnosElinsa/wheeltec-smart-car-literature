@@ -1,0 +1,30 @@
+{
+  "paper_id": "468674d73c1049728d1a471f9adacaf0",
+  "metadata": {
+    "title": "A Critical Review of Reinforcement Learning Algorithms for Mobile Robot Path Planning",
+    "authors": [
+      "P. Ramya",
+      "P. Natesan",
+      "S. Venkatachalam"
+    ],
+    "year": 2026,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.70240",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1002/rob.70240",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1002/rob.70240",
+  "official_pdf_url": "https://doi.org/10.1002/rob.70240",
+  "official_bibtex_url": "https://doi.org/10.1002/rob.70240",
+  "pdf_sha256": "254194d338602f77ec6bab1282ad877cb00688991252012c6e4b0a67f91b59e3",
+  "bibtex_sha256": "84c9559b776325f626b73e56b0cc8ac4ceaeecd04f6ae9200423b62567b71c09",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:17:14.397143+00:00",
+  "selection_id": "5dab475048b079c1b172a028",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2026 - Ramya - A Critical Review of Reinforcement Learning Algorithms for Mobile Robot Path.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (5).bibtex"
+}

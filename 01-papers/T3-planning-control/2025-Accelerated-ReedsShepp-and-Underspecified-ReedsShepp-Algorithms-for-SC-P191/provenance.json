@@ -1,0 +1,27 @@
+{
+  "paper_id": "c9b2d78d7fbf437180b3c6e90cd65799",
+  "metadata": {
+    "title": "Accelerated Reeds–Shepp and Underspecified Reeds–Shepp Algorithms for Mobile Robot Path Planning",
+    "authors": [
+      "Ibrahim Ibrahim",
+      "Wilm Decré",
+      "Jan Swevers"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2025.3554406",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10938335/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10938335/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10938335&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "d2a0fb97dc4c91593132a0d19fe993d1b4940a1e2dbf905538c6ac73383f5015",
+  "bibtex_sha256": "7d2da6f08549df86261f59b9906211f2ad4d5efa25c6c42721399e6f5f71de23",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:33:58.345647+00:00",
+  "selection_id": "d958ee6fd7aadec830f4dfb6"
+}

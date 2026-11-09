@@ -1,0 +1,27 @@
+{
+  "paper_id": "3d47d4c955d34429b4c9bdff3fa79c4c",
+  "metadata": {
+    "title": "Provably Safe Online Multi-Agent Navigation in Unknown Environments",
+    "authors": [
+      "Zhan Gao",
+      "Guang Yang",
+      "Jasmine Bayrooti",
+      "Amanda Prorok"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v270/gao25c.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v270/gao25c.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v270/main/assets/gao25c/gao25c.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v270/gao25c.html",
+  "pdf_sha256": "bb51ee2e05de6001531dd4fc802014555046e2869d151946e667816678e2fe40",
+  "bibtex_sha256": "52a3474561a07497db535d7d24c355bc690546ff82c568a4edd69b087fa41877",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:37:52.117081+00:00"
+}

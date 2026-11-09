@@ -1,0 +1,34 @@
+{
+  "paper_id": "52cec063a433411f8688d709e2aab54c",
+  "metadata": {
+    "title": "Motion Planning for Autonomous Driving: The State of the Art and Future Perspectives",
+    "authors": [
+      "Siyu Teng",
+      "Xuemin Hu",
+      "Peng Deng",
+      "Bai Li",
+      "Yuchen Li",
+      "Yunfeng Ai",
+      "Dongsheng Yang",
+      "Lingxi Li",
+      "Zhe Xuanyuan",
+      "Fenghua Zhu",
+      "Long Chen"
+    ],
+    "year": 2023,
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/tiv.2023.3274536",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10122127/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10122127/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10122127&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "5f0fba064e3fd6efdb7025cc15584d1c4b972eecc6b99df10c8ff2646e4a5a8a",
+  "bibtex_sha256": "3f8b6acb933660b5126f14aa0615c4dd5260c30fc4f4d070273e4fde07359bac",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-06T03:53:30.732546+00:00"
+}

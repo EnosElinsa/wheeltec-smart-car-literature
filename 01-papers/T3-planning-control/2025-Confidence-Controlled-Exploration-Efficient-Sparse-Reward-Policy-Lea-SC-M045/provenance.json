@@ -1,0 +1,32 @@
+{
+  "paper_id": "b76016e5b3aa4a8495c83137700123d6",
+  "metadata": {
+    "title": "Confidence-Controlled Exploration: Efficient Sparse-Reward Policy Learning for Robot Navigation",
+    "authors": [
+      "Bhrij Patel",
+      "Kasun Weerakoon",
+      "Wesley A. Suttle",
+      "Alec Koppel",
+      "Brian M. Sadler",
+      "Tianyi Zhou",
+      "Dinesh Manocha",
+      "Amrit Singh Bedi"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros60139.2025.11246149",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11246149/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11246149/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11246149&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "e9725a2c016dc9a5a5c8ade1251407277043cc1c120e812b554933aeb929343d",
+  "bibtex_sha256": "66c8579070b882b476ef3eac0ce448e18171ca3e048dcf522bcf377d8ad7ad05",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:36:18.410940+00:00",
+  "selection_id": "c93a41ce5f74801d5e6a4282"
+}

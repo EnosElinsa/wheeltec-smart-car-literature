@@ -1,0 +1,29 @@
+{
+  "paper_id": "40021438bf414a28aa5d25c8f36ee5d3",
+  "metadata": {
+    "title": "Robot Navigation With Reinforcement Learned Path Generation and Fine-Tuned Motion Control",
+    "authors": [
+      "Longyuan Zhang",
+      "Ziyue Hou",
+      "Ji Wang",
+      "Ziang Liu",
+      "Wei Li"
+    ],
+    "year": 2023,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2023.3284354",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10146449/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10146449/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10146449&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "3ac3e64fe855f4a38c582941a17f60d15a576f6692931fc98de5e4ba38e39744",
+  "bibtex_sha256": "fc143dbab35c352d7ab3467d721f0852d172e968d8e6efd51ce961a147492ba5",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:56:36.708342+00:00",
+  "selection_id": "05fa7aeb1a4aa18557ef57c0"
+}

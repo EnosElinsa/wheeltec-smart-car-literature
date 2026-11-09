@@ -1,0 +1,27 @@
+{
+  "paper_id": "336d36f8aded427b8fdff1f39216a4fd",
+  "metadata": {
+    "title": "A Minimal Subset Approach for Informed Keyframe Sampling in Large-Scale SLAM",
+    "authors": [
+      "Nikolaos Stathoulopoulos",
+      "Christoforos Kanellakis",
+      "George Nikolakopoulos"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3636035",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11266938/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11266938/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11266938&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "6f70da1d852a23ed9e5be116b46980e904d8725dc898857d9caf051fd9106dcf",
+  "bibtex_sha256": "1e745175e7cde09950579bedcc7f2fd8202420cc7e48df530ce5523515c2dac6",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T06:02:23.262668+00:00",
+  "selection_id": "bfd90ea8c790f184c0c58457"
+}

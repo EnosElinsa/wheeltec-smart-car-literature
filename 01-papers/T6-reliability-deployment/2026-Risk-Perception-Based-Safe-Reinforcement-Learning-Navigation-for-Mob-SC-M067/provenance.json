@@ -1,0 +1,29 @@
+{
+  "paper_id": "75fc690556674647bd375a1454660fd9",
+  "metadata": {
+    "title": "Risk Perception-Based Safe Reinforcement Learning Navigation for Mobile Robots in Multi-Dynamic Obstacles Environments",
+    "authors": [
+      "Junxiao Wang",
+      "Haochi Chen",
+      "Kunkun Wang",
+      "Le Gao",
+      "Jun Yang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3691494",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11513402/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11513402/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11513402&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "8afa7ea5db2b64fd928dd66d04493caeb94434f7cad40b24ff45b164245be5e1",
+  "bibtex_sha256": "4ed6653435e1545a7f510f1cd7e2a1fb76afe11adb7046e95f8c1cac2031e514",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:31:41.075702+00:00",
+  "selection_id": "8fe062e6d1a3375e93d18499"
+}

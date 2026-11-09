@@ -1,0 +1,33 @@
+{
+  "paper_id": "b0e574a3473f44af835867441c749c05",
+  "metadata": {
+    "title": "Traversability analysis for autonomous driving in complex environment: A LiDAR-based terrain modeling approach",
+    "authors": [
+      "Hanzhang Xue",
+      "Hao Fu",
+      "Liang Xiao",
+      "Yiming Fan",
+      "Dawei Zhao",
+      "Bin Dai"
+    ],
+    "year": 2023,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.22209",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1002/rob.22209",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1002/rob.22209",
+  "official_pdf_url": "https://doi.org/10.1002/rob.22209",
+  "official_bibtex_url": "https://doi.org/10.1002/rob.22209",
+  "pdf_sha256": "b14329474e1a62ed56e63b1f9aa27622c91db7ee80524d7b009fd8cf933a5be3",
+  "bibtex_sha256": "9bd92f9252c53c94e0b69125078972c8ec9e4f8e9bb8bc5069bd099a71757c72",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:16:49.578177+00:00",
+  "selection_id": "890ae2c20b55c09c81536a16",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2023 - Xue - Traversability analysis for autonomous driving in complex environment  A.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (3).bibtex"
+}

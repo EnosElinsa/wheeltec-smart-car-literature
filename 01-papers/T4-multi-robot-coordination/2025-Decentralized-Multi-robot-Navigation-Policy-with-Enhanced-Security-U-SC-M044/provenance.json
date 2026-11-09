@@ -1,0 +1,29 @@
+{
+  "paper_id": "6be4c2179c50475eba4d4c1f9c05cdec",
+  "metadata": {
+    "title": "Decentralized Multi-robot Navigation Policy with Enhanced Security Using Graph GRU Policy Network",
+    "authors": [
+      "Lin Chen",
+      "Yuxuan Ao",
+      "Zhen Zhou",
+      "Yaonan Wang",
+      "Danwei Wang"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros60139.2025.11245969",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11245969/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11245969/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11245969&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "7b7d2633c2ada7cf0e0e7f975a17673f5d0c53ab21f2779eb106c4e600dd15e7",
+  "bibtex_sha256": "10897e570d1efca446c8254b6dcd63bf4d954b612fbafbdfa7135f67d73d0cab",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:37:00.352318+00:00",
+  "selection_id": "15b27caed90e0568e3fb4630"
+}

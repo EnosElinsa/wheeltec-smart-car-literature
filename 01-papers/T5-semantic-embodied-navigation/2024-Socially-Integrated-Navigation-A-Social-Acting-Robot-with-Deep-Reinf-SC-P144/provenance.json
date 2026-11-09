@@ -1,0 +1,29 @@
+{
+  "paper_id": "978a89518256479e9cf474f2c6d6b60e",
+  "metadata": {
+    "title": "Socially Integrated Navigation: A Social Acting Robot with Deep Reinforcement Learning",
+    "authors": [
+      "Daniel Flögel",
+      "Lars Fischer",
+      "Thomas Rudolf",
+      "Tobias Schürmann",
+      "Sören Hohmann"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros58592.2024.10801998",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10801998/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10801998/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10801998&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "4f07ad6437467c621abebdbd5a5bba17d13fbad98068621fbbe8d5d72f9ba7c8",
+  "bibtex_sha256": "5e102b6066cb678a460e609c6343be0de2b0c0bda38da4b7a92e7f8b432f5bb1",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:54:40.584938+00:00",
+  "selection_id": "e0a86f68e85c8e0c00f1e665"
+}

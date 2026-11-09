@@ -1,0 +1,30 @@
+{
+  "paper_id": "5fd2031a09534f82a89a51a0bafd96b2",
+  "metadata": {
+    "title": "RUMOR: Reinforcement learning for understanding a model of the real world for navigation in dynamic environments",
+    "authors": [
+      "Diego Martinez-Baselga",
+      "Luis Riazuelo",
+      "Luis Montano"
+    ],
+    "year": 2025,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2025.105020",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1016/j.robot.2025.105020",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1016/j.robot.2025.105020",
+  "official_pdf_url": "https://doi.org/10.1016/j.robot.2025.105020",
+  "official_bibtex_url": "https://doi.org/10.1016/j.robot.2025.105020",
+  "pdf_sha256": "af46da3f680daf24be2c6b22d54bab5bf518c5c7063c06fe784df44dd99a665e",
+  "bibtex_sha256": "5da9b671505cfbad78221636da46c9505a218235343d6fc2131a5ffcf772a30c",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:17:40.628121+00:00",
+  "selection_id": "1db8dcc62e9d0f18081f0f57",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "RUMOR Reinforcement learning for understanding a model of the real world for navigation in dynamic environments.pdf",
+  "source_bibtex_filename": "S092188902500106X.bib"
+}

@@ -1,0 +1,32 @@
+{
+  "paper_id": "65e6a8cc2244480eb325770531f4abe8",
+  "metadata": {
+    "title": "ComposableNav: Instruction-Following Navigation in Dynamic Environments via Composable Diffusion",
+    "authors": [
+      "Zichao Hu",
+      "Chen Tang",
+      "Michael Joseph Munje",
+      "Yifeng Zhu",
+      "Alex Liu",
+      "Shuijing Liu",
+      "Garrett Warnell",
+      "Peter Stone",
+      "Joydeep Biswas"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v305/hu25c.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v305/hu25c.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/hu25c/hu25c.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v305/hu25c.html",
+  "pdf_sha256": "9e6b0fe77e5461181956e0193a3163d3e2e6ce88bc49a7aab90c09f78d2ff040",
+  "bibtex_sha256": "e0380a565cc5368f157c9875439343f0a040d8e125255ab0a6a8182f964e981b",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:34:41.752713+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "1b225322d5824d86ad66e79700cca185",
+  "metadata": {
+    "title": "Benchmarking Reinforcement Learning Techniques for Autonomous Navigation",
+    "authors": [
+      "Zifan Xu",
+      "Bo Liu",
+      "Xuesu Xiao",
+      "Anirudh Nair",
+      "Peter Stone"
+    ],
+    "year": 2023,
+    "venue": "2023 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra48891.2023.10160583",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10160583/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10160583/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10160583&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "f62e411d45967b6a4270b8bdb1ddd4f4c75c41bb483fea5971db4c619a21a935",
+  "bibtex_sha256": "a7792cb3d52fe9678a67efe504f5d89f3d777467e29ffd7d626025abb43f8398",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:55:45.328303+00:00",
+  "selection_id": "73fb6788350c7b6cd7a994fc"
+}

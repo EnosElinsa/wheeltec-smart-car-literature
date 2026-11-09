@@ -1,0 +1,27 @@
+{
+  "paper_id": "173a9b70e0994353b299a74dbecb467a",
+  "metadata": {
+    "title": "iA*: Imperative Learning-Based A* Search for Path Planning",
+    "authors": [
+      "Xiangyu Chen",
+      "Fan Yang",
+      "Chen Wang"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3625500",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11217175/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11217175/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11217175&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "c3a4d1a006f33f4b590e0ebb6b939f981d1dd78ff89423e5b0b8dbb856f20493",
+  "bibtex_sha256": "40487d955f2885b30e880631ce774bdb5df06cf46ba83d79d33a85d8688e2e3a",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:43:05.828091+00:00",
+  "selection_id": "b4f9108ddb05abb0e7663adb"
+}

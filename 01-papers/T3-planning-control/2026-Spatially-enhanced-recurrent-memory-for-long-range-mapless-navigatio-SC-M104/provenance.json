@@ -1,0 +1,33 @@
+{
+  "paper_id": "0f974f93ce594366a6ebb27efb0ba3a1",
+  "metadata": {
+    "title": "Spatially-enhanced recurrent memory for long-range mapless navigation via end-to-end reinforcement learning",
+    "authors": [
+      "Fan Yang",
+      "Per Frivik",
+      "David Hoeller",
+      "Chen Wang",
+      "Cesar Cadena",
+      "Marco Hutter"
+    ],
+    "year": 2026,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649251401926",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1177/02783649251401926",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1177/02783649251401926",
+  "official_pdf_url": "https://doi.org/10.1177/02783649251401926",
+  "official_bibtex_url": "https://doi.org/10.1177/02783649251401926",
+  "pdf_sha256": "bf34c188a061e4befbce89da0d53ab49c2d3049a7aa5360b26db62fd867c11b9",
+  "bibtex_sha256": "e0a9d5666bf1cd2ecf648c9b80c1792756a2faa419cc3057d95af6b1ae8ca334",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:18:09.260174+00:00",
+  "selection_id": "eab1b04b9de92509980ad050",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "yang-et-al-2025-spatially-enhanced-recurrent-memory-for-long-range-mapless-navigation-via-end-to-end-reinforcement.pdf",
+  "source_bibtex_filename": "csp_45_ (1).bib"
+}

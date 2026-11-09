@@ -1,0 +1,29 @@
+{
+  "paper_id": "8aec47cdad0f4dff8cbeba2129393ebf",
+  "metadata": {
+    "title": "ManeuverNet: A Soft Actor-Critic Framework for Precise Maneuvering of Double-Ackermann-Steering Robots with Optimized Reward Functions",
+    "authors": [
+      "Kohio Deflesselle",
+      "Mélodie Daniel",
+      "Aly Magassouba",
+      "Miguel Aranda",
+      "Olivier Ly"
+    ],
+    "year": 2026,
+    "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57385.2026.11696034",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11696034/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11696034/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11696034&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b3f73ff117f3bcb45e3bdb987d58808e3116fab2da8308e6eff04d528697bd2b",
+  "bibtex_sha256": "049abb6a6a881436bc8d3d14386909ce03636392e1ca2d9336847dac08d6bb3d",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:29:51.998697+00:00",
+  "selection_id": "a10c5c2f5ddded4a868187d1"
+}

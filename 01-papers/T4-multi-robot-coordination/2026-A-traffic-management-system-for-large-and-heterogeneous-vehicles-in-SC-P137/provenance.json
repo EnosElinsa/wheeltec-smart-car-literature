@@ -1,0 +1,31 @@
+{
+  "paper_id": "1ca064ef1bb741d7a258babe96dcefda",
+  "metadata": {
+    "title": "A traffic management system for large and heterogeneous vehicles in narrow industrial environments",
+    "authors": [
+      "Alessandro Bonetti",
+      "Silvia Proia",
+      "Simone Guidetti",
+      "Lorenzo Sabattini"
+    ],
+    "year": 2026,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649261470035",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1177/02783649261470035",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1177/02783649261470035",
+  "official_pdf_url": "https://doi.org/10.1177/02783649261470035",
+  "official_bibtex_url": "https://doi.org/10.1177/02783649261470035",
+  "pdf_sha256": "e6f8a0adb87f9705ab80bfe8d739f843516e26c0bfef504f9a15e3e582711d5f",
+  "bibtex_sha256": "154d7a3ddcd8b20d132b4b63a656f1ccc6c80c108af1941ccb839e3356aab2a7",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:16:21.164646+00:00",
+  "selection_id": "401d3b407691c3e5577ef93b",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "bonetti-et-al-2026-a-traffic-management-system-for-large-and-heterogeneous-vehicles-in-narrow-industrial-environments.pdf",
+  "source_bibtex_filename": "csp__.bib"
+}

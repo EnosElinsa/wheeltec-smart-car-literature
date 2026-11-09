@@ -1,0 +1,31 @@
+{
+  "paper_id": "9aca066fa6bb416eb4532deed80901ba",
+  "metadata": {
+    "title": "HALO : Human Preference Aligned Offline Reward Learning for Robot Navigation",
+    "authors": [
+      "Gershom Seneviratne",
+      "Jianyu An",
+      "Sahire Ellahy",
+      "Kasun Weerakoon",
+      "Mohamed Bashir Elnoor",
+      "Jonathan Deepak Kannan",
+      "Amogha Thalihalla Sunil",
+      "Dinesh Manocha"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v305/seneviratne25a.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v305/seneviratne25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/seneviratne25a/seneviratne25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v305/seneviratne25a.html",
+  "pdf_sha256": "cfccf27be9b91074f8d3211ad343d2b0ba60e43ab4881afed490bfa2846f78ae",
+  "bibtex_sha256": "afad98726f333bd20714231285a17b4432675d8dd965d695fffcd5ff743442c0",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:35:15.990812+00:00"
+}

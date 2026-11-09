@@ -1,0 +1,27 @@
+{
+  "paper_id": "f902c6cc27504b928a842881891eeb29",
+  "metadata": {
+    "title": "Safe Multi-Agent Navigation Guided by Goal-Conditioned Safe Reinforcement Learning",
+    "authors": [
+      "Meng Feng",
+      "Viraj Parimi",
+      "Brian Williams"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra55743.2025.11127461",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11127461/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11127461/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11127461&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "047e5c98a14c18df91ce1578dbee24c6ebb021ddf7e588ce0c10d772564d7939",
+  "bibtex_sha256": "83413dfc3c41ac516e645d7a87e8fc7e6ea3e21f77a89b88e52c063ac12f87d3",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:45:53.414269+00:00",
+  "selection_id": "9fce5162d0fb9fa2c1eb78fb"
+}

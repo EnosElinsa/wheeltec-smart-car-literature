@@ -1,0 +1,28 @@
+{
+  "paper_id": "fff02fb2a1f2469a88ba37296fb266dc",
+  "metadata": {
+    "title": "Toward Multi-Task Generalization in Autonomous Navigation: A Human-in-the-Loop Adversarial Reinforcement Learning With Diffusion Policy",
+    "authors": [
+      "Dong Hu",
+      "Chao Huang",
+      "Jingda Wu",
+      "Xin Yuan"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/tits.2025.3591239",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11106367/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11106367/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11106367&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b0f4da90085387a518ffd25d4fb941364152d293e45d5d3799669253a6f0a7f6",
+  "bibtex_sha256": "75e81f3e5c06c811d5e7608b9ccfa6c3f7f2a93600cd4f13bd8edcf181f7420a",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:46:52.330387+00:00",
+  "selection_id": "4dd82d098a016122bc60e604"
+}

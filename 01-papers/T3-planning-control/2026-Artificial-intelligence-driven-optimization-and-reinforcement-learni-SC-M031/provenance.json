@@ -1,0 +1,29 @@
+{
+  "paper_id": "f41a444fbf9843ca967a6096ae435f5e",
+  "metadata": {
+    "title": "Artificial intelligence-driven optimization and reinforcement learning for intelligent mobile robot operations in warehouse automation: A review",
+    "authors": [
+      "Mahmoud Elnady",
+      "Stepan Ozana"
+    ],
+    "year": 2026,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2026.105610",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1016/j.robot.2026.105610",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1016/j.robot.2026.105610",
+  "official_pdf_url": "https://doi.org/10.1016/j.robot.2026.105610",
+  "official_bibtex_url": "https://doi.org/10.1016/j.robot.2026.105610",
+  "pdf_sha256": "8df724f89570d6f3f294cc0ec84e933dad80a9af1c5e4b999075a74809e15f3f",
+  "bibtex_sha256": "e41da7fe15df23ce173088da00ff2cb4ede48e85c0344685f6b1ec98dadb3c4f",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:15:58.940841+00:00",
+  "selection_id": "c70435c9190d224d1021029a",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Artificial intelligence-driven optimization and reinforcement learning for intelligent mobile robot operations in warehouse automation A review.pdf",
+  "source_bibtex_filename": "S0921889026002824.bib"
+}

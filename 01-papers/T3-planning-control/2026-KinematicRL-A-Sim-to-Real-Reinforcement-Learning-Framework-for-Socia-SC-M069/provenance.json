@@ -1,0 +1,29 @@
+{
+  "paper_id": "b94c2c8fdb0f4f0085524a1cf6d93ef0",
+  "metadata": {
+    "title": "KinematicRL: A Sim-to-Real Reinforcement Learning Framework for Social Navigation With Kinodynamic Feasibility",
+    "authors": [
+      "Zhiming Xu",
+      "Haodong Yang",
+      "Chengju Liu",
+      "Qijun Chen",
+      "Chenpeng Yao"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3703136",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11563514/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11563514/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11563514&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "7be048d0c59c5893148294d723360c31ddf4cf2e9265897398c97859d89e86d1",
+  "bibtex_sha256": "e6cdcc8573d6bb77ce6c685a534170c69089353e02bd8a27833a4538e209033e",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:28:28.206261+00:00",
+  "selection_id": "273ee214061247ecc1c51837"
+}

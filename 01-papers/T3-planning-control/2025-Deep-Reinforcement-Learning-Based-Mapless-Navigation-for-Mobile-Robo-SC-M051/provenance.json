@@ -1,0 +1,31 @@
+{
+  "paper_id": "b2d69fca79f143dcacb482b9b50e414f",
+  "metadata": {
+    "title": "Deep Reinforcement Learning-Based Mapless Navigation for Mobile Robot in Unknown Environment With Local Optima",
+    "authors": [
+      "Yiming Hu",
+      "Shuting Wang",
+      "Yuanlong Xie",
+      "Shiqi Zheng",
+      "Peng Shi",
+      "Imre Rudas",
+      "Xiang Cheng"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2024.3511437",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10776999/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10776999/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10776999&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "c7411388fb18611b8b7387e9f89cf3fdb3e335e4d46f87372da1a0020f9ae85a",
+  "bibtex_sha256": "fa10a344c08a45a8af1a7814365fdeef6413a7b01cec697c8cb22d4e05e9bd7b",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:38:50.597681+00:00",
+  "selection_id": "a4c3039e5cdafff61d89c4a9"
+}

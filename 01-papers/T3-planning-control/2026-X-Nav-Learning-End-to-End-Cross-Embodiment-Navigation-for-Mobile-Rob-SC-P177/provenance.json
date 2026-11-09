@@ -1,0 +1,28 @@
+{
+  "paper_id": "1017486571494ac296c7a50ea8373d09",
+  "metadata": {
+    "title": "X-Nav: Learning End-to-End Cross-Embodiment Navigation for Mobile Robots",
+    "authors": [
+      "Haitong Wang",
+      "Aaron Hao Tan",
+      "Angus Fung",
+      "Goldie Nejat"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3632119",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11244111/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11244111/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11244111&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "799cc1e52d3678378ee9b0e2d6015eaee835cf569cc6b5f7e049364a0aed1639",
+  "bibtex_sha256": "d50ee446d30daef8eff78aa310bea15e683190b682efb74336e7661692953167",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:33:30.487703+00:00",
+  "selection_id": "2071562c5391904406caf222"
+}

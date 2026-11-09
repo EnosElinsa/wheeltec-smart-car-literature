@@ -1,0 +1,30 @@
+{
+  "paper_id": "8b66ddedd3ea43c7b5e54f4a561b5259",
+  "metadata": {
+    "title": "MAPS2: Multi-robot autonomous motion planning under signal temporal logic specifications",
+    "authors": [
+      "Mayank Sewlia",
+      "Christos K. Verginis",
+      "Dimos V. Dimarogonas"
+    ],
+    "year": 2026,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649251393343",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1177/02783649251393343",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1177/02783649251393343",
+  "official_pdf_url": "https://doi.org/10.1177/02783649251393343",
+  "official_bibtex_url": "https://doi.org/10.1177/02783649251393343",
+  "pdf_sha256": "6fe18d82263586a8873f00cc3653eb922ba85e6aef89a0e1cbef33a71d23c68e",
+  "bibtex_sha256": "c6f6b3d475fafaed43c38f550766fa6a508754702d44a721425bc1eda466cd3f",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:17:40.450192+00:00",
+  "selection_id": "0bc477e942eb07f880ceba02",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "sewlia-et-al-2025-maps2-multi-robot-autonomous-motion-planning-under-signal-temporal-logic-specifications.pdf",
+  "source_bibtex_filename": "csp_45_.bib"
+}

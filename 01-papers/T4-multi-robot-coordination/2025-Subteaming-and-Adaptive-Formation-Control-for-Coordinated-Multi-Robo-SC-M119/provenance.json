@@ -1,0 +1,31 @@
+{
+  "paper_id": "04fa090a53bd4815ad5674fbfd86c8e4",
+  "metadata": {
+    "title": "Subteaming and Adaptive Formation Control for Coordinated Multi-Robot Navigation",
+    "authors": [
+      "Zihao Deng",
+      "Peng Gao",
+      "Williard Joshua Jose",
+      "Maggie Wigness",
+      "John G. Rogers III",
+      "Brian Reily",
+      "Christopher M. Reardon",
+      "Hao Zhang"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v305/deng25b.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v305/deng25b.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/deng25b/deng25b.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v305/deng25b.html",
+  "pdf_sha256": "c1ed2ecad8a6460c15159741fdea068dc957722c7ffb919220b4d3a9d3f6ee16",
+  "bibtex_sha256": "bf2d83b6482e1154ee06418492f6a74d32c960deb259c648de0e1784b82c19c3",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:38:32.492067+00:00"
+}

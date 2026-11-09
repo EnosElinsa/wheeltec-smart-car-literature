@@ -1,0 +1,28 @@
+{
+  "paper_id": "be6c9074d14c41fb994c30fa5766ee72",
+  "metadata": {
+    "title": "Hierarchical Reinforcement Learning for Safe Mapless Navigation with Congestion Estimation",
+    "authors": [
+      "Jianqi Gao",
+      "Xizheng Pang",
+      "Qi Liu",
+      "Yanjie Li"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra55743.2025.11128867",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11128867/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11128867/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11128867&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "55de8c694ebf556ca725b0e406a3e7825d105a6635d18d92ae45ceaa594ee947",
+  "bibtex_sha256": "aba7d7e61cce5fc82cf92b2c16f5e30a3242e0fe2842888f145b962c58a4a29b",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:42:37.956393+00:00",
+  "selection_id": "b5dc6f22312c3bc4cbc0233a"
+}

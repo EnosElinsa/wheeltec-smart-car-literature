@@ -1,0 +1,27 @@
+{
+  "paper_id": "24decd2e6297452795cb51399b9998bd",
+  "metadata": {
+    "title": "Handling Constrained Optimization in Factor Graphs for Autonomous Navigation",
+    "authors": [
+      "Barbara Bazzana",
+      "Tiziano Guadagnino",
+      "Giorgio Grisetti"
+    ],
+    "year": 2023,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2022.3228175",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/9978644/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/9978644/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9978644&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "6cb538c6b6c3b03b3a9a4f2a48f51a0f89bc62c535ba3ae5c9c8571f7c02b094",
+  "bibtex_sha256": "ab1b4ae90d73d2a55507402b85197c1d21dc606ea1c203539a1b7554e51d09ff",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:55:59.196913+00:00",
+  "selection_id": "3f0f61a085b97e393515ceb5"
+}

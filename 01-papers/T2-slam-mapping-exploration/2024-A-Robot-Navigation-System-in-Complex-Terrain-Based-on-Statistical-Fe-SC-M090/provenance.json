@@ -1,0 +1,26 @@
+{
+  "paper_id": "ff1305336047476b90f7e27ff019220f",
+  "metadata": {
+    "title": "A Robot Navigation System in Complex Terrain Based on Statistical Features of Point Clouds",
+    "authors": [
+      "Yifei Zhang",
+      "Shiyuan Wang"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/tiv.2023.3297998",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10191025/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10191025/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10191025&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "69638fab1109e788778eee7459f39feee9cf4afa84701ca2961ae40c96af89dc",
+  "bibtex_sha256": "203a0f70d81a8ddcbe735a9019e7c39068f15654b0a2283f25c5958fa507cd9c",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:48:11.276027+00:00",
+  "selection_id": "1da4dfef9b837e91bbd4eff5"
+}

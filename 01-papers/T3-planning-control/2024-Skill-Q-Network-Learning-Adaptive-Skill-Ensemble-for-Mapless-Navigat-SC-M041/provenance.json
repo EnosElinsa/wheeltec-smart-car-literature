@@ -1,0 +1,26 @@
+{
+  "paper_id": "13bb5ddef7e44eac8040b0fb8000bb7d",
+  "metadata": {
+    "title": "Skill Q-Network: Learning Adaptive Skill Ensemble for Mapless Navigation in Unknown Environments",
+    "authors": [
+      "Hyunki Seong",
+      "David Hyunchul Shim"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros58592.2024.10801531",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10801531/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10801531/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10801531&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "83866d5519c948ee5f7456e27efc83e1d8debb5f82b0cb4d203b2858f57b2150",
+  "bibtex_sha256": "c4343dc8644a0f707c526ee519aab0be865040578b77f5a051fcc2dee9b26ec4",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:54:27.789340+00:00",
+  "selection_id": "1ca1db6bb3f5bd8528c88475"
+}

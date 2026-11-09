@@ -1,0 +1,28 @@
+{
+  "paper_id": "fc2fe0347630491e9cff8edf15ba5565",
+  "metadata": {
+    "title": "Efficient Hierarchical Reinforcement Learning for Mapless Navigation With Predictive Neighbouring Space Scoring",
+    "authors": [
+      "Yan Gao",
+      "Jing Wu",
+      "Xintong Yang",
+      "Ze Ji"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2023.3312237",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10248030/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10248030/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10248030&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "a44cd60c141d5cb052c3b36c980d2d99cec22599d755fd14b06c7e787456bff3",
+  "bibtex_sha256": "188360a4038d34af6e5df40556f9986a6aa3e4db092719b641b4b6494d6aa25a",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:50:41.380341+00:00",
+  "selection_id": "0a96b436adfce5d5bc1d223a"
+}

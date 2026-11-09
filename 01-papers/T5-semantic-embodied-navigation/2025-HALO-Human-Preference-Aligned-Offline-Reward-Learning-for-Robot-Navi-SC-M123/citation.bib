@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v305-seneviratne25a,
+  title = 	 {HALO : Human Preference Aligned Offline Reward Learning for Robot Navigation},
+  author =       {Seneviratne, Gershom and An, Jianyu and Ellahy, Sahire and Weerakoon, Kasun and Elnoor, Mohamed Bashir and Kannan, Jonathan Deepak and Sunil, Amogha Thalihalla and Manocha, Dinesh},
+  booktitle = 	 {Proceedings of The 9th Conference on Robot Learning},
+  pages = 	 {3267--3284},
+  year = 	 {2025},
+  editor = 	 {Lim, Joseph and Song, Shuran and Park, Hae-Won},
+  volume = 	 {305},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {27--30 Sep},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v305/main/assets/seneviratne25a/seneviratne25a.pdf},
+  url = 	 {https://proceedings.mlr.press/v305/seneviratne25a.html},
+  abstract = 	 {In this paper, we introduce HALO, a novel Offline Reward Learning algorithm that quantifies human intuition in navigation into a vision-based reward function for robot navigation. HALO learns a reward model from offline data, leveraging expert trajectories collected from mobile robots. During training, actions are randomly sampled from the action space around the expert action and ranked using a Boltzmann probability distribution that combines their distance to the expert action with human preference scores derived from intuitive navigation queries based on the corresponding egocentric camera feed. These scores establish preference rankings, enabling the training of a novel reward model based on Plackett-Luce loss, which allows for preference-driven navigation. To demonstrate the effectiveness of HALO, we deploy its reward model in two downstream applications: (i) an offline learned policy trained directly on the HALO-derived rewards, and (ii) a model-predictive-control (MPC) based planner that incorporates the HALO reward as an additional cost term. This showcases the versatility of HALO across both learning-based and classical navigation frameworks. Our real-world deployments on a Clearpath Husky across multiple scenarios demonstrate that policies trained with HALO achieve improved performance over state-of-the-art methods in terms of success rate and normalized trajectory length while maintaining lower Fréchet distance with the human expert trajectories.}
+}

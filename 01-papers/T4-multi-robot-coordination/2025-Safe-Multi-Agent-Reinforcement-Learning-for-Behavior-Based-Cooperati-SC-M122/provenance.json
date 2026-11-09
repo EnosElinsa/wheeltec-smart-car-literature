@@ -1,0 +1,30 @@
+{
+  "paper_id": "40a7e2b65f6442f69de1610e50473bde",
+  "metadata": {
+    "title": "Safe Multi-Agent Reinforcement Learning for Behavior-Based Cooperative Navigation",
+    "authors": [
+      "Murad Dawood",
+      "Sicong Pan",
+      "Nils Dengler",
+      "Siqi Zhou",
+      "Angela P. Schoellig",
+      "Maren Bennewitz"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3560830",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10964685/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10964685/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10964685&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "dae1346ef733b49745a7ba6eccb76e9505f7b72cd4be1faeeb9586b12616de31",
+  "bibtex_sha256": "b66adfb4b7d13c912c367d96e06de229db749cb2dba4cb912710ba35e99fb7ea",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:46:11.670468+00:00",
+  "selection_id": "8a4bfc9818a957dba84724e0"
+}

@@ -1,0 +1,32 @@
+{
+  "paper_id": "8d5fce655751420f98b8dee4af207629",
+  "metadata": {
+    "title": "Long Range Navigator (LRN): Extending robot planning horizons beyond metric maps",
+    "authors": [
+      "Matt Schmittle",
+      "Rohan Baijal",
+      "Nathan Hatch",
+      "Rosario Scalise",
+      "Mateo Guaman Castro",
+      "Sidharth Talia",
+      "Khimya Khetarpal",
+      "Byron Boots",
+      "Siddhartha Srinivasa"
+    ],
+    "year": 2025,
+    "venue": "Conference on Robot Learning",
+    "doi": null,
+    "publisher": "PMLR",
+    "landing_url": "https://proceedings.mlr.press/v305/schmittle25a.html",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://proceedings.mlr.press/v305/schmittle25a.html",
+  "official_pdf_url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/schmittle25a/schmittle25a.pdf",
+  "official_bibtex_url": "https://proceedings.mlr.press/v305/schmittle25a.html",
+  "pdf_sha256": "093f37a2696201ab502f072df7e28e56143453f08ce3218e0a1d7a3e52caed8a",
+  "bibtex_sha256": "5ebb008ad6ccf6447672b82dae979f11c9f08c3d6af1eac021285f198e1c6bd9",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:36:59.522284+00:00"
+}

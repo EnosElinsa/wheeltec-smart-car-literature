@@ -25,7 +25,7 @@ PDFs, BibTeX, source Markdown, and source images retain their source bytes. Revi
 
 - `K01`-`K16`: the [review additions](review-additions-2026-11-04/README.md) of November 4, 2026, 16 formally published 2021-2024 works that an internal simulated review of an earlier draft named as missing; the user confirmed the selection. All 16 have official PDF/BibTeX pairs, local PyMuPDF4LLM 0.2.9 transcriptions and targeted light review cards, and all are survey selection members. K11 (HM3D) uses a user-authorized derived citation that replaces only the unparsable key of the official export; see the [identity notes](review-additions-2026-11-04/evidence-notes.md).
 
-All 247 acquired publications share the same six theme directories and the [unified catalog](library-catalog.csv). Acquisition manifests preserve provenance; they are not separate paper stores. `paper-index.csv` holds all 247 assessed library sources and coding; `survey-inclusion.json` selects 245 survey members and retains X01/X15 internally, while `library-catalog.csv` includes every acquired source and its assessment status. `tools.build_indexes` regenerates the catalog and theme indexes together; sources without transcriptions appear only in the paper index. `tools.locate` searches all registered sources.
+All 363 active reading sets share the same six theme directories and the [unified catalog](library-catalog.csv). The catalog also retains 171 excluded/background and no pending records; their original files are stored separately from admitted sources. Acquisition manifests preserve provenance; they are not separate paper stores. `paper-index.csv` holds all 247 assessed library sources and coding; `survey-inclusion.json` selects 245 survey members and retains X01/X15 internally, while `library-catalog.csv` is the single registry of 534 distinct works and preserves acquisition, scope and assessment status separately. `tools.build_indexes` regenerates the catalog and theme indexes together; sources without transcriptions appear only in the paper index. `tools.locate` searches all registered sources.
 
 All 20 supplementary pairs are acquired. N02, N03, N04, N12, N14, N17, and N20 were supplied by the user as IEEE Xplore downloads and retain `manual_publisher_download` provenance; the other 13 retain their automatic publisher-export provenance. Each PDF and native BibTeX file is copied without rewriting its bytes. Downloads originals are preserved, and the [manual import receipt](ieee-supplement-2026-11-03/manual-import.md) records the correspondence. All 20 supplementary full texts use local PyMuPDF4LLM extraction, distinct from the original corpus's MinerU transcriptions. All 20 now have targeted source readings with physical-page locators. The subsequent light cards retain those reading limits and do not establish whole-paper verification.
 
@@ -53,3 +53,37 @@ S01-S48 now have OXR-1.0 transcriptions produced through self-hosted vLLM 0.25.1
 | T6-reliability-deployment | Faults, recovery, resources, and long-term autonomy |
 
 Each paper keeps one primary theme from the original classification. The six themes organize reading and are not an exhaustive taxonomy. Historical journal/conference admission criteria, eight excluded extras, user exclusions, and unreviewed records retain their original audit scope in the archive.
+
+## Consolidated additions and venue admission
+
+The SC-series IDs retain their original local source identity. MS01-MS06 are user-requested supplemental surveys. The 110 verified official SC additions and six surveys are filed by primary task in T1-T6; filing does not create a review card, evidence coding or survey membership. Their PDFs, native citations, transcriptions and extraction assets retain their bytes. Excluded or pending source files remain under `99-archive/local/background-and-pending/` and their catalog status remains visible. The local reading view and `tools.locate` use the same catalog; `tools.build_indexes` preserves these records when rebuilding indexes.
+
+The recovered journal whitelist has 17 venues. The following publisher/ISSN identity table preserves the historical registry checks dated September 17, 2026; it is an admission list, not a permanent journal-ranking claim.
+
+| Journal | Abbreviation | ISSN | Publisher |
+|---|---|---|---|
+| The International Journal of Robotics Research | IJRR | 0278-3649; 1741-3176 | SAGE Publications |
+| IEEE Transactions on Robotics | T-RO | 1552-3098; 1941-0468; 1546-1904 | IEEE |
+| IEEE Robotics and Automation Letters | RA-L | 2377-3766 | IEEE |
+| Journal of Field Robotics | JFR | 1556-4959; 1556-4967 | Wiley |
+| Robotics and Autonomous Systems | RAS | 0921-8890 | Elsevier |
+| Autonomous Robots | AURO | 0929-5593; 1573-7527 | Springer |
+| Science Robotics | SciRob | 2470-9476 | AAAS |
+| IEEE Transactions on Automation Science and Engineering | T-ASE | 1545-5955; 1558-3783 | IEEE |
+| Automatica | Automatica | 0005-1098 | Elsevier |
+| IEEE Transactions on Automatic Control | T-AC | 0018-9286; 1558-2523; 2334-3303 | IEEE |
+| IEEE Transactions on Cybernetics | T-CYB | 2168-2267; 2168-2275 | IEEE |
+| Control Engineering Practice | CEP | 0967-0661 | Elsevier |
+| Information Fusion | InfFus | 1566-2535 | Elsevier |
+| Pattern Recognition | PR | 0031-3203 | Elsevier |
+| IEEE Transactions on Image Processing | T-IP | 1057-7149; 1941-0042 | IEEE |
+| IEEE Transactions on Intelligent Transportation Systems | T-ITS | 1524-9050; 1558-0016 | IEEE |
+| IEEE Transactions on Intelligent Vehicles | T-IV | 2379-8858; 2379-8904 | IEEE |
+
+The conference supplement admits ICRA, IROS, RSS and CoRL. Venue identity is necessary but not sufficient: the title and abstract must establish a relevant mobile-robot task. Road-driving, generic control or visual methods require direct wheeled-robot transfer evidence or an explicit counterexample purpose. An absent abstract remains pending.
+
+Prefer official publisher PDFs and raw publisher BibTeX exports to preprints. A formal citation alone does not establish the PDF version. Registry metadata is discovery evidence, not a native citation or verified publisher artifact. The 116 active additions use verified official pairs; the formal SC-M062 pair is retained as method background. MS01 (TNNLS), MS04 (TIM) and MS06 (TSMC: Systems) are explicit background exceptions outside the whitelist; MS02/MS03 concern road-driving planning; MS05 is an object-goal survey in T-ASE. All six retain supplemental status and a scope reason in the catalog. They do not expand the original main-library admission rule.
+
+Frozen selections and raw extraction receipts remain unchanged in the private `06-data/provenance/` evidence folder. Historical input paths inside those records are original run bindings; the current catalog and extraction index resolve current locations. OCR language data lives under `.local/ocr/tessdata/`; `tmp/` contains only regenerable work. Source-drive hashes are historical when the external drive is unavailable.
+
+The manual completion of November 9 resolved the three former pending records using publisher abstracts and targeted source passages. SC-M028 (RAS, frontier exploration with real-robot experiments) and SC-M126 (RAS, navigation-oriented shared control review) enter the main library with source-only status. SC-M062 has its final IEEE issue PDF, native citation and 16-page OXR transcription, but its grid-world LTL/MDP evaluations remain method background without established wheeled-robot transfer. The current library has 363 active reading sets and one additional formal background reading set. None of these actions creates review cards or expands the 245-work survey selection. Duplicate S25/S26 PDFs and native RIS exports, the SC-M101 citation, and the S24 original export are unchanged; S24's new PDF differs only in the institutional download-date watermark. The four documented derived working citations remain explicit exceptions.

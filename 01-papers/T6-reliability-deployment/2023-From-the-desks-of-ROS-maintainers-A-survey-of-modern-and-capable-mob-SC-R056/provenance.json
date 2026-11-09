@@ -1,0 +1,32 @@
+{
+  "paper_id": "8fcb2023b1cc4c4eb342412e569e2b21",
+  "metadata": {
+    "title": "From the desks of ROS maintainers: A survey of modern & capable mobile robotics algorithms in the robot operating system 2",
+    "authors": [
+      "Steve Macenski",
+      "Tom Moore",
+      "David V. Lu",
+      "Alexey Merzlyakov",
+      "Michael Ferguson"
+    ],
+    "year": 2023,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2023.104493",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1016/j.robot.2023.104493",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1016/j.robot.2023.104493",
+  "official_pdf_url": "https://doi.org/10.1016/j.robot.2023.104493",
+  "official_bibtex_url": "https://doi.org/10.1016/j.robot.2023.104493",
+  "pdf_sha256": "237f9c645f3c5e7fec6c9577fea6527bcf6b406d30369fdb74e538c32b00d4c7",
+  "bibtex_sha256": "d96bbee6ed2d0d9c6b09238ed8cb45f5eb1e981ed63a0ffd28fbd6e4a23c7970",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:16:21.116768+00:00",
+  "selection_id": "b967de71712a1eefada8a409",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "From the desks of ROS maintainers A survey of modern & capable mobile robotics algorithms in the robot operating system 2.pdf",
+  "source_bibtex_filename": "S092188902300132X.bib"
+}

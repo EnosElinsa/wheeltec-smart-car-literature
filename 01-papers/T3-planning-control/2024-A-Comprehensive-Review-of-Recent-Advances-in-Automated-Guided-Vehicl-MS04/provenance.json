@@ -1,0 +1,26 @@
+{
+  "paper_id": "ca7cfe890a564dc8b7ae0d19255ff8a2",
+  "metadata": {
+    "title": "A Comprehensive Review of Recent Advances in Automated Guided Vehicle Technologies: Dynamic Obstacle Avoidance in Complex Environment Toward Autonomous Capability",
+    "authors": [
+      "Muhammad Aizat",
+      "Nurakasyah Qistina",
+      "Wan Rahiman"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Instrumentation and Measurement",
+    "doi": "10.1109/tim.2023.3338722",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10339361/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10339361/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10339361&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b4b848926a1eac6744e9a83fe97275a4a833e543592fce116a5990f01a555f36",
+  "bibtex_sha256": "fef1fb0c4b7a16e079b7338c7134351e7743aa283b18571ccc72eff1c3eff0c4",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-06T03:54:32.026131+00:00"
+}

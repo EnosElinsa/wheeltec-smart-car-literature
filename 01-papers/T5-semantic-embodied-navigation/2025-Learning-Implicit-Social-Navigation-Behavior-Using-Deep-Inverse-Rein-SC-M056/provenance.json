@@ -1,0 +1,29 @@
+{
+  "paper_id": "39af3db29aca42d7b4d54b594e1b9dc5",
+  "metadata": {
+    "title": "Learning Implicit Social Navigation Behavior Using Deep Inverse Reinforcement Learning",
+    "authors": [
+      "Tribhi Kathuria",
+      "Ke Liu",
+      "Junwoo Jang",
+      "X. Jessie Yang",
+      "Maani Ghaffari"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3557299",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10947583/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10947583/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10947583&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "2c3f92e3b822a113cc7d4d7d54622cde2311369bebaad86a10b65dac04cbff18",
+  "bibtex_sha256": "db0989b1d9d6d734a5f0b75c82282646e905ac70ccb115f564446acef1c7bdd9",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:44:09.320911+00:00",
+  "selection_id": "d531e3449bbc08d4e8aa03a4"
+}

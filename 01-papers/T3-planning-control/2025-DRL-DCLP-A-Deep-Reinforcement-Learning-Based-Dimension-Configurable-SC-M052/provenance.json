@@ -1,0 +1,30 @@
+{
+  "paper_id": "6c9e9ce758fd457ebcdf2904a77254d8",
+  "metadata": {
+    "title": "DRL-DCLP: A Deep Reinforcement Learning-Based Dimension-Configurable Local Planner for Robot Navigation",
+    "authors": [
+      "Wei Zhang",
+      "Shanze Wang",
+      "Mingao Tan",
+      "Zhibo Yang",
+      "Xianghui Wang",
+      "Xiaoyu Shen"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3544927",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10900448/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10900448/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10900448&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "22e573c06d41a2189b6b1f689c72156ad27e0185b31b2b9759a9b2236bd29577",
+  "bibtex_sha256": "5023967376a3fe82ddd4613658efc22870de92c88aaabc55d42a13bc98a8477f",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:40:10.631508+00:00",
+  "selection_id": "f11049b935002f3d0b7471b9"
+}

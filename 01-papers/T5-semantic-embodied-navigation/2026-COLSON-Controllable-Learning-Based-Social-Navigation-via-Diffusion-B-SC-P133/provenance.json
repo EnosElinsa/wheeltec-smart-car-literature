@@ -1,0 +1,28 @@
+{
+  "paper_id": "069918dbf9a44e79aa53233762602871",
+  "metadata": {
+    "title": "COLSON: Controllable Learning-Based Social Navigation via Diffusion-Based Reinforcement Learning",
+    "authors": [
+      "Kohei Matsumoto",
+      "Yuki Tomita",
+      "Yuki Hyodo",
+      "Ryo Kurazume"
+    ],
+    "year": 2026,
+    "venue": "2026 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57385.2026.11696595",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11696595/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11696595/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11696595&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "85a78037e3fbaf775a9125c4b31f89675796d7e1c69ce22885b8914ca5fca788",
+  "bibtex_sha256": "039ef59c495d6fe550c09c5dd7ec29993b35563316c5b06dcd1d67aae3e2dd78",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:27:48.238674+00:00",
+  "selection_id": "eba9a810e39f1c6413d47552"
+}

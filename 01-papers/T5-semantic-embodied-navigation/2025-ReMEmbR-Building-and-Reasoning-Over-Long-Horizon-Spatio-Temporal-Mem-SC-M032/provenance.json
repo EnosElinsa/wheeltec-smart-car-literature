@@ -1,0 +1,29 @@
+{
+  "paper_id": "36e7ab4218f24085abefb36145b461a2",
+  "metadata": {
+    "title": "ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation",
+    "authors": [
+      "Abrar Anwar",
+      "John Welsh",
+      "Joydeep Biswas",
+      "Soha Pouya",
+      "Yan Chang"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra55743.2025.11127706",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11127706/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11127706/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11127706&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "a6bcda3cd9696513117f979102008ef6cbba3c904e2f75407ea5afcca1e5cc18",
+  "bibtex_sha256": "26fe49517fcae81679772e82a4ee530e9153967bfe03478fd4f34ee3897017d1",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:45:38.513182+00:00",
+  "selection_id": "1899482953927b1d9af0cc5e"
+}

@@ -1,0 +1,27 @@
+{
+  "paper_id": "2f5cca1ddaee4fee8e5b58bb7fdbdd29",
+  "metadata": {
+    "title": "OpenFrontier: General Navigation with Visual-Language Grounded Frontiers",
+    "authors": [
+      "Esteban Padilla Cerdio",
+      "Boyang Sun",
+      "Marc Pollefeys",
+      "Hermann Blum"
+    ],
+    "year": 2026,
+    "venue": "Robotics: Science and Systems XXII",
+    "doi": "10.15607/rss.2026.xxii.067",
+    "publisher": "Robotics: Science and Systems Foundation",
+    "landing_url": "https://www.roboticsproceedings.org/rss22/p067.html",
+    "publication_type": "main",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://www.roboticsproceedings.org/rss22/p067.html",
+  "official_pdf_url": "https://www.roboticsproceedings.org/rss22/p067.pdf",
+  "official_bibtex_url": "https://www.roboticsproceedings.org/rss22/p067.html",
+  "pdf_sha256": "f8ba7b8887a1eeb7828723a54cabc96f13ea95872b5e58df0504d445b894011a",
+  "bibtex_sha256": "751d497739fcbd7d5fd146e943989d8203f78a598d5199f93da3cc62ce2cb9a2",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:40:11.219712+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "paper_id": "dbe2095c4b6744c2991039170c718b69",
+  "metadata": {
+    "title": "Enhancing Deep Reinforcement Learning-based Robot Navigation Generalization through Scenario Augmentation",
+    "authors": [
+      "Shanze Wang",
+      "Mingao Tan",
+      "Zhibo Yang",
+      "Xianghui Wang",
+      "Xiaoyu Shen",
+      "Hailong Huang",
+      "Wei Zhang"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros60139.2025.11247307",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11247307/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11247307/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11247307&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "3309497091050e13266539d8c09063b648b9b0878c02f87a55bc80f9b0012f75",
+  "bibtex_sha256": "4e6a63c9656edaa1b3ffa93ca76c719bf5e65ba936b82e458d4e2abd0222f136",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:40:43.898892+00:00",
+  "selection_id": "cfec5eb84b5e71f62b792b89"
+}

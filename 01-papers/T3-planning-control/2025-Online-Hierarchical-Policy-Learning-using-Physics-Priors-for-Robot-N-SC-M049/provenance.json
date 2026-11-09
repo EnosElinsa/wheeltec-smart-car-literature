@@ -1,0 +1,28 @@
+{
+  "paper_id": "de948e99b11145ddb5331c325f0bf400",
+  "metadata": {
+    "title": "Online Hierarchical Policy Learning using Physics Priors for Robot Navigation in Unknown Environments",
+    "authors": [
+      "Wei Han Chen",
+      "Yuchen Liu",
+      "Alexiy Buynitsky",
+      "Ahmed H. Qureshi"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros60139.2025.11247318",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11247318/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11247318/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11247318&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "61bc9b9f6ff8b64a28d349d683c8d6c7618a82a15b24fb6d9081fd7e08589d42",
+  "bibtex_sha256": "34db478085b9d90784f9d234b484ccdb0b689d6347c9e8dc19eecd6192f0cf54",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:44:50.597630+00:00",
+  "selection_id": "ba6ad60c1221ef198a6787c2"
+}

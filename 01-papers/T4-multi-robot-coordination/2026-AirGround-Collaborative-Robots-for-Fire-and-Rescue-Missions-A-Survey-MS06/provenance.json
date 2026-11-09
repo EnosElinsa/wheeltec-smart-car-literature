@@ -1,0 +1,32 @@
+{
+  "paper_id": "298bb961c2004997ab15cda2d014311c",
+  "metadata": {
+    "title": "Air–Ground Collaborative Robots for Fire and Rescue Missions: A Survey From the Mapping and Navigation Perspective",
+    "authors": [
+      "Ying Zhang",
+      "Haibao Yan",
+      "Danni Zhu",
+      "Jiankun Wang",
+      "Cui-Hua Zhang",
+      "Weili Ding",
+      "Xi Luo",
+      "Changchun Hua",
+      "Max Q.-H. Meng"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+    "doi": "10.1109/tsmc.2026.3736745",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11739153/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11739153/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11739153&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b4e5c42f1ac56edc75bd9470d4aa9aafbdfc8fd094efbf88e0e9888139a11c8d",
+  "bibtex_sha256": "006d026f566a553855cc67d3113eee357d7fac33110d7aa83f18c70ac1682e7c",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-06T03:58:33.818760+00:00"
+}

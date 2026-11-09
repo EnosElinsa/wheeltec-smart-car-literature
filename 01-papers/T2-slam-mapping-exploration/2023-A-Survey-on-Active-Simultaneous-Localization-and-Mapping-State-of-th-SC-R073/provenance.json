@@ -1,0 +1,31 @@
+{
+  "paper_id": "efa5e33921ae4daeb0fc69ba1d743fbf",
+  "metadata": {
+    "title": "A Survey on Active Simultaneous Localization and Mapping: State of the Art and New Frontiers",
+    "authors": [
+      "Julio A. Placed",
+      "Jared Strader",
+      "Henry Carrillo",
+      "Nikolay Atanasov",
+      "Vadim Indelman",
+      "Luca Carlone",
+      "José A. Castellanos"
+    ],
+    "year": 2023,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2023.3248510",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10075065/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10075065/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10075065&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "4ae5eef96e5d3427ce1cabb3889e32ced06a02533d99c5e4608267158b23d01c",
+  "bibtex_sha256": "2fbd6903fd8db5ae4c7e02772d58aa575ded92d5821b45d9ed836dffc013c788",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:55:17.343139+00:00",
+  "selection_id": "25ac67beef68967ac298ca54"
+}

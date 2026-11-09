@@ -1,0 +1,29 @@
+{
+  "paper_id": "630afa0a968a447cb6bf4560d121585d",
+  "metadata": {
+    "title": "ADMM-MCBF-LCA: A Layered Control Architecture for Safe Real-Time Navigation",
+    "authors": [
+      "Anusha Srikanthan",
+      "Yifan Xue",
+      "Vijay Kumar",
+      "Nikolai Matni",
+      "Nadia Figueroa"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra55743.2025.11128869",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11128869/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11128869/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11128869&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "5fa0a89e8d0c6ad68b5142a5d4a4fb56f8b4f1dc93446adefe1fa120cfa37e8f",
+  "bibtex_sha256": "0b86e1551bd1eb1711ee17a6e2d7f66bcea37d2a4439adfb778791192d01484f",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:34:45.967988+00:00",
+  "selection_id": "fbf62354041c5fee6170abad"
+}

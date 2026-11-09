@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "date": "2026-11-09",
+  "records": 534,
+  "main": 357,
+  "supplemental_surveys": 6,
+  "excluded_background": 171,
+  "pending": 0,
+  "acquired_reading_sets": 363,
+  "additional_formal_background_reading_sets": 1,
+  "total_catalog_markdown_files": 364,
+  "original_assessed": 247,
+  "survey_selected": 245,
+  "unassessed_active_additions": 116,
+  "working_derived_citation_exceptions": 4,
+  "latest_import": {
+    "status": "passed",
+    "hashes_checked": 2202,
+    "new_official_pairs": 3,
+    "new_oxr_pdfs": 3,
+    "new_oxr_pages": 37,
+    "new_oxr_images": 52,
+    "new_receipt_hashed_files": 98,
+    "current_catalog_records": 534,
+    "active_reading_sets": 363,
+    "background_formal_reading_sets": 1,
+    "scope_pending": 0,
+    "unchanged_other_catalog_records": 531,
+    "protected_tracked_files": 901,
+    "downloads_unchanged": 13,
+    "review_cards_unchanged": 247,
+    "survey_membership_unchanged": 245,
+    "frozen_acquisition_selections_unchanged": true,
+    "index_regeneration": "23 generated files match",
+    "assessed_table_regeneration": "Both tables unchanged",
+    "services_stopped": true,
+    "unresolved_truncations": 0
+  },
+  "public_checks": {
+    "unit_tests": "95 passed",
+    "relative_links": 4082,
+    "broken_links": 0,
+    "public_tree": "passed with strict CJK checks"
+  },
+  "cleanup": {
+    "deleted_files": 163,
+    "deleted_bytes": 21566664,
+    "superseded_sources_removed": 4
+  },
+  "source_verification_scope": "Current catalog source files and 13 user-supplied downloads. F: remains unavailable; 523 historical source hashes are retained without claiming a new recheck.",
+  "provenance_record": "provenance/gap-completion.json"
+}

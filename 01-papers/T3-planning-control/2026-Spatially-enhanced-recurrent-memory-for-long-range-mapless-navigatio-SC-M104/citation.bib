@@ -1,0 +1,28 @@
+@article{doi:10.1177/02783649251401926,
+author = {Fan Yang and Per Frivik and David Hoeller and Chen Wang and Cesar Cadena and Marco Hutter},
+title ={Spatially-enhanced recurrent memory for long-range mapless navigation via end-to-end reinforcement learning},
+
+journal = {The International Journal of Robotics Research},
+volume = {45},
+number = {11},
+pages = {1682-1706},
+year = {2026},
+doi = {10.1177/02783649251401926},
+
+URL = { 
+    
+        https://doi.org/10.1177/02783649251401926
+    
+    
+
+},
+eprint = { 
+    
+        https://doi.org/10.1177/02783649251401926
+    
+    
+
+}
+,
+    abstract = { Recent advancements in robot navigation, particularly with end-to-end learning approaches such as reinforcement learning (RL), have demonstrated remarkable efficiency and effectiveness. However, successful navigation still fundamentally depends on two key capabilities: mapping and planning, whether implemented explicitly or implicitly. Classical approaches rely on explicit mapping pipelines to transform and register egocentric observations into a coherent map for the planning module. In contrast, end-to-end learning often achieves this implicitly—through recurrent neural networks (RNNs) that fuse current and historical observations into a latent space for planning. While existing architectures, such as LSTM and GRU, can capture temporal dependencies, our findings reveal a critical limitation: their inability to effectively perform spatial memorization. This capability is essential for transforming and integrating sequential observations from varying perspectives to build spatial representations that support planning tasks. To address this, we propose spatially-enhanced recurrent units (SRUs)—a simple yet effective modification to existing RNNs—that enhance spatial memorization. To improve navigation performance, we introduce an attention-based network architecture integrated with SRUs, enabling long-range mapless navigation using a single forward-facing stereo camera. Additionally, we employ regularization techniques to facilitate robust end-to-end recurrent training via RL. Experimental results demonstrate that our approach improves long-range navigation performance by 23.5\% overall compared to existing RNNs. Furthermore, when equipped with SRU memory, our method outperforms both RL baseline approaches—one relying on explicit mapping and the other on stacked historical observations—achieving overall improvements of 29.6\% and 105.0\%, respectively, in diverse environments that require long-horizon mapping and memorization capabilities. Finally, we address the sim-to-real gap by leveraging large-scale pretraining on synthetic depth data, enabling zero-shot transfer for deployment across diverse and complex real-world environments. }
+}

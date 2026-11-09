@@ -1,0 +1,28 @@
+{
+  "paper_id": "e42b1fba02b44521b05558db2ed4e3d0",
+  "metadata": {
+    "title": "Safe Fuzzy-CBF: A Monitoring Approach for Deep Reinforcement Learning Navigation Agents",
+    "authors": [
+      "Min Yang",
+      "Guanjun Liu",
+      "Ziyuan Zhou",
+      "Gaiyun Liu"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3695304",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11527338/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11527338/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11527338&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "856b1e4c8da974a26282ba568ef96f29d9a3c8de3fb0de7f56e582499f2010de",
+  "bibtex_sha256": "36080b5516400c44b50669c8981e80fe2913442d3e50f100d724d09ff79d559c",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:32:06.900773+00:00",
+  "selection_id": "2811dfbfa63958c835378a00"
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "3dd811884a3f454787cb964d3ab418ea",
+  "metadata": {
+    "title": "HeR-DRL:Heterogeneous Relational Deep Reinforcement Learning for Single-Robot and Multi-Robot Crowd Navigation",
+    "authors": [
+      "Xinyu Zhou",
+      "Songhao Piao",
+      "Wenzheng Chi",
+      "Liguo Chen",
+      "Wei Li"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3553050",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10933548/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10933548/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10933548&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "f571e54f3c190f5dfdcbedef89b1bda8c116471ac4ea88271ba08ba476e0b0b8",
+  "bibtex_sha256": "1a89c1050f35d33f890a3506de0adc6ddcf8f9267b6b948d579d5356b744b07d",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:41:36.997304+00:00",
+  "selection_id": "e31411265dc143ea4b16de58"
+}

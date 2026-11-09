@@ -1,0 +1,29 @@
+{
+  "paper_id": "968e33f80d6345cf98387763ece74dc5",
+  "metadata": {
+    "title": "Group-Aware Robot Navigation in Crowds Using Spatio-Temporal Graph Attention Network With Deep Reinforcement Learning",
+    "authors": [
+      "Xiaojun Lu",
+      "Angela Faragasso",
+      "Yongdong Wang",
+      "Atsushi Yamashita",
+      "Hajime Asama"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3549663",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10918817/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10918817/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10918817&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "bc4397bb533f8ba6e8921b976cceac5f6410a9a20d8e103fd24d6ace9b1d8895",
+  "bibtex_sha256": "b0c62925c0980661cb6e5fdbd5c0022657a2b3ec7743b74983abfa4ee48f69ad",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:41:19.411686+00:00",
+  "selection_id": "fb2595e59286c40ae46cc8a4"
+}

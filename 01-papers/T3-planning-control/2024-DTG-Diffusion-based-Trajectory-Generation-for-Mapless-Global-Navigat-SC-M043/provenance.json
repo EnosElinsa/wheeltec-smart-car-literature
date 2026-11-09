@@ -1,0 +1,29 @@
+{
+  "paper_id": "76fd35c761f948868ed2b4a642008e77",
+  "metadata": {
+    "title": "DTG : Diffusion-based Trajectory Generation for Mapless Global Navigation",
+    "authors": [
+      "Jing Liang",
+      "Amirreza Payandeh",
+      "Daeun Song",
+      "Xuesu Xiao",
+      "Dinesh Manocha"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros58592.2024.10802055",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10802055/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10802055/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10802055&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "64e5347a8a1098759b16479da8e572b3da444b964c7c0dff12f2e68c4a7d0dd9",
+  "bibtex_sha256": "1a68fd543caa2d0d438b657e28226fe5f2444aaa56cd10d779e19df10a78a357",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:50:27.015337+00:00",
+  "selection_id": "eb50d61aaeb38e9d16909900"
+}

@@ -1,0 +1,30 @@
+{
+  "paper_id": "b5f2a17809374c918f51c51b792aaf86",
+  "metadata": {
+    "title": "Hierarchical Decision-Making for Autonomous Navigation: Integrating Deep Reinforcement Learning and Fuzzy Logic in Four-Wheel Independent Steering and Driving Systems",
+    "authors": [
+      "Yizhi Wang",
+      "Degang Xu",
+      "Yongfang Xie",
+      "Shuzhong Tan",
+      "Xianan Zhou",
+      "Peng Chen"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros60139.2025.11246015",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11246015/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11246015/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11246015&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "5413aa2118aa0bf571204c98c979668b8f315dd471c0f0a41d985d52fc93a8b1",
+  "bibtex_sha256": "7bd554794069b618e402ea5a55fa92e5afc3c7250ab155fe9b2ff6f9e7f0780a",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:41:58.666223+00:00",
+  "selection_id": "ceaa92421a417dca1cba9ef0"
+}

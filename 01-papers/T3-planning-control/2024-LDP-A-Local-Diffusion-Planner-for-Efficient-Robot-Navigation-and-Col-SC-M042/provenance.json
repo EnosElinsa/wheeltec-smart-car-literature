@@ -1,0 +1,31 @@
+{
+  "paper_id": "c9fd5bfceee348e2a1ab22093c80c489",
+  "metadata": {
+    "title": "LDP: A Local Diffusion Planner for Efficient Robot Navigation and Collision Avoidance",
+    "authors": [
+      "Wenhao Yu",
+      "Jie Peng",
+      "Huanyu Yang",
+      "Junrui Zhang",
+      "Yifan Duan",
+      "Jianmin Ji",
+      "Yanyong Zhang"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros58592.2024.10802009",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10802009/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10802009/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10802009&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "45c297437053f10f1200e7143454e9cde79d8a62173d966f68b4372a31a76d21",
+  "bibtex_sha256": "0f7eb3e73a722c90c51ad760975be9bf65b3f090eadc1a506fe48535fea3b8f8",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:53:16.369889+00:00",
+  "selection_id": "cf1cf50a995c2e3df06f2e8e"
+}

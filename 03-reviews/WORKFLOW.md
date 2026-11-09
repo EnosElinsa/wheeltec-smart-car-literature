@@ -109,7 +109,7 @@ retain their original, narrower scope.
 `tools.locate` and `tools.review_check --pdf` use embedded PDF text first.
 For image-only pages they can use PyMuPDF's Tesseract OCR with an English
 `eng.traineddata` model supplied through `TESSDATA_PREFIX`, a system
-tessdata directory, or the local `tmp/ocr/tessdata/` folder. The November 2
+tessdata directory, or the local `.local/ocr/tessdata/` folder. The November 2
 run used the model from the official `tesseract-ocr/tessdata_fast` repository.
 The model and OCR output stay local. The original PDF is never rewritten.
 OCR cache identities include the PDF hash, model hash, and PyMuPDF version;

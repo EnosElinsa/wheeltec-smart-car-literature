@@ -1,0 +1,29 @@
+{
+  "paper_id": "7afb7cbd18c74428ae176e173f296c68",
+  "metadata": {
+    "title": "Deep Reinforcement Learning-Based Large-Scale Robot Exploration",
+    "authors": [
+      "Yuhong Cao",
+      "Rui Zhao",
+      "Yizhuo Wang",
+      "Bairan Xiang",
+      "Guillaume Sartoretti"
+    ],
+    "year": 2024,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2024.3379804",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10476684/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10476684/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10476684&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b912fe755a9288a39ffaa71656e03d58e2afd8d95c7ffa8b4a27d7824e05e625",
+  "bibtex_sha256": "1d168bcb7f1ffce91afe64f610deb59971ee0ea54ef1c1c7bff74c240673d414",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:50:15.216745+00:00",
+  "selection_id": "42237e056b4aae67290a898c"
+}

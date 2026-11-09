@@ -1,0 +1,30 @@
+{
+  "paper_id": "7111c12ea8f742e0bea6683d7e0e5300",
+  "metadata": {
+    "title": "Singularity-Free Guiding Vector Field Over Bézier's Curves Applied to Rovers Path Planning and Path Following",
+    "authors": [
+      "Alfredo González-Calvin",
+      "Lía García-Pérez",
+      "Juan F. Jiménez"
+    ],
+    "year": 2025,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.22541",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1002/rob.22541",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1002/rob.22541",
+  "official_pdf_url": "https://doi.org/10.1002/rob.22541",
+  "official_bibtex_url": "https://doi.org/10.1002/rob.22541",
+  "pdf_sha256": "6e267b3900840f806606d798142cfcadea4e1430c578a633b5dc2ba321f311c4",
+  "bibtex_sha256": "7926e7be5c50338b8a49d6d669d45c84ce334e28b212a6a47051467f870fb522",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:17:14.421791+00:00",
+  "selection_id": "cdb1baece68876bb8b0642ef",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2025 - González‐Calvin - Singularity‐Free Guiding Vector Field Over B zier s Curves Applied to.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (1).bibtex"
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "b0aeccdf4505498886e19e14c4926e83",
+  "metadata": {
+    "title": "Belief-Aided Navigation using Bayesian Reinforcement Learning for Avoiding Humans in Blind Spots",
+    "authors": [
+      "Jinyeob Kim",
+      "Daewon Kwak",
+      "Hyunwoo Rim",
+      "Donghan Kim"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros58592.2024.10802765",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10802765/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10802765/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10802765&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "de0febb7f59f00ba2547de4d6dce86699c4b7443de8844cd6da90f5fbd620fe4",
+  "bibtex_sha256": "1940d2beea0eb524f3f970aa218f137a5a3874812a957abad8d55bae48617f80",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:49:12.220998+00:00",
+  "selection_id": "10585d8b16a2f6adec18f546"
+}

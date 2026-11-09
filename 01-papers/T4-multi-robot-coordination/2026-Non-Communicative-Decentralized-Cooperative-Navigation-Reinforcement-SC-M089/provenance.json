@@ -1,0 +1,28 @@
+{
+  "paper_id": "ddf1791550bc4e6aad602f9ca4338ba1",
+  "metadata": {
+    "title": "Non-Communicative Decentralized Cooperative Navigation: Reinforcement Learning From Point Clouds",
+    "authors": [
+      "Yu Zhai",
+      "Zhe Liu",
+      "Yanzi Miao",
+      "Hesheng Wang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/tits.2025.3647681",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11320910/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11320910/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11320910&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "aa84fdba3c013ade2f7cd5fb522ff92df414d9437629eb179b5fb560eb2296a0",
+  "bibtex_sha256": "bccf2fa2cf86d4bebbf281a7b614f015b16c9c5526d9d21e8f2405eb1c4bde45",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:31:02.574960+00:00",
+  "selection_id": "f4141785c48caf0e62cb4114"
+}

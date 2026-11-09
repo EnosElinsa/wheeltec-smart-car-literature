@@ -1,0 +1,29 @@
+{
+  "paper_id": "c70fe138b69e4f0390a9d037d7ac6331",
+  "metadata": {
+    "title": "TerrainSense: Vision-Driven Mapless Navigation for Unstructured Off-Road Environments",
+    "authors": [
+      "Bilal Hassan",
+      "Arjun Sharma",
+      "Nadya Abdel Madjid",
+      "Majid Khonji",
+      "Jorge Dias"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57147.2024.10610128",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10610128/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10610128/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10610128&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "eff408c10153cd70d2c97bf48956cad263bfb62469200ba357aebb03c1ad5760",
+  "bibtex_sha256": "74158c36464743e50e6d10fabd5c8b9afdf8e875966f29cac57562422668da5b",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:55:03.114989+00:00",
+  "selection_id": "8feced8a954334b10fb612aa"
+}

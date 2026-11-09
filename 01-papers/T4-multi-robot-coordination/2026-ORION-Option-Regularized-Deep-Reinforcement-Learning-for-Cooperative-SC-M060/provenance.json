@@ -1,0 +1,33 @@
+{
+  "paper_id": "d0dffe5b25384598b32d4ca34cd78452",
+  "metadata": {
+    "title": "ORION: Option-Regularized Deep Reinforcement Learning for Cooperative Multi-Agent Online Navigation",
+    "authors": [
+      "Shizhe Zhang",
+      "Jingsong Liang",
+      "Zhitao Zhou",
+      "Shuhan Ye",
+      "Yizhuo Wang",
+      "Derek Ming Siang Tan",
+      "Jimmy Chiun",
+      "Yuhong Cao",
+      "Guillaume Sartoretti"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3699158",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11543210/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11543210/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11543210&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "bf1dc4fe7bd10a17f2d2134128858e763caceb36c09399b870f79185ab9baa42",
+  "bibtex_sha256": "741cb4a68ac4f199e1f3e2b2f44d09678d4123073748811c9e9022fd554ab045",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:31:18.318635+00:00",
+  "selection_id": "129b84f002e95364d8df0963"
+}

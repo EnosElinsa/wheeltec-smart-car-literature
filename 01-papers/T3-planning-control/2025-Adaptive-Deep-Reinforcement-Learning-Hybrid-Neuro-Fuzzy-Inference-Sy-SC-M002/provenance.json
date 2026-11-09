@@ -1,0 +1,29 @@
+{
+  "paper_id": "25c658039b9240499348f05d07884f44",
+  "metadata": {
+    "title": "Adaptive Deep Reinforcement Learning Hybrid Neuro-Fuzzy Inference System Based Path Planning Algorithm for Mobile Robot",
+    "authors": [
+      "Sujay Chakraborty",
+      "Ajay Singh Raghuvanshi"
+    ],
+    "year": 2025,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.22578",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1002/rob.22578",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1002/rob.22578",
+  "official_pdf_url": "https://doi.org/10.1002/rob.22578",
+  "official_bibtex_url": "https://doi.org/10.1002/rob.22578",
+  "pdf_sha256": "4d355f96f9b3ff97dda52035cdb9d35ff2257f7bfa372e754a935ab20ceacbf3",
+  "bibtex_sha256": "3aff83ea1f66daa88710a1aa5688dc198ad15289b8138f789b7180a457c2d695",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:16:49.685409+00:00",
+  "selection_id": "8e07f3212b3e6d0f99a4317d",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2025 - Chakraborty - Adaptive Deep Reinforcement Learning Hybrid Neuro‐Fuzzy Inference System.pdf",
+  "source_bibtex_filename": "pericles_exported_citations.bibtex"
+}

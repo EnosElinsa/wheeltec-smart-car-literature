@@ -1,0 +1,38 @@
+{
+  "paper_id": "571b26bf692d4efc92db022d6b3c0438",
+  "metadata": {
+    "title": "Generative Adversarial Self-Imitation Learning With Large Language Model Feedback for Robot Control and Navigation",
+    "authors": [
+      "Ke Zhang",
+      "Zheng Fang",
+      "Enqi Zhao",
+      "Zicheng Sun",
+      "Jianwu Fang",
+      "Jie Huang",
+      "Eric Nichols",
+      "Randy Gomez",
+      "Bo He",
+      "Jianru Xue",
+      "Guangliang Li"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2026.3710412",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1109/tro.2026.3710412",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1109/tro.2026.3710412",
+  "official_pdf_url": "https://doi.org/10.1109/tro.2026.3710412",
+  "official_bibtex_url": "https://doi.org/10.1109/tro.2026.3710412",
+  "pdf_sha256": "30e6608da52a3236ac6d20275b47892a4b2c9ddf290a1eab6bfd228ea4c5d44a",
+  "bibtex_sha256": "34154185fb446269e40e8c49c3b4d3015eec7019c1f572c3816e64cd96089c8a",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T08:10:07.665132+00:00",
+  "selection_id": "8da3e33e7f3c9dd0089088bb",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Generative_Adversarial_Self-Imitation_Learning_With_Large_Language_Model_Feedback_for_Robot_Control_and_Navigation.pdf",
+  "source_bibtex_filename": "IEEE Xplore Citation BibTeX Download 2026.11.9.0.4.23.bib"
+}

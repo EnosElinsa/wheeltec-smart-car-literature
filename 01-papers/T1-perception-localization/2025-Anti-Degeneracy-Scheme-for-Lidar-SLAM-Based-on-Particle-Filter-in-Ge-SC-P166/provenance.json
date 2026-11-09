@@ -1,0 +1,32 @@
+{
+  "paper_id": "99b93998c1cd477fafb7a42f4f9c0c23",
+  "metadata": {
+    "title": "Anti-Degeneracy Scheme for Lidar SLAM Based on Particle Filter in Geometry Feature-Less Environments",
+    "authors": [
+      "Yanbin Li",
+      "Wei Zhang",
+      "Zhiguo Zhang",
+      "Xiaogang Shi",
+      "Ziruo Li",
+      "Mingming Zhang",
+      "Hongping Xie",
+      "Wenzheng Chi"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3568569",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10994466/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10994466/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10994466&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b1509cfd91dc95d7a883c38f792092d2a2fff9646f455528418dfb5c627cdfb5",
+  "bibtex_sha256": "42af28afc6a27b6bd8fbd4eb2a276ecb8132017465079ac64d8be2b7e8b2001c",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:35:07.214686+00:00",
+  "selection_id": "9b1f183634ee950b46e94ba2"
+}

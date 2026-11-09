@@ -1,0 +1,27 @@
+{
+  "paper_id": "bd9622b24ef34d60a7e789e3cf9b4787",
+  "metadata": {
+    "title": "Deep Reinforcement Learning With Multiple Unrelated Rewards for AGV Mapless Navigation",
+    "authors": [
+      "Boliang Cai",
+      "Changyun Wei",
+      "Ze Ji"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2024.3410162",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10555525/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10555525/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10555525&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "ec40168a569fd93b135fcf6220098e62c7578d347ae0eaa494513e6e86592827",
+  "bibtex_sha256": "3dfa8016c1596e0a1b28bdb8acfd23e09078d18435571c20eb5bec4ff7f922f2",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:37:55.279602+00:00",
+  "selection_id": "9919402d42ddb61b42859df3"
+}

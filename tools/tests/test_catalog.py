@@ -144,3 +144,56 @@ def test_review_promotion_preserves_citation_exceptions(corpus_root, state, fiel
     assert all(promoted[k] == v for k, v in fields.items() if k in {"citation_status", "identity_status"})
     index_row = next(line for line in pages["01-papers/INDEX.md"].splitlines() if re.search(r"\| (?:\S+ )?M39 \|", line))
     assert label in index_row and "[Review]" in index_row
+
+
+def save_catalog_sources(root, *sources):
+    from tools.catalog import CATALOG_FIELDS
+    rows = list(csv.DictReader(io.StringIO(build(root)[CATALOG_REL])))
+    rows.extend(sources)
+    path = root / CATALOG_REL
+    with path.open('w', encoding='utf-8', newline='') as handle:
+        writer = csv.DictWriter(handle, fieldnames=CATALOG_FIELDS)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def catalog_source(code='SC-M101', **changes):
+    folder = f'T3-planning-control/2026-navigation-{code}'
+    row = dict(code=code, theme='T3', title='Navigation source', bibliographic_year='2026',
+        venue='A Journal', publication_type='journal', doi='10.0000/' + code,
+        pdf=f'01-papers/{folder}/paper.pdf', bibtex=f'01-papers/{folder}/citation.bib',
+        markdown=f'02-fulltext/{folder}/paper.md', review='', survey_selected='no',
+        view_group='main', library_status='official-pair-verified')
+    row.update(changes)
+    return row
+
+
+def test_catalog_roundtrip_keeps_unassessed_sources_and_filters_archive(corpus_root):
+    (corpus_root / 'INDEX.html').write_text('', encoding='utf-8')
+    save_catalog_sources(corpus_root, catalog_source(),
+        catalog_source('SC-M062', view_group='pending', pdf='99-archive/local/pending/paper.pdf', markdown=''),
+        catalog_source('SC-M999', view_group='excluded', pdf='', markdown=''))
+    first = build(corpus_root)
+    assert '| SC-M101 |' in first['01-papers/INDEX.md']
+    assert '| SC-M101 |' in first['02-fulltext/INDEX.md']
+    assert '| SC-M101 |' not in first['03-reviews/INDEX.md']
+    assert 'Not assessed' in first['01-papers/INDEX.md']
+    assert '| SC-M062 |' not in first['01-papers/INDEX.md']
+    assert '| SC-M999 |' not in first['01-papers/INDEX.md']
+    rows = list(csv.DictReader(io.StringIO(first[CATALOG_REL])))
+    assert {r['code'] for r in rows} >= {'SC-M101', 'SC-M062', 'SC-M999'}
+    assert all(r['survey_selected'] == 'no' for r in rows if r['code'].startswith('SC-'))
+    (corpus_root / CATALOG_REL).write_text(first[CATALOG_REL], encoding='utf-8')
+    assert build(corpus_root) == first
+
+
+@pytest.mark.parametrize('changes,error', [
+    ({'review': '03-reviews/fake/review.md'}, 'claims a review'),
+    ({'survey_selected': 'yes'}, 'claims a review'),
+    ({'pdf': '01-papers/batch/research/old/paper.pdf'}, 'outside the shared paper layout'),
+    ({'doi': '10.1109/lra.2022.3184768'}, 'duplicate library identity'),
+])
+def test_saved_catalog_cannot_promote_or_relabel_unassessed_sources(corpus_root, changes, error):
+    save_catalog_sources(corpus_root, catalog_source(**changes))
+    with pytest.raises(CorpusError, match=error):
+        build(corpus_root)

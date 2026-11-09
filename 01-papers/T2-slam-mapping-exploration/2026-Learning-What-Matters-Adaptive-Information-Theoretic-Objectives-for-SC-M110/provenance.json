@@ -1,0 +1,28 @@
+{
+  "paper_id": "9c9faddbf4d64887aeec4a7993ec9cc1",
+  "metadata": {
+    "title": "Learning What Matters: Adaptive Information Theoretic Objectives for Robot Exploration",
+    "authors": [
+      "Youwei Yu",
+      "Jionghao Wang",
+      "Zhengming Yu",
+      "Wenping Wang",
+      "Lantao Liu"
+    ],
+    "year": 2026,
+    "venue": "Robotics: Science and Systems XXII",
+    "doi": "10.15607/rss.2026.xxii.137",
+    "publisher": "Robotics: Science and Systems Foundation",
+    "landing_url": "https://www.roboticsproceedings.org/rss22/p137.html",
+    "publication_type": "main",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://www.roboticsproceedings.org/rss22/p137.html",
+  "official_pdf_url": "https://www.roboticsproceedings.org/rss22/p137.pdf",
+  "official_bibtex_url": "https://www.roboticsproceedings.org/rss22/p137.html",
+  "pdf_sha256": "07f0e9d595e2b74c0181024c9ed7a4d61edbbc081aa7542d47f123b9b29d9e2b",
+  "bibtex_sha256": "fafd98069a536d3f2ec9c2583fd88ddf7ce66142475f2f2a1df2caf4812c1e02",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:39:45.742606+00:00"
+}

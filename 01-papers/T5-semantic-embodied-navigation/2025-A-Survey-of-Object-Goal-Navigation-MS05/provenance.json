@@ -1,0 +1,27 @@
+{
+  "paper_id": "2de85f35b34a4e4fbe8a6a07e6a47748",
+  "metadata": {
+    "title": "A Survey of Object Goal Navigation",
+    "authors": [
+      "Jingwen Sun",
+      "Jing Wu",
+      "Ze Ji",
+      "Yu-Kun Lai"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2024.3378010",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10475904/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10475904/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10475904&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "ef73da4b7de99fcf13b03f96f62976bd52c5ea9ec2fdc4e194b0cce682f268f8",
+  "bibtex_sha256": "18171c6bb8bb4b0834257bf476d3f6bf0db6cbacf82e380905d51d139e6f824b",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-06T03:56:26.196432+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "13d6baa0fc8f4e6dab8ad01f0e207ee8",
+  "metadata": {
+    "title": "Designing Control Barrier Function via Probabilistic Enumeration for Safe Reinforcement Learning Navigation",
+    "authors": [
+      "Luca Marzari",
+      "Francesco Trotti",
+      "Enrico Marchesini",
+      "Alessandro Farinelli"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3596431",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11117187/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11117187/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11117187&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "817c579882b69a519f6e07f686f42df8ea3fde744abae5ffe05db8ec5a344265",
+  "bibtex_sha256": "9dcffaf17e6aa3405a1f32ed7aed279fb6050b1177de2c153ad46ec52185fe12",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:39:15.970444+00:00",
+  "selection_id": "4ca1e3e2f8b46126da472527"
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "3399716340fb43f59d5fda52257040c5",
+  "metadata": {
+    "title": "ASPIRE-VINS: Adaptive Spline-Based Visual-Inertial Navigation System With Robust 3D Measurement Residuals",
+    "authors": [
+      "Kwangyik Jung",
+      "Eungchang Mason Lee",
+      "Taekjun Oh",
+      "Hyun Myung"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3711842",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11601084/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11601084/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11601084&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "3f3b5275e05533241c523443580f7552200d3c2aa835d73639fb148f02cc42ed",
+  "bibtex_sha256": "be3a664ecfa1227bdbbfafd3493ca6db92028eee15c0f4050cc700eb6b082c53",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:27:01.891030+00:00",
+  "selection_id": "856aae57f35796cbc023f660"
+}

@@ -1,0 +1,28 @@
+{
+  "paper_id": "eb01f77855014038a39341debfcbdf50",
+  "metadata": {
+    "title": "A Survey on Learning Motion Planning and Control for Mobile Robots: Toward Embodied Intelligence",
+    "authors": [
+      "Mengyun Wang",
+      "Yifeng Niu",
+      "Bo Wang",
+      "Wei Zhang",
+      "Chang Wang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+    "doi": "10.1109/tnnls.2026.3656889",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11382039/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11382039/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11382039&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "5db41cdf2f4598c22777898472e6f4a1574fcafc41aa961e7c9af88546efb9d5",
+  "bibtex_sha256": "3cf382cfec23d5d58dc13fd79ddd737f3c856d0e7ddcc69f72686ec20597a79e",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-06T03:50:58.139641+00:00"
+}

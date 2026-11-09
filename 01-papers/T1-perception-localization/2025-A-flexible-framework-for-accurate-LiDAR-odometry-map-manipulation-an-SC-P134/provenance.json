@@ -1,0 +1,28 @@
+{
+  "paper_id": "01c983a6c2214aba956bf85d98a5676b",
+  "metadata": {
+    "title": "A flexible framework for accurate LiDAR odometry, map manipulation, and localization",
+    "authors": [
+      "Jose Luis Blanco-Claraco"
+    ],
+    "year": 2025,
+    "venue": "The International Journal of Robotics Research",
+    "doi": "10.1177/02783649251316881",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1177/02783649251316881",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1177/02783649251316881",
+  "official_pdf_url": "https://doi.org/10.1177/02783649251316881",
+  "official_bibtex_url": "https://doi.org/10.1177/02783649251316881",
+  "pdf_sha256": "ffff5cae4d0e8ca91eefaf552f1091dc27d3f762c1148ff929a5a2b8e9699a01",
+  "bibtex_sha256": "5934f77379a8a5e734a29960314c39c9d0c4a0c1315a1f51ef03edf818f65f18",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:15:58.857015+00:00",
+  "selection_id": "60ff0e4a99ee19e5307a5d83",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "blanco-claraco-2025-a-flexible-framework-for-accurate-lidar-odometry-map-manipulation-and-localization.pdf",
+  "source_bibtex_filename": "csp_44_.bib"
+}

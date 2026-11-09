@@ -13,6 +13,12 @@
 99-archive/superseded/
 99-archive/local/
 
+# Local reading view, source evidence and reusable OCR runtime data.
+/INDEX.html
+/06-data/provenance/
+/06-data/missing-items.md
+/.local/
+
 # Self-authored manuscript outputs and figures are published with the sources.
 !05-survey/manuscript/survey.pdf
 !05-survey/manuscript/supplement.pdf
@@ -50,3 +56,6 @@ __pycache__/
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Local library apply/rollback snapshots.
+/.arp-backups/

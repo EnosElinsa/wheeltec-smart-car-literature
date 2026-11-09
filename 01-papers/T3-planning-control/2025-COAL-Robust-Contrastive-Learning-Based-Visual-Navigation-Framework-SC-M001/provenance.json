@@ -1,0 +1,31 @@
+{
+  "paper_id": "caf712f0354543e79273038fe9a04244",
+  "metadata": {
+    "title": "COAL: Robust Contrastive Learning-Based Visual Navigation Framework",
+    "authors": [
+      "Zengmao Wang",
+      "Jianhua Hu",
+      "Qifei Tang",
+      "Wei Gao"
+    ],
+    "year": 2025,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.22508",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1002/rob.22508",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1002/rob.22508",
+  "official_pdf_url": "https://doi.org/10.1002/rob.22508",
+  "official_bibtex_url": "https://doi.org/10.1002/rob.22508",
+  "pdf_sha256": "e5d3a7b8736b241930692504779a3bcd973d6492f725b3b863288cab2a77f072",
+  "bibtex_sha256": "fa9defc88b58f44d8f8d51da5a644d03c702c88528d29ad9b18d19fe8ddc7466",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:17:14.449681+00:00",
+  "selection_id": "9db522fe54667a58f34df554",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2025 - Wang - COAL  Robust Contrastive Learning‐Based Visual Navigation Framework.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (4).bibtex"
+}

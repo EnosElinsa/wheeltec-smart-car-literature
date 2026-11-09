@@ -26,6 +26,7 @@ Usage::
 from __future__ import annotations
 
 import argparse
+import json
 import posixpath
 import sys
 from collections import defaultdict
@@ -73,7 +74,8 @@ def _row(entry: Entry, page_dir: str, assessment: bool = False) -> str:
         links.append(f"[Review]({_link(page_dir, row['review'])})")
     elif row.get("source_notes"):
         links.append(f"[Source notes]({_link(page_dir, row['source_notes'])})")
-    links.append(f"[BibTeX]({_link(page_dir, row['bibtex'])})")
+    if row.get("bibtex"):
+        links.append(f"[BibTeX]({_link(page_dir, row['bibtex'])})")
     doi = row.get("doi", "").strip()
     url = row.get("official_url", "").strip()
     if doi:
@@ -116,7 +118,7 @@ def _legend(entries: list[Entry], to_root: str) -> str:
     if any(not e.coding for e in entries):
         text += " Empty coding cells indicate that survey classification is pending."
     if any(e.review is None for e in entries):
-        text += " Targeted source notes are distinguished from review cards in the Assessment column."
+        text += " The Assessment column distinguishes source notes and unassessed files from review cards; supplemental surveys retain their scope status in the catalog."
     return text + "\n"
 
 
@@ -153,21 +155,57 @@ def theme_readme(section: str, theme: str, entries: list[Entry]) -> str:
 def build(root: Path = REPO_ROOT, strict: bool = False) -> dict[str, str]:
     """Return the generated pages as {path relative to the root: text}."""
     entries = load_catalog(root, strict)
-    themes = sorted({e.theme for e in entries})
+    active = [e for e in entries if e.row.get("view_group", "main") in {"main", "surveys"}]
+    themes = sorted({e.theme for e in active})
     pages = {CATALOG_REL: catalog_csv(entries)}
     for section in SECTIONS:
         if section == "03-reviews":
             selected = [e for e in entries if e.review is not None]
         elif section == "02-fulltext":
-            selected = [e for e in entries if e.row.get("markdown")]
+            selected = [e for e in active if e.row.get("markdown")]
         else:
-            selected = entries
+            selected = active
         pages[f"{section}/INDEX.md"] = section_index(section, selected)
         for theme in themes:
             rel = f"{section}/{theme}/README.md"
             if (root / rel).is_file():
                 pages[rel] = theme_readme(section, theme, [e for e in selected if e.theme == theme])
+    if (root / "INDEX.html").is_file():
+        pages["INDEX.html"] = local_index(entries)
     return pages
+
+
+def local_index(entries: list[Entry]) -> str:
+    """Build the local reading view from the same catalog as the public indexes."""
+    records = [{key: entry.row.get(key, "") for key in (
+        "code", "theme", "title", "bibliographic_year", "venue", "doi", "official_url",
+        "assessment", "view_group", "kind", "pdf", "bibtex", "markdown", "review", "screening_reason",
+    )} for entry in sorted(entries, key=lambda e: (e.theme, -_year(e), e.code))]
+    payload = json.dumps(records, ensure_ascii=True).replace("<", "\\u003c")
+    return '''<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WHEELTEC literature library</title>
+<style>body{max-width:1500px;margin:32px auto;padding:0 24px;font:15px/1.6 system-ui,sans-serif;color:#233b42;background:#f5f7f8}a{color:#006d88}h1{margin-bottom:6px}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}input,select{font:inherit;padding:9px;border:1px solid #bbcbd0;border-radius:5px}input{flex:1;min-width:260px}table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left;padding:11px;border-bottom:1px solid #dce5e8;vertical-align:top}th{background:#194753;color:white}small{display:block;color:#5b7076}td:nth-child(3){width:43%}.scroll{overflow:auto}.stats{padding:12px;background:#e7f0f2}details{font-size:13px}</style>
+<h1>WHEELTEC literature library</h1>
+<p>One catalog, organized in six themes. Assessment and survey membership are recorded separately.</p>
+<p><a href="README.md">Library guide</a> &middot; <a href="06-data/library-catalog.csv">Catalog CSV</a> &middot; <a href="06-data/missing-items.md">Remaining work</a> &middot; <a href="05-survey/manuscript/survey.pdf">Survey PDF</a></p>
+<p class="stats" id="stats"></p>
+<div class="controls"><input id="search" placeholder="Search title, ID, DOI or venue" aria-label="Search">
+<select id="group" aria-label="Collection"><option value="main">Main library</option><option value="surveys">Supplemental surveys</option><option value="pending">Pending review</option><option value="excluded">Excluded / background</option><option value="">All records</option></select>
+<select id="theme" aria-label="Theme"><option value="">All themes</option>''' + "".join(f'<option value="T{i}">T{i}</option>' for i in range(1, 7)) + '''</select>
+<select id="assessment" aria-label="Assessment"><option value="">All assessment levels</option><option value="reviewed">Reviewed</option><option value="unassessed">Not assessed</option></select></div>
+<p id="count" aria-live="polite"></p><div class="scroll"><table><thead><tr><th>ID</th><th>Year / Theme</th><th>Title / Venue</th><th>Assessment</th><th>Files</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p>PDFs are the authority for equations, tables and numerical results. Full-text Markdown is a transcription.</p>
+<script>
+const records = ''' + payload + ''';
+const node=(tag,text)=>{const n=document.createElement(tag);n.textContent=text;return n;};
+const body=document.getElementById('rows');
+const rows=records.map(r=>{const tr=document.createElement('tr');tr.append(node('td',r.code),node('td',r.bibliographic_year+' / '+r.theme));const title=node('td','');title.append(node('b',r.title),node('small',r.venue),node('small',r.doi));if(r.screening_reason){const d=node('details','');d.append(node('summary','Scope and use'),node('span',r.screening_reason));title.append(d);}tr.append(title,node('td',r.assessment));const files=node('td','');for(const[key,label]of[['pdf','PDF'],['bibtex','BibTeX'],['markdown','MD'],['review','Review'],['official_url','Publisher']]){if(r[key]){const a=node('a',label);a.href=r[key];files.append(a,document.createTextNode(' '));}}tr.append(files);body.append(tr);return{r,tr,text:JSON.stringify(r).toLowerCase()};});
+document.getElementById('stats').textContent=records.length+' records / '+records.filter(r=>r.pdf&&r.markdown&&['main','surveys'].includes(r.view_group||'main')).length+' reading sets / '+records.filter(r=>r.review).length+' review cards';
+function filter(){const q=document.getElementById('search').value.toLowerCase(),g=document.getElementById('group').value,t=document.getElementById('theme').value,a=document.getElementById('assessment').value;let count=0;for(const{r,tr,text}of rows){const show=text.includes(q)&&(!g||(r.view_group||'main')===g)&&(!t||r.theme===t)&&(!a||(a==='reviewed'?!!r.review:!r.review));tr.hidden=!show;if(show)count++;}document.getElementById('count').textContent='Showing '+count+' / '+records.length;}
+for(const id of['search','group','theme','assessment'])document.getElementById(id).addEventListener('input',filter);filter();
+</script></html>
+'''
 
 
 def main(argv: list[str] | None = None) -> int:

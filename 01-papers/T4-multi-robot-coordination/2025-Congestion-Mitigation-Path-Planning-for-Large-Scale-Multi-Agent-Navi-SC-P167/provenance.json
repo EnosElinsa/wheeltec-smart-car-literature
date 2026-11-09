@@ -1,0 +1,28 @@
+{
+  "paper_id": "15b4ba64132b458da5454764b3ef2d21",
+  "metadata": {
+    "title": "Congestion Mitigation Path Planning for Large-Scale Multi-Agent Navigation in Dense Environments",
+    "authors": [
+      "Takuro Kato",
+      "Keisuke Okumura",
+      "Yoko Sasaki",
+      "Naoya Yokomachi"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3597871",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11122641/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11122641/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/ielx8/7083369/11125679/11122641.pdf?tp=&arnumber=11122641&isnumber=11125679&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "b0d10f00789aabc78f5ecc7db309f17e4c040ec842e568820ed1045f29763f34",
+  "bibtex_sha256": "b4f72174aeaeff62d35ce424414f32b230da25329a12abbe91740e9b8bed47f5",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:36:38.626771+00:00",
+  "selection_id": "dc315e733af4c225b27f9c18"
+}

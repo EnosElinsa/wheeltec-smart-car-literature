@@ -1,0 +1,28 @@
+{
+  "paper_id": "2334598bf0de4239bc09ed91c40a4722",
+  "metadata": {
+    "title": "Data-Driven Batch Localization and SLAM Using Koopman Linearization",
+    "authors": [
+      "Zi Cong Guo",
+      "Frederike Dümbgen",
+      "James Richard Forbes",
+      "Timothy D. Barfoot"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2024.3443674",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10636793/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10636793/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10636793&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "76e08961fdd82d01a924f098d1e43bebe8e2b81ad61058407a64a2dda18bc9c4",
+  "bibtex_sha256": "a46a13039cce04f7920ea877e6bb07106edc17970f92281c995f97594514cce4",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:49:42.613613+00:00",
+  "selection_id": "60c91deb2f8345af7f035b91"
+}

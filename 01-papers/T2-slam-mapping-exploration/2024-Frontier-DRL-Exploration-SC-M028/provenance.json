@@ -1,0 +1,29 @@
+{
+  "paper_id": "44c67982bb794463946abe4c2985ee37",
+  "metadata": {
+    "title": "An improved frontier-based robot exploration strategy combined with deep reinforcement learning",
+    "authors": [
+      "Wang"
+    ],
+    "year": 2024,
+    "venue": "Robotics and Autonomous Systems",
+    "doi": "10.1016/j.robot.2024.104783",
+    "publisher": "Elsevier ScienceDirect",
+    "landing_url": "https://www.sciencedirect.com/science/article/pii/S0921889024001672",
+    "publication_type": "Article",
+    "authors_complete": false
+  },
+  "official_landing_url": "https://www.sciencedirect.com/science/article/pii/S0921889024001672",
+  "official_pdf_url": "https://www.sciencedirect.com/science/article/pii/S0921889024001672/pdfft",
+  "official_bibtex_url": "https://www.sciencedirect.com/sdfe/arp/cite?pii=S0921889024001672&format=text%2Fx-bibtex&withabstract=true",
+  "pdf_sha256": "470cedba6467a5cebf11a9b18692fa6dec2052842b9c80a19935422f53304763",
+  "bibtex_sha256": "3cca7be8991716db81ff637310f4899d0dc03a3de6b2802ed5b53cdc54b8f3f8",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T09:00:39.915139+00:00",
+  "acquisition_method": "manual_publisher_download",
+  "metadata_source_url": "https://api.elsevier.com/content/search/scopus?query=DOI%28%2210.1016%2Fj.robot.2024.104783%22%29&count=2&view=STANDARD",
+  "metadata_author_scope": "first_author",
+  "source_pdf_filename": "An improved frontier-based robot exploration strategy combined with deep reinforcement learning.pdf",
+  "source_bibtex_filename": "S0921889024001672.bib"
+}

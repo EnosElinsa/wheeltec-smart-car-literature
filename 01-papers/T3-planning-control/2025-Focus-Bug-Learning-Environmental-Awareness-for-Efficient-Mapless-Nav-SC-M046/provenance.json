@@ -1,0 +1,27 @@
+{
+  "paper_id": "33c35998edd743f1bf0c0caa5f2dfb66",
+  "metadata": {
+    "title": "Focus Bug: Learning Environmental Awareness for Efficient Mapless Navigation",
+    "authors": [
+      "Charles Dansereau",
+      "Bardienus P. Duisterhof",
+      "Gabriela Nicolescu"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros60139.2025.11246744",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11246744/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11246744/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11246744&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "d65514b4512c4abdc0921a249f0b87c49d15f033796dc6ed1deb57b40dda5629",
+  "bibtex_sha256": "58c151e8d462de5982c8a215c264e16b29aa0dd1913549cc90b559497fd93ce2",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:40:57.454491+00:00",
+  "selection_id": "832dc793c07666ce4e3f93f3"
+}

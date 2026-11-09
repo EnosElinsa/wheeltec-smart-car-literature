@@ -1,0 +1,28 @@
+{
+  "paper_id": "16c249119a9d411aa8bf86c0625c8d4d",
+  "metadata": {
+    "title": "GNSS/Multisensor Fusion Using Continuous-Time Factor Graph Optimization for Robust Localization",
+    "authors": [
+      "Haoming Zhang",
+      "Chih-Chun Chen",
+      "Heike Vallery",
+      "Timothy D. Barfoot"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2024.3443699",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10637732/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10637732/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10637732&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "c6bcc9fd97de5a9fc3032d2ea2686d62f832ff6dd210d88fd0f5d9e5289e38b4",
+  "bibtex_sha256": "afb9ffbeaf935f9b2d1effbde1b43685ce5cba3221b7d3d55656e874f3e36899",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:52:06.229908+00:00",
+  "selection_id": "f20ccc5b53334173afb14cef"
+}

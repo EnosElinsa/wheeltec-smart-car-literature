@@ -19,7 +19,71 @@ CATALOG_FIELDS = (
     "doi", "official_url", "assessment", "survey_selected", "pdf", "bibtex",
     "markdown", "review", "source_notes", "extraction_mode", "pdf_sha256",
     "bibtex_sha256", "markdown_sha256", "citation_status", "identity_status",
+    "collection", "kind", "category", "library_status", "view_group",
+    "acquisition_state", "citation_source", "pdf_version", "provenance",
+    "extraction", "screening_reason", "notes",
 )
+
+THEME_DIRS = {
+    "T1": "T1-perception-localization", "T2": "T2-slam-mapping-exploration",
+    "T3": "T3-planning-control", "T4": "T4-multi-robot-coordination",
+    "T5": "T5-semantic-embodied-navigation", "T6": "T6-reliability-deployment",
+}
+
+
+def _merge_saved_catalog(root: Path, entries: list[Entry]) -> None:
+    """Retain unassessed and archived records from the single catalog.
+
+    Review cards and acquisition manifests still establish assessed metadata.
+    Saved catalog rows cannot change their identities or source bytes, and an
+    unassessed row cannot promote itself into the survey or invent a review.
+    """
+    path = root / CATALOG_REL
+    if not path.is_file():
+        return
+    known = {entry.code: entry for entry in entries}
+    dois = {entry.row.get("doi", "").strip().casefold(): entry.code
+            for entry in entries if entry.row.get("doi")}
+    seen: set[str] = set()
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    for row in rows:
+        code = row["code"]
+        if code in seen:
+            raise CorpusError([f"duplicate library identity in {CATALOG_REL}: {code}"])
+        seen.add(code)
+        if code in known:
+            current = known[code].row
+            fields = ("doi", "pdf", "bibtex", "markdown", "pdf_sha256", "bibtex_sha256", "markdown_sha256")
+            if any((row.get(field, "").casefold() != current.get(field, "").casefold())
+                   if field == "doi" else (row.get(field, "") != current.get(field, "")) for field in fields):
+                raise CorpusError([f"saved catalog conflicts with established sources: {code}"])
+            for field in CATALOG_FIELDS[21:]:
+                if row.get(field):
+                    current[field] = row[field]
+            continue
+        doi = row.get("doi", "").strip().casefold()
+        if doi and doi in dois:
+            raise CorpusError([f"duplicate library identity in {CATALOG_REL}: {code}"])
+        if row.get("review") or row.get("survey_selected", "no") != "no":
+            raise CorpusError([f"unassessed catalog record claims a review or survey membership: {code}"])
+        theme = THEME_DIRS.get(row.get("theme", ""))
+        if not theme:
+            raise CorpusError([f"unknown catalog theme for {code}"])
+        group = row.get("view_group")
+        if group not in {"main", "surveys", "excluded", "pending"}:
+            raise CorpusError([f"unknown catalog group for {code}"])
+        if group in {"main", "surveys"}:
+            for field, section in (("pdf", "01-papers"), ("bibtex", "01-papers"), ("markdown", "02-fulltext")):
+                parts = Path(row.get(field, "")).parts
+                if len(parts) != 4 or parts[0] != section or parts[1] != theme:
+                    raise CorpusError([f"source outside the shared paper layout: {code}: {field}"])
+        row["assessment"] = "Not assessed" if group in {"main", "surveys"} else "Not assessed; " + group
+        row["survey_selected"] = "no"
+        entries.append(Entry(row, theme, None, False))
+        known[code] = entries[-1]
+        if doi:
+            dois[doi] = code
 
 REGISTERED_SOURCE_STATES = frozenset({
     "delivered", "registered_with_derived_citation", "registered_with_title_variant",
@@ -113,6 +177,7 @@ def load_catalog(root: Path = REPO_ROOT, strict: bool = False) -> list[Entry]:
             ids.add(code)
             if doi:
                 dois.add(doi)
+    _merge_saved_catalog(root, entries)
     return entries
 
 

@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v270-yu25a,
+  title = 	 {Adaptive Diffusion Terrain Generator for Autonomous Uneven Terrain Navigation},
+  author =       {Yu, Youwei and Xu, Junhong and Liu, Lantao},
+  booktitle = 	 {Proceedings of The 8th Conference on Robot Learning},
+  pages = 	 {864--884},
+  year = 	 {2025},
+  editor = 	 {Agrawal, Pulkit and Kroemer, Oliver and Burgard, Wolfram},
+  volume = 	 {270},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {06--09 Nov},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v270/main/assets/yu25a/yu25a.pdf},
+  url = 	 {https://proceedings.mlr.press/v270/yu25a.html},
+  abstract = 	 {Model-free reinforcement learning has emerged as a powerful method for developing robust robot control policies capable of navigating through complex and unstructured terrains. The effectiveness of these methods hinges on two essential elements: (1) the use of massively parallel physics simulations to expedite policy training, and (2) the deployment of an environment generator tasked with crafting terrains that are sufficiently challenging yet attainable, thereby facilitating continuous policy improvement. Existing methods of environment generation often rely on heuristics constrained by a set of parameters, limiting the diversity and realism. In this work, we introduce the Adaptive Diffusion Terrain Generator (ADTG), a novel method that leverages Denoising Diffusion Probabilistic Models (DDPMs) to dynamically expand an existing training environment by adding more diverse and complex terrains tailored to the current policy. Unlike conventional methods, ADTG adapts the terrain complexity and variety based on the evolving capabilities of the current policy. This is achieved through two primary mechanisms: First, by blending terrains from the initial dataset within their latent spaces using performance-informed weights, ADTG creates terrains that suitably challenge the policy. Secondly, by manipulating the initial noise in the diffusion process, ADTG seamlessly shifts between creating similar terrains for fine-tuning the current policy and entirely novel ones for expanding training diversity. Our experiments show that the policy trained by ADTG outperforms both procedural generated and natural environments, along with popular navigation methods.}
+}

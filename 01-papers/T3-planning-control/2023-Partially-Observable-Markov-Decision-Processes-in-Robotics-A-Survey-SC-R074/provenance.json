@@ -1,0 +1,27 @@
+{
+  "paper_id": "a8275fcea202418796cb20ed451ce432",
+  "metadata": {
+    "title": "Partially Observable Markov Decision Processes in Robotics: A Survey",
+    "authors": [
+      "Mikko Lauri",
+      "David Hsu",
+      "Joni Pajarinen"
+    ],
+    "year": 2023,
+    "venue": "IEEE Transactions on Robotics",
+    "doi": "10.1109/tro.2022.3200138",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/9899480/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/9899480/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=9899480&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "748e6ba5f2bb8d8feac141ed9728d9e1df7cf3c43898ce60c4757d435b02e637",
+  "bibtex_sha256": "af160f7734d73adc24919181fa6596f04b19d049fa92c3e33758967debcb0351",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:56:18.262249+00:00",
+  "selection_id": "3b7b2e25be55ad1639a1226f"
+}

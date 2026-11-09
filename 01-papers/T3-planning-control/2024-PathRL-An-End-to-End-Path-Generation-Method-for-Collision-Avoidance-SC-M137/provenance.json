@@ -1,0 +1,30 @@
+{
+  "paper_id": "1b450bd3e74743a4a50057928ca0be86",
+  "metadata": {
+    "title": "PathRL: An End-to-End Path Generation Method for Collision Avoidance via Deep Reinforcement Learning",
+    "authors": [
+      "Wenhao Yu",
+      "Jie Peng",
+      "Quecheng Qiu",
+      "Hanyu Wang",
+      "Lu Zhang",
+      "Jianmin Ji"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra57147.2024.10610107",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10610107/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10610107/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10610107&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "4341f176315ac7b79b76e3064bd6086d00f4f25131da428bdec78f9a92313d17",
+  "bibtex_sha256": "b82389de20c89440f12c2d3d4aaad50e9f62c049d5f0587abfaf183ac913c727",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:54:12.229394+00:00",
+  "selection_id": "1c9ae1eea8d47998864217c7"
+}

@@ -1,0 +1,29 @@
+{
+  "paper_id": "89ef5d696f6a428d9f90b23bc9806ae6",
+  "metadata": {
+    "title": "BEVNav: Robot Autonomous Navigation via Spatial-Temporal Contrastive Learning in Bird's-Eye View",
+    "authors": [
+      "Jiahao Jiang",
+      "Yuxiang Yang",
+      "Yingqi Deng",
+      "Chenlong Ma",
+      "Jing Zhang"
+    ],
+    "year": 2024,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2024.3482190",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10720445/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10720445/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10720445&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "4575e8d29a56ded8d4823c716a3ddcc7b73244fe7cbc3d431404971572dfbc97",
+  "bibtex_sha256": "363864d2df421c8d8968440656815ace2a9dbbb5f9a9eadf46b26e901f58a88d",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:49:26.229211+00:00",
+  "selection_id": "56bb7dc750225e6fa131865c"
+}

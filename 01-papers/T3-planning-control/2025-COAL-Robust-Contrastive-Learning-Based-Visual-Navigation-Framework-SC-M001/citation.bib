@@ -1,0 +1,15 @@
+@article{https://doi.org/10.1002/rob.22508,
+author = {Wang, Zengmao and Hu, Jianhua and Tang, Qifei and Gao, Wei},
+title = {COAL: Robust Contrastive Learning-Based Visual Navigation Framework},
+journal = {Journal of Field Robotics},
+volume = {42},
+number = {5},
+pages = {2028-2041},
+keywords = {contrastive learning, multimodal, self-supervised learning, visual navigation},
+doi = {https://doi.org/10.1002/rob.22508},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.22508},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/rob.22508},
+abstract = {ABSTRACT Real-world robots will face a wide variety of complex environments when performing navigation or exploration tasks, especially in situations where the robots have never been seen before. Usually, robots need to establish local or global maps and then use path planning algorithms to determine their routes. However, in some environments, such as a wild grassy path or pavement on either side of a road, it is difficult for robots to plan routes through navigation maps. To address this, we propose a robust framework for robot navigation using contrastive learning called Contrastive Observation–Action in Latent (COAL) space. To extract features from the action space and observation space, respectively, COAL uses two different encoders. At the training stage, COAL does not require any data annotation and a mask approach is employed to keep features with significant differences away from each other in latent space. Similar to multimodal contrastive learning, we maximize bidirectional mutual information to align the features of observations and action sequences in latent space, which can enhance the generalization of the model. At the deployment stage, robots only need the current image as observation to complete exploration tasks. The most suitable action sequence is selected from the sampled data for generating control signals. We evaluate the robustness of COAL in both simulation and real environments. Only 41 min of unlabeled training data is required to allow COAL to explore environments that have never been seen before, even at night. Compared with state-of-the-art methods, COAL has the strongest robustness and generalization ability. More importantly, the robustness of COAL is further improved by augmenting our training data using other open-source data sets, which indicates that our framework has great potential to extract deep features of observations and action sequences. Our code and trained models are available at https://github.com/wzm206/COAL.},
+year = {2025}
+}
+

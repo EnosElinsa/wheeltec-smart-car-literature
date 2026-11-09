@@ -1,0 +1,27 @@
+{
+  "paper_id": "89f5fd714ce145b79b0b34579c4fe217",
+  "metadata": {
+    "title": "Autonomous Driving Small-Scale Cars: A Survey of Recent Development",
+    "authors": [
+      "Dianzhao Li",
+      "Paul Auerbach",
+      "Ostap Okhrin"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/tits.2025.3572394",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11034663/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11034663/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11034663&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "e421390099306d6448adbccd3f233936f0e7d9e6d4b4e7d5cccff0715a640f8d",
+  "bibtex_sha256": "268380569d84918f4491972ae7cc3f0018409835d89da49ff38718901b38efc1",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:35:22.452431+00:00",
+  "selection_id": "ab0f76aec9696b6ae410cf80"
+}

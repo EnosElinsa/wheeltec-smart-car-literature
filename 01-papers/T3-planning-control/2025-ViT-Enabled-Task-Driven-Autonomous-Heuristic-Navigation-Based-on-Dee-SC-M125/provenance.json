@@ -1,0 +1,30 @@
+{
+  "paper_id": "41c5efc61f4f405894d15e98020c7866",
+  "metadata": {
+    "title": "ViT-Enabled Task-Driven Autonomous Heuristic Navigation Based on Deep Reinforcement Learning",
+    "authors": [
+      "Tiantian Dong",
+      "Xianlu Song",
+      "Yonghong Zhang",
+      "Xiayang Qin",
+      "Yunping Liu",
+      "Zongchun Bai"
+    ],
+    "year": 2025,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2025.3557305",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10947526/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10947526/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10947526&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "9ff495db4edd49374e551b48d3c524e77ba98bc90a5b98ce2790b6eef2a8d248",
+  "bibtex_sha256": "6b8674da6b3457f6500b8e5936f9fcc796b96677d118cb19f6570f80ee30e13e",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:47:09.652249+00:00",
+  "selection_id": "ae57f1d611d81d8bb98a3923"
+}

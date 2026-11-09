@@ -8,12 +8,15 @@ An evidence library and survey manuscript on wheeled mobile robot autonomy under
 
 The library supports research on the WHEELTEC R680 wheeled robot. A robot or computer reported in a paper is not evidence that the method has been deployed on the R680.
 
+**Unified library:** 534 distinct records: 247 assessed publications, 110 verified official additions, six supplemental surveys and 171 excluded/background references. No scope reviews are pending. All 363 active reading sets share the six theme directories, with matching PDF, citation and Markdown paths in [the catalog](06-data/library-catalog.csv). Open the local `INDEX.html` to search and read them. The 116 active additions remain unassessed and outside the survey selection.
+
 **Status (November 5, 2026):** working draft. The survey has not been submitted, and its author information and submission declarations are incomplete. The corpus is a purposive selection, not an exhaustive or systematic search of the field.
 
 ## At a glance
 
 | Item | Count |
 |---|---|
+| Acquired reading sets | 363 in six themes: 357 main-library sources and six supplemental surveys; one additional formal reading set is retained as method background |
 | Assessed publications | 247 (203 journal articles, 44 conference papers) in six themes |
 | Review cards | 247: 23 full assessments and 224 light assessments (89 historical conversions, 135 targeted readings) |
 | Survey selection | 245 works from 2021-2026 (244 technical studies, one context review). X01 (1999) and X15 (2016) stay internal |

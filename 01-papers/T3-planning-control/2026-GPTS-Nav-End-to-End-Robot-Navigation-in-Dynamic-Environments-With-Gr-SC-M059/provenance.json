@@ -1,0 +1,28 @@
+{
+  "paper_id": "e6d8963e01d24a5da4bbcff760915860",
+  "metadata": {
+    "title": "GPTS-Nav: End-to-End Robot Navigation in Dynamic Environments With Graph-Privileged Teacher-Student Reinforcement Learning",
+    "authors": [
+      "Kairao Zheng",
+      "Zhi Li",
+      "Yiqing Yuan",
+      "Hui Cheng"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3682571",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11478077/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11478077/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11478077&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "a853b717163a4cbf820e79aafdb2964a5ab35145da57ad6b22a5210e8e98e453",
+  "bibtex_sha256": "934c196050869051a0eca50358db24618343ab8948620f8d00f94da5441a4c7b",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:58:42.761117+00:00",
+  "selection_id": "8dcd867806a495faa6c5d1e0"
+}

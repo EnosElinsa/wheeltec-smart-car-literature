@@ -1,0 +1,27 @@
+{
+  "paper_id": "4f7e92090cb54478aa16af3005cf7cde",
+  "metadata": {
+    "title": "Autonomous Exploration and Mapping for Mobile Robots via Cumulative Curriculum Reinforcement Learning",
+    "authors": [
+      "Zhi Li",
+      "Jinghao Xin",
+      "Ning Li"
+    ],
+    "year": 2023,
+    "venue": "2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros55552.2023.10342066",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10342066/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10342066/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10342066&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "45728710a385d4c138e2e6370a8ee19bc18cbccaeec5be9b65cd4dd5b36c565f",
+  "bibtex_sha256": "4c19a5ba73ec6dd5313b0a51b8c6bf014c55fd2e70d4839372fe0bbb79b39f5c",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:55:28.854641+00:00",
+  "selection_id": "3dcdecbd37ef8750b3657632"
+}

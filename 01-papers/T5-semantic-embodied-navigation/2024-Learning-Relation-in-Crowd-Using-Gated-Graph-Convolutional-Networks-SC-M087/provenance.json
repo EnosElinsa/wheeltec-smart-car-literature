@@ -1,0 +1,31 @@
+{
+  "paper_id": "8c8db5e10710439693744eaf20c5d83b",
+  "metadata": {
+    "title": "Learning Relation in Crowd Using Gated Graph Convolutional Networks for DRL-Based Robot Navigation",
+    "authors": [
+      "Haoge Jiang",
+      "Niraj Bhujel",
+      "Zhuoyi Lin",
+      "Kong-Wah Wan",
+      "Jun Li",
+      "Senthilnath Jayavelu",
+      "Xudong Jiang"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "doi": "10.1109/tits.2023.3343923",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10375876/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10375876/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10375876&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "a59c00f8bf8595f2c1046dab8c0e786aafd0b25c38673355a222ad0fde1af4a6",
+  "bibtex_sha256": "0f656256e0b73f86602b005794c458714bd2bc24c91909415eeb3554003e6bc1",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:53:29.895794+00:00",
+  "selection_id": "ffb28d38d223f27b4cfc1bd6"
+}

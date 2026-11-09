@@ -1,0 +1,27 @@
+{
+  "paper_id": "58c33df9b36742d4a3516769585d7e4b",
+  "metadata": {
+    "title": "CREStE: Scalable Mapless Navigation with Internet Scale Priors and Counterfactual Guidance",
+    "authors": [
+      "Arthur Zhang",
+      "Harshit Sikchi",
+      "Joydeep Biswas",
+      "Amy Zhang"
+    ],
+    "year": 2025,
+    "venue": "Robotics: Science and Systems XXI",
+    "doi": "10.15607/rss.2025.xxi.136",
+    "publisher": "Robotics: Science and Systems Foundation",
+    "landing_url": "https://www.roboticsproceedings.org/rss21/p136.html",
+    "publication_type": "main",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://www.roboticsproceedings.org/rss21/p136.html",
+  "official_pdf_url": "https://www.roboticsproceedings.org/rss21/p136.pdf",
+  "official_bibtex_url": "https://www.roboticsproceedings.org/rss21/p136.html",
+  "pdf_sha256": "0108f2495561f4a160e4b6cada673e34b8de750f2613c8b326fdc2d16e89c535",
+  "bibtex_sha256": "5e5257dd2a9faab385a069d87e103e257bb78062bbc7857f0bd3273d1c1f60fc",
+  "bibtex_source": "publisher_page_embedded",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:40:38.785407+00:00"
+}

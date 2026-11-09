@@ -1,0 +1,26 @@
+{
+  "paper_id": "019c3aa7d1c742d79b7fa9916c069c89",
+  "metadata": {
+    "title": "3D LiDAR Driven Reinforcement Learning With Safety Intervention for Mapless Navigation",
+    "authors": [
+      "Yu Zhai",
+      "Yanzi Miao"
+    ],
+    "year": 2026,
+    "venue": "IEEE Robotics and Automation Letters",
+    "doi": "10.1109/lra.2026.3728311",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11669961/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11669961/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11669961&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "aedd330309a59ae864fd7e8327a805da15091c19575f6d790cd41827db6545d3",
+  "bibtex_sha256": "11d57e07da69f6442d8ed945dd8ea6238968691c95a61b9c01940b1d70320069",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:57:55.071480+00:00",
+  "selection_id": "c2c1815fdb6cf26e6d0187df"
+}

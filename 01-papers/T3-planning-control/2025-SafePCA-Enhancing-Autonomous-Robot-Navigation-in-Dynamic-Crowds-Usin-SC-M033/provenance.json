@@ -1,0 +1,27 @@
+{
+  "paper_id": "23f1fb4dfd144c47ae45ac0c553c880d",
+  "metadata": {
+    "title": "SafePCA: Enhancing Autonomous Robot Navigation in Dynamic Crowds Using Proximal Policy Optimization and Cellular Automata",
+    "authors": [
+      "Ardiansyah Al Farouq",
+      "Dinh Tuan Tran",
+      "Joo-Ho Lee"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE International Conference on Robotics and Automation (ICRA)",
+    "doi": "10.1109/icra55743.2025.11127802",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11127802/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11127802/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11127802&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "6d281cb305340e9215ed1c57947f04d232547ab3cca3da16be2a7d5400ce876a",
+  "bibtex_sha256": "b33f845ae684ac6ec38dbf54d6bb55b3c5dadf43afe3ffbaea9282d6e1591b8f",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:46:30.471101+00:00",
+  "selection_id": "05f1bcdd0deb827c26a1311c"
+}

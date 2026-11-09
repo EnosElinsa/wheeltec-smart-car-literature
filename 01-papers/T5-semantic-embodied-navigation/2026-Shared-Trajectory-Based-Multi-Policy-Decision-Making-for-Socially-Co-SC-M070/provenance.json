@@ -1,0 +1,28 @@
+{
+  "paper_id": "e7bec33689a14217bd5e75eab7f36814",
+  "metadata": {
+    "title": "Shared Trajectory-Based Multi-Policy Decision-Making for Socially Compliant Robot Navigation in Dense Crowds",
+    "authors": [
+      "Tao Wang",
+      "Yuanxin Cai",
+      "Yunjiang Lou",
+      "Jun Xu"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Automation Science and Engineering",
+    "doi": "10.1109/tase.2026.3711907",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11602059/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11602059/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11602059&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "2cb2b2498978566afc5eea0a7b97d530240cdc602081e6b7ee3ac30bae791dcf",
+  "bibtex_sha256": "4a55e16b5f4825f9c493024bc80c9fbbe3f7e099b2deb0ed355cac7a8139886a",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:58:59.407874+00:00",
+  "selection_id": "ba006de16847f8592e4f1ab3"
+}

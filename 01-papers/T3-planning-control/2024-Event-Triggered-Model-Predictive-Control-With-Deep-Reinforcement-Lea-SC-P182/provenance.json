@@ -1,0 +1,28 @@
+{
+  "paper_id": "d8b5ab721efb43deb8163259f6fcb966",
+  "metadata": {
+    "title": "Event-Triggered Model Predictive Control With Deep Reinforcement Learning for Autonomous Driving",
+    "authors": [
+      "Fengying Dang",
+      "Dong Chen",
+      "Jun Chen",
+      "Zhaojian Li"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/tiv.2023.3329785",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10306336/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10306336/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10306336&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "a89dd3d221bcc201b55b839896d3ca1e9505d3540fb3f59aa4795c165f3c8d04",
+  "bibtex_sha256": "7a4f390d011a98098bd623d66bfd5cfe3a9daba2dbedb59cf779eda54a06117b",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:50:55.547871+00:00",
+  "selection_id": "2a6c29c639ef2994b5483a29"
+}

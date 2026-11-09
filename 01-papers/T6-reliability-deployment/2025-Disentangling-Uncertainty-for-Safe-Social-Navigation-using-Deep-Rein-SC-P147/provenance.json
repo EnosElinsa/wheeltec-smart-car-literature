@@ -1,0 +1,28 @@
+{
+  "paper_id": "8236407ccda5466c9340b6043d753969",
+  "metadata": {
+    "title": "Disentangling Uncertainty for Safe Social Navigation using Deep Reinforcement Learning",
+    "authors": [
+      "Daniel Flögel",
+      "Marcos Gómez Villafañe",
+      "Joshua Ransiek",
+      "Sören Hohmann"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "doi": "10.1109/iros60139.2025.11247153",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/11247153/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/11247153/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=11247153&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "43a9b0ca2e7e63036d5fdd5b474a5a8acd128e0726f6a0889a676371327cd294",
+  "bibtex_sha256": "f818ada7c6e34f99d2835090d28107fd1b11eacd470d544cc4f17961698e1930",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T05:39:44.759355+00:00",
+  "selection_id": "7e4ab3c85e4a23519beee935"
+}

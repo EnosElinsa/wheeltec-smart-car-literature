@@ -1,0 +1,31 @@
+{
+  "paper_id": "d114b5e9964c41ad94007ea1645dbfa3",
+  "metadata": {
+    "title": "Motion planning for off-road autonomous driving based on human-like cognition and weight adaptation",
+    "authors": [
+      "Yuchun Wang",
+      "Cheng Gong",
+      "Jianwei Gong",
+      "Peng Jia"
+    ],
+    "year": 2024,
+    "venue": "Journal of Field Robotics",
+    "doi": "10.1002/rob.22345",
+    "publisher": "doi.org",
+    "landing_url": "https://doi.org/10.1002/rob.22345",
+    "publication_type": "journal-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://doi.org/10.1002/rob.22345",
+  "official_pdf_url": "https://doi.org/10.1002/rob.22345",
+  "official_bibtex_url": "https://doi.org/10.1002/rob.22345",
+  "pdf_sha256": "398df33e78d0c896e1137569952e46fa288aa96ae226b9be61b9efc9418cdabf",
+  "bibtex_sha256": "63c711e414db0739a0bd1924404f3a2284e2f046eeb5003d15842aff1daf8100",
+  "bibtex_source": "manual_publisher_download",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-09T07:16:49.598450+00:00",
+  "selection_id": "7191e449ddff16f7a2eca8fb",
+  "acquisition_method": "manual_publisher_download",
+  "source_pdf_filename": "Journal of Field Robotics - 2024 - Wang - Motion planning for off‐road autonomous driving based on human‐like cognition and.pdf",
+  "source_bibtex_filename": "pericles_exported_citations (2).bibtex"
+}

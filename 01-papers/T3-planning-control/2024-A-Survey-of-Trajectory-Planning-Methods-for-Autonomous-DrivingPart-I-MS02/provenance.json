@@ -1,0 +1,29 @@
+{
+  "paper_id": "a95c48e179b847eba528cb512b28ff36",
+  "metadata": {
+    "title": "A Survey of Trajectory Planning Methods for Autonomous Driving—Part I: Unstructured Scenarios",
+    "authors": [
+      "Yuqing Guo",
+      "Zelin Guo",
+      "Yazhou Wang",
+      "Danya Yao",
+      "Bai Li",
+      "Li Li"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Intelligent Vehicles",
+    "doi": "10.1109/tiv.2023.3337318",
+    "publisher": "IEEE",
+    "landing_url": "https://ieeexplore.ieee.org/document/10329446/",
+    "publication_type": "research-article",
+    "authors_complete": true
+  },
+  "official_landing_url": "https://ieeexplore.ieee.org/document/10329446/",
+  "official_pdf_url": "https://ieeexplore.ieee.org/stampPDF/getPDF.jsp?tp=&arnumber=10329446&ref=",
+  "official_bibtex_url": "https://ieeexplore.ieee.org/rest/search/citation/format",
+  "pdf_sha256": "f15a3909882ebae077b5a7ac0b4efe87c7614423324fdcbed6c7f4e5e1e8facc",
+  "bibtex_sha256": "2a75e911ac94b97daf51db6325e66c38f8df422efdc0ad003faedaee4e3c4d6d",
+  "bibtex_source": "publisher_export_api",
+  "bibtex_encoding": "utf-8",
+  "delivered_at": "2026-11-06T03:52:11.282515+00:00"
+}
