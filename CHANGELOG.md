@@ -2,6 +2,10 @@
 
 Notable changes to the library and the survey manuscript, newest first. Dates come from the batch and revision records. The Git history starts with the first public snapshot on November 3, 2026. Each entry links the record that holds the details, and its counts are those of that date.
 
+## 2026-11-11
+
+- Library: [11 DRL navigation papers with public author implementations](06-data/drl-open-source-2026-11-11/README.md), official native pairs and 90 OXR pages; 626 catalog records and 455 active reading sets. Existing assessments and survey selections are unchanged.
+
 ## 2026-11-05
 
 - Repository: MIT license for the code and CC BY 4.0 for the cards, analyses, data and documentation, with the manuscript unlicensed before publication ([license table](README.md#license)). Adds `CITATION.cff`, the Checks workflow, this changelog, the contributing guide and the analysis index, and marks dated records with a stage-record banner.

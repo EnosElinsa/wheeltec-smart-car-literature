@@ -8,7 +8,7 @@ An evidence library and survey manuscript on wheeled mobile robot autonomy under
 
 The library supports research on the WHEELTEC R680 wheeled robot. A robot or computer reported in a paper is not evidence that the method has been deployed on the R680.
 
-**Unified library:** 615 distinct records: 247 assessed publications, 191 unassessed source additions, six supplemental surveys and 171 excluded/background references. All 444 active sources have transcribed reading sets in the six theme directories in [the catalog](06-data/library-catalog.csv). Open the local `INDEX.html` to search and read them. The 197 active additions remain unassessed and outside the survey selection. [Latest manual completion](06-data/annual-review-completion-2026-11-11/README.md): two Annual Review pairs and 49 OXR pages added. Future journal downloads require JCR Q1; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
+**Unified library:** 626 distinct records: 247 assessed publications, 202 unassessed source additions, six supplemental surveys and 171 excluded/background references. All 455 active sources have transcribed reading sets in the six theme directories in [the catalog](06-data/library-catalog.csv). Open the local `INDEX.html` to search and read them. The 208 active additions remain unassessed and outside the survey selection. [Latest addition](06-data/drl-open-source-2026-11-11/README.md): 11 papers with public author implementations from ICRA, IROS and CoRL, with 90 OXR pages. Future journal downloads require JCR Q1; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
 
 **Status (November 5, 2026):** working draft. The survey has not been submitted, and its author information and submission declarations are incomplete. The corpus is a purposive selection, not an exhaustive or systematic search of the field.
 
@@ -16,7 +16,7 @@ The library supports research on the WHEELTEC R680 wheeled robot. A robot or com
 
 | Item | Count |
 |---|---|
-| Acquired sources | 444 transcribed reading sets in six themes; one additional formal reading set is retained as method background |
+| Acquired sources | 455 transcribed reading sets in six themes; one additional formal reading set is retained as method background |
 | Assessed publications | 247 (203 journal articles, 44 conference papers) in six themes |
 | Review cards | 247: 23 full assessments and 224 light assessments (89 historical conversions, 135 targeted readings) |
 | Survey selection | 245 works from 2021-2026 (244 technical studies, one context review). X01 (1999) and X15 (2016) stay internal |
@@ -56,7 +56,7 @@ A paper keeps the same theme, folder name and ID in `01-papers/`, `02-fulltext/`
 
 The repository publishes only self-authored material: review cards, analyses, data tables, citation exports and provenance records, indexes, tools, and the manuscript sources, figures and built PDFs. Publisher PDFs, full-text transcriptions, extracted figures and the historical archive stay on the maintainer's machine for copyright reasons. Public pages show their paths as code, not as links. `tools.check_public_tree` enforces this rule, together with the English-only rule and the absence of local absolute paths and secrets.
 
-The provenance ledgers record the transcription pipeline of each paper. The 127 papers of the baseline, supplemental, expansion and follow-up batches keep the MinerU precision exports or archived original exports listed in [fulltext-manifest.json](06-data/fulltext-manifest.json). N01-N20 use local PyMuPDF4LLM exports, S01-S48 and R01-R36 use OXR-1.0 through self-hosted vLLM, and K01-K16 use PyMuPDF4LLM 0.2.9. The PDF stays the authority for numbers, tables, equations and page numbers.
+The provenance ledgers record the transcription pipeline of each paper. The 127 papers of the baseline, supplemental, expansion and follow-up batches keep the MinerU precision exports or archived original exports listed in [fulltext-manifest.json](06-data/fulltext-manifest.json). N01-N20 use local PyMuPDF4LLM exports, S01-S48, R01-R36 and D01-D11 use OXR-1.0 through self-hosted vLLM, and K01-K16 use PyMuPDF4LLM 0.2.9. The PDF stays the authority for numbers, tables, equations and page numbers.
 
 ## Requirements
 
