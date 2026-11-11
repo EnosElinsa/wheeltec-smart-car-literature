@@ -4,6 +4,8 @@ Notable changes to the library and the survey manuscript, newest first. Dates co
 
 ## 2026-11-11
 
+- Library: [24 ICRA/IROS 2025 papers across six mobile-robot themes](06-data/coverage-expansion-2026-11-11/README.md), native pairs and 176 OXR pages; 650 catalog records and 479 active reading sets.
+
 - Library: [11 DRL navigation papers with public author implementations](06-data/drl-open-source-2026-11-11/README.md), official native pairs and 90 OXR pages; 626 catalog records and 455 active reading sets. Existing assessments and survey selections are unchanged.
 
 ## 2026-11-05

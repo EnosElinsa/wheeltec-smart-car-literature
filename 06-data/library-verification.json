@@ -1,65 +1,60 @@
 {
   "status": "passed",
   "date": "2026-11-11",
-  "records": 626,
-  "acquired_active_sources": 455,
-  "active_reading_sets": 455,
+  "records": 650,
+  "acquired_active_sources": 479,
+  "active_reading_sets": 479,
   "assessed_publications": 247,
   "survey_selected": 245,
-  "unassessed_active_additions": 208,
+  "unassessed_active_additions": 232,
   "latest_import": {
     "status": "passed",
     "date": "2026-11-11",
-    "records": 626,
-    "active_reading_sets": 455,
-    "new_official_pairs": 11,
-    "new_native_citations": 11,
-    "oxr_pdfs": 11,
-    "oxr_markdown_files": 11,
-    "oxr_pages": 90,
-    "oxr_images": 90,
-    "oxr_hashed_files_checked": 213,
-    "oxr_unresolved_truncations": 0,
-    "oxr_warnings": 0,
-    "oxr_services_stopped": true,
+    "records": 650,
+    "active_reading_sets": 479,
+    "new_official_pairs": 24,
+    "new_native_citations": 24,
+    "oxr_pdfs": 24,
+    "oxr_markdown_files": 24,
+    "oxr_pages": 176,
+    "oxr_images": 196,
+    "oxr_warnings": [],
     "new_review_cards": 0,
     "assessed_publications": 247,
     "survey_selected": 245,
-    "frozen_selection_sha256": "94eb08e679d09ede9f9a218b86fd35c36003a94a6c4d6a688ba9071d864bde73",
+    "frozen_selection_sha256": "8e7a99c00210516dcc2035884eca7d78bb88332e570fe7cd4e7f743d438ba63c",
+    "oxr_unresolved_truncations": 0,
+    "oxr_services_stopped": true,
     "checks": {
       "integrity": {
         "status": "passed",
-        "records": 626,
-        "active_reading_sets": 455,
-        "catalog_source_hashes_checked": 1668,
-        "baseline_rows_unchanged": 615,
+        "records": 650,
+        "active_reading_sets": 479,
+        "catalog_source_hashes_checked": 1740,
+        "baseline_rows_unchanged": 626,
         "protected_files_unchanged": 395,
         "unrelated_textbook_files_unchanged": 3,
         "generated_indexes_match": 23,
         "assessed_tables_unchanged": 2,
         "review_cards": 247,
         "survey_selection": 245,
-        "new_official_pairs": 11,
+        "new_official_pairs": 24,
         "native_citation_bytes_preserved": true,
         "frozen_selection_unchanged": true,
-        "oxr_pages": 90,
+        "oxr_pages": 176,
         "oxr_unresolved_truncations": 0,
         "omission_screen_flags": [],
         "services_stopped": true
       },
       "library_tests": "97 passed",
       "textbook_tests": "116 passed, 3 skipped",
-      "links": {
-        "relative_links_checked": 4414,
-        "broken": 0,
-        "local_only": 0
-      },
+      "links": "All checked relative links resolve; no local-only public links",
       "public_tree": "Strict size/path/secret/CJK checks passed",
       "existing_review_pdf_checks": "247 passed, 0 failed; pre-existing card warnings remain",
       "library_browser": {
         "status": "passed",
-        "records": 626,
-        "active": 455,
+        "records": 650,
+        "active": 479,
         "combined_filter_matches": 54,
         "checks": [
           "totals",
@@ -79,8 +74,8 @@
       },
       "chapter_browser": {
         "status": "passed",
-        "projects": 60,
-        "paperBlocks": 55,
+        "projects": 66,
+        "paperBlocks": 61,
         "comparisonTables": 12,
         "brokenAnchors": 0,
         "collapsedDescriptions": 0,
@@ -104,27 +99,132 @@
       },
       "textbook_build": "mkdocs build --strict passed",
       "chapter_quality": "0 errors, 0 warnings",
-      "oxr_ports": "8080/8081 had no listeners after task-owned service shutdown"
+      "oxr_ports": "8080/8081 had no listeners after task-owned service shutdown",
+      "oxr_artifacts": {
+        "expected_papers": 24,
+        "papers": 24,
+        "pdf_pages": 176,
+        "referenced_images": 195,
+        "hashed_files_checked": 444,
+        "failures": [],
+        "warnings": [],
+        "status": "artifact-checks-passed",
+        "scope": "Artifact integrity and page coverage, not perfect OCR or scientific assessment."
+      }
     }
   },
-  "provenance_record": "06-data/drl-open-source-2026-11-11/verification.json",
+  "provenance_record": "06-data/coverage-expansion-2026-11-11/verification.json",
   "previous_import_verification": {
     "status": "passed",
     "date": "2026-11-11",
-    "records": 615,
-    "acquired_active_sources": 444,
-    "active_reading_sets": 444,
+    "records": 626,
+    "acquired_active_sources": 455,
+    "active_reading_sets": 455,
     "assessed_publications": 247,
     "survey_selected": 245,
-    "new_source_registrations": 2,
-    "native_manual_pairs": 2,
-    "oxr_pdfs": 2,
-    "oxr_pages": 49,
-    "oxr_unresolved_truncations": 0,
-    "oxr_services_stopped": true,
-    "original_downloads_unchanged": true,
-    "new_review_cards": 0,
+    "unassessed_active_additions": 208,
     "latest_import": {
+      "status": "passed",
+      "date": "2026-11-11",
+      "records": 626,
+      "active_reading_sets": 455,
+      "new_official_pairs": 11,
+      "new_native_citations": 11,
+      "oxr_pdfs": 11,
+      "oxr_markdown_files": 11,
+      "oxr_pages": 90,
+      "oxr_images": 90,
+      "oxr_hashed_files_checked": 213,
+      "oxr_unresolved_truncations": 0,
+      "oxr_warnings": 0,
+      "oxr_services_stopped": true,
+      "new_review_cards": 0,
+      "assessed_publications": 247,
+      "survey_selected": 245,
+      "frozen_selection_sha256": "94eb08e679d09ede9f9a218b86fd35c36003a94a6c4d6a688ba9071d864bde73",
+      "checks": {
+        "integrity": {
+          "status": "passed",
+          "records": 626,
+          "active_reading_sets": 455,
+          "catalog_source_hashes_checked": 1668,
+          "baseline_rows_unchanged": 615,
+          "protected_files_unchanged": 395,
+          "unrelated_textbook_files_unchanged": 3,
+          "generated_indexes_match": 23,
+          "assessed_tables_unchanged": 2,
+          "review_cards": 247,
+          "survey_selection": 245,
+          "new_official_pairs": 11,
+          "native_citation_bytes_preserved": true,
+          "frozen_selection_unchanged": true,
+          "oxr_pages": 90,
+          "oxr_unresolved_truncations": 0,
+          "omission_screen_flags": [],
+          "services_stopped": true
+        },
+        "library_tests": "97 passed",
+        "textbook_tests": "116 passed, 3 skipped",
+        "links": {
+          "relative_links_checked": 4414,
+          "broken": 0,
+          "local_only": 0
+        },
+        "public_tree": "Strict size/path/secret/CJK checks passed",
+        "existing_review_pdf_checks": "247 passed, 0 failed; pre-existing card warnings remain",
+        "library_browser": {
+          "status": "passed",
+          "records": 626,
+          "active": 455,
+          "combined_filter_matches": 54,
+          "checks": [
+            "totals",
+            "pagination",
+            "journal-year combination",
+            "exact result IDs",
+            "hash restore",
+            "CSV export",
+            "empty state",
+            "reversed years",
+            "token search",
+            "assessment",
+            "all collections",
+            "mobile overflow",
+            "no JavaScript errors"
+          ]
+        },
+        "chapter_browser": {
+          "status": "passed",
+          "projects": 60,
+          "paperBlocks": 55,
+          "comparisonTables": 12,
+          "brokenAnchors": 0,
+          "collapsedDescriptions": 0,
+          "layout": [
+            {
+              "width": 390,
+              "pageOverflow": false,
+              "paragraphOverflow": false
+            },
+            {
+              "width": 768,
+              "pageOverflow": false,
+              "paragraphOverflow": false
+            },
+            {
+              "width": 1512,
+              "pageOverflow": false,
+              "paragraphOverflow": false
+            }
+          ]
+        },
+        "textbook_build": "mkdocs build --strict passed",
+        "chapter_quality": "0 errors, 0 warnings",
+        "oxr_ports": "8080/8081 had no listeners after task-owned service shutdown"
+      }
+    },
+    "provenance_record": "06-data/drl-open-source-2026-11-11/verification.json",
+    "previous_import_verification": {
       "status": "passed",
       "date": "2026-11-11",
       "records": 615,
@@ -139,240 +239,257 @@
       "oxr_unresolved_truncations": 0,
       "oxr_services_stopped": true,
       "original_downloads_unchanged": true,
-      "new_review_cards": 0
-    },
-    "provenance_record": "06-data/annual-review-completion-2026-11-11/verification.json",
-    "previous_import_verification": {
-      "status": "passed",
-      "date": "2026-11-11",
-      "records": 613,
-      "acquired_active_sources": 442,
-      "active_reading_sets": 442,
+      "new_review_cards": 0,
       "latest_import": {
+        "status": "passed",
+        "date": "2026-11-11",
+        "records": 615,
+        "acquired_active_sources": 444,
+        "active_reading_sets": 444,
+        "assessed_publications": 247,
+        "survey_selected": 245,
+        "new_source_registrations": 2,
+        "native_manual_pairs": 2,
+        "oxr_pdfs": 2,
+        "oxr_pages": 49,
+        "oxr_unresolved_truncations": 0,
+        "oxr_services_stopped": true,
+        "original_downloads_unchanged": true,
+        "new_review_cards": 0
+      },
+      "provenance_record": "06-data/annual-review-completion-2026-11-11/verification.json",
+      "previous_import_verification": {
         "status": "passed",
         "date": "2026-11-11",
         "records": 613,
         "acquired_active_sources": 442,
         "active_reading_sets": 442,
-        "assessed_publications": 247,
-        "survey_selected": 245,
-        "new_source_registrations": 33,
-        "manual_supplied_pdfs": 13,
-        "new_native_manual_pairs": 8,
-        "crossref_citation_exceptions": 5,
-        "journal_selected": 30,
-        "journal_native_pairs": 20,
-        "journal_unresolved": 10,
-        "oxr_pdfs": 79,
-        "oxr_pages": 1220,
-        "oxr_unresolved_truncations": 0,
-        "new_review_cards": 0,
-        "new_ral_papers": 0,
-        "protected_files_unchanged": 409,
-        "oxr_runtime": "SoMarkAI/OXR-1.0 with D-FINE and vLLM 0.25.1",
-        "oxr_quality_alerts": 9,
-        "oxr_alert_pages_rendered_reviewed": 9,
-        "oxr_limitations": "Mathematical OCR superscript errors and footnote/formula duplication remain, especially H24 page 17; original PDFs control exact equations.",
-        "oxr_services_stopped": true
-      },
-      "provenance_record": "06-data/journal-completion-2026-11-11/verification.json",
-      "previous_import_verification": {
-        "status": "passed",
-        "date": "2026-11-11",
-        "records": 580,
-        "main": 403,
-        "supplemental_surveys": 6,
-        "excluded_background": 171,
-        "pending": 0,
-        "acquired_reading_sets": 363,
-        "additional_formal_background_reading_sets": 1,
-        "total_catalog_markdown_files": 364,
-        "original_assessed": 247,
-        "survey_selected": 245,
-        "unassessed_active_additions": 162,
-        "working_derived_citation_exceptions": 4,
-        "cleanup": {
-          "deleted_files": 163,
-          "deleted_bytes": 21566664,
-          "superseded_sources_removed": 4
+        "latest_import": {
+          "status": "passed",
+          "date": "2026-11-11",
+          "records": 613,
+          "acquired_active_sources": 442,
+          "active_reading_sets": 442,
+          "assessed_publications": 247,
+          "survey_selected": 245,
+          "new_source_registrations": 33,
+          "manual_supplied_pdfs": 13,
+          "new_native_manual_pairs": 8,
+          "crossref_citation_exceptions": 5,
+          "journal_selected": 30,
+          "journal_native_pairs": 20,
+          "journal_unresolved": 10,
+          "oxr_pdfs": 79,
+          "oxr_pages": 1220,
+          "oxr_unresolved_truncations": 0,
+          "new_review_cards": 0,
+          "new_ral_papers": 0,
+          "protected_files_unchanged": 409,
+          "oxr_runtime": "SoMarkAI/OXR-1.0 with D-FINE and vLLM 0.25.1",
+          "oxr_quality_alerts": 9,
+          "oxr_alert_pages_rendered_reviewed": 9,
+          "oxr_limitations": "Mathematical OCR superscript errors and footnote/formula duplication remain, especially H24 page 17; original PDFs control exact equations.",
+          "oxr_services_stopped": true
         },
-        "source_verification_scope": "New H-series publisher pairs and all catalog source paths; earlier verification is retained as historical evidence.",
-        "acquired_active_sources": 409,
+        "provenance_record": "06-data/journal-completion-2026-11-11/verification.json",
         "previous_import_verification": {
           "status": "passed",
-          "hashes_checked": 2202,
-          "new_official_pairs": 3,
-          "new_oxr_pdfs": 3,
-          "new_oxr_pages": 37,
-          "new_oxr_images": 52,
-          "new_receipt_hashed_files": 98,
-          "current_catalog_records": 534,
-          "active_reading_sets": 363,
-          "background_formal_reading_sets": 1,
-          "scope_pending": 0,
-          "unchanged_other_catalog_records": 531,
-          "protected_tracked_files": 901,
-          "downloads_unchanged": 13,
-          "review_cards_unchanged": 247,
-          "survey_membership_unchanged": 245,
-          "frozen_acquisition_selections_unchanged": true,
-          "index_regeneration": "23 generated files match",
-          "assessed_table_regeneration": "Both tables unchanged",
-          "services_stopped": true,
-          "unresolved_truncations": 0
-        },
-        "previous_public_checks": {
-          "unit_tests": "95 passed",
-          "relative_links": 4082,
-          "broken_links": 0,
-          "public_tree": "passed with strict CJK checks"
-        },
-        "previous_provenance_record": "provenance/gap-completion.json",
-        "provenance_record": "flagship-expansion-2026-11-10/verification.json",
-        "latest_import": {
-          "batch": "flagship-expansion-2026-11-10",
-          "selected": 60,
-          "new_official_pairs": 46,
-          "unresolved": 14,
-          "states": {
-            "manual_required": 9,
-            "delivered": 46,
-            "contract_error": 5
-          },
-          "new_transcriptions": 0,
-          "new_review_cards": 0,
+          "date": "2026-11-11",
+          "records": 580,
+          "main": 403,
+          "supplemental_surveys": 6,
+          "excluded_background": 171,
+          "pending": 0,
+          "acquired_reading_sets": 363,
+          "additional_formal_background_reading_sets": 1,
+          "total_catalog_markdown_files": 364,
+          "original_assessed": 247,
           "survey_selected": 245,
-          "native_citation_bytes_preserved": true,
-          "new_source_hashes_checked": 92,
-          "protected_files_unchanged": 410,
-          "frozen_selection_unchanged": true,
-          "duplicate_dois": 0,
-          "active_pdf_bibtex_paths_present": true,
-          "status": "passed"
+          "unassessed_active_additions": 162,
+          "working_derived_citation_exceptions": 4,
+          "cleanup": {
+            "deleted_files": 163,
+            "deleted_bytes": 21566664,
+            "superseded_sources_removed": 4
+          },
+          "source_verification_scope": "New H-series publisher pairs and all catalog source paths; earlier verification is retained as historical evidence.",
+          "acquired_active_sources": 409,
+          "previous_import_verification": {
+            "status": "passed",
+            "hashes_checked": 2202,
+            "new_official_pairs": 3,
+            "new_oxr_pdfs": 3,
+            "new_oxr_pages": 37,
+            "new_oxr_images": 52,
+            "new_receipt_hashed_files": 98,
+            "current_catalog_records": 534,
+            "active_reading_sets": 363,
+            "background_formal_reading_sets": 1,
+            "scope_pending": 0,
+            "unchanged_other_catalog_records": 531,
+            "protected_tracked_files": 901,
+            "downloads_unchanged": 13,
+            "review_cards_unchanged": 247,
+            "survey_membership_unchanged": 245,
+            "frozen_acquisition_selections_unchanged": true,
+            "index_regeneration": "23 generated files match",
+            "assessed_table_regeneration": "Both tables unchanged",
+            "services_stopped": true,
+            "unresolved_truncations": 0
+          },
+          "previous_public_checks": {
+            "unit_tests": "95 passed",
+            "relative_links": 4082,
+            "broken_links": 0,
+            "public_tree": "passed with strict CJK checks"
+          },
+          "previous_provenance_record": "provenance/gap-completion.json",
+          "provenance_record": "flagship-expansion-2026-11-10/verification.json",
+          "latest_import": {
+            "batch": "flagship-expansion-2026-11-10",
+            "selected": 60,
+            "new_official_pairs": 46,
+            "unresolved": 14,
+            "states": {
+              "manual_required": 9,
+              "delivered": 46,
+              "contract_error": 5
+            },
+            "new_transcriptions": 0,
+            "new_review_cards": 0,
+            "survey_selected": 245,
+            "native_citation_bytes_preserved": true,
+            "new_source_hashes_checked": 92,
+            "protected_files_unchanged": 410,
+            "frozen_selection_unchanged": true,
+            "duplicate_dois": 0,
+            "active_pdf_bibtex_paths_present": true,
+            "status": "passed"
+          },
+          "public_checks": {
+            "unit_tests": {
+              "exit_code": 0,
+              "result": "................................................. [ 75%]\r\n.......................                                                  [100%]\r\n95 passed in 5.89s"
+            },
+            "relative_links": {
+              "exit_code": 0,
+              "result": "Markdown files: 328; relative links: 4181; broken: 0; local-only: 0"
+            },
+            "public_tree": {
+              "exit_code": 0,
+              "result": "Files scanned: 1193\r\n  size                0  (strict)\r\n  forbidden-path      0  (strict)\r\n  absolute-path       0  (strict)\r\n  secret              0  (strict)\r\n  cjk                 0  (strict)\r\nRESULT: PASS"
+            },
+            "index_regeneration": {
+              "exit_code": 0,
+              "result": "23 regenerated index files match the library byte for byte."
+            },
+            "assessed_tables": {
+              "exit_code": 0,
+              "result": "The two regenerated assessed tables match the library byte for byte (247 rows)."
+            },
+            "review_pdf_checks": {
+              "exit_code": 0,
+              "result": "247 existing review cards checked against PDFs: 247 passed, 0 failed; pre-existing style warnings remain."
+            }
+          }
         },
         "public_checks": {
-          "unit_tests": {
+          "links": {
             "exit_code": 0,
-            "result": "................................................. [ 75%]\r\n.......................                                                  [100%]\r\n95 passed in 5.89s"
-          },
-          "relative_links": {
-            "exit_code": 0,
-            "result": "Markdown files: 328; relative links: 4181; broken: 0; local-only: 0"
-          },
-          "public_tree": {
-            "exit_code": 0,
-            "result": "Files scanned: 1193\r\n  size                0  (strict)\r\n  forbidden-path      0  (strict)\r\n  absolute-path       0  (strict)\r\n  secret              0  (strict)\r\n  cjk                 0  (strict)\r\nRESULT: PASS"
-          },
-          "index_regeneration": {
-            "exit_code": 0,
-            "result": "23 regenerated index files match the library byte for byte."
+            "result": "Markdown files: 331; relative links: 4348; broken: 0; local-only: 0"
           },
           "assessed_tables": {
             "exit_code": 0,
-            "result": "The two regenerated assessed tables match the library byte for byte (247 rows)."
+            "result": "Both regenerated assessed tables match the library byte for byte (247 publications)."
           },
-          "review_pdf_checks": {
+          "public_tree": {
             "exit_code": 0,
-            "result": "247 existing review cards checked against PDFs: 247 passed, 0 failed; pre-existing style warnings remain."
+            "result": "Files scanned: 1235\n  size                0  (strict)\n  forbidden-path      0  (strict)\n  absolute-path       0  (strict)\n  secret              0  (strict)\n  cjk                 0  (strict)\nRESULT: PASS"
+          },
+          "pytest": {
+            "exit_code": 0,
+            "result": "........................................................................ [ 75%]\n.......................                                                  [100%]\n95 passed in 4.80s"
+          },
+          "review_pdf": {
+            "exit_code": 0,
+            "result": "247 existing review cards passed PDF checks; pre-existing warnings about missing page locators, approximate excerpts and card size remain documented in the private log. No review card was modified."
+          },
+          "sources_and_indices": {
+            "exit_code": 0,
+            "result": "613 unique catalog records; 442 active reading sets; all new hashes and OXR assets checked; 409 protected files and every supplied original unchanged; 247 review cards and 245 survey selections preserved; 23 generated indexes match."
           }
         }
       },
-      "public_checks": {
-        "links": {
-          "exit_code": 0,
-          "result": "Markdown files: 331; relative links: 4348; broken: 0; local-only: 0"
+      "checks": {
+        "library_pytest": {
+          "passed": 97
         },
-        "assessed_tables": {
-          "exit_code": 0,
-          "result": "Both regenerated assessed tables match the library byte for byte (247 publications)."
+        "textbook_pytest": {
+          "passed": 116,
+          "skipped": 3
         },
-        "public_tree": {
-          "exit_code": 0,
-          "result": "Files scanned: 1235\n  size                0  (strict)\n  forbidden-path      0  (strict)\n  absolute-path       0  (strict)\n  secret              0  (strict)\n  cjk                 0  (strict)\nRESULT: PASS"
+        "library_links": {
+          "broken": 0,
+          "local_only": 0,
+          "relative_links_checked": 4371
         },
-        "pytest": {
-          "exit_code": 0,
-          "result": "........................................................................ [ 75%]\n.......................                                                  [100%]\n95 passed in 4.80s"
+        "library_public_tree": "strict checks passed",
+        "textbook_build": "mkdocs build --strict passed",
+        "chapter_quality": "0 errors, 0 warnings",
+        "library_browser": {
+          "status": "passed",
+          "records": 615,
+          "active": 444,
+          "combined_filter_matches": 54,
+          "checks": [
+            "totals",
+            "pagination",
+            "journal-year combination",
+            "exact result IDs",
+            "hash restore",
+            "CSV export",
+            "empty state",
+            "reversed years",
+            "token search",
+            "assessment",
+            "all collections",
+            "mobile overflow",
+            "no JavaScript errors"
+          ]
         },
-        "review_pdf": {
-          "exit_code": 0,
-          "result": "247 existing review cards passed PDF checks; pre-existing warnings about missing page locators, approximate excerpts and card size remain documented in the private log. No review card was modified."
+        "chapter_browser": {
+          "status": "passed",
+          "checks": [
+            "three route cards",
+            "39 functioning expandable descriptions",
+            "DRL anchors",
+            "12 pinned repository records",
+            "mobile overflow"
+          ],
+          "widths": [
+            1512,
+            390
+          ]
         },
-        "sources_and_indices": {
-          "exit_code": 0,
-          "result": "613 unique catalog records; 442 active reading sets; all new hashes and OXR assets checked; 409 protected files and every supplied original unchanged; 247 review cards and 245 survey selections preserved; 23 generated indexes match."
-        }
+        "integrity": {
+          "status": "passed",
+          "records": 615,
+          "active_reading_sets": 444,
+          "all_catalog_source_hashes_checked": 1635,
+          "protected_files_unchanged": 419,
+          "baseline_catalog_rows_unchanged": 613,
+          "supplied_originals_unchanged": 4,
+          "generated_indexes_match": 23,
+          "assessed_tables_unchanged": 2,
+          "review_cards": 247,
+          "survey_selection": 245,
+          "new_oxr_pages": 49,
+          "new_oxr_papers": 2,
+          "unresolved_truncations": 0
+        },
+        "oxr_ports": "8080/8081 have no listeners after task service shutdown",
+        "review_pdf_check": "247 passed; preexisting card warnings retained"
       }
-    },
-    "checks": {
-      "library_pytest": {
-        "passed": 97
-      },
-      "textbook_pytest": {
-        "passed": 116,
-        "skipped": 3
-      },
-      "library_links": {
-        "broken": 0,
-        "local_only": 0,
-        "relative_links_checked": 4371
-      },
-      "library_public_tree": "strict checks passed",
-      "textbook_build": "mkdocs build --strict passed",
-      "chapter_quality": "0 errors, 0 warnings",
-      "library_browser": {
-        "status": "passed",
-        "records": 615,
-        "active": 444,
-        "combined_filter_matches": 54,
-        "checks": [
-          "totals",
-          "pagination",
-          "journal-year combination",
-          "exact result IDs",
-          "hash restore",
-          "CSV export",
-          "empty state",
-          "reversed years",
-          "token search",
-          "assessment",
-          "all collections",
-          "mobile overflow",
-          "no JavaScript errors"
-        ]
-      },
-      "chapter_browser": {
-        "status": "passed",
-        "checks": [
-          "three route cards",
-          "39 functioning expandable descriptions",
-          "DRL anchors",
-          "12 pinned repository records",
-          "mobile overflow"
-        ],
-        "widths": [
-          1512,
-          390
-        ]
-      },
-      "integrity": {
-        "status": "passed",
-        "records": 615,
-        "active_reading_sets": 444,
-        "all_catalog_source_hashes_checked": 1635,
-        "protected_files_unchanged": 419,
-        "baseline_catalog_rows_unchanged": 613,
-        "supplied_originals_unchanged": 4,
-        "generated_indexes_match": 23,
-        "assessed_tables_unchanged": 2,
-        "review_cards": 247,
-        "survey_selection": 245,
-        "new_oxr_pages": 49,
-        "new_oxr_papers": 2,
-        "unresolved_truncations": 0
-      },
-      "oxr_ports": "8080/8081 have no listeners after task service shutdown",
-      "review_pdf_check": "247 passed; preexisting card warnings retained"
     }
   }
 }

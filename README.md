@@ -8,7 +8,7 @@ An evidence library and survey manuscript on wheeled mobile robot autonomy under
 
 The library supports research on the WHEELTEC R680 wheeled robot. A robot or computer reported in a paper is not evidence that the method has been deployed on the R680.
 
-**Unified library:** 626 distinct records: 247 assessed publications, 202 unassessed source additions, six supplemental surveys and 171 excluded/background references. All 455 active sources have transcribed reading sets in the six theme directories in [the catalog](06-data/library-catalog.csv). Open the local `INDEX.html` to search and read them. The 208 active additions remain unassessed and outside the survey selection. [Latest addition](06-data/drl-open-source-2026-11-11/README.md): 11 papers with public author implementations from ICRA, IROS and CoRL, with 90 OXR pages. Future journal downloads require JCR Q1; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
+**Unified library:** 650 distinct records: 247 assessed publications, 226 unassessed source additions, six supplemental surveys and 171 excluded/background references. All 479 active sources have transcribed reading sets in the six theme directories in [the catalog](06-data/library-catalog.csv). Open the local `INDEX.html` to search and read them. The 232 active additions remain unassessed and outside the survey selection. [Latest addition](06-data/coverage-expansion-2026-11-11/README.md): 24 ICRA/IROS 2025 papers across six themes, with 176 OXR pages. Future journal downloads require JCR Q1; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
 
 **Status (November 5, 2026):** working draft. The survey has not been submitted, and its author information and submission declarations are incomplete. The corpus is a purposive selection, not an exhaustive or systematic search of the field.
 
@@ -16,7 +16,7 @@ The library supports research on the WHEELTEC R680 wheeled robot. A robot or com
 
 | Item | Count |
 |---|---|
-| Acquired sources | 455 transcribed reading sets in six themes; one additional formal reading set is retained as method background |
+| Acquired sources | 479 transcribed reading sets in six themes; one additional formal reading set is retained as method background |
 | Assessed publications | 247 (203 journal articles, 44 conference papers) in six themes |
 | Review cards | 247: 23 full assessments and 224 light assessments (89 historical conversions, 135 targeted readings) |
 | Survey selection | 245 works from 2021-2026 (244 technical studies, one context review). X01 (1999) and X15 (2016) stay internal |

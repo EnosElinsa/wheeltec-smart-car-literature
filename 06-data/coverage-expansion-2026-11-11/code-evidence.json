@@ -1,0 +1,155 @@
+{
+  "checked": "2026-11-11",
+  "scope": "Author/project identity, pinned README, source tree and common root license files; no execution or complete component-license audit.",
+  "repositories": [
+    {
+      "paper_id": "V01",
+      "repository": "https://github.com/bytedance/Ts_Online_Optimization",
+      "name": "Temporal-Calib",
+      "checked": "2026-11-11",
+      "head_commit": "e4439b811efa643518b097772d014d21cc89361f",
+      "code_files": 129,
+      "files": {
+        "README.md": {
+          "url": "https://github.com/bytedance/Ts_Online_Optimization/blob/e4439b811efa643518b097772d014d21cc89361f/README.md",
+          "sha256": "84f1eca81ac1341a6e7392e4065644472db2b61749c36b1a859e62195d66523c"
+        }
+      },
+      "license_path": "",
+      "license_review": "No common root license file verified; check component terms"
+    },
+    {
+      "paper_id": "V02",
+      "repository": "https://github.com/NeSC-IV/AF-RLIO",
+      "status": "Advertised repository unresolved at verification"
+    },
+    {
+      "paper_id": "V04",
+      "repository": "https://github.com/TUMFTM/MiscalibrationDetection",
+      "name": "MiscalibrationDetection",
+      "checked": "2026-11-11",
+      "head_commit": "bb8bac4ed8299dece8101e596ac6b590a3253ba2",
+      "code_files": 67,
+      "files": {
+        "README.md": {
+          "url": "https://github.com/TUMFTM/MiscalibrationDetection/blob/bb8bac4ed8299dece8101e596ac6b590a3253ba2/README.md",
+          "sha256": "f0310ed97acfaa2a9435eda6d1476574e25efe70926f9ca80c29e93017921384"
+        },
+        "LICENSE": {
+          "url": "https://github.com/TUMFTM/MiscalibrationDetection/blob/bb8bac4ed8299dece8101e596ac6b590a3253ba2/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      },
+      "license_path": "LICENSE",
+      "license_review": "Apache-2.0"
+    },
+    {
+      "paper_id": "V05",
+      "repository": "https://github.com/LeeBY68/Hier-SLAM",
+      "name": "Hier-SLAM",
+      "checked": "2026-11-11",
+      "head_commit": "a36940e73b268466829711963317a74cafa9fded",
+      "code_files": 560,
+      "files": {
+        "README.md": {
+          "url": "https://github.com/LeeBY68/Hier-SLAM/blob/a36940e73b268466829711963317a74cafa9fded/README.md",
+          "sha256": "5b740fed3f1e964460aa5c965b16958d15c44f1ecc74398dc1f78d4ab3e7304c"
+        },
+        "LICENSE": {
+          "url": "https://github.com/LeeBY68/Hier-SLAM/blob/a36940e73b268466829711963317a74cafa9fded/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      },
+      "license_path": "LICENSE",
+      "license_review": "Apache-2.0"
+    },
+    {
+      "paper_id": "V07",
+      "repository": "https://github.com/PRBonn/kiss-slam",
+      "name": "KISS-SLAM",
+      "checked": "2026-11-11",
+      "head_commit": "3d4d1fabf5e301742ccc5f55753bf171a51953e2",
+      "code_files": 27,
+      "files": {
+        "README.md": {
+          "url": "https://github.com/PRBonn/kiss-slam/blob/3d4d1fabf5e301742ccc5f55753bf171a51953e2/README.md",
+          "sha256": "4449552af11418e7b54bec68d19fb17f793c882b434088a8dc156c08cf30ebd2"
+        },
+        "LICENSE": {
+          "url": "https://github.com/PRBonn/kiss-slam/blob/3d4d1fabf5e301742ccc5f55753bf171a51953e2/LICENSE",
+          "sha256": "a73e547f0844bf9fa445d1714bddc60a27f1e2caebe90c0c70ddfa2f03a0a2ff"
+        }
+      },
+      "license_path": "LICENSE",
+      "license_review": "MIT"
+    },
+    {
+      "paper_id": "V15",
+      "repository": "https://github.com/bairuofei/LoS_constrained_navigation",
+      "name": "ReALM",
+      "checked": "2026-11-11",
+      "head_commit": "cc67f16a5f6de093722cd919e20b6b0a9fe564ec",
+      "code_files": 18,
+      "files": {
+        "README.md": {
+          "url": "https://github.com/bairuofei/LoS_constrained_navigation/blob/cc67f16a5f6de093722cd919e20b6b0a9fe564ec/README.md",
+          "sha256": "663647d15debd59a258645bc24b238324e1c4d0af7e5821dc8c9d6d994ec8a8d"
+        },
+        "LICENSE.txt": {
+          "url": "https://github.com/bairuofei/LoS_constrained_navigation/blob/cc67f16a5f6de093722cd919e20b6b0a9fe564ec/LICENSE.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      },
+      "license_path": "LICENSE.txt",
+      "license_review": "Apache-2.0"
+    },
+    {
+      "paper_id": "V16",
+      "repository": "https://github.com/LIAS-CUHKSZ/Distributed-object-based-SLAM",
+      "name": "Distributed-IKF",
+      "checked": "2026-11-11",
+      "head_commit": "f785989774cf29d32389c9aff62f7315f4a99991",
+      "code_files": 157,
+      "files": {
+        "README.md": {
+          "url": "https://github.com/LIAS-CUHKSZ/Distributed-object-based-SLAM/blob/f785989774cf29d32389c9aff62f7315f4a99991/README.md",
+          "sha256": "3ec14953217d1bfea66c5b3da3f19752ba2e17682f979ddb729ca208fe8f24b4"
+        }
+      },
+      "license_path": "",
+      "license_review": "No common root license file verified; check component terms"
+    },
+    {
+      "paper_id": "V19",
+      "repository": "https://github.com/Taekmino/LaC",
+      "name": "Language-as-Cost",
+      "checked": "2026-11-11",
+      "head_commit": "2b84563a6a42c5bf8e641ec9e12ce0af7f78fd13",
+      "code_files": 6,
+      "files": {
+        "README.md": {
+          "url": "https://github.com/Taekmino/LaC/blob/2b84563a6a42c5bf8e641ec9e12ce0af7f78fd13/README.md",
+          "sha256": "bef0132b1101d7e530a3c7ab04b92638f3519603006fe725a98cee75d435c3b3"
+        }
+      },
+      "license_path": "",
+      "license_review": "No common root license file verified; check component terms"
+    },
+    {
+      "paper_id": "V20",
+      "repository": "https://github.com/B0B8K1ng/WMNavigation",
+      "name": "WMNav",
+      "checked": "2026-11-11",
+      "head_commit": "57b74cee7a00b669733e8ca917f34a8aadfd6fd0",
+      "code_files": 11,
+      "files": {
+        "readme.md": {
+          "url": "https://github.com/B0B8K1ng/WMNavigation/blob/57b74cee7a00b669733e8ca917f34a8aadfd6fd0/readme.md",
+          "sha256": "ebf0fcc78b6937db6462c8b50f3d6755ca68671e02709721c1a22d39e3bd35ff"
+        }
+      },
+      "license_path": "",
+      "license_review": "No common root license file verified; check component terms"
+    }
+  ]
+}
