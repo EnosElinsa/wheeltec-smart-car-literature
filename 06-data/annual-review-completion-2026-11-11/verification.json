@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "date": "2026-11-11",
+  "records": 615,
+  "acquired_active_sources": 444,
+  "active_reading_sets": 444,
+  "assessed_publications": 247,
+  "survey_selected": 245,
+  "new_source_registrations": 2,
+  "native_manual_pairs": 2,
+  "oxr_pdfs": 2,
+  "oxr_pages": 49,
+  "oxr_unresolved_truncations": 0,
+  "oxr_services_stopped": true,
+  "original_downloads_unchanged": true,
+  "new_review_cards": 0,
+  "checks": {
+    "library_pytest": {
+      "passed": 97
+    },
+    "textbook_pytest": {
+      "passed": 116,
+      "skipped": 3
+    },
+    "library_links": {
+      "broken": 0,
+      "local_only": 0,
+      "relative_links_checked": 4371
+    },
+    "library_public_tree": "strict checks passed",
+    "textbook_build": "mkdocs build --strict passed",
+    "chapter_quality": "0 errors, 0 warnings",
+    "library_browser": {
+      "status": "passed",
+      "records": 615,
+      "active": 444,
+      "combined_filter_matches": 54,
+      "checks": [
+        "totals",
+        "pagination",
+        "journal-year combination",
+        "exact result IDs",
+        "hash restore",
+        "CSV export",
+        "empty state",
+        "reversed years",
+        "token search",
+        "assessment",
+        "all collections",
+        "mobile overflow",
+        "no JavaScript errors"
+      ]
+    },
+    "chapter_browser": {
+      "status": "passed",
+      "checks": [
+        "three route cards",
+        "39 functioning expandable descriptions",
+        "DRL anchors",
+        "12 pinned repository records",
+        "mobile overflow"
+      ],
+      "widths": [
+        1512,
+        390
+      ]
+    },
+    "integrity": {
+      "status": "passed",
+      "records": 615,
+      "active_reading_sets": 444,
+      "all_catalog_source_hashes_checked": 1635,
+      "protected_files_unchanged": 419,
+      "baseline_catalog_rows_unchanged": 613,
+      "supplied_originals_unchanged": 4,
+      "generated_indexes_match": 23,
+      "assessed_tables_unchanged": 2,
+      "review_cards": 247,
+      "survey_selection": 245,
+      "new_oxr_pages": 49,
+      "new_oxr_papers": 2,
+      "unresolved_truncations": 0
+    },
+    "oxr_ports": "8080/8081 have no listeners after task service shutdown",
+    "review_pdf_check": "247 passed; preexisting card warnings retained"
+  }
+}

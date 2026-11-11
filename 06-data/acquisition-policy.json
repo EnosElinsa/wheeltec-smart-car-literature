@@ -1,0 +1,28 @@
+{
+  "effective_date": "2026-11-11",
+  "source": "Explicit owner instruction",
+  "scope": "Future journal acquisition; historical holdings are retained",
+  "minimum_jcr_quartile": "Q1",
+  "ranking_evidence_required": [
+    "JCR edition/year",
+    "JCR subject category",
+    "journal identity/ISSN",
+    "verifiable ranking source"
+  ],
+  "unverified_ranking_action": "Hold acquisition pending evidence; do not infer JCR from CAS, SJR, CiteScore or reputation",
+  "excluded_new_acquisitions": [
+    "IEEE Robotics and Automation Letters",
+    "Autonomous Robots",
+    "Journal of Field Robotics"
+  ],
+  "journal_priorities": [
+    "IEEE Transactions on Robotics",
+    "The International Journal of Robotics Research",
+    "Science Robotics",
+    "Annual Review of Control, Robotics, and Autonomous Systems",
+    "Nature Machine Intelligence"
+  ],
+  "priority_is_ranking_certification": false,
+  "conference_policy": "ICRA, IROS, RSS and CoRL remain conference candidates; JCR quartiles do not apply to conferences. Require relevant wheeled/mobile robot task and explicit selection.",
+  "existing_sources_action": "Retain files and provenance; no deletion or retroactive ranking labels"
+}

@@ -1,0 +1,17 @@
+{
+  "screened_pages": 49,
+  "pipeline_warnings": 0,
+  "dispositions": [
+    {
+      "id": "J01",
+      "page": 6,
+      "finding": "Figure-heavy page; labels are preserved inside the archived figure. Caption checked against rendered PDF; no narrative truncation."
+    },
+    {
+      "id": "J02",
+      "page": 4,
+      "finding": "Full-page Figure 1 is preserved as an image; its caption begins on page 5 as stated in both PDF and Markdown. Low word coverage is expected."
+    }
+  ],
+  "limitations": "OCR is source transcription. Equations, tables and numerical claims require PDF verification."
+}

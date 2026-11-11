@@ -1,0 +1,18 @@
+@Article{Wang2023,
+author="Wang, Tianyu
+and Dhiman, Vikas
+and Atanasov, Nikolay",
+title="Inverse reinforcement learning for autonomous navigation via differentiable semantic mapping and planning",
+journal="Autonomous Robots",
+year="2023",
+month="Aug",
+day="01",
+volume="47",
+number="6",
+pages="809--830",
+abstract="This paper focuses on inverse reinforcement learning for autonomous navigation using distance and semantic category observations. The objective is to infer a cost function that explains demonstrated behavior while relying only on the expert's observations and state-control trajectory. We develop a map encoder, that infers semantic category probabilities from the observation sequence, and a cost encoder, defined as a deep neural network over the semantic features. Since the expert cost is not directly observable, the model parameters can only be optimized by differentiating the error between demonstrated controls and a control policy computed from the cost estimate. We propose a new model of expert behavior that enables error minimization using a closed-form subgradient computed only over a subset of promising states via a motion planning algorithm. Our approach allows generalizing the learned behavior to new environments with new spatial configurations of the semantic categories. We analyze the different components of our model in a minigrid environment. We also demonstrate that our approach learns to follow traffic rules in the autonomous driving CARLA simulator by relying on semantic observations of buildings, sidewalks, and road lanes.",
+issn="1573-7527",
+doi="10.1007/s10514-023-10118-4",
+url="https://doi.org/10.1007/s10514-023-10118-4"
+}
+

@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "date": "2026-11-11",
+  "selected": 60,
+  "delivered_pairs": 46,
+  "states": {
+    "manual_required": 9,
+    "delivered": 46,
+    "contract_error": 5
+  },
+  "catalog_records": 580,
+  "active_sources": 409,
+  "active_reading_sets": 363,
+  "new_source_hashes_checked": 92,
+  "protected_files_unchanged": 410,
+  "review_cards": 247,
+  "survey_selected": 245,
+  "new_transcriptions": 0,
+  "new_review_cards": 0,
+  "missing_active_pdf_or_bibtex": 0,
+  "duplicate_dois": 0,
+  "new_ral_papers": 0,
+  "frozen_selection_unchanged": true,
+  "public_checks": {
+    "unit_tests": {
+      "exit_code": 0,
+      "result": "................................................. [ 75%]\r\n.......................                                                  [100%]\r\n95 passed in 5.89s"
+    },
+    "relative_links": {
+      "exit_code": 0,
+      "result": "Markdown files: 328; relative links: 4181; broken: 0; local-only: 0"
+    },
+    "public_tree": {
+      "exit_code": 0,
+      "result": "Files scanned: 1193\r\n  size                0  (strict)\r\n  forbidden-path      0  (strict)\r\n  absolute-path       0  (strict)\r\n  secret              0  (strict)\r\n  cjk                 0  (strict)\r\nRESULT: PASS"
+    },
+    "index_regeneration": {
+      "exit_code": 0,
+      "result": "23 regenerated index files match the library byte for byte."
+    },
+    "assessed_tables": {
+      "exit_code": 0,
+      "result": "The two regenerated assessed tables match the library byte for byte (247 rows)."
+    },
+    "review_pdf_checks": {
+      "exit_code": 0,
+      "result": "247 existing review cards checked against PDFs: 247 passed, 0 failed; pre-existing style warnings remain."
+    }
+  }
+}

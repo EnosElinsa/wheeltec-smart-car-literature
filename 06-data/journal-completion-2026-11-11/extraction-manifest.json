@@ -1,0 +1,860 @@
+{
+  "date": "2026-11-11",
+  "mode": "oxr-1.0-vllm",
+  "papers": 79,
+  "pages": 1220,
+  "records": [
+    {
+      "id": "H06",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2026-Good-Weights-H06/paper.pdf",
+      "pdf_sha256": "4b898118a03c76c1290eafaab2d215bd0d8bd7bb279075ec7afe84f0ce696118",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2026-Good-Weights-H06/paper.md",
+      "markdown_sha256": "9824128b6cce435175794eb6c809a46e0e571fcdb89ecccb9d69d0a71a45d16f",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2026-Good-Weights-H06/extraction.json"
+    },
+    {
+      "id": "H07",
+      "pdf": "01-papers/T3-planning-control/2026-Occlusion-Aware-Consistent-Model-Predictive-Cont-H07/paper.pdf",
+      "pdf_sha256": "b1e3369f7fa6d3e46835e70ae971c9c9b1edf4ed09d33791713a39e7be150ed2",
+      "markdown": "02-fulltext/T3-planning-control/2026-Occlusion-Aware-Consistent-Model-Predictive-Cont-H07/paper.md",
+      "markdown_sha256": "c098391036fc7f13d2f499c867606332eb2dbe337e5760f2e33ad2747a6d2e84",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-Occlusion-Aware-Consistent-Model-Predictive-Cont-H07/extraction.json"
+    },
+    {
+      "id": "H08",
+      "pdf": "01-papers/T1-perception-localization/2026-Semantic-LiDAR-Inertial-Wheel-Odometry-Fusion-fo-H08/paper.pdf",
+      "pdf_sha256": "98bf15d00e69970b3a28185a91cab9514e07b96f7ba2a39782b6fb7eb7825416",
+      "markdown": "02-fulltext/T1-perception-localization/2026-Semantic-LiDAR-Inertial-Wheel-Odometry-Fusion-fo-H08/paper.md",
+      "markdown_sha256": "bcaad48d1840ec5d5aa3ea8c830d75eec0260ffd513b1156583ba86c69931b54",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2026-Semantic-LiDAR-Inertial-Wheel-Odometry-Fusion-fo-H08/extraction.json"
+    },
+    {
+      "id": "H09",
+      "pdf": "01-papers/T3-planning-control/2026-NavDP-H09/paper.pdf",
+      "pdf_sha256": "317ccf7e21034612ff26436e747058400e333cda8c78f01e7ece4186df45f4b8",
+      "markdown": "02-fulltext/T3-planning-control/2026-NavDP-H09/paper.md",
+      "markdown_sha256": "5f8ab0c52df08a4f399589c2c4aacc716d18583a14427a6180be22e2b992d934",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-NavDP-H09/extraction.json"
+    },
+    {
+      "id": "H10",
+      "pdf": "01-papers/T1-perception-localization/2026-How-IMU-Drift-Influences-Multi-Radar-Inertial-Od-H10/paper.pdf",
+      "pdf_sha256": "72647049a55808a72ff169d98dfafac0831c3c51d1e53077132148b7ba50ddc0",
+      "markdown": "02-fulltext/T1-perception-localization/2026-How-IMU-Drift-Influences-Multi-Radar-Inertial-Od-H10/paper.md",
+      "markdown_sha256": "be992b9bbc68af0085f047b95120c624c1d0e1eb5ab42462586862c6d437cba3",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2026-How-IMU-Drift-Influences-Multi-Radar-Inertial-Od-H10/extraction.json"
+    },
+    {
+      "id": "H11",
+      "pdf": "01-papers/T3-planning-control/2026-DRL-SFM-H11/paper.pdf",
+      "pdf_sha256": "12dd6bdfb1605e7a95bca3b66c15a4c0cf286863d3e77262946d6890e04e3df5",
+      "markdown": "02-fulltext/T3-planning-control/2026-DRL-SFM-H11/paper.md",
+      "markdown_sha256": "78d4551cbf86146b8c4969726f5a478ae3cab16ec212f7ab6619b7f9a68bae15",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-DRL-SFM-H11/extraction.json"
+    },
+    {
+      "id": "H12",
+      "pdf": "01-papers/T3-planning-control/2026-FineNav-H12/paper.pdf",
+      "pdf_sha256": "500ed7f396deecbbe33f5d80eee3069117ad78486d4bf9ac8e38b33bc0143761",
+      "markdown": "02-fulltext/T3-planning-control/2026-FineNav-H12/paper.md",
+      "markdown_sha256": "83127ba4b146c789d74cdb7580fe1a7d7bac3d2c4dadfb929e7dc747a3b52374",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-FineNav-H12/extraction.json"
+    },
+    {
+      "id": "H13",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2026-DSSM-SG-H13/paper.pdf",
+      "pdf_sha256": "c75a06037d3d39755ee8051570250dfd30b10784e20eb00225d3b88684065540",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2026-DSSM-SG-H13/paper.md",
+      "markdown_sha256": "2deb46f9e02c69a7ecd895042ff530021529ce3c7f978b4ee4dfcb6a5d455e99",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T5-semantic-embodied-navigation/2026-DSSM-SG-H13/extraction.json"
+    },
+    {
+      "id": "H14",
+      "pdf": "01-papers/T4-multi-robot-coordination/2026-DMRP-Bench-H14/paper.pdf",
+      "pdf_sha256": "ab9877b8636a2a3bbf766ed3dfd59ea59297ef0156e38f14f24ddb57a67aa5f1",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2026-DMRP-Bench-H14/paper.md",
+      "markdown_sha256": "fcb64fb938fb9bcc84037d8849015e1d657511bd329d821f67f1020d417ff511",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2026-DMRP-Bench-H14/extraction.json"
+    },
+    {
+      "id": "H15",
+      "pdf": "01-papers/T1-perception-localization/2026-CPBA-LIWO-H15/paper.pdf",
+      "pdf_sha256": "70b0a885fe98f22de78538b33119739f252fe3a44b269ed148c6bf7a83f5f5ba",
+      "markdown": "02-fulltext/T1-perception-localization/2026-CPBA-LIWO-H15/paper.md",
+      "markdown_sha256": "5bddd84af15bc2d51fbe59a4239dfb61c00cf0c2a9eefeb3df1897016b697007",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2026-CPBA-LIWO-H15/extraction.json"
+    },
+    {
+      "id": "H18",
+      "pdf": "01-papers/T3-planning-control/2026-Navigating-Uncertainty-H18/paper.pdf",
+      "pdf_sha256": "6fad62ac2a27fa6112bef19f7eece90f981aedf6aeedbe51fec1271b43d7a0b4",
+      "markdown": "02-fulltext/T3-planning-control/2026-Navigating-Uncertainty-H18/paper.md",
+      "markdown_sha256": "dbb648be472257f2e8d00a19026e2debb690c740a08a084faa7ac4aab5ee5bce",
+      "pages": 18,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-Navigating-Uncertainty-H18/extraction.json"
+    },
+    {
+      "id": "H19",
+      "pdf": "01-papers/T3-planning-control/2026-Kinematically-Constrained-Marching-for-Optimal-R-H19/paper.pdf",
+      "pdf_sha256": "867edfc005776420f97ae7aefbe242dd3dab5ff0607ab92e804e3e0bf4975304",
+      "markdown": "02-fulltext/T3-planning-control/2026-Kinematically-Constrained-Marching-for-Optimal-R-H19/paper.md",
+      "markdown_sha256": "3bd2ea56091491d5f0a02df15a0992ba1946252e9c2e59cc47918d728b356dfe",
+      "pages": 16,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-Kinematically-Constrained-Marching-for-Optimal-R-H19/extraction.json"
+    },
+    {
+      "id": "H20",
+      "pdf": "01-papers/T6-reliability-deployment/2026-MobileROS-H20/paper.pdf",
+      "pdf_sha256": "6de2213142cb26bc9b93c7f6c8e6fc60c6b745ba6bfe86eab263bbc45e91820a",
+      "markdown": "02-fulltext/T6-reliability-deployment/2026-MobileROS-H20/paper.md",
+      "markdown_sha256": "ef0e64fbbc30f935b2b14a4e59a1616d379366793a41cc83c7633cec0e806313",
+      "pages": 19,
+      "warnings": [],
+      "extraction": "02-fulltext/T6-reliability-deployment/2026-MobileROS-H20/extraction.json"
+    },
+    {
+      "id": "H21",
+      "pdf": "01-papers/T1-perception-localization/2026-Holistic-Fusion-H21/paper.pdf",
+      "pdf_sha256": "f0b70926a7fe2b9e580fedb8984ff8cae80ba2eb14dfc716411695b7ed94d843",
+      "markdown": "02-fulltext/T1-perception-localization/2026-Holistic-Fusion-H21/paper.md",
+      "markdown_sha256": "e7818b20417f3fdfc83ba9008e156b8ee2eb2662d171704807d1ef80de0d0057",
+      "pages": 22,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2026-Holistic-Fusion-H21/extraction.json"
+    },
+    {
+      "id": "H22",
+      "pdf": "01-papers/T4-multi-robot-coordination/2026-From-Local-Odometry-to-Global-Awareness-H22/paper.pdf",
+      "pdf_sha256": "34c48efe6b33748c64945338a585a0967027b5edd3714931599cd6d5a9777cc0",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2026-From-Local-Odometry-to-Global-Awareness-H22/paper.md",
+      "markdown_sha256": "47b820850c09f4bc6280081f2e427791b9ea303ca0133b4837e40533f49a26ed",
+      "pages": 20,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2026-From-Local-Odometry-to-Global-Awareness-H22/extraction.json"
+    },
+    {
+      "id": "H23",
+      "pdf": "01-papers/T1-perception-localization/2026-Joint-Multicondition-Representation-Modeling-via-H23/paper.pdf",
+      "pdf_sha256": "c71ad852054286dd000cdf37ee467ac151be56e6e4298aa9f224359445464c08",
+      "markdown": "02-fulltext/T1-perception-localization/2026-Joint-Multicondition-Representation-Modeling-via-H23/paper.md",
+      "markdown_sha256": "56b1aad26803a85c235ece39436a44a8e518c41cd6245608ddd5d6e7b8315929",
+      "pages": 20,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2026-Joint-Multicondition-Representation-Modeling-via-H23/extraction.json"
+    },
+    {
+      "id": "H24",
+      "pdf": "01-papers/T1-perception-localization/2026-LIO-MARS-H24/paper.pdf",
+      "pdf_sha256": "3153067bc8e9d06a898471aa22ef8c421532cd46200c3356bb6255c0024b3bef",
+      "markdown": "02-fulltext/T1-perception-localization/2026-LIO-MARS-H24/paper.md",
+      "markdown_sha256": "8d23b120fbe66350b7b3c534fddeb80f25e59a7eb9dc5f2259feda79077adc54",
+      "pages": 19,
+      "warnings": [
+        {
+          "id": "H24",
+          "page": 17,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=49 attempt=1/2 syntax=valid token_count=48 missing_ids=[40] duplicate_ids=[] out_of_range_ids=[] raw_sha256=63a5f411adabff0c"
+        }
+      ],
+      "extraction": "02-fulltext/T1-perception-localization/2026-LIO-MARS-H24/extraction.json"
+    },
+    {
+      "id": "H25",
+      "pdf": "01-papers/T3-planning-control/2026-A-Shared-Control-Framework-for-Mobile-Robots-wit-H25/paper.pdf",
+      "pdf_sha256": "c8757a6e363db8dc61543c57dde123dff67260b28612bdbe40d1244ef6f1eedd",
+      "markdown": "02-fulltext/T3-planning-control/2026-A-Shared-Control-Framework-for-Mobile-Robots-wit-H25/paper.md",
+      "markdown_sha256": "5c400853a468d0c7ac59d797e7dde16bf5429b5f09dac88447dcf8fbbb67e2ba",
+      "pages": 18,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-A-Shared-Control-Framework-for-Mobile-Robots-wit-H25/extraction.json"
+    },
+    {
+      "id": "H31",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2025-TACS-Graphs-H31/paper.pdf",
+      "pdf_sha256": "ae3891b47c3d2b1bb0f5e0eb95cf11f494c136e7d645559dd03cd6318169362c",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2025-TACS-Graphs-H31/paper.md",
+      "markdown_sha256": "8b0aa5c5a2ae2de044bab10521720f3359404a35d4cfc45d835ffb61412c8cd4",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2025-TACS-Graphs-H31/extraction.json"
+    },
+    {
+      "id": "H32",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2025-TartanGround-H32/paper.pdf",
+      "pdf_sha256": "26b7a922d9d143baed7003334face1b1437600ad58cdd75898911075ef7ac397",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2025-TartanGround-H32/paper.md",
+      "markdown_sha256": "dccb1b9f44ce141921fd52661f8d2eebc2920e72c1e4ea3d783d817c9fd0c471",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2025-TartanGround-H32/extraction.json"
+    },
+    {
+      "id": "H33",
+      "pdf": "01-papers/T3-planning-control/2025-ALVO-H33/paper.pdf",
+      "pdf_sha256": "1c7c32182dd639e3243360134abb0d1dd899f7d9a3773a701c3248d95a7214c8",
+      "markdown": "02-fulltext/T3-planning-control/2025-ALVO-H33/paper.md",
+      "markdown_sha256": "1342a3c2d65c60b3b0e43ccb98b0485fba66fccc699cdf9339539cd49c640b13",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-ALVO-H33/extraction.json"
+    },
+    {
+      "id": "H34",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Distributed-Fault-Tolerant-Multi-Robot-Cooperati-H34/paper.pdf",
+      "pdf_sha256": "623740e737687217a64184293df364233a76261dc951e324768ca39665ec1b44",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Distributed-Fault-Tolerant-Multi-Robot-Cooperati-H34/paper.md",
+      "markdown_sha256": "cd73a82d1ab17cce7b5c1918da88604cd1b43f1fcc465f44f3269484495eedbb",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-Distributed-Fault-Tolerant-Multi-Robot-Cooperati-H34/extraction.json"
+    },
+    {
+      "id": "H35",
+      "pdf": "01-papers/T3-planning-control/2025-Efficient-Swept-Volume-Based-Trajectory-Generati-H35/paper.pdf",
+      "pdf_sha256": "0f2d82910dc652b4f8ca2523e6f8f30953e7ab44b1de70bdb2ccf6a60f584728",
+      "markdown": "02-fulltext/T3-planning-control/2025-Efficient-Swept-Volume-Based-Trajectory-Generati-H35/paper.md",
+      "markdown_sha256": "bc17c411c0c4c4c04ccf8b04a765f67e552e5daadf8d58a1f8fc5169e2c933ba",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-Efficient-Swept-Volume-Based-Trajectory-Generati-H35/extraction.json"
+    },
+    {
+      "id": "H36",
+      "pdf": "01-papers/T3-planning-control/2025-Arena-Bench-2-0-H36/paper.pdf",
+      "pdf_sha256": "c77357f5ab3dbb5067eb7f86b505b75f0174a5b154cf133031a1ca384d3eb4f2",
+      "markdown": "02-fulltext/T3-planning-control/2025-Arena-Bench-2-0-H36/paper.md",
+      "markdown_sha256": "234154ff25e7d2628f25b93502f53e3193c0d860d120fdebd6b5c96d07335453",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-Arena-Bench-2-0-H36/extraction.json"
+    },
+    {
+      "id": "H37",
+      "pdf": "01-papers/T6-reliability-deployment/2025-Benchmark-for-Evaluating-Long-Term-Localization-H37/paper.pdf",
+      "pdf_sha256": "83547c0d660261c4fec8b3a96eb60c942a7ac033407ef934cfecd4c69e197ebc",
+      "markdown": "02-fulltext/T6-reliability-deployment/2025-Benchmark-for-Evaluating-Long-Term-Localization-H37/paper.md",
+      "markdown_sha256": "a67101184270dbe0056e3e716def831ad77d7f0d43abb9859333234238240951",
+      "pages": 8,
+      "warnings": [
+        {
+          "id": "H37",
+          "page": 1,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=18 attempt=1/2 syntax=valid token_count=17 missing_ids=[17] duplicate_ids=[] out_of_range_ids=[] raw_sha256=3ceab29280898247"
+        }
+      ],
+      "extraction": "02-fulltext/T6-reliability-deployment/2025-Benchmark-for-Evaluating-Long-Term-Localization-H37/extraction.json"
+    },
+    {
+      "id": "H38",
+      "pdf": "01-papers/T3-planning-control/2025-Competency-Aware-Planning-for-Probabilistically-H38/paper.pdf",
+      "pdf_sha256": "503ace9244ef5e559e6ec7de51cc6dc4d4569fe82deecccaf0b191ca78370935",
+      "markdown": "02-fulltext/T3-planning-control/2025-Competency-Aware-Planning-for-Probabilistically-H38/paper.md",
+      "markdown_sha256": "8a28a65c1c3588d29e8336800c04249993a75367a4556eee0f88a54eeb2ce881",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-Competency-Aware-Planning-for-Probabilistically-H38/extraction.json"
+    },
+    {
+      "id": "H39",
+      "pdf": "01-papers/T3-planning-control/2025-Online-Synthesis-of-Control-Barrier-Functions-wi-H39/paper.pdf",
+      "pdf_sha256": "e0db9c2d91b98cb880c7b200ec7e32cfd0eaa4822cde24a3b3d49c9ba20a2c70",
+      "markdown": "02-fulltext/T3-planning-control/2025-Online-Synthesis-of-Control-Barrier-Functions-wi-H39/paper.md",
+      "markdown_sha256": "98c25e2af01997ab77cafc6aad32740ef12f3f3cd8e134cc823e774cbac89cb4",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-Online-Synthesis-of-Control-Barrier-Functions-wi-H39/extraction.json"
+    },
+    {
+      "id": "H40",
+      "pdf": "01-papers/T3-planning-control/2025-TOPP-DWR-H40/paper.pdf",
+      "pdf_sha256": "52ca4d11d2a8a78017c4482f44b41e9a1b6a32512022b26575aae321f1b904a1",
+      "markdown": "02-fulltext/T3-planning-control/2025-TOPP-DWR-H40/paper.md",
+      "markdown_sha256": "ba0705c91fc8b0d1f56054813dd929d301ada99eba3f107b1b36466fb22ca685",
+      "pages": 8,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-TOPP-DWR-H40/extraction.json"
+    },
+    {
+      "id": "H43",
+      "pdf": "01-papers/T1-perception-localization/2025-FAST-LIVO2-H43/paper.pdf",
+      "pdf_sha256": "7bad31eeee400786c1158cb5ff0aad49a4830e8eda992ce4ee59765cd86a1e07",
+      "markdown": "02-fulltext/T1-perception-localization/2025-FAST-LIVO2-H43/paper.md",
+      "markdown_sha256": "50350c0653514acfec4be52d9f264694970bb5f71bd0bd8fc421ac40eb163784",
+      "pages": 21,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2025-FAST-LIVO2-H43/extraction.json"
+    },
+    {
+      "id": "H44",
+      "pdf": "01-papers/T1-perception-localization/2025-Continuous-Time-Radar-Inertial-and-Lidar-Inertia-H44/paper.pdf",
+      "pdf_sha256": "f1f7f958ff28be04b1271556eb5d599ae126d77638116030dad69bba614579e5",
+      "markdown": "02-fulltext/T1-perception-localization/2025-Continuous-Time-Radar-Inertial-and-Lidar-Inertia-H44/paper.md",
+      "markdown_sha256": "204afab7a074f4aa343dfeabae7d70cda87a4d51b3dc99f56f55dfac1ded2479",
+      "pages": 18,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2025-Continuous-Time-Radar-Inertial-and-Lidar-Inertia-H44/extraction.json"
+    },
+    {
+      "id": "H45",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2025-AAGE-H45/paper.pdf",
+      "pdf_sha256": "76d50b4f0e5f69563ccce842f379989270d7ca88d043010023c80670b09b81bb",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2025-AAGE-H45/paper.md",
+      "markdown_sha256": "0fcd628dae4ce7cf6fab904d4a9fc2d38b87601d2657536eb88172f81588e0fa",
+      "pages": 20,
+      "warnings": [],
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2025-AAGE-H45/extraction.json"
+    },
+    {
+      "id": "H46",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Relative-Localizability-and-Localization-for-Mul-H46/paper.pdf",
+      "pdf_sha256": "969b931dd3883d61a0267073b9a9d64d29f4c83c61e1652663e840ddba7faaaf",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Relative-Localizability-and-Localization-for-Mul-H46/paper.md",
+      "markdown_sha256": "34bf4aa908e50c99dbaee6b9c13c3f92b9dc256f2281cf21b9811d40aebbbb2f",
+      "pages": 19,
+      "warnings": [
+        {
+          "id": "H46",
+          "page": 7,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=23 attempt=1/2 syntax=valid token_count=22 missing_ids=[21] duplicate_ids=[] out_of_range_ids=[] raw_sha256=1a911b1a1592b535"
+        }
+      ],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-Relative-Localizability-and-Localization-for-Mul-H46/extraction.json"
+    },
+    {
+      "id": "H47",
+      "pdf": "01-papers/T3-planning-control/2025-Physics-Informed-Neural-Mapping-and-Motion-Plann-H47/paper.pdf",
+      "pdf_sha256": "e7f142d609c56b49a816d8633451d00521eec0a52c9b5c786faacf8aad75e426",
+      "markdown": "02-fulltext/T3-planning-control/2025-Physics-Informed-Neural-Mapping-and-Motion-Plann-H47/paper.md",
+      "markdown_sha256": "ee4dea8bccf33efc94387c3715957059e0df7b1d248858c83f4339b6ed191119",
+      "pages": 13,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-Physics-Informed-Neural-Mapping-and-Motion-Plann-H47/extraction.json"
+    },
+    {
+      "id": "H48",
+      "pdf": "01-papers/T3-planning-control/2025-NeuPAN-H48/paper.pdf",
+      "pdf_sha256": "9b82aade046242afd7ac8655028c22977edb2325754c2a4e3190aaf9950f9fc7",
+      "markdown": "02-fulltext/T3-planning-control/2025-NeuPAN-H48/paper.md",
+      "markdown_sha256": "4c4ebe971deec84615bc9b34844257d2c6647789b94823767db1cd725a70bbe0",
+      "pages": 21,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-NeuPAN-H48/extraction.json"
+    },
+    {
+      "id": "H49",
+      "pdf": "01-papers/T1-perception-localization/2025-CornerVINS-H49/paper.pdf",
+      "pdf_sha256": "8334c90e19212d23216872fe20f81ad7a431390f948444088229b7acda8cda91",
+      "markdown": "02-fulltext/T1-perception-localization/2025-CornerVINS-H49/paper.md",
+      "markdown_sha256": "34a86f635bc23bcba759e10d39ff87931464390472755ff47e753be2e5b5973d",
+      "pages": 18,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2025-CornerVINS-H49/extraction.json"
+    },
+    {
+      "id": "H50",
+      "pdf": "01-papers/T6-reliability-deployment/2025-ROVER-H50/paper.pdf",
+      "pdf_sha256": "cc2fcce6bde6df2149ef82b49bdbb7cebaf5eef40837908273c2e70f3d36c8ff",
+      "markdown": "02-fulltext/T6-reliability-deployment/2025-ROVER-H50/paper.md",
+      "markdown_sha256": "60368b8fcdb40c65e3a3bb6bece710504571377b1f41819060e63ba416c5a83d",
+      "pages": 18,
+      "warnings": [],
+      "extraction": "02-fulltext/T6-reliability-deployment/2025-ROVER-H50/extraction.json"
+    },
+    {
+      "id": "H51",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2025-Occupancy-SLAM-H51/paper.pdf",
+      "pdf_sha256": "75456e7e0ec37115c8b317e6bedae108903c801048558668a6533d1b9e5d6205",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2025-Occupancy-SLAM-H51/paper.md",
+      "markdown_sha256": "36b261d90e2e66d23cc0223335bb2ae57e9d5cfba63f966e2cc89fcf6192ddb6",
+      "pages": 21,
+      "warnings": [],
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2025-Occupancy-SLAM-H51/extraction.json"
+    },
+    {
+      "id": "H52",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2025-GS-LIVO-H52/paper.pdf",
+      "pdf_sha256": "5d8d2cc9e56f55bc380969f27396b099a1a5de147c77c09c6591f46702e74cdd",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2025-GS-LIVO-H52/paper.md",
+      "markdown_sha256": "8b10c5fee3d1f928c5cc612c48f07703acfd9941f5cb957e274af96d6b8743e0",
+      "pages": 16,
+      "warnings": [],
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2025-GS-LIVO-H52/extraction.json"
+    },
+    {
+      "id": "H53",
+      "pdf": "01-papers/T1-perception-localization/2025-BEVPlace-H53/paper.pdf",
+      "pdf_sha256": "068c95e69b6f5e787b7ca0e538799a6661ec919d8cebfc45f2fdefadbf9eb6f7",
+      "markdown": "02-fulltext/T1-perception-localization/2025-BEVPlace-H53/paper.md",
+      "markdown_sha256": "ec185bd0dd17f9dec7ab94450a64426c2c3aee274db2862a259e712af241c409",
+      "pages": 20,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2025-BEVPlace-H53/extraction.json"
+    },
+    {
+      "id": "H54",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Robust-and-Scalable-Multi-Robot-Localization-Usi-H54/paper.pdf",
+      "pdf_sha256": "0bd0fba0564cbb4bb226c0847e986f848860de72db913134d8fad45822f943a4",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Robust-and-Scalable-Multi-Robot-Localization-Usi-H54/paper.md",
+      "markdown_sha256": "fcae4bf449e77510c4fb9bbb08ed93e00142eb55e8c09e9ed39eb5a695d9db7f",
+      "pages": 18,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-Robust-and-Scalable-Multi-Robot-Localization-Usi-H54/extraction.json"
+    },
+    {
+      "id": "H55",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Dynamic-Charging-Rendezvous-and-Motion-Planning-H55/paper.pdf",
+      "pdf_sha256": "764efe1bf04307890e77b667bf63cf0382f4320fa9342c08e81470e6ace6fbc4",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Dynamic-Charging-Rendezvous-and-Motion-Planning-H55/paper.md",
+      "markdown_sha256": "2a587056b78948d0888034ce0044eea2100d22faf9c19f27d9334b13b85f1f7a",
+      "pages": 16,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-Dynamic-Charging-Rendezvous-and-Motion-Planning-H55/extraction.json"
+    },
+    {
+      "id": "H56",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2025-Asymmetric-Information-Enhanced-Mapping-Framewor-H56/paper.pdf",
+      "pdf_sha256": "8756b1ee4b1692416eaab7fa74a01bd59f7b597edcdbf589391e676f3fa11fb1",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2025-Asymmetric-Information-Enhanced-Mapping-Framewor-H56/paper.md",
+      "markdown_sha256": "d7f7c988d38fb91409c1c1194acd857b16283df496c131f8b16d555328cc3617",
+      "pages": 17,
+      "warnings": [],
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2025-Asymmetric-Information-Enhanced-Mapping-Framewor-H56/extraction.json"
+    },
+    {
+      "id": "H57",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2025-OKVIS2-X-H57/paper.pdf",
+      "pdf_sha256": "ccb6dd1eb7647f969c24043e007c9b53c755a311f06984c0034a928a5ab0310d",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2025-OKVIS2-X-H57/paper.md",
+      "markdown_sha256": "5f8eb7a0d986083cf319332d415d55bfe2c02819089cee41703a120edc1862d9",
+      "pages": 20,
+      "warnings": [],
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2025-OKVIS2-X-H57/extraction.json"
+    },
+    {
+      "id": "H58",
+      "pdf": "01-papers/T6-reliability-deployment/2025-Continual-Learning-of-Regions-for-Efficient-Robo-H58/paper.pdf",
+      "pdf_sha256": "98e3d2a71cf561980edf748d57f734becd20500fc0fc90dad8e1f63fea0f9c6e",
+      "markdown": "02-fulltext/T6-reliability-deployment/2025-Continual-Learning-of-Regions-for-Efficient-Robo-H58/paper.md",
+      "markdown_sha256": "5ddd0f45b77599dd5e201ada7a2a0d06eaa73e9ebb31c23540920a35feced633",
+      "pages": 20,
+      "warnings": [],
+      "extraction": "02-fulltext/T6-reliability-deployment/2025-Continual-Learning-of-Regions-for-Efficient-Robo-H58/extraction.json"
+    },
+    {
+      "id": "H59",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Concurrent-Allocation-Task-Execution-for-Multiro-H59/paper.pdf",
+      "pdf_sha256": "4d96368daeadc94f8d1ebcb4593837fbff2aa202e1af4f12bbecd687dcf55734",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Concurrent-Allocation-Task-Execution-for-Multiro-H59/paper.md",
+      "markdown_sha256": "55ad0456cf925db5d8653e62f734252eb0a4253eae53f43208f694dc1972237d",
+      "pages": 20,
+      "warnings": [
+        {
+          "id": "H59",
+          "page": 17,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=22 attempt=1/2 syntax=valid token_count=21 missing_ids=[15] duplicate_ids=[] out_of_range_ids=[] raw_sha256=a9a7263d4bb34b36"
+        }
+      ],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-Concurrent-Allocation-Task-Execution-for-Multiro-H59/extraction.json"
+    },
+    {
+      "id": "H60",
+      "pdf": "01-papers/T3-planning-control/2023-STERLING-H60/paper.pdf",
+      "pdf_sha256": "6a676995f4f43b2805451cefa190aebcea4e53449bbb09ef933149a5234d8295",
+      "markdown": "02-fulltext/T3-planning-control/2023-STERLING-H60/paper.md",
+      "markdown_sha256": "35e5317a1efd7c7a398bcbf6bd2027b885c502c88aa5d0c6f475e6b1ce9e97cc",
+      "pages": 21,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2023-STERLING-H60/extraction.json"
+    },
+    {
+      "id": "H01",
+      "pdf": "01-papers/T3-planning-control/2026-AnyNav-H01/paper.pdf",
+      "pdf_sha256": "1c90d5e55225354ea3027b673480545c2201a0f4efee5cf828f35dc49b913201",
+      "markdown": "02-fulltext/T3-planning-control/2026-AnyNav-H01/paper.md",
+      "markdown_sha256": "3ba3f14e5be2bbfae8be4b90c0d10ce59fdfcbc7f7ec46255a787f53364d87ed",
+      "pages": 26,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-AnyNav-H01/extraction.json"
+    },
+    {
+      "id": "H02",
+      "pdf": "01-papers/T3-planning-control/2026-SanD-Planner-H02/paper.pdf",
+      "pdf_sha256": "333baa3f121c41a48c34602dde9e40ec36faed3e6f4525d71c1da6363d9a8a77",
+      "markdown": "02-fulltext/T3-planning-control/2026-SanD-Planner-H02/paper.md",
+      "markdown_sha256": "6d0bc7bb79dc72d4e6ab0a25033cd7cb29f2d5bac87dca49035d755cf784fd73",
+      "pages": 12,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-SanD-Planner-H02/extraction.json"
+    },
+    {
+      "id": "H03",
+      "pdf": "01-papers/T3-planning-control/2026-TravSUITE-H03/paper.pdf",
+      "pdf_sha256": "675558ec844cb646cf603b915ccb09f39de6b76b6267d3df8676bc1d5ad6a1c0",
+      "markdown": "02-fulltext/T3-planning-control/2026-TravSUITE-H03/paper.md",
+      "markdown_sha256": "9957082a10bfbc36d3bf7a6410453617da3055785651dcee7fa36311dd9b1624",
+      "pages": 13,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-TravSUITE-H03/extraction.json"
+    },
+    {
+      "id": "H04",
+      "pdf": "01-papers/T4-multi-robot-coordination/2026-Time-Aggregated-Connectivity-Maintenance-for-Mul-H04/paper.pdf",
+      "pdf_sha256": "7eefce6be50dfd972e568574fd16f737b5de04dbc72b026da70e6f6fd2b92272",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2026-Time-Aggregated-Connectivity-Maintenance-for-Mul-H04/paper.md",
+      "markdown_sha256": "4073ff80288a0c6328066a032d29915e35d131c1f3be2989913db14f87e3d8a0",
+      "pages": 11,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2026-Time-Aggregated-Connectivity-Maintenance-for-Mul-H04/extraction.json"
+    },
+    {
+      "id": "H16",
+      "pdf": "01-papers/T6-reliability-deployment/2026-A-ground-robot-dataset-for-multi-sensor-navigati-H16/paper.pdf",
+      "pdf_sha256": "745d9db3f98659457f72f1ec6ec53ca2303210e2aa5f09f491a2490f300727e4",
+      "markdown": "02-fulltext/T6-reliability-deployment/2026-A-ground-robot-dataset-for-multi-sensor-navigati-H16/paper.md",
+      "markdown_sha256": "da2c5670ed6242c6e209b45aaf20c01235c36b8a9486aa29320839aebf9a345e",
+      "pages": 15,
+      "warnings": [],
+      "extraction": "02-fulltext/T6-reliability-deployment/2026-A-ground-robot-dataset-for-multi-sensor-navigati-H16/extraction.json"
+    },
+    {
+      "id": "H17",
+      "pdf": "01-papers/T3-planning-control/2026-NavWareSet-H17/paper.pdf",
+      "pdf_sha256": "cb189cb8be6373335a0a4440d15c5d3e7dd6ea3ab2c825147c9dd6d4e3ef68f8",
+      "markdown": "02-fulltext/T3-planning-control/2026-NavWareSet-H17/paper.md",
+      "markdown_sha256": "8a4d02ca61b2b3d21744f6e64b1095a07414ed18ea86e5c2008ee3f8cf8c0b6b",
+      "pages": 15,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-NavWareSet-H17/extraction.json"
+    },
+    {
+      "id": "H26",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Capability-Aware-Shared-Hypernetworks-for-Flexib-H26/paper.pdf",
+      "pdf_sha256": "42c99804dc17d26e85e77d8aa1d44cf00707b83f4c813bfb0c059f2b129eeb2d",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Capability-Aware-Shared-Hypernetworks-for-Flexib-H26/paper.md",
+      "markdown_sha256": "3483b2197e83d010dbef128162faa03b1c1ef23183883c885ac8c23cf96fbe00",
+      "pages": 22,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-Capability-Aware-Shared-Hypernetworks-for-Flexib-H26/extraction.json"
+    },
+    {
+      "id": "H27",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2025-ObjectReact-H27/paper.pdf",
+      "pdf_sha256": "f6f51d2cb6ef8321cc6ba8a2c8fe53bd9a92745b1e1c423cbdb95802af6833dc",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2025-ObjectReact-H27/paper.md",
+      "markdown_sha256": "dc5ca1271a53458ad5c56cf479094c119dac74a7360bc399e54dd164c94ecad1",
+      "pages": 23,
+      "warnings": [],
+      "extraction": "02-fulltext/T5-semantic-embodied-navigation/2025-ObjectReact-H27/extraction.json"
+    },
+    {
+      "id": "H28",
+      "pdf": "01-papers/T6-reliability-deployment/2025-Wheeled-Lab-H28/paper.pdf",
+      "pdf_sha256": "c35f91238c45f6abee0985b2ca1c2055dd1e9f12f3b8486d37682a51b136fe69",
+      "markdown": "02-fulltext/T6-reliability-deployment/2025-Wheeled-Lab-H28/paper.md",
+      "markdown_sha256": "ff155733530088c2340a89063a1b99701883d79b1d8e6b1b17c1d682ac4528a4",
+      "pages": 18,
+      "warnings": [],
+      "extraction": "02-fulltext/T6-reliability-deployment/2025-Wheeled-Lab-H28/extraction.json"
+    },
+    {
+      "id": "H29",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-JaxRobotarium-H29/paper.pdf",
+      "pdf_sha256": "d9a9908a691787b2b2d0afc106722e743b32630a2624f43ea77412c698dd8fca",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-JaxRobotarium-H29/paper.md",
+      "markdown_sha256": "17c0903cfd2c22b912e9929fe480a9f63225129473314df059bd0a1c97b0bae1",
+      "pages": 22,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-JaxRobotarium-H29/extraction.json"
+    },
+    {
+      "id": "H30",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2025-GC-VLN-H30/paper.pdf",
+      "pdf_sha256": "461ab5f771d6891b2442137eb8844917a8bc1fa13f89b7cb7c76894b4ab0974d",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2025-GC-VLN-H30/paper.md",
+      "markdown_sha256": "78a83d32a98e11e8d7ec651c2eb0a7a9f31cf22d82e9b7434459923a16d82ee9",
+      "pages": 16,
+      "warnings": [],
+      "extraction": "02-fulltext/T5-semantic-embodied-navigation/2025-GC-VLN-H30/extraction.json"
+    },
+    {
+      "id": "H41",
+      "pdf": "01-papers/T3-planning-control/2025-Certifiably-Correct-Mapping-for-Safe-Navigation-H41/paper.pdf",
+      "pdf_sha256": "4a65aedd0aa7ae09fc93d48e55a2319e246fe8b6488b4cca9f281f0bab19530f",
+      "markdown": "02-fulltext/T3-planning-control/2025-Certifiably-Correct-Mapping-for-Safe-Navigation-H41/paper.md",
+      "markdown_sha256": "9ac9f607de40a1fb5ed60ccf04f9aa54b4ffec80ea67f4e2d08895574024943d",
+      "pages": 24,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-Certifiably-Correct-Mapping-for-Safe-Navigation-H41/extraction.json"
+    },
+    {
+      "id": "H42",
+      "pdf": "01-papers/T1-perception-localization/2025-ROMAN-H42/paper.pdf",
+      "pdf_sha256": "594a64a0ee1134b096104f2790c768285e2b95ec095ea93d34c497845b15882f",
+      "markdown": "02-fulltext/T1-perception-localization/2025-ROMAN-H42/paper.md",
+      "markdown_sha256": "e202c5896769b8d2f07056a5990e16baec545b65b7d872b7a865472e63f9e0ae",
+      "pages": 11,
+      "warnings": [
+        {
+          "id": "H42",
+          "page": 1,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=18 attempt=1/2 syntax=valid token_count=17 missing_ids=[5] duplicate_ids=[] out_of_range_ids=[] raw_sha256=5adba66c61b3e4ee"
+        }
+      ],
+      "extraction": "02-fulltext/T1-perception-localization/2025-ROMAN-H42/extraction.json"
+    },
+    {
+      "id": "J04",
+      "pdf": "01-papers/T4-multi-robot-coordination/2026-LLM-Multi-Robot-Survey-J04/paper.pdf",
+      "pdf_sha256": "7c9b54eb55341108de6951c7dd5ad73163fc8e79f936475e4a8a0c45c00857f5",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2026-LLM-Multi-Robot-Survey-J04/paper.md",
+      "markdown_sha256": "26e55951e351311b445a2d5b96623831f81a51ee869fad3b97e0e720d26c7e2b",
+      "pages": 30,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2026-LLM-Multi-Robot-Survey-J04/extraction.json"
+    },
+    {
+      "id": "J05",
+      "pdf": "01-papers/T3-planning-control/2026-Social-Mini-Games-J05/paper.pdf",
+      "pdf_sha256": "8173cd750eff4e641a60d93518ae47a38743b5778da3b7f50af1565db50a692d",
+      "markdown": "02-fulltext/T3-planning-control/2026-Social-Mini-Games-J05/paper.md",
+      "markdown_sha256": "a405e1b358348ba146f358e394f2ecb62bbebace52762d727b8faa525d6a32b5",
+      "pages": 30,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-Social-Mini-Games-J05/extraction.json"
+    },
+    {
+      "id": "J06",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2026-PERSCO-J06/paper.pdf",
+      "pdf_sha256": "73d566034b1004820cb03549f560990bf32dac523c8e0e35c8ce4acd6509eda0",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2026-PERSCO-J06/paper.md",
+      "markdown_sha256": "0c9b02b248e3b42b354ad54478e5dce525581b8e730e74ae4bba07411cdf84b3",
+      "pages": 27,
+      "warnings": [],
+      "extraction": "02-fulltext/T5-semantic-embodied-navigation/2026-PERSCO-J06/extraction.json"
+    },
+    {
+      "id": "J07",
+      "pdf": "01-papers/T3-planning-control/2025-Deadlock-Free-CBF-J07/paper.pdf",
+      "pdf_sha256": "ceeb55516f7fbea36c571f713519901f3274dddc42d423d2180641770b10577f",
+      "markdown": "02-fulltext/T3-planning-control/2025-Deadlock-Free-CBF-J07/paper.md",
+      "markdown_sha256": "718708fc59853905942ee6837027a8310a121d6f3ff5ddeda73c0a83cec7c86f",
+      "pages": 31,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-Deadlock-Free-CBF-J07/extraction.json"
+    },
+    {
+      "id": "J09",
+      "pdf": "01-papers/T5-semantic-embodied-navigation/2023-Teach-by-Showing-J09/paper.pdf",
+      "pdf_sha256": "13d20b38b56c2b113693a8cfba31df8c3998a9553b3cd4dca2667c85fbf7c670",
+      "markdown": "02-fulltext/T5-semantic-embodied-navigation/2023-Teach-by-Showing-J09/paper.md",
+      "markdown_sha256": "cd03ba866b660a24427c375d43e5febb80de449d0ac10c297152b87c9704a23a",
+      "pages": 19,
+      "warnings": [],
+      "extraction": "02-fulltext/T5-semantic-embodied-navigation/2023-Teach-by-Showing-J09/extraction.json"
+    },
+    {
+      "id": "J10",
+      "pdf": "01-papers/T3-planning-control/2023-IRL-Semantic-Navigation-J10/paper.pdf",
+      "pdf_sha256": "4be3bf5b301330338521286701b05aa68a62fa9330117b35b40d8eb02c568989",
+      "markdown": "02-fulltext/T3-planning-control/2023-IRL-Semantic-Navigation-J10/paper.md",
+      "markdown_sha256": "9ba960114da6de7bd0f7e6b3bd025c3b80c3f8b2a2606fb7bcdd85f4857a91b8",
+      "pages": 22,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2023-IRL-Semantic-Navigation-J10/extraction.json"
+    },
+    {
+      "id": "J17",
+      "pdf": "01-papers/T4-multi-robot-coordination/2026-Dual-Channel-Localization-J17/paper.pdf",
+      "pdf_sha256": "3c64dc20ed1e2a5441c1ef7c100120f77fffbbddcb055aa3605ce0a0fee11aec",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2026-Dual-Channel-Localization-J17/paper.md",
+      "markdown_sha256": "ad862c7f6cc175c3aec06eb998a3ce91ccbb529e3f550bebc91696f4cef9dd31",
+      "pages": 16,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2026-Dual-Channel-Localization-J17/extraction.json"
+    },
+    {
+      "id": "J18",
+      "pdf": "01-papers/T4-multi-robot-coordination/2026-Failure-Resilient-Swarm-MPC-J18/paper.pdf",
+      "pdf_sha256": "58d610e26d780c71371013fae693c101ff98faeb727686610746f770207ea0de",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2026-Failure-Resilient-Swarm-MPC-J18/paper.md",
+      "markdown_sha256": "fcc0848d792fe9ab5f3f0cde7886e0e32be962d1a0591dac036b172c48f29368",
+      "pages": 16,
+      "warnings": [
+        {
+          "id": "J18",
+          "page": 11,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=37 attempt=1/2 syntax=valid token_count=36 missing_ids=[21] duplicate_ids=[] out_of_range_ids=[] raw_sha256=a19223f7a3dab0b5"
+        }
+      ],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2026-Failure-Resilient-Swarm-MPC-J18/extraction.json"
+    },
+    {
+      "id": "J19",
+      "pdf": "01-papers/T1-perception-localization/2026-AdapseqNet-J19/paper.pdf",
+      "pdf_sha256": "04974d09839361d09c7ffdfe1c72722748c40a86f0bfb48cd751bc436e69786a",
+      "markdown": "02-fulltext/T1-perception-localization/2026-AdapseqNet-J19/paper.md",
+      "markdown_sha256": "6bf1a635d4c76ac2eff9c325f1940aa8f4d3e9c547b9ddd0bd1a7a43f4eee1d1",
+      "pages": 13,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2026-AdapseqNet-J19/extraction.json"
+    },
+    {
+      "id": "J20",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Adaptive-Cooperative-Localization-J20/paper.pdf",
+      "pdf_sha256": "e0a245992764d75cb2cc02369e99d5c9f4f4b6d8ee075f6a3c69f3e8e0b3bdd1",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Adaptive-Cooperative-Localization-J20/paper.md",
+      "markdown_sha256": "e8bf07542cee97fd0091e4bd37aff2f92632f7e42cecf8742913acdbe2766e44",
+      "pages": 24,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-Adaptive-Cooperative-Localization-J20/extraction.json"
+    },
+    {
+      "id": "J21",
+      "pdf": "01-papers/T4-multi-robot-coordination/2025-Nav-SCOPE-J21/paper.pdf",
+      "pdf_sha256": "5d784f6dc4ada5bcf7300952261b8ef7319ecdcfe139b307d5af3e255d4bf918",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2025-Nav-SCOPE-J21/paper.md",
+      "markdown_sha256": "2395e34c4e27a6a9ad67ad326299b38232fcbe5c25d9a7f733dc16090b28f836",
+      "pages": 11,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2025-Nav-SCOPE-J21/extraction.json"
+    },
+    {
+      "id": "J22",
+      "pdf": "01-papers/T4-multi-robot-coordination/2023-GTEB-Social-Navigation-J22/paper.pdf",
+      "pdf_sha256": "15d4bbfd2ddf0a239e1d6bd0102bc04e675c02ae2fe5e5d0d52c29eb618ff9d9",
+      "markdown": "02-fulltext/T4-multi-robot-coordination/2023-GTEB-Social-Navigation-J22/paper.md",
+      "markdown_sha256": "730af5f2044b06cdc32815a6e8d7d3b6dc8c20817b04cf8d8a4ceda73111c042",
+      "pages": 15,
+      "warnings": [],
+      "extraction": "02-fulltext/T4-multi-robot-coordination/2023-GTEB-Social-Navigation-J22/extraction.json"
+    },
+    {
+      "id": "J23",
+      "pdf": "01-papers/T3-planning-control/2026-Sampling-Predictive-Learning-J23/paper.pdf",
+      "pdf_sha256": "dcfe1eb3baacf92b1e1302c7ef95e7cdbc4fb8ad649576577054418ce3f7cd65",
+      "markdown": "02-fulltext/T3-planning-control/2026-Sampling-Predictive-Learning-J23/paper.md",
+      "markdown_sha256": "f2cb54bb4b9fba56c802329d7012b63061f2b5b2d952004d92911d538813608c",
+      "pages": 12,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2026-Sampling-Predictive-Learning-J23/extraction.json"
+    },
+    {
+      "id": "J24",
+      "pdf": "01-papers/T1-perception-localization/2026-GefaODR-J24/paper.pdf",
+      "pdf_sha256": "ef69a834393404ecd89181459beb58edc97fa3e10fffaca746e5bec468b1afe7",
+      "markdown": "02-fulltext/T1-perception-localization/2026-GefaODR-J24/paper.md",
+      "markdown_sha256": "d4d4fc18dd866faad95aa343696b30ceeed6bcebb55e21c74b0020720d2fbe53",
+      "pages": 11,
+      "warnings": [],
+      "extraction": "02-fulltext/T1-perception-localization/2026-GefaODR-J24/extraction.json"
+    },
+    {
+      "id": "J25",
+      "pdf": "01-papers/T3-planning-control/2025-EARN-J25/paper.pdf",
+      "pdf_sha256": "210b63280b74ee6c58d44809117a0e338135d57555cb46e81292016fa89f276e",
+      "markdown": "02-fulltext/T3-planning-control/2025-EARN-J25/paper.md",
+      "markdown_sha256": "c86ce368f93b918d842f3ff4ac518ffabee869376f3bed4857ffd8ec8b2e1213",
+      "pages": 13,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-EARN-J25/extraction.json"
+    },
+    {
+      "id": "J26",
+      "pdf": "01-papers/T3-planning-control/2025-InPTC-J26/paper.pdf",
+      "pdf_sha256": "4f53963a61fabf5511ea9de8ca833319936f61e75a0a9255b536bacda60e3aee",
+      "markdown": "02-fulltext/T3-planning-control/2025-InPTC-J26/paper.md",
+      "markdown_sha256": "3fe783b8be57d212b5447f3a3196e1896141265e8e1fbdf0003d6b189bf2d6d7",
+      "pages": 12,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2025-InPTC-J26/extraction.json"
+    },
+    {
+      "id": "J27",
+      "pdf": "01-papers/T3-planning-control/2024-Energy-Time-Tracking-J27/paper.pdf",
+      "pdf_sha256": "9715ef21ff920aee4ea3d1c4b86c879d53e73762efecf466b71f700173245f00",
+      "markdown": "02-fulltext/T3-planning-control/2024-Energy-Time-Tracking-J27/paper.md",
+      "markdown_sha256": "383daefc3b62841b47f93efa1322bc0f981731540de0727dd8b55834ac5e8918",
+      "pages": 12,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2024-Energy-Time-Tracking-J27/extraction.json"
+    },
+    {
+      "id": "J28",
+      "pdf": "01-papers/T3-planning-control/2024-Vision-Adaptive-Tracking-J28/paper.pdf",
+      "pdf_sha256": "ce2abe8b86922b6ee61743ca489ba1f757ee0858376a448359db6a1080036fd3",
+      "markdown": "02-fulltext/T3-planning-control/2024-Vision-Adaptive-Tracking-J28/paper.md",
+      "markdown_sha256": "37a0711e7951986996cca8c3f3da92aae83cfc0165c36a3fd020afe4f674b82e",
+      "pages": 8,
+      "warnings": [
+        {
+          "id": "J28",
+          "page": 5,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=36 attempt=1/2 syntax=valid token_count=35 missing_ids=[34] duplicate_ids=[] out_of_range_ids=[] raw_sha256=e861d9191344af8f"
+        }
+      ],
+      "extraction": "02-fulltext/T3-planning-control/2024-Vision-Adaptive-Tracking-J28/extraction.json"
+    },
+    {
+      "id": "J29",
+      "pdf": "01-papers/T1-perception-localization/2023-DLC-SLAM-J29/paper.pdf",
+      "pdf_sha256": "5f44dd8c445df1613e84102c7a6a63c5441d919f6bbdc6c63ac0cf5bd3d313b9",
+      "markdown": "02-fulltext/T1-perception-localization/2023-DLC-SLAM-J29/paper.md",
+      "markdown_sha256": "28621a2b95c931ca3934be57c2df34b5d40fc05a2b99211ba5ed74de27c00c47",
+      "pages": 9,
+      "warnings": [
+        {
+          "id": "J29",
+          "page": 1,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=31 attempt=1/2 syntax=valid token_count=30 missing_ids=[23] duplicate_ids=[] out_of_range_ids=[] raw_sha256=1b5944a28136846e"
+        },
+        {
+          "id": "J29",
+          "page": 6,
+          "logger": "oxr.pipeline.reading_order",
+          "message": "reading_order_repaired page=0 blocks=22 attempt=1/2 syntax=valid token_count=21 missing_ids=[18] duplicate_ids=[] out_of_range_ids=[] raw_sha256=c82a1999147bc08f"
+        }
+      ],
+      "extraction": "02-fulltext/T1-perception-localization/2023-DLC-SLAM-J29/extraction.json"
+    },
+    {
+      "id": "J30",
+      "pdf": "01-papers/T3-planning-control/2023-Koopman-Robust-Control-J30/paper.pdf",
+      "pdf_sha256": "2f6de0c6143b82d369200b74bf94e0610fede0f4915a6af217774caaf0aad71a",
+      "markdown": "02-fulltext/T3-planning-control/2023-Koopman-Robust-Control-J30/paper.md",
+      "markdown_sha256": "8ed974b30ebb5221a8306c2d39d6632ea71ac58b72b133c731c2c3568a63232c",
+      "pages": 12,
+      "warnings": [],
+      "extraction": "02-fulltext/T3-planning-control/2023-Koopman-Robust-Control-J30/extraction.json"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "reviewer": "Codex",
+  "date": "2026-11-11",
+  "scope": "Rendered PDF pages compared with OXR Markdown and page JSON; no whole-paper scientific assessment",
+  "records": [
+    {
+      "id": "H24",
+      "page": 17,
+      "trigger": "Reading-order repair; initial omission of equation (81c)",
+      "action": "One OXR page recovery at 200 DPI and repetition penalty 1.1",
+      "disposition": "Equation (81c) recovered; formula and footnote duplication remain, and some mathematical superscripts are imperfect (for example equation 85d). Retain original OXR bytes and use PDF for mathematical implementation.",
+      "status": "recovered-with-OCR-limitations"
+    },
+    {
+      "id": "H37",
+      "page": 1,
+      "trigger": "Reading-order repair",
+      "disposition": "Title, abstract, opening text, figure and full caption present. Author name ordering in layout can differ from the native citation; citation artifact controls attribution.",
+      "status": "reviewed"
+    },
+    {
+      "id": "H42",
+      "page": 1,
+      "trigger": "Reading-order repair and empty source PDF text layer",
+      "disposition": "Rendered PDF identity, author list, abstract, figure and full caption present; affiliation and funding footnotes duplicated.",
+      "status": "reviewed"
+    },
+    {
+      "id": "H46",
+      "page": 7,
+      "trigger": "Reading-order repair",
+      "disposition": "Figure 6, complete Algorithm 2 including return statement, and equations 17 through 23 present; line wrapping differs.",
+      "status": "reviewed"
+    },
+    {
+      "id": "H59",
+      "page": 17,
+      "trigger": "Reading-order repair",
+      "disposition": "Figure 17 panels retained as image assets, full combined caption and both text columns present.",
+      "status": "reviewed"
+    },
+    {
+      "id": "J18",
+      "page": 11,
+      "trigger": "Reading-order repair",
+      "disposition": "Figures 17 and 18 and all four Figure 19 panels retained; full captions and both text columns present. Panel 19(d) appears after its combined caption in Markdown. No missing prose or truncated block observed.",
+      "status": "reviewed"
+    },
+    {
+      "id": "J28",
+      "page": 5,
+      "trigger": "Reading-order repair",
+      "disposition": "Equations 21 through 26, Theorem 2, Figures 2-3 and Table I present; parameter cells and continuation text compared with rendered page. Mathematical OCR still requires PDF consultation.",
+      "status": "reviewed"
+    },
+    {
+      "id": "J29",
+      "page": 1,
+      "trigger": "Reading-order repair",
+      "disposition": "Title, authors, abstract, introduction and all Figure 1 panels/caption present. ORCID icons appear as ID superscripts and some publication footnotes duplicate.",
+      "status": "reviewed"
+    },
+    {
+      "id": "J29",
+      "page": 6,
+      "trigger": "Reading-order repair",
+      "disposition": "Figure 4, Tables II-IV, complete table rows and both text columns retained; table layout converted to HTML with headers.",
+      "status": "reviewed"
+    }
+  ]
+}

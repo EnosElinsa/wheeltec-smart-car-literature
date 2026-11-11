@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "date": "2026-11-11",
+  "records": 613,
+  "acquired_active_sources": 442,
+  "active_reading_sets": 442,
+  "assessed_publications": 247,
+  "survey_selected": 245,
+  "new_source_registrations": 33,
+  "manual_supplied_pdfs": 13,
+  "new_native_manual_pairs": 8,
+  "crossref_citation_exceptions": 5,
+  "journal_selected": 30,
+  "journal_native_pairs": 20,
+  "journal_unresolved": 10,
+  "oxr_pdfs": 79,
+  "oxr_pages": 1220,
+  "oxr_unresolved_truncations": 0,
+  "new_review_cards": 0,
+  "new_ral_papers": 0,
+  "protected_files_unchanged": 409,
+  "oxr_runtime": "SoMarkAI/OXR-1.0 with D-FINE and vLLM 0.25.1",
+  "oxr_quality_alerts": 9,
+  "oxr_alert_pages_rendered_reviewed": 9,
+  "oxr_limitations": "Mathematical OCR superscript errors and footnote/formula duplication remain, especially H24 page 17; original PDFs control exact equations.",
+  "oxr_services_stopped": true,
+  "public_checks": {
+    "links": {
+      "exit_code": 0,
+      "result": "Markdown files: 331; relative links: 4348; broken: 0; local-only: 0"
+    },
+    "assessed_tables": {
+      "exit_code": 0,
+      "result": "Both regenerated assessed tables match the library byte for byte (247 publications)."
+    },
+    "public_tree": {
+      "exit_code": 0,
+      "result": "Files scanned: 1235\n  size                0  (strict)\n  forbidden-path      0  (strict)\n  absolute-path       0  (strict)\n  secret              0  (strict)\n  cjk                 0  (strict)\nRESULT: PASS"
+    },
+    "pytest": {
+      "exit_code": 0,
+      "result": "........................................................................ [ 75%]\n.......................                                                  [100%]\n95 passed in 4.80s"
+    },
+    "review_pdf": {
+      "exit_code": 0,
+      "result": "247 existing review cards passed PDF checks; pre-existing warnings about missing page locators, approximate excerpts and card size remain documented in the private log. No review card was modified."
+    },
+    "sources_and_indices": {
+      "exit_code": 0,
+      "result": "613 unique catalog records; 442 active reading sets; all new hashes and OXR assets checked; 409 protected files and every supplied original unchanged; 247 review cards and 245 survey selections preserved; 23 generated indexes match."
+    }
+  }
+}

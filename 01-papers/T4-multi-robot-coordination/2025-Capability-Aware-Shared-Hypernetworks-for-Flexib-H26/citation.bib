@@ -1,0 +1,15 @@
+@InProceedings{pmlr-v305-fu25a,
+  title = 	 {Capability-Aware Shared Hypernetworks for Flexible Heterogeneous Multi-Robot Coordination},
+  author =       {Fu, Kevin and Jain, Shalin and Howell, Pierce and Ravichandar, Harish},
+  booktitle = 	 {Proceedings of The 9th Conference on Robot Learning},
+  pages = 	 {1576--1597},
+  year = 	 {2025},
+  editor = 	 {Lim, Joseph and Song, Shuran and Park, Hae-Won},
+  volume = 	 {305},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {27--30 Sep},
+  publisher =    {PMLR},
+  pdf = 	 {https://raw.githubusercontent.com/mlresearch/v305/main/assets/fu25a/fu25a.pdf},
+  url = 	 {https://proceedings.mlr.press/v305/fu25a.html},
+  abstract = 	 {Recent advances have enabled heterogeneous multi-robot teams to learn complex and effective coordination skills.  However, existing neural architectures that support heterogeneous teaming tend to force a trade-off between expressivity and efficiency. Shared-parameter designs prioritize sample efficiency by enabling a single network to be shared across all or a pre-specified subset of robots (via input augmentations), but tend to limit behavioral diversity. In contrast, recent designs employ a separate policy for each robot, enabling greater diversity and expressivity at the cost of efficiency and generalization. Our key insight is that such tradeoffs can be avoided by viewing these design choices as ends of a broad spectrum. Inspired by recent work in transfer and meta learning, and building on prior work in multi-robot task allocation, we propose Capability-Aware Shared Hypernetworks (CASH), a *soft weight sharing* architecture that uses hypernetworks to efficiently learn a *flexible* shared policy that dynamically adapts to each robot post-training. By explicitly encoding the impact of robot capabilities (e.g., speed and payload) on collective behavior, CASH enables *zero-shot generalization* to unseen robots or team compositions. Our experiments involve multiple heterogeneous tasks, three learning paradigms (imitation learning, value-based, and policy-gradient RL), and SOTA multi-robot simulation (JaxMARL) and hardware (Robotarium) platforms. Across all conditions, we find that CASH generates appropriately-diverse behaviors and consistently outperforms baseline architectures in terms of performance and sample efficiency during both training and zero-shot generalization, all with 60%-80% fewer learnable parameters.}
+}

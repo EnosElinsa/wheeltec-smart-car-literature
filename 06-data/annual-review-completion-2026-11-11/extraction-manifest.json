@@ -1,0 +1,28 @@
+{
+  "papers": 2,
+  "pages": 49,
+  "mode": "oxr-1.0-vllm",
+  "warnings": 0,
+  "unresolved_truncations": 0,
+  "services_stopped": true,
+  "records": [
+    {
+      "id": "J01",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2026-Local-Maps-Are-All-You-Need-J01/paper.pdf",
+      "pdf_sha256": "d16c59cabf34cb893f49b751845d6d673f47422f4dd703a15fe040b00cc6ea01",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2026-Local-Maps-Are-All-You-Need-J01/paper.md",
+      "markdown_sha256": "c43af27b8c1d9cb456bc5766e915cf201f833a28726e0997d0eea43e0419a258",
+      "pages": 24,
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2026-Local-Maps-Are-All-You-Need-J01/extraction.json"
+    },
+    {
+      "id": "J02",
+      "pdf": "01-papers/T3-planning-control/2026-Mixed-Crowd-Navigation-J02/paper.pdf",
+      "pdf_sha256": "32409f7c1af82a12fdbace2aa1789f3e980e964fb47006ccf48f9f2d9feb8730",
+      "markdown": "02-fulltext/T3-planning-control/2026-Mixed-Crowd-Navigation-J02/paper.md",
+      "markdown_sha256": "49aa76cc96065bdeafc7d0ec4229b50c822e0746d0f93478c0bb22cb2ec14f37",
+      "pages": 25,
+      "extraction": "02-fulltext/T3-planning-control/2026-Mixed-Crowd-Navigation-J02/extraction.json"
+    }
+  ]
+}
