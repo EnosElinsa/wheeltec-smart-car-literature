@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-12",
+  "library_id": "TAX01",
+  "extraction_job_id": "N01",
+  "pdfs": 1,
+  "markdown_files": 1,
+  "physical_pages": 31,
+  "referenced_images": 77,
+  "source_hashes": {
+    "pdf_sha256": "ea8aa03355fcdcfe0f95ff0a773edebdb6888636dd5f47e80a3df3e62af5d7a2",
+    "bibtex_sha256": "df65548d2fff2c58cd7095a112cd47d5a0f47c44220893ffeedcb041c9197d2f",
+    "markdown_sha256": "c0ee69fb7809126533d8adbaa341ca90187930b889dac4c2a364d745dda17759"
+  },
+  "artifact_verification": {
+    "expected_papers": 1,
+    "papers": 1,
+    "pdf_pages": 31,
+    "referenced_images": 77,
+    "hashed_files_checked": 111,
+    "failures": [],
+    "warnings": [],
+    "status": "artifact-checks-passed",
+    "scope": "Artifact integrity and page coverage, not perfect OCR or scientific assessment."
+  },
+  "unresolved_truncation": [],
+  "services_stopped": true,
+  "task_processes_stopped": {
+    "layout": true,
+    "vllm": true
+  },
+  "ports_free": {
+    "8080": true,
+    "8081": true
+  },
+  "reading_scope": "Targeted source reading; rendered physical pages 2, 15, 17 checked; not a full assessment.",
+  "import_plan_sha256": "0a2eb14bd1a90404e7c8b88abd7a859955e04aa547ea263806574dfd49baed8e"
+}

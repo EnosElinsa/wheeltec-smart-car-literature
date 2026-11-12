@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "batch": "navigation-taxonomy-2026-11-12",
+  "date": "2026-11-12",
+  "new_registered_sources": 1,
+  "records": [
+    {
+      "id": "TAX01",
+      "theme": "T2",
+      "title": "Vision for mobile robot navigation: a survey",
+      "year": 2002,
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "publication_type": "journal-article",
+      "doi": "10.1109/34.982903",
+      "official_url": "https://ieeexplore.ieee.org/document/982903/",
+      "acquisition_status": "delivered",
+      "read_scope": "targeted-source-reading",
+      "citation_source": "publisher_export_api",
+      "citation_status": "publisher-native",
+      "identity_status": "publisher-pair-verified",
+      "extraction_mode": "oxr-1.0-vllm",
+      "survey_selected": false,
+      "review": "",
+      "provenance": "06-data/provenance/navigation-taxonomy-2026-11-12/TAX01.json",
+      "extraction": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/extraction.json",
+      "acquisition_note": "Official pair acquired during the preceding taxonomy investigation; this batch registers and transcribes the existing delivery. No journal-ranking claim is made.",
+      "screening_reason": "Foundational taxonomy source requested for chapter 33; targeted reading, outside survey selection.",
+      "pdf": "01-papers/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/paper.pdf",
+      "pdf_sha256": "ea8aa03355fcdcfe0f95ff0a773edebdb6888636dd5f47e80a3df3e62af5d7a2",
+      "bibtex": "01-papers/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/citation.bib",
+      "bibtex_sha256": "df65548d2fff2c58cd7095a112cd47d5a0f47c44220893ffeedcb041c9197d2f",
+      "markdown": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/paper.md",
+      "markdown_sha256": "c0ee69fb7809126533d8adbaa341ca90187930b889dac4c2a364d745dda17759"
+    }
+  ]
+}

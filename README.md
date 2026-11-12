@@ -8,9 +8,9 @@ An evidence library and survey manuscript on wheeled mobile robot autonomy under
 
 The library supports research on the WHEELTEC R680 wheeled robot. A robot or computer reported in a paper is not evidence that the method has been deployed on the R680.
 
-**Reading collection:** 479 papers with PDF, full-text Markdown and figures across six research themes. Open [INDEX.html](INDEX.html) locally to search by year, venue and topic, or use the [paper index](01-papers/INDEX.md) on GitHub. The [open-source project directory](OPEN_SOURCE_PROJECTS.md) adds 66 implementations and tools, including 17 projects with deep reinforcement learning methods and direct reading links for 52 distinct publications. In the HTML, switch to **Open-source projects** to filter by task, algorithm and runtime, compare up to four projects, and export matched results.
+**Reading collection:** 480 papers with PDF, full-text Markdown and figures across six research themes. Open [INDEX.html](INDEX.html) locally to search by year, venue and topic, or use the [paper index](01-papers/INDEX.md) on GitHub. The [open-source project directory](OPEN_SOURCE_PROJECTS.md) adds 66 implementations and tools, including 17 projects with deep reinforcement learning methods and direct reading links for 52 distinct publications. In the HTML, switch to **Open-source projects** to filter by task, algorithm and runtime, compare up to four projects, and export matched results.
 
-The [administrative catalog](06-data/library-catalog.csv) contains 650 distinct identities: 247 assessed publications, 226 unassessed source additions, six supplemental surveys and 171 excluded/background references. Only the 479 active reading sets appear in the paper interface. The 232 active additions remain unassessed and outside the survey selection; a project link does not change this status. [Latest paper addition](06-data/coverage-expansion-2026-11-11/README.md): 24 ICRA/IROS 2025 papers across six themes. Future journal downloads require verified JCR Q1 evidence; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
+The [administrative catalog](06-data/library-catalog.csv) contains 651 distinct identities: 247 assessed publications, 226 unassessed source additions, seven supplemental surveys and 171 excluded/background references. Only the 480 active reading sets appear in the paper interface. The 233 active additions remain unassessed and outside the survey selection; a project link does not change this status. [Foundational taxonomy source](06-data/navigation-taxonomy-2026-11-12/README.md): one previously acquired TPAMI survey, now transcribed and registered. [Latest coverage batch](06-data/coverage-expansion-2026-11-11/README.md): 24 ICRA/IROS 2025 papers across six themes. Future journal downloads require verified JCR Q1 evidence; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
 
 **Status (November 5, 2026):** working draft. The survey has not been submitted, and its author information and submission declarations are incomplete. The corpus is a purposive selection, not an exhaustive or systematic search of the field.
 
@@ -18,7 +18,7 @@ The [administrative catalog](06-data/library-catalog.csv) contains 650 distinct 
 
 | Item | Count |
 |---|---|
-| Acquired sources | 479 transcribed reading sets in six themes; one additional formal reading set is retained as method background |
+| Acquired sources | 480 transcribed reading sets in six themes; one additional formal reading set is retained as method background |
 | Open-source projects | 66 projects across six application areas; 17 with DRL methods and 52 distinct publications linked to reading files |
 | Assessed publications | 247 (203 journal articles, 44 conference papers) in six themes |
 | Review cards | 247: 23 full assessments and 224 light assessments (89 historical conversions, 135 targeted readings) |
@@ -58,7 +58,7 @@ A paper keeps the same theme, folder name and ID in `01-papers/`, `02-fulltext/`
 
 ## Public and local content
 
-At the owner's request, the 479 admitted papers now include their original PDFs, full-text Markdown and figure assets through Git LFS. [INDEX.html](INDEX.html), citations, review cards, analyses, data, tools and the manuscript remain in normal Git. The [reading-asset manifest](06-data/reading-assets.json) records every LFS file's exact size and SHA-256. Raw extraction diagnostics, acquisition state, credentials and historical archives remain local. Third-party source rights remain with their owners; the repository's code and documentation licenses do not relicense them.
+At the owner's request, the 480 admitted papers now include their original PDFs, full-text Markdown and figure assets through Git LFS. [INDEX.html](INDEX.html), citations, review cards, analyses, data, tools and the manuscript remain in normal Git. The [reading-asset manifest](06-data/reading-assets.json) records every LFS file's exact size and SHA-256. Raw extraction diagnostics, acquisition state, credentials and historical archives remain local. Third-party source rights remain with their owners; the repository's code and documentation licenses do not relicense them.
 
 Install Git LFS before cloning, then download the reading objects:
 

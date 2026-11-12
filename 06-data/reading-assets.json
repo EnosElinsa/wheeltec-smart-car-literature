@@ -2,7 +2,7 @@
   "schema_version": 1,
   "date": "2026-11-12",
   "scope": "Owner-requested Git LFS publication of admitted reading sources; original bytes retained. Extraction diagnostics and historical archives remain local.",
-  "papers": 479,
+  "papers": 480,
   "files": [
     {
       "path": "01-papers/T1-perception-localization/2021-pose-est-manifold-M43/paper.pdf",
@@ -411,6 +411,12 @@
       "kind": "pdf",
       "bytes": 42153213,
       "sha256": "aa4a6002cab15b4d75396f2391007fa6f97342270856dcc4a921b93572f49b95"
+    },
+    {
+      "path": "01-papers/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/paper.pdf",
+      "kind": "pdf",
+      "bytes": 3636892,
+      "sha256": "ea8aa03355fcdcfe0f95ff0a773edebdb6888636dd5f47e80a3df3e62af5d7a2"
     },
     {
       "path": "01-papers/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/paper.pdf",
@@ -13023,6 +13029,474 @@
       "kind": "markdown",
       "bytes": 127508,
       "sha256": "10a3d152be0fa7fb63634c2f36a747f0ef775b8bdbc792c6b1b8c11ec8fa3c6c"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-00294e0c31a44ac180dd3874954ceb81.png",
+      "kind": "image",
+      "bytes": 16903,
+      "sha256": "eac3ff160522f98a9e8d78d5cd8483c2b15fb0be556410bd1c5656cc3d0038a9"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-01cc0b9c37b6497da5214c4382bb5126.png",
+      "kind": "image",
+      "bytes": 221502,
+      "sha256": "886c1741cbb1044b74b75b8098c0489a7690f2f64dd4b5a4b9159a8b78d65f42"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-01e55c3b242649389820a1167d4864fc.png",
+      "kind": "image",
+      "bytes": 268593,
+      "sha256": "bf55fafbeb4e3924452f09c8498ae8cbc20c01a0b0b029ef902db021bf04bd4f"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-07ee256f9b794d08a57e52801bd64e86.png",
+      "kind": "image",
+      "bytes": 248080,
+      "sha256": "eae02ef11b6304293177a9444cd4742c24537dd258b902ee4f4b32b14e134a34"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-0af09255aadf4d5980767ae6389d6a04.png",
+      "kind": "image",
+      "bytes": 137211,
+      "sha256": "c6c722a425ceb97669482ad612a9f2c80a95e7fe6f8fa40d5bf4016d066a1a15"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-0ca962c6626e4b97b55f91ecf86416bb.png",
+      "kind": "image",
+      "bytes": 203957,
+      "sha256": "b94a1ee620b6298e344bd61e4182d431acb3eaf3c8616a7d0e74a2126888bfa4"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-11c002305adc423ca10bc493e372c36c.png",
+      "kind": "image",
+      "bytes": 187550,
+      "sha256": "21dc23dfa586d864d17f24bd112fa6d091dc8adc74496d98abad79904496660a"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-13ec7496902449b7a296467a7d3cb172.png",
+      "kind": "image",
+      "bytes": 8927,
+      "sha256": "7dd9e87f99f608a6ef0df216ff0ad273ba3cc11194ff8500502e8767034bcf6c"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-14278a7dcdc24811b5b3f99e30a73203.png",
+      "kind": "image",
+      "bytes": 117651,
+      "sha256": "d59746a3c0554a329ec6245850fef5dae1783b65b61c073c63e0c2b9a8f34186"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-14c93800bab4423bafd29185333b9674.png",
+      "kind": "image",
+      "bytes": 153780,
+      "sha256": "6ed8c34d06abd88fd1238b9a6b64e3616fa944bb5da7071f5b4d9d44c2fd5718"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-15bd575c0a54415aa8ae83c8d9f9e299.png",
+      "kind": "image",
+      "bytes": 222180,
+      "sha256": "049cddf1bb9af77f4af459cbcab58baa886dbc435baddd3fa5dcf2e937200fd9"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-15d7587071c84d3b825eaed21115e943.png",
+      "kind": "image",
+      "bytes": 146161,
+      "sha256": "b7cab294648e20e28cb676d2a056d8cd0ca992da24d5f5f226320351f96ce458"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-1cd79e75f9404a7894da23d6b35726d2.png",
+      "kind": "image",
+      "bytes": 188214,
+      "sha256": "880bf7006ec18e88cc4f2b25b0c58eedf72782f0944faf9d8515aa0693c8a738"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-1d6d796d7c6f40298f8c1e02fe4e9687.png",
+      "kind": "image",
+      "bytes": 1008555,
+      "sha256": "c661de2efe4178e96d737846f285201cca7449ce625893327aa4eac7f48aa059"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-1e412e3e49ea4772bc15fc55e0fd278c.png",
+      "kind": "image",
+      "bytes": 62342,
+      "sha256": "18e1c25503815bf09e3562e98b14e15ca9dfc1db31d3372cc4731b262a09f520"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-246e225306594d74b138aee727272154.png",
+      "kind": "image",
+      "bytes": 30888,
+      "sha256": "32fa1c14c1ad935ffa032460d42be97208d7a6bc78a69b64da825f37a9a4da90"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-2ba78020f71845ee99c908897c28715e.png",
+      "kind": "image",
+      "bytes": 25297,
+      "sha256": "c78c7f5da053cb97f432654e023886c0a174ea3d9bc401ad0166871d6da3dd2a"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-33582e9c60ff4747b9e2502faea9e1cb.png",
+      "kind": "image",
+      "bytes": 82675,
+      "sha256": "0d44ea8ebdf2abe92eeed0fd2f32dd65d947f5bd4d37a8d5d4917a7d6ee98202"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-367e862fd0c0423f9f1e3966a6aa719a.png",
+      "kind": "image",
+      "bytes": 112291,
+      "sha256": "6cbe2616331d71baa94f9da5bb499ec29d31a0104959890198a70e05d8e5bba8"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-3afaf2b3a9614f1aa1d18faba5b35580.png",
+      "kind": "image",
+      "bytes": 241205,
+      "sha256": "d034e3a521b09e8755185652c08bb8c1dfc934378537b773521c46d26d8eaf47"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-3b37b4c2ecad4b76945dde6ab4e7ac88.png",
+      "kind": "image",
+      "bytes": 6513,
+      "sha256": "8416bc3c8e22b29f6f439b1f70fb12e0fe8da99db0d32ef9018fc7a126f9848f"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-3db2e7dc09304624916e37362e09c65b.png",
+      "kind": "image",
+      "bytes": 538235,
+      "sha256": "8e117262ab7ef4034c59c452ee836972eda3e0ef22823aa069bfd5cd0393db7e"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-3f0a5d2f3b1b426780aeaa82386461e0.png",
+      "kind": "image",
+      "bytes": 94272,
+      "sha256": "b36506e784cff053cb127280392559bcbf3489159aa934861f5ba53fb1af82c9"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-40b4d33943f347428ab6d3f31a0afb21.png",
+      "kind": "image",
+      "bytes": 209143,
+      "sha256": "55a00d2bd7feff16a6153621728903e638e30f59bd68b4f4e7de4570847d8724"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-46629084466045f2866bca23a2785ab7.png",
+      "kind": "image",
+      "bytes": 37897,
+      "sha256": "a7d754346e983db4c10cf461c8fe164b55973702f7cbcc51f4c37fcc61ea94fc"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-4bdecc1175df4ee981df1f43d562f181.png",
+      "kind": "image",
+      "bytes": 68733,
+      "sha256": "a6aad5ecf136ac6f436e50be1385b62eb6eefc9b7fa1c021fa5c9bffeb67630b"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-5295f592085149539e49a59fef7e8087.png",
+      "kind": "image",
+      "bytes": 133867,
+      "sha256": "7524b3639f5bec0fe7a672e3b2df966196537d2ac3c32c5b3118ac4d46a69679"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-5551e23063e1404485c9d4125a824c57.png",
+      "kind": "image",
+      "bytes": 24441,
+      "sha256": "442fd68d68f329080231974ba600e04505bb8d71bae3d0ea6e3c089ecf04adbe"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-5718daa96d2643c1a8184c14c6bea969.png",
+      "kind": "image",
+      "bytes": 145396,
+      "sha256": "f9d447107b4caf8a6b8bfd1d950f830c327b88b95fe45c7f787227cced0753ec"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-57ddba3631814bb48875280148af7149.png",
+      "kind": "image",
+      "bytes": 86748,
+      "sha256": "4f8857cd6b7e85bdba5d3417e155284f2cc473f847bd96a369e783896fdf501f"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-5ff2343a0839458abc6e4bbc1789f5ca.png",
+      "kind": "image",
+      "bytes": 114777,
+      "sha256": "6586517f89ad79d37a16b4cec51b2dd75c9a6497e98691b18521c987da0582dc"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-5ff36631522643df870d572208bed599.png",
+      "kind": "image",
+      "bytes": 83743,
+      "sha256": "66b2b001d668fbb3923c61868604c5d93bee5b14e90cd5b782933859ddca7a70"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-62fca44ed229439c83eaa9912997622b.png",
+      "kind": "image",
+      "bytes": 24863,
+      "sha256": "d206f143011be798554254e83a045e972f5cb91a88c04be691caa5518b4849ea"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-6513b243f5c840e8934667a216fcc2be.png",
+      "kind": "image",
+      "bytes": 193457,
+      "sha256": "a57e1e15698d78c227a16c8b9fe3fec03d08fabd36ac6e18187c27581400bd18"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-6a4c939d77854a6d8e76f3827a833830.png",
+      "kind": "image",
+      "bytes": 29166,
+      "sha256": "42d44025e18389730ef20c7fc266bd00b5cacf49431399e52703fe7398443a09"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-6b8f9bcbb05e4833ab7511a21cc40e9e.png",
+      "kind": "image",
+      "bytes": 105177,
+      "sha256": "ee7701bae8b20697ab34f95d87336e6833c2da0126bc503d644c9dcb47cb6168"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-6bded1d22a0d474485e6fa9a626b4f56.png",
+      "kind": "image",
+      "bytes": 145860,
+      "sha256": "3d6c79180ec3190c6bfdc096b0aa0bf9ff2754c3fe03f4977b7011ad4b7ab1c1"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-6df081ce4fe14a82a42e7df1a564b683.png",
+      "kind": "image",
+      "bytes": 164670,
+      "sha256": "a7626467cd7757140829d44e83967d48b70ca0cba96ce6524c0ad63832721e05"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-6eb16f3eb1ca4fadaee3cbbd70915861.png",
+      "kind": "image",
+      "bytes": 237003,
+      "sha256": "82d3a28069bb838c1ac84f4bccf5b26de8948c23905582def87810ee749fa55b"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-7158624fb1aa4df9ae0a2260c0dab2d7.png",
+      "kind": "image",
+      "bytes": 64147,
+      "sha256": "200023af9d3e058cd3377ea36b046dd16a60e908af0ff7f17ddfe5e31ce004f2"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-78be3523a1fc4b65b3db8f39f96d467e.png",
+      "kind": "image",
+      "bytes": 49482,
+      "sha256": "98700400d877e9031d8f03e56e6f911f04a23412b31a21bb9685e33d342a9db6"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-795f87b3265c495f997f3b7aea5ea499.png",
+      "kind": "image",
+      "bytes": 93606,
+      "sha256": "025f14b0384534f60a2340193e7960e57ac4ed99ee6d819c5783fea7d3a126a4"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-7ef91412b6f24fe6ac261cab81e9b2f0.png",
+      "kind": "image",
+      "bytes": 40590,
+      "sha256": "114867f1b1933802a082c2f2825811381a77085e6958c41ac6f74c68224847d3"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-81c202af99ab4f0b92d6b03442f5fa69.png",
+      "kind": "image",
+      "bytes": 16402,
+      "sha256": "830d6d8cb68134d8565e9f3e3e8b80e294a073267e832a628bc890d0b5bee169"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-86035672fb934f119bd66965758b4a78.png",
+      "kind": "image",
+      "bytes": 43253,
+      "sha256": "2e7d4e9815d23ff175ac7cde2024c62eeb8216239f9d1e54d57fa2c7484df034"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-8c4a83387a4a452db68a2e7865594abf.png",
+      "kind": "image",
+      "bytes": 85376,
+      "sha256": "e60770bcf3ef8e2c4ff236acb047d358c30d1a43e59f745d5afe249545c9220e"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-9270849cc9d1453582ff0073406276ec.png",
+      "kind": "image",
+      "bytes": 231500,
+      "sha256": "11e72549373b63ddda289dcbb17db64e1c336f628084187ad2331946f654d55c"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-a02189546a224e1eb7c7db674855a374.png",
+      "kind": "image",
+      "bytes": 222279,
+      "sha256": "c22f553600da256c89739c89d1a1ee8a0eb54d11b4f1f37232fb5ea70e3dc795"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-a207b76bd7954ac0a901ce18018628aa.png",
+      "kind": "image",
+      "bytes": 28633,
+      "sha256": "181132437444b2952ed91c6abd8c8f1c52ec83231ada3a8741b5377eeaa4a7a8"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-a7cc91107582460b9d34eec781fdb9de.png",
+      "kind": "image",
+      "bytes": 163289,
+      "sha256": "cfbf97cf308a80f3d7f8aaabec867e7d53645ba4fe5d65039d6da6cd5d38ad4a"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-a922a4fb6e824f0ea86629ab65f0648f.png",
+      "kind": "image",
+      "bytes": 204660,
+      "sha256": "727dd472716dfa23ccf56d1a621895e1cadfa0d6b1f88bd7048b9bef3d94b7ec"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-a9d771cf6ec34a539f5aa15d1a8d3d78.png",
+      "kind": "image",
+      "bytes": 84223,
+      "sha256": "6a78ec52cdfce37039e2cc6467bc410dcd4461f7fcf03882f3e2195a4f2d7ce4"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-ac601fbe64cb4b45a9e5fcba8f8aeaa5.png",
+      "kind": "image",
+      "bytes": 84524,
+      "sha256": "764255d3c6fd9cb1f5b60fcc659d10adc62241376e4de98b93307611af56f8ad"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-adcbb8670cd44698a019785c691a5bd9.png",
+      "kind": "image",
+      "bytes": 65670,
+      "sha256": "437f79f075dc88811acd0ea7b4b23338984584de062fc7d0e2be1d7d70f0d003"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-b0deaa69d9404bc98070ba7909892d82.png",
+      "kind": "image",
+      "bytes": 10233,
+      "sha256": "24f104cf18ab651eb27fbf77797162c5ab734c26d43bd5e8bfd4d0f83fbb73a9"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-b1d42d05c47241a0946563ea70064292.png",
+      "kind": "image",
+      "bytes": 238202,
+      "sha256": "de038ba7e8320f52b34ae87014dabde51fd79a748b245e5f1891b11af92a905c"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-c11861da4b4e409a82b671902eccf48c.png",
+      "kind": "image",
+      "bytes": 378748,
+      "sha256": "4fac7ea2d05df3e611150eea2fab8c7d9cfd5af64f85746e9ea11409b11379f5"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-c161fc48e6ca41e18c83466c1cf0ba1d.png",
+      "kind": "image",
+      "bytes": 38876,
+      "sha256": "535f8c6ec340b85e126fb2099e9d024ba2f27586f6f6c4b9d93fa412baa48c06"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-c784305929224fd798fc5c2a63f6ef68.png",
+      "kind": "image",
+      "bytes": 94682,
+      "sha256": "1d70ec7055ead06a5f658b046bc28521c0f4f008414663949217c522842fb250"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-c97c2fe334b04e14a25052a45839dd1c.png",
+      "kind": "image",
+      "bytes": 24982,
+      "sha256": "605afdaf5b16492be7621c50badc09f26c16ea850a56618be47ed34b87cb2370"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-cc639f2092b8494ebfd4cab42bc3329e.png",
+      "kind": "image",
+      "bytes": 166789,
+      "sha256": "1922ae8383da7eea981e6f0d6aaf35fcb9e3f2e97f3b4eff95f9491d4c33ea7d"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-d5d7a3e13c0240999529b89a912accff.png",
+      "kind": "image",
+      "bytes": 54134,
+      "sha256": "a44b54be6eb89e819448c0a4911e9c7d03678b2a5d63821b28547824a2a43c82"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-d64a3c459cd04e47aeedfdca3d012b71.png",
+      "kind": "image",
+      "bytes": 78088,
+      "sha256": "95b5b53f177528e279493565f5fd184eb45111ec4602d0b89b99ff229317d42f"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-d92baeb3c73040048b0a48fe0bf97aae.png",
+      "kind": "image",
+      "bytes": 195944,
+      "sha256": "7858e4e716f36782e757d338075e2c5095fc22c624c15556ed67a5a2bfb00d56"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-d9435941812146ca9cae188cb66443af.png",
+      "kind": "image",
+      "bytes": 218151,
+      "sha256": "792482bfb626c46c12eee0e35485cf1c692dcf0af9e33aee56bc1f854b2beea8"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-dc79486b1679440b82aa2a3a458d4c24.png",
+      "kind": "image",
+      "bytes": 83492,
+      "sha256": "d371c312065e82552c30ea1b7e3c7a9182f964f596688f3f3fa3aa9730cb2f48"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-dd554d5ac907486595800e17c23cde40.png",
+      "kind": "image",
+      "bytes": 15605,
+      "sha256": "9b1559827bcfa2429ea3eacfff80d73f2cc6374d7d91c4d0220bbe5e96523dc9"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-e17d7a3462cd429097abbd08a2fc2b15.png",
+      "kind": "image",
+      "bytes": 30061,
+      "sha256": "0551191d5211981e9e203804ac1d8d8930a5736c2ecad65ce7a963b1bc6bcc0b"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-e193bf9175b645b7afc7cda14748c7f6.png",
+      "kind": "image",
+      "bytes": 266525,
+      "sha256": "9107b2f8b4e5bd00d24d73df043bd423861f9d865c70678bf535f1dd709539b1"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-e247e73616cd469cb1463a7542937261.png",
+      "kind": "image",
+      "bytes": 53207,
+      "sha256": "880c7d56ff02b2bf66a8ee359742c86a139f16710ecdc81de4a156b5d0e7acc1"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-e2c2c85cdd174243bceb822c0bbb0759.png",
+      "kind": "image",
+      "bytes": 198669,
+      "sha256": "a92073ff2e213415487a6fe0c4c9b2c109d67d3d22a6f295dd48d25f2974c42d"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-e576f5c56a9e464db7d8618bdba38cb8.png",
+      "kind": "image",
+      "bytes": 34625,
+      "sha256": "3e31609926640ef0a94aeab9e85b099457ba96a58a0f7e64b3efee96d4d4e4d9"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-e9c4c37e59dc4f468dce14d87231109e.png",
+      "kind": "image",
+      "bytes": 85398,
+      "sha256": "a235236179275a062e52afcd12bf77763100acf1742bd882d95cdbc526284288"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-ee67194c6aae4f6dba95a38bb9bbc408.png",
+      "kind": "image",
+      "bytes": 161555,
+      "sha256": "51d26b512a378cfdb15f961fd07b4637723e8a82fe92dd8930801f8574b2aff3"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-f0bb104a990a4ec8bce826e7e073485d.png",
+      "kind": "image",
+      "bytes": 125091,
+      "sha256": "775d163c811fda8368b50f2c043be91d13dcff5d57e9646a91bb5827f193f850"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-f16f3b00c8f04547b63624cc4792f922.png",
+      "kind": "image",
+      "bytes": 104224,
+      "sha256": "baf3fd4e86d8768eb0bc8bc14774bef965b1fa2142c99898f47ce1da04d4a35c"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/images/block-f75925463fab4f75aa72432e7b84acb8.png",
+      "kind": "image",
+      "bytes": 85020,
+      "sha256": "971d5e5a8a62f9a5430d4f9fa03ed745faa13637b4dab3027c4503accce45f46"
+    },
+    {
+      "path": "02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/paper.md",
+      "kind": "markdown",
+      "bytes": 143056,
+      "sha256": "c0ee69fb7809126533d8adbaa341ca90187930b889dac4c2a364d745dda17759"
     },
     {
       "path": "02-fulltext/T2-slam-mapping-exploration/2021-RELLIS-3D-K02/images/paper.pdf-0-1.png",

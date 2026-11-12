@@ -1,6 +1,6 @@
 # 01-papers
 
-Publisher PDFs and citations: 479 papers. The folders `01-papers`, `02-fulltext`, and `03-reviews` use the same `<theme>/<year>-<short-name>-<ID>/` layout.
+Publisher PDFs and citations: 480 papers. The folders `01-papers`, `02-fulltext`, and `03-reviews` use the same `<theme>/<year>-<short-name>-<ID>/` layout.
 
 [Library overview](../README.md) · [Reading guide](../READING_GUIDE.md)
 
@@ -79,7 +79,7 @@ PDFs and full-text transcriptions are delivered through Git LFS. Run `git lfs pu
 | M41 | 2022 | M2DGR: A Multi-Sensor and Multi-Scenario SLAM Dataset for Ground Robots | IEEE Robotics and Automation Letters | journal | localization-mapping | dataset-resource | wheeled-unspecified | Light review card | [Review](../03-reviews/T1-perception-localization/2022-M2DGR-M41/review.md) · [BibTeX](T1-perception-localization/2022-M2DGR-M41/citation.bib) · [DOI](https://doi.org/10.1109/lra.2021.3138527) · [Official page](https://ieeexplore.ieee.org/document/9664374/) | `01-papers/T1-perception-localization/2022-M2DGR-M41/paper.pdf` · `02-fulltext/T1-perception-localization/2022-M2DGR-M41/paper.md` |
 | M43 | 2021 | Pose Estimation for Ground Robots: On Manifold Representation, Integration, Reparameterization, and Optimization | IEEE Transactions on Robotics | journal | localization-mapping | recorded-robot-data | wheeled-unspecified | Light review card | [Review](../03-reviews/T1-perception-localization/2021-pose-est-manifold-M43/review.md) · [BibTeX](T1-perception-localization/2021-pose-est-manifold-M43/citation.bib) · [DOI](https://doi.org/10.1109/tro.2020.3043970) · [Official page](https://ieeexplore.ieee.org/document/9325926/) | `01-papers/T1-perception-localization/2021-pose-est-manifold-M43/paper.pdf` · `02-fulltext/T1-perception-localization/2021-pose-est-manifold-M43/paper.md` |
 
-## T2-slam-mapping-exploration · 63
+## T2-slam-mapping-exploration · 64
 
 | ID | Year | Title | Venue | Type | Module | Evidence | Platform | Assessment | Links | Local files |
 |---|---:|---|---|---|---|---|---|---|---|---|
@@ -146,6 +146,7 @@ PDFs and full-text transcriptions are delivered through Git LFS. Run `git lfs pu
 | M42 | 2021 | A Sim-to-Real Pipeline for Deep Reinforcement Learning for Autonomous Robot Navigation in Cluttered Rough Terrain | IEEE Robotics and Automation Letters | journal | traversability-planning-control | closed-loop-hardware | skid-steer | Light review card | [Review](../03-reviews/T2-slam-mapping-exploration/2021-sim-to-real-DRL-M42/review.md) · [BibTeX](T2-slam-mapping-exploration/2021-sim-to-real-DRL-M42/citation.bib) · [DOI](https://doi.org/10.1109/lra.2021.3093551) · [Official page](https://ieeexplore.ieee.org/document/9468918/) | `01-papers/T2-slam-mapping-exploration/2021-sim-to-real-DRL-M42/paper.pdf` · `02-fulltext/T2-slam-mapping-exploration/2021-sim-to-real-DRL-M42/paper.md` |
 | M44 | 2021 | Visual SLAM for robot navigation in healthcare facility | Pattern Recognition | journal | localization-mapping | recorded-robot-data | wheeled-unspecified | Light review card | [Review](../03-reviews/T2-slam-mapping-exploration/2021-vislam-healthcare-M44/review.md) · [BibTeX](T2-slam-mapping-exploration/2021-vislam-healthcare-M44/citation.bib) · [DOI](https://doi.org/10.1016/j.patcog.2021.107822) · [Official page](https://linkinghub.elsevier.com/retrieve/pii/S0031320321000091) | `01-papers/T2-slam-mapping-exploration/2021-vislam-healthcare-M44/paper.pdf` · `02-fulltext/T2-slam-mapping-exploration/2021-vislam-healthcare-M44/paper.md` |
 | M45 | 2021 | A Lifelong Learning Approach to Mobile Robot Navigation | IEEE Robotics and Automation Letters | journal | traversability-planning-control | closed-loop-hardware | skid-steer | Light review card | [Review](../03-reviews/T2-slam-mapping-exploration/2021-lifelong-nav-M45/review.md) · [BibTeX](T2-slam-mapping-exploration/2021-lifelong-nav-M45/citation.bib) · [DOI](https://doi.org/10.1109/lra.2021.3056373) · [Official page](https://ieeexplore.ieee.org/document/9345478/) | `01-papers/T2-slam-mapping-exploration/2021-lifelong-nav-M45/paper.pdf` · `02-fulltext/T2-slam-mapping-exploration/2021-lifelong-nav-M45/paper.md` |
+| TAX01 | 2002 | Vision for mobile robot navigation: a survey | IEEE Transactions on Pattern Analysis and Machine Intelligence | journal |  |  |  | Targeted source notes | [Source notes](../06-data/navigation-taxonomy-2026-11-12/evidence-notes.md) · [BibTeX](T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/citation.bib) · [DOI](https://doi.org/10.1109/34.982903) · [Official page](https://ieeexplore.ieee.org/document/982903/) | `01-papers/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/paper.pdf` · `02-fulltext/T2-slam-mapping-exploration/2002-Vision-Navigation-Survey-TAX01/paper.md` |
 
 ## T3-planning-control · 139
 
