@@ -2,6 +2,11 @@
 
 Notable changes to the library and the survey manuscript, newest first. Dates come from the batch and revision records. The Git history starts with the first public snapshot on November 3, 2026. Each entry links the record that holds the details, and its counts are those of that date.
 
+## 2026-11-12
+
+- Reading files: publish 479 PDFs, 479 canonical Markdown transcriptions and 9,978 figures through Git LFS, with exact hash manifests, pointer validation and download instructions.
+- Interface: combine the paper catalog and [66 open-source projects](OPEN_SOURCE_PROJECTS.md) in the standalone HTML. Add method, runtime and publication-year filters, comparison of up to four projects, CSV export and links between papers and implementations. All 66 repository READMEs were checked; 17 projects use DRL methods and 52 distinct papers link to reading files. The portable directory and HTML are generated from the same [project data](06-data/open-source-projects.json).
+
 ## 2026-11-11
 
 - Library: [24 ICRA/IROS 2025 papers across six mobile-robot themes](06-data/coverage-expansion-2026-11-11/README.md), native pairs and 176 OXR pages; 650 catalog records and 479 active reading sets.

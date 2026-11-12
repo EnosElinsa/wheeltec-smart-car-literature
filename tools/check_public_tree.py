@@ -47,7 +47,8 @@ SELF_AUTHORED_PDFS = {"05-survey/manuscript/survey.pdf", "05-survey/manuscript/s
 MANUSCRIPT_FIGURES = "05-survey/manuscript/figures/"
 # The local reading UI serves Chinese-speaking readers. This exception applies
 # only to its labels, never to research prose or path/secret/source guards.
-LOCALIZED_UI_PATHS = {"tools/local_index.html", "INDEX.html"}
+LOCALIZED_UI_PATHS = {"tools/local_index.html", "tools/project_index.js", "INDEX.html",
+                      "06-data/open-source-projects.json"}
 
 ABSOLUTE_PATH_PATTERNS = [
     re.compile(r"(?i)\b[a-z]:(?:\\\\|\\|/)+users(?:\\\\|\\|/)+"),

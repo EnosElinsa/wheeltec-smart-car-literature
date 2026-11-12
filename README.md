@@ -8,7 +8,9 @@ An evidence library and survey manuscript on wheeled mobile robot autonomy under
 
 The library supports research on the WHEELTEC R680 wheeled robot. A robot or computer reported in a paper is not evidence that the method has been deployed on the R680.
 
-**Unified library:** 650 distinct records: 247 assessed publications, 226 unassessed source additions, six supplemental surveys and 171 excluded/background references. All 479 active sources have transcribed reading sets in the six theme directories in [the catalog](06-data/library-catalog.csv). Open [INDEX.html](INDEX.html) to search and read them. The 232 active additions remain unassessed and outside the survey selection. [Latest addition](06-data/coverage-expansion-2026-11-11/README.md): 24 ICRA/IROS 2025 papers across six themes, with 176 OXR pages. Future journal downloads require JCR Q1; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
+**Reading collection:** 479 papers with PDF, full-text Markdown and figures across six research themes. Open [INDEX.html](INDEX.html) locally to search by year, venue and topic, or use the [paper index](01-papers/INDEX.md) on GitHub. The [open-source project directory](OPEN_SOURCE_PROJECTS.md) adds 66 implementations and tools, including 17 projects with deep reinforcement learning methods and direct reading links for 52 distinct publications. In the HTML, switch to **Open-source projects** to filter by task, algorithm and runtime, compare up to four projects, and export matched results.
+
+The [administrative catalog](06-data/library-catalog.csv) contains 650 distinct identities: 247 assessed publications, 226 unassessed source additions, six supplemental surveys and 171 excluded/background references. Only the 479 active reading sets appear in the paper interface. The 232 active additions remain unassessed and outside the survey selection; a project link does not change this status. [Latest paper addition](06-data/coverage-expansion-2026-11-11/README.md): 24 ICRA/IROS 2025 papers across six themes. Future journal downloads require verified JCR Q1 evidence; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
 
 **Status (November 5, 2026):** working draft. The survey has not been submitted, and its author information and submission declarations are incomplete. The corpus is a purposive selection, not an exhaustive or systematic search of the field.
 
@@ -17,6 +19,7 @@ The library supports research on the WHEELTEC R680 wheeled robot. A robot or com
 | Item | Count |
 |---|---|
 | Acquired sources | 479 transcribed reading sets in six themes; one additional formal reading set is retained as method background |
+| Open-source projects | 66 projects across six application areas; 17 with DRL methods and 52 distinct publications linked to reading files |
 | Assessed publications | 247 (203 journal articles, 44 conference papers) in six themes |
 | Review cards | 247: 23 full assessments and 224 light assessments (89 historical conversions, 135 targeted readings) |
 | Survey selection | 245 works from 2021-2026 (244 technical studies, one context review). X01 (1999) and X15 (2016) stay internal |
@@ -33,6 +36,7 @@ Assessment depth differs between cards. A full card records a whole-paper readin
 | Read the key papers in order | [Reading guide](READING_GUIDE.md) (18 key papers and two reading routes) |
 | Browse all review cards | [Review index](03-reviews/INDEX.md) |
 | Find a paper, its citation and its local files | [Paper index](01-papers/INDEX.md) · [Full-text index](02-fulltext/INDEX.md) |
+| Find an implementation or compare algorithms | [Open-source projects](OPEN_SOURCE_PROJECTS.md) · [Interactive project view](INDEX.html#view=projects) · [Textbook chapter 54](https://enoselinsa.github.io/wheeltec-ros-textbook/08-advanced-applications/54-open-source-projects/) |
 | Use the data tables and evidence codes | [Data guide](06-data/README.md) · [Evidence coding](06-data/evidence-coding/README.md) |
 | Look up a coding value | [Controlled vocabulary](06-data/vocabulary.md) |
 | Trace an earlier stage | [Analysis records](04-analysis/README.md) · [Manuscript revision records](05-survey/manuscript/revision/README.md) · [Changelog](CHANGELOG.md) |
@@ -45,7 +49,7 @@ Assessment depth differs between cards. A full card records a whole-paper readin
 03-reviews/<theme>/<year>-<short-name>-<ID>/   review.md, one card per paper
 04-analysis/                                   dated cross-paper analyses and research plans
 05-survey/manuscript/                          LaTeX sources, figures, generated tables, built PDFs, revision records
-06-data/                                       catalog, paper index, evidence codes, batch provenance
+06-data/                                       paper and project catalogs, evidence codes, batch provenance
 99-archive/                                    archive guide (the archive itself is local)
 tools/                                         Python checks and index generators, with tests
 ```
@@ -65,7 +69,9 @@ cd wheeltec-smart-car-literature
 git lfs pull
 ```
 
-Open `INDEX.html` locally after the download. An existing clone needs `git pull` followed by `git lfs pull`. Run `python -m tools.check_lfs_assets --materialized` to verify the downloaded files against the catalog and manifest. Normal CI checks LFS pointers without downloading the full reading collection.
+Open `INDEX.html` locally after the download. Its paper and project tabs share the same reading links; project filters, comparison and CSV export also work offline. GitHub code repositories and the online textbook require a connection. No textbook checkout, server or frontend package installation is needed. On GitHub, read [OPEN_SOURCE_PROJECTS.md](OPEN_SOURCE_PROJECTS.md); GitHub's file view does not run the interactive HTML.
+
+An existing clone needs `git pull` followed by `git lfs pull`. Run `python -m tools.check_lfs_assets --materialized` to verify the downloaded files against the catalog and manifest. Normal CI checks LFS pointers without downloading the full reading collection.
 
 The provenance ledgers record the transcription pipeline of each paper. The 127 papers of the baseline, supplemental, expansion and follow-up batches keep the MinerU precision exports or archived original exports listed in [fulltext-manifest.json](06-data/fulltext-manifest.json). N01-N20 use local PyMuPDF4LLM exports, S01-S48, R01-R36 and D01-D11 use OXR-1.0 through self-hosted vLLM, and K01-K16 use PyMuPDF4LLM 0.2.9. The PDF stays the authority for numbers, tables, equations and page numbers.
 

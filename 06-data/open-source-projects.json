@@ -1,0 +1,3245 @@
+{
+  "schema_version": 1,
+  "source": {
+    "url": "https://enoselinsa.github.io/wheeltec-ros-textbook/08-advanced-applications/54-open-source-projects/",
+    "repository": "https://github.com/EnosElinsa/wheeltec-ros-textbook",
+    "revision": "b6258bdc0f1b32c6350d7fafff762be6eeb7db1a",
+    "path": "docs/08-advanced-applications/54-open-source-projects.md"
+  },
+  "categories": [
+    {
+      "id": "localization",
+      "name": "定位与传感器融合",
+      "name_en": "Localization and sensor fusion"
+    },
+    {
+      "id": "mapping",
+      "name": "建图与自主探索",
+      "name_en": "Mapping and exploration"
+    },
+    {
+      "id": "planning",
+      "name": "规划与运动控制",
+      "name_en": "Planning and control"
+    },
+    {
+      "id": "multi-robot",
+      "name": "多机器人协作",
+      "name_en": "Multi-robot coordination"
+    },
+    {
+      "id": "semantic-navigation",
+      "name": "语义与语言导航",
+      "name_en": "Semantic and language navigation"
+    },
+    {
+      "id": "evaluation",
+      "name": "仿真与评测工具",
+      "name_en": "Simulation and evaluation"
+    }
+  ],
+  "methods": [
+    {
+      "id": "estimation",
+      "name": "状态估计与标定",
+      "name_en": "Estimation and calibration"
+    },
+    {
+      "id": "mapping",
+      "name": "几何与语义建图",
+      "name_en": "Geometric and semantic mapping"
+    },
+    {
+      "id": "planning",
+      "name": "几何规划与优化控制",
+      "name_en": "Geometric planning and optimal control"
+    },
+    {
+      "id": "drl",
+      "name": "深度强化学习",
+      "name_en": "Deep reinforcement learning"
+    },
+    {
+      "id": "marl",
+      "name": "多智能体强化学习",
+      "name_en": "Multi-agent reinforcement learning"
+    },
+    {
+      "id": "learned",
+      "name": "视觉与表征学习",
+      "name_en": "Visual and representation learning"
+    },
+    {
+      "id": "tooling",
+      "name": "仿真、数据与评测",
+      "name_en": "Simulation, data and evaluation"
+    }
+  ],
+  "environments": [
+    "C++",
+    "CUDA / TensorRT",
+    "Docker",
+    "Isaac Sim / Lab",
+    "JAX",
+    "MATLAB",
+    "Python",
+    "ROS 1",
+    "ROS 2"
+  ],
+  "projects": [
+    {
+      "id": "robot_localization",
+      "name": "robot_localization",
+      "repository": "https://github.com/cra-ros-pkg/robot_localization",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "estimation"
+      ],
+      "algorithms": [
+        "EKF",
+        "UKF"
+      ],
+      "algorithm_summary": "扩展卡尔曼滤波（EKF）、无迹卡尔曼滤波（UKF）",
+      "environments": [
+        "ROS 2",
+        "ROS 1"
+      ],
+      "summary": "融合轮速、IMU 和视觉里程计，输出连续的位姿与速度估计。",
+      "description": "融合轮速、IMU 和视觉里程计，输出连续的位姿与速度估计。协方差决定各类观测对融合结果的影响，二维约束与观测变量可按车辆运动设置。它是 R680 现有融合链路的基础；多个估计器共用轮速或 IMU 时，需要考虑输入信息的相关性。",
+      "papers": [
+        {
+          "title": "A Generalized Extended Kalman Filter Implementation for the Robot Operating System",
+          "url": "https://doi.org/10.1007/978-3-319-08338-4_25",
+          "publication": "Moore、Stouch，IAS-13",
+          "paper_codes": [],
+          "year": ""
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "robot_localization",
+      "github": {
+        "full_name": "cra-ros-pkg/robot_localization",
+        "url": "https://github.com/cra-ros-pkg/robot_localization",
+        "description": "robot_localization is a package of nonlinear state estimation nodes. The package was developed by Charles River Analytics, Inc. Please ask questions on answers.ros.org.",
+        "archived": false,
+        "default_branch": "rolling-devel",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/cra-ros-pkg/robot_localization/blob/rolling-devel/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "R680 现有融合链路的基础。设置二维运动约束、协方差，并检查共享传感器造成的信息相关性。",
+      "inputs": "轮速、IMU、里程计",
+      "outputs": "位姿与速度"
+    },
+    {
+      "id": "vins-fusion",
+      "name": "VINS-Fusion",
+      "repository": "https://github.com/HKUST-Aerial-Robotics/VINS-Fusion",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "estimation"
+      ],
+      "algorithms": [
+        "Sliding-window optimization",
+        "IMU preintegration",
+        "Loop closure"
+      ],
+      "algorithm_summary": "滑动窗口非线性优化、IMU 预积分、回环检测",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "支持双目视觉、单目加 IMU、双目加 IMU，并提供回环模块。",
+      "description": "支持双目视觉、单目加 IMU、双目加 IMU，并提供回环模块。滑动窗口优化联合使用视觉特征与 IMU 预积分约束，可用于比较纯视觉与视觉惯性估计。原版基于 ROS 1，接入 Humble 需要移植或评估 ROS 2 分支。VINS-Mono 论文介绍其方法基础，功能范围与 VINS-Fusion 实现有差别。",
+      "papers": [
+        {
+          "title": "VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator",
+          "url": "https://doi.org/10.1109/TRO.2018.2853729",
+          "publication": "IEEE T-RO，2018",
+          "paper_codes": [],
+          "year": "2018"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "vins-fusion",
+      "github": {
+        "full_name": "HKUST-Aerial-Robotics/VINS-Fusion",
+        "url": "https://github.com/HKUST-Aerial-Robotics/VINS-Fusion",
+        "description": "An optimization-based multi-sensor state estimator",
+        "archived": false,
+        "default_branch": "master",
+        "license": "GPL-3.0",
+        "license_url": "",
+        "readme_url": "https://github.com/HKUST-Aerial-Robotics/VINS-Fusion/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "原版为 ROS 1；需要移植 Humble 接口，并确认相机、IMU 标定与时间同步。",
+      "inputs": "图像、IMU",
+      "outputs": "视觉惯性里程计"
+    },
+    {
+      "id": "pl-viwoimu",
+      "name": "PL-VIWO",
+      "repository": "https://github.com/Happy-zzx/PL-VIWO",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "estimation"
+      ],
+      "algorithms": [
+        "Point-line features",
+        "IMU preintegration",
+        "Wheel odometry"
+      ],
+      "algorithm_summary": "点线视觉惯性轮速联合优化",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "将图像点特征、线特征、IMU 和轮速共同用于运动估计。",
+      "description": "将图像点特征、线特征、IMU 和轮速共同用于运动估计。墙边、门框等线结构可补充弱纹理区域的角点，轮速提供底盘运动约束，适合走廊、遮挡和短时视觉退化研究。实现基于 ROS Noetic，轮速测量形式和运动模型需要与 Ackermann 底盘匹配。",
+      "papers": [
+        {
+          "title": "PL-VIWO: A Lightweight and Robust Point-Line Monocular Visual Inertial Wheel Odometry",
+          "url": "https://doi.org/10.1109/IROS60139.2025.11246999",
+          "publication": "IROS，2025",
+          "paper_codes": [
+            "E10"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "pl-viwoimu",
+      "github": {
+        "full_name": "Happy-ZZX/PL-VIWO",
+        "url": "https://github.com/Happy-ZZX/PL-VIWO",
+        "description": "Lightweight and Robust Point-Line Monocular Visual Inertial Wheel Odometry (IROS2025) ",
+        "archived": false,
+        "default_branch": "main",
+        "license": "GPL-3.0",
+        "license_url": "",
+        "readme_url": "https://github.com/Happy-ZZX/PL-VIWO/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "ROS Noetic 实现；需要适配轮速测量形式、相机输入和 Ackermann 运动模型。",
+      "inputs": "单目图像、IMU、轮速",
+      "outputs": "位姿"
+    },
+    {
+      "id": "kalibr-imu",
+      "name": "Kalibr",
+      "repository": "https://github.com/ethz-asl/kalibr",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "estimation"
+      ],
+      "algorithms": [
+        "Batch optimization",
+        "Spatiotemporal calibration"
+      ],
+      "algorithm_summary": "批量时空参数标定",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "提供多相机及相机与 IMU 的时空标定，输出内参、外参和时间偏移。",
+      "description": "提供多相机及相机与 IMU 的时空标定，输出内参、外参和时间偏移。对 D435C 与底盘 IMU 的组合，安装关系和时间误差会直接影响融合结果；标定数据需要充分激励各轴运动，仅有平面直行通常不足以约束全部参数。",
+      "papers": [
+        {
+          "title": "Unified Temporal and Spatial Calibration for Multi-Sensor Systems",
+          "url": "https://doi.org/10.1109/IROS.2013.6696514",
+          "publication": "IROS，2013",
+          "paper_codes": [],
+          "year": "2013"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "kalibr-imu",
+      "github": {
+        "full_name": "ethz-asl/kalibr",
+        "url": "https://github.com/ethz-asl/kalibr",
+        "description": "The Kalibr visual-inertial calibration toolbox",
+        "archived": false,
+        "default_branch": "master",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/ethz-asl/kalibr/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "标定需要充分激励各轴运动；仅做平面直行难以约束全部外参和时间偏移。",
+      "inputs": "标定图像、IMU",
+      "outputs": "内外参与时间偏移"
+    },
+    {
+      "id": "temporal-calibration",
+      "name": "Ts Online Optimization",
+      "repository": "https://github.com/bytedance/Ts_Online_Optimization",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "estimation"
+      ],
+      "algorithms": [
+        "Online temporal calibration",
+        "Sliding-window optimization"
+      ],
+      "algorithm_summary": "在线时间偏移估计、滑动窗口优化",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "把相机与 IMU 的时间偏移作为优化变量，利用角速度和线速度将惯性状态对齐到图像时刻，与位姿和偏置共同估计。",
+      "description": "把相机与 IMU 的时间偏移作为优化变量，利用角速度和线速度将惯性状态对齐到图像时刻，与位姿和偏置共同估计。作者在 VINS-Mono 上提供实现与人为注入时间误差的配置，适合比较时间不同步对里程计的影响。代码基于 ROS Kinetic / Melodic 和 Ceres；迁入 Humble 时需要移植接口，并确认时间戳含义与硬件同步方式。",
+      "papers": [
+        {
+          "title": "Universal Online Temporal Calibration for Optimization-Based Visual-Inertial Navigation Systems",
+          "url": "https://ieeexplore.ieee.org/document/11127433/",
+          "publication": "ICRA，2025",
+          "paper_codes": [
+            "V01"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "temporal-calibration",
+      "github": {
+        "full_name": "bytedance/Ts_Online_Optimization",
+        "url": "https://github.com/bytedance/Ts_Online_Optimization",
+        "description": "[ICRA2025] Universal Online Temporal Calibration for Optimization-based Visual-Inertial Navigation Systems",
+        "archived": false,
+        "default_branch": "timeoffset_optimization_online",
+        "license": "GPL-3.0",
+        "license_url": "",
+        "readme_url": "https://github.com/bytedance/Ts_Online_Optimization/blob/timeoffset_optimization_online/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "基于 VINS-Mono、ROS Kinetic / Melodic 和 Ceres；需适配时间戳含义与硬件同步方式。",
+      "inputs": "图像、IMU",
+      "outputs": "时间偏移与运动状态"
+    },
+    {
+      "id": "miscalibration-detection",
+      "name": "MiscalibrationDetection",
+      "repository": "https://github.com/TUMFTM/MiscalibrationDetection",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "estimation",
+        "learned"
+      ],
+      "algorithms": [
+        "Contrastive learning",
+        "Miscalibration classification"
+      ],
+      "algorithm_summary": "对比学习、双模态特征分类",
+      "environments": [
+        "Python",
+        "Docker"
+      ],
+      "summary": "先用对比学习编码相机和激光观测，再训练分类器判断二者是否仍处于正确标定状态。",
+      "description": "先用对比学习编码相机和激光观测，再训练分类器判断二者是否仍处于正确标定状态。它提供训练、推理、KITTI 数据配置和 Docker 环境，可参考其低开销标定监测方式。输入依赖图像与三维点云，检测结果用于发现外参失效，重新估计外参仍需标定算法。",
+      "papers": [
+        {
+          "title": "Cal or No Cal? - Real-Time Miscalibration Detection of LiDAR and Camera Sensors",
+          "url": "https://ieeexplore.ieee.org/document/11246797/",
+          "publication": "IROS，2025",
+          "paper_codes": [
+            "V04"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "miscalibration-detection",
+      "github": {
+        "full_name": "TUMFTM/MiscalibrationDetection",
+        "url": "https://github.com/TUMFTM/MiscalibrationDetection",
+        "description": "Camera & LIDAR Miscalibration Detection Algorithm",
+        "archived": false,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/TUMFTM/MiscalibrationDetection/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖相机与三维点云；用于检测失标，重新估计外参仍需标定算法。",
+      "inputs": "图像、三维点云",
+      "outputs": "标定状态判断"
+    },
+    {
+      "id": "airslam",
+      "name": "AirSLAM",
+      "repository": "https://github.com/sair-lab/AirSLAM",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "mapping",
+        "learned"
+      ],
+      "algorithms": [
+        "Learned point-line features",
+        "Visual SLAM"
+      ],
+      "algorithm_summary": "学习点线特征、视觉 SLAM",
+      "environments": [
+        "ROS 1",
+        "CUDA / TensorRT"
+      ],
+      "summary": "使用学习得到的点线特征进行双目视觉定位，关注光照变化下的特征提取与匹配。",
+      "description": "使用学习得到的点线特征进行双目视觉定位，关注光照变化下的特征提取与匹配。可参考其前端匹配与推理部署方式，分析跟踪中断、漂移和计算时间。实现依赖 ROS 1、CUDA 和 TensorRT，需要配套 NVIDIA GPU。",
+      "papers": [
+        {
+          "title": "AirSLAM: An Efficient and Illumination-Robust Point-Line Visual SLAM System",
+          "url": "https://doi.org/10.1109/TRO.2025.3539171",
+          "publication": "IEEE T-RO，2025",
+          "paper_codes": [
+            "R05"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "airslam",
+      "github": {
+        "full_name": "sair-lab/AirSLAM",
+        "url": "https://github.com/sair-lab/AirSLAM",
+        "description": "[TRO 2025] AirVO upgrades to AirSLAM",
+        "archived": false,
+        "default_branch": "master",
+        "license": "GPL-3.0",
+        "license_url": "",
+        "readme_url": "https://github.com/sair-lab/AirSLAM/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖双目图像、ROS 1、CUDA 和 TensorRT；需要 NVIDIA GPU 与匹配的相机配置。",
+      "inputs": "双目图像",
+      "outputs": "位姿与地图"
+    },
+    {
+      "id": "se2lio",
+      "name": "SE2LIO",
+      "repository": "https://github.com/Jiaying001/SE2LIO",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "estimation"
+      ],
+      "algorithms": [
+        "LiDAR-inertial odometry",
+        "SE(2) constraints"
+      ],
+      "algorithm_summary": "激光惯性融合、SE(2) 运动约束",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "在激光惯性估计中引入 SE(2) 地面运动约束，利用车辆运动先验约束平面位置与航向。",
+      "description": "在激光惯性估计中引入 SE(2) 地面运动约束，利用车辆运动先验约束平面位置与航向。该约束在坡面和颠簸环境中的适用范围需要单独分析。实现使用多线三维雷达，不能直接替换 M10P 二维雷达定位。",
+      "papers": [
+        {
+          "title": "Versatile LiDAR-Inertial Odometry With SE(2) Constraints for Ground Vehicles",
+          "url": "https://doi.org/10.1109/LRA.2023.3268584",
+          "publication": "IEEE RA-L，2023",
+          "paper_codes": [
+            "N02"
+          ],
+          "year": "2023"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "se2lio",
+      "github": {
+        "full_name": "jiaying001/SE2LIO",
+        "url": "https://github.com/jiaying001/SE2LIO",
+        "description": "",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/jiaying001/SE2LIO/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "输入为三维雷达与 IMU，M10P 二维雷达不能直接替代；坡面需检查 SE(2) 假设。",
+      "inputs": "三维点云、IMU",
+      "outputs": "里程计"
+    },
+    {
+      "id": "mola",
+      "name": "MOLA",
+      "repository": "https://github.com/MOLAorg/mola",
+      "category": "localization",
+      "section": "定位与传感器融合",
+      "methods": [
+        "estimation",
+        "mapping"
+      ],
+      "algorithms": [
+        "Modular graph optimization"
+      ],
+      "algorithm_summary": "模块化定位与建图优化框架",
+      "environments": [
+        "ROS 2",
+        "C++"
+      ],
+      "summary": "将传感器输入、状态估计与地图处理组织为可组合模块，并提供 ROS 2 桥接。",
+      "description": "将传感器输入、状态估计与地图处理组织为可组合模块，并提供 ROS 2 桥接。可参考其模块接口搭建多种定位方案，减少更换算法时的重复适配；导航系统仍需配套里程计、地图算法和规划控制模块。",
+      "papers": [
+        {
+          "title": "A Modular Optimization Framework for Localization and Mapping",
+          "url": "https://doi.org/10.15607/RSS.2019.XV.043",
+          "publication": "RSS，2019",
+          "paper_codes": [],
+          "year": "2019"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "mola",
+      "github": {
+        "full_name": "MOLAorg/mola",
+        "url": "https://github.com/MOLAorg/mola",
+        "description": "A Modular Optimization framework for Localization and mApping (MOLA)",
+        "archived": false,
+        "default_branch": "develop",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/MOLAorg/mola/blob/develop/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "有 ROS 2 桥接；需要根据传感器选择模块，并配套地图、里程计和导航接口。",
+      "inputs": "传感器与模块配置",
+      "outputs": "定位与地图"
+    },
+    {
+      "id": "rtab-map",
+      "name": "RTAB-Map",
+      "repository": "https://github.com/introlab/rtabmap_ros",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "mapping"
+      ],
+      "algorithms": [
+        "Loop closure",
+        "Pose graph optimization",
+        "RGB-D odometry"
+      ],
+      "algorithm_summary": "回环检测、位姿图优化",
+      "environments": [
+        "ROS 2",
+        "ROS 1"
+      ],
+      "summary": "提供视觉里程计、回环检测、地图保存和重定位。",
+      "description": "提供视觉里程计、回环检测、地图保存和重定位。关键帧及其约束构成位姿图，回环后的图优化修正全局地图。它是 R680 视觉建图的直接参考，RGB-D 里程计支持灰度图像，可使用正确配准的红外与深度输入；局部里程计漂移和全局地图修正应分别分析。",
+      "papers": [
+        {
+          "title": "RTAB-Map as an Open-Source Lidar and Visual Simultaneous Localization and Mapping Library for Large-Scale and Long-Term Online Operation",
+          "url": "https://doi.org/10.1002/rob.21831",
+          "publication": "Journal of Field Robotics，2019",
+          "paper_codes": [],
+          "year": "2019"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "rtab-map",
+      "github": {
+        "full_name": "introlab/rtabmap_ros",
+        "url": "https://github.com/introlab/rtabmap_ros",
+        "description": "RTAB-Map's ROS package.",
+        "archived": false,
+        "default_branch": "ros2",
+        "license": "BSD-3-Clause",
+        "license_url": "",
+        "readme_url": "https://github.com/introlab/rtabmap_ros/blob/ros2/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "适合现有红外深度建图链路；需正确配准输入，区分局部里程计漂移与全局地图修正。",
+      "inputs": "图像、深度等观测",
+      "outputs": "轨迹、点云与占据地图"
+    },
+    {
+      "id": "slam_toolbox",
+      "name": "slam_toolbox",
+      "repository": "https://github.com/SteveMacenski/slam_toolbox",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "mapping"
+      ],
+      "algorithms": [
+        "Scan matching",
+        "Loop closure",
+        "Pose graph optimization"
+      ],
+      "algorithm_summary": "扫描匹配、回环检测、位姿图优化",
+      "environments": [
+        "ROS 2"
+      ],
+      "summary": "提供二维激光 SLAM、位姿图保存和定位模式，通过扫描匹配、回环与图优化改善地图一致性。",
+      "description": "提供二维激光 SLAM、位姿图保存和定位模式，通过扫描匹配、回环与图优化改善地图一致性。输入形式与 M10P 接近，可作为视觉建图的对比方法。占据地图与位姿图保存的信息不同，后续定位或继续建图时需要选用相应结果；R680 使用 Humble 对应版本。",
+      "papers": [
+        {
+          "title": "SLAM Toolbox: SLAM for the Dynamic World",
+          "url": "https://doi.org/10.21105/joss.02783",
+          "publication": "JOSS，2021",
+          "paper_codes": [],
+          "year": "2021"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "slam_toolbox",
+      "github": {
+        "full_name": "SteveMacenski/slam_toolbox",
+        "url": "https://github.com/SteveMacenski/slam_toolbox",
+        "description": "Slam Toolbox for lifelong mapping and localization in potentially massive maps with ROS",
+        "archived": false,
+        "default_branch": "ros2",
+        "license": "LGPL-2.1",
+        "license_url": "",
+        "readme_url": "https://github.com/SteveMacenski/slam_toolbox/blob/ros2/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "选择 Humble 对应版本；占据栅格与位姿图用途不同，继续建图需保留相应数据。",
+      "inputs": "二维雷达、里程计",
+      "outputs": "地图与定位"
+    },
+    {
+      "id": "kiss-slam",
+      "name": "KISS-SLAM",
+      "repository": "https://github.com/PRBonn/kiss-slam",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "mapping"
+      ],
+      "algorithms": [
+        "Point-to-point ICP",
+        "Loop closure",
+        "Pose graph optimization"
+      ],
+      "algorithm_summary": "点到点 ICP、局部地图回环、位姿图优化",
+      "environments": [
+        "Python",
+        "C++"
+      ],
+      "summary": "在 KISS-ICP 激光里程计上增加局部地图、密度投影回环匹配与位姿图优化，用较少的参数构建全局一致地图。",
+      "description": "在 KISS-ICP 激光里程计上增加局部地图、密度投影回环匹配与位姿图优化，用较少的参数构建全局一致地图。项目提供 Python 接口和命令行，论文实验对应 IROS25 标签，后续主分支仍在发展。它适合作为三维激光 SLAM 的几何基线；输入为三维点云，M10P 二维雷达需要选择其他方法，ROS 消息和地图接口也需另行衔接。",
+      "papers": [
+        {
+          "title": "KISS-SLAM: A Simple, Robust, and Accurate 3D LiDAR SLAM System With Enhanced Generalization Capabilities",
+          "url": "https://ieeexplore.ieee.org/document/11246613/",
+          "publication": "IROS，2025",
+          "paper_codes": [
+            "V07"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "kiss-slam",
+      "github": {
+        "full_name": "PRBonn/kiss-slam",
+        "url": "https://github.com/PRBonn/kiss-slam",
+        "description": "A LiDAR SLAM system that just works",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/PRBonn/kiss-slam/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖三维点云；论文实验对应 IROS25 标签，ROS 消息与地图接口需另行衔接。",
+      "inputs": "三维点云",
+      "outputs": "全局一致轨迹与地图"
+    },
+    {
+      "id": "hier-slam",
+      "name": "Hier-SLAM",
+      "repository": "https://github.com/LeeBY68/Hier-SLAM",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "mapping",
+        "learned"
+      ],
+      "algorithms": [
+        "Gaussian splatting",
+        "Hierarchical semantic encoding"
+      ],
+      "algorithm_summary": "分层语义编码、三维高斯表示",
+      "environments": [
+        "Python",
+        "CUDA / TensorRT"
+      ],
+      "summary": "将语义类别组织为层级树，在三维高斯表示中联合优化几何与语义信息，以紧凑编码支持较多类别。",
+      "description": "将语义类别组织为层级树，在三维高斯表示中联合优化几何与语义信息，以紧凑编码支持较多类别。公开实现包含 RGB-D 序列处理、语义树、跟踪建图和评测，可用于比较类别表示对地图存储与语义查询的影响。代码依赖 CUDA、PyTorch 及高斯光栅化扩展；R680 的红外与深度组合需要另行验证图像表征和语义模型的适用性。",
+      "papers": [
+        {
+          "title": "Hier-SLAM: Scaling-Up Semantics in SLAM with a Hierarchically Categorical Gaussian Splatting",
+          "url": "https://ieeexplore.ieee.org/document/11127775/",
+          "publication": "ICRA，2025",
+          "paper_codes": [
+            "V05"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "hier-slam",
+      "github": {
+        "full_name": "LeeBY68/Hier-SLAM",
+        "url": "https://github.com/LeeBY68/Hier-SLAM",
+        "description": "🌳 [ICRA'25] Hier-SLAM: Semantic Gaussian Splatting SLAM with Hierarchical Categorical Representation",
+        "archived": false,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/LeeBY68/Hier-SLAM/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖 RGB-D、CUDA 与高斯光栅化扩展；红外输入的语义表征效果需要验证。",
+      "inputs": "RGB-D",
+      "outputs": "位姿、几何与语义地图"
+    },
+    {
+      "id": "ngd-slam-slam",
+      "name": "NGD-SLAM",
+      "repository": "https://github.com/YuhaoZhang7/NGD-SLAM",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "mapping",
+        "learned"
+      ],
+      "algorithms": [
+        "Asynchronous detection",
+        "Dynamic region tracking",
+        "Visual SLAM"
+      ],
+      "algorithm_summary": "异步目标检测、动态区域跟踪、视觉 SLAM",
+      "environments": [
+        "C++"
+      ],
+      "summary": "结合异步目标检测与特征跟踪，将动态区域信息在相邻帧间传播，减少行人等运动物体对定位的干扰。",
+      "description": "结合异步目标检测与特征跟踪，将动态区域信息在相邻帧间传播，减少行人等运动物体对定位的干扰。检测和定位分开执行，可研究算力、掩码时效与跟踪稳定性的关系。检测代码使用 CPU 后端，实机示例采用彩色与深度输入，红外图像上的检测效果需要验证。",
+      "papers": [
+        {
+          "title": "NGD-SLAM: Towards Real-Time Dynamic SLAM without GPU",
+          "url": "https://doi.org/10.1109/IROS60139.2025.11246202",
+          "publication": "IROS，2025",
+          "paper_codes": [
+            "E19"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "ngd-slam-slam",
+      "github": {
+        "full_name": "yuhaozhang7/NGD-SLAM",
+        "url": "https://github.com/yuhaozhang7/NGD-SLAM",
+        "description": "[IROS 2025] NGD-SLAM: Towards Real-Time Dynamic SLAM without GPU",
+        "archived": false,
+        "default_branch": "main",
+        "license": "GPL-3.0",
+        "license_url": "",
+        "readme_url": "https://github.com/yuhaozhang7/NGD-SLAM/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "检测采用 CPU 后端；实机示例使用彩色与深度，红外检测效果需要另行验证。",
+      "inputs": "图像等观测",
+      "outputs": "轨迹与地图"
+    },
+    {
+      "id": "dynosam",
+      "name": "DynoSAM",
+      "repository": "https://github.com/ACFR-RPG/DynOSAM",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "mapping",
+        "learned"
+      ],
+      "algorithms": [
+        "Object association",
+        "Joint motion estimation",
+        "Smoothing"
+      ],
+      "algorithm_summary": "动态物体关联、联合运动估计与平滑优化",
+      "environments": [
+        "ROS 2",
+        "Python",
+        "C++"
+      ],
+      "summary": "联合估计相机与运动物体的轨迹，构建包含动态信息的地图。",
+      "description": "联合估计相机与运动物体的轨迹，构建包含动态信息的地图。它保留物体运动，与 NGD-SLAM 侧重动态区域剔除的方式不同，适合比较跨帧关联、运动建模的收益与计算代价。当前代码面向 ROS 2 Kilted，并依赖学习模型预处理，迁移 Humble 需要额外工作。",
+      "papers": [
+        {
+          "title": "DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM",
+          "url": "https://doi.org/10.1109/TRO.2025.3641813",
+          "publication": "IEEE T-RO，2026",
+          "paper_codes": [
+            "E15"
+          ],
+          "year": "2026"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "dynosam",
+      "github": {
+        "full_name": "ACFR-RPG/DynOSAM",
+        "url": "https://github.com/ACFR-RPG/DynOSAM",
+        "description": "Offical code release for DynoSAM: Dynamic Object Smoothing And Mapping. Accepted Transactions on Robotics (Visual SLAM SI). A visual SLAM framework and pipeline for Dynamic environements, estimating for the motion/pose of objects and their structure, as well as the camera odometry and static map.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "BSD-3-Clause",
+        "license_url": "",
+        "readme_url": "https://github.com/ACFR-RPG/DynOSAM/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "当前实现面向 ROS 2 Kilted，迁入 Humble 需处理依赖，并准备学习模型的预处理结果。",
+      "inputs": "图像、深度等观测",
+      "outputs": "相机及物体运动"
+    },
+    {
+      "id": "nvms-slam",
+      "name": "NVMS-SLAM",
+      "repository": "https://github.com/lian-yue0515/NVMS-SLAM",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "mapping"
+      ],
+      "algorithms": [
+        "Normal-vector constraints",
+        "Multi-session optimization"
+      ],
+      "algorithm_summary": "法向量几何约束、多会话优化",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "利用法向量等几何信息，对不同时间采集的室内三维激光轨迹与地图进行对齐和联合优化。",
+      "description": "利用法向量等几何信息，对不同时间采集的室内三维激光轨迹与地图进行对齐和联合优化。可用于研究重复巡检中的地图一致性。其输入依赖三维雷达，M10P 二维雷达数据不能直接替代。",
+      "papers": [
+        {
+          "title": "NVMS-SLAM: Normal Vector-Based Multi-Session LiDAR SLAM in Indoor Environments",
+          "url": "https://doi.org/10.1109/TASE.2026.3682733",
+          "publication": "IEEE T-ASE，2026",
+          "paper_codes": [
+            "S01"
+          ],
+          "year": "2026"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "nvms-slam",
+      "github": {
+        "full_name": "lian-yue0515/NVMS-SLAM",
+        "url": "https://github.com/lian-yue0515/NVMS-SLAM",
+        "description": " a normal vector-based multi-session LiDAR SLAM system tailored for indoor environments",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/lian-yue0515/NVMS-SLAM/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "面向多会话三维雷达数据，M10P 二维雷达不能直接替代。",
+      "inputs": "多次三维雷达轨迹",
+      "outputs": "一致地图"
+    },
+    {
+      "id": "m-explore-ros2",
+      "name": "m-explore-ros2",
+      "repository": "https://github.com/robo-friends/m-explore-ros2",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "planning",
+        "mapping"
+      ],
+      "algorithms": [
+        "Frontier exploration",
+        "Map merging"
+      ],
+      "algorithm_summary": "前沿提取与目标选择、地图合并",
+      "environments": [
+        "ROS 2"
+      ],
+      "summary": "提供基于占据栅格的前沿探索与多机器人地图合并。",
+      "description": "提供基于占据栅格的前沿探索与多机器人地图合并。前沿是已知自由空间与未知区域的交界，可据此生成探索目标。R680 可复用现有地图与 Nav2，但目标必须满足车辆可达性；多机器人地图合并还需要共同坐标系，地图配准误差与协同定位精度应分别评价。",
+      "papers": [],
+      "resources": [],
+      "chapter_anchor": "m-explore-ros2",
+      "github": {
+        "full_name": "robo-friends/m-explore-ros2",
+        "url": "https://github.com/robo-friends/m-explore-ros2",
+        "description": "Explore_lite port to ROS2",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/robo-friends/m-explore-ros2/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "可对接占据地图与 Nav2；需筛除车辆不可达前沿，多机合图还需共同坐标系。",
+      "inputs": "占据栅格",
+      "outputs": "探索目标与合并地图"
+    },
+    {
+      "id": "fit-slam-2",
+      "name": "FIT-SLAM 2",
+      "repository": "https://github.com/suchetanrs/FIT-SLAM",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "planning",
+        "mapping"
+      ],
+      "algorithms": [
+        "Fisher information",
+        "Traversability",
+        "Adaptive roadmap"
+      ],
+      "algorithm_summary": "前沿探索、Fisher 信息、可通行性评价",
+      "environments": [
+        "ROS 2"
+      ],
+      "summary": "在探索选路中同时考虑未知区域、地形可通行性和视觉定位信息。",
+      "description": "在探索选路中同时考虑未知区域、地形可通行性和视觉定位信息。Fisher 信息用于衡量预期观测对定位的约束能力，因此选路既考虑覆盖范围，也考虑途中定位质量。项目面向 Humble，依赖三维几何与 SLAM 地标接口；用于 R680 时需要适配地图输入、Nav2 目标和车辆可达性，并替换原地旋转动作。",
+      "papers": [
+        {
+          "title": "FIT-SLAM 2: Efficient 3D Exploration with Fisher Information and Traversability-Based Adaptive Roadmap",
+          "url": "https://doi.org/10.1016/j.robot.2025.105188",
+          "publication": "Robotics and Autonomous Systems，2025",
+          "paper_codes": [
+            "E13"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "fit-slam-2",
+      "github": {
+        "full_name": "suchetanrs/FIT-SLAM",
+        "url": "https://github.com/suchetanrs/FIT-SLAM",
+        "description": "",
+        "archived": false,
+        "default_branch": "master",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/suchetanrs/FIT-SLAM/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "面向 Humble，依赖三维几何与 SLAM 地标；需适配车辆可达性并替换原地旋转。",
+      "inputs": "地图与定位信息",
+      "outputs": "探索路线与目标"
+    },
+    {
+      "id": "ariadne",
+      "name": "ARiADNE",
+      "repository": "https://github.com/marmotlab/ARiADNE",
+      "category": "mapping",
+      "section": "建图与自主探索",
+      "methods": [
+        "drl",
+        "planning"
+      ],
+      "algorithms": [
+        "SAC",
+        "Attention graph network",
+        "Information gain"
+      ],
+      "algorithm_summary": "SAC、注意力图网络、信息增益",
+      "environments": [
+        "Python",
+        "ROS 2"
+      ],
+      "summary": "在部分已知地图上建立带有前沿信息的图，用注意力网络与 SAC 学习长期覆盖效率，逐步选择下一探索航点。",
+      "description": "在部分已知地图上建立带有前沿信息的图，用注意力网络与 SAC 学习长期覆盖效率，逐步选择下一探索航点。作者提供训练和模型，独立的 ROS 实现 提供 Humble 分支，需与 SLAM 和航点跟随器配合。可用于比较学习选点与最近前沿；地图输入、传感器范围和车辆可达性仍需适配。",
+      "papers": [
+        {
+          "title": "ARiADNE: A Reinforcement learning approach using Attention-based Deep Networks for Exploration",
+          "url": "https://doi.org/10.1109/icra48891.2023.10160565",
+          "publication": "ICRA，2023",
+          "paper_codes": [
+            "D01"
+          ],
+          "year": "2023"
+        }
+      ],
+      "resources": [
+        {
+          "label": "ROS 实现",
+          "url": "https://github.com/marmotlab/ARiADNE-ROS-Planner/tree/humble"
+        }
+      ],
+      "chapter_anchor": "ariadne",
+      "github": {
+        "full_name": "marmotlab/ARiADNE",
+        "url": "https://github.com/marmotlab/ARiADNE",
+        "description": "[ICRA 2023] ARiADNE: A Reinforcement learning approach using Attention-based Deep Networks for Exploration - Public code and model",
+        "archived": false,
+        "default_branch": "new_version",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/marmotlab/ARiADNE/blob/new_version/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "ROS 实现在独立仓库的 humble 分支；需配套 SLAM 和航点跟随器，适配传感器范围与车辆可达性。",
+      "inputs": "局部地图与前沿图",
+      "outputs": "下一探索航点"
+    },
+    {
+      "id": "nav2",
+      "name": "Nav2",
+      "repository": "https://github.com/ros-navigation/navigation2",
+      "category": "planning",
+      "section": "54.3.1 几何规划与优化控制",
+      "methods": [
+        "planning"
+      ],
+      "algorithms": [
+        "Smac Hybrid-A*",
+        "MPPI",
+        "Behavior trees"
+      ],
+      "algorithm_summary": "Smac Hybrid-A*、MPPI、行为树",
+      "environments": [
+        "ROS 2"
+      ],
+      "summary": "通过插件组织全局规划、局部控制、代价地图和行为树；行为树管理重规划、等待与恢复。",
+      "description": "通过插件组织全局规划、局部控制、代价地图和行为树；行为树管理重规划、等待与恢复。R680 当前使用 Smac Hybrid-A* 与 MPPI，车体轮廓、最小转弯半径和恢复动作均需符合 Ackermann 约束。插件接口可用于替换单个规划器或控制器；系统论文介绍整体架构，各插件的方法需结合其实现理解。",
+      "papers": [
+        {
+          "title": "The Marathon 2: A Navigation System",
+          "url": "https://arxiv.org/abs/2003.00368",
+          "publication": "IROS，2020",
+          "paper_codes": [],
+          "year": "2020"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "nav2",
+      "github": {
+        "full_name": "ros-navigation/navigation2",
+        "url": "https://github.com/ros-navigation/navigation2",
+        "description": "ROS 2 Navigation Framework and System",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/ros-navigation/navigation2/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "R680 使用 Smac Hybrid-A* 与 MPPI；车体轮廓、转弯半径与恢复动作必须符合 Ackermann 约束。",
+      "inputs": "地图、位姿、目标",
+      "outputs": "路径与控制指令"
+    },
+    {
+      "id": "mpc_planner",
+      "name": "mpc_planner",
+      "repository": "https://github.com/tud-amr/mpc_planner",
+      "category": "planning",
+      "section": "54.3.1 几何规划与优化控制",
+      "methods": [
+        "planning"
+      ],
+      "algorithms": [
+        "MPC",
+        "Topology-guided trajectory optimization"
+      ],
+      "algorithm_summary": "拓扑候选、并行轨迹优化、模型预测控制（MPC）",
+      "environments": [
+        "ROS 2",
+        "ROS 1",
+        "C++"
+      ],
+      "summary": "在有限预测时域内优化运动，通过不同绕障方向的候选轨迹与并行求解减少局部路线限制。",
+      "description": "在有限预测时域内优化运动，通过不同绕障方向的候选轨迹与并行求解减少局部路线限制。它适合研究动态障碍下的路线选择，以及动力学、代价和障碍约束对决策的影响。示例独轮车模型需要替换为汽车模型，求解器选择也会影响部署成本。",
+      "papers": [
+        {
+          "title": "Topology-Driven Parallel Trajectory Optimization in Dynamic Environments",
+          "url": "https://doi.org/10.1109/TRO.2024.3475047",
+          "publication": "IEEE T-RO，2025",
+          "paper_codes": [
+            "S09"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "mpc_planner",
+      "github": {
+        "full_name": "tud-amr/mpc_planner",
+        "url": "https://github.com/tud-amr/mpc_planner",
+        "description": "An MPC Motion Planner in ROS/C++",
+        "archived": false,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/tud-amr/mpc_planner/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "示例独轮车模型需要替换为汽车模型；Acados 与 Forces Pro 的依赖和授权条件不同。",
+      "inputs": "机器人与障碍状态",
+      "outputs": "控制轨迹"
+    },
+    {
+      "id": "pytorch_mppi",
+      "name": "pytorch_mppi",
+      "repository": "https://github.com/UM-ARM-Lab/pytorch_mppi",
+      "category": "planning",
+      "section": "54.3.1 几何规划与优化控制",
+      "methods": [
+        "planning"
+      ],
+      "algorithms": [
+        "MPPI",
+        "Sampling-based optimal control"
+      ],
+      "algorithm_summary": "模型预测路径积分控制（MPPI）",
+      "environments": [
+        "Python"
+      ],
+      "summary": "用 PyTorch 采样多组控制序列，经动力学模型预测轨迹，再按代价加权更新控制。",
+      "description": "用 PyTorch 采样多组控制序列，经动力学模型预测轨迹，再按代价加权更新控制。动力学、障碍代价和控制平滑项由使用者定义，便于修改车辆模型并与 Nav2 MPPI 对照。它是算法库，ROS 接口需要另行实现；下列论文为 MPPI 方法背景。",
+      "papers": [
+        {
+          "title": "Information Theoretic MPC for Model-Based Reinforcement Learning",
+          "url": "https://doi.org/10.1109/ICRA.2017.7989202",
+          "publication": "ICRA，2017；仓库采用的 MPPI 方法参考",
+          "paper_codes": [],
+          "year": "2017"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "pytorch_mppi",
+      "github": {
+        "full_name": "UM-ARM-Lab/pytorch_mppi",
+        "url": "https://github.com/UM-ARM-Lab/pytorch_mppi",
+        "description": "Model Predictive Path Integral (MPPI) with approximate dynamics implemented in pytorch",
+        "archived": false,
+        "default_branch": "master",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/UM-ARM-Lab/pytorch_mppi/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "提供算法接口；车辆动力学、代价函数与 ROS 通信需要自行实现。",
+      "inputs": "动力学、状态与代价",
+      "outputs": "控制序列"
+    },
+    {
+      "id": "circulation-embedded-cbf",
+      "name": "Circulation-embedded CBF",
+      "repository": "https://github.com/sh-keyumarsi/Circulation-embedded-CBF",
+      "category": "planning",
+      "section": "54.3.1 几何规划与优化控制",
+      "methods": [
+        "planning"
+      ],
+      "algorithms": [
+        "CBF",
+        "Circulation guidance"
+      ],
+      "algorithm_summary": "控制障碍函数、绕行引导",
+      "environments": [
+        "Python"
+      ],
+      "summary": "将安全距离写成控制障碍函数（CBF）约束，并加入沿障碍侧面绕行的机制，缓解停在障碍前的局部死锁。",
+      "description": "将安全距离写成控制障碍函数（CBF）约束，并加入沿障碍侧面绕行的机制，缓解停在障碍前的局部死锁。可参考其约束构造、绕行方向与状态管理。原有单积分器模型和独轮车映射不直接适用于 Ackermann 底盘，安全结论需要按车辆模型重新分析。",
+      "papers": [
+        {
+          "title": "Circulation-Embedded Control Barrier Function for Safe Navigation: A Solution to Avoid Undesired Equilibria and Dysfunctional Circulation",
+          "url": "https://doi.org/10.1016/j.robot.2025.105132",
+          "publication": "Robotics and Autonomous Systems，2025",
+          "paper_codes": [
+            "E22"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "circulation-embedded-cbf",
+      "github": {
+        "full_name": "sh-keyumarsi/Circulation-embedded-CBF",
+        "url": "https://github.com/sh-keyumarsi/Circulation-embedded-CBF",
+        "description": "This repository provides a simulation reproducing the experiments from https://doi.org/10.1016/j.robot.2025.105132, including the simulator, source code, and data.  Contains two scenarios, nonconvex obstacle avoidance and multi-agent deadlock resolution using IBCECBFQP, each runnable via lidar_gp_cbf/sim2D_main.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/sh-keyumarsi/Circulation-embedded-CBF/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "原有单积分器和独轮车映射需改为车辆模型；安全约束需按 Ackermann 动力学重新分析。",
+      "inputs": "目标与障碍几何",
+      "outputs": "避障控制"
+    },
+    {
+      "id": "cvf-motion-planning",
+      "name": "CVF motion planning",
+      "repository": "https://github.com/Y1kee/CVF-for-Nonholonomic-Motion-Planning",
+      "category": "planning",
+      "section": "54.3.1 几何规划与优化控制",
+      "methods": [
+        "planning"
+      ],
+      "algorithms": [
+        "Curvature-constrained vector field"
+      ],
+      "algorithm_summary": "曲率约束向量场",
+      "environments": [
+        "MATLAB",
+        "ROS 1"
+      ],
+      "summary": "以向量场给出各位置的引导方向，并通过曲率约束限制方向变化，使规划考虑非完整机器人转弯能力。",
+      "description": "以向量场给出各位置的引导方向，并通过曲率约束限制方向变化，使规划考虑非完整机器人转弯能力。它将车辆约束融入引导规律，便于分析几何可达性与轨迹可跟踪性的关系。项目以 MATLAB/Simulink 为主，提供 ROS 1 Ackermann 示例。",
+      "papers": [
+        {
+          "title": "Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots",
+          "url": "https://doi.org/10.1109/TRO.2025.3644358",
+          "publication": "IEEE T-RO，2026",
+          "paper_codes": [
+            "S07"
+          ],
+          "year": "2026"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "cvf-motion-planning",
+      "github": {
+        "full_name": "Y1kee/CVF-for-Nonholonomic-Motion-Planning",
+        "url": "https://github.com/Y1kee/CVF-for-Nonholonomic-Motion-Planning",
+        "description": "Source code of our IEEE T-RO paper \"Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots\"",
+        "archived": false,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/Y1kee/CVF-for-Nonholonomic-Motion-Planning/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "MATLAB / Simulink 实现，实机示例使用 ROS Noetic；需匹配转向约束和接口。",
+      "inputs": "目标与障碍",
+      "outputs": "车辆运动引导"
+    },
+    {
+      "id": "accelerated-rs-planner-reedsshepp",
+      "name": "accelerated-RS-planner",
+      "repository": "https://github.com/IbrahimSquared/accelerated-RS-planner",
+      "category": "planning",
+      "section": "54.3.1 几何规划与优化控制",
+      "methods": [
+        "planning"
+      ],
+      "algorithms": [
+        "Reeds-Shepp",
+        "Curvature-constrained planning"
+      ],
+      "algorithm_summary": "加速 Reeds–Shepp 路径计算",
+      "environments": [
+        "C++"
+      ],
+      "summary": "根据起终位姿与最小转弯半径，计算允许前进和倒车的 Reeds–Shepp 直线圆弧连接。",
+      "description": "根据起终位姿与最小转弯半径，计算允许前进和倒车的 Reeds–Shepp 直线圆弧连接。可作为搜索规划器直接连接目标的几何模块，并分析倒车对狭窄空间可达性的影响。完整绕障规划还需要地图搜索与碰撞检测。",
+      "papers": [
+        {
+          "title": "Accelerated Reeds–Shepp and Underspecified Reeds–Shepp Algorithms for Mobile Robot Path Planning",
+          "url": "https://doi.org/10.1109/TRO.2025.3554406",
+          "publication": "IEEE T-RO，2025",
+          "paper_codes": [
+            "SC-P191"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "accelerated-rs-planner-reedsshepp",
+      "github": {
+        "full_name": "IbrahimSquared/accelerated-RS-planner",
+        "url": "https://github.com/IbrahimSquared/accelerated-RS-planner",
+        "description": "Freespace Reeds-Shepp planner that is an order of magnitude faster than OMPL's implementation with no compromise, no parallelization, and no multi-threading.",
+        "archived": false,
+        "default_branch": "master",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/IbrahimSquared/accelerated-RS-planner/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "路径由直线和圆弧组成；还需碰撞检测、速度规划与控制跟踪。",
+      "inputs": "起终位姿、转弯半径",
+      "outputs": "直线圆弧路径"
+    },
+    {
+      "id": "drl-sfm",
+      "name": "DRL-SFM",
+      "repository": "https://github.com/FAU-FAPS/DRL-SFM",
+      "category": "planning",
+      "section": "人群交互与社会导航",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "SAC",
+        "Social forces",
+        "Costmap observations"
+      ],
+      "algorithm_summary": "SAC、社会力与局部代价地图",
+      "environments": [
+        "ROS 2",
+        "Python"
+      ],
+      "summary": "使用 Stable-Baselines3 SAC 学习社会导航，通过社会力相关观测和奖励描述人群交互。",
+      "description": "使用 Stable-Baselines3 SAC 学习社会导航，通过社会力相关观测和奖励描述人群交互。公开资源包含 HuNavSim / Gazebo 训练、预训练模型、固定路径及多环境评估，并提供输出 Twist 的 nav2_rl_controller 插件。环境基于 Ubuntu 22.04、ROS 2 Humble、PyTorch 和 CUDA，依赖特定 HuNavSim 分支。公开仓库采用 MIT 许可证，完整日志功能涉及私有分支。策略训练需要纳入 R680 的转弯半径、转向速率和低速行为，仅对输出限幅可能改变避障表现。",
+      "papers": [
+        {
+          "title": "DRL-SFM: Learning Social Navigation from Costmaps and Social Forces for Mobile Robots and Intelligent Wheelchairs",
+          "url": "https://doi.org/10.1109/icra57385.2026.11697464",
+          "publication": "ICRA，2026",
+          "paper_codes": [
+            "H11"
+          ],
+          "year": "2026"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "drl-sfm",
+      "github": {
+        "full_name": "FAU-FAPS/DRL-SFM",
+        "url": "https://github.com/FAU-FAPS/DRL-SFM",
+        "description": "",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/FAU-FAPS/DRL-SFM/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "有 Humble 的 Nav2 控制器接口；训练时应纳入转弯半径、转向速率与低速行为。",
+      "inputs": "局部代价地图、目标、社会信息",
+      "outputs": "线速度与角速度"
+    },
+    {
+      "id": "gen-safe-nav",
+      "name": "GenSafeNav",
+      "repository": "https://github.com/tasl-lab/GenSafeNav",
+      "category": "planning",
+      "section": "人群交互与社会导航",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "PPO",
+        "PPO-Lagrangian",
+        "Adaptive conformal inference"
+      ],
+      "algorithm_summary": "PPO / PPO-Lagrangian、自适应共形推断",
+      "environments": [
+        "Python",
+        "Docker",
+        "ROS 2"
+      ],
+      "summary": "用 Gumbel Social Transformer 预测人群轨迹，通过 DtACI 自适应共形推断估计不确定性，再以约束强化学习调整导航行为。",
+      "description": "用 Gumbel Social Transformer 预测人群轨迹，通过 DtACI 自适应共形推断估计不确定性，再以约束强化学习调整导航行为。训练仓库提供训练、测试、可视化脚本和预训练模型，Docker 示例基于 PyTorch 2.3.1 / CUDA 12.1。独立的 ROS 2 实现 使用 DR-SPAAM 检测与 SORT 跟踪，在 Foxy 上测试，Humble 兼容性需要验证。二维雷达的分辨率、视场和遮挡会影响检测与预测质量。训练仓库采用 MIT 许可证，部署仓库采用 GPL-3.0。",
+      "papers": [
+        {
+          "title": "Towards Generalizable Safety in Crowd Navigation via Conformal Uncertainty Handling",
+          "url": "https://proceedings.mlr.press/v305/yao25a.html",
+          "publication": "CoRL，2025",
+          "paper_codes": [
+            "S48"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [
+        {
+          "label": "ROS 2 实现",
+          "url": "https://github.com/tasl-lab/GenSafeNav-ROS2"
+        }
+      ],
+      "chapter_anchor": "gen-safe-nav",
+      "github": {
+        "full_name": "tasl-lab/GenSafeNav",
+        "url": "https://github.com/tasl-lab/GenSafeNav",
+        "description": "Codebase for \"Towards Generalizable Safety in Crowd Navigation via Conformal Uncertainty Handling\" [CoRL 2025].",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/tasl-lab/GenSafeNav/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "独立部署仓库在 Foxy 上测试，Humble 兼容性需验证；检测与跟踪质量影响安全表现。",
+      "inputs": "人群预测及不确定性",
+      "outputs": "导航动作"
+    },
+    {
+      "id": "crowdnav-plus-plus",
+      "name": "CrowdNav++",
+      "repository": "https://github.com/Shuijing725/CrowdNav_Prediction_AttnGraph",
+      "category": "planning",
+      "section": "人群交互与社会导航",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "PPO",
+        "Recurrent interaction graph",
+        "Trajectory prediction"
+      ],
+      "algorithm_summary": "PPO、循环交互图、注意力与轨迹预测",
+      "environments": [
+        "Python"
+      ],
+      "summary": "用循环图网络区分人与人、人与机器人的交互，以注意力聚合信息，再将行人未来轨迹加入 PPO 的观测与奖励，减少机器人穿越行人预期路线的行为。",
+      "description": "用循环图网络区分人与人、人与机器人的交互，以注意力聚合信息，再将行人未来轨迹加入 PPO 的观测与奖励，减少机器人穿越行人预期路线的行为。作者提供训练、测试、预训练模型和独立的 TurtleBot 实机迁移示例；轨迹预测器的训练代码位于独立 GST 项目。主实现使用 PyTorch 与 Python-RVO2，车辆部署还需处理行人跟踪和 Ackermann 动作约束。",
+      "papers": [
+        {
+          "title": "Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph",
+          "url": "https://doi.org/10.1109/icra48891.2023.10160660",
+          "publication": "ICRA，2023",
+          "paper_codes": [
+            "D02"
+          ],
+          "year": "2023"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "crowdnav-plus-plus",
+      "github": {
+        "full_name": "Shuijing725/CrowdNav_Prediction_AttnGraph",
+        "url": "https://github.com/Shuijing725/CrowdNav_Prediction_AttnGraph",
+        "description": "[ICRA 2023] Intention Aware Robot Crowd Navigation with Attention-Based Interaction Graph",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/Shuijing725/CrowdNav_Prediction_AttnGraph/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "需提供行人检测与跟踪，并将策略动作转换为车辆可执行的转向和速度。",
+      "inputs": "人群历史、预测轨迹、目标",
+      "outputs": "导航动作"
+    },
+    {
+      "id": "pas-crowdnav",
+      "name": "PaS",
+      "repository": "https://github.com/yejimun/PaS_CrowdNav",
+      "category": "planning",
+      "section": "人群交互与社会导航",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "PPO",
+        "VAE",
+        "Occlusion inference"
+      ],
+      "algorithm_summary": "VAE 遮挡推断、PPO",
+      "environments": [
+        "Python"
+      ],
+      "summary": "把已观测行人的避让行为作为遮挡区域的间接线索，用变分自编码器（VAE）学习局部占据表示，再以 PPO 训练避障策略。",
+      "description": "把已观测行人的避让行为作为遮挡区域的间接线索，用变分自编码器（VAE）学习局部占据表示，再以 PPO 训练避障策略。公开实现包含数据采集、VAE 预训练和策略训练测试，论文在 TurtleBot 2i 上展示了迁移。它适合研究门口、拐角与人群遮挡；原版环境基于 Python-RVO2，感知栅格和车辆运动模型需要配套适配。",
+      "papers": [
+        {
+          "title": "Occlusion-Aware Crowd Navigation Using People as Sensors",
+          "url": "https://doi.org/10.1109/icra48891.2023.10160715",
+          "publication": "ICRA，2023",
+          "paper_codes": [
+            "D03"
+          ],
+          "year": "2023"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "pas-crowdnav",
+      "github": {
+        "full_name": "yejimun/PaS_CrowdNav",
+        "url": "https://github.com/yejimun/PaS_CrowdNav",
+        "description": "Occlusion-Aware Crowd Navigation Using People as Sensors: ICRA2023",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/yejimun/PaS_CrowdNav/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "基于 Python-RVO2；部署需要配套局部感知栅格与车辆运动模型。",
+      "inputs": "局部占据栅格序列、机器人状态",
+      "outputs": "导航动作"
+    },
+    {
+      "id": "navistar",
+      "name": "NaviSTAR",
+      "repository": "https://github.com/SMARTlab-Purdue/SAN-NaviSTAR",
+      "category": "planning",
+      "section": "人群交互与社会导航",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "SAC",
+        "Spatio-temporal graph Transformer",
+        "Preference learning"
+      ],
+      "algorithm_summary": "时空图 Transformer、偏好奖励学习、SAC",
+      "environments": [
+        "Python"
+      ],
+      "summary": "用时空图 Transformer 编码人群交互，通过人工偏好学习奖励，再以 SAC 优化社会导航策略。",
+      "description": "用时空图 Transformer 编码人群交互，通过人工偏好学习奖励，再以 SAC 优化社会导航策略。代码提供 SAC、PPO 对照入口和预训练模型，依赖 PyTorch 与 Python-RVO2。可参考其交互编码、偏好奖励与社会评价指标；公开训练环境使用抽象行人状态，接入雷达或视觉检测后仍需处理状态估计误差。",
+      "papers": [
+        {
+          "title": "NaviSTAR: Socially Aware Robot Navigation with Hybrid Spatio-Temporal Graph Transformer and Preference Learning",
+          "url": "https://doi.org/10.1109/iros55552.2023.10341395",
+          "publication": "IROS，2023",
+          "paper_codes": [
+            "D08"
+          ],
+          "year": "2023"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "navistar",
+      "github": {
+        "full_name": "SMARTlab-IU/SAN-NaviSTAR",
+        "url": "https://github.com/SMARTlab-IU/SAN-NaviSTAR",
+        "description": "This repository contains the source code for our paper: \"NaviSTAR: Socially Aware Robot Navigation with Hybrid Spatio-Temporal Graph Transformer and Preference Learning\". For more details, please refer to our project website at https://sites.google.com/view/san-navistar.",
+        "archived": false,
+        "default_branch": "master",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/SMARTlab-IU/SAN-NaviSTAR/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "训练使用抽象行人状态；接入真实感知后需重新评价状态误差与社会导航指标。",
+      "inputs": "人群与机器人动态特征",
+      "outputs": "导航动作"
+    },
+    {
+      "id": "stranger-danger",
+      "name": "Stranger Danger",
+      "repository": "https://github.com/sarapohland/stranger-danger",
+      "category": "planning",
+      "section": "人群交互与社会导航",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "SARL",
+        "Unpredictability estimation",
+        "Reward shaping"
+      ],
+      "algorithm_summary": "SARL、行人不可预测性估计与奖励",
+      "environments": [
+        "Python"
+      ],
+      "summary": "在社会注意力强化学习（SARL）中加入行人不可预测性特征，并通过行人行为扰动和奖励设计，让策略对陌生行为保持更大距离。",
+      "description": "在社会注意力强化学习（SARL）中加入行人不可预测性特征，并通过行人行为扰动和奖励设计，让策略对陌生行为保持更大距离。代码包含行人数据生成、不确定性网络、导航策略训练及测试，基于 Python 3.6 与 Python-RVO2。可用于研究训练中少见的突然转向或异常行走；这是对 SARL 的扩展，移植时需要同时考虑特征估计与奖励。",
+      "papers": [
+        {
+          "title": "Stranger Danger! Identifying and Avoiding Unpredictable Pedestrians in RL-based Social Robot Navigation",
+          "url": "https://doi.org/10.1109/icra57147.2024.10610413",
+          "publication": "ICRA，2024",
+          "paper_codes": [
+            "D05"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "stranger-danger",
+      "github": {
+        "full_name": "sarapohland/stranger-danger",
+        "url": "https://github.com/sarapohland/stranger-danger",
+        "description": "Identifying and Avoiding Unpredictable Pedestrians in RL-based Social Robot Navigation",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/sarapohland/stranger-danger/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "基于 Python 3.6 与 Python-RVO2；移植时需同时保留不可预测性特征与奖励设计。",
+      "inputs": "人群状态、不可预测性特征",
+      "outputs": "避障动作"
+    },
+    {
+      "id": "hyp2nav",
+      "name": "Hyp2Nav",
+      "repository": "https://github.com/GDam90/hyp2nav",
+      "category": "planning",
+      "section": "人群交互与社会导航",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "Hyperbolic value network",
+        "Tree search",
+        "Intrinsic curiosity"
+      ],
+      "algorithm_summary": "双曲价值网络、树搜索、内在好奇心奖励",
+      "environments": [
+        "Python"
+      ],
+      "summary": "在双曲空间中表示状态价值与好奇心信号，结合树搜索选择避障动作，以较小的表示维度研究人群决策。",
+      "description": "在双曲空间中表示状态价值与好奇心信号，结合树搜索选择避障动作，以较小的表示维度研究人群决策。官方 PyTorch 实现提供训练、测试和不同嵌入维度的配置，依赖 Geoopt、Python-RVO2 等组件。适合比较网络表示、内在奖励和计算开销；论文主要验证仿真人群导航，离散速度动作需要转换为车辆可执行控制。",
+      "papers": [
+        {
+          "title": "Hyp2Nav: Hyperbolic Planning and Curiosity for Crowd Navigation",
+          "url": "https://doi.org/10.1109/iros58592.2024.10801513",
+          "publication": "IROS，2024",
+          "paper_codes": [
+            "D09"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "hyp2nav",
+      "github": {
+        "full_name": "GDam90/hyp2nav",
+        "url": "https://github.com/GDam90/hyp2nav",
+        "description": "The official PyTorch implementation of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2024 paper Hyp²Nav: Hyperbolic Planning and Curiosity for Crowd Navigation.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/GDam90/hyp2nav/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "主要验证仿真人群导航；需要 Geoopt / Python-RVO2，并将离散动作转换为车辆可执行控制。",
+      "inputs": "人群与机器人状态",
+      "outputs": "离散运动动作"
+    },
+    {
+      "id": "context-aware-navigation",
+      "name": "Context-Aware Navigation",
+      "repository": "https://github.com/marmotlab/Context_Aware_Navigation",
+      "category": "planning",
+      "section": "未知环境导航与重规划",
+      "methods": [
+        "drl",
+        "planning"
+      ],
+      "algorithms": [
+        "SAC",
+        "Attention graph network",
+        "Graph sparsification"
+      ],
+      "algorithm_summary": "SAC、注意力图网络、图稀疏化",
+      "environments": [
+        "Python"
+      ],
+      "summary": "在不断扩展的局部地图上构建图，用注意力网络汇集不同空间尺度的信息，以 SAC 学习下一航点；图稀疏化减少大范围导航的计算量。",
+      "description": "在不断扩展的局部地图上构建图，用注意力网络汇集不同空间尺度的信息，以 SAC 学习下一航点；图稀疏化减少大范围导航的计算量。作者提供训练、测试、模型和地图，论文还包含 Gazebo 与实机验证。它面向已知目标位置的未知环境导航，可与 Nav2 局部控制配合，但仍需要从雷达、定位和地图构造一致的图表示。",
+      "papers": [
+        {
+          "title": "Context-Aware Deep Reinforcement Learning for Autonomous Robotic Navigation in Unknown Area",
+          "url": "https://proceedings.mlr.press/v229/liang23a.html",
+          "publication": "CoRL，2023",
+          "paper_codes": [
+            "D10"
+          ],
+          "year": "2023"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "context-aware-navigation",
+      "github": {
+        "full_name": "marmotlab/Context_Aware_Navigation",
+        "url": "https://github.com/marmotlab/Context_Aware_Navigation",
+        "description": "[CoRL 2023] Context-Aware Deep Reinforcement Learning for Autonomous Robotic Navigation in Unknown Area - - Public code and model",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/marmotlab/Context_Aware_Navigation/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "策略输出航点；需要由雷达、定位和地图构造一致的图表示，并配套局部控制器。",
+      "inputs": "局部已知地图、目标与图节点",
+      "outputs": "下一航点"
+    },
+    {
+      "id": "when2replan",
+      "name": "When2Replan",
+      "repository": "https://github.com/omron-sinicx/when2replan",
+      "category": "planning",
+      "section": "未知环境导航与重规划",
+      "methods": [
+        "drl",
+        "planning"
+      ],
+      "algorithms": [
+        "DQN",
+        "Hierarchical replanning"
+      ],
+      "algorithm_summary": "DQN、分层规划",
+      "environments": [
+        "Python"
+      ],
+      "summary": "用深度 Q 网络（DQN）决定是否重新调用全局规划器，在环境变化时权衡保留路径与更新路径。",
+      "description": "用深度 Q 网络（DQN）决定是否重新调用全局规划器，在环境变化时权衡保留路径与更新路径。作者提供二维仿真、训练、评估和预训练模型，示例组合 Dijkstra 与 DWA；项目使用 Stable-Baselines3。它适合参考 Nav2 行为树中的重规划触发逻辑，策略本身不生成底盘速度，学习结果与所配套的规划器和场景有关。",
+      "papers": [
+        {
+          "title": "When to Replan? An Adaptive Replanning Strategy for Autonomous Navigation using Deep Reinforcement Learning",
+          "url": "https://doi.org/10.1109/icra57147.2024.10611474",
+          "publication": "ICRA，2024",
+          "paper_codes": [
+            "D06"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "when2replan",
+      "github": {
+        "full_name": "omron-sinicx/when2replan",
+        "url": "https://github.com/omron-sinicx/when2replan",
+        "description": "",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/omron-sinicx/when2replan/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "决定是否重规划，不生成底盘速度；接入 Nav2 时需固定所配套的规划器与评测场景。",
+      "inputs": "当前观测与参考路径",
+      "outputs": "是否重新全局规划"
+    },
+    {
+      "id": "scalenav",
+      "name": "ScaleNav",
+      "repository": "https://github.com/KubeEdge4Robotics/ScaleNav",
+      "category": "planning",
+      "section": "未知环境导航与重规划",
+      "methods": [
+        "drl",
+        "learned"
+      ],
+      "algorithms": [
+        "Implicit Q-Learning",
+        "RND",
+        "Affordance model"
+      ],
+      "algorithm_summary": "离线隐式 Q 学习、可供性模型、RND",
+      "environments": [
+        "ROS 1",
+        "Python"
+      ],
+      "summary": "是作者对 SCALE 的重新实现，结合视觉编码、离线 Implicit Q-Learning（IQL）、可供性模型和 RND 新颖度估计，在偏离已知可行路线后选择自纠正动作。",
+      "description": "是作者对 SCALE 的重新实现，结合视觉编码、离线 Implicit Q-Learning（IQL）、可供性模型和 RND 新颖度估计，在偏离已知可行路线后选择自纠正动作。此处 IQL 指隐式 Q 学习，与多智能体中的 Independent Q-Learning 含义不同。恢复成功率与误触发都影响导航质量。实现基于 ROS 1 和彩色相机，数据、模型路径需要配置，旋转动作需要按车辆约束适配。",
+      "papers": [
+        {
+          "title": "SCALE: Self-Correcting Visual Navigation for Mobile Robots via Anti-Novelty Estimation",
+          "url": "https://doi.org/10.1109/ICRA57147.2024.10610847",
+          "publication": "ICRA，2024",
+          "paper_codes": [
+            "S38"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "scalenav",
+      "github": {
+        "full_name": "KubeEdge4Robotics/ScaleNav",
+        "url": "https://github.com/KubeEdge4Robotics/ScaleNav",
+        "description": "(ICRA 2024) SCALE: Self-Correcting Visual Navigation for Mobile Robots via Anti-Novelty Estimation",
+        "archived": false,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/KubeEdge4Robotics/ScaleNav/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "ROS 1 与 RGB 实现；需配置数据和模型路径，并将旋转动作改为车辆可行轨迹。",
+      "inputs": "当前与目标图像",
+      "outputs": "动作与恢复行为"
+    },
+    {
+      "id": "wheeled-lab",
+      "name": "Wheeled Lab",
+      "repository": "https://github.com/UWRobotLearning/WheeledLab",
+      "category": "planning",
+      "section": "车辆驾驶与控制",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "PPO",
+        "Domain randomization",
+        "Teacher-student learning"
+      ],
+      "algorithm_summary": "PPO、域随机化、并行仿真",
+      "environments": [
+        "Isaac Sim / Lab",
+        "Python"
+      ],
+      "summary": "提供轮式平台资产、环境与训练代码，使用 RSL-RL 的 PPO，任务覆盖漂移、地形运动和视觉驾驶；视觉任务包含教师与学生学习。",
+      "description": "提供轮式平台资产、环境与训练代码，使用 RSL-RL 的 PPO，任务覆盖漂移、地形运动和视觉驾驶；视觉任务包含教师与学生学习。车辆模型、摩擦、延迟、执行器随机化可用于研究仿真到实机迁移。训练入口为 source/wheeledlab_rl/scripts/train_rl.py，环境推荐 Isaac Sim 4.5.0、Isaac Lab 2.0.2 和 Python 3.10，需要合适的 NVIDIA GPU。代码采用 BSD-3-Clause 许可证；独立的 RealLab 提供 HOUND / MuSHR 分支，F1TENTH 集成仍列为待提供。接入 R680 需要替换车辆参数与控制器，漂移表现不能直接代表低速室内导航能力。",
+      "papers": [
+        {
+          "title": "Wheeled Lab: Modern Sim2Real for Low-cost, Open-source Wheeled Robotics",
+          "url": "https://proceedings.mlr.press/v305/han25a.html",
+          "publication": "CoRL，2025",
+          "paper_codes": [
+            "H28"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [
+        {
+          "label": "RealLab",
+          "url": "https://github.com/UWRobotLearning/RealLab"
+        }
+      ],
+      "chapter_anchor": "wheeled-lab",
+      "github": {
+        "full_name": "UWRobotLearning/WheeledLab",
+        "url": "https://github.com/UWRobotLearning/WheeledLab",
+        "description": "Environments, assets, workflow for open-source mobile robotics, integrated with IsaacLab.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/UWRobotLearning/WheeledLab/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "推荐 Isaac Sim 4.5.0 / Isaac Lab 2.0.2；需 NVIDIA GPU、车辆参数与控制器适配。",
+      "inputs": "车辆状态或视觉观测",
+      "outputs": "车辆控制"
+    },
+    {
+      "id": "fastrlap",
+      "name": "FastRLAP",
+      "repository": "https://github.com/kylestach/fastrlap-release",
+      "category": "planning",
+      "section": "车辆驾驶与控制",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "RLPD",
+        "Visual pretraining",
+        "Autonomous practicing"
+      ],
+      "algorithm_summary": "RLPD、视觉预训练、自主练习与恢复",
+      "environments": [
+        "ROS 1",
+        "JAX",
+        "Python"
+      ],
+      "summary": "先用已有机器人数据初始化视觉表示，再将少量演示数据与在线经验用于 RLPD 强化学习，通过沿检查点自主练习和失败后重置，在真实遥控小车上学习驾驶。",
+      "description": "先用已有机器人数据初始化视觉表示，再将少量演示数据与在线经验用于 RLPD 强化学习，通过沿检查点自主练习和失败后重置，在真实遥控小车上学习驾驶。作者发布 ROS 实现、Gazebo 环境、MuJoCo 越野环境和 JAX 强化学习代码。可参考视觉表征复用、数据混合与自动恢复；实机练习依赖定位、路线检查点和可执行的恢复行为，RGB 输入也需匹配车辆相机。",
+      "papers": [
+        {
+          "title": "FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing",
+          "url": "https://proceedings.mlr.press/v229/stachowicz23a.html",
+          "publication": "CoRL，2023",
+          "paper_codes": [
+            "D11"
+          ],
+          "year": "2023"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "fastrlap",
+      "github": {
+        "full_name": "kylestach/fastrlap-release",
+        "url": "https://github.com/kylestach/fastrlap-release",
+        "description": "",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/kylestach/fastrlap-release/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "实机练习需要定位、检查点与可执行的恢复行为；RGB 输入需匹配，不能直接套用高速赛车参数。",
+      "inputs": "相机图像、车辆状态与检查点",
+      "outputs": "驾驶动作"
+    },
+    {
+      "id": "rlpp",
+      "name": "RLPP",
+      "repository": "https://github.com/ForzaETH/f1tenth_gym/tree/paper/rlpp",
+      "category": "planning",
+      "section": "车辆驾驶与控制",
+      "methods": [
+        "drl"
+      ],
+      "algorithms": [
+        "SAC",
+        "Residual policy",
+        "Pure Pursuit"
+      ],
+      "algorithm_summary": "SAC 残差策略、Pure Pursuit",
+      "environments": [
+        "Python"
+      ],
+      "summary": "保留 Pure Pursuit 的参考控制，以 SAC 学习转向和加速度残差，在 F1TENTH 平台研究从仿真直接部署到实机的赛车控制。",
+      "description": "保留 Pure Pursuit 的参考控制，以 SAC 学习转向和加速度残差，在 F1TENTH 平台研究从仿真直接部署到实机的赛车控制。原 RLPP 仓库已弃用，作者将实现迁至 F1TENTH Gym 的 paper/rlpp 分支，提供测试入口与预训练模型，专门的训练说明仍未补齐。它适合参考 Ackermann 底盘的控制器与残差策略组合，轮胎模型、转向延迟和速度范围需要按 R680 调整。",
+      "papers": [
+        {
+          "title": "RLPP: A Residual Method for Zero-Shot Real-World Autonomous Racing on Scaled Platforms",
+          "url": "https://doi.org/10.1109/icra55743.2025.11127278",
+          "publication": "ICRA，2025",
+          "paper_codes": [
+            "D04"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "rlpp",
+      "github": {
+        "full_name": "ForzaETH/f1tenth_gym",
+        "url": "https://github.com/ForzaETH/f1tenth_gym",
+        "description": "This is the repository of the F1TENTH Gym environment.",
+        "archived": false,
+        "default_branch": "humble",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/ForzaETH/f1tenth_gym/blob/paper/rlpp/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "采用 paper/rlpp 分支；提供测试和模型，训练说明仍不完整，需调整轮胎模型、转向延迟与速度范围。",
+      "inputs": "轨迹相对状态、参考轨迹",
+      "outputs": "转向与加速度修正"
+    },
+    {
+      "id": "neupan",
+      "name": "NeuPAN",
+      "repository": "https://github.com/hanruihua/NeuPAN",
+      "category": "planning",
+      "section": "54.3.3 其他学习方法",
+      "methods": [
+        "planning",
+        "learned"
+      ],
+      "algorithms": [
+        "MPC",
+        "Proximal alternating optimization",
+        "Model-based learning"
+      ],
+      "algorithm_summary": "模型驱动学习、近端交替优化、MPC",
+      "environments": [
+        "Python"
+      ],
+      "summary": "结合学习模块与优化模型进行导航，属于模型驱动学习。",
+      "description": "结合学习模块与优化模型进行导航，属于模型驱动学习。IR-SIM 示例覆盖差速、Ackermann 和全向底盘，可用于分析车辆轮廓、转弯半径与障碍间距。训练 DUNE 模型需要匹配车体几何，CVXPY 求解部分的 CPU 频率和延迟也会影响控制。代码采用 GPL-3.0 许可证。",
+      "papers": [
+        {
+          "title": "NeuPAN: Direct Point Robot Navigation With End-to-End Model-Based Learning",
+          "url": "https://doi.org/10.1109/tro.2025.3554252",
+          "publication": "IEEE Transactions on Robotics，2025",
+          "paper_codes": [
+            "H48"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "neupan",
+      "github": {
+        "full_name": "hanruihua/NeuPAN",
+        "url": "https://github.com/hanruihua/NeuPAN",
+        "description": "[TRO 2025] NeuPAN: Direct Point Robot Navigation with End-to-End Model-based Learning.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "GPL-3.0",
+        "license_url": "",
+        "readme_url": "https://github.com/hanruihua/NeuPAN/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "IR-SIM 示例包含 Ackermann；DUNE 模型需匹配车体几何，同时评估优化求解延迟。",
+      "inputs": "障碍点、车体几何、参考路径",
+      "outputs": "控制序列"
+    },
+    {
+      "id": "navdp",
+      "name": "NavDP",
+      "repository": "https://github.com/InternRobotics/NavDP",
+      "category": "planning",
+      "section": "54.3.3 其他学习方法",
+      "methods": [
+        "learned"
+      ],
+      "algorithms": [
+        "Diffusion policy",
+        "Privileged information guidance"
+      ],
+      "algorithm_summary": "特权信息指导的扩散策略学习",
+      "environments": [
+        "Python"
+      ],
+      "summary": "利用特权信息指导扩散导航策略学习，公开仿真数据、策略训练与模型检查点。",
+      "description": "利用特权信息指导扩散导航策略学习，公开仿真数据、策略训练与模型检查点。当前仓库包含后续工作，论文实验需要对应的配置和权重。R680 的红外与深度输入、RGB 可用性和相机安装位姿需要与模型观测要求匹配；许可证条款需进一步确认。",
+      "papers": [
+        {
+          "title": "NavDP: Learning Sim-to-Real Navigation Diffusion Policy with Privileged Information Guidance",
+          "url": "https://doi.org/10.1109/icra57385.2026.11696748",
+          "publication": "ICRA，2026",
+          "paper_codes": [
+            "H09"
+          ],
+          "year": "2026"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "navdp",
+      "github": {
+        "full_name": "InternRobotics/NavDP",
+        "url": "https://github.com/InternRobotics/NavDP",
+        "description": "[ICRA 2026] NavDP: Learning Sim-to-Real Navigation Diffusion Policy with Privileged Information Guidance",
+        "archived": false,
+        "default_branch": "master",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/InternRobotics/NavDP/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "需按论文版本选择配置与权重；RGB-D 输入、相机位姿与红外替代效果需要验证。",
+      "inputs": "RGB-D、目标条件",
+      "outputs": "局部轨迹"
+    },
+    {
+      "id": "sterling",
+      "name": "STERLING",
+      "repository": "https://github.com/HareshKarnan/sterling_corl23",
+      "category": "planning",
+      "section": "54.3.3 其他学习方法",
+      "methods": [
+        "learned"
+      ],
+      "algorithms": [
+        "Multimodal self-supervised learning",
+        "Terrain representation"
+      ],
+      "algorithm_summary": "多模态自监督地形表征学习",
+      "environments": [
+        "Python"
+      ],
+      "summary": "从地形视觉、振动等交互经验学习地形表征，可用于研究视觉与地面颠簸、可通行偏好之间的联系。",
+      "description": "从地形视觉、振动等交互经验学习地形表征，可用于研究视觉与地面颠簸、可通行偏好之间的联系。公开范围主要是表征训练脚本，ROS 预处理仍列为待提供，不能视为完整导航实现。RGB 输入要求与许可证条款需要进一步确认。",
+      "papers": [
+        {
+          "title": "STERLING: Self-Supervised Terrain Representation Learning from Unconstrained Robot Experience",
+          "url": "https://proceedings.mlr.press/v229/karnan23a.html",
+          "publication": "CoRL，2023",
+          "paper_codes": [
+            "H60"
+          ],
+          "year": "2023"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "sterling",
+      "github": {
+        "full_name": "HareshKarnan/sterling_corl23",
+        "url": "https://github.com/HareshKarnan/sterling_corl23",
+        "description": "",
+        "archived": false,
+        "default_branch": "master",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/HareshKarnan/sterling_corl23/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "公开资源以表征训练为主，ROS 预处理仍未完整提供；不能按完整导航系统使用。",
+      "inputs": "地形视觉、机器人交互经验",
+      "outputs": "地形表征与偏好"
+    },
+    {
+      "id": "swarm-slam-slam",
+      "name": "Swarm-SLAM",
+      "repository": "https://github.com/mistlab/Swarm-SLAM",
+      "category": "multi-robot",
+      "section": "54.4.1 协同定位、建图与通信",
+      "methods": [
+        "mapping"
+      ],
+      "algorithms": [
+        "Inter-robot loop closure",
+        "Decentralized SLAM"
+      ],
+      "algorithm_summary": "跨机器人回环、分散协同 SLAM",
+      "environments": [
+        "ROS 2"
+      ],
+      "summary": "通过跨机器人回环与通信预算分配，将各自轨迹连接到共同参考系，是 ROS 2 协同 SLAM 的系统参考。",
+      "description": "通过跨机器人回环与通信预算分配，将各自轨迹连接到共同参考系，是 ROS 2 协同 SLAM 的系统参考。它支持研究信息交换的内容、时机与带宽限制对地图精度的影响。用于 R680 时，需要选择匹配的视觉输入，并评价学习描述子在红外图像上的效果。",
+      "papers": [
+        {
+          "title": "Swarm-SLAM: Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
+          "url": "https://doi.org/10.1109/LRA.2023.3333742",
+          "publication": "IEEE RA-L，2024",
+          "paper_codes": [
+            "S10"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "swarm-slam-slam",
+      "github": {
+        "full_name": "MISTLab/Swarm-SLAM",
+        "url": "https://github.com/MISTLab/Swarm-SLAM",
+        "description": "Sparse Decentralized Collaborative Simultaneous Localization and Mapping Framework for Multi-Robot Systems",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/MISTLab/Swarm-SLAM/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "ROS 2 协同 SLAM 参考；需选择匹配的视觉输入并评价红外图像的描述子效果。",
+      "inputs": "各机观测与摘要",
+      "outputs": "协同地图"
+    },
+    {
+      "id": "imesa",
+      "name": "iMESA",
+      "repository": "https://github.com/rpl-cmu/imesa",
+      "category": "multi-robot",
+      "section": "54.4.1 协同定位、建图与通信",
+      "methods": [
+        "estimation"
+      ],
+      "algorithms": [
+        "Incremental distributed graph optimization"
+      ],
+      "algorithm_summary": "增量分布式图优化",
+      "environments": [
+        "C++"
+      ],
+      "summary": "是 riMESA 的前序方法，处理协同 SLAM 中随新观测持续到来的分布式优化。",
+      "description": "是 riMESA 的前序方法，处理协同 SLAM 中随新观测持续到来的分布式优化。各机器人保留本地估计，通过共享信息改善共同变量的一致性，可作为分析增量更新与异常约束处理的后端对照。",
+      "papers": [
+        {
+          "title": "iMESA: Incremental Distributed Optimization for Collaborative Simultaneous Localization and Mapping",
+          "url": "https://doi.org/10.15607/RSS.2024.XX.085",
+          "publication": "RSS，2024",
+          "paper_codes": [
+            "E40"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "imesa",
+      "github": {
+        "full_name": "rpl-cmu/imesa",
+        "url": "https://github.com/rpl-cmu/imesa",
+        "description": "[RSS 2024] iMESA - an incremental distributed algorithm for Collaborative Simultaneous Localization and Mapping",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/rpl-cmu/imesa/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "提供分布式优化后端；传感器前端与通信消息需要另行配套。",
+      "inputs": "各机测量约束",
+      "outputs": "分布式估计"
+    },
+    {
+      "id": "rimesa",
+      "name": "riMESA",
+      "repository": "https://github.com/rpl-cmu/riMESA",
+      "category": "multi-robot",
+      "section": "54.4.1 协同定位、建图与通信",
+      "methods": [
+        "estimation"
+      ],
+      "algorithms": [
+        "Consensus ADMM",
+        "Robust incremental optimization"
+      ],
+      "algorithm_summary": "鲁棒增量共识 ADMM",
+      "environments": [
+        "C++"
+      ],
+      "summary": "为协同 SLAM 提供鲁棒增量分布式图优化，处理机器人间共享测量与错误回环。",
+      "description": "为协同 SLAM 提供鲁棒增量分布式图优化，处理机器人间共享测量与错误回环。可在相同位姿图和通信条件下，与集中式优化及 iMESA 比较轨迹误差、更新耗时和通信量。项目提供优化器接口，传感器前端与消息传输需要另行配套。",
+      "papers": [
+        {
+          "title": "riMESA: Consensus ADMM for Real-World Collaborative SLAM",
+          "url": "https://doi.org/10.1109/TRO.2026.3706569",
+          "publication": "IEEE T-RO，2026",
+          "paper_codes": [
+            "R23"
+          ],
+          "year": "2026"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "rimesa",
+      "github": {
+        "full_name": "rpl-cmu/rimesa",
+        "url": "https://github.com/rpl-cmu/rimesa",
+        "description": "[TRO 2026] riMESA is a robust and incremental collaborative SLAM algorithm.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/rpl-cmu/rimesa/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "需配套传感器前端与通信实现；在同一位姿图和通信条件下比较鲁棒性、耗时与带宽。",
+      "inputs": "分布式位姿图",
+      "outputs": "一致估计"
+    },
+    {
+      "id": "slideslam",
+      "name": "SlideSLAM",
+      "repository": "https://github.com/KumarRobotics/slide_slam",
+      "category": "multi-robot",
+      "section": "54.4.1 协同定位、建图与通信",
+      "methods": [
+        "mapping"
+      ],
+      "algorithms": [
+        "Sparse semantic landmarks",
+        "Inter-robot association"
+      ],
+      "algorithm_summary": "稀疏语义地标、跨机器人关联",
+      "environments": [
+        "ROS 1",
+        "ROS 2"
+      ],
+      "summary": "使用稀疏语义地标组织环境并支持地图合并，将大量观测压缩为较少的几何和类别信息，便于跨机器人交换与关联。",
+      "description": "使用稀疏语义地标组织环境并支持地图合并，将大量观测压缩为较少的几何和类别信息，便于跨机器人交换与关联。可用于比较物体级匹配与低层特征匹配。主实现基于 ROS 1，实验性 ROS 2 分支面向 Jazzy，迁入 Humble 的工作量较大。",
+      "papers": [
+        {
+          "title": "SlideSLAM: Sparse, Lightweight, Decentralized Metric-Semantic SLAM for Multirobot Navigation",
+          "url": "https://doi.org/10.1109/TRO.2025.3629786",
+          "publication": "IEEE T-RO，2025",
+          "paper_codes": [
+            "E31"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "slideslam",
+      "github": {
+        "full_name": "KumarRobotics/SLIDE_SLAM",
+        "url": "https://github.com/KumarRobotics/SLIDE_SLAM",
+        "description": "SlideSLAM: Sparse, Lightweight, Decentralized Metric-Semantic SLAM for Multi-Robot Navigation",
+        "archived": false,
+        "default_branch": "master",
+        "license": "BSD-3-Clause",
+        "license_url": "",
+        "readme_url": "https://github.com/KumarRobotics/SLIDE_SLAM/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "主实现为 ROS 1；ROS 2 分支面向 Jazzy，迁入 Humble 需额外适配。",
+      "inputs": "感知与语义地标",
+      "outputs": "协同地图"
+    },
+    {
+      "id": "lamp",
+      "name": "LAMP",
+      "repository": "https://github.com/nebula-autonomy/lamp",
+      "category": "multi-robot",
+      "section": "54.4.1 协同定位、建图与通信",
+      "methods": [
+        "mapping"
+      ],
+      "algorithms": [
+        "Multi-sensor fusion",
+        "Loop closure",
+        "Collaborative graph optimization"
+      ],
+      "algorithm_summary": "多传感器融合、回环、协同图优化",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "面向地下等大规模复杂环境，组织多机器人里程计、回环和地图优化。",
+      "description": "面向地下等大规模复杂环境，组织多机器人里程计、回环和地图优化。系统架构与公开回放数据可用于分析局部误差经回环和跨机器人约束修正的过程。工程依赖较重，包含 ROS 1 和旧版 Python 组件，整套迁移成本较高。",
+      "papers": [
+        {
+          "title": "LAMP 2.0: A Robust Multi-Robot SLAM System for Operation in Challenging Large-Scale Underground Environments",
+          "url": "https://doi.org/10.1109/LRA.2022.3191204",
+          "publication": "IEEE RA-L，2022",
+          "paper_codes": [
+            "K07"
+          ],
+          "year": "2022"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "lamp",
+      "github": {
+        "full_name": "NeBula-Autonomy/LAMP",
+        "url": "https://github.com/NeBula-Autonomy/LAMP",
+        "description": "Multi-robot SLAM system",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/NeBula-Autonomy/LAMP/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "工程依赖较重，包含 ROS 1 与旧 Python 组件；更适合参考系统架构与公开数据。",
+      "inputs": "多机器人传感器",
+      "outputs": "大规模地图"
+    },
+    {
+      "id": "kimera-multi",
+      "name": "Kimera-Multi",
+      "repository": "https://github.com/MIT-SPARK/Kimera-Multi",
+      "category": "multi-robot",
+      "section": "54.4.1 协同定位、建图与通信",
+      "methods": [
+        "mapping"
+      ],
+      "algorithms": [
+        "Distributed SLAM",
+        "Dense metric-semantic mapping"
+      ],
+      "algorithm_summary": "分布式几何与语义建图",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "结合协同定位与稠密三维语义建图，输出包含几何和语义的环境表示。",
+      "description": "结合协同定位与稠密三维语义建图，输出包含几何和语义的环境表示。可研究局部感知、跨机器人关联与全局优化怎样共同影响地图一致性。与 riMESA 这类优化器相比，它涵盖更多系统模块；实现基于 ROS 1，传感器和计算依赖较多。",
+      "papers": [
+        {
+          "title": "Kimera-Multi: Robust, Distributed, Dense Metric-Semantic SLAM for Multi-Robot Systems",
+          "url": "https://doi.org/10.1109/TRO.2021.3137751",
+          "publication": "IEEE T-RO，2022",
+          "paper_codes": [
+            "K06"
+          ],
+          "year": "2022"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "kimera-multi",
+      "github": {
+        "full_name": "MIT-SPARK/Kimera-Multi",
+        "url": "https://github.com/MIT-SPARK/Kimera-Multi",
+        "description": "Index repo for Kimera-Multi system",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/MIT-SPARK/Kimera-Multi/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "基于 ROS 1，感知与计算依赖较多；需区分完整系统与优化后端的比较范围。",
+      "inputs": "各机视觉惯性观测",
+      "outputs": "稠密语义地图"
+    },
+    {
+      "id": "realm",
+      "name": "ReALM",
+      "repository": "https://github.com/bairuofei/LoS_constrained_navigation",
+      "category": "multi-robot",
+      "section": "54.4.1 协同定位、建图与通信",
+      "methods": [
+        "planning"
+      ],
+      "algorithms": [
+        "Line-of-sight connectivity",
+        "Potential fields"
+      ],
+      "algorithm_summary": "视线连通约束、图代数连通性、势函数控制",
+      "environments": [
+        "ROS 1"
+      ],
+      "summary": "从实时激光扫描判断机器人之间的视线是否会被障碍遮挡，用连通性势函数调整各机运动，在未知环境中兼顾探索与通信。",
+      "description": "从实时激光扫描判断机器人之间的视线是否会被障碍遮挡，用连通性势函数调整各机运动，在未知环境中兼顾探索与通信。代码提供多机器人导航和探索示例，依赖 ROS Noetic 与独立的导航仿真工作空间；当前主分支还包含论文之后的拓扑优化与可见区域扩展。可参考通信约束对路线选择的影响，Humble 接口、车辆转弯约束与真实无线链路模型需要适配。",
+      "papers": [
+        {
+          "title": "Realm: Real-Time Line-of-Sight Maintenance in Multi-Robot Navigation with Unknown Obstacles",
+          "url": "https://ieeexplore.ieee.org/document/11128211/",
+          "publication": "ICRA，2025",
+          "paper_codes": [
+            "V15"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "realm",
+      "github": {
+        "full_name": "bairuofei/LoS_constrained_navigation",
+        "url": "https://github.com/bairuofei/LoS_constrained_navigation",
+        "description": "[ICRA 2025]: A line-of-sight constrained multi-robot navigation method that can be applied in complex unknown environments.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/bairuofei/LoS_constrained_navigation/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖 ROS Noetic 与独立仿真工作空间；需适配转弯约束，并验证视线假设与真实无线链路的关系。",
+      "inputs": "激光扫描、团队状态",
+      "outputs": "保持连通的导航动作"
+    },
+    {
+      "id": "jaxrobotarium",
+      "name": "JaxRobotarium",
+      "repository": "https://github.com/GT-STAR-Lab/JaxRobotarium",
+      "category": "multi-robot",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "drl",
+        "marl"
+      ],
+      "algorithms": [
+        "IPPO",
+        "MAPPO",
+        "QMIX",
+        "PQN"
+      ],
+      "algorithm_summary": "IPPO、MAPPO、QMIX、PQN",
+      "environments": [
+        "JAX",
+        "Python"
+      ],
+      "summary": "将 JAX 并行仿真、策略训练与 Robotarium 部署连接起来，提供八类协作场景和循环策略，支持 GPU / TPU。",
+      "description": "将 JAX 并行仿真、策略训练与 Robotarium 部署连接起来，提供八类协作场景和循环策略，支持 GPU / TPU。离散动作解释为航点，连续动作解释为独轮车速度；策略可与 CBF 避碰层组合。环境使用 Python 3.10、JAX、Flax、Robotarium 模拟器子模块及作者集成的 JaxMARL 分支，许可证为 MIT。论文报告了 Robotarium 实验，标题中的训练时间依赖任务与硬件条件。用于 R680 时需要替换运动模型与安全层。",
+      "papers": [
+        {
+          "title": "JaxRobotarium: Training and Deploying Multi-Robot Policies in 10 Minutes",
+          "url": "https://proceedings.mlr.press/v305/jain25a.html",
+          "publication": "CoRL，2025",
+          "paper_codes": [
+            "H29"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "jaxrobotarium",
+      "github": {
+        "full_name": "GT-STAR-Lab/JaxRobotarium",
+        "url": "https://github.com/GT-STAR-Lab/JaxRobotarium",
+        "description": "JaxRobotarium | CoRL 2025",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/GT-STAR-Lab/JaxRobotarium/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖 JAX、Flax 和作者 JaxMARL 分支；独轮车动作与 CBF 安全层需要按 R680 替换。",
+      "inputs": "局部状态",
+      "outputs": "航点或独轮车速度"
+    },
+    {
+      "id": "cash",
+      "name": "CASH",
+      "repository": "https://github.com/GT-STAR-Lab/CASH",
+      "category": "multi-robot",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "drl",
+        "marl"
+      ],
+      "algorithms": [
+        "Capability-conditioned hypernetwork",
+        "QMIX",
+        "MAPPO",
+        "DAgger"
+      ],
+      "algorithm_summary": "能力条件超网络；QMIX / MAPPO 或 DAgger",
+      "environments": [
+        "JAX",
+        "Python"
+      ],
+      "summary": "根据局部观测和团队能力生成个体网络参数，用于传感器、速度或载荷不同的异构机器人团队。",
+      "description": "根据局部观测和团队能力生成个体网络参数，用于传感器、速度或载荷不同的异构机器人团队。CASH 是网络架构，可配合 QMIX、MAPPO，也可使用 DAgger 模仿学习。公开资源包括 JaxMARL 分支、能力条件策略、消防与运输环境、训练和绘图代码，采用 Apache-2.0 许可证。论文另通过 MARBLER / EPyMARL 在 Robotarium 评价，JAX 仓库不能直接等同于完整实机软件。该方法可用于研究能力下降或未见团队组合下的协作。",
+      "papers": [
+        {
+          "title": "Capability-Aware Shared Hypernetworks for Flexible Heterogeneous Multi-Robot Coordination",
+          "url": "https://proceedings.mlr.press/v305/fu25a.html",
+          "publication": "CoRL，2025",
+          "paper_codes": [
+            "H26"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "cash",
+      "github": {
+        "full_name": "GT-STAR-Lab/CASH",
+        "url": "https://github.com/GT-STAR-Lab/CASH",
+        "description": "CASH | CoRL 2025",
+        "archived": false,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/GT-STAR-Lab/CASH/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "超网络架构既可用于 QMIX / MAPPO，也可用于 DAgger；JAX 训练仓库不等同于完整实机软件。",
+      "inputs": "局部观测、团队能力",
+      "outputs": "个体策略或价值网络"
+    },
+    {
+      "id": "maexp",
+      "name": "MAexp",
+      "repository": "https://github.com/COAI-Lab/MAexp",
+      "category": "multi-robot",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "drl",
+        "marl"
+      ],
+      "algorithms": [
+        "IPPO",
+        "MAPPO",
+        "Attention goal generation"
+      ],
+      "algorithm_summary": "IPPO、MAPPO 等 MARL、注意力目标生成",
+      "environments": [
+        "Python"
+      ],
+      "summary": "为多机器人探索提供连续场景、点云地图与 MARLlib 算法接口，可比较 IPPO、MAPPO 等方法在不同环境中的覆盖行为。",
+      "description": "为多机器人探索提供连续场景、点云地图与 MARLlib 算法接口，可比较 IPPO、MAPPO 等方法在不同环境中的覆盖行为。框架将多机器人目标生成与单机器人运动规划分开，包含随机障碍、迷宫、室内和室外场景。公开代码依赖 Python、Ray、MARLlib 与 Open3D，安装需要修改部分依赖代码；它是训练与评测平台，实机通信、定位和车辆接口需另行实现。",
+      "papers": [
+        {
+          "title": "MAexp: A Generic Platform for RL-based Multi-Agent Exploration",
+          "url": "https://doi.org/10.1109/icra57147.2024.10611573",
+          "publication": "ICRA，2024",
+          "paper_codes": [
+            "D07"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "maexp",
+      "github": {
+        "full_name": "COAI-Lab/MAexp",
+        "url": "https://github.com/COAI-Lab/MAexp",
+        "description": "MAexp is a generic platform for RL-based multi-agent exploration",
+        "archived": false,
+        "default_branch": "v1.5",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/COAI-Lab/MAexp/blob/v1.5/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "训练和评测平台，依赖 Ray、MARLlib 与 Open3D；实机通信、定位和车辆接口需另行实现。",
+      "inputs": "局部点云与团队观测",
+      "outputs": "探索目标与连续运动"
+    },
+    {
+      "id": "vlfm",
+      "name": "VLFM",
+      "repository": "https://github.com/bdaiinstitute/vlfm",
+      "category": "semantic-navigation",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "learned",
+        "mapping"
+      ],
+      "algorithms": [
+        "Vision-language value map",
+        "Frontier selection"
+      ],
+      "algorithm_summary": "视觉语言价值地图、前沿选择",
+      "environments": [
+        "Python"
+      ],
+      "summary": "根据图像与语言目标的相关性构建价值地图，引导前沿选择和未知区域搜索。",
+      "description": "根据图像与语言目标的相关性构建价值地图，引导前沿选择和未知区域搜索。语义模块可以提出地图目标，运动执行仍需几何规划与避障。实机实现面向 Spot，依赖 RGB 和 GPU 模型服务，已声明不再积极维护；与 Nav2 的组合需要适配。",
+      "papers": [
+        {
+          "title": "VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation",
+          "url": "https://doi.org/10.1109/ICRA57147.2024.10610712",
+          "publication": "ICRA，2024",
+          "paper_codes": [
+            "E47"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "vlfm",
+      "github": {
+        "full_name": "rai-opensource/vlfm",
+        "url": "https://github.com/rai-opensource/vlfm",
+        "description": "The repository provides code associated with the paper VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation (ICRA 2024)",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/rai-opensource/vlfm/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖 RGB、GPU 模型服务与 Spot 实机接口；需适配 Nav2，且项目声明不再积极维护。",
+      "inputs": "RGB、语言目标",
+      "outputs": "探索方向"
+    },
+    {
+      "id": "lelan",
+      "name": "LeLaN",
+      "repository": "https://github.com/NHirose/learning-language-navigation",
+      "category": "semantic-navigation",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "learned"
+      ],
+      "algorithms": [
+        "Language-conditioned visual policy"
+      ],
+      "algorithm_summary": "语言条件视觉策略学习",
+      "environments": [
+        "ROS 1",
+        "Python"
+      ],
+      "summary": "根据语言描述和相机图像生成接近可见目标的运动指令，侧重最后一段接近动作，可与 VLFM 的未知区域搜索互补。",
+      "description": "根据语言描述和相机图像生成接近可见目标的运动指令，侧重最后一段接近动作，可与 VLFM 的未知区域搜索互补。实现使用 ROS 1 和 RGB，速度指令包含原地转向，需要转换为车辆可执行的轨迹，并检查错误目标与不可行转向。",
+      "papers": [
+        {
+          "title": "LeLaN: Learning a Language-Conditioned Navigation Policy from In-the-Wild Video",
+          "url": "https://proceedings.mlr.press/v270/hirose25b.html",
+          "publication": "CoRL 2024，PMLR 于 2025 年出版",
+          "paper_codes": [
+            "E50"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "lelan",
+      "github": {
+        "full_name": "NHirose/learning-language-navigation",
+        "url": "https://github.com/NHirose/learning-language-navigation",
+        "description": "Official repository for LeLaN training and inference code",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/NHirose/learning-language-navigation/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "面向可见目标的最后一段接近；ROS 1 与 RGB 输入需要适配，原地转向需转为可行轨迹。",
+      "inputs": "语言、图像",
+      "outputs": "目标接近动作"
+    },
+    {
+      "id": "vint-nomad",
+      "name": "ViNT / NoMaD",
+      "repository": "https://github.com/robodhruv/visualnav-transformer",
+      "category": "semantic-navigation",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "learned"
+      ],
+      "algorithms": [
+        "Transformer",
+        "Goal-masked diffusion policy"
+      ],
+      "algorithm_summary": "Transformer、目标掩码扩散策略",
+      "environments": [
+        "ROS 1",
+        "Python"
+      ],
+      "summary": "共享仓库提供视觉导航模型、训练与部署代码。",
+      "description": "共享仓库提供视觉导航模型、训练与部署代码。ViNT 用观测和目标图像预测航点；NoMaD 通过目标掩码扩散策略联系目标导航与无目标探索。两者可用于研究图像目标、拓扑地图与局部动作之间的关系。实机代码依赖 RGB、外部权重和 ROS 1，生成的航点或动作仍需满足底盘运动约束。",
+      "papers": [
+        {
+          "title": "ViNT: A Foundation Model for Visual Navigation",
+          "url": "https://proceedings.mlr.press/v229/shah23a.html",
+          "publication": "CoRL，2023",
+          "paper_codes": [
+            "K14"
+          ],
+          "year": "2023"
+        },
+        {
+          "title": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
+          "url": "https://doi.org/10.1109/ICRA57147.2024.10610665",
+          "publication": "ICRA，2024",
+          "paper_codes": [
+            "K16"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "vint-nomad",
+      "github": {
+        "full_name": "robodhruv/visualnav-transformer",
+        "url": "https://github.com/robodhruv/visualnav-transformer",
+        "description": "Official code and checkpoint release for mobile robot foundation models: GNM, ViNT, and NoMaD.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/robodhruv/visualnav-transformer/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖 RGB、外部权重和 ROS 1；生成的航点与动作仍需满足底盘转向约束。",
+      "inputs": "图像历史、目标图像",
+      "outputs": "航点或动作"
+    },
+    {
+      "id": "hov-sg",
+      "name": "HOV-SG",
+      "repository": "https://github.com/hovsg/HOV-SG",
+      "category": "semantic-navigation",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "learned",
+        "mapping"
+      ],
+      "algorithms": [
+        "Open-vocabulary features",
+        "Hierarchical scene graph"
+      ],
+      "algorithm_summary": "开放词汇表征、分层三维场景图",
+      "environments": [
+        "Python"
+      ],
+      "summary": "将环境组织为楼层、房间和物体层级，用开放词汇表征支持自然语言查询。",
+      "description": "将环境组织为楼层、房间和物体层级，用开放词汇表征支持自然语言查询。例如“去厨房找杯子”可以先定位房间，再缩小物体搜索范围。输入为带位姿的 RGB-D 数据，输出语义检索位置，实际行走仍需几何导航。",
+      "papers": [
+        {
+          "title": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
+          "url": "https://doi.org/10.15607/RSS.2024.XX.077",
+          "publication": "RSS，2024",
+          "paper_codes": [
+            "E48"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "hov-sg",
+      "github": {
+        "full_name": "hovsg/HOV-SG",
+        "url": "https://github.com/hovsg/HOV-SG",
+        "description": "[RSS2024] Official implementation of \"Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation\"",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/hovsg/HOV-SG/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "需要带位姿的 RGB-D；语义检索位置需转换为附近可到达的导航目标。",
+      "inputs": "带位姿 RGB-D",
+      "outputs": "语义检索位置"
+    },
+    {
+      "id": "conceptgraphs",
+      "name": "ConceptGraphs",
+      "repository": "https://github.com/concept-graphs/concept-graphs",
+      "category": "semantic-navigation",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "learned",
+        "mapping"
+      ],
+      "algorithms": [
+        "Object association",
+        "Open-vocabulary scene graph"
+      ],
+      "algorithm_summary": "跨帧物体关联、开放词汇场景图",
+      "environments": [
+        "Python"
+      ],
+      "summary": "从 RGB-D 观测构建开放词汇三维物体图，将不同视角下的同一物体合并，并保存其几何、语义特征与关系。",
+      "description": "从 RGB-D 观测构建开放词汇三维物体图，将不同视角下的同一物体合并，并保存其几何、语义特征与关系。与 HOV-SG 的空间层级相比，它更侧重物体实例与跨帧关联。导航时需要将物体位置转换为附近可到达的观察或接近位置。",
+      "papers": [
+        {
+          "title": "ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning",
+          "url": "https://doi.org/10.1109/ICRA57147.2024.10610243",
+          "publication": "ICRA，2024",
+          "paper_codes": [
+            "K15"
+          ],
+          "year": "2024"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "conceptgraphs",
+      "github": {
+        "full_name": "concept-graphs/concept-graphs",
+        "url": "https://github.com/concept-graphs/concept-graphs",
+        "description": "Official code release for ConceptGraphs",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/concept-graphs/concept-graphs/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "需要 RGB-D 和跨帧物体关联；物体位置应转换为可达的观察或接近位置。",
+      "inputs": "RGB-D",
+      "outputs": "三维物体图与语言查询结果"
+    },
+    {
+      "id": "language-as-cost",
+      "name": "Language as Cost",
+      "repository": "https://github.com/Taekmino/LaC",
+      "category": "semantic-navigation",
+      "section": "54.4.2 多机器人强化学习",
+      "methods": [
+        "learned",
+        "planning"
+      ],
+      "algorithms": [
+        "VLM reasoning",
+        "Open-vocabulary segmentation",
+        "Gaussian cost propagation"
+      ],
+      "algorithm_summary": "VLM 风险推理、开放词汇分割、高斯代价传播",
+      "environments": [
+        "ROS 1",
+        "Python"
+      ],
+      "summary": "用视觉语言模型识别可能发生危险的区域，再通过 Grounded Edge SAM 定位相关物体，将风险等级投影到栅格并以高斯代价向周围传播，最后与几何障碍地图融合。",
+      "description": "用视觉语言模型识别可能发生危险的区域，再通过 Grounded Edge SAM 定位相关物体，将风险等级投影到栅格并以高斯代价向周围传播，最后与几何障碍地图融合。它可参考为 Nav2 增加门口、湿滑区域等语义风险代价。原版基于 ROS Noetic，依赖 RGB-D、NVIDIA GPU 和模型 API；接入 R680 时需处理图像条件、推理延迟以及错误语义对路径的影响。",
+      "papers": [
+        {
+          "title": "Language as Cost: Proactive Hazard Mapping using VLM for Robot Navigation",
+          "url": "https://ieeexplore.ieee.org/document/11246665/",
+          "publication": "IROS，2025",
+          "paper_codes": [
+            "V19"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "language-as-cost",
+      "github": {
+        "full_name": "Taekmino/LaC",
+        "url": "https://github.com/Taekmino/LaC",
+        "description": "",
+        "archived": false,
+        "default_branch": "main",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/Taekmino/LaC/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "依赖 ROS Noetic、RGB-D、GPU 与模型 API；需检查推理延迟和错误语义对路径的影响。",
+      "inputs": "RGB-D、障碍地图",
+      "outputs": "风险代价栅格"
+    },
+    {
+      "id": "f1tenth-gymackermann",
+      "name": "F1TENTH Gym",
+      "repository": "https://github.com/f1tenth/f1tenth_gym",
+      "category": "evaluation",
+      "section": "54.6.1 仿真与导航基准",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "Vehicle dynamics",
+        "LiDAR simulation",
+        "Continuous control"
+      ],
+      "algorithm_summary": "车辆仿真、连续控制与强化学习环境",
+      "environments": [
+        "Python"
+      ],
+      "summary": "提供车辆动力学、激光观测与赛道仿真，适合研究 Ackermann 车辆的路径跟踪、MPPI、MPC 和强化学习控制。",
+      "description": "提供车辆动力学、激光观测与赛道仿真，适合研究 Ackermann 车辆的路径跟踪、MPPI、MPC 和强化学习控制。车辆尺寸、转向限制和动力学参数需要按 R680 替换，赛道表现不能直接代表室内低速导航能力。",
+      "papers": [
+        {
+          "title": "F1TENTH: An Open-Source Evaluation Environment for Continuous Control and Reinforcement Learning",
+          "url": "https://proceedings.mlr.press/v123/o-kelly20a.html",
+          "publication": "PMLR 123，2020",
+          "paper_codes": [],
+          "year": "2020"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "f1tenth-gymackermann",
+      "github": {
+        "full_name": "f1tenth/f1tenth_gym",
+        "url": "https://github.com/f1tenth/f1tenth_gym",
+        "description": "This is the repository of the F1TENTH Gym environment.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/f1tenth/f1tenth_gym/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "可参考 Ackermann 动力学与控制；车辆尺寸、转向限制和动力学参数需替换为 R680 配置。",
+      "inputs": "转向、速度",
+      "outputs": "车辆状态与激光观测"
+    },
+    {
+      "id": "habitat-lab",
+      "name": "Habitat-Lab",
+      "repository": "https://github.com/facebookresearch/habitat-lab",
+      "category": "evaluation",
+      "section": "54.6.1 仿真与导航基准",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "Embodied simulation",
+        "Navigation evaluation"
+      ],
+      "algorithm_summary": "室内任务仿真与指标评测",
+      "environments": [
+        "Python"
+      ],
+      "summary": "与 Habitat-Sim 配合，提供室内语义导航任务、数据接口和成功率、路径效率等评测指标。",
+      "description": "与 Habitat-Sim 配合，提供室内语义导航任务、数据接口和成功率、路径效率等评测指标。可用于区分目标识别失败与目标到达失败。默认动作不反映汽车转向约束，场景数据有独立使用条件；v0.3.4 之后的版本缺少官方积极维护。",
+      "papers": [
+        {
+          "title": "Habitat: A Platform for Embodied AI Research",
+          "url": "https://openaccess.thecvf.com/content_ICCV_2019/html/Savva_Habitat_A_Platform_for_Embodied_AI_Research_ICCV_2019_paper.html",
+          "publication": "ICCV，2019",
+          "paper_codes": [],
+          "year": "2019"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "habitat-lab",
+      "github": {
+        "full_name": "facebookresearch/habitat-lab",
+        "url": "https://github.com/facebookresearch/habitat-lab",
+        "description": "A modular high-level library to train embodied AI agents across a variety of tasks and environments.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/facebookresearch/habitat-lab/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "默认动作不体现汽车转向约束，场景有独立使用条件；需核对版本与维护状态。",
+      "inputs": "场景、动作",
+      "outputs": "观测与评测结果"
+    },
+    {
+      "id": "arena-bench",
+      "name": "Arena-Bench 2.0 / Arena 4.0",
+      "repository": "https://github.com/Arena-Rosnav/arena-rosnav",
+      "category": "evaluation",
+      "section": "54.6.1 仿真与导航基准",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "Social navigation benchmarking",
+        "Scene generation"
+      ],
+      "algorithm_summary": "社会导航场景与统一评测",
+      "environments": [
+        "ROS 2",
+        "ROS 1",
+        "Python"
+      ],
+      "summary": "提供社会导航评测生态，可在共同场景下比较经典规划器与学习策略，统一地图、行人、任务种子和指标。",
+      "description": "提供社会导航评测生态，可在共同场景下比较经典规划器与学习策略，统一地图、行人、任务种子和指标。Arena 4.0 将框架迁移到 ROS 2，并加入由文本或平面图生成场景的方法以及带语义标注的三维资产。Arena-Rosnav 入口仓库采用 MIT 许可证，组件与环境版本应以官方安装文档为准；框架本身不代表某一种强化学习算法。",
+      "papers": [
+        {
+          "title": "Arena-Bench 2.0: A Comprehensive Benchmark of Social Navigation Approaches in Collaborative Environments",
+          "url": "https://doi.org/10.1109/iros60139.2025.11246895",
+          "publication": "IROS，2025",
+          "paper_codes": [
+            "H36"
+          ],
+          "year": "2025"
+        },
+        {
+          "title": "Arena 4.0: a Comprehensive Ros2 Development and Benchmarking Platform for Human-Centric Navigation Using Generative-Model-Based Environment Generation",
+          "url": "https://ieeexplore.ieee.org/document/11127635/",
+          "publication": "ICRA，2025",
+          "paper_codes": [
+            "V21"
+          ],
+          "year": "2025"
+        }
+      ],
+      "resources": [
+        {
+          "label": "官方安装文档",
+          "url": "https://docs.arena-rosnav.org/en/latest/tutorials/installation/"
+        }
+      ],
+      "chapter_anchor": "arena-bench",
+      "github": {
+        "full_name": "Arena-Rosnav/arena-rosnav",
+        "url": "https://github.com/Arena-Rosnav/arena-rosnav",
+        "description": "",
+        "archived": false,
+        "default_branch": "master",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/Arena-Rosnav/arena-rosnav/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "Arena 4.0 采用 ROS 2；组件版本以安装文档为准，基准平台不代表某一种强化学习算法。",
+      "inputs": "地图、行人、导航方法",
+      "outputs": "任务与交互指标"
+    },
+    {
+      "id": "dmrp-bench",
+      "name": "DMRP-Bench",
+      "repository": "https://github.com/NKU-MobFly-Robotics/DMRP-Bench",
+      "category": "evaluation",
+      "section": "54.6.1 仿真与导航基准",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "CBS",
+        "ECBS",
+        "SIPP",
+        "TEB",
+        "DWA",
+        "MPC"
+      ],
+      "algorithm_summary": "多机器人全局与局部规划对比",
+      "environments": [
+        "ROS 1",
+        "Isaac Sim / Lab"
+      ],
+      "summary": "集成 CBS、ECBS、SIPP 等全局方法与 TEB、DWA、MPC 等局部规划，使用 Isaac Sim 动态场景研究阻塞、让行与多机交互，并提供录包分析脚本。",
+      "description": "集成 CBS、ECBS、SIPP 等全局方法与 TEB、DWA、MPC 等局部规划，使用 Isaac Sim 动态场景研究阻塞、让行与多机交互，并提供录包分析脚本。README 基于 ROS Noetic、Isaac Sim 2022.2.1+，代码采用 MIT 许可证；Humble 迁移和场景资产完整性需要验证。",
+      "papers": [
+        {
+          "title": "DMRP-Bench: An Integrated, Unified Multi-Robot Motion Planning Benchmark in Dynamic Environments",
+          "url": "https://doi.org/10.1109/icra57385.2026.11696793",
+          "publication": "ICRA，2026",
+          "paper_codes": [
+            "H14"
+          ],
+          "year": "2026"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "dmrp-bench",
+      "github": {
+        "full_name": "NKU-MobFly-Robotics/DMRP-Bench",
+        "url": "https://github.com/NKU-MobFly-Robotics/DMRP-Bench",
+        "description": "A unified benchmarking framework for multi-robot motion planning in dynamic environments using NVIDIA Isaac Sim and ROS.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MIT",
+        "license_url": "",
+        "readme_url": "https://github.com/NKU-MobFly-Robotics/DMRP-Bench/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "README 面向 ROS Noetic 与 Isaac Sim 2022.2.1+；需验证 Humble 迁移和场景资产完整性。",
+      "inputs": "动态场景、多机任务",
+      "outputs": "规划与交互指标"
+    },
+    {
+      "id": "rosbag2",
+      "name": "rosbag2",
+      "repository": "https://github.com/ros2/rosbag2",
+      "category": "evaluation",
+      "section": "54.6.2 数据记录与结果分析",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "ROS 2 recording",
+        "Playback"
+      ],
+      "algorithm_summary": "ROS 2 消息记录与回放",
+      "environments": [
+        "ROS 2"
+      ],
+      "summary": "按时间记录和回放 ROS 2 话题，可让多个算法处理相同的相机、雷达、IMU 与轮速消息。",
+      "description": "按时间记录和回放 ROS 2 话题，可让多个算法处理相同的相机、雷达、IMU 与轮速消息。原始观测、标定信息和时间关系决定回放的可用性。QoS、丢帧和回放速度会影响数据完整性与算法负载。",
+      "papers": [],
+      "resources": [],
+      "chapter_anchor": "rosbag2",
+      "github": {
+        "full_name": "ros2/rosbag2",
+        "url": "https://github.com/ros2/rosbag2",
+        "description": "",
+        "archived": false,
+        "default_branch": "rolling",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/ros2/rosbag2/blob/rolling/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "统一记录观测、标定和时间关系；QoS、丢帧与回放速度会影响可比性。",
+      "inputs": "传感器消息",
+      "outputs": "可回放数据"
+    },
+    {
+      "id": "evo",
+      "name": "evo",
+      "repository": "https://github.com/MichaelGrupp/evo",
+      "category": "evaluation",
+      "section": "54.6.2 数据记录与结果分析",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "Trajectory alignment",
+        "APE",
+        "RPE"
+      ],
+      "algorithm_summary": "轨迹关联与对齐、APE / RPE",
+      "environments": [
+        "Python"
+      ],
+      "summary": "提供轨迹时间关联、对齐、绝对位姿误差（APE）和相对位姿误差（RPE）计算，分别反映整体偏离与局部漂移。",
+      "description": "提供轨迹时间关联、对齐、绝对位姿误差（APE）和相对位姿误差（RPE）计算，分别反映整体偏离与局部漂移。比较结果依赖统一的时间关联、对齐方式和尺度处理；精度评价需要独立参考轨迹，地图视觉重合不能替代轨迹误差。",
+      "papers": [],
+      "resources": [],
+      "chapter_anchor": "evo",
+      "github": {
+        "full_name": "MichaelGrupp/evo",
+        "url": "https://github.com/MichaelGrupp/evo",
+        "description": "Python package for the evaluation of odometry and SLAM",
+        "archived": false,
+        "default_branch": "master",
+        "license": "GPL-3.0",
+        "license_url": "",
+        "readme_url": "https://github.com/MichaelGrupp/evo/blob/master/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "需要独立参考轨迹，并统一时间关联、对齐与尺度设置。",
+      "inputs": "参考和估计轨迹",
+      "outputs": "误差统计"
+    },
+    {
+      "id": "slam-under-perturbation-slam",
+      "name": "slam-under-perturbation",
+      "repository": "https://github.com/xiaohao-xu/slam-under-perturbation",
+      "category": "evaluation",
+      "section": "54.6.2 数据记录与结果分析",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "Controlled observation perturbations",
+        "Temporal perturbations"
+      ],
+      "algorithm_summary": "受控感知与时间扰动",
+      "environments": [
+        "Python"
+      ],
+      "summary": "对图像、深度和时间对应关系施加可控扰动，用于研究误差增大、跟踪失效和恢复条件。",
+      "description": "对图像、深度和时间对应关系施加可控扰动，用于研究误差增大、跟踪失效和恢复条件。相同数据与随机种子可用于比较多个估计器的退化表现。时间偏移以帧为单位，分析延迟时需要结合实际时间戳换算。",
+      "papers": [
+        {
+          "title": "Scalable Benchmarking and Robust Learning for Noise-Free Ego-Motion and 3D Reconstruction from Noisy Video",
+          "url": "https://openreview.net/forum?id=Pz9zFea4MQ",
+          "publication": "ICLR，2025",
+          "paper_codes": [],
+          "year": "2025"
+        }
+      ],
+      "resources": [],
+      "chapter_anchor": "slam-under-perturbation-slam",
+      "github": {
+        "full_name": "Xiaohao-Xu/SLAM-under-Perturbation",
+        "url": "https://github.com/Xiaohao-Xu/SLAM-under-Perturbation",
+        "description": "[ICLR 2025] Scalable Benchmarking and Robust Learning for Noise-Free Ego-Motion and 3D Reconstruction from Noisy Video",
+        "archived": false,
+        "default_branch": "main",
+        "license": "Apache-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/Xiaohao-Xu/SLAM-under-Perturbation/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "统一数据和随机种子；时间偏移按帧设置，分析延迟需换算实际时间戳。",
+      "inputs": "图像、深度与时序",
+      "outputs": "退化输入"
+    },
+    {
+      "id": "diagnostics",
+      "name": "diagnostics",
+      "repository": "https://github.com/ros/diagnostics",
+      "category": "evaluation",
+      "section": "54.6.2 数据记录与结果分析",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "Frequency monitoring",
+        "Message age monitoring",
+        "Status aggregation"
+      ],
+      "algorithm_summary": "频率、时效监测与状态聚合",
+      "environments": [
+        "ROS 2",
+        "ROS 1"
+      ],
+      "summary": "为数据频率、消息时效和设备状态提供统一诊断接口，可汇总相机掉帧、IMU 停更和节点异常。",
+      "description": "为数据频率、消息时效和设备状态提供统一诊断接口，可汇总相机掉帧、IMU 停更和节点异常。消息仍在发布不等于估计仍然可靠，定位质量还需要算法指标；阈值与告警持续时间应结合任务设置。",
+      "papers": [],
+      "resources": [],
+      "chapter_anchor": "diagnostics",
+      "github": {
+        "full_name": "ros/diagnostics",
+        "url": "https://github.com/ros/diagnostics",
+        "description": "Packages related to gathering, viewing, and analyzing diagnostics data from robots.",
+        "archived": false,
+        "default_branch": "ros2",
+        "license": "",
+        "license_url": "",
+        "readme_url": "https://github.com/ros/diagnostics/blob/ros2/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "监测消息状态；定位可靠性仍需算法指标，阈值应结合任务设置。",
+      "inputs": "节点与设备状态",
+      "outputs": "诊断信息"
+    },
+    {
+      "id": "plotjuggler",
+      "name": "PlotJuggler",
+      "repository": "https://github.com/facontidavide/PlotJuggler",
+      "category": "evaluation",
+      "section": "54.6.2 数据记录与结果分析",
+      "methods": [
+        "tooling"
+      ],
+      "algorithms": [
+        "Time-series alignment",
+        "Visualization"
+      ],
+      "algorithm_summary": "时序对齐、计算与可视化",
+      "environments": [
+        "ROS 2",
+        "ROS 1",
+        "C++"
+      ],
+      "summary": "加载记录或实时数据，在同一时间轴上查看轮速、IMU、视觉里程计、控制指令和诊断状态。",
+      "description": "加载记录或实时数据，在同一时间轴上查看轮速、IMU、视觉里程计、控制指令和诊断状态。时序对齐与计算功能可用于判断跟踪抖动先出现在控制、执行还是定位环节。Humble 环境需要匹配的数据加载与流式插件。",
+      "papers": [],
+      "resources": [],
+      "chapter_anchor": "plotjuggler",
+      "github": {
+        "full_name": "PlotJuggler/PlotJuggler",
+        "url": "https://github.com/PlotJuggler/PlotJuggler",
+        "description": "The Time Series Visualization Tool that you deserve.",
+        "archived": false,
+        "default_branch": "main",
+        "license": "MPL-2.0",
+        "license_url": "",
+        "readme_url": "https://github.com/PlotJuggler/PlotJuggler/blob/main/README.md",
+        "verified_on": "2026-11-12"
+      },
+      "adaptation": "Humble 需匹配数据加载与流式插件；统一时间轴后再比较传感器、估计与控制信号。",
+      "inputs": "记录或数据流",
+      "outputs": "对比曲线"
+    }
+  ],
+  "verified_on": "2026-11-12"
+}

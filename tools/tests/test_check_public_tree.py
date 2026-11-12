@@ -104,8 +104,9 @@ def test_cjk_report_versus_strict(tmp_path):
     assert cpt.failed(report, "strict")
 
 
-def test_localized_interface_keeps_all_nonlanguage_guards(tmp_path):
-    rel = 'tools/local_index.html'
+@pytest.mark.parametrize('rel', ['tools/local_index.html', 'tools/project_index.js',
+                               '06-data/open-source-projects.json'])
+def test_localized_interface_keeps_all_nonlanguage_guards(tmp_path, rel):
     write(tmp_path, rel, CJK_SAMPLE + '\n' + WIN_USER_PATH + '\n' + FAKE_TOKEN)
     report = scan(tmp_path, [rel])
     assert not report.by_check('cjk')

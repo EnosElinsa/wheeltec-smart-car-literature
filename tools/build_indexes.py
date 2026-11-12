@@ -169,15 +169,19 @@ def build(root: Path = REPO_ROOT, strict: bool = False) -> dict[str, str]:
             rel = f"{section}/{theme}/README.md"
             if (root / rel).is_file():
                 pages[rel] = theme_readme(section, theme, [e for e in selected if e.theme == theme])
+    from tools.project_catalog import load as load_projects, markdown as project_markdown
+    projects = load_projects(root, entries)
+    if projects["projects"]:
+        pages["OPEN_SOURCE_PROJECTS.md"] = project_markdown(projects, entries)
     if (root / "INDEX.html").is_file():
-        pages["INDEX.html"] = local_index(entries)
+        pages["INDEX.html"] = local_index(entries, projects)
     return pages
 
 
-def local_index(entries: list[Entry]) -> str:
+def local_index(entries: list[Entry], projects=None) -> str:
     """Build the local reading view from the same catalog as the public indexes."""
     from tools.local_index import render
-    return render(entries)
+    return render(entries, projects)
 
 
 def main(argv: list[str] | None = None) -> int:

@@ -1,6 +1,8 @@
-# Current acquisition and reading work
+# Current library, reading and project work
 
-Updated November 11, 2026 after the six-theme conference addition. This page supersedes historical download checklists for present actions; fixed selections, failed-access diagnostics and dated batch totals remain unchanged.
+Updated November 12, 2026 after Git LFS publication and project-directory integration. This page supersedes historical download checklists for present actions; fixed selections, failed-access diagnostics and dated batch totals remain unchanged.
+
+The reading collection now publishes 479 PDFs, 479 canonical full-text Markdown files and 9,978 figures through Git LFS. [INDEX.html](../INDEX.html) combines the paper browser and 66 open-source projects, including 17 with DRL methods. [The project directory](../OPEN_SOURCE_PROJECTS.md) links 52 distinct publications to reading files. This indexing does not add papers, assessments or survey selections. Repository links and READMEs were checked on November 12, 2026; implementation tags and vehicle limitations remain separate from evidence of deployment.
 
 - V01-V24: [complete official pairs and 176 OXR pages across six themes](coverage-expansion-2026-11-11/README.md). Journal nominations remain unselected pending verifiable JCR Q1 evidence.
 - D01-D11: [complete official pairs, 90 OXR pages and author-code references](drl-open-source-2026-11-11/README.md). T-RO DRL-VO and IJRR Bayesian Controller Fusion were not selected pending JCR edition/category verification.

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 
@@ -21,7 +22,7 @@ def venue_family(venue: str) -> str:
     return venue.strip() or "Unspecified venue"
 
 
-def render(entries) -> str:
+def render(entries, projects=None) -> str:
     fields = (
         "code", "theme", "title", "bibliographic_year", "venue", "doi", "official_url",
         "assessment", "view_group", "kind", "publication_type", "pdf", "bibtex", "markdown",
@@ -38,4 +39,15 @@ def render(entries) -> str:
         records.append(row)
     payload = json.dumps(records, ensure_ascii=True, separators=(",", ":")).replace("<", "\\u003c")
     template = Path(__file__).with_name("local_index.html").read_text(encoding="utf-8")
-    return template.replace("__CATALOG_DATA__", payload)
+    project_payload = json.dumps(projects or {"projects": [], "categories": [], "methods": [], "environments": []},
+                                 ensure_ascii=True, separators=(",", ":")).replace("<", "\\u003c")
+    folder = Path(__file__).parent
+    fragments = {
+        "CATALOG_DATA": payload,
+        "PROJECT_DATA": project_payload,
+        "PROJECT_STYLE": (folder / "project_index.css").read_text(encoding="utf-8"),
+        "PROJECT_SCRIPT": (folder / "project_index.js").read_text(encoding="utf-8"),
+    }
+    # One substitution pass keeps placeholder-like text inside titles verbatim.
+    return re.sub(r"__(CATALOG_DATA|PROJECT_DATA|PROJECT_STYLE|PROJECT_SCRIPT)__",
+                  lambda match: fragments[match[1]], template)

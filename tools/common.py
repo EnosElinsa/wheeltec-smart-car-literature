@@ -10,7 +10,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 TEXT_SUFFIXES = {
     ".md", ".csv", ".json", ".jsonl", ".tex", ".bib", ".py", ".txt",
     ".yml", ".yaml", ".cff", ".toml", ".cfg", ".ini", ".bst", ".sty",
-    ".gitignore", ".gitattributes", ".html",
+    ".gitignore", ".gitattributes", ".html", ".js", ".css",
 }
 
 

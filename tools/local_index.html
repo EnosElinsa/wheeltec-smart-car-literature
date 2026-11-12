@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
-<title>移动机器人论文库 · WHEELTEC</title>
+<title>移动机器人论文与开源项目 · WHEELTEC</title>
 <style>
 :root {
   --ink:#24292f; --muted:#636c76; --faint:#8c959f; --line:#d8dee4;
@@ -159,13 +159,16 @@ tbody tr:hover{background:#fafbfc}
 @media(max-width:360px){.wrap,.header-inner{padding-left:14px;padding-right:14px}.brand span{display:none}.collection-summary{gap:12px}.total-block{padding-right:12px}.type-stat-line{gap:12px}.type-stat{gap:4px}.type-stat strong{font-size:17px}.total-number{font-size:22px}.theme-name{font-size:10px}.facets{gap:14px}.source-tabs{gap:11px}.year-label{font-size:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.site-header,.facets,.filters,.result-tools,.chips,.pagination,.reading-links,.aux-links,.paper-detail{display:none!important}.wrap{max-width:none;padding:0}.reading-layout{display:block}.page-heading{padding:10px 0}.collection-summary{margin-bottom:18px}tr{break-inside:avoid}.footer{margin-top:10px}}
+__PROJECT_STYLE__
 </style>
 </head>
 <body>
-<a class="skip" href="#papers">跳到论文列表</a>
-<header class="site-header"><div class="header-inner"><div class="brand"><strong>WHEELTEC</strong><span>机器人研究资料</span></div><nav class="header-nav" aria-label="页面导航"><a href="README.md">论文库说明</a><a href="05-survey/manuscript/survey.pdf" target="_blank" rel="noopener">研究综述 ↗</a><a href="#papers">论文目录</a></nav></div></header>
+<a class="skip" id="skip-content" href="#papers">跳到内容列表</a>
+<header class="site-header"><div class="header-inner"><div class="brand"><strong>WHEELTEC</strong><span>机器人研究资料</span></div><nav class="header-nav" aria-label="页面导航"><a href="README.md">使用说明</a><a href="https://enoselinsa.github.io/wheeltec-ros-textbook/08-advanced-applications/54-open-source-projects/" target="_blank" rel="noopener">工程教材 ↗</a><a href="05-survey/manuscript/survey.pdf" target="_blank" rel="noopener">研究综述 ↗</a></nav></div></header>
 <div class="wrap">
-<div class="page-heading"><h1 id="page-title">移动机器人论文库</h1><p>按研究方向、发表年份和期刊 / 会议检索已收录论文。</p></div>
+<div class="page-heading"><h1 id="page-title">移动机器人论文与开源项目</h1><p id="page-description">检索研究论文，查阅算法实现与运行条件。</p></div>
+<nav class="collection-tabs" role="tablist" aria-label="资料目录"><button id="papers-tab" role="tab" aria-controls="paper-view" aria-selected="true" tabindex="0" type="button">论文 <span id="paper-tab-count"></span></button><button id="projects-tab" role="tab" aria-controls="project-view" aria-selected="false" tabindex="-1" type="button">开源项目 <span id="project-tab-count"></span></button></nav>
+<section id="paper-view" role="tabpanel" aria-labelledby="papers-tab">
 <section class="collection-summary" aria-label="论文收录概况"><div class="total-block"><strong class="total-number" id="total"></strong><span class="total-label">篇论文</span></div><div class="type-stat-line" id="type-stats"></div><div class="summary-note" id="summary-note"></div></section>
 <div class="reading-layout">
 <aside id="overview" class="facets" aria-label="论文分布与分类">
@@ -182,13 +185,39 @@ tbody tr:hover{background:#fafbfc}
   <div class="pagination"><label>每页 <select id="size" aria-label="每页论文数量"><option value="20">20 篇</option><option value="50">50 篇</option><option value="100">100 篇</option><option value="all">全部</option></select></label><nav class="page-tools" aria-label="论文分页"><button class="outline-button" id="prev" type="button">上一页</button><span id="page-label" aria-live="polite"></span><button class="outline-button" id="next" type="button">下一页</button></nav></div>
 </main>
 </div>
-<footer class="footer"><p>WHEELTEC · 移动机器人论文库 <span id="footer-count"></span></p><p>PDF 与全文可离线阅读 · <a href="README.md">论文库说明</a></p></footer>
+</section>
+<section id="project-view" role="tabpanel" aria-labelledby="projects-tab" hidden>
+<section class="collection-summary" aria-label="开源项目收录概况"><div class="total-block"><strong class="total-number" id="project-total"></strong><span class="total-label">个开源项目</span></div><div class="type-stat-line" id="project-stats"></div><div class="summary-note" id="project-summary-note"></div></section>
+<div class="reading-layout project-layout">
+<aside class="facets project-facets" aria-label="项目分类">
+  <section class="facet-section"><div class="facet-heading"><h2>应用方向</h2><small>项目数</small></div><div id="project-categories" class="themes" role="group" aria-label="按应用方向浏览项目"></div></section>
+  <section class="facet-section"><div class="facet-heading"><h2>方法</h2><small>可交叉归类</small></div><div id="project-methods" class="themes" role="group" aria-label="按算法方法浏览项目"></div></section>
+  <section class="facet-section project-guidance"><h2>R680 参考条件</h2><p>ROS 2 Humble · Ackermann 底盘 · M10P 二维雷达 · 红外与深度图像 · 轮速 · IMU</p><p>运行环境和适配要点见项目详情。</p><a href="https://enoselinsa.github.io/wheeltec-ros-textbook/08-advanced-applications/54-open-source-projects/" target="_blank" rel="noopener">第 54 章：项目与算法说明 ↗</a></section>
+</aside>
+<main id="projects" class="papers-section" tabindex="-1">
+  <div class="papers-heading"><div><h2>开源项目 <span id="project-count" aria-live="polite" aria-atomic="true"></span></h2><p id="project-result-summary" class="result-summary"></p></div><div class="result-tools"><label>排序 <select id="project-sort" aria-label="项目排序"><option value="category">按应用方向</option><option value="name">项目名称 A–Z</option><option value="year">论文年份从新到旧</option></select></label><button id="project-export" class="outline-button" type="button">导出清单</button></div></div>
+  <div class="filters" role="search" aria-label="搜索和筛选开源项目"><label class="search-line"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">搜索项目、算法、运行环境或论文</span><input id="project-search" type="search" placeholder="搜索项目、算法、运行环境或论文，如 SAC、Nav2" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+  <div class="filter-grid project-filter-grid"><label class="field"><span class="field-label">应用方向</span><select id="project-category" aria-label="项目应用方向"></select></label><label class="field"><span class="field-label">方法</span><select id="project-method" aria-label="项目算法方法"></select></label><label class="field"><span class="field-label">运行环境</span><select id="project-environment" aria-label="项目运行环境"></select></label><label class="field"><span class="field-label">论文年份</span><select id="project-year" aria-label="项目关联论文年份"></select></label><button class="text-button reset" id="project-reset" type="button">重置</button></div></div>
+  <div class="chips" id="project-chips" aria-label="项目筛选条件"></div>
+  <div class="project-table-head" aria-hidden="true"><span>项目与用途</span><span>算法与输入输出</span><span>实现与参考</span></div>
+  <div id="project-rows" class="project-list"></div>
+  <div class="empty" id="project-empty" hidden><h3>没有符合条件的项目</h3><p>尝试其他算法、运行环境，或放宽筛选条件。</p><button id="project-empty-reset" class="outline-button" type="button">清除筛选，查看全部项目</button></div>
+  <div class="pagination"><label>每页 <select id="project-size" aria-label="每页项目数量"><option value="12">12 个</option><option value="24">24 个</option><option value="all">全部</option></select></label><nav class="page-tools" aria-label="项目分页"><button id="project-prev" class="outline-button" type="button">上一页</button><span id="project-page-label" aria-live="polite"></span><button id="project-next" class="outline-button" type="button">下一页</button></nav></div>
+  <p class="directory-note" id="project-data-note"></p>
+</main>
+</div>
+<section id="comparison" class="comparison" hidden aria-label="项目对比"><div class="comparison-heading"><div><h2>项目对比 <span id="compare-count"></span></h2><p>对照算法、观测、运行环境和适配条件。</p></div><button id="compare-clear" type="button" class="text-button">清空对比</button></div><div class="comparison-scroll" tabindex="0" role="region" aria-label="可横向滚动的项目对比表"><table id="compare-table"></table></div></section>
+<div id="compare-tray" class="compare-tray" hidden><span id="compare-tray-text" aria-live="polite"></span><button id="compare-open" type="button" class="outline-button">查看对比</button><button id="compare-tray-clear" type="button" class="text-button">清空</button></div>
+</section>
+<footer class="footer"><p>WHEELTEC · 机器人研究资料 <span id="footer-count"></span></p><p><span id="footer-note">PDF 与全文可离线阅读</span> · <a href="README.md">使用说明</a></p></footer>
 </div>
 <noscript><div class="noscript">请启用 JavaScript 以使用检索功能，也可直接打开 <a href="01-papers/INDEX.md">论文目录</a>。</div></noscript>
 <script id="catalog-data" type="application/json">__CATALOG_DATA__</script>
+<script id="project-data" type="application/json">__PROJECT_DATA__</script>
 <script>
 'use strict';
 const records=JSON.parse(document.getElementById('catalog-data').textContent);
+let activeView=new URLSearchParams(location.hash.slice(1)).get('view')==='projects'||location.hash==='#projects'?'projects':'papers';
 const $=id=>document.getElementById(id);
 const node=(tag,text='',cls='')=>{const el=document.createElement(tag);el.textContent=text;if(cls)el.className=cls;return el;};
 const themes={
@@ -268,6 +297,8 @@ function row(r){
   appendLink(reading,r.pdf,'PDF','primary',r.code);appendLink(reading,r.markdown,'全文','',r.code);
   appendLink(aux,r.bibtex,'引用','',r.code);appendLink(aux,r.official_url,'出版页 ↗','',r.code);
   if(reading.childNodes.length)files.append(reading);if(aux.childNodes.length)files.append(aux);
+  const related=window.ProjectDirectory?.forPaper(r.code)||[];
+  if(related.length){const projects=node('div','','aux-links project-paper-links');for(const p of related){const a=node('a',p.name+' · 代码');a.href='#view=projects&project='+encodeURIComponent(p.id);projects.append(a);}files.append(projects);}
   tr.append(paper,venue,year,files);return tr;
 }
 function countBy(rows,key){const counts=new Map();for(const r of rows){const v=typeof key==='function'?key(r):r[key];if(v)counts.set(v,(counts.get(v)||0)+1);}return counts;}
@@ -349,7 +380,7 @@ function restore(){
   if(!['20','50','100','all'].includes(state.size))state.size=defaults.size;
   page=Math.max(1,Number.parseInt(p.get('page'),10)||1);
 }
-function save(){const params=new URLSearchParams();for(const[k,v]of Object.entries(state))if(v!==defaults[k])params.set(k,v);if(page>1)params.set('page',page);try{history.replaceState(null,'',location.pathname+location.search+(params.size?'#'+params.toString():''));}catch(e){/* Some file URL hosts restrict history; reading still works. */}}
+function save(){if(activeView!=='papers')return;const params=new URLSearchParams();for(const[k,v]of Object.entries(state))if(v!==defaults[k])params.set(k,v);if(page>1)params.set('page',page);try{history.replaceState(null,'',location.pathname+location.search+(params.size?'#'+params.toString():''));}catch(e){/* Some file URL hosts restrict history; reading still works. */}}
 function reset(){state={...defaults};render(true);}
 for(const key of Object.keys(defaults))$(key).addEventListener(key==='search'?'input':'change',()=>{state[key]=$(key).value;render(true);});
 $('reset').addEventListener('click',reset);$('empty-reset').addEventListener('click',reset);
@@ -360,10 +391,10 @@ $('export').addEventListener('click',()=>{
   const cell=v=>'"'+String(v??'').replace(/"/g,'""')+'"',values=filtered.map(r=>fields.map(([key])=>key==='theme'?themes[r.theme]?.name||r.theme:key==='publication_type'?labels[kind(r)]:r[key]));
   const csv='\ufeff'+[fields.map(([,label])=>label),...values].map(r=>r.map(cell).join(',')).join('\r\n'),url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})),a=node('a');a.href=url;a.download='wheeltec-papers.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
-document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!e.ctrlKey&&!e.metaKey&&!e.altKey){e.preventDefault();$('search').focus();}});
-window.addEventListener('hashchange',()=>{if(['#papers','#overview'].includes(location.hash))return;restore();render();});
+document.addEventListener('keydown',e=>{if(e.key==='/'&&!['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)&&!e.ctrlKey&&!e.metaKey&&!e.altKey){e.preventDefault();$(activeView==='projects'?'project-search':'search').focus();}});
 overview();restore();render();
 window.LibraryEngine={matches,selected,ordered,facet,defaults};
+__PROJECT_SCRIPT__
 </script>
 </body>
 </html>

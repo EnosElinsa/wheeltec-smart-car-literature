@@ -6,7 +6,7 @@ Contributions are accepted under the license of the part they change: MIT for co
 
 ## Conventions
 
-- **Language.** Research prose and documentation are in English. Review prose uses American English and writes "LiDAR". Excerpts and original abstracts are verbatim. The reading-interface template and generated `INDEX.html` use Chinese labels. These two files and hash-registered verbatim source transcriptions are exempt from the CJK-text check. All other public-tree checks still apply to it. `tools.check_public_tree --cjk strict` rejects CJK text elsewhere.
+- **Language.** Research prose and documentation are in English. Review prose uses American English and writes "LiDAR". Excerpts and original abstracts are verbatim. The reading interface, its project JavaScript, generated `INDEX.html` and `06-data/open-source-projects.json` use Chinese labels and project descriptions. These explicitly listed UI files and hash-registered verbatim source transcriptions are exempt from the CJK-text check. All path, credential and source-asset checks still apply. `tools.check_public_tree --cjk strict` rejects CJK text elsewhere.
 - **Names.** File and directory names use English ASCII. A paper folder is `<theme>/<year>-<short-name>-<ID>/` and uses the same name in `01-papers/`, `02-fulltext/` and `03-reviews/`. IDs never change once assigned (see the [source policy](06-data/source-policy.md)).
 - **Public content.** The owner authorizes publishing admitted reading PDFs, canonical transcriptions and images through Git LFS. Register their exact hashes and sizes in `06-data/reading-assets.json`; preserve original bytes and third-party rights. Keep the historical archive, extraction diagnostics, acquisition state and credentials local. `tools.check_public_tree` permits only registered source assets, while `tools.check_lfs_assets` checks catalog identities, bytes or pointers, and LFS filters.
 - **Source bytes.** Publisher BibTeX exports keep their original bytes (`.gitattributes` disables line-ending conversion for `*.bib`). A derived `citation.bib` needs the owner's explicit authorization, keeps the export beside it (for example as `citation-original.bib`) and records the change in the paper's `provenance.json`.
@@ -26,6 +26,12 @@ Write and check a card as described in [03-reviews/WORKFLOW.md](03-reviews/WORKF
 4. Add the IDs that join the survey to `selected_ids` in `06-data/survey-inclusion.json`. Every indexed paper must be either selected or listed in `internal_reference_ids`.
 5. Run `python -m tools.build_indexes --strict` and the checks below.
 6. If the manuscript changes, rebuild it as described in the next section.
+
+## Maintaining the project directory
+
+Edit `06-data/open-source-projects.json`, then run `python -m tools.build_indexes --strict` to regenerate `OPEN_SOURCE_PROJECTS.md` and `INDEX.html`. Follow the field rules and browser checks in [the interface guide](06-data/index-interface.md). Resolve each paper link by its exact DOI or official publication URL, retain the textbook source revision and record the date of repository checks. Runtime tags describe available implementations, including separately linked integrations; put the specific ROS distribution and portability limits in the adaptation notes. Keep diffusion policies, self-supervised representations and reinforcement learning distinct. Do not infer licenses, deployment success or journal rankings from project names.
+
+The textbook chapter and README link to the portable directory through public URLs, so either repository can be cloned independently. Changes to the paper collection, review cards or survey selection follow the separate procedures in this guide.
 
 ## Manuscript changes
 
