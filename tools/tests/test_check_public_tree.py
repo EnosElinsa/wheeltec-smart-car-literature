@@ -99,6 +99,18 @@ def test_cjk_report_versus_strict(tmp_path):
     assert cpt.failed(report, "strict")
 
 
+def test_localized_interface_keeps_all_nonlanguage_guards(tmp_path):
+    rel = 'tools/local_index.html'
+    write(tmp_path, rel, CJK_SAMPLE + '\n' + WIN_USER_PATH + '\n' + FAKE_TOKEN)
+    report = scan(tmp_path, [rel])
+    assert not report.by_check('cjk')
+    assert report.by_check('absolute-path')
+    assert report.by_check('secret')
+    assert cpt.failed(report, 'strict')
+    write(tmp_path, 'tools/other.html', CJK_SAMPLE)
+    assert scan(tmp_path, ['tools/other.html']).by_check('cjk')
+
+
 def test_size_limit(tmp_path):
     path = write(tmp_path, "06-data/big.csv", "x" * 2048)
     report = cpt.scan_files(tmp_path, [path], size_limit=1024)

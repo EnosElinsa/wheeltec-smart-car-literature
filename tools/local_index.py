@@ -29,8 +29,12 @@ def render(entries) -> str:
     )
     records = []
     for entry in sorted(entries, key=lambda e: e.code):
+        # The reading interface describes admitted papers. Excluded/background
+        # and pending catalog identities remain in the administrative CSV only.
+        if entry.row.get("view_group", "main") not in {"main", "surveys"}:
+            continue
         row = {key: entry.row.get(key, "") for key in fields}
-        row["venue_family"] = venue_family(row["venue"])
+        row["venue_family"] = venue_family(row["venue"]) if row["venue"].strip() else ""
         records.append(row)
     payload = json.dumps(records, ensure_ascii=True, separators=(",", ":")).replace("<", "\\u003c")
     template = Path(__file__).with_name("local_index.html").read_text(encoding="utf-8")

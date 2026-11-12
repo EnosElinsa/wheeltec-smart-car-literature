@@ -25,3 +25,14 @@ def test_render_preserves_metadata_without_script_injection():
     assert rows[0]['publication_type']=='journal'
     assert rows[0]['citation_status']=='derived'
     assert render([entry])==page
+
+
+def test_reading_interface_does_not_count_administrative_identities():
+    entries = [Entry({'code':group,'title':group,'view_group':group},
+                     'T1-perception-localization',None,False)
+               for group in ('main','surveys','excluded','pending')]
+    page = render(entries)
+    payload = re.search(r'<script id="catalog-data" type="application/json">(.*?)</script>',page,re.S).group(1)
+    rows = json.loads(payload)
+    assert {r['code'] for r in rows} == {'main','surveys'}
+    assert all(r['venue_family'] == '' for r in rows)

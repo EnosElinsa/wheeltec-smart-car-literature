@@ -10,8 +10,8 @@ The check scans every file that is tracked or would be added by
 * ``absolute-path``: a local absolute path inside a user profile folder
   (Windows drive paths, ``/home/<name>/``, or ``/Users/<name>/``);
 * ``secret``: a string that looks like a credential;
-* ``cjk``: Chinese, Japanese, or Korean characters (the public tree is
-  English-only).
+* ``cjk``: Chinese, Japanese, or Korean characters outside the localized
+  reading-interface template. Research prose stays English-only.
 
 The first four checks always fail the run. The CJK check fails the run only
 with ``--cjk strict``; ``--cjk report`` lists the files without failing.
@@ -45,6 +45,9 @@ ALLOWED_IN_FULLTEXT = {"02-fulltext/INDEX.md"}
 # The manuscript is self-authored: its compiled PDFs and figure PDFs may be published.
 SELF_AUTHORED_PDFS = {"05-survey/manuscript/survey.pdf", "05-survey/manuscript/supplement.pdf"}
 MANUSCRIPT_FIGURES = "05-survey/manuscript/figures/"
+# The local reading UI serves Chinese-speaking readers. This exception applies
+# only to its labels, never to research prose or path/secret/source guards.
+LOCALIZED_UI_PATHS = {"tools/local_index.html"}
 
 ABSOLUTE_PATH_PATTERNS = [
     re.compile(r"(?i)\b[a-z]:(?:\\\\|\\|/)+users(?:\\\\|\\|/)+"),
@@ -138,7 +141,7 @@ def scan_text(rel: str, text: str, report: Report) -> None:
                     Finding("secret", rel, lineno, "possible credential (value not shown)")
                 )
                 break
-        if CJK_PATTERN.search(line):
+        if rel not in LOCALIZED_UI_PATHS and CJK_PATTERN.search(line):
             cjk_lines += 1
             if cjk_lines <= 3:
                 report.findings.append(Finding("cjk", rel, lineno))
