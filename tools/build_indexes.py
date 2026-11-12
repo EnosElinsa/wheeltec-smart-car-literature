@@ -10,9 +10,9 @@ Source indexes include acquired papers with their assessment status; the
 review index lists existing review cards. Acquisition registers are provenance
 inputs, while every paper remains in the shared theme directories.
 
-PDFs and ``paper.md`` files are excluded from the public tree, so entries link
-to review cards, source notes and ``citation.bib``, link the DOI or official URL
-externally, and show the local PDF and Markdown paths as code. Output is
+PDFs and ``paper.md`` files are delivered through Git LFS. Entries link to
+review cards, source notes and ``citation.bib``, link the DOI or official URL
+externally, and show the PDF and Markdown paths as code. Output is
 deterministic: themes in name order, entries by year (newest first) and ID,
 no timestamps.
 
@@ -107,8 +107,8 @@ def _table(entries: list[Entry], page_dir: str, assessment: bool = False) -> str
 def _legend(entries: list[Entry], to_root: str) -> str:
     keys = sum(e.key for e in entries)
     text = (
-        "PDFs and Markdown transcriptions are local only: they are excluded from the public "
-        "repository for copyright reasons, so their paths are shown as code, not as links. "
+        "PDFs and full-text transcriptions are delivered through Git LFS. Run `git lfs pull` "
+        "after cloning, then open the reading files at the repository-relative paths below. "
         f"{STAR} marks the {keys} key papers of the [reading guide]({to_root}READING_GUIDE.md). "
         "Module, Evidence, and Platform are the `survey_module`, `evidence_type`, and "
         "`platform_class` values of each review's survey coding "

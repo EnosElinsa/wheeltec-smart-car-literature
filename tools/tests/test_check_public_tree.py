@@ -78,6 +78,11 @@ def test_relative_archive_reference_is_not_absolute(tmp_path):
     assert not scan(tmp_path, ["03-reviews/r.md"]).by_check("absolute-path")
 
 
+def test_web_url_home_segment_is_not_a_local_path(tmp_path):
+    write(tmp_path, '03-reviews/r.md', 'https://example.org/home/robotics/article\n')
+    assert not scan(tmp_path, ['03-reviews/r.md']).by_check('absolute-path')
+
+
 def test_secret_detected_without_echo(tmp_path):
     write(tmp_path, "tools/conf.txt", "token line " + FAKE_TOKEN + "\n")
     report = scan(tmp_path, ["tools/conf.txt"])
@@ -136,11 +141,15 @@ def test_repository_gitignore_excludes_local_material(tmp_path):
         "05-survey/manuscript/survey.tex",
         "05-survey/manuscript/survey.pdf",
         "05-survey/manuscript/figures/fig-taxonomy.pdf",
-    ]
-    drop = [
         "01-papers/T1/x/paper.pdf",
         "02-fulltext/T1/x/paper.md",
         "02-fulltext/T1/x/images/a.jpg",
+        "INDEX.html",
+    ]
+    drop = [
+        "02-fulltext/T1/x/extraction.json",
+        "02-fulltext/T1/x/pages/001.json",
+        "02-fulltext/T1/x/origin.pdf",
         "05-survey/manuscript/survey.log",
         "99-archive/history-2026-10-25.zip",
         "99-archive/superseded/old.csv",

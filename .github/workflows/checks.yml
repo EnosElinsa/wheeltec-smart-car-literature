@@ -19,6 +19,8 @@ jobs:
         python-version: ["3.11", "3.14"]
     steps:
       - uses: actions/checkout@v7
+        with:
+          lfs: false
       - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python-version }}
@@ -35,3 +37,5 @@ jobs:
         run: python -m tools.check_links
       - name: Public-tree policy
         run: python -m tools.check_public_tree --cjk strict
+      - name: Git LFS reading assets
+        run: python -m tools.check_lfs_assets

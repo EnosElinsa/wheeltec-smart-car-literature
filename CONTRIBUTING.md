@@ -6,9 +6,9 @@ Contributions are accepted under the license of the part they change: MIT for co
 
 ## Conventions
 
-- **Language.** Research prose and documentation are in English. Review prose uses American English and writes "LiDAR". Excerpts and original abstracts are verbatim. The local reading-interface template, `tools/local_index.html`, uses Chinese labels for its readers; this single file is exempt from the CJK-text check. All other public-tree checks still apply to it. `tools.check_public_tree --cjk strict` rejects CJK text elsewhere.
+- **Language.** Research prose and documentation are in English. Review prose uses American English and writes "LiDAR". Excerpts and original abstracts are verbatim. The reading-interface template and generated `INDEX.html` use Chinese labels. These two files and hash-registered verbatim source transcriptions are exempt from the CJK-text check. All other public-tree checks still apply to it. `tools.check_public_tree --cjk strict` rejects CJK text elsewhere.
 - **Names.** File and directory names use English ASCII. A paper folder is `<theme>/<year>-<short-name>-<ID>/` and uses the same name in `01-papers/`, `02-fulltext/` and `03-reviews/`. IDs never change once assigned (see the [source policy](06-data/source-policy.md)).
-- **Public content.** Commit only self-authored material. Publisher PDFs, transcriptions, extracted figures, the historical archive, acquisition state and files that contain local absolute paths stay local. `.gitignore` excludes most of them, and `tools.check_public_tree` checks the tracked tree.
+- **Public content.** The owner authorizes publishing admitted reading PDFs, canonical transcriptions and images through Git LFS. Register their exact hashes and sizes in `06-data/reading-assets.json`; preserve original bytes and third-party rights. Keep the historical archive, extraction diagnostics, acquisition state and credentials local. `tools.check_public_tree` permits only registered source assets, while `tools.check_lfs_assets` checks catalog identities, bytes or pointers, and LFS filters.
 - **Source bytes.** Publisher BibTeX exports keep their original bytes (`.gitattributes` disables line-ending conversion for `*.bib`). A derived `citation.bib` needs the owner's explicit authorization, keeps the export beside it (for example as `citation-original.bib`) and records the change in the paper's `provenance.json`.
 - **Encodings.** The data files do not share one byte layout. For example, `paper-index.csv` and `corpus-comparison.csv` use UTF-8 with a byte-order mark and CRLF line endings, while `library-catalog.csv` and the files in `06-data/evidence-coding/` use UTF-8 without a byte-order mark and LF line endings. Keep each file's encoding and line endings when editing it, preferably with a script.
 - **Frozen records.** The codebook text, `primary-codes.csv` and `primary-locators.csv` in `06-data/evidence-coding/` are hash-frozen. A code correction is a new row of `adjudication-log.csv`. A card correction is recorded in `06-data/review-corrections.csv`.
@@ -44,6 +44,7 @@ python -m pytest
 python -m tools.build_indexes --strict
 python -m tools.check_links
 python -m tools.check_public_tree --cjk strict
+python -m tools.check_lfs_assets
 python -m tools.review_check --all --pdf
 ```
 

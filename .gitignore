@@ -1,12 +1,18 @@
 # ---------------------------------------------------------------------------
-# Copyrighted publisher artifacts. They stay on the local machine only.
-# Each paper keeps its DOI, official URL, and raw BibTeX in the public tree.
+# Admitted reading sources are delivered through Git LFS.
+# Other PDFs and extraction diagnostics remain local.
 # ---------------------------------------------------------------------------
 *.pdf
+!01-papers/T*/*/paper.pdf
 
-# Full-text Markdown transcriptions and figures extracted from publisher PDFs.
-02-fulltext/*
+# Publish the canonical full texts and reading images, not extractor internals.
+02-fulltext/**
+!02-fulltext/**/
 !02-fulltext/INDEX.md
+!02-fulltext/T*/README.md
+!02-fulltext/T*/*/paper.md
+!02-fulltext/T*/*/images/*.png
+!02-fulltext/T*/*/images/*.jpg
 
 # Historical archive (contains run logs, local paths, and full texts).
 99-archive/*.zip
@@ -14,7 +20,6 @@
 99-archive/local/
 
 # Local reading view, source evidence and reusable OCR runtime data.
-/INDEX.html
 /06-data/provenance/
 /06-data/missing-items.md
 /.local/

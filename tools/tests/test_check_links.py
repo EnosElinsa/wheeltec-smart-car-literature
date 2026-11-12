@@ -69,8 +69,6 @@ def test_reports_broken_and_local_only_links(repo, capsys):
     report = cl.check_tree(repo)
     assert problems(report) == {
         ("README.md", 4, "broken", "docs/missing.md"),
-        ("README.md", 5, "local-only", "01-papers/T1/x/paper.pdf"),
-        ("README.md", 5, "local-only", "02-fulltext/T1/x/paper.md"),
         ("README.md", 15, "broken", "docs/no such file.md"),
         ("README.md", 16, "local-only", "99-archive/history-2026-10-25.zip"),
         ("README.md", 16, "local-only", "05-survey/manuscript/survey.log"),
@@ -81,7 +79,7 @@ def test_reports_broken_and_local_only_links(repo, capsys):
     assert cl.main(["--root", str(repo)]) == 1
     out = capsys.readouterr().out
     assert "README.md:4: broken link: docs/missing.md" in out
-    assert "broken: 4; local-only: 4" in out
+    assert "broken: 4; local-only: 2" in out
 
 
 def test_clean_tree_passes(repo, capsys):

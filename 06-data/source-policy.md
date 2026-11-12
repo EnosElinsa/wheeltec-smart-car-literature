@@ -6,11 +6,11 @@ Historical organization date: October 25, 2026. English maintenance date: Novemb
 
 Paths follow `section/theme/year-short-name-ID`. Each paper uses the same theme, short directory name, and ID in three sections:
 
-- `01-papers/`: local `paper.pdf` and `citation.bib`; user-authorized derived citations retain their original `citation-original.bib` or `citation.ris` alongside.
-- `02-fulltext/`: local source `paper.md` and its referenced `images/`.
+- `01-papers/`: LFS `paper.pdf` and native `citation.bib`; user-authorized derived citations retain their original `citation-original.bib` or `citation.ris` alongside.
+- `02-fulltext/`: LFS source `paper.md` and its `images/`.
 - `03-reviews/`: `review.md`, kept separate from the source text.
 
-PDFs, BibTeX, source Markdown, and source images retain their source bytes. Review cards can be corrected and updated. Relative image paths inside source Markdown are preserved, with required images in their original relative locations; unreferenced temporary image copies are excluded from reading directories. Source PDFs, Markdown, and historical ZIP files are local, gitignored artifacts; public navigation shows their paths as code rather than repository links.
+PDFs, BibTeX, source Markdown, and source images retain their source bytes. Review cards can be corrected and updated. Relative image paths inside source Markdown are preserved, with required images in their original relative locations; unreferenced temporary image copies are excluded from reading directories. On November 12, 2026, the owner requested Git LFS publication of admitted reading PDFs, canonical Markdown and images. `reading-assets.json` binds these objects to their exact bytes. Clone with Git LFS and run `git lfs pull` before using the reading interface. Historical ZIP files and raw extraction diagnostics remain local and ignored.
 
 ## IDs and scope
 

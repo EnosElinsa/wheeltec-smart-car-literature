@@ -13,8 +13,8 @@ A link is reported as
 * ``broken`` when it does not resolve to an existing file or directory inside
   the repository;
 * ``local-only`` when it resolves to a gitignored file (``git check-ignore``),
-  which is missing from the public tree: PDFs, ``02-fulltext/`` except
-  ``INDEX.md``, the ``99-archive`` zip, and LaTeX build products.
+  which is missing from the published checkout, such as private archives and
+  LaTeX build products. Registered PDFs/full texts are delivered by Git LFS.
 
 The run prints each problem with file and line, a summary count, and exits
 non-zero when any problem exists.
@@ -114,6 +114,10 @@ def check_tree(root: Path = REPO_ROOT) -> Report:
     for path in git_candidate_files(root):
         rel = path.relative_to(root).as_posix()
         if path.suffix.lower() != ".md" or rel.startswith(SKIP_PREFIXES):
+            continue
+        # Source transcription links/figures are retained verbatim; they are
+        # verified with the registered reading assets rather than edited as docs.
+        if rel.startswith('02-fulltext/') and path.name == 'paper.md':
             continue
         report.files += 1
         for lineno, target in extract_links(read_text(path)):

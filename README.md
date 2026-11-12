@@ -8,7 +8,7 @@ An evidence library and survey manuscript on wheeled mobile robot autonomy under
 
 The library supports research on the WHEELTEC R680 wheeled robot. A robot or computer reported in a paper is not evidence that the method has been deployed on the R680.
 
-**Unified library:** 650 distinct records: 247 assessed publications, 226 unassessed source additions, six supplemental surveys and 171 excluded/background references. All 479 active sources have transcribed reading sets in the six theme directories in [the catalog](06-data/library-catalog.csv). Open the local `INDEX.html` to search and read them. The 232 active additions remain unassessed and outside the survey selection. [Latest addition](06-data/coverage-expansion-2026-11-11/README.md): 24 ICRA/IROS 2025 papers across six themes, with 176 OXR pages. Future journal downloads require JCR Q1; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
+**Unified library:** 650 distinct records: 247 assessed publications, 226 unassessed source additions, six supplemental surveys and 171 excluded/background references. All 479 active sources have transcribed reading sets in the six theme directories in [the catalog](06-data/library-catalog.csv). Open [INDEX.html](INDEX.html) to search and read them. The 232 active additions remain unassessed and outside the survey selection. [Latest addition](06-data/coverage-expansion-2026-11-11/README.md): 24 ICRA/IROS 2025 papers across six themes, with 176 OXR pages. Future journal downloads require JCR Q1; RA-L, AURO and JFR are excluded from new acquisition. See [current work](06-data/current-work.md).
 
 **Status (November 5, 2026):** working draft. The survey has not been submitted, and its author information and submission declarations are incomplete. The corpus is a purposive selection, not an exhaustive or systematic search of the field.
 
@@ -40,8 +40,8 @@ Assessment depth differs between cards. A full card records a whole-paper readin
 ## Repository layout
 
 ```text
-01-papers/<theme>/<year>-<short-name>-<ID>/    citation.bib and provenance (PDF local only)
-02-fulltext/<theme>/<year>-<short-name>-<ID>/  source transcription and images (local only)
+01-papers/<theme>/<year>-<short-name>-<ID>/    PDF via Git LFS, citation.bib and provenance
+02-fulltext/<theme>/<year>-<short-name>-<ID>/  source transcription and images via Git LFS
 03-reviews/<theme>/<year>-<short-name>-<ID>/   review.md, one card per paper
 04-analysis/                                   dated cross-paper analyses and research plans
 05-survey/manuscript/                          LaTeX sources, figures, generated tables, built PDFs, revision records
@@ -54,7 +54,18 @@ A paper keeps the same theme, folder name and ID in `01-papers/`, `02-fulltext/`
 
 ## Public and local content
 
-The repository publishes only self-authored material: review cards, analyses, data tables, citation exports and provenance records, indexes, tools, and the manuscript sources, figures and built PDFs. Publisher PDFs, full-text transcriptions, extracted figures and the historical archive stay on the maintainer's machine for copyright reasons. Public pages show their paths as code, not as links. `tools.check_public_tree` enforces this rule, together with the English-only rule and the absence of local absolute paths and secrets.
+At the owner's request, the 479 admitted papers now include their original PDFs, full-text Markdown and figure assets through Git LFS. [INDEX.html](INDEX.html), citations, review cards, analyses, data, tools and the manuscript remain in normal Git. The [reading-asset manifest](06-data/reading-assets.json) records every LFS file's exact size and SHA-256. Raw extraction diagnostics, acquisition state, credentials and historical archives remain local. Third-party source rights remain with their owners; the repository's code and documentation licenses do not relicense them.
+
+Install Git LFS before cloning, then download the reading objects:
+
+```shell
+git lfs install
+git clone -c core.longpaths=true git@github.com:EnosElinsa/wheeltec-smart-car-literature.git
+cd wheeltec-smart-car-literature
+git lfs pull
+```
+
+Open `INDEX.html` locally after the download. An existing clone needs `git pull` followed by `git lfs pull`. Run `python -m tools.check_lfs_assets --materialized` to verify the downloaded files against the catalog and manifest. Normal CI checks LFS pointers without downloading the full reading collection.
 
 The provenance ledgers record the transcription pipeline of each paper. The 127 papers of the baseline, supplemental, expansion and follow-up batches keep the MinerU precision exports or archived original exports listed in [fulltext-manifest.json](06-data/fulltext-manifest.json). N01-N20 use local PyMuPDF4LLM exports, S01-S48, R01-R36 and D01-D11 use OXR-1.0 through self-hosted vLLM, and K01-K16 use PyMuPDF4LLM 0.2.9. The PDF stays the authority for numbers, tables, equations and page numbers.
 
@@ -79,7 +90,8 @@ The [Checks workflow](.github/workflows/checks.yml) runs every check below that 
 | `python -m tools.build_indexes --strict` | Regenerates the indexes and the catalog from the paper index and the cards; fails on cards without coding | No |
 | `python -m tools.build_tables --strict` | Rebuilds the coding columns of the paper index and `corpus-comparison.csv` from the cards | No |
 | `python -m tools.check_links` | Relative links in all tracked Markdown files; flags links to local-only files | No |
-| `python -m tools.check_public_tree --cjk strict` | Public-tree policy: no publisher files, no CJK text, no local paths, no secrets | No |
+| `python -m tools.check_public_tree --cjk strict` | Public-tree policy: registered reading sources only; no private archives, local paths or secrets | No |
+| `python -m tools.check_lfs_assets` | Reading-asset manifest, LFS pointers or materialized file hashes, and catalog identity | No (LFS pointers suffice) |
 | `python -m tools.review_check --all --pdf` | Card structure, vocabulary and excerpts against the PDF pages | Yes |
 | `python -m tools.locate <ID> --info` | Paths, DOI, URL and page count of one paper (`--find`, `--page` and `--render` read the PDF) | Yes, except `--info` |
 
@@ -98,8 +110,8 @@ The survey is unpublished. Until it appears, cite this repository as described i
 | Material | Paths | Terms |
 |---|---|---|
 | Code | `tools/`, `05-survey/manuscript/scripts/`, `.github/` | [MIT](LICENSE-MIT) |
-| Review cards, analyses, data, provenance records, indexes and documentation | `03-reviews/`, `04-analysis/`, `06-data/`, the provenance files in `01-papers/`, and the Markdown files outside `05-survey/manuscript/` | [CC BY 4.0](LICENSE-CC-BY-4.0) |
+| Review cards, analyses, data, provenance records, indexes and documentation | `03-reviews/`, `04-analysis/`, `06-data/`, the provenance files in `01-papers/`, and authored Markdown outside `05-survey/manuscript/` and `02-fulltext/` | [CC BY 4.0](LICENSE-CC-BY-4.0) |
 | Survey manuscript | `05-survey/manuscript/` except `scripts/`: LaTeX sources, figures, generated tables, built PDFs and revision records | No license is granted before publication. All rights are reserved |
-| Third-party material | Publisher citation exports (`*.bib` and `*.ris` files in `01-papers/` and `06-data/`), Crossref and catalogue records, and the abstracts and excerpts quoted in the cards | Not covered by these licenses. The rights stay with their owners |
+| Third-party material | Publisher PDFs, source full texts and figures, citation exports (`*.bib` and `*.ris` files in `01-papers/` and `06-data/`), Crossref and catalogue records, and the abstracts and excerpts quoted in the cards | Not covered by these licenses. The rights stay with their owners |
 
 To attribute CC BY 4.0 material, name Zhiyuan Cai and the WHEELTEC Smart Car Literature Library, link this repository, and state any changes you made.

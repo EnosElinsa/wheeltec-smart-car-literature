@@ -4,7 +4,7 @@
 
 Publisher PDFs and citations: 68 papers.
 
-PDFs and Markdown transcriptions are local only: they are excluded from the public repository for copyright reasons, so their paths are shown as code, not as links. ★ marks the 3 key papers of the [reading guide](../../READING_GUIDE.md). Module, Evidence, and Platform are the `survey_module`, `evidence_type`, and `platform_class` values of each review's survey coding ([vocabulary](../../06-data/vocabulary.md)). Empty coding cells indicate that survey classification is pending. The Assessment column distinguishes source notes and unassessed files from review cards; supplemental surveys retain their scope status in the catalog.
+PDFs and full-text transcriptions are delivered through Git LFS. Run `git lfs pull` after cloning, then open the reading files at the repository-relative paths below. ★ marks the 3 key papers of the [reading guide](../../READING_GUIDE.md). Module, Evidence, and Platform are the `survey_module`, `evidence_type`, and `platform_class` values of each review's survey coding ([vocabulary](../../06-data/vocabulary.md)). Empty coding cells indicate that survey classification is pending. The Assessment column distinguishes source notes and unassessed files from review cards; supplemental surveys retain their scope status in the catalog.
 
 | ID | Year | Title | Venue | Type | Module | Evidence | Platform | Assessment | Links | Local files |
 |---|---:|---|---|---|---|---|---|---|---|---|

@@ -4,14 +4,13 @@ The check scans every file that is tracked or would be added by
 ``git add -A`` and reports five classes of problems:
 
 * ``size``: a file larger than the size limit (default 50 MB);
-* ``forbidden-path``: copyrighted or local-only material (publisher PDFs,
-  full-text transcriptions, archives, ``.env``); the compiled manuscript and
-  its figure PDFs are self-authored and allowed;
+* ``forbidden-path``: unregistered source artifacts, private archives and
+  ``.env`` files. Registered reading assets are allowed through Git LFS;
 * ``absolute-path``: a local absolute path inside a user profile folder
   (Windows drive paths, ``/home/<name>/``, or ``/Users/<name>/``);
 * ``secret``: a string that looks like a credential;
-* ``cjk``: Chinese, Japanese, or Korean characters outside the localized
-  reading-interface template. Research prose stays English-only.
+* ``cjk``: CJK characters outside localized reading pages and registered
+  verbatim full texts. Authored research prose stays English-only.
 
 The first four checks always fail the run. The CJK check fails the run only
 with ``--cjk strict``; ``--cjk report`` lists the files without failing.
@@ -34,6 +33,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from tools.common import REPO_ROOT, git_candidate_files, is_text_path, read_text
+from tools.check_lfs_assets import load_assets
 
 SIZE_LIMIT_BYTES = 50 * 1024 * 1024
 
@@ -47,7 +47,7 @@ SELF_AUTHORED_PDFS = {"05-survey/manuscript/survey.pdf", "05-survey/manuscript/s
 MANUSCRIPT_FIGURES = "05-survey/manuscript/figures/"
 # The local reading UI serves Chinese-speaking readers. This exception applies
 # only to its labels, never to research prose or path/secret/source guards.
-LOCALIZED_UI_PATHS = {"tools/local_index.html"}
+LOCALIZED_UI_PATHS = {"tools/local_index.html", "INDEX.html"}
 
 ABSOLUTE_PATH_PATTERNS = [
     re.compile(r"(?i)\b[a-z]:(?:\\\\|\\|/)+users(?:\\\\|\\|/)+"),
@@ -108,14 +108,18 @@ class Report:
         }
 
 
-def is_forbidden_path(rel: str) -> str | None:
+def is_forbidden_path(rel: str, reading_assets: set[str] | None = None) -> str | None:
     """Return a reason when the relative POSIX path must not be published."""
     name = rel.rsplit("/", 1)[-1]
+    if reading_assets and rel in reading_assets:
+        return None
     if rel.lower().endswith(".pdf") and rel not in SELF_AUTHORED_PDFS and not (
         rel.startswith(MANUSCRIPT_FIGURES) and rel.count("/") == MANUSCRIPT_FIGURES.count("/")
     ):
         return "publisher PDF"
-    if rel.startswith("02-fulltext/") and rel not in ALLOWED_IN_FULLTEXT:
+    if rel.startswith("02-fulltext/") and rel not in ALLOWED_IN_FULLTEXT and not (
+        rel.count('/') == 2 and name == 'README.md'
+    ):
         return "full-text transcription or figure"
     for prefix in FORBIDDEN_PREFIXES:
         if rel.startswith(prefix):
@@ -127,12 +131,12 @@ def is_forbidden_path(rel: str) -> str | None:
     return None
 
 
-def scan_text(rel: str, text: str, report: Report) -> None:
+def scan_text(rel: str, text: str, report: Report, source_text: bool = False) -> None:
     """Scan one decoded text file for path, secret, and CJK findings."""
     cjk_lines = 0
     for lineno, line in enumerate(text.splitlines(), start=1):
         for pattern in ABSOLUTE_PATH_PATTERNS:
-            if pattern.search(line):
+            if pattern.search(re.sub(r'https?://[^\s<>]+', '', line)):
                 report.findings.append(Finding("absolute-path", rel, lineno))
                 break
         for pattern in SECRET_PATTERNS:
@@ -141,7 +145,7 @@ def scan_text(rel: str, text: str, report: Report) -> None:
                     Finding("secret", rel, lineno, "possible credential (value not shown)")
                 )
                 break
-        if rel not in LOCALIZED_UI_PATHS and CJK_PATTERN.search(line):
+        if not source_text and rel not in LOCALIZED_UI_PATHS and CJK_PATTERN.search(line):
             cjk_lines += 1
             if cjk_lines <= 3:
                 report.findings.append(Finding("cjk", rel, lineno))
@@ -151,17 +155,18 @@ def scan_text(rel: str, text: str, report: Report) -> None:
 
 def scan_files(root: Path, files: list[Path], size_limit: int = SIZE_LIMIT_BYTES) -> Report:
     report = Report()
+    reading_assets = set(load_assets(root))
     for path in files:
         rel = path.relative_to(root).as_posix()
         report.files_scanned += 1
         size = path.stat().st_size
-        if size > size_limit:
+        if size > size_limit and rel not in reading_assets:
             report.findings.append(Finding("size", rel, None, f"{size / 1048576:.1f} MB"))
-        reason = is_forbidden_path(rel)
+        reason = is_forbidden_path(rel, reading_assets)
         if reason:
             report.findings.append(Finding("forbidden-path", rel, None, reason))
         if is_text_path(path) and size <= size_limit:
-            scan_text(rel, read_text(path), report)
+            scan_text(rel, read_text(path), report, source_text=rel in reading_assets)
     return report
 
 
