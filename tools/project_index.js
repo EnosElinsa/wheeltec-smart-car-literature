@@ -85,10 +85,11 @@
     const label=node('label','','compare-toggle'),input=node('input');input.type='checkbox';input.dataset.compare=p.id;input.checked=comparison.includes(p.id);input.setAttribute('aria-label','对比 '+p.name);
     input.addEventListener('change',()=>{if(input.checked&&comparison.length<4)comparison.push(p.id);else comparison=comparison.filter(id=>id!==p.id);renderComparison();projectSave();});
     label.append(input,node('span','加入对比'));implementation.append(label);
-    grid.append(identity,algorithm,implementation);article.append(grid,node('p',p.adaptation,'project-adaptation'));
+    grid.append(identity,algorithm,implementation);article.append(grid);
     const details=node('details','','project-details');details.open=ps.project===p.id;
-    details.append(node('summary',p.papers.length?'实现说明与论文 · '+p.papers.length+' 篇':'实现说明'));
+    details.append(node('summary',p.papers.length?'详情与论文':'详情'));
     const body=node('div','','project-detail-body'),description=node('div');description.append(node('h4','方法与实现'),node('p',p.description));
+    description.append(node('h4','使用条件','project-conditions-heading'),node('p',p.adaptation));
     if(p.resources.length){const resources=node('div','','project-extra-links');for(const r of p.resources)appendLink(resources,r.url,r.label+' ↗');description.append(resources);}
     const chapter=node('div','','project-extra-links');appendLink(chapter,data.source.url+'#'+p.chapter_anchor,'教材说明 ↗');description.append(chapter);body.append(description);
     if(p.papers.length){const papers=node('div');papers.append(node('h4','相关论文'));references(papers,p);body.append(papers);}
@@ -112,7 +113,8 @@
     $('project-rows').replaceChildren(...projectFiltered.slice(start,end).map(projectRow));
     $('project-count').textContent=projectFiltered.length+' 个';
     const applied=['search','category','method','environment','year','project'].some(k=>ps[k]);
-    $('project-result-summary').textContent=(applied?'从全部 '+projects.length+' 个项目中筛选':'全部项目')+(projectFiltered.length?' · 当前显示 '+(start+1)+'—'+end+' 个':'');
+    $('project-result-summary').textContent=projectFiltered.length?'第 '+(start+1)+'—'+end+' 个':'';
+    $('project-result-summary').hidden=!projectFiltered.length;
     $('project-empty').hidden=!!projectFiltered.length;$('project-reset').disabled=!applied;$('project-export').disabled=!projectFiltered.length;
     $('project-prev').disabled=projectPage<=1;$('project-next').disabled=projectPage>=pages;$('project-page-label').textContent='第 '+projectPage+' / '+pages+' 页';
     for(const button of document.querySelectorAll('[data-project-category]'))button.setAttribute('aria-pressed',String(ps.category===button.dataset.projectCategory));
@@ -123,7 +125,7 @@
     const selected=comparison.map(id=>byId.get(id));
     $('comparison').hidden=!selected.length;$('compare-tray').hidden=!selected.length;
     $('compare-count').textContent=selected.length+' / 4';
-    $('compare-tray-text').textContent=selected.length===4?'已选 4 个项目，已达对比上限':'已选 '+selected.length+' 个项目，可对比 2—4 个';
+    $('compare-tray-text').textContent='已选 '+selected.length+' / 4';
     $('compare-open').disabled=selected.length<2;
     for(const input of document.querySelectorAll('input[data-compare]')){input.checked=comparison.includes(input.dataset.compare);input.disabled=comparison.length>=4&&!input.checked;}
     const table=$('compare-table');table.replaceChildren();table.style.minWidth=Math.max(620,110+selected.length*255)+'px';
@@ -150,9 +152,6 @@
     $('paper-view').hidden=isProject;$('project-view').hidden=!isProject;
     for(const key of ['papers','projects']){const tab=$(key+'-tab'),selected=(key==='projects')===isProject;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;}
     $('skip-content').href=isProject?'#projects':'#papers';
-    $('page-description').textContent=isProject?'按任务、算法和运行环境查阅实现，对照论文与车辆适配条件。':'按研究方向、发表年份和期刊 / 会议检索已收录论文。';
-    $('footer-count').textContent=' · '+records.length+' 篇论文 · '+projects.length+' 个项目';
-    $('footer-note').textContent=isProject?'项目目录可离线浏览，代码与教材链接需联网':'PDF 与全文可离线阅读';
     document.title=(isProject?'开源机器人项目':'移动机器人论文库')+' · WHEELTEC';
     if(write){if(isProject)renderProjects();else render();}
   }
@@ -165,12 +164,6 @@
   }
   window.ProjectDirectory={forPaper:code=>paperProjects.get(code)||[],matches:projectMatches,selected:projectSelection,yearsFor};
   $('paper-tab-count').textContent=String(records.length);$('project-tab-count').textContent=String(projects.length);$('projects-tab').hidden=!projects.length;
-  $('project-total').textContent=String(projects.length);
-  const drl=projects.filter(p=>p.methods.includes('drl')).length,linked=paperProjects.size;
-  for(const[count,label]of [[drl,'个深度强化学习项目'],[linked,'篇关联论文提供全文']])if(count){const stat=node('div','','type-stat');stat.append(node('strong',String(count)),node('span',label));$('project-stats').append(stat);}
-  if(data.categories.length)$('project-summary-note').append(node('span',data.categories.length+' 个应用方向'));
-  if(data.verified_on)$('project-summary-note').append(node('span','仓库核查 '+data.verified_on));
-  if(projects.length)$('project-data-note').textContent='运行环境标签包含独立部署仓库，具体 ROS 版本见适配要点。论文年份取已收录论文的出版年份；未收录论文按引用年份显示。仓库信息核查于 '+data.verified_on+'，许可证仅显示明确记录。';
   sidebar(data.categories,'category','project-categories');sidebar(data.methods,'method','project-methods');
   for(const key of ['search','category','method','environment','year','sort','size'])$('project-'+key).addEventListener(key==='search'?'input':'change',()=>{ps[key]=$('project-'+key).value;renderProjects(true);});
   const projectReset=()=>{ps={...projectDefaults};renderProjects(true);};

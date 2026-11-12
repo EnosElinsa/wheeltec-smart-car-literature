@@ -4,6 +4,8 @@ Notable changes to the library and the survey manuscript, newest first. Dates co
 
 ## 2026-11-12
 
+- Interface copy: remove standalone statistics blocks, explanatory subtitles, availability and association claims, repository-check notes, the global hardware block and repetitive control instructions. Counts sit next to tabs, classification items and results. Keep project-specific usage conditions in expanded details and comparison tables.
+
 - Reading files: publish 479 PDFs, 479 canonical Markdown transcriptions and 9,978 figures through Git LFS, with exact hash manifests, pointer validation and download instructions.
 - Interface: combine the paper catalog and [66 open-source projects](OPEN_SOURCE_PROJECTS.md) in the standalone HTML. Add method, runtime and publication-year filters, comparison of up to four projects, CSV export and links between papers and implementations. All 66 repository READMEs were checked; 17 projects use DRL methods and 52 distinct papers link to reading files. The portable directory and HTML are generated from the same [project data](06-data/open-source-projects.json).
 

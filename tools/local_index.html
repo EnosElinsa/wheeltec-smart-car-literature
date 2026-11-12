@@ -40,16 +40,6 @@ svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-l
 .wrap{max-width:1480px;margin:0 auto;padding:0 40px}
 .page-heading{padding:29px 0 24px}
 .page-heading h1{font-size:25px;line-height:1.4;font-weight:600;letter-spacing:.015em}
-.page-heading p{margin-top:7px;font-size:13px;color:var(--muted)}
-.collection-summary{display:flex;align-items:center;gap:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin-bottom:28px;font-variant-numeric:tabular-nums}
-.total-block{display:flex;align-items:baseline;gap:8px;padding-right:27px;border-right:1px solid var(--line)}
-.total-number{font-size:26px;font-weight:600;line-height:1.2;letter-spacing:-.03em}
-.total-label{font-size:12px;color:var(--muted);white-space:nowrap}
-.type-stat-line{display:flex;gap:28px}
-.type-stat{display:flex;gap:8px;align-items:baseline}
-.type-stat strong{font-size:21px;font-weight:500;line-height:1.2}
-.type-stat span{font-size:12px;color:var(--muted)}
-.summary-note{margin-left:auto;display:flex;gap:22px;font-size:12px;color:var(--muted)}
 .reading-layout{display:grid;grid-template-columns:248px minmax(0,1fr);gap:32px;align-items:start}
 .facets{border-right:1px solid var(--line);padding-right:22px;padding-bottom:20px}
 .facet-section+.facet-section{margin-top:24px;border-top:1px solid var(--soft-line);padding-top:20px}
@@ -72,7 +62,6 @@ svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-l
 .year-value{position:absolute;left:50%;bottom:calc(100% + 4px);transform:translateX(-50%);font-size:10px;font-variant-numeric:tabular-nums;color:var(--muted)}
 .year-label{font-size:10px;line-height:1.5;padding-top:7px;white-space:nowrap;color:var(--muted)}
 .year-column[aria-pressed=true] .year-label{color:var(--blue);font-weight:600}
-.chart-note{font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}
 .source-tabs{display:flex;gap:16px;border-bottom:1px solid var(--line);margin:0 0 7px}
 .source-tabs button{padding:2px 0 7px;font-size:11px;border-bottom:2px solid transparent;margin-bottom:-1px;color:var(--muted)}
 .source-tabs button[aria-pressed=true]{color:var(--ink);border-bottom-color:var(--ink);font-weight:600}
@@ -144,6 +133,7 @@ tbody tr:hover{background:#fafbfc}
 .empty{padding:50px 20px;text-align:center;border-bottom:1px solid var(--line)}
 .empty svg{width:26px;height:26px;color:var(--faint);margin-bottom:12px}
 .empty h3{font-size:16px;font-weight:500}
+.empty>.outline-button{margin-top:16px}
 .empty p{color:var(--muted);font-size:12px;margin:8px 0 18px}
 .pagination{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 28px;color:var(--muted);font-size:12px}
 .pagination select{font-size:12px;padding:4px 6px;margin:0 3px;border:1px solid var(--line);border-radius:3px;background:white}
@@ -153,12 +143,12 @@ tbody tr:hover{background:#fafbfc}
 .footer a{color:var(--muted)}
 .noscript{margin:20px;padding:20px;border:1px solid var(--line)}
 @media(min-width:1600px){.reading-layout{grid-template-columns:260px minmax(0,1fr);gap:40px}.wrap,.header-inner{padding-left:52px;padding-right:52px}}
-@media(max-width:1150px){.wrap,.header-inner{padding-left:28px;padding-right:28px}.reading-layout{grid-template-columns:215px minmax(0,1fr);gap:24px}.facets{padding-right:17px}.filter-grid{grid-template-columns:1fr 1fr 1.4fr}.year-field{grid-column:1/3}.reset{justify-self:end}.summary-note{gap:12px;flex-direction:column;font-size:11px}.collection-summary{gap:22px}.type-stat-line{gap:22px}th:first-child{width:52%}th:nth-child(2){width:24%}th:nth-child(3){width:8%}th:last-child{width:16%}th,td{padding-left:10px;padding-right:10px}.paper-title{font-size:14px}}
-@media(max-width:860px){.reading-layout{grid-template-columns:190px minmax(0,1fr);gap:20px}.wrap,.header-inner{padding-left:22px;padding-right:22px}.facets{padding-right:14px}.papers-heading{align-items:start;flex-wrap:wrap;gap:11px}.result-tools{width:100%;justify-content:space-between}.filter-grid{grid-template-columns:1fr 1fr}.venue-field,.year-field{grid-column:1/-1}.reset{grid-column:1/-1}.table-shell{overflow:visible}table,tbody,tr,td{display:block;width:100%}thead{display:none}tbody tr{display:grid;grid-template-columns:minmax(0,1fr) auto;border-bottom:1px solid var(--line);padding:18px 0}td{border:0;padding:0!important}tbody td:first-child{grid-column:1/-1}.venue-cell{grid-column:1;padding-right:10px!important;margin-top:12px}.venue-full{display:none}.venue-name{display:inline;font-size:11px}.type-label{display:inline;font-size:10px;margin-left:7px}.year-cell{grid-column:2;grid-row:2;width:auto;margin-top:12px}.files-cell{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:11px}.aux-links{margin:0}.paper-title{font-size:15px}.collection-summary{gap:18px}.total-block{padding-right:18px}.type-stat-line{gap:18px}.summary-note{gap:4px}}
-@media(max-width:640px){.header-inner{min-height:48px}.wrap,.header-inner{padding-left:18px;padding-right:18px}.brand{gap:12px}.brand span{padding-left:12px;font-size:12px}.brand strong{font-size:12px}.header-nav{gap:14px;font-size:11px}.header-nav a:first-child{display:none}.page-heading{padding:23px 0 19px}.page-heading h1{font-size:23px}.page-heading p{font-size:12px;line-height:1.8;max-width:300px}.collection-summary{display:grid;grid-template-columns:auto 1fr;gap:12px 19px;padding:13px 0;margin-bottom:19px}.total-number{font-size:23px}.total-label{font-size:11px}.total-block{gap:6px;justify-content:flex-start;padding-right:19px}.type-stat-line{gap:20px;justify-content:flex-start}.type-stat{gap:6px}.type-stat strong{font-size:18px}.type-stat span{font-size:11px}.summary-note{grid-column:1/-1;display:flex;flex-direction:row;margin-left:0;gap:18px;font-size:11px}.reading-layout{display:flex;flex-direction:column;gap:0}.facets{border:0;padding:0;width:100%;margin-bottom:23px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}.facet-section+.facet-section{margin:0;padding:0;border:0}.themes-section{grid-column:1/-1}.themes{grid-template-columns:1fr 1fr;gap:2px 9px}.theme-card{padding:5px 7px;min-height:31px}.theme-name{font-size:11px}.theme-number{font-size:11px}.facet-heading{margin-bottom:9px}.facet-heading h2{font-size:12px}.facet-heading small{font-size:10px}.years-section,.sources-section{border-top:1px solid var(--line)!important;padding-top:14px!important}.year-chart{height:107px;gap:3px}.year-value{font-size:9px}.year-label{font-size:9px}.year-bar{width:12px}.chart-note{font-size:10px;line-height:1.65}.source-tabs{gap:14px}.source-list{max-height:139px;overflow:auto;scrollbar-width:thin}.source-item{padding:5px 3px;gap:6px;grid-template-columns:minmax(0,1fr) 22px}.source-name,.source-number{font-size:10px;line-height:1.6}.source-foot{padding:7px 3px 0}.source-foot button{font-size:10px}.source-tabs button{font-size:10px;padding-bottom:5px}.papers-section{width:100%;border-top:1px solid var(--line);padding-top:19px}.papers-heading{margin-bottom:12px}.papers-heading h2{font-size:16px}.result-summary{font-size:10px}.result-tools{font-size:11px}.result-tools select{font-size:11px}.outline-button{font-size:11px;min-height:30px;padding:5px 9px}.search-line input{font-size:12px}.search-line{min-height:39px;padding:0 10px}.search-line kbd{display:none}.filter-grid{gap:10px;padding-top:10px}.field-label{font-size:10px}.field select{font-size:11px;min-height:32px}.year-range select{min-width:90px}.pagination{align-items:start;flex-wrap:wrap;gap:15px;font-size:11px}.page-tools{gap:9px}.footer{display:block;font-size:10px;margin-top:5px}.footer p+p{margin-top:7px}}
-@media(max-width:360px){.wrap,.header-inner{padding-left:14px;padding-right:14px}.brand span{display:none}.collection-summary{gap:12px}.total-block{padding-right:12px}.type-stat-line{gap:12px}.type-stat{gap:4px}.type-stat strong{font-size:17px}.total-number{font-size:22px}.theme-name{font-size:10px}.facets{gap:14px}.source-tabs{gap:11px}.year-label{font-size:8px}}
+@media(max-width:1150px){.wrap,.header-inner{padding-left:28px;padding-right:28px}.reading-layout{grid-template-columns:215px minmax(0,1fr);gap:24px}.facets{padding-right:17px}.filter-grid{grid-template-columns:1fr 1fr 1.4fr}.year-field{grid-column:1/3}.reset{justify-self:end}th:first-child{width:52%}th:nth-child(2){width:24%}th:nth-child(3){width:8%}th:last-child{width:16%}th,td{padding-left:10px;padding-right:10px}.paper-title{font-size:14px}}
+@media(max-width:860px){.reading-layout{grid-template-columns:190px minmax(0,1fr);gap:20px}.wrap,.header-inner{padding-left:22px;padding-right:22px}.facets{padding-right:14px}.papers-heading{align-items:start;flex-wrap:wrap;gap:11px}.result-tools{width:100%;justify-content:space-between}.filter-grid{grid-template-columns:1fr 1fr}.venue-field,.year-field{grid-column:1/-1}.reset{grid-column:1/-1}.table-shell{overflow:visible}table,tbody,tr,td{display:block;width:100%}thead{display:none}tbody tr{display:grid;grid-template-columns:minmax(0,1fr) auto;border-bottom:1px solid var(--line);padding:18px 0}td{border:0;padding:0!important}tbody td:first-child{grid-column:1/-1}.venue-cell{grid-column:1;padding-right:10px!important;margin-top:12px}.venue-full{display:none}.venue-name{display:inline;font-size:11px}.type-label{display:inline;font-size:10px;margin-left:7px}.year-cell{grid-column:2;grid-row:2;width:auto;margin-top:12px}.files-cell{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:11px}.aux-links{margin:0}.paper-title{font-size:15px}}
+@media(max-width:640px){.header-inner{min-height:48px}.wrap,.header-inner{padding-left:18px;padding-right:18px}.brand{gap:12px}.brand span{padding-left:12px;font-size:12px}.brand strong{font-size:12px}.header-nav{gap:14px;font-size:11px}.header-nav a:first-child{display:none}.page-heading{padding:23px 0 19px}.page-heading h1{font-size:23px}.reading-layout{display:flex;flex-direction:column;gap:0}.facets{border:0;padding:0;width:100%;margin-bottom:23px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}.facet-section+.facet-section{margin:0;padding:0;border:0}.themes-section{grid-column:1/-1}.themes{grid-template-columns:1fr 1fr;gap:2px 9px}.theme-card{padding:5px 7px;min-height:31px}.theme-name{font-size:11px}.theme-number{font-size:11px}.facet-heading{margin-bottom:9px}.facet-heading h2{font-size:12px}.facet-heading small{font-size:10px}.years-section,.sources-section{border-top:1px solid var(--line)!important;padding-top:14px!important}.year-chart{height:107px;gap:3px}.year-value{font-size:9px}.year-label{font-size:9px}.year-bar{width:12px}.source-tabs{gap:14px}.source-list{max-height:139px;overflow:auto;scrollbar-width:thin}.source-item{padding:5px 3px;gap:6px;grid-template-columns:minmax(0,1fr) 22px}.source-name,.source-number{font-size:10px;line-height:1.6}.source-foot{padding:7px 3px 0}.source-foot button{font-size:10px}.source-tabs button{font-size:10px;padding-bottom:5px}.papers-section{width:100%;border-top:1px solid var(--line);padding-top:19px}.papers-heading{margin-bottom:12px}.papers-heading h2{font-size:16px}.result-summary{font-size:10px}.result-tools{font-size:11px}.result-tools select{font-size:11px}.outline-button{font-size:11px;min-height:30px;padding:5px 9px}.search-line input{font-size:12px}.search-line{min-height:39px;padding:0 10px}.search-line kbd{display:none}.filter-grid{gap:10px;padding-top:10px}.field-label{font-size:10px}.field select{font-size:11px;min-height:32px}.year-range select{min-width:90px}.pagination{align-items:start;flex-wrap:wrap;gap:15px;font-size:11px}.page-tools{gap:9px}.footer{display:block;font-size:10px;margin-top:5px}.footer p+p{margin-top:7px}}
+@media(max-width:360px){.wrap,.header-inner{padding-left:14px;padding-right:14px}.brand span{display:none}.theme-name{font-size:10px}.facets{gap:14px}.source-tabs{gap:11px}.year-label{font-size:8px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{.site-header,.facets,.filters,.result-tools,.chips,.pagination,.reading-links,.aux-links,.paper-detail{display:none!important}.wrap{max-width:none;padding:0}.reading-layout{display:block}.page-heading{padding:10px 0}.collection-summary{margin-bottom:18px}tr{break-inside:avoid}.footer{margin-top:10px}}
+@media print{.site-header,.facets,.filters,.result-tools,.chips,.pagination,.reading-links,.aux-links,.paper-detail{display:none!important}.wrap{max-width:none;padding:0}.reading-layout{display:block}.page-heading{padding:10px 0}tr{break-inside:avoid}.footer{margin-top:10px}}
 __PROJECT_STYLE__
 </style>
 </head>
@@ -166,14 +156,13 @@ __PROJECT_STYLE__
 <a class="skip" id="skip-content" href="#papers">跳到内容列表</a>
 <header class="site-header"><div class="header-inner"><div class="brand"><strong>WHEELTEC</strong><span>机器人研究资料</span></div><nav class="header-nav" aria-label="页面导航"><a href="README.md">使用说明</a><a href="https://enoselinsa.github.io/wheeltec-ros-textbook/08-advanced-applications/54-open-source-projects/" target="_blank" rel="noopener">工程教材 ↗</a><a href="05-survey/manuscript/survey.pdf" target="_blank" rel="noopener">研究综述 ↗</a></nav></div></header>
 <div class="wrap">
-<div class="page-heading"><h1 id="page-title">移动机器人论文与开源项目</h1><p id="page-description">检索研究论文，查阅算法实现与运行条件。</p></div>
+<div class="page-heading"><h1 id="page-title">移动机器人论文与开源项目</h1></div>
 <nav class="collection-tabs" role="tablist" aria-label="资料目录"><button id="papers-tab" role="tab" aria-controls="paper-view" aria-selected="true" tabindex="0" type="button">论文 <span id="paper-tab-count"></span></button><button id="projects-tab" role="tab" aria-controls="project-view" aria-selected="false" tabindex="-1" type="button">开源项目 <span id="project-tab-count"></span></button></nav>
 <section id="paper-view" role="tabpanel" aria-labelledby="papers-tab">
-<section class="collection-summary" aria-label="论文收录概况"><div class="total-block"><strong class="total-number" id="total"></strong><span class="total-label">篇论文</span></div><div class="type-stat-line" id="type-stats"></div><div class="summary-note" id="summary-note"></div></section>
 <div class="reading-layout">
 <aside id="overview" class="facets" aria-label="论文分布与分类">
   <section class="facet-section themes-section"><div class="facet-heading"><h2>研究方向</h2><small>篇数</small></div><div class="themes" id="themes" role="group" aria-label="按研究方向浏览"></div></section>
-  <section class="facet-section years-section"><div class="facet-heading"><h2>发表年份</h2><small id="year-span"></small></div><div class="year-chart" id="year-chart" role="group" aria-label="按发表年份浏览"></div><p class="chart-note" id="chart-note"></p></section>
+  <section class="facet-section years-section"><div class="facet-heading"><h2>发表年份</h2><small id="year-span"></small></div><div class="year-chart" id="year-chart" role="group" aria-label="按发表年份浏览"></div></section>
   <section class="facet-section sources-section"><div class="facet-heading"><h2>发表来源</h2><small id="source-total"></small></div><div class="source-tabs" id="source-tabs" role="group" aria-label="来源类型"></div><div class="source-list" id="source-list" role="group" aria-label="期刊和会议论文数量"></div><div class="source-foot"><button class="text-button" id="source-expand" type="button"></button></div></section>
 </aside>
 <main class="papers-section" id="papers" tabindex="-1">
@@ -181,35 +170,32 @@ __PROJECT_STYLE__
   <div class="filters" role="search" aria-label="搜索和筛选论文"><label class="search-line"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">搜索论文标题、关键词、期刊或会议、DOI</span><input id="search" type="search" placeholder="搜索标题、关键词、期刊 / 会议或 DOI" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
   <div class="filter-grid"><label class="field"><span class="field-label">研究方向</span><select id="theme" aria-label="研究方向"></select></label><label class="field"><span class="field-label">论文类型</span><select id="type" aria-label="论文类型"></select></label><label class="field venue-field"><span class="field-label">期刊 / 会议</span><select id="venue" aria-label="期刊或会议"></select></label><div class="field year-field"><span class="field-label">发表年份</span><div class="year-range"><select id="from" aria-label="起始年份"></select><span>至</span><select id="to" aria-label="结束年份"></select></div></div><button class="text-button reset" id="reset" type="button">重置</button></div></div>
   <div class="chips" id="chips" aria-label="已选择的筛选条件"></div>
-  <div class="table-shell"><table aria-label="论文及全文链接"><thead><tr><th scope="col">论文</th><th scope="col">期刊 / 会议</th><th scope="col">年份</th><th scope="col">阅读</th></tr></thead><tbody id="rows"></tbody></table><div class="empty" id="empty" hidden><h3>没有符合条件的论文</h3><p id="empty-note">试试其他关键词，或放宽年份和来源条件。</p><button class="outline-button" id="empty-reset" type="button">清除筛选，查看全部论文</button></div></div>
+  <div class="table-shell"><table aria-label="论文及全文链接"><thead><tr><th scope="col">论文</th><th scope="col">期刊 / 会议</th><th scope="col">年份</th><th scope="col">阅读</th></tr></thead><tbody id="rows"></tbody></table><div class="empty" id="empty" hidden><h3>没有符合条件的论文</h3><p id="empty-note" hidden></p><button class="outline-button" id="empty-reset" type="button">清除筛选</button></div></div>
   <div class="pagination"><label>每页 <select id="size" aria-label="每页论文数量"><option value="20">20 篇</option><option value="50">50 篇</option><option value="100">100 篇</option><option value="all">全部</option></select></label><nav class="page-tools" aria-label="论文分页"><button class="outline-button" id="prev" type="button">上一页</button><span id="page-label" aria-live="polite"></span><button class="outline-button" id="next" type="button">下一页</button></nav></div>
 </main>
 </div>
 </section>
 <section id="project-view" role="tabpanel" aria-labelledby="projects-tab" hidden>
-<section class="collection-summary" aria-label="开源项目收录概况"><div class="total-block"><strong class="total-number" id="project-total"></strong><span class="total-label">个开源项目</span></div><div class="type-stat-line" id="project-stats"></div><div class="summary-note" id="project-summary-note"></div></section>
 <div class="reading-layout project-layout">
 <aside class="facets project-facets" aria-label="项目分类">
   <section class="facet-section"><div class="facet-heading"><h2>应用方向</h2><small>项目数</small></div><div id="project-categories" class="themes" role="group" aria-label="按应用方向浏览项目"></div></section>
-  <section class="facet-section"><div class="facet-heading"><h2>方法</h2><small>可交叉归类</small></div><div id="project-methods" class="themes" role="group" aria-label="按算法方法浏览项目"></div></section>
-  <section class="facet-section project-guidance"><h2>R680 参考条件</h2><p>ROS 2 Humble · Ackermann 底盘 · M10P 二维雷达 · 红外与深度图像 · 轮速 · IMU</p><p>运行环境和适配要点见项目详情。</p><a href="https://enoselinsa.github.io/wheeltec-ros-textbook/08-advanced-applications/54-open-source-projects/" target="_blank" rel="noopener">第 54 章：项目与算法说明 ↗</a></section>
+  <section class="facet-section"><div class="facet-heading"><h2>方法</h2><small>项目数</small></div><div id="project-methods" class="themes" role="group" aria-label="按算法方法浏览项目"></div></section>
 </aside>
 <main id="projects" class="papers-section" tabindex="-1">
   <div class="papers-heading"><div><h2>开源项目 <span id="project-count" aria-live="polite" aria-atomic="true"></span></h2><p id="project-result-summary" class="result-summary"></p></div><div class="result-tools"><label>排序 <select id="project-sort" aria-label="项目排序"><option value="category">按应用方向</option><option value="name">项目名称 A–Z</option><option value="year">论文年份从新到旧</option></select></label><button id="project-export" class="outline-button" type="button">导出清单</button></div></div>
-  <div class="filters" role="search" aria-label="搜索和筛选开源项目"><label class="search-line"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">搜索项目、算法、运行环境或论文</span><input id="project-search" type="search" placeholder="搜索项目、算法、运行环境或论文，如 SAC、Nav2" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
+  <div class="filters" role="search" aria-label="搜索和筛选开源项目"><label class="search-line"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">搜索项目、算法、运行环境或论文</span><input id="project-search" type="search" placeholder="搜索项目、算法或论文" autocomplete="off"><kbd aria-hidden="true">/</kbd></label>
   <div class="filter-grid project-filter-grid"><label class="field"><span class="field-label">应用方向</span><select id="project-category" aria-label="项目应用方向"></select></label><label class="field"><span class="field-label">方法</span><select id="project-method" aria-label="项目算法方法"></select></label><label class="field"><span class="field-label">运行环境</span><select id="project-environment" aria-label="项目运行环境"></select></label><label class="field"><span class="field-label">论文年份</span><select id="project-year" aria-label="项目关联论文年份"></select></label><button class="text-button reset" id="project-reset" type="button">重置</button></div></div>
   <div class="chips" id="project-chips" aria-label="项目筛选条件"></div>
-  <div class="project-table-head" aria-hidden="true"><span>项目与用途</span><span>算法与输入输出</span><span>实现与参考</span></div>
+  <div class="project-table-head" aria-hidden="true"><span>项目</span><span>算法与输入输出</span><span>运行环境与代码</span></div>
   <div id="project-rows" class="project-list"></div>
-  <div class="empty" id="project-empty" hidden><h3>没有符合条件的项目</h3><p>尝试其他算法、运行环境，或放宽筛选条件。</p><button id="project-empty-reset" class="outline-button" type="button">清除筛选，查看全部项目</button></div>
+  <div class="empty" id="project-empty" hidden><h3>没有符合条件的项目</h3><button id="project-empty-reset" class="outline-button" type="button">清除筛选</button></div>
   <div class="pagination"><label>每页 <select id="project-size" aria-label="每页项目数量"><option value="12">12 个</option><option value="24">24 个</option><option value="all">全部</option></select></label><nav class="page-tools" aria-label="项目分页"><button id="project-prev" class="outline-button" type="button">上一页</button><span id="project-page-label" aria-live="polite"></span><button id="project-next" class="outline-button" type="button">下一页</button></nav></div>
-  <p class="directory-note" id="project-data-note"></p>
 </main>
 </div>
-<section id="comparison" class="comparison" hidden aria-label="项目对比"><div class="comparison-heading"><div><h2>项目对比 <span id="compare-count"></span></h2><p>对照算法、观测、运行环境和适配条件。</p></div><button id="compare-clear" type="button" class="text-button">清空对比</button></div><div class="comparison-scroll" tabindex="0" role="region" aria-label="可横向滚动的项目对比表"><table id="compare-table"></table></div></section>
+<section id="comparison" class="comparison" hidden aria-label="项目对比"><div class="comparison-heading"><h2>项目对比 <span id="compare-count"></span></h2><button id="compare-clear" type="button" class="text-button">清空对比</button></div><div class="comparison-scroll" tabindex="0" role="region" aria-label="可横向滚动的项目对比表"><table id="compare-table"></table></div></section>
 <div id="compare-tray" class="compare-tray" hidden><span id="compare-tray-text" aria-live="polite"></span><button id="compare-open" type="button" class="outline-button">查看对比</button><button id="compare-tray-clear" type="button" class="text-button">清空</button></div>
 </section>
-<footer class="footer"><p>WHEELTEC · 机器人研究资料 <span id="footer-count"></span></p><p><span id="footer-note">PDF 与全文可离线阅读</span> · <a href="README.md">使用说明</a></p></footer>
+<footer class="footer"><p>WHEELTEC · 机器人研究资料</p><p><a href="README.md">使用说明</a></p></footer>
 </div>
 <noscript><div class="noscript">请启用 JavaScript 以使用检索功能，也可直接打开 <a href="01-papers/INDEX.md">论文目录</a>。</div></noscript>
 <script id="catalog-data" type="application/json">__CATALOG_DATA__</script>
@@ -286,7 +272,7 @@ function row(r){
     if(r.screening_reason)detail.append(node('p',r.screening_reason));
     if(r.doi){const p=node('p');appendLink(p,'https://doi.org/'+r.doi,'DOI: '+r.doi);detail.append(p);}
     if(r.review){const p=node('p');appendLink(p,r.review,'阅读笔记');detail.append(p);}
-    if(r.citation_status==='derived')detail.append(node('p','此条引用信息经过整理，使用时请核对论文原文。'));
+    if(r.citation_status==='derived')detail.append(node('p','引用信息：整理版本'));
     detail.append(node('p','编号 '+r.code));paper.append(detail);
   }
   const venue=node('td','','venue-cell'),family=r.venue_family;
@@ -302,7 +288,7 @@ function row(r){
   tr.append(paper,venue,year,files);return tr;
 }
 function countBy(rows,key){const counts=new Map();for(const r of rows){const v=typeof key==='function'?key(r):r[key];if(v)counts.set(v,(counts.get(v)||0)+1);}return counts;}
-const typeCounts=countBy(records,kind),yearCounts=countBy(records,'bibliographic_year'),themeCounts=countBy(records,'theme');
+const yearCounts=countBy(records,'bibliographic_year'),themeCounts=countBy(records,'theme');
 const sourceCounts=countBy(records,'venue_family');
 const sources=[...sourceCounts].map(([name,count])=>({name,count,type:kind(records.find(r=>r.venue_family===name))})).sort((a,b)=>b.count-a.count||a.name.localeCompare(b.name));
 function focusCollection(filters){state={...defaults,...filters};page=1;render();$('papers').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});}
@@ -321,10 +307,6 @@ function renderSources(){
   $('source-expand').hidden=values.length<=6;$('source-expand').textContent=sourcesExpanded?'收起':'全部来源 ('+values.length+')';
 }
 function overview(){
-  $('total').textContent=records.length.toLocaleString('zh-CN');
-  for(const type of ['journal','conference','other']){const count=typeCounts.get(type);if(!count)continue;const stat=node('div','','type-stat');stat.append(node('strong',String(count)),node('span',labels[type]));$('type-stats').append(stat);}
-  if(sources.length)$('summary-note').append(node('span',sources.length+' 个期刊与会议'));
-  const readable=records.filter(r=>r.pdf&&r.markdown).length;if(readable)$('summary-note').append(node('span',readable===records.length?'均提供 PDF 与全文':readable+' 篇提供 PDF 与全文'));
   const years=[...yearCounts.keys()].filter(y=>+y>0).map(Number).sort((a,b)=>a-b),latest=years.at(-1),recent=years.filter(y=>y>=latest-5),earlier=years.filter(y=>y<latest-5);
   if(years.length)$('year-span').textContent=years[0]===latest?String(latest):years[0]+'—'+latest;
   const bins=recent.map(y=>({label:String(y),count:yearCounts.get(String(y)),from:String(y),to:String(y)}));
@@ -334,15 +316,13 @@ function overview(){
     const b=node('button','','year-column'+(bin.count===peak?' peak':bin.to===String(latest)?' latest':''));b.type='button';b.dataset.from=bin.from;b.dataset.to=bin.to;b.dataset.count=bin.count;b.setAttribute('aria-pressed','false');b.setAttribute('aria-label','查看 '+(bin.earlier?bin.to+' 年及以前':bin.label+' 年')+'的 '+bin.count+' 篇论文');
     const track=node('span','','year-track'),bar=node('span','','year-bar');bar.style.setProperty('--height',bin.count/peak*100+'%');bar.append(node('span',String(bin.count),'year-value'));track.append(bar);b.append(track,node('span',bin.label,'year-label'));b.addEventListener('click',()=>focusCollection({from:bin.from,to:bin.to}));$('year-chart').append(b);
   }
-  const last3=years.filter(y=>y>=latest-2).reduce((n,y)=>n+yearCounts.get(String(y)),0);
-  if(last3&&years.length>1)$('chart-note').textContent=(latest-2)+'—'+latest+' 年共 '+last3+' 篇，占 '+Math.round(last3/Math.max(1,records.length)*100)+'%'+(earlier.length?'；更早年份包含 '+earlier.join('、')+' 年':'');
   for(const [key,info]of Object.entries(themes)){
     const count=themeCounts.get(key);if(!count)continue;
     const b=node('button','','theme-card');b.type='button';b.dataset.theme=key;b.setAttribute('aria-pressed','false');b.setAttribute('aria-label',info.name+'，'+count+' 篇论文');
     b.append(node('span',info.name,'theme-name'),node('span',String(count),'theme-number'));b.addEventListener('click',()=>focusCollection({theme:key}));$('themes').append(b);
   }
   $('source-total').textContent=sources.length+' 个';
-  $('footer-count').textContent=' · '+records.length+' 篇论文';renderSources();
+  renderSources();
 }
 function chips(){
   const holder=$('chips');holder.replaceChildren();
@@ -359,11 +339,13 @@ function render(resetPage=false){
   const size=state.size==='all'?Math.max(1,filtered.length):+state.size,pages=Math.max(1,Math.ceil(filtered.length/size));page=Math.min(page,pages);const start=(page-1)*size,end=Math.min(start+size,filtered.length);
   $('rows').replaceChildren(...filtered.slice(start,end).map(row));$('empty').hidden=!!filtered.length;$('prev').disabled=page<=1;$('next').disabled=page>=pages;$('export').disabled=!filtered.length;$('page-label').textContent='第 '+page+' / '+pages+' 页';
   $('count').textContent=String(filtered.length)+' 篇';
-  const breakdown=[...countBy(filtered,kind)].filter(([,n])=>n>0).map(([type,n])=>labels[type]+' '+n+' 篇').join(' · ');
   const applied=['search','theme','type','venue','from','to'].some(k=>state[k]);
-  $('result-summary').textContent=(applied?'从全部 '+records.length+' 篇中筛选':'全部论文')+(breakdown?' · '+breakdown:'')+(filtered.length?' · 当前显示 '+(start+1)+'—'+end+' 篇':'');
+  $('result-summary').textContent=filtered.length?'第 '+(start+1)+'—'+end+' 篇':'';
+  $('result-summary').hidden=!filtered.length;
   $('reset').disabled=!applied;
-  $('empty-note').textContent=state.from&&state.to&&+state.from>+state.to?'起始年份晚于结束年份，请调整年份范围。':'试试其他关键词，或放宽年份和来源条件。';
+  const invalidYears=state.from&&state.to&&+state.from>+state.to;
+  $('empty-note').textContent=invalidYears?'起始年份不能晚于结束年份。':'';
+  $('empty-note').hidden=!invalidYears;
   chips();
   for(const b of document.querySelectorAll('.year-column'))b.setAttribute('aria-pressed',String(state.from===b.dataset.from&&state.to===b.dataset.to));
   for(const b of document.querySelectorAll('.theme-card'))b.setAttribute('aria-pressed',String(state.theme===b.dataset.theme));
