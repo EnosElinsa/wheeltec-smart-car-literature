@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
-        run: python -m pip install pymupdf pytest
+        run: python -m pip install pymupdf pytest -r requirements-pages.txt
       - name: Unit tests
         run: python -m pytest
       - name: Generated indexes and tables are up to date

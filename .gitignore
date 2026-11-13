@@ -23,6 +23,7 @@
 /06-data/provenance/
 /06-data/missing-items.md
 /.local/
+/_site/
 
 # Self-authored manuscript outputs and figures are published with the sources.
 !05-survey/manuscript/survey.pdf

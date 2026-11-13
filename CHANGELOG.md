@@ -2,6 +2,10 @@
 
 Notable changes to the library and the survey manuscript, newest first. Dates come from the batch and revision records. The Git history starts with the first public snapshot on November 3, 2026. Each entry links the record that holds the details, and its counts are those of that date.
 
+## 2026-11-13
+
+- Publish the [paper and project catalog](https://enoselinsa.github.io/wheeltec-smart-car-literature/) through GitHub Pages. Add automatic deployment, readable full-text pages and citation downloads; source PDFs and figures use existing Git LFS media links. The local interface remains available.
+
 ## 2026-11-12
 
 - Interface copy: remove standalone statistics blocks, explanatory subtitles, availability and association claims, repository-check notes, the global hardware block and repetitive control instructions. Counts sit next to tabs, classification items and results. Keep project-specific usage conditions in expanded details and comparison tables.

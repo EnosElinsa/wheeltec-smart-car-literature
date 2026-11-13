@@ -1,6 +1,6 @@
 # Paper and open-source project interface
 
-The versioned `INDEX.html` is an offline Chinese interface with separate paper and project tabs. The paper tab is generated from admitted papers in the shared catalog (`main` and `surveys`). Excluded/background identities and pending acquisition records stay in the administrative CSV and do not inflate the displayed paper count. Styles, scripts and data are embedded; no server, CDN, textbook checkout or network request is required to browse. GitHub's file view does not execute HTML; use [OPEN_SOURCE_PROJECTS.md](../OPEN_SOURCE_PROJECTS.md) for a readable GitHub directory.
+The [online catalog](https://enoselinsa.github.io/wheeltec-smart-car-literature/) and versioned `INDEX.html` share a Chinese interface with separate paper and project tabs. The paper tab is generated from admitted papers in the shared catalog (`main` and `surveys`). Excluded/background identities and pending acquisition records stay in the administrative CSV and do not inflate the displayed paper count. Styles, scripts and data are embedded; no server, CDN, textbook checkout or network request is required to browse. GitHub's file view does not execute HTML; use the online catalog or [OPEN_SOURCE_PROJECTS.md](../OPEN_SOURCE_PROJECTS.md) for a readable GitHub directory.
 
 The page uses a compact catalog layout: paper and project tabs, a left sidebar for classification, and a searchable list on the right. Tab and sidebar counts describe the full collection, independently of list filters; the list heading shows the matched count. Annual ICRA/IROS/RSS/CoRL editions are grouped into conference families. The year chart shows the latest six bibliographic years with nonempty earlier years grouped into an earlier bin. Selecting a chart bar, source or research direction opens its matching papers with a fresh filter state. Source tabs separate journals and conferences; expanding the source list reveals every nonempty source. Venue counts describe holdings, not journal rankings.
 
@@ -38,3 +38,21 @@ The project descriptions were adapted from [textbook chapter 54](https://enoseli
 Edit the JSON, verify claims against the README and paper, then run `python -m tools.build_indexes --strict`. Resolve `paper_codes` by exact DOI or official publication URL; the generator rejects missing, excluded or unrelated associations. Do not associate papers by approximate title. Regeneration updates the HTML and portable directory together, without requiring a sibling checkout or network access. Third-party code retains its own license. Keep paper source bytes, assessment status and survey membership unchanged.
 
 Browser validation should cover combined project filters, empty states, exact paper/project links in both directions, bookmark reload, comparison limits and removal, CSV row counts, pagination, keyboard access, desktop/mobile layouts and console errors. Unit tests cover unsafe URLs, invalid facets, duplicate projects, publication identity errors and safe standalone JSON embedding.
+
+## GitHub Pages
+
+[Deploy Pages](../.github/workflows/pages.yml) builds and deploys the site on every push to `main`, with a manual dispatch option. Pages uses the GitHub Actions build type. The deployment environment is `github-pages`; concurrent releases are serialized.
+
+The builder `tools/build_site.py` reads the committed `INDEX.html` and produces a separate, ignored `_site/` artifact with `index.html` and an identical `INDEX.html` alias. The offline interface and catalog are unchanged. Both views, comparison, bookmarks and CSV export use the deployed resource URLs. Documentation and review links point to GitHub at the deployed commit. PDF and figure links point to the existing Git LFS media at the same commit.
+
+Only canonical full-text Markdown is fetched through LFS during deployment. Its size and SHA-256 must match the reading-asset manifest before rendering. Full texts become static HTML pages under `fulltext/`, and the original citation bytes are copied under `citations/`. The Markdown renderer permits tables and code blocks, strips unsafe HTML and rewrites relative figure links to LFS media. Mathematical expressions are preserved and typeset with MathJax 3.2.2 from jsDelivr; wide expressions scroll within the text column. PDF and figure payloads are not duplicated into the Pages artifact. Source transcriptions and original PDFs retain their existing status and bytes.
+
+Install `requirements-pages.txt` to build or test the site tools. For a local preview, use a new or empty output directory:
+
+```shell
+git lfs pull --include="02-fulltext/**/paper.md" --exclude=""
+python -m tools.build_site --out _site --revision <full-commit-sha>
+python -m http.server 8080 --directory _site
+```
+
+Before announcing a deployment, verify the live URL, both catalog tabs, combined filters, project comparison, a full-text page and figure, a PDF payload and an exact-byte citation download.
